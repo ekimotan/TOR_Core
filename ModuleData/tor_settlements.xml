@@ -4905,7 +4905,7 @@
   </Settlement>
   <Settlement id="castle_village_WA2_1" name="{=Settlements.Settlement.name.castle_village_WA2_1}Halsdorph" posX="1124.298" posY="1142.039" culture="Culture.empire" text="{=Settlements.Settlement.text.castle_village_WA1_1}Halsdorph was once a major farming town, surrounded by fertile lands and blessed by Taal with good weather. One night however, the land shook and the swamp swallowed much of the town and nearly all of its farmland. Today, Halsdorph is a forgotten community of hollowed-eyed peasants, forgotten even by the meticulous tax men of the Wasteland.">
     <Components>
-      <Village id="castle_village_comp_WA2_1" village_type="VillageType.clay_mine" hearth="200" trade_bound="Settlement.town_WA1" bound="Settlement.castle_WA1" background_crop_position="0.0" background_mesh="gui_bg_village_vlanda" wait_mesh="empire_village_background" castle_background_mesh="gui_bg_castle_vlanda" />
+      <Village id="castle_village_comp_WA2_1" village_type="VillageType.clay_mine" hearth="200" trade_bound="Settlement.town_WA1" bound="Settlement.castle_WA2" background_crop_position="0.0" background_mesh="gui_bg_village_vlanda" wait_mesh="empire_village_background" castle_background_mesh="gui_bg_castle_vlanda" />
     </Components>
     <Locations complex_template="LocationComplexTemplate.village_complex">
       <Location id="village_center" scene_name="TOR_empire_village_004" />
@@ -4918,7 +4918,7 @@
   </Settlement>
   <Settlement id="castle_village_WA2_2" name="{=Settlements.Settlement.name.castle_village_WA2_2}Erlach" posX="1145.159" posY="1113.296" culture="Culture.empire" text="{=Settlements.Settlement.text.castle_village_WA1_1}At the foot of the northern grey mountains, south of Gisoreux gap is the mining settlement of Erlach. It is the only community that travels by land from the Reikland to Marienburg could potentially stop at, however the village is off of the road some ways and built around its mine tunnels and pits.">
     <Components>
-      <Village id="castle_village_comp_WA2_2" village_type="VillageType.silver_mine" hearth="200" trade_bound="Settlement.town_WA1" bound="Settlement.castle_WA1" background_crop_position="0.0" background_mesh="gui_bg_village_vlanda" wait_mesh="empire_village_background" castle_background_mesh="gui_bg_castle_vlanda" />
+      <Village id="castle_village_comp_WA2_2" village_type="VillageType.silver_mine" hearth="200" trade_bound="Settlement.town_WA1" bound="Settlement.castle_WA2" background_crop_position="0.0" background_mesh="gui_bg_village_vlanda" wait_mesh="empire_village_background" castle_background_mesh="gui_bg_castle_vlanda" />
     </Components>
     <Locations complex_template="LocationComplexTemplate.village_complex">
       <Location id="village_center" scene_name="TOR_empire_village_004" />
@@ -4931,7 +4931,7 @@
   </Settlement>
   <Settlement id="castle_village_WA2_3" name="{=Settlements.Settlement.name.castle_village_WA2_3}Merxheim" posX="1167.681" posY="1116.416" culture="Culture.empire" text="{=Settlements.Settlement.text.castle_village_WA1_1}Merxheim is a forgotten corner of the Reik basin situated within the edge of the Reikwald Forest. Its out of the way nature is likely why it has not been contested for control by the Empire, as such the people here make what living they can in the isolated region, with only occasional visits from the Excise men to remind them their overlords sit in Marienburg. ">
     <Components>
-      <Village id="castle_village_comp_WA2_3" village_type="VillageType.silk_plant" hearth="200" trade_bound="Settlement.town_WA1" bound="Settlement.castle_WA1" background_crop_position="0.0" background_mesh="gui_bg_village_vlanda" wait_mesh="empire_village_background" castle_background_mesh="gui_bg_castle_vlanda" />
+      <Village id="castle_village_comp_WA2_3" village_type="VillageType.silk_plant" hearth="200" trade_bound="Settlement.town_WA1" bound="Settlement.castle_WA2" background_crop_position="0.0" background_mesh="gui_bg_village_vlanda" wait_mesh="empire_village_background" castle_background_mesh="gui_bg_castle_vlanda" />
     </Components>
     <Locations complex_template="LocationComplexTemplate.village_complex">
       <Location id="village_center" scene_name="TOR_empire_village_004" />
