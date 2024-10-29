@@ -156,10 +156,10 @@
                              SoundEffectLength="0"
                              DamageType="Invalid"
                              DamageAmount="0"
-                             Radius="4"
+                             Radius="12"
                              HasShockWave="false"
                              TargetType="Friendly"
-                             ImbuedStatusEffectDuration="30"
+                             ImbuedStatusEffectDuration="50"
                              DamageVariance="0"
                              ScriptNameToTrigger="TOR_Core.BattleMechanics.TriggeredEffect.Scripts.ApplyHolyItemTraitScript" />
     <TriggeredEffectTemplate StringID="burning_head_tick"
@@ -979,7 +979,7 @@
                              SoundEffectLength="2.5"
                              DamageType="Holy"
                              DamageAmount="30"
-                             Radius="5"
+                             Radius="10"
                              HasShockWave="true"
                              TargetType="Enemy"
                              ImbuedStatusEffectDuration="0"
@@ -991,7 +991,7 @@
                              SoundEffectLength="0"
                              DamageType="Invalid"
                              DamageAmount="0"
-                             Radius="5"
+                             Radius="8"
                              HasShockWave="false"
                              TargetType="Friendly"
                              DamageVariance="0.0"
@@ -1056,7 +1056,7 @@
                              Radius="15"
                              HasShockWave="false"
                              TargetType="Friendly"
-                             ImbuedStatusEffectDuration="8"
+                             ImbuedStatusEffectDuration="45"
                              ScriptNameToTrigger="none">
         <ImbuedStatusEffect>armour_of_the_righteous</ImbuedStatusEffect>
     </TriggeredEffectTemplate>
@@ -1131,11 +1131,11 @@
                              SoundEffectLength="0"
                              DamageType="Invalid"
                              DamageAmount="0"
-                             Radius="5"
+                             Radius="10"
                              HasShockWave="false"
                              TargetType="Friendly"
                              DamageVariance="0.0"
-                             ImbuedStatusEffectDuration="2"
+                             ImbuedStatusEffectDuration="15"
                              ScriptNameToTrigger="none">
         <ImbuedStatusEffect>ladysfavour_tick</ImbuedStatusEffect>
     </TriggeredEffectTemplate>
@@ -1145,11 +1145,11 @@
                              SoundEffectLength="0"
                              DamageType="Invalid"
                              DamageAmount="0"
-                             Radius="8"
+                             Radius="15"
                              HasShockWave="false"
                              TargetType="Friendly"
                              DamageVariance="0.0"
-                             ImbuedStatusEffectDuration="15"
+                             ImbuedStatusEffectDuration="45"
                              ScriptNameToTrigger="none">
         <ImbuedStatusEffect>aura_of_lady_magic</ImbuedStatusEffect>
         <ImbuedStatusEffect>aura_of_lady_fire</ImbuedStatusEffect>
@@ -1161,11 +1161,11 @@
                              SoundEffectLength="0"
                              DamageType="Invalid"
                              DamageAmount="0"
-                             Radius="8"
+                             Radius="12"
                              HasShockWave="false"
                              TargetType="Friendly"
                              DamageVariance="0.0"
-                             ImbuedStatusEffectDuration="15"
+                             ImbuedStatusEffectDuration="30"
                              ScriptNameToTrigger="none">
         <ImbuedStatusEffect>shield_of_combat</ImbuedStatusEffect>
     </TriggeredEffectTemplate>
@@ -1175,7 +1175,7 @@
                              SoundEffectLength="0"
                              DamageType="Invalid"
                              DamageAmount="0"
-                             Radius="8"
+                             Radius="12"
                              HasShockWave="false"
                              TargetType="Friendly"
                              DamageVariance="0.0"

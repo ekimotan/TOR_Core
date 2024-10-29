@@ -1022,7 +1022,7 @@
 		do_not_attach_to_agent_skeleton="true"
 		particle_id="armour_of_the_righteous"
 		particle_intensity="Low"
-		base_effect_value="0.35"
+		base_effect_value="0.4"
 		damage_type="Physical"
 		type="Resistance"
 		rotation="true"
