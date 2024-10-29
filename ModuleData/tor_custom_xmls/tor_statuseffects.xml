@@ -1016,7 +1016,20 @@
 		<temporary_attribute>Thorns</temporary_attribute>		
 	</StatusEffectTemplate>
 		
-		
+
+	<StatusEffectTemplate 
+		id="knightly_strike" 
+		do_not_attach_to_agent_skeleton="true"
+		particle_id="armour_of_the_righteous"
+		particle_intensity="Low"
+		base_effect_value="0.35"
+		damage_type="Physical"
+		type="DamageAmplification"
+		rotation="true"
+		rotation_speed="200">
+		<temporary_attribute>KnightlyStrike</temporary_attribute>		
+		</StatusEffectTemplate>
+
 	<StatusEffectTemplate 
 		id="armour_of_the_righteous" 
 		do_not_attach_to_agent_skeleton="true"

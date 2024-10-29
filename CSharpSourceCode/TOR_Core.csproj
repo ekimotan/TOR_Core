@@ -466,6 +466,7 @@
     <Compile Include="BattleMechanics\TriggeredEffect\Scripts\DynamicItemTraitScripts.cs" />
     <Compile Include="BattleMechanics\TriggeredEffect\Scripts\ITriggeredScript.cs" />
     <Compile Include="BattleMechanics\TriggeredEffect\Scripts\KnockDownScript.cs" />
+    <Compile Include="BattleMechanics\TriggeredEffect\Scripts\OnHitScripts.cs" />
     <Compile Include="BattleMechanics\TriggeredEffect\Scripts\PrefabSpawnerScript.cs" />
     <Compile Include="BattleMechanics\TriggeredEffect\Scripts\SummonScript.cs" />
     <Compile Include="BattleMechanics\TriggeredEffect\Scripts\TraitHelper.cs" />

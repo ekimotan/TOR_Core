@@ -16,7 +16,7 @@ namespace TOR_Core.BattleMechanics.StatusEffect
     {
         private static readonly string EffectsFileName = "tor_statuseffects.xml";
         private static Dictionary<string, StatusEffectTemplate> _idToStatusEffect = new Dictionary<string, StatusEffectTemplate>();
-
+        private static int _randomCount = 0 ;
         public static void LoadStatusEffects()
         {
             var ser = new XmlSerializer(typeof(List<StatusEffectTemplate>), new XmlRootAttribute("StatusEffects"));
@@ -48,7 +48,8 @@ namespace TOR_Core.BattleMechanics.StatusEffect
         public static StatusEffect CreateNewStatusEffect(string effectId, Agent applierAgent, bool requestClone)
         {
             StatusEffectTemplate template = _idToStatusEffect[effectId];
-            if (requestClone) template = (StatusEffectTemplate)template.Clone(effectId + "*cloned*" + applierAgent.Index);
+            if (requestClone) template = (StatusEffectTemplate)template.Clone(effectId + "*cloned*" + applierAgent.Index +_randomCount );
+            _randomCount++;
             return new StatusEffect(template, applierAgent);
         }
     }

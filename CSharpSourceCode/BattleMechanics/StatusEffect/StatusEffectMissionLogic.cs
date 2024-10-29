@@ -55,12 +55,12 @@ namespace TOR_Core.BattleMechanics.StatusEffect
             while (_unprocessedAgents.Count>0)
             {
                 var queueAgent = _unprocessedAgents.Dequeue();
-                CheckPermanentEffectsForAddingPermanentEffects(queueAgent);
+                CheckUnitForAddingPermanentEffects(queueAgent);
             }
         }
 
 
-        private void CheckPermanentEffectsForAddingPermanentEffects(Agent agent)
+        private void CheckUnitForAddingPermanentEffects(Agent agent)
         {
             if (agent?.Character == null)
             {

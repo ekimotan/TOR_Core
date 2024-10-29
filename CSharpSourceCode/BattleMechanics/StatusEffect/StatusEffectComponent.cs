@@ -75,8 +75,9 @@ namespace TOR_Core.BattleMechanics.StatusEffect
                 }
                 if (stack)
                 {
-                    StatusEffectManager.CreateNewStatusEffect(effectId, applierAgent, isMutated);
-                    AddEffect(effect);
+                    var clone = StatusEffectManager.CreateNewStatusEffect(effectId, applierAgent, true);
+                    clone.CurrentDuration = duration;
+                    AddEffect(clone);
                 }
             }
             else
@@ -319,14 +320,17 @@ namespace TOR_Core.BattleMechanics.StatusEffect
             return _baseValues[property];
         }
 
-        public List<string> GetTemporaryAttributes()
+        public List<string> GetTemporaryAttributes(bool ignoreDuplicates=false)
         {
             List<string> list = new List<string>();
             foreach (var effect in _currentEffects.Keys)
             {
                 foreach (var attribute in effect.Template.TemporaryAttributes)
                 {
-                    if (!list.Contains(attribute)) list.Add(attribute);
+                    if (ignoreDuplicates || (!list.Contains(attribute)))
+                    {
+                        list.Add(attribute);
+                    }
                 }
             }
 

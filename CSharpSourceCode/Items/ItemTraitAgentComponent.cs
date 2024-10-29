@@ -160,6 +160,24 @@ namespace TOR_Core.Items
             }
         }
 
+        public void RemoveTraitFromWieldedWeapon(string traitName)
+        {
+            if (traitName != null)
+            {
+                var weapon = Agent.WieldedWeapon;
+                if(weapon.CurrentUsageItem != null)
+                {
+                    var match = _dynamicTraits.FirstOrDefault(x => x.Item1.Item == weapon.Item && x.Item2.ItemTraitName  == traitName);
+                    if (match != null)
+                    {
+                        _dynamicTraits.Remove(match);
+                        UpdatePresets();
+                    }
+     
+                }
+            }
+        }
+
         private void UpdatePresets()
         {
             var index = Agent.GetWieldedItemIndex(Agent.HandIndex.MainHand);

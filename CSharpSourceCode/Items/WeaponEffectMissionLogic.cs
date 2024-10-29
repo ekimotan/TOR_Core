@@ -1,9 +1,11 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using TaleWorlds.Core;
 using TaleWorlds.Engine;
 using TaleWorlds.Library;
 using TaleWorlds.MountAndBlade;
+using TOR_Core.BattleMechanics.TriggeredEffect.Scripts;
 using TOR_Core.Extensions;
 using TOR_Core.Utilities;
 
@@ -45,27 +47,33 @@ namespace TOR_Core.Items
                     foreach (var trait in relevantTraits)
                     {
                         affectedAgent.ApplyStatusEffect(trait.ImbuedStatusEffectId, affectorAgent, 5, false);
+                        
                     }
                 }
-                //TODO: disabling this for first release, we dont actually have an item script. This just clogs system resources and spams the screen with debug messages.
-                /*
-                if(magiceffect.OnHitScriptName != "none")
+
+                var onHitTraits = affectorWeapon.Item.GetTraits(affectorAgent)
+                    .Where(x => x.ImbuedStatusEffectId != "none" || x.OnHitScriptName != "none");
+
+                if (onHitTraits != null && onHitTraits.Count() > 0)
                 {
-                    try
+                    foreach (var trait in onHitTraits)
                     {
-                        var obj = Activator.CreateInstance(Type.GetType(magiceffect.OnHitScriptName));
-                        if(obj is IMagicWeaponHitEffect)
+                        try
                         {
-                            var script = obj as IMagicWeaponHitEffect;
-                            script.OnHit(affectedAgent, affectorAgent, affectorWeapon);
+                            var obj = Activator.CreateInstance(Type.GetType(trait.OnHitScriptName));
+                            if( obj is IWeaponHitScript)
+                            {
+                                var script = obj as IWeaponHitScript;
+                                script.OnHit(affectorAgent, affectedAgent, blow.InflictedDamage,affectorWeapon);
+                            }
+                        }
+                        catch(Exception)
+                        {
+                            TORCommon.Log("Tried to create magicweapon onhitscript: " + trait.OnHitScriptName + ", but failed.", NLog.LogLevel.Error);
                         }
                     }
-                    catch(Exception)
-                    {
-                        TOW_Core.Utilities.TORCommon.Log("Tried to create magicweapon onhitscript: " + magiceffect.OnHitScriptName + ", but failed.", NLog.LogLevel.Error);
-                    }
+                    
                 }
-                */
             }
         }
 

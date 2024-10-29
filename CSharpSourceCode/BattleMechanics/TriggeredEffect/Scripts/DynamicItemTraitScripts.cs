@@ -5,8 +5,11 @@ using TaleWorlds.Engine;
 using TaleWorlds.Library;
 using TaleWorlds.MountAndBlade;
 using TOR_Core.BattleMechanics.DamageSystem;
+using TOR_Core.BattleMechanics.StatusEffect;
+using TOR_Core.Extensions;
 using TOR_Core.Extensions.ExtendedInfoSystem;
 using TOR_Core.Items;
+using TOR_Core.Utilities;
 
 namespace TOR_Core.BattleMechanics.TriggeredEffect.Scripts
 {
@@ -127,6 +130,41 @@ namespace TOR_Core.BattleMechanics.TriggeredEffect.Scripts
                     {
                         comp.AddTraitToWieldedWeapon(trait, duration);
                     }
+                }
+            }
+        }
+    }
+
+    public class ApplyKnightlyStrikeTraitScript : ITriggeredScript
+    {
+        public void OnTrigger(Vec3 position, Agent triggeredByAgent, IEnumerable<Agent> triggeredAgents, float duration)
+        {
+            var trait = new ItemTrait();
+            var additionalDamage = new DamageProportionTuple();
+
+
+                
+            trait.ItemTraitName = "KnightlyStrike";
+            trait.ItemTraitDescription = " Charge your weapon with knightly power";
+            trait.WeaponParticlePreset = new WeaponParticlePreset { ParticlePrefab = "psys_flaming_weapon" };
+            trait.OnHitScriptName = "TOR_Core.BattleMechanics.TriggeredEffect.Scripts.KnightlyStrikeOnHitScript";
+            trait.AdditionalDamageTuple = additionalDamage;
+
+            triggeredByAgent.ApplyStatusEffect("knightly_strike",triggeredByAgent,999999,false,false,true);
+            
+            triggeredByAgent.ApplyStatusEffect("knightly_strike",triggeredByAgent,999999,false,false,true);
+
+
+            var list = triggeredByAgent.GetComponent<StatusEffectComponent>().GetTemporaryAttributes(true);
+            
+            TORCommon.Say(list.Count+"");
+
+            foreach (Agent agent in triggeredAgents)
+            {
+                var comp = agent.GetComponent<ItemTraitAgentComponent>();
+                if(comp != null)
+                {
+                    comp.AddTraitToWieldedWeapon(trait, duration);
                 }
             }
         }
