@@ -84,24 +84,22 @@ public class TORCustomResourceModel : GameModel
                         var bonus = 0;
                         foreach (var settlement  in kingdomSettlements)
                         {
-                            
+                            var value = 0;
+
                             if (settlement.IsCastle)
                             {
-                                bonus += 2;
-                            }
-                            else if (settlement.IsTown)
+                                value = 2;
+                            } else if (settlement.IsTown)
                             {
-                                bonus += 3;
-                            }
-                            else
-                            {
-                                continue;
+                                value = 3;
                             }
 
                             if (settlement.OwnerClan == Clan.PlayerClan)
                             {
-                                bonus *= 2;
+                                value *= 2;
                             }
+
+                            bonus += value;
                         }
                         
                         number.Add(bonus, new TextObject("Dark Tribute"));
