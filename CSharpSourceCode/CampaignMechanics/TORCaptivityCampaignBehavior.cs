@@ -1,10 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using Helpers;
+using System;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.Actions;
+using TaleWorlds.CampaignSystem.Party;
+using TaleWorlds.CampaignSystem.Party.PartyComponents;
 
 namespace TOR_Core.CampaignMechanics
 {
@@ -23,11 +23,25 @@ namespace TOR_Core.CampaignMechanics
                 hero != Hero.MainHero &&
                 hero.PartyBelongedToAsPrisoner.Owner != null &&
                 hero.PartyBelongedToAsPrisoner.Owner.Clan != Clan.PlayerClan &&
-                hero.CaptivityStartTime != null)
+                hero.CaptivityStartTime != null &&
+                hero.IsLord)
             {
                 var time = CampaignTime.Now;
                 var duration = time - hero.CaptivityStartTime;
                 if (duration.ToDays > _maximumDaysInCaptivity) EndCaptivityAction.ApplyByEscape(hero, null);
+            }
+
+            if(!hero.IsPrisoner && 
+                hero.IsLord &&
+                hero.GovernorOf == null && 
+                hero.PartyBelongedTo == null && 
+                hero.PartyBelongedToAsPrisoner == null && 
+                hero.CanLeadParty() && 
+                hero.IsAlive &&
+                hero.LastKnownClosestSettlement != null)
+            {
+                //bugged? wtf, how can this even happen?
+                MobilePartyHelper.SpawnLordParty(hero, hero.LastKnownClosestSettlement);
             }
         }
 
