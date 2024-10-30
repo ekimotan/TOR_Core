@@ -38,11 +38,38 @@ namespace TOR_Core.CampaignMechanics
                 hero.PartyBelongedToAsPrisoner == null && 
                 hero.CanLeadParty() && 
                 hero.IsAlive &&
-                hero.LastKnownClosestSettlement != null)
+                hero.LastKnownClosestSettlement != null &&
+                hero.IsActive &&
+                hero.Age > Campaign.Current.Models.AgeModel.HeroComesOfAge)
             {
                 //bugged? wtf, how can this even happen?
+                if (TryFindMatchingLordParty(hero, out var party))
+                {
+                    if (party.LeaderHero == null)
+                    {
+                        if (party.MemberRoster.Contains(hero.CharacterObject))
+                        {
+                            party.ChangePartyLeader(hero);
+                            return;
+                        }
+                        else
+                        {
+                            party.MemberRoster.AddToCounts(hero.CharacterObject, 1, true);
+                            party.ChangePartyLeader(hero);
+                            return;
+                        }
+                    }
+                }
+
                 MobilePartyHelper.SpawnLordParty(hero, hero.LastKnownClosestSettlement);
             }
+        }
+
+
+        private bool TryFindMatchingLordParty(Hero hero, out MobileParty party)
+        {
+            party = MobileParty.AllLordParties.FirstOrDefault(x => x.StringId == hero.CharacterObject.StringId + "_party_1");
+            return party != null;
         }
 
         public override void SyncData(IDataStore dataStore) { }
