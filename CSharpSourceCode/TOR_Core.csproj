@@ -638,6 +638,7 @@
     <Compile Include="HarmonyPatches\CaravanMasterPatch.cs" />
     <Compile Include="HarmonyPatches\CharacterCreationPatch.cs" />
     <Compile Include="HarmonyPatches\CharacterObjectPatches.cs" />
+    <Compile Include="HarmonyPatches\CharacterTableauPatches.cs" />
     <Compile Include="HarmonyPatches\ConversationPatches.cs" />
     <Compile Include="HarmonyPatches\CustomBattlePatches.cs" />
     <Compile Include="HarmonyPatches\CustomWorldMapPatch.cs" />
