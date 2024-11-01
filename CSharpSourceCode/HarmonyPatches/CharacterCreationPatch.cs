@@ -75,10 +75,9 @@ namespace TOR_Core.HarmonyPatches
         [HarmonyPatch(typeof(FaceGenVM), "UpdateRaceAndGenderBasedResources")]
         public static void PreserveRace(FaceGenVM __instance, ref int ____selectedRace)
         {
-            /* IMPORTANT! Uncomment for release
+            // IMPORTANT! Uncomment for release
             ____selectedRace = CharacterObject.PlayerCharacter.Race;
             if (__instance.RaceSelector != null) __instance.RaceSelector.SelectedIndex = CharacterObject.PlayerCharacter.Race;
-            */
         }
 
         [HarmonyPostfix]
