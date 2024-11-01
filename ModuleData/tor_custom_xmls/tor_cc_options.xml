@@ -78,7 +78,7 @@
 		</SkillsToIncrease>
 		<AttributeToIncrease>Endurance</AttributeToIncrease>
 		<OptionText>{=tor_cc_option4_label_str}Commoners</OptionText>
-		<OptionFlavourText>{=tor_cc_option4_text_str}</OptionFlavourText>
+		<OptionFlavourText>{=tor_cc_option4_text_str}All the people of the empire play a role. You were born into a humble family, with humble jobs, and it seemed like that was going to continue that way forever.</OptionFlavourText>
 	</CharacterCreationOption>
 
 	<CharacterCreationOption Id="option5" Culture="empire" StageNumber="1" EquipmentSetId="tor_cc_merchants_1">
