@@ -635,6 +635,7 @@
     <Compile Include="HarmonyPatches\AIPatches.cs" />
     <Compile Include="HarmonyPatches\ArtilleryPatches.cs" />
     <Compile Include="HarmonyPatches\BaseGameDebugPatches.cs" />
+    <Compile Include="HarmonyPatches\RefreshCharacterEntityAuxPatch.cs" />
     <Compile Include="HarmonyPatches\CaravanMasterPatch.cs" />
     <Compile Include="HarmonyPatches\CharacterCreationPatch.cs" />
     <Compile Include="HarmonyPatches\CharacterObjectPatches.cs" />
