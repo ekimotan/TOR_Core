@@ -57,6 +57,10 @@ namespace TOR_Core.CampaignMechanics
                             
                             if (party.IsMobile && party.MobileParty.IsLordParty)
                             {
+                                if (party.LeaderHero == null)
+                                {
+                                    break;
+                                }
                                 if (memberRoster.Contains(upgradeArgs.UpgradeTarget))
                                 {
                                     var partyTemplate = party.LeaderHero.Clan.DefaultPartyTemplate; // either takes clan, or if not take the culture one
