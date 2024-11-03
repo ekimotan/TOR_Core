@@ -30,6 +30,7 @@ namespace TOR_Core.CharacterDevelopment
         private CareerObject _waywatcher;
         private CareerObject _spellsinger;
         private CareerObject _greyLord;
+        private CareerObject _knightOldWorld;
 
         public TORCareers()
         {
@@ -72,6 +73,8 @@ namespace TOR_Core.CharacterDevelopment
 
         public static CareerObject GreyLord => Instance._greyLord;
 
+        public static CareerObject KnightOldWorld => Instance._knightOldWorld;
+
         private void RegisterAll()
         {
             
@@ -90,6 +93,7 @@ namespace TOR_Core.CharacterDevelopment
             _waywatcher = Game.Current.ObjectManager.RegisterPresumedObject(new CareerObject("Waywatcher"));
             _spellsinger = Game.Current.ObjectManager.RegisterPresumedObject(new CareerObject("Spellsinger"));
             _greyLord = Game.Current.ObjectManager.RegisterPresumedObject(new CareerObject("GreyLord"));
+            _knightOldWorld = Game.Current.ObjectManager.RegisterPresumedObject(new CareerObject("KnightOldWorld"));
             
             _allCareers =
             [
@@ -107,7 +111,8 @@ namespace TOR_Core.CharacterDevelopment
                 _imperialMagister,
                 _waywatcher,
                 _spellsinger,
-                _greyLord
+                _greyLord,
+                _knightOldWorld
             ];
         }
 
@@ -128,6 +133,7 @@ namespace TOR_Core.CharacterDevelopment
             _waywatcher.Initialize("Waywatcher", null, "ArrowOfKurnous",CareerAbilityChargeSupplier.WaywatcherCareerCharge, 1200, typeof(ArrowOfKurnousScript));
             _spellsinger.Initialize("Spellsinger", null, "WrathOfTheWood",CareerAbilityChargeSupplier.SpellsingerCareerCharge, 1000, typeof(WrathOfTheWoodScript));
             _greyLord.Initialize("Grey Lord Wizard", null, "MindControl",CareerAbilityChargeSupplier.GreyLordCareerCharge, 1000, typeof(MindControlScript));
+            _knightOldWorld.Initialize("Knight of the Old World", null,"KnightlyStrike", null, 100);
         }
     }
 }
