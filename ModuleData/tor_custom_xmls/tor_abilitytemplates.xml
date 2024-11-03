@@ -4386,7 +4386,7 @@
     <AbilityTemplate StringID="CometOfSigmar"
                      Name="{=comet_of_sigmar_label_str}Comet of Sigmar"
                      SpriteName="comet_of_sigmar_icon"
-                     CoolDown="30"
+                     CoolDown="20"
                      WindsOfMagicCost="0"
                      BaseMisCastChance="0.05"
                      Duration="3"
@@ -4414,7 +4414,7 @@
                      AbilityTargetType="WorldPosition"
                      SpellTier="3"
                      BelongsToLoreID="SigmaritePrayers"
-                     TooltipDescription="{=comet_of_sigmar_description_str}You throw a fiery missile that takes the form of Sigmar’s famed twin-tailed comet. A comet of Sigmar is a holy missile dealing 30 damage. It can knock units down, or throw them off horse. Only affects enemies">
+                     TooltipDescription="{=comet_of_sigmar_description_str}The priest throws a fiery missile that takes the form of Sigmar’s famed Twin-Tailed Comet. A Comet of Sigmar is a holy missile dealing 30 damage. It can knock units down, or throw them off horse. Only affects enemies">
         <LightColorRGB x="245"
                        y="247"
                        z="129"
@@ -4433,7 +4433,7 @@
                      CoolDown="50"
                      WindsOfMagicCost="0"
                      BaseMisCastChance="0.3"
-                     Duration="9"
+                     Duration="12"
                      Radius="0.1"
                      AbilityType="Prayer"
                      AbilityEffectType="Heal"
@@ -4457,7 +4457,7 @@
                      AbilityTargetType="GroundAtPosition"
                      CrosshairType="TargetedAOE"
                      TargetCapturingRadius="5"
-					 TooltipDescription="{=healing_hand_description_str}Allies in a 5 meter radius gain 5 Healthpoints every 2 seconds  for 9 seconds.">
+					 TooltipDescription="{=healing_hand_description_str}Allies in an 8 meter radius regain 5 HP every 2 seconds for 12 seconds.">
                      BelongsToLoreID="SigmaritePrayers">
         <LightColorRGB x="255"
                        y="255"
@@ -4504,7 +4504,7 @@
                      CrosshairType="TargetedAOE"
                      SpellTier="1"
                      BelongsToLoreID="SigmaritePrayers"
-                     TooltipDescription="{=armor_of_righteousness_description_str}Allies in a 3 meter radius gain 35% physical resistance for 8 seconds.">
+                     TooltipDescription="{=armor_of_righteousness_description_str}Allies in a 15 meter radius gain 40% physical resistance for 45 seconds.">
         <LightColorRGB x="255"
                        y="170"
                        z="0"
@@ -4549,7 +4549,7 @@
                      CrosshairType="TargetedAOE"
                      SpellTier="3"
                      BelongsToLoreID="SigmaritePrayers"
-                     TooltipDescription="{=vanquish_description_str}Buff the weapons of allies in a 5 meter radius with the Flaming trait for 20 seconds. The weapons burst into fire and burn every enemy they strike.">
+                     TooltipDescription="{=vanquish_description_str}Buff the weapons of allies in a 12 meter radius with the Flaming trait for 50 seconds. The weapons burst into fire and burn every enemy they strike.">
         <LightColorRGB x="255"
                        y="170"
                        z="0"
@@ -4775,7 +4775,7 @@
                      TargetCapturingRadius="8"
                      SpellTier="3"
                      BelongsToLoreID="PowerOfLady"
-                     TooltipDescription="{=aerial_shield_description_str}Power of the Lady causes enemy missiles to vanish mid-air. Grants 90% ranged physical resistance in a radius.">
+                     TooltipDescription="{=aerial_shield_description_str}Power of the Lady causes enemy missiles to vanish mid-air. Grants 95% ranged physical resistance in a 12 meter radius.">
         <LightColorRGB x="255"
                        y="255"
                        z="255"
@@ -4821,7 +4821,7 @@
                      TargetCapturingRadius="8"
                      SpellTier="1"
                      BelongsToLoreID="PowerOfLady"
-                     TooltipDescription="{=aura_of_the_lady_description_str}The Lady protects Damsels and their followers from harm. Grants 80% magic, lightning and fire resistance in a radius.">
+                     TooltipDescription="{=aura_of_the_lady_description_str}The Lady protects Damsels and their followers from harm. Grants 80% magic, lightning and fire resistance in a 15 meter radius.">
         <LightColorRGB x="255"
                        y="255"
                        z="255"
@@ -4863,11 +4863,11 @@
                      Offset="0"
                      AbilityTargetType="AlliesInAOE"
                      CrosshairType="TargetedAOE"
-                     MaxDistance="20"
+                     MaxDistance="15"
                      TargetCapturingRadius="8"
                      SpellTier="2"
                      BelongsToLoreID="PowerOfLady"
-                     TooltipDescription="{=shield_of_combat_description_str}The Lady's divine power causes allies' armor to deflect enemy blows. Grants 50% physical resistance in a radius.">
+                     TooltipDescription="{=shield_of_combat_description_str}The Lady's divine power causes allies' armor to deflect enemy blows. Grants 50% physical resistance in a 12 meter radius.">
         <LightColorRGB x="255"
                        y="255"
                        z="255"
@@ -4881,12 +4881,12 @@
         <TriggeredEffect>shield_of_combat</TriggeredEffect>
     </AbilityTemplate>
     <AbilityTemplate StringID="LadysFavour"
-                     Name="{=ladys_favour_label_str}Lady's Favour"
+                     Name="{=ladys_favour_label_str}The Lady's Favour"
                      SpriteName="ladys_favor_icon"
-                     CoolDown="60"
+                     CoolDown="80"
                      WindsOfMagicCost="0"
                      BaseMisCastChance="0.05"
-                     Duration="10"
+                     Duration="30"
                      Radius="6"
                      AbilityType="Prayer"
                      AbilityEffectType="Augment"
@@ -4913,7 +4913,7 @@
                      CrosshairType="TargetedAOE"
                      SpellTier="2"
                      BelongsToLoreID="PowerOfLady"
-                     TooltipDescription="{=ladys_favour_description_str}The Damsel conjures a vision of the Lady of the Lake to guide Bretonnians into the frey. Grants 25% attack speed bonus in a radius.">
+                     TooltipDescription="{=ladys_favour_description_str}The Damsel conjures a vision of the Lady of the Lake to guide Bretonnians into the frey. Grants 25% attack speed bonus in a 10 meter radius.">
         <LightColorRGB x="255"
                        y="170"
                        z="0"

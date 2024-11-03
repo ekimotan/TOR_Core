@@ -29,4 +29,12 @@ public static class MobilePartyPatches
         
         return true;
     }
+
+    [HarmonyPrefix]
+    [HarmonyPatch(typeof(HeroSpawnCampaignBehavior), "CalculateScoreToCreateParty")]
+    public static bool GiveHighScore(ref float __result)
+    {
+        __result = 999f;
+        return false;
+    }
 }
