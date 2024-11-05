@@ -1,7 +1,12 @@
 ﻿using System.Collections.Generic;
+using TaleWorlds.CampaignSystem;
 using TaleWorlds.Core;
+using TaleWorlds.MountAndBlade;
 using TOR_Core.AbilitySystem;
+using TOR_Core.BattleMechanics.DamageSystem;
 using TOR_Core.CampaignMechanics.Choices;
+using TOR_Core.Extensions;
+using TOR_Core.Extensions.ExtendedInfoSystem;
 using TOR_Core.Utilities;
 
 namespace TOR_Core.CharacterDevelopment.CareerSystem.Choices;
@@ -155,40 +160,51 @@ public class KnightOldWorldCareerChoices(CareerObject id) : TORCareerChoicesBase
 
     protected override void InitializePassives()
     {
-        _secularOrdersPassive1.Initialize(CareerID, "Increases Party size by 10.", "SecularOrders", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(10, PassiveEffectType.PartySize));
-        _secularOrdersPassive2.Initialize(CareerID, "Increases Party size by 10.", "SecularOrders", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(10, PassiveEffectType.PartySize));
-        _secularOrdersPassive3.Initialize(CareerID, "Increases Party size by 10.", "SecularOrders", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(10, PassiveEffectType.PartySize));
-        _secularOrdersPassive4.Initialize(CareerID, "Increases Party size by 10.", "SecularOrders", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(10, PassiveEffectType.PartySize));
+        _secularOrdersPassive1.Initialize(CareerID, "All Knight troops wages are reduced by 25%.", "SecularOrders", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(-25, PassiveEffectType.TroopUpgradeCost, true, 
+            characterObject => characterObject.IsKnightUnit()));
+        _secularOrdersPassive2.Initialize(CareerID, "All Knight troops receive 30 bonus points in their Two handed skill.", "SecularOrders", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(30, PassiveEffectType.Special)); //
+        _secularOrdersPassive3.Initialize(CareerID,"Allow to add secular seals.","SecularOrders",false,ChoiceType.Passive); 
+        _secularOrdersPassive4.Initialize(CareerID, "Increase damage against green skins by 20%.", "SecularOrders", false, ChoiceType.Passive, null,new CareerChoiceObject.PassiveEffect(20, PassiveEffectType.Special,true));
         
-        _pathOfConquestPassive1.Initialize(CareerID, "Increases Party size by 10.", "PathOfConquest", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(10, PassiveEffectType.PartySize));
-        _pathOfConquestPassive2.Initialize(CareerID, "Increases Party size by 10.", "PathOfConquest", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(10, PassiveEffectType.PartySize));
-        _pathOfConquestPassive3.Initialize(CareerID, "Increases Party size by 10.", "PathOfConquest", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(10, PassiveEffectType.PartySize));
-        _pathOfConquestPassive4.Initialize(CareerID, "Increases Party size by 10.", "PathOfConquest", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(10, PassiveEffectType.PartySize));
+        _pathOfConquestPassive1.Initialize(CareerID, "Extra melee damage (10%).", "PathOfConquest", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(PassiveEffectType.Damage, new DamageProportionTuple(DamageType.Physical, 10), AttackTypeMask.Melee));
+        _pathOfConquestPassive2.Initialize(CareerID, "Party movement speed is increased by 2.", "PathOfConquest", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(2, PassiveEffectType.PartyMovementSpeed));
+        _pathOfConquestPassive3.Initialize(CareerID, "Horse charge damage is increased by 40%.", "PathOfConquest", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(40, PassiveEffectType.HorseChargeDamage, true));
+        _pathOfConquestPassive4.Initialize(CareerID, "All Knight troops receive 30 bonus points in their Polearm-skill.", "PathOfConquest", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(30, PassiveEffectType.Special)); //
         
-        _squiresPassive1.Initialize(CareerID, "Increases Party size by 10.", "Squires", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(10, PassiveEffectType.PartySize));
-        _squiresPassive2.Initialize(CareerID, "Increases Party size by 10.", "Squires", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(10, PassiveEffectType.PartySize));
-        _squiresPassive3.Initialize(CareerID, "Increases Party size by 10.", "Squires", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(10, PassiveEffectType.PartySize));
-        _squiresPassive4.Initialize(CareerID, "Increases Party size by 10.", "Squires", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(10, PassiveEffectType.PartySize));
+        _squiresPassive1.Initialize(CareerID, "Increases Hitpoints by 50.", "Squires", false, ChoiceType.Passive, null,new CareerChoiceObject.PassiveEffect(30, PassiveEffectType.Health));
+        _squiresPassive2.Initialize(CareerID, "All Knight troops wages are reduced by 25%.", "Squires", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(-25, PassiveEffectType.TroopWages, true, 
+            characterObject => characterObject.IsKnightUnit()));
+        _squiresPassive3.Initialize(CareerID, "Wounded troops in your party heal faster.", "Squires", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(2, PassiveEffectType.TroopRegeneration));
+        _squiresPassive4.Initialize(CareerID, "Battles against non-humans provide 100% prestige gain.", "Squires", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(30, PassiveEffectType.Special)); //
         
-        _templarOrdersPassive1.Initialize(CareerID, "Increases Party size by 10.", "TemplarOrders", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(10, PassiveEffectType.PartySize)); 
-        _templarOrdersPassive2.Initialize(CareerID, "Increases Party size by 10.", "TemplarOrders", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(10, PassiveEffectType.PartySize)); 
-        _templarOrdersPassive3.Initialize(CareerID, "Increases Party size by 10.", "TemplarOrders", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(10, PassiveEffectType.PartySize)); 
-        _templarOrdersPassive4.Initialize(CareerID, "Increases Party size by 10.", "TemplarOrders", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(10, PassiveEffectType.PartySize)); 
+        _templarOrdersPassive1.Initialize(CareerID, "Increases Hitpoints by 30.", "TemplarOrders", false, ChoiceType.Passive, null,new CareerChoiceObject.PassiveEffect(30, PassiveEffectType.Health));
+        _templarOrdersPassive2.Initialize(CareerID,"kills add faith skill.","TemplarOrders",false,ChoiceType.Passive);
+        _templarOrdersPassive3.Initialize(CareerID, "Having matching knights of deity increase their damage by 20%", "PathOfViligance", false, ChoiceType.Passive, null,
+            new CareerChoiceObject.PassiveEffect(PassiveEffectType.Damage, new DamageProportionTuple(DamageType.Physical, 20), AttackTypeMask.All,
+                (attacker, victim, mask) => attacker.Character.IsKnightUnit() && attacker.BelongsToMainParty() && mask == AttackTypeMask.Melee && Hero.MainHero.GetDominantReligion().ReligiousTroops.Contains((CharacterObject)attacker.Character)));
+        _templarOrdersPassive4.Initialize(CareerID, "Bonus damage against undead", "PathOfViligance", false, ChoiceType.Passive, null,
+            new CareerChoiceObject.PassiveEffect(PassiveEffectType.Damage, new DamageProportionTuple(DamageType.Physical, 20), AttackTypeMask.All,
+                (attacker, victim, mask) => victim.IsUndead() && attacker.IsMainAgent  && mask == AttackTypeMask.Melee  ));
         
-        _pathOfViligancePassive1.Initialize(CareerID, "Increases Party size by 10.", "PathOfViligance", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(10, PassiveEffectType.PartySize)); 
-        _pathOfViligancePassive2.Initialize(CareerID, "Increases Party size by 10.", "PathOfViligance", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(10, PassiveEffectType.PartySize)); 
-        _pathOfViligancePassive3.Initialize(CareerID, "Increases Party size by 10.", "PathOfViligance", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(10, PassiveEffectType.PartySize)); 
-        _pathOfViligancePassive4.Initialize(CareerID, "Increases Party size by 10.", "PathOfViligance", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(10, PassiveEffectType.PartySize)); 
+        _pathOfViligancePassive1.Initialize(CareerID, "50% additional Hitpoints for the player's mount.", "PathOfViligance", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(50, PassiveEffectType.HorseHealth, true)); 
+        _pathOfViligancePassive2.Initialize(CareerID, "Gain 15% physical resistance to melee and ranged attacks.", "PathOfViligance", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(PassiveEffectType.Resistance, new DamageProportionTuple(DamageType.Physical, 15), AttackTypeMask.Ranged | AttackTypeMask.Melee)); 
+        _pathOfViligancePassive3.Initialize(CareerID,"Hits below 15 damage do not stagger the player.","PathOfViligance",false,ChoiceType.Passive);
+        _pathOfViligancePassive4.Initialize(CareerID, "Wielding a shield increases wardsave.", "PathOfViligance", false, ChoiceType.Passive, null,
+            new CareerChoiceObject.PassiveEffect(PassiveEffectType.Resistance, new DamageProportionTuple(DamageType.All, 35), AttackTypeMask.All,
+                (attacker, victim, mask) => victim.IsMainAgent && victim.WieldedOffhandWeapon.IsShield() ));
         
-        _wrathAgainstChaosPassive1.Initialize(CareerID, "Increases Party size by 10.", "WrathAgainstChaos", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(10, PassiveEffectType.PartySize)); 
-        _wrathAgainstChaosPassive2.Initialize(CareerID, "Increases Party size by 10.", "WrathAgainstChaos", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(10, PassiveEffectType.PartySize)); 
-        _wrathAgainstChaosPassive3.Initialize(CareerID, "Increases Party size by 10.", "WrathAgainstChaos", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(10, PassiveEffectType.PartySize)); 
-        _wrathAgainstChaosPassive4.Initialize(CareerID, "Increases Party size by 10.", "WrathAgainstChaos", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(10, PassiveEffectType.PartySize)); 
+        _wrathAgainstChaosPassive1.Initialize(CareerID, "All units deal more damage against chaos.", "WrathAgainstChaos", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(PassiveEffectType.TroopDamage, new DamageProportionTuple(DamageType.Holy, 15), AttackTypeMask.All,
+            (attacker, victim, mask) => victim.Character.Race != 0));
+        _wrathAgainstChaosPassive2.Initialize(CareerID, "Gain 35% Magic Resistance.", "WrathAgainstChaos", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(PassiveEffectType.Resistance, new DamageProportionTuple(DamageType.Magical, 35), AttackTypeMask.Spell)); 
+        _wrathAgainstChaosPassive3.Initialize(CareerID, "Weapon swing speed increased by 15%.", "SwiftProcedure", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(15f, PassiveEffectType.SwingSpeed,true)); 
+        _wrathAgainstChaosPassive4.Initialize(CareerID, "Extra 25% armor penetration of melee attacks.", "WrathAgainstChaos", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(-25, PassiveEffectType.ArmorPenetration, AttackTypeMask.Melee));
         
-        _pathOfGloryPassive1.Initialize(CareerID, "Increases Party size by 10.", "PathOfGlory", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(10, PassiveEffectType.PartySize)); 
-        _pathOfGloryPassive2.Initialize(CareerID, "Increases Party size by 10.", "PathOfGlory", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(10, PassiveEffectType.PartySize)); 
-        _pathOfGloryPassive3.Initialize(CareerID, "Increases Party size by 10.", "PathOfGlory", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(10, PassiveEffectType.PartySize)); 
-        _pathOfGloryPassive4.Initialize(CareerID, "Increases Party size by 10.", "PathOfGlory", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(10, PassiveEffectType.PartySize)); 
+        _pathOfGloryPassive1.Initialize(CareerID, "Increases Hitpoints by 30.", "PathOfGlory", false, ChoiceType.Passive, null,new CareerChoiceObject.PassiveEffect(30, PassiveEffectType.Health)); 
+        _pathOfGloryPassive2.Initialize(CareerID, "10% Ward save for all knight units.", "PathOfGlory", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(PassiveEffectType.TroopResistance, new DamageProportionTuple(DamageType.All, 10), AttackTypeMask.Spell, 
+            (attacker, victim, mask) =>  !victim.BelongsToMainParty()&& !victim.IsHero && victim.Character.IsKnightUnit()));
+        _pathOfGloryPassive3.Initialize(CareerID, "Gain 15% Ward save.", "PathOfGlory", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(PassiveEffectType.Resistance, new DamageProportionTuple(DamageType.All,15),AttackTypeMask.All));
+        _pathOfGloryPassive4.Initialize(CareerID, "Seal effects are 33% more effective.", "PathOfGlory", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(30, PassiveEffectType.Special)); //
+
 
     }
 }

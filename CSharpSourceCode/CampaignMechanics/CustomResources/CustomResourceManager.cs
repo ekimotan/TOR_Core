@@ -257,6 +257,26 @@ namespace TOR_Core.CampaignMechanics.CustomResources
                 if (MobileParty.MainParty.HasBlessing("cult_of_sigmar")) renownChange *= 1.2f;
 
 
+
+                if (Hero.MainHero.HasCareerChoice("SquiresPassive4"))
+                {
+                    var eventSide = mapEvent.GetMapEventSide(mapEvent.DefeatedSide);
+
+                    foreach (var party in eventSide.Parties)
+                    {
+                        if (party.Party.LeaderHero!=null && (party.Party.LeaderHero.CharacterObject.Race !=0))
+                        {
+
+                            if (renownChange > 0)
+                            {
+                                renownChange *= 2;
+                            }
+               
+                            break;
+                        }
+                    }
+                }
+                
                 if (Hero.MainHero.HasCareerChoice("HolyPurgePassive2"))
                 {
                     var eventSide = mapEvent.GetMapEventSide(mapEvent.DefeatedSide);

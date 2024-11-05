@@ -381,7 +381,7 @@ namespace TOR_Core.BattleMechanics
                 }
 
 
-                if (choices.Contains("SilverHammerPassive1"))
+                if (choices.Contains("SilverHammerPassive1") || choices.Contains("TemplarOrdersPassive2"))
                 {
                     var choice = TORCareerChoices.GetChoice("SilverHammerPassive1");
 

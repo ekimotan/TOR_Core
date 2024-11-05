@@ -186,6 +186,20 @@ namespace TOR_Core.Models
                                 if (choice.Passive != null)
                                     resultNumber.Add(choice.GetPassiveValue(), choice.BelongsToGroup.Name);
                             }
+                            
+                            if (skill == DefaultSkills.OneHanded || skill == DefaultSkills.TwoHanded && choices.Contains("SecularOrdersPassive2") && agent.Character.IsKnightUnit())
+                            {
+                                var choice = TORCareerChoices.GetChoice("SecularOrdersPassive2");
+                                if (choice.Passive != null)
+                                    resultNumber.Add(choice.GetPassiveValue(), choice.BelongsToGroup.Name);
+                            }
+                            
+                            if (skill == DefaultSkills.Polearm && choices.Contains("PathOfConquestPassive4") && agent.Character.IsKnightUnit())
+                            {
+                                var choice = TORCareerChoices.GetChoice("PathOfConquestPassive4");
+                                if (choice.Passive != null)
+                                    resultNumber.Add(choice.GetPassiveValue(), choice.BelongsToGroup.Name);
+                            }
 
                             if (skill == DefaultSkills.Polearm && choices.Contains("CurseOfMousillonPassive2") && agent.Character.IsKnightUnit())
                             {
