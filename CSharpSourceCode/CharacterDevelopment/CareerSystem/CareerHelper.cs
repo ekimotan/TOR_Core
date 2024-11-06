@@ -9,6 +9,7 @@ using TaleWorlds.CampaignSystem.Party;
 using TaleWorlds.CampaignSystem.Roster;
 using TaleWorlds.Core;
 using TaleWorlds.Library;
+using TaleWorlds.LinQuick;
 using TaleWorlds.Localization;
 using TaleWorlds.MountAndBlade;
 using TOR_Core.AbilitySystem;
@@ -482,6 +483,23 @@ namespace TOR_Core.CharacterDevelopment.CareerSystem
             if(Hero.MainHero.HasCareer(TORCareers.ImperialMagister))
             {
                 RemovePowerstone(mobilePartyinfo.TroopAttributes[troopId]);
+            }
+        }
+
+        public static void PuritySealAssignment(Agent agent)
+        {
+            MobilePartyExtendedInfo extendedInfo = ExtendedInfoManager.Instance.GetPartyInfoFor(Hero.MainHero.StringId);
+            
+            var button =  CareerHelper.GetCareerButton() as KnightOldWorldCareerButtonBehavior;
+
+            var seals = button.GetAllPuritySeals();
+            
+            extendedInfo.TroopAttributes.TryGetValue(agent.Character.StringId , out var attributes);
+           
+            
+            foreach (var seal in attributes.Select(attribute => seals.FirstOrDefaultQ(x=> x.SealId == attribute)).Where(seal => seal?.WeaponEffect != null))
+            {
+                AddMissionPermanentEffect(agent,seal.WeaponEffect);
             }
         }
     }

@@ -548,6 +548,7 @@ namespace TOR_Core.Extensions
 
         public static DevotionLevel GetDevotionLevelForReligion(this Hero hero, ReligionObject religion)
         {
+            if (religion == null) return DevotionLevel.None;
             var info = hero.GetExtendedInfo();
             int value = 0;
             if ((bool)(info?.ReligionDevotionLevels?.TryGetValue(religion.StringId, out value)))

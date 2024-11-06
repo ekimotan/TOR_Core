@@ -80,6 +80,11 @@ namespace TOR_Core.BattleMechanics.StatusEffect
                 return;
             }
 
+            if (agent.BelongsToMainParty() && Hero.MainHero.HasCareer(TORCareers.KnightOldWorld))
+            {
+                CareerHelper.PuritySealAssignment(agent);
+            }
+
             if (agent.GetOriginMobileParty().HasBlessing("cult_of_loec"))
             {
                 CareerHelper.AddDefaultPermanentMissionEffect(agent,"loec_blessing_mvs");

@@ -1318,6 +1318,63 @@
   <string id="career_description.Spellsinger" text="{=career_description_spellsinger_str}Spellsingers have a unique bond with Athel Loren, they are bound to the forest through magical ritual, giving then the same communal awareness that dryads or treekin enjoy, without sacrificing their individuality. While the lesser Spellsingers commune with the forest, the greater ones can reshape it for building of homes or destruction of enemies. In Athel Loren Spellsingers are artists and mages, and invariably are the ones that travel outside the forest to engage in rare diplomacy. While both men and women become Spellsingers, the women typically become stronger due to Ariel's bond with the forest of Athel Loren." />
 
 
+  <string id="TORKnightPuritySealName.SecularSeal1" text="{=tor_knightpuritysealname_secular_1_str}Lesser Secular Seal" />
+  <string id="TORKnightPuritySealName.SecularSeal2" text="{=tor_knightpuritysealname_secular_2_str}Secular Seal" />
+  <string id="TORKnightPuritySealName.SecularSeal3" text="{=tor_knightpuritysealname_secular_3_str}Greater Secular Seal" />
+
+  <string id="TORKnightPuritySealName.SigmarSeal1" text="{=tor_knightpuritysealname_sigmar_1_str}Lesser Sigmar Seal" />
+  <string id="TORKnightPuritySealName.SigmarSeal2" text="{=tor_knightpuritysealname_sigmar_2_str}Sigmar Seal" />
+  <string id="TORKnightPuritySealName.SigmarSeal3" text="{=tor_knightpuritysealname_sigmar_3_str}Greater Sigmar Seal" />
+
+  <string id="TORKnightPuritySealName.TaalSeal1" text="{=tor_knightpuritysealname_sigmar_1_str}Lesser Taal Seal" />
+  <string id="TORKnightPuritySealName.TaalSeal2" text="{=tor_knightpuritysealname_sigmar_2_str}Taal Seal" />
+  <string id="TORKnightPuritySealName.TaalSeal3" text="{=tor_knightpuritysealname_sigmar_3_str}Greater Taal Seal" />
+ 
+  <string id="TORKnightPuritySealName.UlricSeal1" text="{=tor_knightpuritysealname_sigmar_1_str}Lesser Ulric Seal" />
+  <string id="TORKnightPuritySealName.Ulriceal2" text="{=tor_knightpuritysealname_sigmar_2_str}Ulric Seal" />
+  <string id="TORKnightPuritySealName.UlricSeal3" text="{=tor_knightpuritysealname_sigmar_3_str}Greater Ulric Seal" />
+
+  <string id="TORKnightPuritySealName.ManaanSeal1" text="{=tor_knightpuritysealname_sigmar_1_str}Lesser Manaan Seal" />
+  <string id="TORKnightPuritySealName.ManaanSeal2" text="{=tor_knightpuritysealname_sigmar_2_str}Manaan Seal" />
+  <string id="TORKnightPuritySealName.ManaanSeal3" text="{=tor_knightpuritysealname_sigmar_3_str}Greater Manaan Seal" />
+  
+  <string id="TORKnightPuritySealName.ShallyaSeal1" text="{=tor_knightpuritysealname_sigmar_1_str}Lesser Shallya Seal" />
+  <string id="TORKnightPuritySealName.ShallyaSeal2" text="{=tor_knightpuritysealname_sigmar_2_str}Shallya Seal" />
+  <string id="TORKnightPuritySealName.ShallyaSeal3" text="{=tor_knightpuritysealname_sigmar_3_str}Greater Shallya Seal" />
+  
+  
+  
+    <string id="TORKnightPuritySealDescription.SecularSeal1" text="{=tor_knightpuritysealdescription_secular_1_str}10% Physical Damage" />
+  <string id="TORKnightPuritySealDescription.SecularSeal2" text="{=tor_knightpuritysealdescription_secular_2_str}25% Wage reduction" />
+  <string id="TORKnightPuritySealDescription.SecularSeal3" text="{=tor_knightpuritysealdescription_secular_3_str}25% Charge bonus" />
+
+  <string id="TORKnightPuritySealDescription.SigmarSeal1" text="{=tor_knightpuritysealdescription_sigmar_1_str}20% Physical Damage" />
+  <string id="TORKnightPuritySealDescription.SigmarSeal2" text="{=tor_knightpuritysealdescription_sigmar_2_str}15% Wardsave" />
+  <string id="TORKnightPuritySealDescription.SigmarSeal3" text="{=tor_knightpuritysealdescription_sigmar_3_str}2% more Prestige per unit (stacking)" />
+
+  <string id="TORKnightPuritySealDescription.TaalSeal1" text="{=tor_knightpuritysealdescription_taal_1_str}25% Ranged Protection" />
+  <string id="TORKnightPuritySealDescription.TaalSeal2" text="{=tor_knightpuritysealdescription_taal_1_str}15% Wardsave" />
+  <string id="TORKnightPuritySealDescription.TaalSeal3" text="{=tor_knightpuritysealdescription_taal_1_str}0.01 More Movement speed on campaignmap per unit (stacking)" />
+ 
+  <string id="TORKnightPuritySealDescription.UlricSeal1" text="{=tor_knightpuritysealdescription_ulric_1_str}5% Wardsave" />
+  <string id="TORKnightPuritySealDescription.UlricSeal2" text="{=tor_knightpuritysealdescription_ulric_1_str}Unstoppable" />
+  <string id="TORKnightPuritySealDescription.UlricSeal3" text="{=tor_knightpuritysealdescription_ulric_1_str}20% Armor Penetration" />
+
+  <string id="TORKnightPuritySealDescription.ManaanSeal1" text="{=tor_knightpuritysealdescription_manaan_1_str}25% Charge Bonus" />
+  <string id="TORKnightPuritySealDescription.ManaanSeal2" text="{=tor_knightpuritysealdescription_manaan_1_str}20% Lightning Damage" />
+  <string id="TORKnightPuritySealDescription.ManaanSeal3" text="{=tor_knightpuritysealdescription_manaan_1_str}50% Magical Resistance" />
+  
+  <string id="TORKnightPuritySealDescription.ShallyaSeal1" text="{=tor_knightpuritysealdescription_shallya_1_str}20% Magical Resistance" />
+  <string id="TORKnightPuritySealDescription.ShallyaSeal2" text="{=tor_knightpuritysealdescription_shallya_1_str}25% Wardsave" />
+  <string id="TORKnightPuritySealDescription.ShallyaSeal3" text="{=tor_knightpuritysealdescription_shallya_1_str}0.01 healing rate for party" />
+  
+  
+  
+  
+  
+  
+  
+
   <!--TOR Information and data !-->
 
   <string id="tor_extendedInfo.Undead" text="{=tor_extendedInfo_undead_str}Undead- Is not affected by morale and instead of fleeing this unit crumble. If defeated, unit cannot be wounded."/>
