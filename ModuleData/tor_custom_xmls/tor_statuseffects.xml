@@ -1785,7 +1785,7 @@
 	
 	<StatusEffectTemplate
 		id="kow_taal_res_range"
-		particle_id="general_life_buff"
+		particle_id=""
 		do_not_attach_to_agent_skeleton="true"
 		base_effect_value="0.30"
 		applies_for_attack_type="Ranged"
@@ -1794,7 +1794,7 @@
 	</StatusEffectTemplate>
 
 	<StatusEffectTemplate
-		id="kow_ulric_res_ward"
+		id="kow_taal_res_ward"
 		particle_id=""
 		do_not_attach_to_agent_skeleton="true"
 		base_effect_value="0.15"
@@ -1811,6 +1811,36 @@
 		applies_for_attack_type="All"
 		type="Resistance"
 		damage_type="All">
+	</StatusEffectTemplate>
+
+	<StatusEffectTemplate
+		id="kow_shallya_unstoppable"
+		particle_id=""
+		do_not_attach_to_agent_skeleton="true"
+		applies_for_attack_type="All"
+		type="TemporaryAttributeOnly"
+		damage_type="Physical">
+		<temporary_attribute>Unstoppable</temporary_attribute>	
+	</StatusEffectTemplate>
+	
+	<StatusEffectTemplate
+		id="kow_manaan_charge"
+		particle_id=""
+		do_not_attach_to_agent_skeleton="true"
+		applies_for_attack_type="All"
+		type="TemporaryAttributeOnly"
+		damage_type="Physical">
+		<temporary_attribute>KOWChargeBonus</temporary_attribute>	
+	</StatusEffectTemplate>
+
+	<StatusEffectTemplate
+		id="kow_shallya_res_magic"
+		particle_id=""
+		do_not_attach_to_agent_skeleton="true"
+		base_effect_value="0.45"
+		applies_for_attack_type="All"
+		type="Resistance"
+		damage_type="Magical">
 	</StatusEffectTemplate>
 	
 	
