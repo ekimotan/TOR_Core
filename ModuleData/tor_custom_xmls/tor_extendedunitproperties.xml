@@ -1107,6 +1107,7 @@
     <DamageProportions>
       <DamageProportionTuple DamageType="Physical" Percent="1.00" />
     </DamageProportions>
+    <ResourceCost ResourceType="ForestHarmony" UpkeepCost="0" UpgradeCost="15" />
   </CharacterExtendedInfo>
   <CharacterExtendedInfo id="tor_we_wild_rider">
     <Abilities />
@@ -1129,7 +1130,7 @@
     <DamageProportions>
       <DamageProportionTuple DamageType="Physical" Percent="1.00" />
     </DamageProportions>
-    <ResourceCost ResourceType="ForestHarmony" UpkeepCost="0" UpgradeCost="30" />
+    <ResourceCost ResourceType="ForestHarmony" UpkeepCost="0" UpgradeCost="45" />
   </CharacterExtendedInfo>
   <CharacterExtendedInfo id="tor_we_dryad">
     <Abilities />
@@ -1670,7 +1671,7 @@
       <string>Expendable</string>
     </Attributes>
     <Resistances>
-      <ResistanceTuple ResistedDamageType="Fire" ReductionPercent="-0.10" />
+      <ResistanceTuple ResistedDamageType="Holy" ReductionPercent="-0.50" />
     </Resistances>
     <DamageAmplifiers />
     <DamageProportions>
@@ -1684,7 +1685,7 @@
       <string>Expendable</string>
     </Attributes>
     <Resistances>
-      <ResistanceTuple ResistedDamageType="Fire" ReductionPercent="-0.10" />
+      <ResistanceTuple ResistedDamageType="Holy" ReductionPercent="-0.50" />
     </Resistances>
     <DamageAmplifiers />
     <DamageProportions>
@@ -1698,7 +1699,7 @@
       <string>Expendable</string>
     </Attributes>
     <Resistances>
-      <ResistanceTuple ResistedDamageType="Fire" ReductionPercent="-0.10" />
+      <ResistanceTuple ResistedDamageType="Holy" ReductionPercent="-0.50" />
     </Resistances>
     <DamageAmplifiers />
     <DamageProportions>
@@ -1713,7 +1714,7 @@
       <string>Expendable</string>
     </Attributes>
     <Resistances>
-      <ResistanceTuple ResistedDamageType="Fire" ReductionPercent="-0.10" />
+      <ResistanceTuple ResistedDamageType="Holy" ReductionPercent="-0.50" />
     </Resistances>
     <DamageAmplifiers />
     <DamageProportions>
@@ -1727,7 +1728,7 @@
       <string>Undead</string>
     </Attributes>
     <Resistances>
-      <ResistanceTuple ResistedDamageType="Fire" ReductionPercent="-0.10" />
+      <ResistanceTuple ResistedDamageType="Holy" ReductionPercent="-0.50" />
     </Resistances>
     <DamageAmplifiers />
     <DamageProportions>
@@ -1741,7 +1742,7 @@
       <string>Undead</string>
     </Attributes>
     <Resistances>
-      <ResistanceTuple ResistedDamageType="Fire" ReductionPercent="-0.10" />
+      <ResistanceTuple ResistedDamageType="Holy" ReductionPercent="-0.50" />
     </Resistances>
     <DamageAmplifiers>
       <AmplifierTuple AmplifiedDamageType="Physical" DamageAmplifier="0.40" />
@@ -1757,7 +1758,7 @@
       <string>Undead</string>
     </Attributes>
     <Resistances>
-      <ResistanceTuple ResistedDamageType="Fire" ReductionPercent="-0.10" />
+      <ResistanceTuple ResistedDamageType="Holy" ReductionPercent="-0.50" />
     </Resistances>
     <DamageAmplifiers>
       <AmplifierTuple AmplifiedDamageType="Physical" DamageAmplifier="0.40" />
@@ -1774,7 +1775,7 @@
       <string>Expendable</string>
     </Attributes>
     <Resistances>
-      <ResistanceTuple ResistedDamageType="Fire" ReductionPercent="-0.10" />
+      <ResistanceTuple ResistedDamageType="Holy" ReductionPercent="-0.50" />
     </Resistances>
     <DamageAmplifiers />
     <DamageProportions>
@@ -1789,7 +1790,7 @@
       <string>Expendable</string>
     </Attributes>
     <Resistances>
-      <ResistanceTuple ResistedDamageType="Fire" ReductionPercent="-0.10" />
+      <ResistanceTuple ResistedDamageType="Holy" ReductionPercent="-0.50" />
     </Resistances>
     <DamageAmplifiers />
     <DamageProportions>
@@ -1803,7 +1804,7 @@
       <string>Undead</string>
     </Attributes>
     <Resistances>
-      <ResistanceTuple ResistedDamageType="Fire" ReductionPercent="-0.10" />
+      <ResistanceTuple ResistedDamageType="Holy" ReductionPercent="-0.50" />
     </Resistances>
     <DamageAmplifiers />
     <DamageProportions>
@@ -1817,7 +1818,7 @@
       <string>Undead</string>
     </Attributes>
     <Resistances>
-      <ResistanceTuple ResistedDamageType="Fire" ReductionPercent="-0.10" />
+      <ResistanceTuple ResistedDamageType="Holy" ReductionPercent="-0.50" />
     </Resistances>
     <DamageAmplifiers>
       <AmplifierTuple AmplifiedDamageType="Physical" DamageAmplifier="0.40" />
@@ -1833,7 +1834,7 @@
       <string>Undead</string>
     </Attributes>
     <Resistances>
-      <ResistanceTuple ResistedDamageType="Fire" ReductionPercent="-0.10" />
+      <ResistanceTuple ResistedDamageType="Holy" ReductionPercent="-0.50" />
     </Resistances>
     <DamageAmplifiers>
       <AmplifierTuple AmplifiedDamageType="Physical" DamageAmplifier="0.40" />
@@ -1849,7 +1850,7 @@
       <string>Undead</string>
     </Attributes>
     <Resistances>
-      <ResistanceTuple ResistedDamageType="Fire" ReductionPercent="-0.10" />
+      <ResistanceTuple ResistedDamageType="Holy" ReductionPercent="-0.50" />
     </Resistances>
     <DamageAmplifiers>
       <AmplifierTuple AmplifiedDamageType="Physical" DamageAmplifier="0.40" />
@@ -1866,7 +1867,7 @@
     </Attributes>
     <Resistances>
       <ResistanceTuple ResistedDamageType="Physical" ReductionPercent="0.10" />
-      <ResistanceTuple ResistedDamageType="Fire" ReductionPercent="-0.10" />
+      <ResistanceTuple ResistedDamageType="Holy" ReductionPercent="-0.50" />
     </Resistances>
     <DamageAmplifiers>
       <AmplifierTuple AmplifiedDamageType="Physical" DamageAmplifier="0.40" />
@@ -1883,7 +1884,7 @@
     </Attributes>
     <Resistances>
       <ResistanceTuple ResistedDamageType="Physical" ReductionPercent="0.75" />
-      <ResistanceTuple ResistedDamageType="Fire" ReductionPercent="-0.10" />
+      <ResistanceTuple ResistedDamageType="Holy" ReductionPercent="-0.50" />
     </Resistances>
     <DamageAmplifiers>
       <AmplifierTuple AmplifiedDamageType="Magical" DamageAmplifier="0.25" />
@@ -1901,7 +1902,7 @@
     </Attributes>
     <Resistances>
       <ResistanceTuple ResistedDamageType="Physical" ReductionPercent="0.75" />
-      <ResistanceTuple ResistedDamageType="Fire" ReductionPercent="-0.10" />
+      <ResistanceTuple ResistedDamageType="Holy" ReductionPercent="-0.50" />
     </Resistances>
     <DamageAmplifiers>
       <AmplifierTuple AmplifiedDamageType="Magical" DamageAmplifier="0.25" />
@@ -1919,7 +1920,7 @@
     </Attributes>
     <Resistances>
       <ResistanceTuple ResistedDamageType="Physical" ReductionPercent="0.75" />
-      <ResistanceTuple ResistedDamageType="Fire" ReductionPercent="-0.10" />
+      <ResistanceTuple ResistedDamageType="Holy" ReductionPercent="-0.50" />
     </Resistances>
     <DamageAmplifiers>
       <AmplifierTuple AmplifiedDamageType="Magical" DamageAmplifier="0.25" />
@@ -1937,7 +1938,7 @@
     </Attributes>
     <Resistances>
       <ResistanceTuple ResistedDamageType="Physical" ReductionPercent="0.75" />
-      <ResistanceTuple ResistedDamageType="Fire" ReductionPercent="-0.10" />
+      <ResistanceTuple ResistedDamageType="Holy" ReductionPercent="-0.50" />
     </Resistances>
     <DamageAmplifiers>
       <AmplifierTuple AmplifiedDamageType="Magical" DamageAmplifier="0.25" />
@@ -1955,7 +1956,7 @@
     </Attributes>
     <Resistances>
       <ResistanceTuple ResistedDamageType="Physical" ReductionPercent="0.75" />
-      <ResistanceTuple ResistedDamageType="Fire" ReductionPercent="-0.10" />
+      <ResistanceTuple ResistedDamageType="Holy" ReductionPercent="-0.50" />
     </Resistances>
     <DamageAmplifiers>
       <AmplifierTuple AmplifiedDamageType="Magical" DamageAmplifier="0.25" />
@@ -1972,7 +1973,7 @@
       <string>Unbreakable</string>
     </Attributes>
     <Resistances>
-      <ResistanceTuple ResistedDamageType="Fire" ReductionPercent="-0.10" />
+      <ResistanceTuple ResistedDamageType="Holy" ReductionPercent="-0.50" />
     </Resistances>
     <DamageAmplifiers />
     <DamageProportions>
@@ -1986,7 +1987,7 @@
       <string>Unbreakable</string>
     </Attributes>
     <Resistances>
-      <ResistanceTuple ResistedDamageType="Fire" ReductionPercent="-0.10" />
+      <ResistanceTuple ResistedDamageType="Holy" ReductionPercent="-0.50" />
     </Resistances>
     <DamageAmplifiers />
     <DamageProportions>
@@ -2000,7 +2001,8 @@
       <string>Unbreakable</string>
     </Attributes>
     <Resistances>
-      <ResistanceTuple ResistedDamageType="Fire" ReductionPercent="0.10" />
+      <ResistanceTuple ResistedDamageType="Physical" ReductionPercent="0.10" />
+      <ResistanceTuple ResistedDamageType="Holy" ReductionPercent="-0.50" />
     </Resistances>
     <DamageAmplifiers />
     <DamageProportions>
@@ -2015,7 +2017,7 @@
     </Attributes>
     <Resistances>
       <ResistanceTuple ResistedDamageType="Physical" ReductionPercent="0.20" />
-      <ResistanceTuple ResistedDamageType="Fire" ReductionPercent="-0.10" />
+      <ResistanceTuple ResistedDamageType="Holy" ReductionPercent="-0.50" />
     </Resistances>
     <DamageAmplifiers>
       <AmplifierTuple AmplifiedDamageType="Physical" DamageAmplifier="0.20" />
@@ -2032,7 +2034,7 @@
     </Attributes>
     <Resistances>
       <ResistanceTuple ResistedDamageType="Physical" ReductionPercent="0.10" />
-      <ResistanceTuple ResistedDamageType="Fire" ReductionPercent="-0.10" />
+      <ResistanceTuple ResistedDamageType="Holy" ReductionPercent="-0.50" />
     </Resistances>
     <DamageAmplifiers />
     <DamageProportions>
@@ -2047,7 +2049,7 @@
     </Attributes>
     <Resistances>
       <ResistanceTuple ResistedDamageType="Physical" ReductionPercent="0.20" />
-      <ResistanceTuple ResistedDamageType="Fire" ReductionPercent="-0.10" />
+      <ResistanceTuple ResistedDamageType="Holy" ReductionPercent="-0.50" />
     </Resistances>
     <DamageAmplifiers>
       <AmplifierTuple AmplifiedDamageType="Physical" DamageAmplifier="0.10" />
@@ -2064,7 +2066,7 @@
     </Attributes>
     <Resistances>
       <ResistanceTuple ResistedDamageType="Physical" ReductionPercent="0.30" />
-      <ResistanceTuple ResistedDamageType="Fire" ReductionPercent="-0.10" />
+      <ResistanceTuple ResistedDamageType="Holy" ReductionPercent="-0.50" />
     </Resistances>
     <DamageAmplifiers>
       <AmplifierTuple AmplifiedDamageType="Physical" DamageAmplifier="0.20" />
@@ -2081,7 +2083,7 @@
     </Attributes>
     <Resistances>
       <ResistanceTuple ResistedDamageType="Physical" ReductionPercent="0.30" />
-      <ResistanceTuple ResistedDamageType="Fire" ReductionPercent="-0.10" />
+      <ResistanceTuple ResistedDamageType="Holy" ReductionPercent="-0.50" />
     </Resistances>
     <DamageAmplifiers>
       <AmplifierTuple AmplifiedDamageType="Physical" DamageAmplifier="0.35" />
@@ -2098,7 +2100,7 @@
     </Attributes>
     <Resistances>
       <ResistanceTuple ResistedDamageType="Physical" ReductionPercent="0.10" />
-      <ResistanceTuple ResistedDamageType="Fire" ReductionPercent="-0.10" />
+      <ResistanceTuple ResistedDamageType="Holy" ReductionPercent="-0.50" />
     </Resistances>
     <DamageAmplifiers />
     <DamageProportions>
@@ -2113,7 +2115,7 @@
     </Attributes>
     <Resistances>
       <ResistanceTuple ResistedDamageType="Physical" ReductionPercent="0.10" />
-      <ResistanceTuple ResistedDamageType="Fire" ReductionPercent="-0.10" />
+      <ResistanceTuple ResistedDamageType="Holy" ReductionPercent="-0.50" />
     </Resistances>
     <DamageAmplifiers />
     <DamageProportions>
@@ -2128,7 +2130,7 @@
     </Attributes>
     <Resistances>
       <ResistanceTuple ResistedDamageType="Physical" ReductionPercent="0.10" />
-      <ResistanceTuple ResistedDamageType="Fire" ReductionPercent="-0.10" />
+      <ResistanceTuple ResistedDamageType="Holy" ReductionPercent="-0.50" />
     </Resistances>
     <DamageAmplifiers />
     <DamageProportions>
@@ -3265,7 +3267,9 @@
       <string>Expendable</string>
       <string>Undead</string>
     </Attributes>
-    <Resistances />
+    <Resistances>
+      <ResistanceTuple ResistedDamageType="Holy" ReductionPercent="-0.50" />
+    </Resistances>
     <DamageAmplifiers />
     <DamageProportions>
       <DamageProportionTuple DamageType="Physical" Percent="1.00" />
@@ -3276,7 +3280,9 @@
     <Attributes>
       <string>Undead</string>
     </Attributes>
-    <Resistances />
+    <Resistances>
+      <ResistanceTuple ResistedDamageType="Holy" ReductionPercent="-0.50" />
+    </Resistances>
     <DamageAmplifiers>
       <AmplifierTuple AmplifiedDamageType="Physical" DamageAmplifier="0.40" />
     </DamageAmplifiers>
@@ -3290,7 +3296,9 @@
     <Attributes>
       <string>Undead</string>
     </Attributes>
-    <Resistances />
+    <Resistances>
+      <ResistanceTuple ResistedDamageType="Holy" ReductionPercent="-0.50" />
+    </Resistances>
     <DamageAmplifiers>
       <AmplifierTuple AmplifiedDamageType="Physical" DamageAmplifier="0.40" />
     </DamageAmplifiers>
@@ -3304,7 +3312,9 @@
     <Attributes>
       <string>Undead</string>
     </Attributes>
-    <Resistances />
+    <Resistances>
+      <ResistanceTuple ResistedDamageType="Holy" ReductionPercent="-0.50" />
+    </Resistances>
     <DamageAmplifiers>
       <AmplifierTuple AmplifiedDamageType="Physical" DamageAmplifier="0.40" />
     </DamageAmplifiers>
@@ -3318,7 +3328,9 @@
     <Attributes>
       <string>Undead</string>
     </Attributes>
-    <Resistances />
+    <Resistances>
+      <ResistanceTuple ResistedDamageType="Holy" ReductionPercent="-0.50" />
+    </Resistances>
     <DamageAmplifiers>
       <AmplifierTuple AmplifiedDamageType="Physical" DamageAmplifier="0.40" />
     </DamageAmplifiers>
@@ -3333,7 +3345,9 @@
       <string>Expendable</string>
       <string>Undead</string>
     </Attributes>
-    <Resistances />
+    <Resistances>
+      <ResistanceTuple ResistedDamageType="Holy" ReductionPercent="-0.50" />
+    </Resistances>
     <DamageAmplifiers />
     <DamageProportions>
       <DamageProportionTuple DamageType="Physical" Percent="1.00" />
@@ -3344,7 +3358,9 @@
     <Attributes>
       <string>Undead</string>
     </Attributes>
-    <Resistances />
+    <Resistances>
+      <ResistanceTuple ResistedDamageType="Holy" ReductionPercent="-0.50" />
+    </Resistances>
     <DamageAmplifiers />
     <DamageProportions>
       <DamageProportionTuple DamageType="Physical" Percent="1.00" />
@@ -3356,7 +3372,9 @@
     <Attributes>
       <string>Undead</string>
     </Attributes>
-    <Resistances />
+    <Resistances>
+      <ResistanceTuple ResistedDamageType="Holy" ReductionPercent="-0.50" />
+    </Resistances>
     <DamageAmplifiers />
     <DamageProportions>
       <DamageProportionTuple DamageType="Physical" Percent="1.00" />
@@ -3593,7 +3611,7 @@
       <DamageProportionTuple DamageType="Physical" Percent="0.75" />
       <DamageProportionTuple DamageType="Magical" Percent="0.35" />
     </DamageProportions>
-    <ResourceCost ResourceType="Prestige" UpkeepCost="0" UpgradeCost="15" />
+    <ResourceCost ResourceType="Prestige" UpkeepCost="0" UpgradeCost="10" />
   </CharacterExtendedInfo>
   <CharacterExtendedInfo id="tor_wh_retinue_headhunter">
     <Abilities />
@@ -3604,7 +3622,7 @@
       <DamageProportionTuple DamageType="Physical" Percent="0.75" />
       <DamageProportionTuple DamageType="Magical" Percent="0.50" />
     </DamageProportions>
-    <ResourceCost ResourceType="Prestige" UpkeepCost="0" UpgradeCost="30" />
+    <ResourceCost ResourceType="Prestige" UpkeepCost="0" UpgradeCost="20" />
   </CharacterExtendedInfo>
   <CharacterExtendedInfo id="tor_vc_harbinger_champion">
     <Abilities />
