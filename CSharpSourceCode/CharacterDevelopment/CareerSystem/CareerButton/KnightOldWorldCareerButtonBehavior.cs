@@ -70,9 +70,16 @@ public class KnightOldWorldCareerButtonBehavior(CareerObject career) : CareerBut
             
             inquiryElements.Add(inquiryElement);
         }
+
+        var count = 1;
+
+        if (Hero.MainHero.HasCareerChoice("PathOfGloryPassive4"))
+        {
+            count = 2;
+        }
         
         var inquirydata = new MultiSelectionInquiryData("Choose purity Seal.", "Empower your Knight units with new powerful seals", inquiryElements,
-            true, 1, 1, "Accept", "Cancel", OnSelectedOption, OnCancel, "", false);
+            true, 1, count, "Accept", "Cancel", OnSelectedOption, OnCancel, "", false);
         MBInformationManager.ShowMultiSelectionInquiry(inquirydata);
     }
 
@@ -83,28 +90,36 @@ public class KnightOldWorldCareerButtonBehavior(CareerObject career) : CareerBut
 
     private void OnSelectedOption(List<InquiryElement> elements)
     {
-        var seal = elements[0].Identifier as KnightPuritySeal;
-
-        if (seal == null)
+        var seals =new List<KnightPuritySeal>();
+        foreach (var elem in elements)
         {
-            return;
+            var seal =  elem.Identifier as KnightPuritySeal;
+            seals.Add(seal);
         }
+      
         
         var partyExtendedInfo = ExtendedInfoManager.Instance.GetPartyInfoFor(Hero.MainHero.PartyBelongedTo.StringId);
 
-        var currentSeal = GetCurrentActiveSeal(_setCharacter);
-        if (currentSeal != null)
+        var currentSeals = GetCurrentActiveSeals(_setCharacter);
+        if (currentSeals!=null&& !currentSeals.IsEmpty())
         {
-            partyExtendedInfo.RemoveTroopAttribute(_setCharacter.StringId,currentSeal.SealId);
+            foreach (var elem in currentSeals)
+            {
+                partyExtendedInfo.RemoveTroopAttribute(_setCharacter.StringId,elem.SealId);
+            }
+            
         }
-        
-        partyExtendedInfo.AddTroopAttribute(_setCharacter, seal.SealId);
+
+        foreach (var seal in seals)
+        {
+            partyExtendedInfo.AddTroopAttribute(_setCharacter, seal.SealId);
+        }
         
         if (PartyVMExtension.ViewModelInstance != null) PartyVMExtension.ViewModelInstance.RefreshValues();
 
     }
     
-    private KnightPuritySeal GetCurrentActiveSeal(CharacterObject setCharacter)
+    private List<KnightPuritySeal> GetCurrentActiveSeals(CharacterObject setCharacter)
     {
         if (setCharacter == null) return null;
         var partyExtendedInfo = ExtendedInfoManager.Instance.GetPartyInfoFor(Hero.MainHero.PartyBelongedTo.StringId);
@@ -112,14 +127,24 @@ public class KnightOldWorldCareerButtonBehavior(CareerObject career) : CareerBut
         if (partyExtendedInfo.TroopAttributes.TryGetValue(setCharacter.StringId, out var attributes))
             if (attributes.Count > 0)
             {
-                var seals = GetSecularSeals();
+                var availableSeals = GetSecularSeals();
                 
-                seals.AddRange(GetTemplarPuritySeals());
-                
-                var seal = attributes.Select(attribute => seals.Find(x => x.SealId == attribute))
-                    .FirstOrDefault(x => x != null);
+                availableSeals.AddRange(GetTemplarPuritySeals());
 
-                return seal;
+                var seals = new List<KnightPuritySeal>();
+
+                foreach (var seal in availableSeals)
+                {
+                    foreach (var attribute in attributes)
+                    {
+                        if (seal.SealId == attribute)
+                        {
+                            seals.Add(seal);
+                        }
+                    }
+                }
+
+                return seals;
             }
 
         return null;
@@ -181,11 +206,19 @@ public class KnightOldWorldCareerButtonBehavior(CareerObject career) : CareerBut
     {
         displayText = new TextObject("Add a purity Seal to the Knight");
         
-        var currentSeal = GetCurrentActiveSeal(characterObject);
+        var currentSeals = GetCurrentActiveSeals(characterObject);
 
-        if (currentSeal != null)
+        if (currentSeals != null && !currentSeals.IsEmpty())
         {
-            displayText = currentSeal.Description;
+            displayText = new TextObject("");
+            foreach (var seal in currentSeals)
+            {
+                var text = displayText.ToString(); 
+                text += seal.Description;
+                text += "\n";
+                displayText = new TextObject(text);
+            }
+           
             return true;
         }
         

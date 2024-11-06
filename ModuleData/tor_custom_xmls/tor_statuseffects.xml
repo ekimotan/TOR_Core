@@ -1712,4 +1712,106 @@
 		damage_type="Physical">
 	</StatusEffectTemplate>
 	
+	<StatusEffectTemplate
+		id="kow_secular_phys"
+		particle_id=""
+		do_not_attach_to_agent_skeleton="true"
+		base_effect_value="0.10"
+		applies_for_attack_type="All"
+		type="DamageAmplification"
+		damage_type="Physical">
+		<temporary_attribute>KOWChargeBonus</temporary_attribute>	
+	</StatusEffectTemplate>
+	
+	<StatusEffectTemplate
+		id="kow_secular_charge"
+		particle_id=""
+		do_not_attach_to_agent_skeleton="true"
+		applies_for_attack_type="All"
+		type="TemporaryAttributeOnly"
+		damage_type="Physical">
+		<temporary_attribute>KOWChargeBonus</temporary_attribute>	
+	</StatusEffectTemplate>
+	
+	<StatusEffectTemplate
+		id="kow_sigmar_phys20"
+		particle_id=""
+		do_not_attach_to_agent_skeleton="true"
+		base_effect_value="0.2"
+		applies_for_attack_type="All"
+		type="DamageAmplification"
+		damage_type="Physical">
+	</StatusEffectTemplate>
+	
+	<StatusEffectTemplate
+		id="kow_sigmar_res_ward"
+		particle_id="general_life_buff"
+		do_not_attach_to_agent_skeleton="true"
+		base_effect_value="0.15"
+		applies_for_attack_type="All"
+		type="Resistance"
+		damage_type="All">
+	</StatusEffectTemplate>
+	
+	<StatusEffectTemplate
+		id="kow_ulric_res_ward"
+		particle_id=""
+		do_not_attach_to_agent_skeleton="true"
+		base_effect_value="0.15"
+		applies_for_attack_type="All"
+		type="Resistance"
+		damage_type="All">
+	</StatusEffectTemplate>
+	
+	<StatusEffectTemplate
+		id="kow_ulric_unstop"
+		particle_id=""
+		do_not_attach_to_agent_skeleton="true"
+		applies_for_attack_type="All"
+		type="TemporaryAttributeOnly"
+		damage_type="Physical">
+		<temporary_attribute>Unstoppable</temporary_attribute>	
+	</StatusEffectTemplate>
+	
+	<StatusEffectTemplate
+		id="kow_ulric_pierc"
+		particle_id=""
+		do_not_attach_to_agent_skeleton="true"
+		applies_for_attack_type="All"
+		type="TemporaryAttributeOnly"
+		damage_type="Physical">
+		<temporary_attribute>Piercing</temporary_attribute>	
+	</StatusEffectTemplate>
+	
+	<StatusEffectTemplate
+		id="kow_taal_res_range"
+		particle_id="general_life_buff"
+		do_not_attach_to_agent_skeleton="true"
+		base_effect_value="0.30"
+		applies_for_attack_type="Ranged"
+		type="Resistance"
+		damage_type="Physical">
+	</StatusEffectTemplate>
+
+	<StatusEffectTemplate
+		id="kow_ulric_res_ward"
+		particle_id=""
+		do_not_attach_to_agent_skeleton="true"
+		base_effect_value="0.15"
+		applies_for_attack_type="All"
+		type="Resistance"
+		damage_type="All">
+	</StatusEffectTemplate>
+
+	<StatusEffectTemplate
+		id="kow_shallya_res_ward"
+		particle_id=""
+		do_not_attach_to_agent_skeleton="true"
+		base_effect_value="0.25"
+		applies_for_attack_type="All"
+		type="Resistance"
+		damage_type="All">
+	</StatusEffectTemplate>
+	
+	
 </StatusEffects>

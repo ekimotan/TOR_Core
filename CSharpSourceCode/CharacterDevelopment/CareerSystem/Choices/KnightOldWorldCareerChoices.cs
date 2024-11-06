@@ -179,10 +179,10 @@ public class KnightOldWorldCareerChoices(CareerObject id) : TORCareerChoicesBase
         
         _templarOrdersPassive1.Initialize(CareerID, "Increases Hitpoints by 30.", "TemplarOrders", false, ChoiceType.Passive, null,new CareerChoiceObject.PassiveEffect(30, PassiveEffectType.Health));
         _templarOrdersPassive2.Initialize(CareerID,"kills add faith skill.","TemplarOrders",false,ChoiceType.Passive);
-        _templarOrdersPassive3.Initialize(CareerID, "Having matching knights of deity increase their damage by 20%", "PathOfViligance", false, ChoiceType.Passive, null,
+        _templarOrdersPassive3.Initialize(CareerID, "Having matching knights of deity increase their damage by 20%", "TemplarOrders", false, ChoiceType.Passive, null,
             new CareerChoiceObject.PassiveEffect(PassiveEffectType.Damage, new DamageProportionTuple(DamageType.Physical, 20), AttackTypeMask.All,
                 (attacker, victim, mask) => attacker.Character.IsKnightUnit() && attacker.BelongsToMainParty() && mask == AttackTypeMask.Melee && Hero.MainHero.GetDominantReligion().ReligiousTroops.Contains((CharacterObject)attacker.Character)));
-        _templarOrdersPassive4.Initialize(CareerID, "Bonus damage against undead", "PathOfViligance", false, ChoiceType.Passive, null,
+        _templarOrdersPassive4.Initialize(CareerID, "Bonus damage against undead", "TemplarOrders", false, ChoiceType.Passive, null,
             new CareerChoiceObject.PassiveEffect(PassiveEffectType.Damage, new DamageProportionTuple(DamageType.Physical, 20), AttackTypeMask.All,
                 (attacker, victim, mask) => victim.IsUndead() && attacker.IsMainAgent  && mask == AttackTypeMask.Melee  ));
         

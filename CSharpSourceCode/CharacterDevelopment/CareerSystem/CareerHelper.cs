@@ -488,19 +488,36 @@ namespace TOR_Core.CharacterDevelopment.CareerSystem
 
         public static void PuritySealAssignment(Agent agent)
         {
-            MobilePartyExtendedInfo extendedInfo = ExtendedInfoManager.Instance.GetPartyInfoFor(Hero.MainHero.StringId);
+            MobilePartyExtendedInfo extendedInfo = ExtendedInfoManager.Instance.GetPartyInfoFor(Hero.MainHero.PartyBelongedTo.StringId);
+            
+            
             
             var button =  CareerHelper.GetCareerButton() as KnightOldWorldCareerButtonBehavior;
 
             var seals = button.GetAllPuritySeals();
             
             extendedInfo.TroopAttributes.TryGetValue(agent.Character.StringId , out var attributes);
-           
-            
-            foreach (var seal in attributes.Select(attribute => seals.FirstOrDefaultQ(x=> x.SealId == attribute)).Where(seal => seal?.WeaponEffect != null))
+
+            if (attributes == null)
             {
-                AddMissionPermanentEffect(agent,seal.WeaponEffect);
+                return;
             }
+
+            foreach (var seal in seals)
+            {
+                foreach (var attribute in attributes)
+                {
+                    if (attribute == seal.SealId)
+                    {
+                        if (seal.WeaponEffect != null)
+                        {
+                            AddMissionPermanentEffect(agent, seal.WeaponEffect);
+                        }
+                    }
+                }
+            }
+            
+           
         }
     }
 }
