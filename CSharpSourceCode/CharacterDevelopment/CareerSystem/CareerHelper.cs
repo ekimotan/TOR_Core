@@ -509,9 +509,9 @@ namespace TOR_Core.CharacterDevelopment.CareerSystem
                 {
                     if (attribute == seal.SealId)
                     {
-                        if (seal.WeaponEffect != null)
+                        if (seal.triggeredEffectId != null)
                         {
-                            AddMissionPermanentEffect(agent, seal.WeaponEffect);
+                            AddMissionPermanentEffect(agent, seal.triggeredEffectId);
                         }
                     }
                 }

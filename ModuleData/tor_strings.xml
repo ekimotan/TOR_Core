@@ -1364,9 +1364,9 @@
   <string id="TORKnightPuritySealDescription.ManaanSeal2" text="{=tor_knightpuritysealdescription_manaan_1_str}20% Lightning Damage" />
   <string id="TORKnightPuritySealDescription.ManaanSeal3" text="{=tor_knightpuritysealdescription_manaan_1_str}50% Magical Resistance" />
   
-  <string id="TORKnightPuritySealDescription.ShallyaSeal1" text="{=tor_knightpuritysealdescription_shallya_1_str}20% Magical Resistance" />
-  <string id="TORKnightPuritySealDescription.ShallyaSeal2" text="{=tor_knightpuritysealdescription_shallya_1_str}25% Wardsave" />
-  <string id="TORKnightPuritySealDescription.ShallyaSeal3" text="{=tor_knightpuritysealdescription_shallya_1_str}0.01 healing rate for party" />
+  <string id="TORKnightPuritySealDescription.ShallyaSeal1" text="{=tor_knightpuritysealdescription_shallya_1_str}0.01 healing rate for party" />
+  <string id="TORKnightPuritySealDescription.ShallyaSeal2" text="{=tor_knightpuritysealdescription_shallya_1_str}Unstoppable for Unit" />
+  <string id="TORKnightPuritySealDescription.ShallyaSeal3" text="{=tor_knightpuritysealdescription_shallya_1_str}25% Wardsave" />
   
   
   

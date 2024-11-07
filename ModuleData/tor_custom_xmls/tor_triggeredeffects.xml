@@ -1052,7 +1052,8 @@
                              DamageVariance="0"
                              ScriptNameToTrigger="TOR_Core.BattleMechanics.TriggeredEffect.Scripts.ApplyStarFireTrait" />
 							 
-	<TriggeredEffectTemplate StringID="apply_secular_seal_trait"
+	
+	<TriggeredEffectTemplate StringID="apply_secular_seal_trait1"
                              BurstParticleEffectPrefab="none"
                              SoundEffectId="none"
                              SoundEffectLength="0"
@@ -1063,9 +1064,57 @@
                              TargetType="Friendly"
                              ImbuedStatusEffectDuration="45"
                              DamageVariance="0"
-                             ScriptNameToTrigger="TOR_Core.BattleMechanics.TriggeredEffect.Scripts.ApplyFlamingItemTraitScript" />	
+							 ScriptNameToTrigger="none" >
+							 <ImbuedStatusEffect>kow_secular_phys</ImbuedStatusEffect>
+	 </TriggeredEffectTemplate>
+                             	
+							 
+	<TriggeredEffectTemplate StringID="apply_secular_seal_trait2"
+                             BurstParticleEffectPrefab="none"
+                             SoundEffectId="none"
+                             SoundEffectLength="0"
+                             DamageType="Invalid"
+                             DamageAmount="0"
+                             Radius="25"
+                             HasShockWave="false"
+                             TargetType="Friendly"
+                             ImbuedStatusEffectDuration="45"
+                             DamageVariance="0"
+							 ScriptNameToTrigger="none" >
+							 <ImbuedStatusEffect>kow_secular_charge</ImbuedStatusEffect>
+	 </TriggeredEffectTemplate>
+	 
+	<TriggeredEffectTemplate StringID="apply_sigmar_seal_trait1"
+                             BurstParticleEffectPrefab="none"
+                             SoundEffectId="none"
+                             SoundEffectLength="0"
+                             DamageType="Invalid"
+                             DamageAmount="0"
+                             Radius="25"
+                             HasShockWave="false"
+                             TargetType="Friendly"
+                             ImbuedStatusEffectDuration="45"
+                             DamageVariance="0"
+							 ScriptNameToTrigger="none" >
+							 <ImbuedStatusEffect>kow_sigmar_phys20</ImbuedStatusEffect>
+	 </TriggeredEffectTemplate>
+	 
+	<TriggeredEffectTemplate StringID="apply_sigmar_seal_trait2"
+                             BurstParticleEffectPrefab="none"
+                             SoundEffectId="none"
+                             SoundEffectLength="0"
+                             DamageType="Invalid"
+                             DamageAmount="0"
+                             Radius="25"
+                             HasShockWave="false"
+                             TargetType="Friendly"
+                             ImbuedStatusEffectDuration="45"
+                             DamageVariance="0"
+							 ScriptNameToTrigger="none" >
+							 <ImbuedStatusEffect>kow_sigmar_res_ward</ImbuedStatusEffect>
+	 </TriggeredEffectTemplate>	 
 
-	<TriggeredEffectTemplate StringID="apply_sigmar_seal_trait"
+	<TriggeredEffectTemplate StringID="apply_ulric_seal_trait1"
                              BurstParticleEffectPrefab="none"
                              SoundEffectId="none"
                              SoundEffectLength="0"
@@ -1076,9 +1125,71 @@
                              TargetType="Friendly"
                              ImbuedStatusEffectDuration="45"
                              DamageVariance="0"
-                             ScriptNameToTrigger="TOR_Core.BattleMechanics.TriggeredEffect.Scripts.ApplyFlamingItemTraitScript" />	
+							 ScriptNameToTrigger="none" >
+							 <ImbuedStatusEffect>kow_ulric_res_ward</ImbuedStatusEffect>
+	 </TriggeredEffectTemplate>
+	 
+	 <TriggeredEffectTemplate StringID="apply_ulric_seal_trait2"
+                             BurstParticleEffectPrefab="none"
+                             SoundEffectId="none"
+                             SoundEffectLength="0"
+                             DamageType="Invalid"
+                             DamageAmount="0"
+                             Radius="25"
+                             HasShockWave="false"
+                             TargetType="Friendly"
+                             ImbuedStatusEffectDuration="45"
+                             DamageVariance="0"
+							 ScriptNameToTrigger="none" >
+							 <ImbuedStatusEffect>kow_ulric_unstop</ImbuedStatusEffect>
+	 </TriggeredEffectTemplate>
+	 
+	<TriggeredEffectTemplate StringID="apply_ulric_seal_trait3"
+                             BurstParticleEffectPrefab="none"
+                             SoundEffectId="none"
+                             SoundEffectLength="0"
+                             DamageType="Invalid"
+                             DamageAmount="0"
+                             Radius="25"
+                             HasShockWave="false"
+                             TargetType="Friendly"
+                             ImbuedStatusEffectDuration="45"
+                             DamageVariance="0"
+							 ScriptNameToTrigger="none" >
+							 <ImbuedStatusEffect>kow_ulric_pierc</ImbuedStatusEffect>
+	 </TriggeredEffectTemplate>
+	 
+	<TriggeredEffectTemplate StringID="apply_taal_seal_trait1"
+                             BurstParticleEffectPrefab="none"
+                             SoundEffectId="none"
+                             SoundEffectLength="0"
+                             DamageType="Invalid"
+                             DamageAmount="0"
+                             Radius="25"
+                             HasShockWave="false"
+                             TargetType="Friendly"
+                             ImbuedStatusEffectDuration="45"
+                             DamageVariance="0"
+							 ScriptNameToTrigger="none" >
+							 <ImbuedStatusEffect>kow_taal_res_range</ImbuedStatusEffect>
+	 </TriggeredEffectTemplate>
+	 
+	 <TriggeredEffectTemplate StringID="apply_taal_seal_trait2"
+                             BurstParticleEffectPrefab="none"
+                             SoundEffectId="none"
+                             SoundEffectLength="0"
+                             DamageType="Invalid"
+                             DamageAmount="0"
+                             Radius="25"
+                             HasShockWave="false"
+                             TargetType="Friendly"
+                             ImbuedStatusEffectDuration="45"
+                             DamageVariance="0"
+							 ScriptNameToTrigger="none" >
+							 <ImbuedStatusEffect>kow_taal_res_ward</ImbuedStatusEffect>
+	 </TriggeredEffectTemplate>	
 
-	<TriggeredEffectTemplate StringID="apply_ulric_seal_trait"
+	 <TriggeredEffectTemplate StringID="apply_shallya_seal_trait1"
                              BurstParticleEffectPrefab="none"
                              SoundEffectId="none"
                              SoundEffectLength="0"
@@ -1089,9 +1200,11 @@
                              TargetType="Friendly"
                              ImbuedStatusEffectDuration="45"
                              DamageVariance="0"
-                             ScriptNameToTrigger="TOR_Core.BattleMechanics.TriggeredEffect.Scripts.ApplyFlamingItemTraitScript" />		
+							 ScriptNameToTrigger="none" >
+							 <ImbuedStatusEffect>kow_shallya_res_ward</ImbuedStatusEffect>
+	 </TriggeredEffectTemplate>	
 
-	<TriggeredEffectTemplate StringID="apply_taal_seal_trait"
+	 <TriggeredEffectTemplate StringID="apply_shallya_seal_trait2"
                              BurstParticleEffectPrefab="none"
                              SoundEffectId="none"
                              SoundEffectLength="0"
@@ -1102,22 +1215,12 @@
                              TargetType="Friendly"
                              ImbuedStatusEffectDuration="45"
                              DamageVariance="0"
-                             ScriptNameToTrigger="TOR_Core.BattleMechanics.TriggeredEffect.Scripts.ApplyFlamingItemTraitScript" />			
+							 ScriptNameToTrigger="none" >
+							 <ImbuedStatusEffect>kow_shallya_unstoppable</ImbuedStatusEffect>
+	 </TriggeredEffectTemplate>	 
 
-	<TriggeredEffectTemplate StringID="apply_manaan_seal_trait"
-                             BurstParticleEffectPrefab="none"
-                             SoundEffectId="none"
-                             SoundEffectLength="0"
-                             DamageType="Invalid"
-                             DamageAmount="0"
-                             Radius="25"
-                             HasShockWave="false"
-                             TargetType="Friendly"
-                             ImbuedStatusEffectDuration="45"
-                             DamageVariance="0"
-                             ScriptNameToTrigger="TOR_Core.BattleMechanics.TriggeredEffect.Scripts.ApplyFlamingItemTraitScript" />						
 
-	<TriggeredEffectTemplate StringID="apply_shallya_seal_trait"
+	 <TriggeredEffectTemplate StringID="apply_manaan_seal_trait1"
                              BurstParticleEffectPrefab="none"
                              SoundEffectId="none"
                              SoundEffectLength="0"
@@ -1128,7 +1231,40 @@
                              TargetType="Friendly"
                              ImbuedStatusEffectDuration="45"
                              DamageVariance="0"
-                             ScriptNameToTrigger="TOR_Core.BattleMechanics.TriggeredEffect.Scripts.ApplyFlamingItemTraitScript" />								 
+							 ScriptNameToTrigger="none" >
+							 <ImbuedStatusEffect>kow_manaan_charge</ImbuedStatusEffect>
+	 </TriggeredEffectTemplate>
+
+
+	 <TriggeredEffectTemplate StringID="apply_manaan_seal_trait2"
+                             BurstParticleEffectPrefab="none"
+                             SoundEffectId="none"
+                             SoundEffectLength="0"
+                             DamageType="Invalid"
+                             DamageAmount="0"
+                             Radius="25"
+                             HasShockWave="false"
+                             TargetType="Friendly"
+                             ImbuedStatusEffectDuration="45"
+                             DamageVariance="0"
+							 ScriptNameToTrigger="TOR_Core.BattleMechanics.TriggeredEffect.Scripts.ApplyLesserHeavensItemTraitScript" />
+
+
+
+	 <TriggeredEffectTemplate StringID="apply_manaan_seal_trait3"
+                             BurstParticleEffectPrefab="none"
+                             SoundEffectId="none"
+                             SoundEffectLength="0"
+                             DamageType="Invalid"
+                             DamageAmount="0"
+                             Radius="25"
+                             HasShockWave="false"
+                             TargetType="Friendly"
+                             ImbuedStatusEffectDuration="45"
+                             DamageVariance="0"
+							 ScriptNameToTrigger="none" >
+							 <ImbuedStatusEffect>kow_manaan_res_magic</ImbuedStatusEffect>
+	 </TriggeredEffectTemplate>	 
 							 
 	 
     <TriggeredEffectTemplate StringID="apply_flaming_sword_trait"

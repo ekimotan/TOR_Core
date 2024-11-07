@@ -3,6 +3,7 @@ using System.Linq;
 using Ink.Parsed;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.Core;
+using TaleWorlds.LinQuick;
 using TaleWorlds.Localization;
 using TOR_Core.CampaignMechanics.CustomResources;
 using TOR_Core.CampaignMechanics.Religion;
@@ -164,9 +165,9 @@ public class KnightOldWorldCareerButtonBehavior(CareerObject career) : CareerBut
     {
         return new List<KnightPuritySeal>()
         {
-            new("SecularSeal1",  "test", null, 10, _secularSealIcon),
+            new("SecularSeal1",  "apply_secular_seal_trait1", null, 10, _secularSealIcon),
             new("SecularSeal2" ,null, null, 10, _secularSealIcon),
-            new("SecularSeal3", "test", null, 10, _secularSealIcon),
+            new("SecularSeal3", "apply_secular_seal_trait2", null, 10, _secularSealIcon),
         };
     }
     private List<KnightPuritySeal> GetTemplarPuritySeals()
@@ -175,31 +176,40 @@ public class KnightOldWorldCareerButtonBehavior(CareerObject career) : CareerBut
         {
 
             
-            new("SigmarSeal1","test","cult_of_sigmar",10, _sigmarSealIcon),
+            new("SigmarSeal1","apply_sigmar_seal_trait1","cult_of_sigmar",10, _sigmarSealIcon),
             new("SigmarSeal2",null,"cult_of_sigmar",10,_sigmarSealIcon),
-            new("SigmarSeal3","test","cult_of_sigmar",10,_sigmarSealIcon),
+            new("SigmarSeal3","apply_sigmar_seal_trait2","cult_of_sigmar",10,_sigmarSealIcon),
             
-            new("UlricSeal1","test","cult_of_ulric",10, _ulricSealIcon),
-            new("UlricSeal2","test","cult_of_ulric",10, _ulricSealIcon),
-            new("UlricSeal3","test","cult_of_ulric",10, _ulricSealIcon),
+            new("UlricSeal1","apply_ulric_seal_trait1","cult_of_ulric",10, _ulricSealIcon),
+            new("UlricSeal2","apply_ulric_seal_trait2","cult_of_ulric",10, _ulricSealIcon),
+            new("UlricSeal3","apply_ulric_seal_trait3","cult_of_ulric",10, _ulricSealIcon),
             
-            new("TaalSeal1","test","cult_of_taal",10, _taalSealIcon),
+            new("TaalSeal1","apply_taal_seal_trait1","cult_of_taal",10, _taalSealIcon),
             new("TaalSeal2",null,"cult_of_taal",10, _taalSealIcon),
-            new("TaalSeal3","test","cult_of_taal",10,_taalSealIcon),
+            new("TaalSeal3","apply_taal_seal_trait2","cult_of_taal",10,_taalSealIcon),
             
-            new("ManaanSeal1","test","cult_of_manaan",10, _manaanSealIcon),
-            new("ManaanSeal2",null,"cult_of_manaan",10, _manaanSealIcon),
-            new("ManaanSeal3","test","cult_of_manaan",10, _manaanSealIcon),
+            new("ManaanSeal1","apply_manaan_seal_trait1","cult_of_manaan",10, _manaanSealIcon),
+            new("ManaanSeal2","apply_manaan_seal_trait2","cult_of_manaan",10, _manaanSealIcon),
+            new("ManaanSeal3","apply_manaan_seal_trait3","cult_of_manaan",10, _manaanSealIcon),
             
-            new("ShallyaSeal1","test","cult_of_shallya",10, _shallyaSealIcon),
-            new("ShallyaSeal2","test","cult_of_shallya",10, _shallyaSealIcon),
-            new("ShallyaSeal3","test","cult_of_shallya",10,_shallyaSealIcon),
+            new("ShallyaSeal1",null,"cult_of_shallya",10, _shallyaSealIcon),
+            new("ShallyaSeal2","apply_shallya_seal_trait1","cult_of_shallya",10, _shallyaSealIcon),
+            new("ShallyaSeal3","apply_shallya_seal_trait2","cult_of_shallya",10,_shallyaSealIcon),
         };
     }
 
     public override bool ShouldButtonBeVisible(CharacterObject characterObject, bool isPrisoner = false)
     {
-        return characterObject.IsKnightUnit() && characterObject.Culture.StringId != TORConstants.Cultures.BRETONNIA && characterObject.Race == 0;
+        if (characterObject.Race != 0) return false;
+        
+        if(characterObject.IsKnightUnit() && characterObject.Culture.StringId != TORConstants.Cultures.BRETONNIA) return true;
+
+        if (characterObject.HasAttribute("Knightly"))
+        {
+            return true;
+        }
+
+        return false;
     }
 
     public override bool ShouldButtonBeActive(CharacterObject characterObject, out TextObject displayText, bool isPrisoner = false)
@@ -221,38 +231,50 @@ public class KnightOldWorldCareerButtonBehavior(CareerObject career) : CareerBut
            
             return true;
         }
+
+
+        if (characterObject.IsReligiousUnit())
+        {
+            var religionObject = ReligionObject.All.FirstOrDefaultQ(x => x.ReligiousTroops.Contains(characterObject));
+
+            if (religionObject != Hero.MainHero.GetDominantReligion() || Hero.MainHero.HasCareerChoice("SecularOrdersPassive4"))
+            {
+                displayText = new TextObject("Your religion does not match the troop's Religion");
+                return false;
+            }
+
+        }
         
         
 
         var devotion = Hero.MainHero.GetDominantReligion();
         
-        if (devotion!=null && Hero.MainHero.GetDevotionLevelForReligion(Hero.MainHero.GetDominantReligion()) < DevotionLevel.Fanatic && !Hero.MainHero.HasCareerChoice("SecularOrdersPassive3"))
+        if (devotion!=null ||Hero.MainHero.HasCareerChoice("SecularOrdersPassive3"))
         {
-            displayText = new TextObject("You are not religious enough to do that");
-            
-            return false;
+            if (characterObject.Tier <  MINIMUMLEVELFORSEAL)
+            {
+                GameTexts.SetVariable("MINIMUMSEALLEVEL",MINIMUMLEVELFORSEAL);
+                displayText = new TextObject("Unit tier is not high enough. Minimum tier is {MINIMUMSEALLEVEL}.");
+                return false;
+            }
+            return true;
         }
-        
-        if (characterObject.Tier <  MINIMUMLEVELFORSEAL)
-        {
-            GameTexts.SetVariable("MINIMUMSEALLEVEL",MINIMUMLEVELFORSEAL);
-            displayText = new TextObject("Unit tier is not high enough. Minimum tier is {MINIMUMSEALLEVEL}.");
-            return false;
-        }
-        return true;
+
+        displayText = new TextObject("You are not religous enough to provide a seal.");
+        return false;
     }
 }
 
 public class KnightPuritySeal()
 {
-    public KnightPuritySeal(string sealId, string weaponEffectId,string deityCultId, int price, string sealIcon) : this()
+    public KnightPuritySeal(string sealId, string triggeredEffectIdId,string deityCultId, int price, string sealIcon) : this()
     {
         this.Name = GameTexts.TryGetText("TORKnightPuritySealName", out var nameText,sealId ) ? nameText : new TextObject(sealId);
         this.Description = GameTexts.TryGetText("TORKnightPuritySealDescription", out var descriptionText, sealId ) ? descriptionText : new TextObject("No description found");
 
         
         
-        this.WeaponEffect = weaponEffectId;
+        this.triggeredEffectId = triggeredEffectIdId;
         this.Price = price;
         this.DeityCultId = deityCultId;
         this.SealId = sealId;
@@ -262,7 +284,7 @@ public class KnightPuritySeal()
     public TextObject Name = new TextObject("");
     public TextObject Description = new TextObject("");
     public string SealId;
-    public string WeaponEffect;
+    public string triggeredEffectId;
     public int Price;
     public string DeityCultId;
     public string SealIcon;

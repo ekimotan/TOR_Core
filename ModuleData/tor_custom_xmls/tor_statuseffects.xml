@@ -1834,7 +1834,7 @@
 	</StatusEffectTemplate>
 
 	<StatusEffectTemplate
-		id="kow_shallya_res_magic"
+		id="kow_manaan_res_magic"
 		particle_id=""
 		do_not_attach_to_agent_skeleton="true"
 		base_effect_value="0.45"
