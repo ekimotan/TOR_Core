@@ -113,7 +113,7 @@ public class KnightOldWorldCareerChoices(CareerObject id) : TORCareerChoicesBase
 
     protected override void InitializeKeyStones()
     {
-        _knightOldWorldRoot.Initialize(CareerID, "Summon a champion that the necromancer take control of. The Champion loses every 2 seconds 5 health points. For every 3 points in spell casting skill the champion gains 1 health point. Charging: applying spell- damage or healing. Alternatively, Let undead units inflict damage.", null, true,
+        _knightOldWorldRoot.Initialize(CareerID, "Adds a load for your next melee hit, adding 20% extra damage. For every point in one handed combat, your damage increases by 1% during the effect. The effect stays for a maximum of 15 seconds. For every keystone you get another use, enhancing your strike. Ability is charged by dealing melee damage.", null, true,
             ChoiceType.Keystone, new List<CareerChoiceObject.MutationObject>()
             {
                 new CareerChoiceObject.MutationObject()
@@ -162,7 +162,7 @@ public class KnightOldWorldCareerChoices(CareerObject id) : TORCareerChoicesBase
                 }
             },new CareerChoiceObject.PassiveEffect()); 
         
-        _squiresKeystone.Initialize(CareerID, "Your Harbinger gains a two handed weapon. Ability scales with Roguery", "Squires", false,
+        _squiresKeystone.Initialize(CareerID, "Ability scales with riding. Companions charge ability.", "Squires", false,
             ChoiceType.Keystone, new List<CareerChoiceObject.MutationObject>()
             {
                 new CareerChoiceObject.MutationObject()
@@ -214,7 +214,7 @@ public class KnightOldWorldCareerChoices(CareerObject id) : TORCareerChoicesBase
                 }
             },new CareerChoiceObject.PassiveEffect()); 
         
-        _pathOfGloryKeystone.Initialize(CareerID, "Your Harbinger gains a two handed weapon. Ability scales with Roguery", "PathOfGlory", false,
+        _pathOfGloryKeystone.Initialize(CareerID, "Adds a Deity based weapon effect or 20% extra physical damage.", "PathOfGlory", false,
             ChoiceType.Keystone, new List<CareerChoiceObject.MutationObject>()
             {
               
