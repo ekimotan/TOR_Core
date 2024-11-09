@@ -1367,7 +1367,7 @@
                 <y>170</y>
             </AsVec2>
         </LightColorRGB>
-        <TriggeredEffect>wind_of_death_tick</TriggeredEffect>
+        <TriggeredEffect>radiant_gaze_tick</TriggeredEffect>
     </AbilityTemplate>
     <AbilityTemplate StringID="NetOfAmyntok"
                      Name="{=net_of_amyntok_label_str}Net of Amyntok"

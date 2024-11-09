@@ -146,32 +146,32 @@
       <SlaverCamp id="darkelf_camp_01" background_crop_position="0.0" background_mesh="beastman_heardstone" wait_mesh="wait_empire_village" gate_rotation="0.0" />
     </Components>
   </Settlement>
-  <Settlement id="manaan_shrine_01" name="{=!}Shrine of Manaan" owner="Faction.nordland_clan_1" posX="1412.178" posY="1348.525" culture="Culture.empire" text="{=!}Shrine of Manaan">
+  <Settlement id="manaan_shrine_01" name="{=!}Shrine of Manann" owner="Faction.nordland_clan_1" posX="1412.178" posY="1348.525" culture="Culture.empire" text="{=!}Shrine of Manann">
     <Components>
       <Shrine id="manaan_shrine_01" religion="cult_of_manaan" background_crop_position="0.0" background_mesh="shrine_of_sigmar" wait_mesh="wait_empire_village" gate_rotation="0.0" />
     </Components>
   </Settlement>
-  <Settlement id="manaan_shrine_02" name="{=!}Manaan's Teeth" owner="Faction.nordland_clan_1" posX="1228.79" posY="1381.38" culture="Culture.empire" text="{=!}Manaan's Teeth">
+  <Settlement id="manaan_shrine_02" name="{=!}Manann's Teeth" owner="Faction.nordland_clan_1" posX="1228.79" posY="1381.38" culture="Culture.empire" text="{=!}Manann's Teeth">
     <Components>
       <Shrine id="manaan_shrine_02" religion="cult_of_manaan" background_crop_position="0.0" background_mesh="shrine_of_sigmar" wait_mesh="wait_empire_village" gate_rotation="0.0" />
     </Components>
   </Settlement>
-  <Settlement id="manaan_shrine_03" name="{=!}Shrine of Manaan" owner="Faction.wasteland_clan_1" posX="1178.662" posY="1229.86" culture="Culture.empire" text="{=!}Shrine of Manaan">
+  <Settlement id="manaan_shrine_03" name="{=!}Shrine of Manann" owner="Faction.wasteland_clan_1" posX="1178.662" posY="1229.86" culture="Culture.empire" text="{=!}Shrine of Manann">
     <Components>
       <Shrine id="manaan_shrine_03" religion="cult_of_manaan" background_crop_position="0.0" background_mesh="shrine_of_sigmar" wait_mesh="wait_empire_village" gate_rotation="0.0" />
     </Components>
   </Settlement>
-  <Settlement id="manaan_shrine_04" name="{=!}Shrine of Manaan" owner="Faction.wasteland_clan_1" posX="1115.938" posY="1135.367" culture="Culture.empire" text="{=!}Shrine of Manaan">
+  <Settlement id="manaan_shrine_04" name="{=!}Shrine of Manann" owner="Faction.wasteland_clan_1" posX="1115.938" posY="1135.367" culture="Culture.empire" text="{=!}Shrine of Manann">
     <Components>
       <Shrine id="manaan_shrine_04" religion="cult_of_manaan" background_crop_position="0.0" background_mesh="shrine_of_sigmar" wait_mesh="wait_empire_village" gate_rotation="0.0" />
     </Components>
   </Settlement>
-  <Settlement id="manaan_shrine_05" name="{=!}Shrine of Manaan" owner="Faction.anguille_clan_1" posX="893.367" posY="1218.717" culture="Culture.empire" text="{=!}Shrine of Manaan">
+  <Settlement id="manaan_shrine_05" name="{=!}Shrine of Manann" owner="Faction.anguille_clan_1" posX="893.367" posY="1218.717" culture="Culture.empire" text="{=!}Shrine of Manann">
     <Components>
       <Shrine id="manaan_shrine_05" religion="cult_of_manaan" background_crop_position="0.0" background_mesh="shrine_of_sigmar" wait_mesh="wait_empire_village" gate_rotation="0.0" />
     </Components>
   </Settlement>
-  <Settlement id="manaan_shrine_06" name="{=!}Shrine of Manaan" owner="Faction.bordeleaux_clan_1" posX="926.517" posY="952.544" culture="Culture.empire" text="{=!}Shrine of Manaan">
+  <Settlement id="manaan_shrine_06" name="{=!}Shrine of Manann" owner="Faction.bordeleaux_clan_1" posX="926.517" posY="952.544" culture="Culture.empire" text="{=!}Shrine of Manann">
     <Components>
       <Shrine id="manaan_shrine_06" religion="cult_of_manaan" background_crop_position="0.0" background_mesh="shrine_of_sigmar" wait_mesh="wait_empire_village" gate_rotation="0.0" />
     </Components>
@@ -3997,7 +3997,7 @@
       <Area type="Waterfront" name="{=Rr1cy5Sk}Waterfront" />
     </CommonAreas>
   </Settlement>
-  <Settlement id="village_NL3_1" name="{=Settlements.Settlement.name.village_NL3_1}Heiligdorf" posX="1370.245" posY="1345.502" culture="Culture.empire" text="{=Settlements.Settlement.text.village_NL3_1}Heiligdorf is a religious village dedicated to Manaan. Most of the inhabitants work as fisherman or are in the imperial navy. The village Is one of the biggest supporters of the Nordland mariners giving them many sons to fight. ">
+  <Settlement id="village_NL3_1" name="{=Settlements.Settlement.name.village_NL3_1}Heiligdorf" posX="1370.245" posY="1345.502" culture="Culture.empire" text="{=Settlements.Settlement.text.village_NL3_1}Heiligdorf is a religious village dedicated to Manann. Most of the inhabitants work as fisherman or are in the imperial navy. The village Is one of the biggest supporters of the Nordland mariners giving them many sons to fight. ">
     <Components>
       <Village id="village_comp_NL3_1" village_type="VillageType.fisherman" hearth="250" gate_rotation="0.008" trade_bound="Settlement.town_NL3" bound="Settlement.town_NL3" background_crop_position="0.0" background_mesh="gui_bg_village_vlanda" wait_mesh="empire_village_background" castle_background_mesh="gui_bg_castle_vlanda" />
     </Components>
@@ -4143,7 +4143,7 @@
       <Area type="Bog" name="{=iXA5SttU}Bog" />
     </CommonAreas>
   </Settlement>
-  <Settlement id="castle_NL1" name="{=Settlements.Settlement.name.castle_NL1}Manaansheim" owner="Faction.nordland_clan_1" posX="1396.003" posY="1361.51" culture="Culture.empire" gate_posX="1396.101" gate_posY="1359.005" text="{=!}Manannsheim is an Imperial fort situated on a small island in the Drosselspule Bay of Nordland. It is also home to the Monastery of the Order of the Triton. The fort is heavily armed with canons and trained Nordland mariners.">
+  <Settlement id="castle_NL1" name="{=Settlements.Settlement.name.castle_NL1}Manannsheim" owner="Faction.nordland_clan_1" posX="1396.003" posY="1361.51" culture="Culture.empire" gate_posX="1396.101" gate_posY="1359.005" text="{=!}Manannsheim is an Imperial fort situated on a small island in the Drosselspule Bay of Nordland. It is also home to the Monastery of the Order of the Triton. The fort is heavily armed with canons and trained Nordland mariners.">
     <Components>
       <Town id="castle_comp_NL1" is_castle="true" level="3" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="empire_city_background" gate_rotation="0.908" prosperity="800" />
     </Components>
@@ -4153,7 +4153,7 @@
       <Location id="prison" scene_name="empire_dungeon_a" />
     </Locations>
   </Settlement>
-  <Settlement id="castle_village_NL1_1" name="{=Settlements.Settlement.name.castle_village_NL1_1}Wilhelmskoog" posX="1407.636" posY="1356.528" culture="Culture.empire" text="{=Settlements.Settlement.text.castle_village_NL1_1}Wilhelmskoog is a big town with a pilot guild called Manaans eye. The pilots are experts in sailing the Sea of claws and are always onboard of imperial navy vessels. The pilots make sure tradingvessels get safe into the harbour of Neue Emskrank making sure that the flow of trade doesn't get hindered. Due to the expertise of the pilots the local fisherman are well informed of the spots with the highest quality of fish.">
+  <Settlement id="castle_village_NL1_1" name="{=Settlements.Settlement.name.castle_village_NL1_1}Wilhelmskoog" posX="1407.636" posY="1356.528" culture="Culture.empire" text="{=Settlements.Settlement.text.castle_village_NL1_1}Wilhelmskoog is a big town with a pilot guild called Manann's Eye. The pilots are experts in sailing the Sea of claws and are always onboard of imperial navy vessels. The pilots make sure tradingvessels get safe into the harbour of Neue Emskrank making sure that the flow of trade doesn't get hindered. Due to the expertise of the pilots the local fisherman are well informed of the spots with the highest quality of fish.">
     <Components>
       <Village id="castle_village_comp_NL1_1" village_type="VillageType.fisherman" hearth="200" trade_bound="Settlement.town_NL6" bound="Settlement.castle_NL1" background_crop_position="0.0" background_mesh="gui_bg_village_vlanda" wait_mesh="empire_village_background" castle_background_mesh="gui_bg_castle_vlanda" />
     </Components>
@@ -4726,7 +4726,7 @@
     </CommonAreas>
   </Settlement>
   <!-- Wasteland -->
-  <Settlement id="town_WA1" name="{=Settlements.Settlement.name.town_WA1}Marienburg" owner="Faction.wasteland_clan_1" posX="1147.669" posY="1204.441" culture="Culture.empire" gate_posX="1133.665" gate_posY="1196.356" text="{=!}Marienburg is one of the greatest human cities in the Old World, and possibly the wealthiest, rivalled only by Altdorf, Erengrad, Miragliano, and the richest cities of Araby. Situated at the point where the River Reik enters the Sea of Claws, Marienburg is the only route for maritime trade to efficiently leave or enter the Empire. The city itself sits on a series of islands connected together by bridges and boat travel. To the north and south, the Vloedmuur wall sits just off the coast to defend the city from flooding and attacks by land. The wall is an ancient one, originally built by elves. The modern wall has been built and rebuilt several times atop the old elven foundations and the Directorate - Marienburg’s executive council - has spent a great fortune modernising its gates and redoubts. The defence of the city from attacks along the Reik, or from the Manaanspoort Sea, falls on Marienburg’s substantial navy. Just a century ago, the Wasteland was one of the jewels of Sigmar's empire, but after generations of benign neglect by a series of successive emperors, the merchants and burghers of Marienburg declared their independence. Emperor Wilhelm III launched several unsuccessful expeditions against the separatist province, all of which failed, culminating in independence being granted by treaty in 2429. Today, Marienburg is ruled by its legislature, the Stadsraad, and its executive council, the Directorate. Under this ‘republican’ rule, trade has continued to flow through Marienburg and many consider the city to be in a golden age. It is protected by its reputation of being nearly ungovernable and its varied mercenary forces, as well as by the River Reik and the marshes and swamps around. Nevertheless, the new Emperor, Karl Franz, may want to accomplish what his great-great-grandfather was unable to do. At the same time, Bretonnian dukes have made attempts in the past to incorporate Marienburg into their domains; who knows if King Louen will make an attempt of his own to expand the Marches of Couronne?">
+  <Settlement id="town_WA1" name="{=Settlements.Settlement.name.town_WA1}Marienburg" owner="Faction.wasteland_clan_1" posX="1147.669" posY="1204.441" culture="Culture.empire" gate_posX="1133.665" gate_posY="1196.356" text="{=!}Marienburg is one of the greatest human cities in the Old World, and possibly the wealthiest, rivalled only by Altdorf, Erengrad, Miragliano, and the richest cities of Araby. Situated at the point where the River Reik enters the Sea of Claws, Marienburg is the only route for maritime trade to efficiently leave or enter the Empire. The city itself sits on a series of islands connected together by bridges and boat travel. To the north and south, the Vloedmuur wall sits just off the coast to defend the city from flooding and attacks by land. The wall is an ancient one, originally built by elves. The modern wall has been built and rebuilt several times atop the old elven foundations and the Directorate - Marienburg’s executive council - has spent a great fortune modernising its gates and redoubts. The defence of the city from attacks along the Reik, or from the Manannspoort Sea, falls on Marienburg’s substantial navy. Just a century ago, the Wasteland was one of the jewels of Sigmar's empire, but after generations of benign neglect by a series of successive emperors, the merchants and burghers of Marienburg declared their independence. Emperor Wilhelm III launched several unsuccessful expeditions against the separatist province, all of which failed, culminating in independence being granted by treaty in 2429. Today, Marienburg is ruled by its legislature, the Stadsraad, and its executive council, the Directorate. Under this ‘republican’ rule, trade has continued to flow through Marienburg and many consider the city to be in a golden age. It is protected by its reputation of being nearly ungovernable and its varied mercenary forces, as well as by the River Reik and the marshes and swamps around. Nevertheless, the new Emperor, Karl Franz, may want to accomplish what his great-great-grandfather was unable to do. At the same time, Bretonnian dukes have made attempts in the past to incorporate Marienburg into their domains; who knows if King Louen will make an attempt of his own to expand the Marches of Couronne?">
     <Components>
       <Town id="town_comp_WA1" is_castle="false" level="3" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="empire_city_background" gate_rotation="0.908" prosperity="4500" />
     </Components>
@@ -4746,7 +4746,7 @@
       <Area type="Waterfront" name="{=Rr1cy5Sk}Waterfront" />
     </CommonAreas>
   </Settlement>
-  <Settlement id="village_WA1_1" name="{=Settlements.Settlement.name.village_WA1_1}Broekwater" posX="1122.21" posY="1223.146" culture="Culture.empire" text="{=Settlements.Settlement.text.village_WA1_1}Broekwater is a poor community along the coast of the Manaanspoort sea, consisting mostly of several run down cottages, a smattering of decrypted inns and a handful of fishing huts. It is the only inhabited settlement on the ancient coast road between Marienburg and Bretonnia, as such its continued existence is likely only spurred on by traders and travellers. Rumours persist as well that pirates may be using the area as their base of operations, but nothing official has been said or done about them.">
+  <Settlement id="village_WA1_1" name="{=Settlements.Settlement.name.village_WA1_1}Broekwater" posX="1122.21" posY="1223.146" culture="Culture.empire" text="{=Settlements.Settlement.text.village_WA1_1}Broekwater is a poor community along the coast of the Manannspoort Sea, consisting mostly of several run down cottages, a smattering of decrypted inns and a handful of fishing huts. It is the only inhabited settlement on the ancient coast road between Marienburg and Bretonnia, as such its continued existence is likely only spurred on by traders and travellers. Rumours persist as well that pirates may be using the area as their base of operations, but nothing official has been said or done about them.">
     <Components>
       <Village id="village_comp_WA1_1" village_type="VillageType.fisherman" hearth="250" gate_rotation="0.008" trade_bound="Settlement.town_WA1" bound="Settlement.town_WA1" background_crop_position="0.0" background_mesh="gui_bg_village_vlanda" wait_mesh="empire_village_background" castle_background_mesh="gui_bg_castle_vlanda" />
     </Components>
@@ -4857,7 +4857,7 @@
       <Area type="Bog" name="{=iXA5SttU}Bog" />
     </CommonAreas>
   </Settlement>
-  <Settlement id="castle_WA1" name="{=Settlements.Settlement.name.castle_WA1}Fort Solace" owner="Faction.wasteland_clan_1" posX="1143.799" posY="1272.055" culture="Culture.empire" gate_posX="1148.326" gate_posY="1272.27" text="{=!}Fort Solace is a fortified lighthouse across the Manaanspoort sea from Reaver’s point. It is owned and operated by the Wasteland Import-Export exchange in Marienburg, who maintain a governor and private garrison here. Fort Solace is a relatively new settlement, constructed in response to Almshoven’s abandonment and the destruction of its lighthouse. Most ships will stop here if arriving too late in the evening to make it into Marienburg, few will stop here with the intention of bypassing Marienburg all together on their way to Norsca or Kislev.">
+  <Settlement id="castle_WA1" name="{=Settlements.Settlement.name.castle_WA1}Fort Solace" owner="Faction.wasteland_clan_1" posX="1143.799" posY="1272.055" culture="Culture.empire" gate_posX="1148.326" gate_posY="1272.27" text="{=!}Fort Solace is a fortified lighthouse across the Manannspoort Sea from Reaver’s point. It is owned and operated by the Wasteland Import-Export exchange in Marienburg, who maintain a governor and private garrison here. Fort Solace is a relatively new settlement, constructed in response to Almshoven’s abandonment and the destruction of its lighthouse. Most ships will stop here if arriving too late in the evening to make it into Marienburg, few will stop here with the intention of bypassing Marienburg all together on their way to Norsca or Kislev.">
     <Components>
       <Town id="castle_comp_WA1" is_castle="true" level="3" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="empire_city_background" gate_rotation="0.908" prosperity="800" />
     </Components>
@@ -6488,7 +6488,7 @@
     </CommonAreas>
   </Settlement>
   <!-- Bordeleaux -->
-  <Settlement id="town_BL1" name="{=Settlements.Settlement.name.town_BL1}Castle Bordeleaux" owner="Faction.bordeleaux_clan_1" posX="915.3049" posY="936.249" culture="Culture.vlandia" gate_posX="918.5488" gate_posY="941.7571" text="{=Settlements.Settlement.text.town_BL1}Built upon ancient stonework, the fortress-city of Bordeleaux is perhaps the most important harbour in Bretonnia, rivalled only by Lyon. Castle Bordeleaux sits on a cliff which rises above the harbour, looking over the entire sprawling city and nearby sea traffic. It is said that the engines on its walls, and their skilled engineers, are capable of sinking a moored rowboat without damaging the boats to either side. The city is home to two major holy sites in the realm, the First Chapel of Castle Bordeleaux, the most sacred Grail Chapel in the kingdom; and the Temple of Manaan, of which some say rivals even the temple in Marienburg.">
+  <Settlement id="town_BL1" name="{=Settlements.Settlement.name.town_BL1}Castle Bordeleaux" owner="Faction.bordeleaux_clan_1" posX="915.3049" posY="936.249" culture="Culture.vlandia" gate_posX="918.5488" gate_posY="941.7571" text="{=Settlements.Settlement.text.town_BL1}Built upon ancient stonework, the fortress-city of Bordeleaux is perhaps the most important harbour in Bretonnia, rivalled only by Lyon. Castle Bordeleaux sits on a cliff which rises above the harbour, looking over the entire sprawling city and nearby sea traffic. It is said that the engines on its walls, and their skilled engineers, are capable of sinking a moored rowboat without damaging the boats to either side. The city is home to two major holy sites in the realm, the First Chapel of Castle Bordeleaux, the most sacred Grail Chapel in the kingdom; and the Temple of Manann, of which some say rivals even the temple in Marienburg.">
     <Components>
       <Town id="town_comp_BL1" is_castle="false" level="3" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="bretonnia_city_background" gate_rotation="0.908" prosperity="4500" />
     </Components>
@@ -6508,7 +6508,7 @@
       <Area type="Waterfront" name="{=Rr1cy5Sk}Waterfront" />
     </CommonAreas>
   </Settlement>
-  <Settlement id="village_BL1_1" name="{=Settlements.Settlement.name.village_BL2_1}Saint-Junien" posX="898.765" posY="938.342" culture="Culture.vlandia" text="{=Settlements.Settlement.text.village_BL1_1}Right on the coast of the Great Ocean is the village of Saint Junien. Saint Junien was named after a grail knight who long ago defended the peasants in the area from mysterious sea devils. The peasants here continue to rely on Manaan for their livelihood, though many visitors note that they always seem to have one eye out towards the watery horizon.">
+  <Settlement id="village_BL1_1" name="{=Settlements.Settlement.name.village_BL2_1}Saint-Junien" posX="898.765" posY="938.342" culture="Culture.vlandia" text="{=Settlements.Settlement.text.village_BL1_1}Right on the coast of the Great Ocean is the village of Saint Junien. Saint Junien was named after a grail knight who long ago defended the peasants in the area from mysterious sea devils. The peasants here continue to rely on Manann for their livelihood, though many visitors note that they always seem to have one eye out towards the watery horizon.">
     <Components>
       <Village id="village_comp_BL1_1" village_type="VillageType.fisherman" hearth="250" gate_rotation="0.008" trade_bound="Settlement.town_BL1" bound="Settlement.town_BL1" background_crop_position="0.0" background_mesh="gui_bg_village_vlanda" wait_mesh="bretonnia_village_background" castle_background_mesh="gui_bg_castle_vlanda" />
     </Components>

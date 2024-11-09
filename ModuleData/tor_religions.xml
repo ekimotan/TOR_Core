@@ -87,7 +87,7 @@
         <ReligiousArtifacts>
         </ReligiousArtifacts>
     </Religion>
-    <Religion id="cult_of_manaan" Name="Cult of Manaan" Culture="Culture.empire" Affinity="Order" DeityName="Manaan">
+    <Religion id="cult_of_manaan" Name="Cult of Manann" Culture="Culture.empire" Affinity="Order" DeityName="Manann">
         <HostileReligions>
             <HostileReligion id="Religion.cult_of_nagash" />
             <HostileReligion id="Religion.cult_of_slaanesh" />
