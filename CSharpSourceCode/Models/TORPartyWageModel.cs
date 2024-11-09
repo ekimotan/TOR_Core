@@ -91,10 +91,14 @@ namespace TOR_Core.Models
 
                             var attributes = partyAttributes.TroopAttributes.FirstOrDefaultQ(x => x.Key == elementCopyAtIndex.Character.StringId).Value;
 
-                            foreach (var attribute in attributes.Where(attribute => attribute == "SecularSeal2"))
+                            if (attributes != null)
                             {
-                                value.AddFactor(0.2f,new TextObject("Secular Seal"));
+                                foreach (var attribute in attributes.Where(attribute => attribute == "SecularSeal2"))
+                                {
+                                    value.AddFactor(0.2f,new TextObject("Secular Seal"));
+                                }
                             }
+                          
                          
                         }
                     }
