@@ -1,11 +1,16 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using TaleWorlds.CampaignSystem;
 using TaleWorlds.Core;
 using TaleWorlds.Engine;
 using TaleWorlds.Library;
+using TaleWorlds.LinQuick;
 using TaleWorlds.MountAndBlade;
+using TOR_Core.AbilitySystem;
 using TOR_Core.BattleMechanics.DamageSystem;
 using TOR_Core.BattleMechanics.StatusEffect;
+using TOR_Core.CharacterDevelopment.CareerSystem;
+using TOR_Core.CharacterDevelopment.CareerSystem.Choices;
 using TOR_Core.Extensions;
 using TOR_Core.Extensions.ExtendedInfoSystem;
 using TOR_Core.Items;
@@ -141,6 +146,32 @@ namespace TOR_Core.BattleMechanics.TriggeredEffect.Scripts
         {
             var trait = new ItemTrait();
             var additionalDamage = new DamageProportionTuple();
+            additionalDamage.DamageType = DamageType.Physical;
+            additionalDamage.Percent = 0.2f;
+
+
+            var ca = triggeredByAgent.GetComponent<AbilityComponent>().CareerAbility;
+
+            var bonusdamage = 0f;
+            if (ca != null)
+            { 
+                bonusdamage = ca.Template.ScaleVariable1;
+            }
+            additionalDamage.Percent += bonusdamage;
+
+            var additionalLoads = Hero.MainHero.GetAllCareerChoices().WhereQ(x=> x.Contains("Keystone")).Count();
+
+            if (Hero.MainHero.HasCareerChoice("SecularOrderKeystone"))
+            {
+                additionalLoads += 2;
+            }
+            
+            if (Hero.MainHero.HasCareerChoice("TemplarOrderKeystone"))
+            {
+                additionalLoads += 2;
+            }
+
+            CareerHelper.GetTraitForReligion(Hero.MainHero, Hero.MainHero.GetDominantReligion());
 
 
                 
@@ -150,14 +181,19 @@ namespace TOR_Core.BattleMechanics.TriggeredEffect.Scripts
             trait.OnHitScriptName = "TOR_Core.BattleMechanics.TriggeredEffect.Scripts.KnightlyStrikeOnHitScript";
             trait.AdditionalDamageTuple = additionalDamage;
 
-            triggeredByAgent.ApplyStatusEffect("knightly_strike",triggeredByAgent,999999,false,false,true);
-            
-            triggeredByAgent.ApplyStatusEffect("knightly_strike",triggeredByAgent,999999,false,false,true);
+
+            for (int i = 0; i < additionalLoads; i++)
+            {
+                triggeredByAgent.ApplyStatusEffect("knightly_strike",triggeredByAgent,30,false,false,true);
+            }
+           
 
 
             var list = triggeredByAgent.GetComponent<StatusEffectComponent>().GetTemporaryAttributes(true);
+
+
+                    var effect = triggeredByAgent.GetComponent<StatusEffectComponent>().GetAmplifiers(AttackTypeMask.Melee);
             
-            TORCommon.Say(list.Count+"");
 
             foreach (Agent agent in triggeredAgents)
             {

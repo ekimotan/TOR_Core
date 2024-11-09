@@ -20,6 +20,7 @@ using TOR_Core.BattleMechanics.DamageSystem;
 using TOR_Core.BattleMechanics.StatusEffect;
 using TOR_Core.BattleMechanics.TriggeredEffect;
 using TOR_Core.BattleMechanics.TriggeredEffect.Scripts;
+using TOR_Core.CampaignMechanics.Religion;
 using TOR_Core.CharacterDevelopment.CareerSystem.Button;
 using TOR_Core.CharacterDevelopment.CareerSystem.CareerButton;
 using TOR_Core.CharacterDevelopment.CareerSystem.Choices;
@@ -473,6 +474,77 @@ namespace TOR_Core.CharacterDevelopment.CareerSystem
                 
             }
 
+        }
+        
+        public static ItemTrait GetTraitForReligion(Hero hero, ReligionObject religionObject)
+        {
+            var religion = Hero.MainHero.GetDominantReligion();
+
+            if (religion!=null || Hero.MainHero.GetDevotionLevelForReligion(religion) < DevotionLevel.Fanatic)
+                return null;
+
+
+            if (religion.StringId == "cult_of_sigmar")
+            {
+                var trait = new ItemTrait();
+                var damageTuple = new DamageProportionTuple { DamageType = DamageType.Holy, Percent = 0.2f };
+                
+                
+                trait.AdditionalDamageTuple.DamageType = DamageType.Holy;
+                trait.WeaponParticlePreset = new WeaponParticlePreset { ParticlePrefab = "psys_light_weapon" };
+
+                return null;
+            }
+            
+            if (religion.StringId == "cult_of_ulric")
+            {
+                var trait = new ItemTrait();
+                var damageTuple = new DamageProportionTuple { DamageType = DamageType.Frost, Percent = 0.2f };
+
+                trait.AdditionalDamageTuple.DamageType = DamageType.Frost;
+                trait.WeaponParticlePreset = new WeaponParticlePreset { ParticlePrefab = "psys_light_weapon" };
+
+                return null;
+            }
+            
+            if (religion.StringId == "cult_of_taal")
+            {
+                var trait = new ItemTrait();
+
+                var damageTuple = new DamageProportionTuple { DamageType = DamageType.Holy, Percent = 0.2f };
+
+                trait.AdditionalDamageTuple = damageTuple;
+                trait.WeaponParticlePreset = new WeaponParticlePreset { ParticlePrefab = "psys_light_weapon" };
+
+                return null;
+            }
+
+            if (religion.StringId == "cult_of_manaan")
+            {
+                var trait = new ItemTrait();
+
+                trait.AdditionalDamageTuple.DamageType = DamageType.Lightning;
+                trait.WeaponParticlePreset = new WeaponParticlePreset { ParticlePrefab = "electric_weapon" };
+
+                return null;
+            }
+            
+            if (religion.StringId == "cult_of_shallya")
+            {
+                var trait = new ItemTrait();
+
+                trait.AdditionalDamageTuple.DamageType = DamageType.Holy;
+                trait.WeaponParticlePreset = new WeaponParticlePreset { ParticlePrefab = "psys_light_weapon" };
+
+                return null;
+            }
+            
+
+
+
+
+
+            return null;
         }
 
         public static void RemoveCareerRelatedTroopAttributes(MobileParty mobileParty, string troopId,

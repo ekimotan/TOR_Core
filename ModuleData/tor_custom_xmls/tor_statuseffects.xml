@@ -1020,14 +1020,26 @@
 	<StatusEffectTemplate 
 		id="knightly_strike" 
 		do_not_attach_to_agent_skeleton="true"
-		particle_id="armour_of_the_righteous"
+		particle_id=""
 		particle_intensity="Low"
-		base_effect_value="0.35"
+		base_effect_value="0.0"
 		damage_type="Physical"
-		type="DamageAmplification"
+		type="TemporaryAttributeOnly"
 		rotation="true"
 		rotation_speed="200">
 		<temporary_attribute>KnightlyStrike</temporary_attribute>		
+		</StatusEffectTemplate>
+		
+	<StatusEffectTemplate 
+		id="knightly_strike_ws" 
+		do_not_attach_to_agent_skeleton="true"
+		particle_id="armour_of_the_righteous"
+		particle_intensity="Low"
+		base_effect_value="0.25"
+		damage_type="All"
+		type="Resistance"
+		rotation="true"
+		rotation_speed="200">		
 		</StatusEffectTemplate>
 
 	<StatusEffectTemplate 
@@ -1720,7 +1732,6 @@
 		applies_for_attack_type="All"
 		type="DamageAmplification"
 		damage_type="Physical">
-		<temporary_attribute>KOWChargeBonus</temporary_attribute>	
 	</StatusEffectTemplate>
 	
 	<StatusEffectTemplate

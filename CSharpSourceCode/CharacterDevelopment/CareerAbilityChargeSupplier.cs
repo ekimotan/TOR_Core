@@ -448,5 +448,26 @@ namespace TOR_Core.CharacterDevelopment
 
             return 0;
         }
+
+
+        public static float KnightOldWorldChargeSupplier(Agent affectingAgent, Agent affectedAgent, ChargeType chargeType, int chargeValue, AttackTypeMask mask = AttackTypeMask.Melee, CareerHelper.ChargeCollisionFlag collisionFlag = CareerHelper.ChargeCollisionFlag.None)
+        {
+            if (chargeType == ChargeType.DamageTaken) return 0;
+            if (chargeType == ChargeType.Healed) return 0;
+            if (chargeType == ChargeType.NumberOfKills) return 0;
+
+            if (!affectingAgent.IsHero) return 0;
+
+            if (mask == AttackTypeMask.Spell) return 0;
+
+            if (!affectingAgent.IsMainAgent && (!affectingAgent.BelongsToMainParty() || !Hero.MainHero.HasCareerChoice("SquiresKeystone"))) return 0;
+            if(Hero.MainHero.HasCareerChoice("WrathAgainstChaosKeystone"))
+            {
+                chargeValue = (int) (chargeValue * 0.2f);
+            }
+
+            return chargeValue;
+
+        }
     }
 }

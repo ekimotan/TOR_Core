@@ -1,8 +1,10 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System.Xml.Schema;
+using TaleWorlds.CampaignSystem;
 using TaleWorlds.MountAndBlade;
 using TOR_Core.BattleMechanics.StatusEffect;
+using TOR_Core.Extensions;
 using TOR_Core.Items;
 
 namespace TOR_Core.BattleMechanics.TriggeredEffect.Scripts;
@@ -24,12 +26,18 @@ public class KnightlyStrikeOnHitScript: IWeaponHitScript
             
             statusEffectComponent.RemoveStatusEffect("knightly_strike");
             
+            
             var list = statusEffectComponent.GetTemporaryAttributes(true).Where(x => x == "KnightlyStrike").ToList();
 
             
             knightlystrikes.AddRange(list);
             
             
+        }
+
+        if (Hero.MainHero.HasCareerChoice("WrathAgainstChaosKeystone"))
+        {
+            attackingAgent.ApplyStatusEffect("knightly_strike_ws",attackingAgent,5,false,false,true);
         }
 
         if (knightlystrikes.Count > 0)

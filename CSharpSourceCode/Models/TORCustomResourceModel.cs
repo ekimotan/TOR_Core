@@ -13,6 +13,7 @@ using TOR_Core.CampaignMechanics.TORCustomSettlement.CustomSettlementMenus;
 using TOR_Core.CharacterDevelopment;
 using TOR_Core.CharacterDevelopment.CareerSystem;
 using TOR_Core.Extensions;
+using TOR_Core.Extensions.ExtendedInfoSystem;
 using TOR_Core.Utilities;
 
 namespace TOR_Core.Models;
@@ -43,6 +44,30 @@ public class TORCustomResourceModel : GameModel
                     if (hero.IsEnlisted())
                     {
                         ServeAsAHirelingHelpers.AddHirelingCustomResourceBenefits(hero,ref number);
+                    }
+                    
+                    if (Hero.MainHero.HasCareer(TORCareers.KnightOldWorld))
+                    {
+                        var party = Hero.MainHero.PartyBelongedTo;
+                 
+                        var partyAttributes = ExtendedInfoManager.Instance.GetPartyInfoFor(party.StringId);
+
+                        var attributes = partyAttributes.TroopAttributes;
+                        
+                        var troops= party.MemberRoster.GetTroopRoster();
+
+                        foreach (var attribute in attributes.Where(attribute => attribute.Value.Contains("SigmarSeal3")))
+                        {
+                            var troop = troops.FirstOrDefaultQ(x => x.Character.StringId == attribute.Key);
+
+                            if (troop.Number<0)
+                            {
+                                number.AddFactor(0.01f * troop.Number,new TextObject("Sigmar Seal"));
+                            }
+                            
+                            
+                        }
+                         
                     }
 
                     if (!hero.IsEnlisted() && hero.PartyBelongedTo.Army != null && hero.PartyBelongedTo.Army.LeaderParty != hero.PartyBelongedTo)

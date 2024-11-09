@@ -7,8 +7,10 @@ using TOR_Core.AbilitySystem;
 using TOR_Core.BattleMechanics.DamageSystem;
 using TOR_Core.BattleMechanics.StatusEffect;
 using TOR_Core.CampaignMechanics.Choices;
+using TOR_Core.CampaignMechanics.Religion;
 using TOR_Core.Extensions;
 using TOR_Core.Extensions.ExtendedInfoSystem;
+using TOR_Core.Items;
 using TOR_Core.Utilities;
 
 namespace TOR_Core.CharacterDevelopment.CareerSystem.Choices;
@@ -114,17 +116,33 @@ public class KnightOldWorldCareerChoices(CareerObject id) : TORCareerChoicesBase
         _knightOldWorldRoot.Initialize(CareerID, "Summon a champion that the necromancer take control of. The Champion loses every 2 seconds 5 health points. For every 3 points in spell casting skill the champion gains 1 health point. Charging: applying spell- damage or healing. Alternatively, Let undead units inflict damage.", null, true,
             ChoiceType.Keystone, new List<CareerChoiceObject.MutationObject>()
             {
+                new CareerChoiceObject.MutationObject()
+                {
+                    MutationTargetType = typeof(AbilityTemplate),
+                    MutationTargetOriginalId = "KnightlyStrike",
+                    PropertyName = "ScaleVariable1",
+                    PropertyValue = (choice, originalValue, agent) => 0.2f+ CareerHelper.AddSkillEffectToValue(choice, agent, new List<SkillObject>(){ DefaultSkills.OneHanded }, 0.004f),
+                    MutationType = OperationType.Add
+                }
             });
         
-        _secularOrdersKeystone.Initialize(CareerID, "Your Harbinger gains a two handed weapon. Ability scales with Roguery", "SecularOrders", false,
+        _secularOrdersKeystone.Initialize(CareerID, "Knightly strike has 2 additional loads. starts charged", "SecularOrders", false,
             ChoiceType.Keystone, new List<CareerChoiceObject.MutationObject>()
             {
               
             },new CareerChoiceObject.PassiveEffect()); 
         
-        _pathOfConquestKeystone.Initialize(CareerID, "Adds cleaving attacks for ability", "PathOfConquest", false,
+        _pathOfConquestKeystone.Initialize(CareerID, "Adds cleaving attacks for ability. Ability scales with Two handed weapon skill", "PathOfConquest", false,
             ChoiceType.Keystone, new List<CareerChoiceObject.MutationObject>()
             {
+                new CareerChoiceObject.MutationObject()
+                {
+                    MutationTargetType = typeof(AbilityTemplate),
+                    MutationTargetOriginalId = "KnightlyStrike",
+                    PropertyName = "ScaleVariable1",
+                    PropertyValue = (choice, originalValue, agent) => 0.2f+ CareerHelper.AddSkillEffectToValue(choice, agent, new List<SkillObject>(){ DefaultSkills.TwoHanded }, 0.004f),
+                    MutationType = OperationType.Add
+                },
                 new CareerChoiceObject.MutationObject()
                 {
                     MutationTargetType = typeof(StatusEffectTemplate),
@@ -147,25 +165,53 @@ public class KnightOldWorldCareerChoices(CareerObject id) : TORCareerChoicesBase
         _squiresKeystone.Initialize(CareerID, "Your Harbinger gains a two handed weapon. Ability scales with Roguery", "Squires", false,
             ChoiceType.Keystone, new List<CareerChoiceObject.MutationObject>()
             {
-              
+                new CareerChoiceObject.MutationObject()
+                {
+                    MutationTargetType = typeof(AbilityTemplate),
+                    MutationTargetOriginalId = "KnightlyStrike",
+                    PropertyName = "ScaleVariable1",
+                    PropertyValue = (choice, originalValue, agent) => 0.2f+ CareerHelper.AddSkillEffectToValue(choice, agent, new List<SkillObject>(){ DefaultSkills.Riding }, 0.004f),
+                    MutationType = OperationType.Add
+                }
             },new CareerChoiceObject.PassiveEffect()); 
         
-        _templarOrdersKeystone.Initialize(CareerID, "Your Harbinger gains a two handed weapon. Ability scales with Roguery", "TemplarOrders", false,
+        _templarOrdersKeystone.Initialize(CareerID, "2 additional charges. Ability scales with Faith", "TemplarOrders", false,
             ChoiceType.Keystone, new List<CareerChoiceObject.MutationObject>()
             {
-              
+                new CareerChoiceObject.MutationObject()
+                {
+                    MutationTargetType = typeof(AbilityTemplate),
+                    MutationTargetOriginalId = "KnightlyStrike",
+                    PropertyName = "ScaleVariable1",
+                    PropertyValue = (choice, originalValue, agent) => 0.2f+ CareerHelper.AddSkillEffectToValue(choice, agent, new List<SkillObject>(){ TORSkills.Faith }, 0.004f),
+                    MutationType = OperationType.Add
+                }
             },new CareerChoiceObject.PassiveEffect()); 
         
-        _pathOfViliganceKeystone.Initialize(CareerID, "Your Harbinger gains a two handed weapon. Ability scales with Roguery", "PathOfViligance", false,
+        _pathOfViliganceKeystone.Initialize(CareerID, "Couched Lance attacks are not removing loads. Ability scales with polearm", "PathOfViligance", false,
             ChoiceType.Keystone, new List<CareerChoiceObject.MutationObject>()
             {
-              
+                new CareerChoiceObject.MutationObject()
+                {
+                    MutationTargetType = typeof(AbilityTemplate),
+                    MutationTargetOriginalId = "KnightlyStrike",
+                    PropertyName = "ScaleVariable1",
+                    PropertyValue = (choice, originalValue, agent) => (float)originalValue+ CareerHelper.AddSkillEffectToValue(choice, agent, new List<SkillObject>(){ DefaultSkills.Polearm }, 0.004f),
+                    MutationType = OperationType.Add
+                }
             },new CareerChoiceObject.PassiveEffect()); 
         
-        _wrathAgainstChaosKeystone.Initialize(CareerID, "Your Harbinger gains a two handed weapon. Ability scales with Roguery", "WrathAgainstChaos", false,
+        _wrathAgainstChaosKeystone.Initialize(CareerID, "Every discharge hit adds a 25% Wardsave for 5 seconds. Ability charging is 20% more efficient", "WrathAgainstChaos", false,
             ChoiceType.Keystone, new List<CareerChoiceObject.MutationObject>()
             {
-              
+                new CareerChoiceObject.MutationObject()
+                {
+                    MutationTargetType = typeof(AbilityTemplate),
+                    MutationTargetOriginalId = "KnightlyStrike",
+                    PropertyName = "ScaleVariable1",
+                    PropertyValue = (choice, originalValue, agent) => (float)originalValue+ CareerHelper.AddSkillEffectToValue(choice, agent, new List<SkillObject>(){ DefaultSkills.Polearm }, 0.004f),
+                    MutationType = OperationType.Add
+                }
             },new CareerChoiceObject.PassiveEffect()); 
         
         _pathOfGloryKeystone.Initialize(CareerID, "Your Harbinger gains a two handed weapon. Ability scales with Roguery", "PathOfGlory", false,
@@ -226,4 +272,6 @@ public class KnightOldWorldCareerChoices(CareerObject id) : TORCareerChoicesBase
 
 
     }
+
+
 }
