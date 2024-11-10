@@ -83,8 +83,7 @@ namespace TOR_Core.Models
                         {
                             value.Add(line.number, new TextObject(line.name));
                         }
-
-
+                        
                         if (Hero.MainHero.HasCareer(TORCareers.KnightOldWorld))
                         {
                             var partyAttributes = ExtendedInfoManager.Instance.GetPartyInfoFor(Hero.MainHero.PartyBelongedTo.StringId);
@@ -98,8 +97,6 @@ namespace TOR_Core.Models
                                     value.AddFactor(0.2f,new TextObject("Secular Seal"));
                                 }
                             }
-                          
-                         
                         }
                     }
                     if(elementCopyAtIndex.Character.IsHero && elementCopyAtIndex.Character.HeroObject == Hero.MainHero)

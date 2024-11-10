@@ -131,13 +131,8 @@ namespace TOR_Core.Models
                                 result.Add(-snowEffect.number, choice.BelongsToGroup.Name);
                             }
                     }
-                   
-                   
                 }
             }
-
-            
-
             return result;
         }
 

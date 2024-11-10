@@ -470,10 +470,7 @@ namespace TOR_Core.CharacterDevelopment.CareerSystem
                         break;
                     }
                 }
-                
-                
             }
-
         }
         
         public static ItemTrait GetTraitForReligion(Hero hero, ReligionObject religionObject)
@@ -539,11 +536,6 @@ namespace TOR_Core.CharacterDevelopment.CareerSystem
                 return null;
             }
             
-
-
-
-
-
             return null;
         }
 
@@ -562,12 +554,8 @@ namespace TOR_Core.CharacterDevelopment.CareerSystem
         {
             MobilePartyExtendedInfo extendedInfo = ExtendedInfoManager.Instance.GetPartyInfoFor(Hero.MainHero.PartyBelongedTo.StringId);
             
-            
-            
             var button =  CareerHelper.GetCareerButton() as KnightOldWorldCareerButtonBehavior;
-
             var seals = button.GetAllPuritySeals();
-            
             extendedInfo.TroopAttributes.TryGetValue(agent.Character.StringId , out var attributes);
 
             if (attributes == null)
@@ -588,8 +576,6 @@ namespace TOR_Core.CharacterDevelopment.CareerSystem
                     }
                 }
             }
-            
-           
         }
     }
 }

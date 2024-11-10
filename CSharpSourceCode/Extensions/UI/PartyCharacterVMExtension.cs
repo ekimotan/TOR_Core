@@ -64,11 +64,6 @@ namespace TOR_Core.Extensions.UI
                         SpecialbuttonEventManagerHandler.Instance.Disable();
                     }
                 }
-
-                
-                
-                
-                
             }
             
             RefreshValues();

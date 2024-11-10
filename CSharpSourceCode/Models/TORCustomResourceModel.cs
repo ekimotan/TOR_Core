@@ -64,10 +64,7 @@ public class TORCustomResourceModel : GameModel
                             {
                                 number.AddFactor(0.01f * troop.Number,new TextObject("Sigmar Seal"));
                             }
-                            
-                            
                         }
-                         
                     }
 
                     if (!hero.IsEnlisted() && hero.PartyBelongedTo.Army != null && hero.PartyBelongedTo.Army.LeaderParty != hero.PartyBelongedTo)

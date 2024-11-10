@@ -23,16 +23,9 @@ public class KnightlyStrikeOnHitScript: IWeaponHitScript
 
         if (statusEffectComponent != null)
         {
-            
             statusEffectComponent.RemoveStatusEffect("knightly_strike");
-            
-            
             var list = statusEffectComponent.GetTemporaryAttributes(true).Where(x => x == "KnightlyStrike").ToList();
-
-            
             knightlystrikes.AddRange(list);
-            
-            
         }
 
         if (Hero.MainHero.HasCareerChoice("WrathAgainstChaosKeystone"))

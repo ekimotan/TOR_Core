@@ -320,14 +320,14 @@ namespace TOR_Core.BattleMechanics.StatusEffect
             return _baseValues[property];
         }
 
-        public List<string> GetTemporaryAttributes(bool ignoreDuplicates=false)
+        public List<string> GetTemporaryAttributes(bool retrieveDuplicates=false)
         {
             List<string> list = new List<string>();
             foreach (var effect in _currentEffects.Keys)
             {
                 foreach (var attribute in effect.Template.TemporaryAttributes)
                 {
-                    if (ignoreDuplicates || (!list.Contains(attribute)))
+                    if (retrieveDuplicates || (!list.Contains(attribute)))
                     {
                         list.Add(attribute);
                     }

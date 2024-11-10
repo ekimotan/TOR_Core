@@ -17,12 +17,12 @@ public class KnightOldWorldCareerButtonBehavior(CareerObject career) : CareerBut
 {
     private const int MINIMUMLEVELFORSEAL = 5;
 
-    private string _secularSealIcon = "CareerSystem\\aqshy";
-    private string _sigmarSealIcon = "CareerSystem\\aqshy";
-    private string _taalSealIcon = "CareerSystem\\ghyran";
-    private string _ulricSealIcon = "CareerSystem\\azyr";
-    private string _shallyaSealIcon = "CareerSystem\\ghyran";
-    private string _manaanSealIcon = "CareerSystem\\manaan";
+    private readonly string _secularSealIcon = "CareerSystem\\aqshy";
+    private readonly string _sigmarSealIcon = "CareerSystem\\aqshy";
+    private readonly string _taalSealIcon = "CareerSystem\\ghyran";
+    private readonly string _ulricSealIcon = "CareerSystem\\azyr";
+    private readonly string _shallyaSealIcon = "CareerSystem\\ghyran";
+    private readonly string _manaanSealIcon = "CareerSystem\\manaan";
     private CharacterObject _setCharacter;
 
     public override void ButtonClickedEvent(CharacterObject characterObject, bool isPrisoner = false)
@@ -80,7 +80,7 @@ public class KnightOldWorldCareerButtonBehavior(CareerObject career) : CareerBut
         }
         
         var inquirydata = new MultiSelectionInquiryData("Choose purity Seal.", "Empower your Knight units with new powerful seals", inquiryElements,
-            true, 1, count, "Accept", "Cancel", OnSelectedOption, OnCancel, "", false);
+            true, 1, count, "Accept", "Cancel", OnSelectedOption, OnCancel);
         MBInformationManager.ShowMultiSelectionInquiry(inquirydata);
     }
 
@@ -163,7 +163,7 @@ public class KnightOldWorldCareerButtonBehavior(CareerObject career) : CareerBut
 
     private  List<KnightPuritySeal> GetSecularSeals()
     {
-        return new List<KnightPuritySeal>()
+        return new List<KnightPuritySeal>
         {
             new("SecularSeal1",  "apply_secular_seal_trait1", null, 10, _secularSealIcon),
             new("SecularSeal2" ,null, null, 10, _secularSealIcon),
@@ -172,7 +172,7 @@ public class KnightOldWorldCareerButtonBehavior(CareerObject career) : CareerBut
     }
     private List<KnightPuritySeal> GetTemplarPuritySeals()
     {
-        return new List<KnightPuritySeal>()
+        return new List<KnightPuritySeal>
         {
 
             
@@ -220,7 +220,7 @@ public class KnightOldWorldCareerButtonBehavior(CareerObject career) : CareerBut
 
         if (currentSeals != null && !currentSeals.IsEmpty())
         {
-            displayText = new TextObject("");
+            displayText = new TextObject();
             foreach (var seal in currentSeals)
             {
                 var text = displayText.ToString(); 
@@ -269,20 +269,20 @@ public class KnightPuritySeal()
 {
     public KnightPuritySeal(string sealId, string triggeredEffectIdId,string deityCultId, int price, string sealIcon) : this()
     {
-        this.Name = GameTexts.TryGetText("TORKnightPuritySealName", out var nameText,sealId ) ? nameText : new TextObject(sealId);
-        this.Description = GameTexts.TryGetText("TORKnightPuritySealDescription", out var descriptionText, sealId ) ? descriptionText : new TextObject("No description found");
+        Name = GameTexts.TryGetText("TORKnightPuritySealName", out var nameText,sealId ) ? nameText : new TextObject(sealId);
+        Description = GameTexts.TryGetText("TORKnightPuritySealDescription", out var descriptionText, sealId ) ? descriptionText : new TextObject("No description found");
 
         
         
-        this.triggeredEffectId = triggeredEffectIdId;
-        this.Price = price;
-        this.DeityCultId = deityCultId;
-        this.SealId = sealId;
-        this.SealIcon = sealIcon;
+        triggeredEffectId = triggeredEffectIdId;
+        Price = price;
+        DeityCultId = deityCultId;
+        SealId = sealId;
+        SealIcon = sealIcon;
     }
     
-    public TextObject Name = new TextObject("");
-    public TextObject Description = new TextObject("");
+    public TextObject Name = new TextObject();
+    public TextObject Description = new TextObject();
     public string SealId;
     public string triggeredEffectId;
     public int Price;

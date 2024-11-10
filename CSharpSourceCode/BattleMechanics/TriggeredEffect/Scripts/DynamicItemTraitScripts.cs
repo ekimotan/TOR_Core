@@ -144,12 +144,10 @@ namespace TOR_Core.BattleMechanics.TriggeredEffect.Scripts
     {
         public void OnTrigger(Vec3 position, Agent triggeredByAgent, IEnumerable<Agent> triggeredAgents, float duration)
         {
-            var trait = new ItemTrait();
             var additionalDamage = new DamageProportionTuple();
             additionalDamage.DamageType = DamageType.Physical;
             additionalDamage.Percent = 0.2f;
-
-
+            
             var ca = triggeredByAgent.GetComponent<AbilityComponent>().CareerAbility;
 
             var bonusdamage = 0f;
@@ -170,29 +168,27 @@ namespace TOR_Core.BattleMechanics.TriggeredEffect.Scripts
             {
                 additionalLoads += 2;
             }
-
-            CareerHelper.GetTraitForReligion(Hero.MainHero, Hero.MainHero.GetDominantReligion());
-
-
-                
-            trait.ItemTraitName = "KnightlyStrike";
-            trait.ItemTraitDescription = " Charge your weapon with knightly power";
-            trait.WeaponParticlePreset = new WeaponParticlePreset { ParticlePrefab = "psys_flaming_weapon" };
-            trait.OnHitScriptName = "TOR_Core.BattleMechanics.TriggeredEffect.Scripts.KnightlyStrikeOnHitScript";
-            trait.AdditionalDamageTuple = additionalDamage;
+            
+            var traitList = new List<ItemTrait>();
+            var holyTrait = CareerHelper.GetTraitForReligion(Hero.MainHero, Hero.MainHero.GetDominantReligion());
+            if (Hero.MainHero.HasCareerChoice("PathOfGloryKeystone"))
+            {
+                traitList.Add(holyTrait);
+            }
+            
+            var defaultTrait = new ItemTrait();
+            defaultTrait.ItemTraitName = "KnightlyStrike";
+            defaultTrait.ItemTraitDescription = " Charge your weapon with knightly power";
+            defaultTrait.WeaponParticlePreset = new WeaponParticlePreset { ParticlePrefab = "psys_flaming_weapon" };
+            defaultTrait.OnHitScriptName = "TOR_Core.BattleMechanics.TriggeredEffect.Scripts.KnightlyStrikeOnHitScript";
+            defaultTrait.AdditionalDamageTuple = additionalDamage;
+            traitList.Add(defaultTrait);
 
 
             for (int i = 0; i < additionalLoads; i++)
             {
                 triggeredByAgent.ApplyStatusEffect("knightly_strike",triggeredByAgent,30,false,false,true);
             }
-           
-
-
-            var list = triggeredByAgent.GetComponent<StatusEffectComponent>().GetTemporaryAttributes(true);
-
-
-                    var effect = triggeredByAgent.GetComponent<StatusEffectComponent>().GetAmplifiers(AttackTypeMask.Melee);
             
 
             foreach (Agent agent in triggeredAgents)
@@ -200,7 +196,12 @@ namespace TOR_Core.BattleMechanics.TriggeredEffect.Scripts
                 var comp = agent.GetComponent<ItemTraitAgentComponent>();
                 if(comp != null)
                 {
-                    comp.AddTraitToWieldedWeapon(trait, duration);
+                
+                    foreach (var trait in traitList)
+                    {
+                        comp.AddTraitToWieldedWeapon(trait, duration);
+  
+                    }
                 }
             }
         }
