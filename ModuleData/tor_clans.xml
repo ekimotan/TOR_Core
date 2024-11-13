@@ -743,7 +743,7 @@
 			 default_party_template="PartyTemplate.bretonnia_lordparty_template"
              super_faction="Kingdom.carcassonne"
              is_noble="true"
-             text="{=!}The powerful castle Guadaron rises above the foothills of the Vaults, watching over the Carcassonni border with both the forest of Loren and the lands of Tilea. Its lord, the Grail Knight Ser Amalric de Gaudaron is a powerful warrior, selected by the Lady herself to be the chosen warrior of Bretonnia. To aid him, the Fay Enchantress has sent the Twin Damsels Giulia and Margherita de Turín to his side, to provide him with their assistance and counsel both in the heat of battle and outside of it."
+             text="{=!}The powerful castle Gaudaron rises above the foothills of the Vaults, watching over the Carcassonni border with both the forest of Loren and the lands of Tilea. Its lord, the Grail Knight Ser Amalric de Gaudaron is a powerful warrior, selected by the Lady herself to be the chosen warrior of Bretonnia. To aid him, the Fay Enchantress has sent the Twin Damsels Giulia and Margherita de Turín to his side, to provide him with their assistance and counsel both in the heat of battle and outside of it."
              banner_key="1.145.12.1392.1147.768.784.1.0.0.424.144.149.185.192.541.497.1.0.0.302.144.149.589.727.764.764.1.1.180.424.144.149.185.196.977.497.1.0.0" />
     <!-- Mousillon faction -->
     <Faction id="mousillon_clan_1"
