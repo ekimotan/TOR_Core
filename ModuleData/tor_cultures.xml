@@ -1358,6 +1358,8 @@
 			<template name="NPCCharacter.tor_wanderer_empire_9" />
 			<template name="NPCCharacter.tor_wanderer_empire_10" />
 			<template name="NPCCharacter.tor_wanderer_empire_11" />
+			<template name="NPCCharacter.tor_wanderer_empire_12" />
+			<template name="NPCCharacter.tor_wanderer_empire_13" />
 			<template name="NPCCharacter.tor_notable_empire_0" />
 			<template name="NPCCharacter.tor_notable_empire_0b" />
 			<template name="NPCCharacter.tor_notable_empire_1" />
@@ -4756,6 +4758,8 @@
       <notable_and_wanderer_templates>
         <template name="NPCCharacter.tor_wanderer_bretonnia_0" />
 		<template name="NPCCharacter.tor_wanderer_bretonnia_1" />
+		<template name="NPCCharacter.tor_wanderer_bretonnia_2" />
+		<template name="NPCCharacter.tor_wanderer_bretonnia_3" />
         <template name="NPCCharacter.spc_notable_bretonnia_merch1" />
         <template name="NPCCharacter.spc_notable_bretonnia_merch2" />
         <template name="NPCCharacter.spc_notable_bretonnia_merch3" />
