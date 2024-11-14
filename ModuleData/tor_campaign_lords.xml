@@ -6986,7 +6986,7 @@
   </NPCCharacter>
   <NPCCharacter id="tor_eo_lord_laurelorn_factionleader" default_group="cavalry" name="{=str_tor_eo_lord_laurelorn_factionleader}Queen Marrisith of Laurelorn" occupation="Lord" culture="Culture.eonir" voice="curt" age="50" skill_template="SkillSet.tor_skills_caster_lord" is_female="true" race="elf" is_hero="true">
     <face>
-      <BodyProperties version="4" age="22" weight="0" build="0.5749" key="0015500B8758300866885396977479B85B26577487A3463A886475B28A788B17DBE416030CA4364C904C94B469A87884000000000000000C0000000035A44003" />
+      <BodyProperties version="4" age="22" weight="0" build="0.5" key="0000080000B41004B976E48A6774555048B7948F8D18023B5C4483478C9854C40177761307005133700000501000000000000000000000170000000048FC4003" />
     </face>
     <Traits>
       <Trait id="BalancedFightingSkills" value="7" />
@@ -7002,9 +7002,9 @@
       <EquipmentSet id="tor_eo_marrisith_template" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_eo_lord_laurelorn_first_2" default_group="cavalry" name="{=str_tor_eo_lord_laurelorn_first_2}Prince Aesryn of the Laurelorn" occupation="Lord" culture="Culture.eonir" voice="curt" age="50" skill_template="SkillSet.tor_skills_warrior_lord" race="elf" is_hero="true">
+  <NPCCharacter id="tor_eo_lord_laurelorn_first_2" default_group="cavalry" name="{=str_tor_eo_lord_laurelorn_first_2}Prince Aesryn of Laurelorn" occupation="Lord" culture="Culture.eonir" voice="curt" age="50" skill_template="SkillSet.tor_skills_warrior_lord" race="elf" is_hero="true">
     <face>
-      <BodyProperties version="4" age="22" weight="0.7199" build="0.5963" key="001E6409802C30057982FB8878927AA0A7935692694DB5DA75783A9275E98AB28AAD760307242D669B8C998B9A97657500000000000000070000000048EC4003" />
+      <BodyProperties version="4" age="22" weight="0.2843" build="0.4558" key="0000540280A00003447BC2B7A969037B576D6887B868C961AAD5BD79A03BA017A57906030ECD9A4D74AB998869B23232000000000000000E000000003DDC50C2" />
     </face>
     <Traits>
       <Trait id="BalancedFightingSkills" value="7" />
@@ -7022,7 +7022,7 @@
   </NPCCharacter>
   <NPCCharacter id="tor_eo_lord_laurelorn_first_3" default_group="cavalry" name="{=str_tor_eo_lord_laurelorn_first_3}Yadoh" occupation="Lord" culture="Culture.eonir" voice="curt" age="50" skill_template="SkillSet.tor_skills_warrior_lord" race="elf" is_hero="true">
     <face>
-      <BodyProperties version="4" age="22" weight="0.7199" build="0.5963" key="001E6409802C30057982FB8878927AA0A7935692694DB5DA75783A9275E98AB28AAD760307242D669B8C998B9A97657500000000000000070000000048EC4003" />
+      <BodyProperties version="4" age="22" weight="0.2843" build="0.4558" key="0000540280A00003447BC2B7A969037B576D6887B868C961AAD5BD79A03BA017A57906030ECD9A4D74AB998869B23232000000000000000E000000003DDC50C2" />
     </face>
     <Traits>
       <Trait id="BalancedFightingSkills" value="7" />
@@ -7058,7 +7058,7 @@
   </NPCCharacter>
   <NPCCharacter id="tor_eo_lord_laurelorn_second_2" default_group="cavalry" name="{=str_tor_eo_lord_laurelorn_second_2}Elora" occupation="Lord" culture="Culture.eonir" voice="curt" age="50" skill_template="SkillSet.tor_skills_warrior_lord" is_female="true" race="elf" is_hero="true">
     <face>
-      <BodyProperties version="4" age="22" weight="0.7199" build="0.5963" key="001E6409802C30057982FB8878927AA0A7935692694DB5DA75783A9275E98AB28AAD760307242D669B8C998B9A97657500000000000000070000000048EC4003" />
+      <BodyProperties version="4" age="22" weight="0.5" build="0.5" key="000A780AC65820027577F4876770383583B4866AF5A6A4024CB1706787863433017776130741447477000000000000000000000000000017000000003EFC2003" />
     </face>
     <Traits>
       <Trait id="BalancedFightingSkills" value="7" />
@@ -7076,7 +7076,7 @@
   </NPCCharacter>
   <NPCCharacter id="tor_eo_lord_laurelorn_second_3" default_group="cavalry" name="{=str_tor_eo_lord_laurelorn_second_3}Garelion" occupation="Lord" culture="Culture.eonir" voice="curt" age="50" skill_template="SkillSet.tor_skills_warrior_lord" race="elf" is_hero="true">
     <face>
-      <BodyProperties version="4" age="22" weight="0.7199" build="0.5963" key="001E6409802C30057982FB8878927AA0A7935692694DB5DA75783A9275E98AB28AAD760307242D669B8C998B9A97657500000000000000070000000048EC4003" />
+      <BodyProperties version="4" age="22" weight="0.1959" build="0.4757" key="001B5406C014000155DAA9FFAC8B3C5A498986BB7D4E55797A559989817C76744987A6030858DD8873A5968C2A62C4990000000000000008000000004F1C7042" />
     </face>
     <Traits>
       <Trait id="BalancedFightingSkills" value="7" />
@@ -7094,7 +7094,7 @@
   </NPCCharacter>
   <NPCCharacter id="tor_eo_lord_laurelorn_third_1" default_group="cavalry" name="{=str_tor_eo_lord_laurelorn_third_1}Kaia Stormwitch Fanmaris of House Everglade" occupation="Lord" culture="Culture.eonir" voice="curt" age="50" skill_template="SkillSet.tor_skills_warrior_lord" is_female="true" race="elf" is_hero="true">
     <face>
-      <BodyProperties version="4" age="22" weight="0.7199" build="0.5963" key="001E6409802C30057982FB8878927AA0A7935692694DB5DA75783A9275E98AB28AAD760307242D669B8C998B9A97657500000000000000070000000048EC4003" />
+      <BodyProperties version="4" age="22" weight="0.341" build="0.1929" key="000D4C0FD088300484368A546680454474C7A39CF97306087FF66A9F8E5F8A53034606130A7654323570067576F80A11000000000000001A00000000275C1043" />
     </face>
     <Traits>
       <Trait id="BalancedFightingSkills" value="7" />
@@ -7112,7 +7112,7 @@
   </NPCCharacter>
   <NPCCharacter id="tor_eo_lord_laurelorn_third_2" default_group="cavalry" name="{=str_tor_eo_lord_laurelorn_third_2}Lord Adon of House Tide Strider" occupation="Lord" culture="Culture.eonir" voice="curt" age="50" skill_template="SkillSet.tor_skills_warrior_lord" race="elf" is_hero="true">
     <face>
-      <BodyProperties version="4" age="22" weight="0.7199" build="0.5963" key="001E6409802C30057982FB8878927AA0A7935692694DB5DA75783A9275E98AB28AAD760307242D669B8C998B9A97657500000000000000070000000048EC4003" />
+      <BodyProperties version="4" age="22" weight="0.0046" build="0.7022" key="0008040000B400038A4EC3DFC54708879389867952B117D77876484A87837E9BA5BB36030F6BD8BFB0A6769677C2E8DB000000000000000F0000000075F47042" />
     </face>
     <Traits>
       <Trait id="BalancedFightingSkills" value="7" />
@@ -7130,7 +7130,7 @@
   </NPCCharacter>
   <NPCCharacter id="tor_eo_lord_laurelorn_third_3" default_group="cavalry" name="{=str_tor_eo_lord_laurelorn_third_3}Prince Fylson of House Seaborn" occupation="Lord" culture="Culture.eonir" voice="curt" age="50" skill_template="SkillSet.tor_skills_warrior_lord" race="elf" is_hero="true">
     <face>
-      <BodyProperties version="4" age="22" weight="0.7199" build="0.5963" key="001E6409802C30057982FB8878927AA0A7935692694DB5DA75783A9275E98AB28AAD760307242D669B8C998B9A97657500000000000000070000000048EC4003" />
+      <BodyProperties version="4" age="22" weight="0.4955" build="0.7022" key="00139C06002C00059A5A4BBC9C27B626E9B8AC7599D3AE7E794544C58D7483446B648603088C56AAB7267886B8D2AC1500000000000000080000000035047002" />
     </face>
     <Traits>
       <Trait id="BalancedFightingSkills" value="7" />
@@ -7148,7 +7148,7 @@
   </NPCCharacter>
   <NPCCharacter id="tor_eo_lord_laurelorn_third_4" default_group="cavalry" name="{=str_tor_eo_lord_laurelorn_third_4}Greylord Wizard Altharion of House of Caledor" occupation="Lord" culture="Culture.eonir" voice="curt" age="50" skill_template="SkillSet.tor_skills_caster_lord" race="elf" is_hero="true">
     <face>
-      <BodyProperties version="4" age="22" weight="0.7199" build="0.5963" key="001E6409802C30057982FB8878927AA0A7935692694DB5DA75783A9275E98AB28AAD760307242D669B8C998B9A97657500000000000000070000000048EC4003" />
+      <BodyProperties version="4" age="22" weight="0" build="0.5077" key="0010180280A000053885C59958C70585C6C9518A28F30F03BBA779F0C7B5A4572A9506030BECE7BC80798C889D965A35000000000000000B00000000457C6002" />
     </face>
     <Traits>
       <Trait id="BalancedFightingSkills" value="7" />
@@ -7166,7 +7166,7 @@
   </NPCCharacter>
   <NPCCharacter id="tor_eo_lord_laurelorn_fourth_1" default_group="cavalry" name="{=str_tor_eo_lord_laurelorn_fourth_1}Lord Lindialoc of House Elwyn" occupation="Lord" culture="Culture.eonir" voice="curt" age="50" skill_template="SkillSet.tor_skills_warrior_lord" race="elf" is_hero="true">
     <face>
-      <BodyProperties version="4" age="22" weight="0.7199" build="0.5963" key="001E6409802C30057982FB8878927AA0A7935692694DB5DA75783A9275E98AB28AAD760307242D669B8C998B9A97657500000000000000070000000048EC4003" />
+      <BodyProperties version="4" age="22" weight="0.0448" build="0.3904" key="00152C00000000029D6E58D59C456D8C8667A97577D529771475B65B65C389F8B42846030FE9560C618695A671A2FA99000000000000000F000000005FF42082" />
     </face>
     <Traits>
       <Trait id="BalancedFightingSkills" value="7" />
@@ -7184,7 +7184,7 @@
   </NPCCharacter>
   <NPCCharacter id="tor_eo_lord_laurelorn_fourth_2" default_group="cavalry" name="{=str_tor_eo_lord_laurelorn_fourth_2}Athanoc the Guardian Mage" occupation="Lord" culture="Culture.eonir" voice="curt" age="50" skill_template="SkillSet.tor_skills_caster_lord" is_female="false" race="elf" is_hero="true">
     <face>
-      <BodyProperties version="4" age="22" weight="0.7199" build="0.5963" key="001E6409802C30057982FB8878927AA0A7935692694DB5DA75783A9275E98AB28AAD760307242D669B8C998B9A97657500000000000000070000000048EC4003" />
+      <BodyProperties version="4" age="22" weight="0.1197" build="0.5127" key="0010700600140003B58894FACEE57AC68A42685D62696A82A81077548D338C68898856030BFEEAAC826695AC67688A92000000000000000B00000000177C5042" />
     </face>
     <Traits>
       <Trait id="BalancedFightingSkills" value="7" />
@@ -7202,7 +7202,7 @@
   </NPCCharacter>
   <NPCCharacter id="tor_eo_lord_laurelorn_fourth_3" default_group="cavalry" name="{=str_tor_eo_lord_laurelorn_fourth_3}Lady Iyana of House Holran" occupation="Lord" culture="Culture.eonir" voice="curt" age="50" skill_template="SkillSet.tor_skills_warrior_lord" is_female="true" race="elf" is_hero="true">
     <face>
-      <BodyProperties version="4" age="22" weight="0.7199" build="0.5963" key="001E6409802C30057982FB8878927AA0A7935692694DB5DA75783A9275E98AB28AAD760307242D669B8C998B9A97657500000000000000070000000048EC4003" />
+      <BodyProperties version="4" age="22" weight="0.2824" build="0.2824" key="002050034C5810057789F8655760484597856547E998790684A8B1A78C5CCA66477D06130A44D264443394779494A8BC000000000000001A000000002B5C40C3" />
     </face>
     <Traits>
       <Trait id="BalancedFightingSkills" value="7" />
