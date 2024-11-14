@@ -452,7 +452,7 @@
              culture="Culture.empire"
              super_faction="Kingdom.nordland"
              is_noble="true"
-             text="{=!}"
+             text="{=!}The Salzblut clan is relatively new, established to distinguish those old souls who are part of the new Imperial fleet and most of the prominent figures are either renowned sailors or esteemed warriors. Ever since the secession of Marienburg from the Empire, the wind has been taken out of the sails from the Imperial navy. The navy has been struggling ever since, while the first Imperial fleet has enough warships, there is too much diversity on the decks, mixing arrogant nobles with weathered sailors, but the sailors are not very noble, and the nobles are certainly not sailors. Nordland, being a maritime province, has a long history of naval combat and dealing with coastal raids upon their lands. Many a Nordland sailor claim they are worth their weight in salt ten times over compared to those snobby fops in Reikland."
              banner_key="11.149.140.8000.8000.764.764.0.1.0.505.140.116.672.672.764.764.0.0.0:kingdom_nordland"/>
     <Faction id="nordland_clan_3"
              name="{=!}Meergott"
@@ -461,7 +461,7 @@
              culture="Culture.empire"
              super_faction="Kingdom.nordland"
              is_noble="true"
-             text="{=!}"
+             text="{=!}The Meergott clan has had many identities over the years, but was always meant to contain some aspect of Manann. The clan mostly deals with religious affairs and ensures the proper rites are taken when a ship first sets sail and makes sure it doesn’t sink on its maiden voyage. The clan usually contains several figureheads who are dedicated to Manann, but also contain a representative of the church of Sigmar to ensure Manann doesn’t overshadow the warrior god. This doesn’t mean that every member is a devout priest, usually they are an admiral or an old seadog with experience in maritime matters."
              banner_key="11.149.140.8000.8000.764.764.0.1.0.505.140.116.672.672.764.764.0.0.0:kingdom_nordland"/>
 	<!-- Ostland faction -->
     <Faction id="ostland_clan_1"
