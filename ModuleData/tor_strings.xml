@@ -969,14 +969,14 @@
   <string id="generic_backstory.tor_wanderer_empire_10" text="{=!}I am a Beast Wizard of the Imperial College. You have certainly heard of our might and talent for survival." />
 
   <string id="prebackstory.tor_wanderer_empire_11" text="{=!}Hmmm. I smell the battle in you. You've shed blood for sure, I perceive it in you." />
-  <string id="backstory_a.tor_wanderer_empire_11" text="{=!}I am the Winter's God loyal warrior. I come from the far north of the empire, where the ground is gray, frost is everlasting, and corpses take an eternity to rot." />
+  <string id="backstory_a.tor_wanderer_empire_11" text="{=!}I am the Winter's God loyal warrior. I come from the far north of the Empire, where the ground is gray, frost is everlasting, and corpses take an eternity to rot." />
   <string id="backstory_b.tor_wanderer_empire_11" text="{=!}Ulric is my father. I owe my strength and my powers to him. And I will shed blood for him whenever the opportunity arises." />
   <string id="backstory_c.tor_wanderer_empire_11" text="{=!}Will you be the one who helps me fulfill my purpose, traveler?" />
   <string id="response_1.tor_wanderer_empire_11" text="{=!}If your purpose is blood, we share the same destiny, my friend." />
   <string id="response_2.tor_wanderer_empire_11" text="{=!}I don't care about your motivations, but rather your abilities." />
   <string id="backstory_d.tor_wanderer_empire_11" text="{=!}Alright then. If the price is right - my axe is yours, as is the wisdom of the winter." />
   
-  <string id="generic_backstory.tor_wanderer_empire_11" text="{=!}I am a Beast Wizard of the Imperial College. You have certainly heard of our might and talent for survival." />
+  <string id="generic_backstory.tor_wanderer_empire_11" text="{=!}I am a priest of Ulric. You have certainly heard of our fighting skills." />
 
   <string id="prebackstory.tor_wanderer_empire_12" text="{=!}I see you lead a war party, eh. Hope you're not like those sons of nobles that I've had the misfortune of knowing." />
   <string id="backstory_a.tor_wanderer_empire_12" text="{=!}I have spent much of my life commanding a wealthy nobleman's army. A great honor, they said... Bah! Bullshit." />
