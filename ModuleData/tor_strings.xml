@@ -968,6 +968,24 @@
   <string id="backstory_d.tor_wanderer_empire_10" text="{=!}Right." />
   <string id="generic_backstory.tor_wanderer_empire_10" text="{=!}I am a Beast Wizard of the Imperial College. You have certainly heard of our might and talent for survival." />
 
+  <string id="prebackstory.tor_wanderer_empire_12" text="{=!}I see you lead a war party, eh. Hope you're not like those sons of nobles that I've had the misfortune of knowing." />
+  <string id="backstory_a.tor_wanderer_empire_12" text="{=!}I have spent much of my life commanding a wealthy nobleman's army. A great honor, they said... Bah! Bullshit." />
+  <string id="backstory_b.tor_wanderer_empire_12" text="{=!}They've put me as captain subordinate to that noble's son, a beardless kid who knew nothing about commanding. He didn't even know how to get on a horse. I followed that stupid boy's instructions and it almost cost me my life. But unlike my men, I still have air in my lungs to denounce this negligence." />
+  <string id="backstory_c.tor_wanderer_empire_12" text="{=!}Of course that daddy's boy, hidden in his mommy's skirts, said the failure was due to my incompetence, and that I didn't know how to lead. The bastard didn't even show up in battle, he just gave the order to charge and that's it." />
+  <string id="response_1.tor_wanderer_empire_12" text="{=!}I've also had the misfortune of dealing with those types of commanders." />
+  <string id="response_2.tor_wanderer_empire_12" text="{=!}I'm sorry for your men." />
+  <string id="backstory_d.tor_wanderer_empire_12" text="{=!}Ah, fuck him! Now that I don't have that posh man in charge, I'd join a company whose commander has some brains. I hope you can be." />
+  <string id="generic_backstory.tor_wanderer_empire_12" text="{=!}I am a Captain of the Imperial Army. No doubt you've heard of our commanding talent." />
+
+  <string id="prebackstory.tor_wanderer_empire_13" text="{=!}With great pleasure." />
+  <string id="backstory_a.tor_wanderer_empire_13" text="{=!}I am the youngest of 5 brothers. My older brother is the one chosen by my father, a renowned baron of the Empire, to inherit the title and possessions of my family. Then comes my other brother, the second oldest, who thanks to my family name, got a position in the administration in the government of one ot the provinces, no less." />
+  <string id="backstory_b.tor_wanderer_empire_13" text="{=!}My third brother enlisted in the imperial army. My father served before him, and that's why they gave him preferential treatment, giving him the position he left. My sister joined the priestesses of Shallya, something very honorable." />
+  <string id="backstory_c.tor_wanderer_empire_13" text="{=!}And only I am left, without the possibility of inheriting anything or favored treatment. Being forced to start from the bottom like any commoner if I want to become something in life." />
+  <string id="response_1.tor_wanderer_empire_13" text="{=!}Certainly my men enjoy opportunities to fill themselves with gold and glory." />
+  <string id="response_2.tor_wanderer_empire_13" text="{=!}We all have our place in life." />
+  <string id="backstory_d.tor_wanderer_empire_13" text="{=!}I was trained in combat since I was little. I know how to handle the sword, the greatsword, the crossbow and firearms. I also know the letters. I can speak and write fluently in the language of the Empire, Bretonnia and Tilea. You will not find a better candidate." />
+  <string id="generic_backstory.tor_wanderer_empire_13" text="{=!}I am a member of Imperial nobility. No doubt I am an educated and righteous person, not some mere foolish commoner." />
+  
   <string id="prebackstory.tor_wanderer_vampire_0" text="{=!}Hm, you wish to know of my life? It is a tale I can share." />
   <string id="backstory_a.tor_wanderer_vampire_0" text="{=!}I have always been surrounded by death, death is everything in Sylvania." />
   <string id="backstory_b.tor_wanderer_vampire_0" text="{=!}My fate was never to join the undead roaming the land, but to control them. To raise them and bend them to my will." />
@@ -1020,6 +1038,22 @@
   <string id="response_1.tor_wanderer_bretonnia_1" text="{=!}I see." />
   <string id="response_2.tor_wanderer_bretonnia_1" text="{=!}I understand." />
   <string id="backstory_d.tor_wanderer_bretonnia_1" text="{=!}Right." />
+  
+  <string id="prebackstory.tor_wanderer_bretonnia_2" text="{=!}Well say no more, m'lord. Do you wanna share a pint while listening to the exploits of a true warrior?" />
+  <string id="backstory_a.tor_wanderer_bretonnia_2" text="{=!}I haven't always been what you see now. Not long ago I was a servant of our beloved Bretonnia. I cultivated the grain that grew on these fertile lands, I had a small cabin in a village and I paid the duke's extortioners when they came to collect protection, rents, tolls or whatever they invented." />
+  <string id="backstory_b.tor_wanderer_bretonnia_2" text="{=!}And so, deluded to me, I'd have continued if it had not been for a pack of beastmen that plundered our village. Or so they tried. It turns out that the true strength of a countryman reveals in combat. And with nothing more than my tools I was able to kill a handful of those foul beings. Without realizing it, I was able to inspire enough courage in my neighbors that they joined the fight." />
+  <string id="backstory_c.tor_wanderer_bretonnia_2" text="{=!}And I wonder: where were the duke's soldiers who should've been protecting us? What is our miserable salary spent on? With my hut destroyed and people cheering me, I decided that this scoundrel was not going to get any more money from me. And I don't regret it, with a couple of hireling contracts I earn more than an entire year in the field." />
+  <string id="response_1.tor_wanderer_bretonnia_2" text="{=!}A real hero among the peasants, without a doubt." />
+  <string id="response_2.tor_wanderer_bretonnia_2" text="{=!}You know, there are much worse enemies than a bunch of ungors out there." />
+  <string id="backstory_d.tor_wanderer_bretonnia_2" text="{=!}I've already proven myself in combat, now I'm just looking for a commander to serve who won't treat me like just another levy soldier. Well, my reputation precedes me." />
+  
+  <string id="prebackstory.tor_wanderer_bretonnia_3" text="{=!}Listen, I need to get away from this place as soon as possible. Not long ago I was hunting in one of the nearby woods, and then I heard some screaming. I ran to see what was happening and found myself at a small farm." />
+  <string id="backstory_a.tor_wanderer_bretonnia_3" text="{=!}There were a couple of poorly equipped soldiers beating up the farmer. Meanwhile an ugly bastard who seemed to be their chief dragged a woman to a shed behind." />
+  <string id="backstory_b.tor_wanderer_bretonnia_3" text="{=!}Maybe I'm not the most honorable guy in Bretonnia, but even I know there are lines that shouldn't be crossed. " />
+  <string id="backstory_c.tor_wanderer_bretonnia_3" text="{=!}Sneaking up on the chief, I stabbed him in the back. But I couldn't deal with the other two. Well, at least I distracted them from that poor woman by chasing me. Now I spend my days hiding in places like this, trying to avoid the scaffold." />
+  <string id="response_1.tor_wanderer_bretonnia_3" text="{=!}In this cruel world, no good deed goes unpunished." />
+  <string id="response_2.tor_wanderer_bretonnia_3" text="{=!}You wanted to avoid one crime by committing another. You're not that different from that guy." />
+  <string id="backstory_d.tor_wanderer_bretonnia_3" text="{=!}Maybe you're right... If only you accepted me into your army they would stop looking for me, and I could stop hiding. I would be eternally grateful to you." />
 
   <string id="prebackstory.tor_wanderer_mousillon_0" text="{=!}Hmmph. You'd like to hear my story?" />
   <string id="backstory_a.tor_wanderer_mousillon_0" text="{=!}I was one of those questing knights a long time ago, dedicating my entire life for that damned Lady." />
