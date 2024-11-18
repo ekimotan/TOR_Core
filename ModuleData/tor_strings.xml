@@ -328,7 +328,7 @@
 
   <string id="tor_feudal_oath_line1.artois" text="{=!}I give my hearth and dedication to the protection of the forest lands of the dukedom of Artois." />
   <string id="tor_feudal_oath_line2.artois" text="{=!}My sword and lance are yours Duke Chilfroy for i am your subject." />
-  <string id="tor_feudal_oath_line3.artois" text="{=!}My shield is for the people of Gisoreux whom i will protect with my body and soul, for i am pure a true knight of Brettonia." />
+  <string id="tor_feudal_oath_line3.artois" text="{=!}My shield is for the people of Gisoreux whom i will protect with my body and soul, for i am pure a true knight of Bretonnia." />
   <string id="tor_feudal_oath_line4.artois" text="{=!}As a knight of Gisoreux no harm will overcome my people this i vow." />
 
   <string id="tor_feudal_oath_line1.aquitaine" text="{=!}With honour, I swear allegiance to the majestic Dukedom of Aquitaine." />
@@ -422,7 +422,7 @@
   <string id="tor_player_accept_vassalage.blooddragons" text="{=!}Welcome to the Ordo Draconis {PLAYER.NAME}. Here are some of my followers, may they aid you in battle. Take this blade." />
   <string id="tor_player_accept_vassalage.vlandia" text="{=!}By the lady of the lake. I proclaim you a noble of Brettonia and defender of the realm.  " />
   <string id="tor_player_accept_vassalage.battania" text="{=!}I name you guardian of Athel Loren, noble of the Asrai, may thy bow aim true." />
-  <string id="tor_player_accept_vassalage.eonir" text="{=!}I proclaim you a noble of the Eonir, stand proud for you are now a protector of the holy forest of Laurorn." />
+  <string id="tor_player_accept_vassalage.eonir" text="{=!}I proclaim you a noble of the Eonir, stand proud for you are now a protector of the holy forest of Laurelorn." />
   <string id="tor_player_accept_vassalage.chaos_culture" text="{=!}May Nurgle gift you with his blessings." />
 
   <string id="str_liege_title.empire" text="{=!}Elector Count of one of the Provinces of the Empire">
