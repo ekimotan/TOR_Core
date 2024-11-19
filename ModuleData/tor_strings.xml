@@ -1093,9 +1093,9 @@
   <string id="generic_backstory.tor_wanderer_eonir_0" text="{=!}I would prefer not to leave my beloved forests, but for a reasonable fee, I might be persuaded to accompany you on your travels for a time." />
 
   <string id="prebackstory.tor_wanderer_eonir_1" text="{=!}Insolent boy, you stand before a Guardian Mage of the Eonir." />
-  <string id="backstory_a.tor_wanderer_eonir_1" text="{=!}My lineage descends from an ancient line of warriors, tracing its origins to the War of the Beard itself. Indeed, one of my ancestors stood as the right hand of the great Caledor II, fighting alongside him in the Battle of the Three Towers." />
-  <string id="backstory_b.tor_wanderer_eonir_1" text="{=!}Beasts, monsters, humans, or even other elves, if necessary—any creature that threatens the forest shall feel the sting of my arrows." />
-  <string id="backstory_c.tor_wanderer_eonir_1" text="{=!}Behold, with each enemy slain, my people cut their forearms to remember each enemy defeated. There remains space for more deaths." />
+  <string id="backstory_a.tor_wanderer_eonir_1" text="{=!}Surely you don't have the slightest idea about our arcane power and bloodline." />
+  <string id="backstory_b.tor_wanderer_eonir_1" text="{=!}My lineage descends from an ancient line of warriors, tracing its origins to the War of the Beard itself." />
+  <string id="backstory_c.tor_wanderer_eonir_1" text="{=!}Indeed, one of my ancestors stood as the right hand of the great Caledor II, fighting alongside him in the Battle of the Three Towers." />
   <string id="response_1.tor_wanderer_eonir_1" text="{=!}A proud lineage." />
   <string id="response_2.tor_wanderer_eonir_1" text="{=!}Many people claim to be descended from great heroes of the past." />
   <string id="backstory_d.tor_wanderer_eonir_1" text="{=!}Right." />
