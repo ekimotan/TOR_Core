@@ -82,7 +82,7 @@
       <tag tag_name="ElfMaleTag" />
     </tags>
   </string>
-  <string id="str_context_line_elf.first_meeting_renowned" text="{=e_first_meeting_renowned}We are aware of your meagre accomplishments. What do you require from the sons and daughters of Athel Loren, monkeigh?">
+  <string id="str_context_line_elf.first_meeting_renowned" text="{=e_first_meeting_renowned}We are aware of your meagre accomplishments. What do you require from the sons and daughters of Athel Loren, mayfly?">
     <tags>
       <tag tag_name="FirstMeetingTag" />
       <tag tag_name="ElfMaleTag" />
