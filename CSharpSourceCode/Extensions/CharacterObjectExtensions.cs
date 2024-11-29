@@ -8,6 +8,7 @@ using TaleWorlds.CampaignSystem;
 using TaleWorlds.Core;
 using TaleWorlds.Core.ViewModelCollection.Information;
 using TaleWorlds.ObjectSystem;
+using TaleWorlds.TwoDimension;
 using TOR_Core.BattleMechanics.DamageSystem;
 using TOR_Core.CampaignMechanics.CustomResources;
 using TOR_Core.CampaignMechanics.Religion;
@@ -308,7 +309,7 @@ namespace TOR_Core.Extensions
                     var explainedNumber = new ExplainedNumber(cost);
                     CareerHelper.ApplyBasicCareerPassives(Hero.MainHero,ref explainedNumber,PassiveEffectType.CustomResourceUpgradeCostModifier,true);
                     
-                    cost = (int)explainedNumber.ResultNumber;
+                    cost = Math.Max((int)explainedNumber.ResultNumber,1);
                 }
                
                 return new Tuple<CustomResource, int>(CustomResourceManager.GetResourceObject(info.ResourceCost.ResourceType), cost);

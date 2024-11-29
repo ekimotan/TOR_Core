@@ -544,7 +544,7 @@ namespace TOR_Core.Extensions
 
         public static bool HasAnyReligion(this Hero hero) => hero.GetDominantReligion() != null;
 
-        public static ReligionObject GetDominantReligion(this Hero hero) => hero.GetExtendedInfo()?.DominantReligion;
+        public static ReligionObject GetDominantReligion(this Hero hero) => hero?.GetExtendedInfo()?.DominantReligion;
 
         public static DevotionLevel GetDevotionLevelForReligion(this Hero hero, ReligionObject religion)
         {

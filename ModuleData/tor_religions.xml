@@ -20,7 +20,7 @@
             <ArtifactItem id="Item.tor_empire_weapon_mace_holy_hammer" />
         </ReligiousArtifacts>
     </Religion>
-    <Religion id="cult_of_taal" Name="Cult of Taal" Culture="Culture.empire" Affinity="Order" DeityName="Taal">
+    <Religion id="cult_of_taal" Name="{=tor_religion_cult_name_cult_of_taal_str}Cult of Taal" Culture="Culture.empire" Affinity="Order" DeityName="Taal">
         <HostileReligions>
             <HostileReligion id="Religion.cult_of_nagash" />
             <HostileReligion id="Religion.cult_of_slaanesh" />
@@ -44,7 +44,7 @@
             <ArtifactItem id="Item.tor_empire_weapon_thaxe_taal" />
         </ReligiousArtifacts>
     </Religion>
-    <Religion id="cult_of_ulric" Name="Cult of Ulric" Culture="Culture.empire" Affinity="Order" DeityName="Ulric">
+    <Religion id="cult_of_ulric" Name="{=tor_religion_cult_name_cult_of_ulric_str}Cult of Ulric" Culture="Culture.empire" Affinity="Order" DeityName="Ulric">
         <HostileReligions>
             <HostileReligion id="Religion.cult_of_nagash" />
             <HostileReligion id="Religion.cult_of_slaanesh" />
@@ -66,7 +66,7 @@
         <ReligiousArtifacts>
         </ReligiousArtifacts>
     </Religion>
-    <Religion id="cult_of_shallya" Name="Cult of Shallya" Culture="Culture.empire" Affinity="Order" DeityName="Shallya">
+    <Religion id="cult_of_shallya" Name="{=tor_religion_cult_name_cult_of_shallya_str}Cult of Shallya" Culture="Culture.empire" Affinity="Order" DeityName="Shallya">
         <HostileReligions>
             <HostileReligion id="Religion.cult_of_nagash" />
             <HostileReligion id="Religion.cult_of_slaanesh" />
@@ -87,7 +87,7 @@
         <ReligiousArtifacts>
         </ReligiousArtifacts>
     </Religion>
-    <Religion id="cult_of_manaan" Name="Cult of Manaan" Culture="Culture.empire" Affinity="Order" DeityName="Manaan">
+    <Religion id="cult_of_manaan" Name="{=tor_religion_cult_name_cult_of_manaan_str}Cult of Manann" Culture="Culture.empire" Affinity="Order" DeityName="Manann">
         <HostileReligions>
             <HostileReligion id="Religion.cult_of_nagash" />
             <HostileReligion id="Religion.cult_of_slaanesh" />
@@ -111,7 +111,7 @@
         </ReligiousArtifacts>
     </Religion>
     <!-- bretonnia religions -->
-    <Religion id="cult_of_lady" Name="Cult of The Lady" Culture="Culture.vlandia" Affinity="Order" DeityName="The Lady">
+    <Religion id="cult_of_lady" Name="{=tor_religion_cult_name_cult_of_lady_str}Cult of The Lady" Culture="Culture.vlandia" Affinity="Order" DeityName="The Lady">
         <HostileReligions>
             <HostileReligion id="Religion.cult_of_nagash" />
             <HostileReligion id="Religion.cult_of_slaanesh" />
@@ -130,7 +130,7 @@
         </ReligiousArtifacts>
     </Religion>
     <!-- vampire religions -->
-    <Religion id="cult_of_nagash" Name="Children of Nagash" Culture="Culture.khuzait" Affinity="Vampire" DeityName="Nagash">
+    <Religion id="cult_of_nagash" Name="{=tor_religion_cult_name_cult_of_nagash_str}Children of Nagash" Culture="Culture.khuzait" Affinity="Vampire" DeityName="Nagash">
         <HostileReligions>
             <HostileReligion id="Religion.cult_of_sigmar" />
             <HostileReligion id="Religion.cult_of_taal" />
@@ -157,7 +157,7 @@
         </ReligiousTroops>
     </Religion>
     <!-- chaos religions -->
-    <Religion id="chaos_undivided" Name="Chaos Undivided" Culture="Culture.chaos_culture" Affinity="Chaos" DeityName="Chaos">
+    <Religion id="chaos_undivided" Name="{=tor_religion_cult_name_chaos_undivided_str}Chaos Undivided" Culture="Culture.chaos_culture" Affinity="Chaos" DeityName="Chaos">
         <HostileReligions>
             <HostileReligion id="Religion.cult_of_sigmar" />
             <HostileReligion id="Religion.cult_of_taal" />
@@ -180,7 +180,7 @@
         <ReligiousTroops>
         </ReligiousTroops>
     </Religion>
-    <Religion id="cult_of_slaanesh" Name="Cult of Slaanesh" Culture="Culture.chaos_culture" Affinity="Chaos" DeityName="Slaanesh">
+    <Religion id="cult_of_slaanesh" Name="{=tor_religion_cult_name_cult_of_slaanesh_str}Cult of Slaanesh" Culture="Culture.chaos_culture" Affinity="Chaos" DeityName="Slaanesh">
         <HostileReligions>
             <HostileReligion id="Religion.cult_of_sigmar" />
             <HostileReligion id="Religion.cult_of_taal" />
@@ -201,7 +201,7 @@
         <ReligiousTroops>
         </ReligiousTroops>
     </Religion>
-    <Religion id="cult_of_nurgle" Name="Cult of Nurgle" Culture="Culture.chaos_culture" Affinity="Chaos" DeityName="Nurgle">
+    <Religion id="cult_of_nurgle" Name="{=tor_religion_cult_name_cult_of_nurgle_str}Cult of Nurgle" Culture="Culture.chaos_culture" Affinity="Chaos" DeityName="Nurgle">
         <HostileReligions>
             <HostileReligion id="Religion.cult_of_sigmar" />
             <HostileReligion id="Religion.cult_of_taal" />
@@ -224,7 +224,7 @@
         <ReligiousTroops>
         </ReligiousTroops>
     </Religion>
-    <Religion id="cult_of_khorne" Name="Cult of Khorne" Culture="Culture.chaos_culture" Affinity="Chaos" DeityName="Khorne">
+    <Religion id="cult_of_khorne" Name="{=tor_religion_cult_name_cult_of_khorne_str}Cult of Khorne" Culture="Culture.chaos_culture" Affinity="Chaos" DeityName="Khorne">
         <HostileReligions>
             <HostileReligion id="Religion.cult_of_sigmar" />
             <HostileReligion id="Religion.cult_of_taal" />
@@ -245,7 +245,7 @@
         <ReligiousTroops>
         </ReligiousTroops>
     </Religion>
-    <Religion id="cult_of_tzeentch" Name="Cult of Tzeentch" Culture="Culture.chaos_culture" Affinity="Chaos" DeityName="Tzeench">
+    <Religion id="cult_of_tzeentch" Name="{=tor_religion_cult_name_cult_of_tzeentch_str}Cult of Tzeentch" Culture="Culture.chaos_culture" Affinity="Chaos" DeityName="Tzeench">
         <HostileReligions>
             <HostileReligion id="Religion.cult_of_sigmar" />
             <HostileReligion id="Religion.cult_of_taal" />
@@ -269,7 +269,7 @@
         </ReligiousTroops>
     </Religion>
     <!-- elven religions -->
-    <Religion id="cult_of_isha" Name="Cult of Isha" Culture="Culture.battania" Affinity="Order" DeityName="Isha">
+    <Religion id="cult_of_isha" Name="{=tor_religion_cult_name_cult_of_isha_str}Cult of Isha" Culture="Culture.battania" Affinity="Order" DeityName="Isha">
         <HostileReligions>
             <HostileReligion id="Religion.cult_of_nagash" />
             <HostileReligion id="Religion.cult_of_slaanesh" />
@@ -283,7 +283,7 @@
         <ReligiousTroops>
         </ReligiousTroops>
     </Religion>
-    <Religion id="cult_of_kurnous" Name="Cult of Kurnous" Culture="Culture.battania" Affinity="Order" DeityName="Kurnous">
+    <Religion id="cult_of_kurnous" Name="{=tor_religion_cult_name_cult_of_kurnous_str}Cult of Kurnous" Culture="Culture.battania" Affinity="Order" DeityName="Kurnous">
         <HostileReligions>
             <HostileReligion id="Religion.cult_of_nagash" />
             <HostileReligion id="Religion.cult_of_slaanesh" />
@@ -303,7 +303,7 @@
             <ArtifactItem id="Item.tor_we_weapon_bow_legendary" />
         </ReligiousArtifacts>
     </Religion>
-    <Religion id="cult_of_vaul" Name="Cult of Vaul" Culture="Culture.battania" Affinity="Order" DeityName="Vaul">
+    <Religion id="cult_of_vaul" Name="{=tor_religion_cult_name_cult_of_vaul_str}Cult of Vaul" Culture="Culture.battania" Affinity="Order" DeityName="Vaul">
         <HostileReligions>
             <HostileReligion id="Religion.cult_of_nagash" />
             <HostileReligion id="Religion.cult_of_slaanesh" />
@@ -318,7 +318,7 @@
         <ReligiousTroops>
         </ReligiousTroops>
     </Religion>
-    <Religion id="cult_of_anath_raema" Name="Cult of Anath Raema" Culture="Culture.battania" Affinity="Order" DeityName="Anath Raema">
+    <Religion id="cult_of_anath_raema" Name="{=tor_religion_cult_name_cult_of_anath_raema_str}Cult of Anath Raema" Culture="Culture.battania" Affinity="Order" DeityName="Anath Raema">
         <HostileReligions>
             <HostileReligion id="Religion.cult_of_nagash" />
             <HostileReligion id="Religion.cult_of_slaanesh" />
@@ -334,7 +334,7 @@
         <ReligiousTroops>
         </ReligiousTroops>
     </Religion>
-    <Religion id="cult_of_asuryan" Name="Cult of Asuryan" Culture="Culture.eonir" Affinity="Order" DeityName="Asuryan">
+    <Religion id="cult_of_asuryan" Name="{=tor_religion_cult_name_cult_of_asuryan_str}Cult of Asuryan" Culture="Culture.eonir" Affinity="Order" DeityName="Asuryan">
         <HostileReligions>
             <HostileReligion id="Religion.cult_of_nagash" />
             <HostileReligion id="Religion.cult_of_slaanesh" />
@@ -348,7 +348,7 @@
         <ReligiousTroops>
         </ReligiousTroops>
     </Religion>
-    <Religion id="cult_of_loec" Name="Cult of Loec" Culture="Culture.battania" Affinity="Order" DeityName="Loec">
+    <Religion id="cult_of_loec" Name="{=tor_religion_cult_name_cult_of_loec_str}Cult of Loec" Culture="Culture.battania" Affinity="Order" DeityName="Loec">
         <HostileReligions>
             <HostileReligion id="Religion.cult_of_nagash" />
             <HostileReligion id="Religion.cult_of_slaanesh" />
