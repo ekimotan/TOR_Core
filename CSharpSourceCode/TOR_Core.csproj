@@ -483,6 +483,7 @@
     <Compile Include="CampaignMechanics\Careers\TORCareerPerkCampaignBehavior.cs" />
     <Compile Include="CampaignMechanics\Chaos\ChaosCampaignBehavior.cs" />
     <Compile Include="CampaignMechanics\CharacterCreation\FaceGenHelper.cs" />
+    <Compile Include="CampaignMechanics\Crafting\TORCraftingCampaignBehavior.cs" />
     <Compile Include="CampaignMechanics\CustomDialogs\CareerSwitchCampaignBehavior.cs" />
     <Compile Include="CampaignMechanics\CustomDialogs\BloodKissSceneNotificationItem.cs" />
     <Compile Include="CampaignMechanics\CustomDialogs\ConversationTags\AsraiTag.cs" />
@@ -639,6 +640,7 @@
     <Compile Include="HarmonyPatches\CharacterCreationPatch.cs" />
     <Compile Include="HarmonyPatches\CharacterObjectPatches.cs" />
     <Compile Include="HarmonyPatches\ConversationPatches.cs" />
+    <Compile Include="HarmonyPatches\CraftingPatches.cs" />
     <Compile Include="HarmonyPatches\CustomBattlePatches.cs" />
     <Compile Include="HarmonyPatches\CustomWorldMapPatch.cs" />
     <Compile Include="HarmonyPatches\DamagePatch.cs" />
@@ -718,7 +720,6 @@
     <Compile Include="Models\TORPartyMoraleModel.cs" />
     <Compile Include="Models\TORPartySpeedCalculatingModel.cs" />
     <Compile Include="Models\TOREncounterGameMenuModel.cs" />
-    <Compile Include="Models\TORMapWeatherModel.cs" />
     <Compile Include="Models\TORMarriageModel.cs" />
     <Compile Include="Models\TORMobilePartyFoodConsumptionModel.cs" />
     <Compile Include="Models\TORPartyHealingModel.cs" />
@@ -732,6 +733,7 @@
     <Compile Include="Models\TORRaidModel.cs" />
     <Compile Include="Models\TORSettlementMilitiaModel.cs" />
     <Compile Include="Models\TORAbilityModel.cs" />
+    <Compile Include="Models\TORSmithingModel.cs" />
     <Compile Include="Models\TORStrikeMagnitudeModel.cs" />
     <Compile Include="Models\TORTournamentModel.cs" />
     <Compile Include="Models\TORTroopSupplierModel.cs" />
