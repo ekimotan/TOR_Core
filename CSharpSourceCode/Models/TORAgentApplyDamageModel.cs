@@ -751,10 +751,6 @@ namespace TOR_Core.Models
 
         public bool ShouldCutThrough(AttackCollisionData collisionData, Agent attacker, Agent victim)
         {
-            if (attacker.IsMainAgent)
-            {
-                TORCommon.Say("hello");
-            }
             if ( attacker.HasAttribute("Slice"))
                 return true;
 

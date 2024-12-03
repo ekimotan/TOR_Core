@@ -72,13 +72,8 @@ namespace TOR_Core.HarmonyPatches
                 return;
             }
             
-            
             if (!model.ShouldCutThrough(collisionData, attacker, victim))
                 return;
-            
-            if(attacker.IsMainAgent)
-                TORCommon.Say("Cleave!");
-            
             
             float num2 = (float) collisionData.InflictedDamage / (float) num1;
             inOutMomentumRemaining = num2 * 0.25f;

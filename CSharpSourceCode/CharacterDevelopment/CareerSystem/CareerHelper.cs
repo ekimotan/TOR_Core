@@ -475,68 +475,52 @@ namespace TOR_Core.CharacterDevelopment.CareerSystem
         
         public static ItemTrait GetTraitForReligion(Hero hero, ReligionObject religionObject)
         {
+            var traitName = "ReligionKnightlyStrikeTrait";
             var religion = Hero.MainHero.GetDominantReligion();
-
-            if (religion!=null || Hero.MainHero.GetDevotionLevelForReligion(religion) < DevotionLevel.Fanatic)
-                return null;
-
-
-            if (religion.StringId == "cult_of_sigmar")
-            {
-                var trait = new ItemTrait();
-                var damageTuple = new DamageProportionTuple { DamageType = DamageType.Holy, Percent = 0.2f };
-                
-                
-                trait.AdditionalDamageTuple.DamageType = DamageType.Holy;
-                trait.WeaponParticlePreset = new WeaponParticlePreset { ParticlePrefab = "psys_light_weapon" };
-
-                return null;
-            }
             
-            if (religion.StringId == "cult_of_ulric")
+            ItemTrait trait = new ItemTrait();
+            trait.ItemTraitName = traitName;
+            if (religion == null || Hero.MainHero.GetDevotionLevelForReligion(religion) < DevotionLevel.Fanatic)
             {
-                var trait = new ItemTrait();
-                var damageTuple = new DamageProportionTuple { DamageType = DamageType.Frost, Percent = 0.2f };
-
-                trait.AdditionalDamageTuple.DamageType = DamageType.Frost;
-                trait.WeaponParticlePreset = new WeaponParticlePreset { ParticlePrefab = "psys_light_weapon" };
-
-                return null;
-            }
-            
-            if (religion.StringId == "cult_of_taal")
-            {
-                var trait = new ItemTrait();
-
-                var damageTuple = new DamageProportionTuple { DamageType = DamageType.Holy, Percent = 0.2f };
-
+                var damageTuple = new DamageProportionTuple { DamageType = DamageType.Physical, Percent = 0.2f };
                 trait.AdditionalDamageTuple = damageTuple;
-                trait.WeaponParticlePreset = new WeaponParticlePreset { ParticlePrefab = "psys_light_weapon" };
-
-                return null;
-            }
-
-            if (religion.StringId == "cult_of_manaan")
-            {
-                var trait = new ItemTrait();
-
-                trait.AdditionalDamageTuple.DamageType = DamageType.Lightning;
-                trait.WeaponParticlePreset = new WeaponParticlePreset { ParticlePrefab = "electric_weapon" };
-
-                return null;
             }
             
-            if (religion.StringId == "cult_of_shallya")
+            switch (religion.StringId)
             {
-                var trait = new ItemTrait();
-
-                trait.AdditionalDamageTuple.DamageType = DamageType.Holy;
-                trait.WeaponParticlePreset = new WeaponParticlePreset { ParticlePrefab = "psys_light_weapon" };
-
-                return null;
+                case "cult_of_sigmar":
+                {
+                   
+                    var damageTuple = new DamageProportionTuple { DamageType = DamageType.Holy, Percent = 0.2f };
+                    trait.AdditionalDamageTuple = damageTuple;
+                    trait.WeaponParticlePreset = new WeaponParticlePreset { ParticlePrefab = "psys_light_weapon" };
+                    break;
+                }
+                case "cult_of_ulric":
+                {
+                    var damageTuple = new DamageProportionTuple { DamageType = DamageType.Frost, Percent = 0.2f };
+                    trait.AdditionalDamageTuple = damageTuple;
+                    trait.WeaponParticlePreset = new WeaponParticlePreset { ParticlePrefab = "psys_light_weapon" };
+                    break;
+                }
+                case "cult_of_taal":
+                {
+                    var damageTuple = new DamageProportionTuple { DamageType = DamageType.Holy, Percent = 0.2f };
+                    trait.AdditionalDamageTuple = damageTuple;
+                    trait.WeaponParticlePreset = new WeaponParticlePreset { ParticlePrefab = "psys_light_weapon" };
+                    break;
+                }
+                case "cult_of_manaan":
+                    trait.AdditionalDamageTuple.DamageType = DamageType.Lightning;
+                    trait.WeaponParticlePreset = new WeaponParticlePreset { ParticlePrefab = "electric_weapon" };
+                    break;
+                case "cult_of_shallya":
+                    trait.AdditionalDamageTuple.DamageType = DamageType.Holy;
+                    trait.WeaponParticlePreset = new WeaponParticlePreset { ParticlePrefab = "psys_light_weapon" };
+                    break;
             }
-            
-            return null;
+
+            return trait;
         }
 
         public static void RemoveCareerRelatedTroopAttributes(MobileParty mobileParty, string troopId,

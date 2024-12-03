@@ -170,9 +170,10 @@ namespace TOR_Core.BattleMechanics.TriggeredEffect.Scripts
             }
             
             var traitList = new List<ItemTrait>();
-            var holyTrait = CareerHelper.GetTraitForReligion(Hero.MainHero, Hero.MainHero.GetDominantReligion());
+            
             if (Hero.MainHero.HasCareerChoice("PathOfGloryKeystone"))
             {
+                var holyTrait = CareerHelper.GetTraitForReligion(Hero.MainHero, Hero.MainHero.GetDominantReligion());
                 traitList.Add(holyTrait);
             }
             

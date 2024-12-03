@@ -30,7 +30,7 @@ public class KnightlyStrikeOnHitScript: IWeaponHitScript
 
         if (Hero.MainHero.HasCareerChoice("WrathAgainstChaosKeystone"))
         {
-            attackingAgent.ApplyStatusEffect("knightly_strike_ws",attackingAgent,5,false,false,true);
+            attackingAgent.ApplyStatusEffect("knightly_strike_ws",attackingAgent,5,true,false,false);
         }
 
         if (knightlystrikes.Count > 0)

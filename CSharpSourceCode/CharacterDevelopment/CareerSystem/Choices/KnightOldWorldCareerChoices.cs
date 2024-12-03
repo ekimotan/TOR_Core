@@ -160,7 +160,7 @@ public class KnightOldWorldCareerChoices(CareerObject id) : TORCareerChoicesBase
                     },
                     MutationType = OperationType.Replace
                 }
-            },new CareerChoiceObject.PassiveEffect()); 
+            }); 
         
         _squiresKeystone.Initialize(CareerID, "Ability scales with riding. Companions charge ability.", "Squires", false,
             ChoiceType.Keystone, new List<CareerChoiceObject.MutationObject>()
@@ -173,7 +173,7 @@ public class KnightOldWorldCareerChoices(CareerObject id) : TORCareerChoicesBase
                     PropertyValue = (choice, originalValue, agent) => 0.2f+ CareerHelper.AddSkillEffectToValue(choice, agent, new List<SkillObject>(){ DefaultSkills.Riding }, 0.004f),
                     MutationType = OperationType.Add
                 }
-            },new CareerChoiceObject.PassiveEffect()); 
+            }); 
         
         _templarOrdersKeystone.Initialize(CareerID, "2 additional charges. Ability scales with Faith", "TemplarOrders", false,
             ChoiceType.Keystone, new List<CareerChoiceObject.MutationObject>()
@@ -186,7 +186,7 @@ public class KnightOldWorldCareerChoices(CareerObject id) : TORCareerChoicesBase
                     PropertyValue = (choice, originalValue, agent) => 0.2f+ CareerHelper.AddSkillEffectToValue(choice, agent, new List<SkillObject>(){ TORSkills.Faith }, 0.004f),
                     MutationType = OperationType.Add
                 }
-            },new CareerChoiceObject.PassiveEffect()); 
+            }); 
         
         _pathOfViliganceKeystone.Initialize(CareerID, "Couched Lance attacks are not removing loads. Ability scales with polearm", "PathOfViligance", false,
             ChoiceType.Keystone, new List<CareerChoiceObject.MutationObject>()
@@ -199,19 +199,11 @@ public class KnightOldWorldCareerChoices(CareerObject id) : TORCareerChoicesBase
                     PropertyValue = (choice, originalValue, agent) => (float)originalValue+ CareerHelper.AddSkillEffectToValue(choice, agent, new List<SkillObject>(){ DefaultSkills.Polearm }, 0.004f),
                     MutationType = OperationType.Add
                 }
-            },new CareerChoiceObject.PassiveEffect()); 
+            }); 
         
         _wrathAgainstChaosKeystone.Initialize(CareerID, "Every discharge hit adds a 25% Wardsave for 5 seconds. Ability charging is 20% more efficient", "WrathAgainstChaos", false,
             ChoiceType.Keystone, new List<CareerChoiceObject.MutationObject>()
             {
-                new CareerChoiceObject.MutationObject()
-                {
-                    MutationTargetType = typeof(AbilityTemplate),
-                    MutationTargetOriginalId = "KnightlyStrike",
-                    PropertyName = "ScaleVariable1",
-                    PropertyValue = (choice, originalValue, agent) => (float)originalValue+ CareerHelper.AddSkillEffectToValue(choice, agent, new List<SkillObject>(){ DefaultSkills.Polearm }, 0.004f),
-                    MutationType = OperationType.Add
-                }
             },new CareerChoiceObject.PassiveEffect()); 
         
         _pathOfGloryKeystone.Initialize(CareerID, "Adds a Deity based weapon effect or 20% extra physical damage.", "PathOfGlory", false,
@@ -225,10 +217,10 @@ public class KnightOldWorldCareerChoices(CareerObject id) : TORCareerChoicesBase
     protected override void InitializePassives()
     {
         _secularOrdersPassive1.Initialize(CareerID, "custom resource upgrade costs for knights are reduced by 25%.", "SecularOrders", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(-25, PassiveEffectType.CustomResourceUpgradeCostModifier, true, 
-            characterObject => characterObject.IsKnightUnit() || characterObject.HasAttribute("Knight")));
+            characterObject => characterObject.HasAttribute("Knightly")));
         _secularOrdersPassive2.Initialize(CareerID, "All Knight troops receive 30 bonus points in their Two handed skill.", "SecularOrders", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(30, PassiveEffectType.Special)); //
         _secularOrdersPassive3.Initialize(CareerID, "All Knight troops wages are reduced by 25%.", "SecularOrders", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(-25, PassiveEffectType.TroopUpgradeCost, true, 
-            characterObject => characterObject.IsKnightUnit()|| characterObject.HasAttribute("Knightly")));
+            characterObject => characterObject.HasAttribute("Knightly")));
         _secularOrdersPassive4.Initialize(CareerID,"Secular Seals can be applied on any Knight unit","SecularOrders",false,ChoiceType.Passive); 
 
         _pathOfConquestPassive1.Initialize(CareerID, "Extra melee damage (10%).", "PathOfConquest", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(PassiveEffectType.Damage, new DamageProportionTuple(DamageType.Physical, 10), AttackTypeMask.Melee));
@@ -236,9 +228,9 @@ public class KnightOldWorldCareerChoices(CareerObject id) : TORCareerChoicesBase
         _pathOfConquestPassive3.Initialize(CareerID, "Horse charge damage is increased by 40%.", "PathOfConquest", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(40, PassiveEffectType.HorseChargeDamage, true));
         _pathOfConquestPassive4.Initialize(CareerID, "All Knight troops receive 30 bonus points in their Polearm-skill.", "PathOfConquest", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(30, PassiveEffectType.Special)); //
         
-        _squiresPassive1.Initialize(CareerID, "Increases Hitpoints by 50.", "Squires", false, ChoiceType.Passive, null,new CareerChoiceObject.PassiveEffect(30, PassiveEffectType.Health));
+        _squiresPassive1.Initialize(CareerID, "Increases Hitpoints by 30.", "Squires", false, ChoiceType.Passive, null,new CareerChoiceObject.PassiveEffect(30, PassiveEffectType.Health));
         _squiresPassive2.Initialize(CareerID, "All Knight troops wages are reduced by 25%.", "Squires", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(-25, PassiveEffectType.TroopWages, true, 
-            characterObject => characterObject.IsKnightUnit()));
+            characterObject => characterObject.HasAttribute("Knightly")));
         _squiresPassive3.Initialize(CareerID, "Wounded troops in your party heal faster.", "Squires", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(2, PassiveEffectType.TroopRegeneration));
         _squiresPassive4.Initialize(CareerID, "Battles against non-humans provide 100% prestige gain.", "Squires", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(30, PassiveEffectType.Special)); //
         
@@ -246,7 +238,7 @@ public class KnightOldWorldCareerChoices(CareerObject id) : TORCareerChoicesBase
         _templarOrdersPassive2.Initialize(CareerID,"kills add faith skill.","TemplarOrders",false,ChoiceType.Passive);
         _templarOrdersPassive3.Initialize(CareerID, "Having matching knights of deity increase their damage by 20%", "TemplarOrders", false, ChoiceType.Passive, null,
             new CareerChoiceObject.PassiveEffect(PassiveEffectType.Damage, new DamageProportionTuple(DamageType.Physical, 20), AttackTypeMask.All,
-                (attacker, victim, mask) => ( attacker.Character.IsKnightUnit() || attacker.Character.HasAttribute("Knightly") )&& attacker.BelongsToMainParty() && mask == AttackTypeMask.Melee && Hero.MainHero.GetDominantReligion().ReligiousTroops.Contains((CharacterObject)attacker.Character)));
+                (attacker, victim, mask) => ( attacker.Character.HasAttribute("Knightly") )&& attacker.BelongsToMainParty() && mask == AttackTypeMask.Melee && Hero.MainHero.GetDominantReligion().ReligiousTroops.Contains((CharacterObject)attacker.Character)));
         _templarOrdersPassive4.Initialize(CareerID, "Bonus damage against undead", "TemplarOrders", false, ChoiceType.Passive, null,
             new CareerChoiceObject.PassiveEffect(PassiveEffectType.Damage, new DamageProportionTuple(DamageType.Physical, 20), AttackTypeMask.All,
                 (attacker, victim, mask) => victim.IsUndead() && attacker.IsMainAgent  && mask == AttackTypeMask.Melee  ));
