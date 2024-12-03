@@ -33,7 +33,7 @@
                      MaxDistance="100"
                      CrosshairType="SingleTarget"
                      AbilityTargetType="EnemiesInAOE"
-                     TooltipDescription="Hurl a magical bolt at the enemy. The missile homes in on the target and does 40 damage in a 3 meter radius on contact.">
+                     TooltipDescription="{=dart_label_description_str}Hurl a magical bolt at the enemy. The missile homes in on the target and does 40 damage in a 3 meter radius on contact.">
         <LightColorRGB x="0"
                        y="204"
                        z="255"
@@ -2831,7 +2831,7 @@
         <TriggeredEffect>storm_of_renewal</TriggeredEffect>
     </AbilityTemplate>
 	<AbilityTemplate StringID="ShieldOfThorns"
-                     Name="{=barkskin_label_str}Shield of Thorns"
+                     Name="{=shieldofthorns_label_str}Shield of Thorns"
                      SpriteName="shield_of_thorns_icon"
                      CoolDown="70"
                      WindsOfMagicCost="16"
@@ -3224,7 +3224,7 @@
                      CrosshairType="TargetedAOE"
                      SpellTier="3"
                      BelongsToLoreID="LoreOfMetal"
-                     TooltipDescription="{=quicksilver_swords_label_str}Infuses weapons of allies with gleaming energies - Even a rusty sword turns deadly with the help of a Metal Wizard. Friendly units deal 20% magic and fire damage for a duration of 60 seconds.">
+                     TooltipDescription="{=quicksilver_swords_description_str}Infuses weapons of allies with gleaming energies - Even a rusty sword turns deadly with the help of a Metal Wizard. Friendly units deal 20% magic and fire damage for a duration of 60 seconds.">
         <LightColorRGB x="255"
                        y="170"
                        z="0"
@@ -4513,7 +4513,7 @@
         <TriggeredEffect>apply_holy_sword_trait</TriggeredEffect>
     </AbilityTemplate>
     <AbilityTemplate StringID="UlricsGift"
-                     Name="{=armor_of_righteousness_label_str}Ulric's Gift"
+                     Name="{=ulric_gift_label_str}Ulric's Gift"
                      SpriteName="ulrics_gift_icon"
                      CoolDown="70"
                      WindsOfMagicCost="0"
@@ -4545,7 +4545,7 @@
                      CrosshairType="TargetedAOE"
                      SpellTier="2"
                      BelongsToLoreID="UlricanPrayers"
-                     TooltipDescription="{=armor_of_righteousness_description_str}The wolf-priest lets out a mighty howl and dedicates the kill to Ulric. Gain +30% movement and attack speed for 25 seconds.">
+                     TooltipDescription="{=ulric_gift_description_str}The wolf-priest lets out a mighty howl and dedicates the kill to Ulric. Gain +30% movement and attack speed for 25 seconds.">
         <LightColorRGB x="255"
                        y="170"
                        z="0"
@@ -4558,7 +4558,7 @@
         <TriggeredEffect>ulrics_gift</TriggeredEffect>
     </AbilityTemplate>
     <AbilityTemplate StringID="HeartOfTheWolf"
-                     Name="{=armor_of_righteousness_label_str}Heart of The Wolf"
+                     Name="{=heart_of_wolf_label_str}Heart of The Wolf"
                      SpriteName="heart_of_wolf_icon"
                      CoolDown="70"
                      WindsOfMagicCost="0"
@@ -4590,7 +4590,7 @@
                      CrosshairType="TargetedAOE"
                      SpellTier="3"
                      BelongsToLoreID="UlricanPrayers"
-                     TooltipDescription="{=armor_of_righteousness_description_str}The priest's allies are driven into a zealous frenzy. Friendly troops in a 10 meter radius gain +35% physical damage as well as Unbreakable and Unstoppable for 20 seconds.">
+                     TooltipDescription="{=heart_of_wolf_description_str}The priest's allies are driven into a zealous frenzy. Friendly troops in a 10 meter radius gain +35% physical damage as well as Unbreakable and Unstoppable for 20 seconds.">
         <LightColorRGB x="255"
                        y="170"
                        z="0"
@@ -4603,7 +4603,7 @@
         <TriggeredEffect>heart_of_the_wolf</TriggeredEffect>
     </AbilityTemplate>
     <AbilityTemplate StringID="IceStorm"
-                     Name="{=armor_of_righteousness_label_str}Ice Storm"
+                     Name="{=ice_storm_label_str}Ice Storm"
                      SpriteName="ice_storm_icon"
                      CoolDown="70"
                      WindsOfMagicCost="0"
@@ -4635,7 +4635,7 @@
                      CrosshairType="TargetedAOE"
                      SpellTier="3"
                      BelongsToLoreID="UlricanPrayers"
-                     TooltipDescription="{=armor_of_righteousness_description_str}The wolf-priest summons an icy hailstorm within an area. Enemies suffer a -50% movement and attack speed penalty as well as damage over time.">
+                     TooltipDescription="{=ice_storm_description_str}The wolf-priest summons an icy hailstorm within an area. Enemies suffer a -50% movement and attack speed penalty as well as damage over time.">
         <LightColorRGB x="255"
                        y="170"
                        z="0"
@@ -4648,7 +4648,7 @@
         <TriggeredEffect>ice_storm</TriggeredEffect>
     </AbilityTemplate>
     <AbilityTemplate StringID="SnowKingDecree"
-                     Name="{=armor_of_righteousness_label_str}The Snow King's Decree"
+                     Name="{=snow_king_label_str}The Snow King's Decree"
                      SpriteName="snow_kings_decree_icon"
                      CoolDown="70"
                      WindsOfMagicCost="0"
@@ -4680,7 +4680,7 @@
                      CrosshairType="SingleTarget"
                      SpellTier="4"
                      BelongsToLoreID="UlricanPrayers"
-                     TooltipDescription="{=armor_of_righteousness_description_str}The priest roars with a grand prayer and calls freezing blast of blue flames to cleanse a targeted area of cowards and weaklings. Affected enemies take damage, suffer a -50% movement and attack speed penalty as well as damage over time.">
+                     TooltipDescription="{=snow_king_description_str}The priest roars with a grand prayer and calls freezing blast of blue flames to cleanse a targeted area of cowards and weaklings. Affected enemies take damage, suffer a -50% movement and attack speed penalty as well as damage over time.">
         <LightColorRGB x="255"
                        y="170"
                        z="0"

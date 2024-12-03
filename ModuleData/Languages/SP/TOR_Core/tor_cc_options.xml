@@ -1,0 +1,226 @@
+<?xml version="1.0"?>
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
+  <tags>
+    <tag language="Español (LA)" />
+  </tags>
+  <strings>
+
+<string id="tor_cc_option1_label_str" text="Nobleza Imperial"/>
+<string id="tor_cc_option1_text_str" text="Tus padres sirvieron lealmente a Graf Haupt-Anderrson y, aunque no eran una gran nobleza, dominaban las cortes del Conde Elector y, por lo tanto, garantizaron que tu infancia fuera cómoda. "/>
+<string id="tor_cc_option2_label_str" text="Sargento Imperial"/>
+<string id="tor_cc_option2_text_str" text="Tu padre no sólo sirvió con distinción sino que sobrevivió lo suficiente como para recibir el título de Sargento, un veterano que ha derramado la sangre de hombres bestia y bandidos por igual."/>
+<string id="tor_cc_option3_label_str" text="Ladrón"/>
+<string id="tor_cc_option3_text_str" text="No todos dentro del Imperio están bendecidos por Ranald, tu familia era pobre y se ganaba la vida con ingenio y manos más rápidas. Robar monedas de bolsillos ajenos y guardarlas en los suyos."/>
+<string id="tor_cc_option4_label_str" text="Plebeyo"/>
+<string id="tor_cc_option4_text_str" text="Toda la gente del imperio cumple un papel. Naciste en una familia humilde, con trabajos humildes, y parecía que eso iba a seguir así para siempre."/>
+<string id="tor_cc_option5_label_str" text="Mercader"/>
+<string id="tor_cc_option5_text_str" text="El vino es la sangre de Wurtbad y tu familia obtuvo sus ganancias impulsando este comercio por el río Stir y por todo el Imperio. Tus primeros años de vida fueron un constante viaje."/>
+<string id="tor_cc_option6_label_str" text="Miliciano"/>
+<string id="tor_cc_option6_text_str" text="Los Hombres Bestia y los bandidos abundan en el Imperio y tu hogar necesitaba hombres fuertes. Al entrenar junto a la milicia, pronto obtuviste un brazo fuerte y un gusto por el combate."/>
+<string id="tor_cc_option7_label_str" text="Tendero"/>
+<string id="tor_cc_option7_text_str" text="Al darse cuenta de tu aptitud para los números, un comerciante que pasaba por tu casa te tomó bajo su protección y se ofreció a enseñarte su oficio a cambio de ayuda diaria en sus tareas."/>
+<string id="tor_cc_option8_label_str" text="Aprendiz de herrero"/>
+<string id="tor_cc_option8_text_str" text="El conflicto nunca terminaba para el Imperio y tampoco lo era el trabajo de sus herreros. Elegiste convertir tu fuerza en un oficio mientras doblabas metales a tu voluntad bajo la tutela del herrero local. Puede que tu primera espada estuviera torcida, pero estaba afilada."/>
+<string id="tor_cc_option9_label_str" text="Cultista Imperial"/>
+<string id="tor_cc_option9_text_str" text="Pasaste la mayor parte de tu tiempo en el distrito del templo, rezando a los distintos dioses del Panteón Imperial. Algunos de los sacerdotes que estaban allí se fijaron en ti y comenzaron a enseñarte sus escrituras."/>
+<string id="tor_cc_option10_label_str" text="Estudiante de ingeniería"/>
+<string id="tor_cc_option10_text_str" text="Las historias de las universidades de Nuln siempre habían sido tus favoritas, parecía que Ranald te bendijo cuando un maestro ingeniero que buscaba un aprendiz decidió que serías el candidato perfecto."/>
+<string id="tor_cc_option11_label_str" text="Miliciano de la Compañía Libre"/>
+<string id="tor_cc_option11_effect_str" text="Empezarás con la carrera de Mercenario"/>
+<string id="tor_cc_option11_text_str" text="Pelear y beber, ¿qué más se puede necesitar en la vida? Con espada en mano, marchaste con tu variopinta Compañía Libre de batalla en batalla, ganándote una buena cantidad de cicatrices. Servirías a cualquier señor por el precio justo."/>
+<string id="tor_cc_option12_label_str" text="Estudiante en el Colegio Imperial"/>
+<string id="tor_cc_option12_effect_str" text="Empezarás con la carrera de Hechicero"/>
+<string id="tor_cc_option12_text_str" text="Tu aptitud para los Vientos de la Magia te valió un lugar dentro de los Colegios de Altdorf, con el tiempo aprendiste a aprovechar los conceptos básicos de tu poder y a conocer la naturaleza de los Vientos de Magia."/>
+<string id="tor_cc_option13_label_str" text="Acólito del Templo"/>
+<string id="tor_cc_option13_effect_str" text="Empezarás con la carrera de Sacerdote Guerrero"/>
+<string id="tor_cc_option13_text_str" text="Al dedicar tu vida al culto de tu dios, buscas el camino de la rectitud de acuerdo con tu fe. Ser un acólito es enfrentarse al mal, lo antinatural y lo monstruoso. (Obtiene acceso a Oraciones, pero no puede aprender Hechizos)"/>
+<string id="tor_cc_option14_label_str" text="Cazador de Brujas"/>
+<string id="tor_cc_option14_effect_str" text="Empezarás con la carrera de Cazador de Brujas"/>
+<string id="tor_cc_option14_text_str" text="La herejía es la pesadilla de la buena gente del Imperio, una podredumbre que necesitaba ser eliminada. Al aprender las artes de los cazadores de brujas, te preparaste para enfrentarte a todo tipo de bestias impías y magos, con fe y plata."/>
+<string id="tor_cc_option15_label_str" text="Mercader"/>
+<string id="tor_cc_option15_effect_str" text="Empezarás con la carrera de Mercenario"/>
+<string id="tor_cc_option15_text_str" text="Hay muchos bienes comerciales dentro del Imperio y consideraste oportuno ocupar tu lugar entre sus muchos comerciantes. Con el dinero que ahorraste te dispusiste a formar tu propia caravana y hacerte un nombre."/>
+<string id="tor_cc_option16_label_str" text="Noble exiliado"/>
+<string id="tor_cc_option16_text_str" text="La ambición es la perdición de muchos y tu familia cayó en desgracia con su Elector, desterrado a Sylvania con una escasa fortuna, tu familia se vio obligada a vivir entre los campesinos."/>
+<string id="tor_cc_option17_label_str" text="Mercader Strigoi"/>
+<string id="tor_cc_option17_text_str" text="Naciste en una familia de Strigoi. Tolerado por algunos y aceptado por ninguno, tu infancia transcurrió viajando de ciudad en ciudad junto con la caravana del clan."/>
+<string id="tor_cc_option18_label_str" text="Ladrón de tumbas"/>
+<string id="tor_cc_option18_text_str" text="Hay quienes dentro de Sylvania pagan bien por los cuerpos, este fue el oficio que eligió su familia. Robar los cuerpos de sus seres queridos en plena noche y llevarlos a castillos o fortalezas de la nobleza, sin preguntarse nunca por qué."/>
+<string id="tor_cc_option19_label_str" text="Pescador del pantano"/>
+<string id="tor_cc_option19_text_str" text="Durante generaciones, su familia ha pescado en los ríos y fétidos estanques del pantano para mantenerse alimentado. Estaba lejos de ser una vida espectacular, pero era un trabajo honesto y su familia estaba contenta. Incluso después de la desaparición de tu hermano..."/>
+<string id="tor_cc_option20_label_str" text="Huérfano"/>
+<string id="tor_cc_option20_text_str" text="Nunca supiste de tu familia, aunque muchos te miraban con miedo y susurraban en voz baja, poco podías hacer más que luchar por sobrevivir a través de la búsqueda y de los restos de otros. A menudo tenías que esconderte de las criaturas que acechan en la noche."/>
+<string id="tor_cc_option21_label_str" text="Asistente de noble"/>
+<string id="tor_cc_option21_text_str" text="Servir en la corte de Von Carstein te dio tu propio punto de vista acerca de las vidas de los eternos. Las complejidades y la política de la nobleza te enseñaron muchas cosas. Tu diligencia te mantuvo vivo y cómodo."/>
+<string id="tor_cc_option22_label_str" text="Aprendiz de nigromancia"/>
+<string id="tor_cc_option22_text_str" text="Poco se puede decir sobre la cordura de tu maestro, sus días los dedicaba a diseccionar pergaminos y realizar rituales oscuros. Obsesionado con volverse poderoso pero incapaz de hacerlo, buscó usar tus habilidades para reforzar las suyas."/>
+<string id="tor_cc_option23_label_str" text="Granjero"/>
+<string id="tor_cc_option23_text_str" text="Desenterrar el suelo fétido y lleno de espuma de los pantanos no es una vida fácil. Pero te permitió obtener una escasa cosecha de las pocas tierras de cultivo fértiles que existen."/>
+<string id="tor_cc_option24_label_str" text="Miliciano"/>
+<string id="tor_cc_option24_text_str" text="Incorporado a los ejércitos de tu maestro, pasaste tu adolescencia en el campo de batalla. Luchando junto a horrores no-muertos y abominaciones necróticas. Saliste vivo de esto, de alguna manera, y puedes vivir para contarlo."/>
+<string id="tor_cc_option25_label_str" text="Libertino"/>
+<string id="tor_cc_option25_text_str" text="Observando a los blancos fáciles y a las jóvenes doncellas en las afueras de los campamentos, pasaste tu tiempo ejerciendo tu oficio usando tu actitud seductora y elegante."/>
+<string id="tor_cc_option26_label_str" text="Nobleza Vampírica"/>
+<string id="tor_cc_option26_effect_str" text="Escogerás un «Linaje Vampírico»"/>
+<string id="tor_cc_option26_text_str" text="En algún momento tu señor reconoció tus cualidades, sacándote de la pobreza y revelando su verdadera naturaleza. Después de recibir el beso de sangre renaces, eres inmortal y más poderoso. (Obtiene la capacidad de aprender hechizos y resucitar muertos después de la batalla o en los cementerios. Se le pedirá que elija su línea de sangre al comienzo del juego)."/>
+<string id="tor_cc_option27_label_str" text="Iniciado en nigromancia"/>
+<string id="tor_cc_option27_effect_str" text="Empezarás con la carrera de Nigromante"/>
+<string id="tor_cc_option27_text_str" text="Se presentó una oportunidad inesperada y pudiste robar un antiguo tomo de historia, y esto te abrió el camino de la Nigromancia.(Obtienes acceso para invocar un hechizo de esqueleto y la capacidad de resucitar a los muertos después de la batalla o en los cementerios)"/>
+<string id="tor_cc_option28_label_str" text="Vigilante nocturno"/>
+<string id="tor_cc_option28_effect_str" text="Empezarás con la carrera de Mercenario"/>
+<string id="tor_cc_option28_text_str" text="A menudo se pide a los mortales que sirvan a sus amos no-muertos. Se sabe que estos soldados profesionales marchan a la batalla junto a las hordas de no-muertos de sus amos. Nunca conocerás gente más adusta y supersticiosa, pero rara vez se desmoronan en el fragor de la batalla."/>
+<string id="tor_cc_option29_label_str" text="Donmu Strigoi"/>
+<string id="tor_cc_option29_effect_str" text="Empezarás con la carrera de Mercenario"/>
+<string id="tor_cc_option29_text_str" text="Si bien no son tan influyentes como las matriarcas de su clan, los Donmu son miembros importantes de la sociedad Strigoi. Mantienen la cohesión familiar y son la cara del clan cuando tratan con forasteros. Si bien no son guerreros profesionales, sus largos años liderando caravanas a través del viejo mundo los convierten en algo de qué burlarse."/>
+<string id="tor_cc_option30_label_str" text="Vagabundo"/>
+<string id="tor_cc_option30_effect_str" text="Empezarás con la carrera de Mercenario"/>
+<string id="tor_cc_option30_text_str" text="Los caminos de Sylvania son oscuros y peligrosos, te aprovechas de sus pocos viajeros y atesoras las pequeñas riquezas que puedes llevarte con tu espada. Sin embargo, no eres el único monstruo que acecha en los oscuros pantanos y bosques; a veces, los monstruos destrozan tanto los cadáveres de los viajeros que no dejan nada que se pueda robar."/>
+<string id="tor_cc_option31_label_str" text="Nobleza Bretonniana"/>
+<string id="tor_cc_option31_text_str" text="Las diversas raíces y relaciones de su familia se remontan casi a la época de Gilles. Naciste en la nobleza de Bretonnia; y todo el mundo lo sabe por tu forma de vestir, de hablar y de dar órdenes a los campesinos."/>
+<string id="tor_cc_option32_label_str" text="Campesino Bretonniano"/>
+<string id="tor_cc_option32_text_str" text="Durante incontables generaciones, tu familia ha trabajado la tierra de tu señor feudal. Tu padre dejó de intentar entender las palabras de tu señor hace mucho tiempo y simplemente miró al terrateniente que siempre lo acompaña para recibir órdenes, lo que normalmente implica un gran trabajo físico."/>
+<string id="tor_cc_option33_label_str" text="Grumete"/>
+<string id="tor_cc_option33_text_str" text="Tu padre era marinero en un barco bretonniano. Cuando regresó a tu pueblo de pescadores, pasó todo el tiempo que pudo con tu madre, contigo y tus hermanos. Te enseñó todas las habilidades que pudo, como hacer nudos, el uso de un catalejo y cómo navegar por el cielo nocturno."/>
+<string id="tor_cc_option34_label_str" text="Forajido"/>
+<string id="tor_cc_option34_text_str" text="De alguna manera, tu familia rompió uno de los vínculos del juramento a tu señor y desde entonces han sido tildados de forajidos. Constantemente huyendo y viviendo al margen de la sociedad, tu familia se las arregla con lo que pueden cazar furtivamente en los bosques."/>
+<string id="tor_cc_option35_label_str" text="Mercader de vino"/>
+<string id="tor_cc_option35_text_str" text="Tu familia formaba parte del reducido número de campesinos adinerados que existen en Bretonia. Obtuvieron su riqueza a lo largo de generaciones mediante la venta de las exhuberantes cosechas bretonianas al Imperio, Estalia y Tilea. Recientemente, vuestro señor os concedió una exención a las leyes suntuarias, permitiéndoos usar botas que llegasen hasta las rodillas."/>
+<string id="tor_cc_option36_label_str" text="Cortesano"/>
+<string id="tor_cc_option36_text_str" text="Durante años, fuiste preparado para ser el mejor noble bretoniano que pudieras ser. Esto incluyó lecciones de modales, equitación y caballería."/>
+<string id="tor_cc_option37_label_str" text="Hombre de armas"/>
+<string id="tor_cc_option37_text_str" text="Cuando alcanzaste la mayoría de edad, entraste al servicio de tu señor. Fuiste entrenado para mantener la línea y sobrevivir en el campo de batalla lo mejor posible. Todavía estás vivo, así que debes haber sido bastante bueno en eso."/>
+<string id="tor_cc_option38_label_str" text="Criminal"/>
+<string id="tor_cc_option38_text_str" text="En tu juventud, infringiste una de las muchas leyes que establecen los límites de la sociedad bretoniana. Sin otras opciones, te viste obligado a permanecer al margen de la sociedad, huyendo para siempre de las autoridades. Viviste durante un tiempo únicamente de la caza furtiva y el robo, hasta que finalmente encontraste el perdón por tus crímenes."/>
+<string id="tor_cc_option39_label_str" text="Aprendiz de artesano"/>
+<string id="tor_cc_option39_text_str" text="Tu padre pudo conseguirte un puesto de aprendiz con uno de los artesanos locales. Durante cinco años, tu maestro te enseñó todo lo que pudo, dejándote con habilidades que te pondrían para siempre por encima del campesino promedio."/>
+<string id="tor_cc_option40_label_str" text="Pastor"/>
+<string id="tor_cc_option40_text_str" text="Te convertiste en pastor y cuidaste de los distintos animales que tu comunidad necesitaba para alimentarse y vestirse. En esencia, tú y tus compañeros cumplisteis dos funciones: proteger las manadas de lobos y otros depredadores, y al mismo tiempo vigilar las afueras de la aldea en busca de señales de invasores."/>
+<string id="tor_cc_option41_label_str" text="Caballero Andante"/>
+<string id="tor_cc_option41_effect_str" text="Empezarás con la carrera de Caballero de Bretonnia"/>
+<string id="tor_cc_option41_text_str" text="Has elegido emprender el camino de un caballero de Bretonia. El camino de la caballería obediente es difícil: te esperan muchos enemigos y batallas. Pero, si eres digno, al final de tu búsqueda recibirás la mayor bendición conocida por los hombres; un sorbo del Grial de la Dama."/>
+<string id="tor_cc_option42_label_str" text="Damisela"/>
+<string id="tor_cc_option42_effect_str" text="Empezarás con la carrera de Damisela"/>
+<string id="tor_cc_option42_text_str" text="A muy temprana edad, una sacerdotisa visitó a tu familia y te llevó con ella. Ella vio dentro de ti un gran potencial y te uniste a sus otros estudiantes. Después de años de entrenamiento, ella ha considerado que estás listo para salir adelante y servir la voluntad de la Señora."/>
+<string id="tor_cc_option43_label_str" text="Mercenario"/>
+<string id="tor_cc_option43_effect_str" text="Empezarás con la carrera de Mercenario"/>
+<string id="tor_cc_option43_text_str" text="Le demostraste tu valía a tu señor y él te recompensó contratándote como Mercenario. Como tal, en ocasiones te pusieron al mando de otros campesinos o se esperaba que actuaras como un escolta durante la campaña."/>
+<string id="tor_cc_option44_label_str" text="Buscavidas"/>
+<string id="tor_cc_option44_effect_str" text="Empezarás con la carrera de Mercenario"/>
+<string id="tor_cc_option44_text_str" text="Con libertad de movimiento y un sentido de superación, te encontraste libre de un señor directo y fuíste capaz de hacer algo por ti mismo. Con algo de habilidad en el oficio o suerte en el comercio, todavía puedes convertirte en un campesino digno de exenciones suntuarias."/>
+<string id="tor_cc_option45_label_str" text="Castellano"/>
+<string id="tor_cc_option45_effect_str" text="Empezarás con la carrera de Mercenario"/>
+<string id="tor_cc_option45_text_str" text="Fuiste aprendiz del Castellano durante algún tiempo. Le ayudaste a evaluar los daños y mantener el castillo de tu señor. Cuando tu maestro murió durante un asalto a los muros del castillo, te convertiste en el nuevo Castellano. Sin embargo, después de un pequeño error, tu señor te liberó de tu vínculo para encontrar a alguien con más experiencia."/>
+<string id="tor_cc_option46_label_str" text="Nobleza de Mousillón"/>
+<string id="tor_cc_option46_text_str" text="Tus padres pertenecían a la «nobleza» de Mousillón, si se les puede llamar de esa manera. Los nobles aquí se componen en su mayoría de nobles bretonianos proscritos, exiliados y rufianes de otras naciones, vampiros, momias y otras monstruosidades variadas. Si bien ciertamente se encuentran en la cima de la sociedad de Mousillón, fuera de la tierra arruinada se les menosprecia como a cualquier otra persona de aquí."/>
+<string id="tor_cc_option47_label_str" text="Terrateniente"/>
+<string id="tor_cc_option47_text_str" text="Tu padre era un terrateniente de uno de los señores del ducado maldito. Su posición era una de las pocas que aseguraba a tu familia alojamiento seco y comida decente, la mayor parte del tiempo. Cuando no estaba en campaña, hacía todo lo posible para enseñarte algunas habilidades de lucha."/>
+<string id="tor_cc_option48_label_str" text="Contrabandista"/>
+<string id="tor_cc_option48_text_str" text="El comercio dentro y fuera de Mousillón es casi imposible debido al Cordón Sanitario. A pesar de esto, tu familia se volvió experta en el contrabando de mercancías más allá de las puertas y sus guardias. Si bien no eres rico según la mayoría de los estándares, para Mousillón ciertamente estás muy por encima de la media."/>
+<string id="tor_cc_option49_label_str" text="Cazador furtivo"/>
+<string id="tor_cc_option49_text_str" text="De alguna manera, tu familia rompió uno de los vínculos del juramento a tu señor y desde entonces han sido tildados de forajidos. Constantemente huyendo y viviendo al margen de la sociedad, tu familia se las arregla con lo que pueden cazar furtivamente en los bosques."/>
+<string id="tor_cc_option50_label_str" text="Forajido"/>
+<string id="tor_cc_option50_text_str" text="Una de las profesiones más comunes de Mousillón, tu familia era gente muy ruda, que usaba su fuerza e ingenio para aprovecharse de las muchas personas débiles y tontas entre las que te encontrabas viviendo."/>
+<string id="tor_cc_option51_label_str" text="Cortesano de Mousillón"/>
+<string id="tor_cc_option51_text_str" text="Durante años, fuiste preparado para ser el mejor noble de Mousillón que pudieras ser. Esto incluyó lecciones de modales, equitación y caballería."/>
+<string id="tor_cc_option52_label_str" text="Aprendiz de brujería"/>
+<string id="tor_cc_option52_text_str" text="La brujería y la magia abundan en Mousillón. Te convertiste en alumno de uno de estos practicantes y trabajaste con brebajes y pociones hasta que confiaron en ti para aprender más conocimientos arcanos."/>
+<string id="tor_cc_option53_label_str" text="Hombre de armas"/>
+<string id="tor_cc_option53_text_str" text="Cuando alcanzaste la mayoría de edad, entraste al servicio de tu señor. Fuiste entrenado para mantener la línea y sobrevivir en el campo de batalla lo mejor posible. Todavía estás vivo, así que debes haber sido bastante bueno en eso."/>
+<string id="tor_cc_option54_label_str" text="Habitante del pantano"/>
+<string id="tor_cc_option54_text_str" text="Pasabas tu tiempo cazando ranas y caracoles en los pantanos y ciénagas para mantener a tu familia. Es una tarea complicada que requiere cierta habilidad y rapidez con los dedos, pero los caracoles y las ranas son uno de los pocos recursos en los que tu tierra es rica."/>
+<string id="tor_cc_option55_label_str" text="Asaltador"/>
+<string id="tor_cc_option55_text_str" text="Esperando en las carreteras principales y cerca de los puestos de amarre de los ríos, te ganabas la vida emboscando a los transeúntes y exigiendo sus posesiones. No es una vida fácil, pero prefieres vivir tu propia vida que la de tus víctimas."/>
+<string id="tor_cc_option56_label_str" text="Caballero Andante de Mousillón"/>
+<string id="tor_cc_option56_effect_str" text="Empezarás con la carrera de Caballero de Mousillón"/>
+<string id="tor_cc_option56_text_str" text="Nada dice que un hombre de Mousillón no pueda seguir el camino de un caballero bretonniano. A dónde conduce ese camino depende, como siempre, de la voluntad y la pureza del individuo que lo recorre."/>
+<string id="tor_cc_option57_label_str" text="Vampiro de Mousillón"/>
+<string id="tor_cc_option57_effect_str" text="Escogerás un «Linaje Vampírico»"/>
+<string id="tor_cc_option57_text_str" text="Los pantanos impiden que la tierra de la caballería ejerza su control sobre el ducado maldito, por lo que muchos extraños encuentran una especie de santuario en Mousillón, incluso los señores de la noche."/>
+<string id="tor_cc_option58_label_str" text="Nigromante"/>
+<string id="tor_cc_option58_effect_str" text="Empezarás con la carrera de Mercenario"/>
+<string id="tor_cc_option58_text_str" text="Brujas y Brujos, Alquimistas y Demonólogos, Sagas y Strigoi. En una tierra casi sin ley y maldita como Mousillón ¿Quién más desafía la voluntad de Morr?"/>
+<string id="tor_cc_option59_label_str" text="Contrabandista"/>
+<string id="tor_cc_option59_effect_str" text="Empezarás con la carrera de Mercenario"/>
+<string id="tor_cc_option59_text_str" text="A Mousillon llegan cosas que serían confiscadas en cualquier otro puerto del Viejo Mundo. Piedra Bruja, drogas extrañas, esclavos, bienes robados, barcos piratas y mucho más y mucho más oscuro. Alguien tiene que llevar estos artículos a sus compradores concertados, que casi siempre se encuentran fuera de Mousillon. Eso significa que se necesita a alguien que pueda hacer pasar estos artículos por el Cordón Sanitario."/>
+<string id="tor_cc_option60_label_str" text="Pirata"/>
+<string id="tor_cc_option60_effect_str" text="Empezarás con la carrera de Mercenario"/>
+<string id="tor_cc_option60_text_str" text="Las partes altas de los ríos enneblecidos y las bahías pantanosas de Mousillon son excelentes escondites para quienes ejercen una profesión poco legítima. Los barcos bretonianos se encuentran entre los mejores del mundo y, a menudo, van cargados de mercancías valiosas y fabulosas. El hecho de que estos barcos tengan que surcar a menudo las aguas de la costa de Mousillon crea muchas oportunidades para quienes estén dispuestos a «aprovecharlas»."/>
+<string id="tor_cc_option_1_daith_label_str" text="Estudiante de Daith"/>
+<string id="tor_cc_option_1_daith_text_str" text="Fuiste adoptado bajo el ala de Daith, el maestro herrero de los Asrai. Bajo su tutela, aprendiste los secretos de cómo forjar armas y armaduras encantadas. Tus habilidades en la artesanía solo se comparan con tu destreza en la batalla, lo que te convierte en un guerrero formidable y un hábil artesano."/>
+<string id="tor_cc_option_1_we_forest_label_str" text="Superviviente del Bosque"/>
+<string id="tor_cc_option_1_we_forest_text_str" text="Fuiste criado por el bosque. Pasaron décadas hasta que te pusiste en contacto con otros Asrai. Si bien te adaptaste lentamente a la sociedad Asrai, aprendiste a hablar con el bosque mismo."/>
+<string id="tor_cc_option_1_we_mountain_label_str" text="Montaraz"/>
+<string id="tor_cc_option_1_we_mountain_text_str" text="Te has enfrentado a los resistentes Enanos en numerosas escaramuzas en las Montañas Grises que rodean Athel Loren. Tus experiencias en estas duras batallas han perfeccionado tus habilidades y tu resistencia, convirtiéndote en un guerrero del bosque más resistente que la mayoría."/>
+<string id="tor_cc_option_1_we_noble_label_str" text="Baja nobleza de Athel Loren"/>
+<string id="tor_cc_option_1_we_noble_text_str" text="Nacido en una familia noble menor de los salones de Athel Loren, fuiste criado con la mejor educación y capacitación bajo el Camino Verde. Tu noble linaje te proporcionó los mejores tutores tanto en combate como en diplomacia."/>
+<string id="tor_option_1_we_guardian_anmyr_label_str" text="Guardián de Anmyr"/>
+<string id="tor_option_1_we_guardian_anmyr_text_str" text="Anmyr, la Fortaleza Marchita es un reino arruinado y en decadencia, contaminado por la sangre sucia de Morghur. Como resultado, grupos de asalto de Hombres Bestia acuden en masa a Anmyr como una polilla a la llama. Eres uno de los Asrai que siempre respondió al llamado a las armas de Anmyr con arrojo y un fuerte sentido del deber. ¡La Fortaleza Marchita no caerá en manos de esas viles bestias!"/>
+<string id="tor_cc_option_2_we_kurnous_label_str" text="Kurnous, el Cazador"/>
+<string id="tor_cc_option_2_we_kurnous_effect_str" text="Desbloquea el Signo del Clan"/>
+<string id="tor_option_2_we_kurnous_text_str" text="El dios de la caza y los reinos salvajes del Panteón Élfico. Todos los Elfos lo veneran, pero Kurnous es el más querido por los Elfos Silvanos, quienes consideran al dios de la caza el padre de su raza y creen que su forma de vida es la más alineada con sus costumbres."/>
+<string id="tor_cc_option_2_we_kurnous_effect_str" text="Desbloquea el Signo del Clan"/>
+<string id="tor_cc_option_2_we_isha_effect_str" text="Desbloquea el Signo del Arbóreo"/>
+<string id="tor_cc_option_2_we_isha_label_str" text="Isha, la Madre"/>
+<string id="tor_cc_option_2_we_isha_text_str" text="La diosa élfica de la naturaleza, la fertilidad, la cosecha abundante y la protectora de todo lo natural. Los Elfos Silvanos creen firmemente que la Reina Maga Asrai Ariel es un avatar viviente de Isha, que lleva su voluntad al reino de los mortales."/>
+<string id="tor_cc_option_2_we_loec_effect_str" text="Desbloquea el Signo del Bailarín Guerrero"/>
+<string id="tor_cc_option_2_we_loec_label_str" text="Loec, El Bailarín Sombrío"/>
+<string id="tor_cc_option_2_we_loec_text_str" text="El dios del engaño, la risa y la música, además de patrón de los bailarines guerreros Asrai. Loec es una deidad misteriosa, ya que sus sirvientes guardan los secretos de sus rituales. Los seguidores del Dios Tramposo son famosos por realizar danzas intrincadas que cuentan la historia de Athel Loren. Loec también tiene un lado más oscuro como dios de las sombras, el sigilo y la venganza."/>
+<string id="tor_cc_option_2_we_vaul_label_str" text="Vaul, el Armero"/>
+<string id="tor_cc_option_2_we_vaul_effect_str" text="Desbloquea el Signo del Clan"/>
+<string id="tor_cc_option_2_we_vaul_text_str" text="El dios élfico de los herreros, artesanos y artesanos. Vaul fue herido por Khaine durante las antiguas guerras de los dioses, que lo dejaron lisiado y ciego. Pero eso no detiene al tenaz Dios Herrero, que sigue trabajando día y noche en beneficio de sus clan. Algunos de los artefactos más poderosos jamás empuñados provienen de la forja de Vaul, incluida la temida Espada de Khaine."/>
+<string id="tor_cc_option_2_we_anath_raema_effect_str" text="Desbloquea el Signo del Clan"/>
+<string id="tor_cc_option_2_we_anath_raema_label_str" text="Anath Raema, la diosa de la Cacería Salvaje"/>
+<string id="tor_cc_option_2_we_anath_raema_text_str" text="Anath Raema, hermana de Khaine, es el espejo oscuro de Kurnous, un depredador salvaje cuyo único interés es derramar la sangre de criaturas menores. Aunque es despreciada públicamente en Loren, algunos reinos buscan su patrocinio, y más Asrai de los que la mayoría cree, dedican al menos algunas de sus muertes a la Cazadora Salvaje. Lo único que Anath Raema busca de sus seguidores es la muerte de sus presas, desde dragones hasta ratas. Todo eso le agrada."/>
+<string id="tor_cc_option_3_we_wardancer_label_str" text="Camino del Bailarín Guerrero"/>
+<string id="" text="Mercenario"/>
+<string id="tor_cc_option_3_we_wardancer_text_str" text="Eres un guerrero, un bailarín en el camino de Loec. Como Bailarín Guerrero, tu agilidad y gracia en combate son incomparables. Te mueves con fluida precisión, convirtiendo la batalla en una danza mortal."/>
+<string id="tor_cc_option_3_we_waywatcher_label_str" text="Camino del Forestal"/>
+<string id="tor_cc_option_3_we_waywatcher_effect_str" text="Empezarás con la carrera de Forestal"/>
+<string id="tor_cc_option_3_we_waywatcher_text_str" text="Eres un explorador experimentado que protege y vela por la seguridad del bosque. Te vuelves uno con tu arco con una destreza inigualable."/>
+<string id="tor_cc_option_3_we_spellsinger_label_str" text="Camino del Cantor de Árboles"/>
+<string id="tor_cc_option_3_we_spellsinger_effect_str" text="Empezarás con la carrera de Cantor de Árboles"/>
+<string id="tor_cc_option_3_we_spellsinger_text_str" text="Eres un Cantor de Árboles, que estudiará la alta u oscura Magia. Comprenderás la naturaleza de esta madera mágica y la protegerás como la propia reina maga."/>
+<string id="tor_cc_option_3_we_gladerider_label_str" text="Camino del Jinete del Claro"/>
+<string id="" text="Empezarás con la carrera de Mercenario"/>
+<string id="tor_cc_option_3_we_gladerider_text_str" text="Los asrai viven con sus monturas en armonía como ningún otro. En tus primeros años decidiste ser uno con tu montura."/>
+<string id="tor_cc_option_3_we_wildwood_label_str" text="Camino del Guardián"/>
+<string id="" text="Empezarás con la carrera de Mercenario"/>
+<string id="tor_cc_option_3_we_warden_3_text_str" text="Athel Loren necesita protección, incluso desde dentro. Como guardián, juras proteger el bosque de cualquier amenaza."/>
+<string id="tor_cc_option_1_eo_toriour_label_str" text="Descendiente de Toriour"/>
+<string id="tor_cc_option_1_eo_toriour_text_str" text="Como nacido del Clan de Toriour, viviste la mayor parte del tiempo en la ciudad de Tor Lithanel, donde aprendiste las tradiciones y la artesanía conservadas desde mucho antes de la separación de tu parentela."/>
+<string id="tor_cc_option_1_eo_faniour_label_str" text="Descendiente de Faniour"/>
+<string id="tor_cc_option_1_eo_faniour_text_str" text="Tu familia sobrevivió a la Guerra de la Barba y escapó al bosque de Laurelorn, el último bastión de los Asur supervivientes del el viejo mundo. Como Nacido en el Bosque, pasas la mayor parte de tu juventud en los resguardos del bosque de Laurelorn."/>
+<string id="tor_cc_option_1_eo_harioth_label_str" text="Descendiente de Harioth"/>
+<string id="tor_cc_option_1_eo_harioth_text_str" text="Tu familia entró en el bosque de Laurelorn en el último milenio, mucho tiempo después de la separación de los Eonir. Usted, como segunda generación, apenas sobrevivió al rito de su aceptación. Pasaste la mayor parte de tu juventud cerca de la frontera del territorio Eonir, en cuevas y refugios improvisados."/>
+<string id="tor_cc_option_1_eo_diplomat_label_str" text="Descendiente de diplomáticos Asur"/>
+<string id="tor_cc_option_1_eo_diplomat_text_str" text="Provienes de una familia que hasta el día de hoy tiene un gran renombre tanto en Ulthuan como entre los Eonir. Los diplomáticos del lejano continente Asur, así como el consejo actual, a menudo escuchan atentamente cuando oyen tu nombre."/>
+<string id="tor_cc_option_1_eo_druchii_foundling_label_str" text="Huérfano Druchii"/>
+<string id="tor_option_1_eo_druchii_foundling_text_str" text="Las patrullas costeras de los Asur atacaron un barco esclavista de los Druchii, mientras toda la tripulación moría, encontraron a un niño druchii superviviente. Sin saber qué debían hacer contigo, fuiste llevado ante los Eonir como huérfano. Como parte de este hecho, nadie sabe de dónde eres, pero tú sabes muy bien lo que pasó."/>
+<string id="tor_cc_option_2_eo_council_guard_label_str" text="Guardia del Consejo"/>
+<string id="tor_option_2_eo_council_guard_text_str" text="Usted estuvo involucrado en asuntos de seguridad del Consejo. A lo largo de los años, te hiciste un nombre como Capitán."/>
+<string id="tor_cc_option_2_eo_trader_empire_label_str" text="Mercader en ciudades Imperiales"/>
+<string id="" text="Como mercader itinerante, probablemente conozcas a más humanos que gente de tu propia especie. Sin embargo, aprendiste cómo hacerte un nombre y por eso eres respetado tanto por los hombres como por los elfos."/>
+<string id="tor_option_2_eo_witch_king_envoy_str" text="Enviado del Rey Brujo"/>
+<string id="tor_cc_option_2_we_loec_text_str" text="La Corte a menudo te envía a misiones en el lejano Naggaroth o en sus Arcas Negras errantes. Sus visitas periódicas te dieron una idea de las actividades diarias de los druchi."/>
+<string id="tor_cc_option_2_eo_senat_member_label_str" text="Miembro del Senado"/>
+<string id="tor_cc_option_2_eo_senat_member_text_str" text="Tu competencia como guerrero te consiguió un asiento en el Senado, aprendiste los métodos de la diplomacia y cómo hacer cumplir tus políticas a través de la forma de hablar."/>
+<string id="tor_cc_option_2_eo_protector_wards_label_str" text="Protector de los Salones"/>
+<string id="tor_cc_option_2_eo_protector_wards_text_str" text="Pasas la mayor parte de tu tiempo en el bosque, defendiendo los salones de los Eonir de las constantes amenazas."/>
+<string id="tor_cc_option_3_eo_envoy_effect_str" text="Empezarás con la carrera de Mercenario"/>
+<string id="tor_cc_option_3_eo_envoy_label_str" text="Emisario Eonir"/>
+<string id="tor_cc_option_3_eo_envoy_text_str" text="Como embajador, estás sirviendo a los Eonir fuera de los bosques, manejando el comercio y las relaciones con reinos extranjeros y condados electores."/>
+<string id="tor_cc_option_3_eo_ghost_strider_label_str" text="Cazador Invisible"/>
+<string id="tor_cc_option_3_eo_ghost_strider_effect_str" text="Empezarás con la carrera de Forestal"/>
+<string id="tor_cc_option_3_eo_ghost_strider_text_str" text="Los silenciosos cazadores del bosque son temidos por cualquiera que sea enemigo del bosque. Decidiste seguir el camino de esos guerreros letales. Decidiste convertirte en un Cazador Silencioso."/>
+<string id="tor_cc_option_3_eo_kithband_warrior_label_str" text="Guerrero del Clan"/>
+<string id="tor_cc_option_3_eo_kithband_warrior_effect_str" text="Empezarás con la carrera de Mercenario"/>
+<string id="tor_cc_option_3_eo_kithband_warrior_text_str" text="Luchas junto a tu clan por la protección del bosque, sin importar lo que cueste. Si bien los Guerreros del Clan carecen de cierta elegancia en comparación con otros elfos, su inventiva y su practicidad los convierten en excelentes guerreros del bosque."/>
+<string id="tor_cc_option_3_eo_greylord_apprentice_label_str" text="Aprendiz de Señor Gris"/>
+<string id="tor_cc_option_3_eo_greylord_apprentice_effect_str" text="Empezarás con la carrera de Señor Gris"/>
+<string id="tor_cc_option_3_eo_greylord_apprentice_text_str" text="Decidiste unirte a las enseñanzas de uno de los señores de la magia exiliados de Ulthuan. Mientras ellos saben todo de este mundo y más allá, los Señores Grises tienen un gran interés en el control de los dragones, sin importar el costo."/>
+<string id="tor_cc_option_3_eo_eonir_expatriate_effect_str" text="Empezarás con la carrera de Mercenario"/>
+<string id="tor_cc_option_3_eo_eonir_expatriate_label_str" text="Expatriado Eonir"/>
+<string id="tor_cc_option_3_eo_eonir_expatriate_text_str" text="Crees que la causa de los Eonir está perdida. En su lugar, llamas hogar a las provincias de los humanos. Ganándote la vida como mercenario o comerciante."/>
+
+      </strings>
+</base> 

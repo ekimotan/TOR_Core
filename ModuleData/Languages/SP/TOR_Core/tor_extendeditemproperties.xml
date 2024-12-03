@@ -1,0 +1,324 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
+  <tags>
+    <tag language="Español (LA)" />
+  </tags>
+  <strings>
+{=str_tor_eip_name_magic_resistance_amplification}
+{=str_tor_eip_description_magic_resistance_amplification}
+
+<string id="str_tor_eip_name_holy_amplification" text="Amplificación Sagrada"/>
+<string id="str_tor_eip_description_holy_amplification" text="Este objeto proporciona a su portador un 10% de amplificación del daño sagrado."/>
+<string id="str_tor_eip_name_magic_resistance_amplification" text="Resistencia y Amplificacion Mágica"/>
+<string id="str_tor_eip_description_magic_resistance_amplification" text="Este objeto proporciona a su portador un 10% de resistencia mágica y un 10% de amplificación del daño mágico."/>
+<string id="str_tor_eip_name_light_resistance_amplification" text="Resistencia y Amplificación Lumínica"/>
+<string id="str_tor_eip_description_light_resistance_amplification" text="Este objeto proporciona a su portador un 10% de resistencia lumínica y un 10% de amplificación del daño luminoso."/>
+<string id="str_tor_eip_name_fire_resistance_amplification" text="Resistencia y Amplificación Ígnea"/>
+<string id="str_tor_eip_description_fire_resistance_amplification" text="Este objeto proporciona a su portador un 10% de resistencia ígnea y un 10% de amplificación del daño ígneo."/>
+<string id="" text="Resistencia y Amplificación Lumínica"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de resistencia lumínica y un 10% de amplificación del daño luminoso."/>
+<string id="" text="Resistencia y Amplificacion Mágica"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de resistencia mágica y un 10% de amplificación del daño mágico."/>
+<string id="" text="Resistencia y Amplificacion Mágica"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de resistencia mágica y un 10% de amplificación del daño mágico."/>
+<string id="" text="Resistencia y Amplificacion Mágica"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de resistencia mágica y un 10% de amplificación del daño mágico."/>
+<string id="" text="Resistencia y Amplificacion Mágica"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de resistencia mágica y un 10% de amplificación del daño mágico."/>
+<string id="" text="Resistencia y Amplificacion Mágica"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de resistencia mágica y un 10% de amplificación del daño mágico."/>
+<string id="" text="Resistencia y Amplificación Ígnea"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de resistencia ígnea y un 10% de amplificación del daño ígneo."/>
+<string id="" text="Amplificación Sagrada"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de amplificación del daño sagrado."/>
+<string id="" text="Amplificación Sagrada"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de amplificación del daño sagrado."/>
+<string id="" text="Amplificación Sagrada"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de amplificación del daño sagrado."/>
+<string id="" text="Amplificación Sagrada"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de amplificación del daño sagrado."/>
+<string id="" text="Amplificación Sagrada"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de amplificación del daño sagrado."/>
+<string id="" text="Amplificación Helada"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de amplificación del daño helado."/>
+<string id="" text="Resistencia y Amplificacion Mágica"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de resistencia mágica y un 10% de amplificación del daño mágico."/>
+<string id="" text="Resistencia y Amplificacion Mágica"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de resistencia mágica y un 10% de amplificación del daño mágico."/>
+<string id="" text="Resistencia y Amplificación Ígnea"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de resistencia ígnea y un 10% de amplificación del daño ígneo."/>
+<string id="" text="Resistencia y Amplificación Lumínica"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de resistencia lumínica y un 10% de amplificación del daño luminoso."/>
+<string id="" text="Resistencia y Amplificacion Mágica"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de resistencia mágica y un 10% de amplificación del daño mágico."/>
+<string id="" text="Resistencia y Amplificacion Mágica"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de resistencia mágica y un 10% de amplificación del daño mágico."/>
+<string id="" text="Resistencia y Amplificacion Mágica"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de resistencia mágica y un 10% de amplificación del daño mágico."/>
+<string id="" text="Resistencia y Amplificacion Mágica"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de resistencia mágica y un 10% de amplificación del daño mágico."/>
+<string id="" text="Resistencia y Amplificación Ígnea"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de resistencia ígnea y un 10% de amplificación del daño ígneo."/>
+<string id="" text="Amplificación Sagrada"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de amplificación del daño sagrado."/>
+<string id="" text="Amplificación Sagrada"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de amplificación del daño sagrado."/>
+<string id="" text="Amplificación Sagrada"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de amplificación del daño sagrado."/>
+<string id="" text="Resistencia y Amplificacion Mágica"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de resistencia mágica y un 10% de amplificación del daño mágico."/>
+<string id="" text="Resistencia y Amplificacion Mágica"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de resistencia mágica y un 10% de amplificación del daño mágico."/>
+<string id="" text="Resistencia y Amplificacion Mágica"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de resistencia mágica y un 10% de amplificación del daño mágico."/>
+<string id="" text="Resistencia y Amplificacion Mágica"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de resistencia mágica y un 10% de amplificación del daño mágico."/>
+<string id="" text="Amplificación Sagrada"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de amplificación del daño sagrado."/>
+<string id="" text="Amplificación Sagrada"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de amplificación del daño sagrado."/>
+<string id="" text="Amplificación Helada"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de amplificación del daño helado."/>
+<string id="" text="Resistencia y Amplificación Lumínica"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de resistencia lumínica y un 10% de amplificación del daño luminoso."/>
+<string id="" text="Resistencia y Amplificacion Mágica"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de resistencia mágica y un 10% de amplificación del daño mágico."/>
+<string id="" text="Resistencia y Amplificacion Mágica"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de resistencia mágica y un 10% de amplificación del daño mágico."/>
+<string id="" text="Resistencia y Amplificacion Mágica"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de resistencia mágica y un 10% de amplificación del daño mágico."/>
+<string id="" text="Resistencia y Amplificación Ígnea"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de resistencia ígnea y un 10% de amplificación del daño ígneo."/>
+<string id="" text="Resistencia y Amplificacion Mágica"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de resistencia mágica y un 10% de amplificación del daño mágico."/>
+<string id="" text="Amplificación Sagrada"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de amplificación del daño sagrado."/>
+<string id="" text="Amplificación Helada"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de amplificación del daño helado."/>
+<string id="" text="Resistencia y Amplificación Ígnea"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de resistencia ígnea y un 10% de amplificación del daño ígneo."/>
+<string id="" text="Amplificación Sagrada"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de amplificación del daño sagrado."/>
+<string id="" text="Amplificación Sagrada"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de amplificación del daño sagrado."/>
+<string id="" text="Amplificación Sagrada"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de amplificación del daño sagrado."/>
+<string id="" text="Resistencia y Amplificación Ígnea"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de resistencia ígnea y un 10% de amplificación del daño ígneo."/>
+<string id="" text="Resistencia y Amplificación Lumínica"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de resistencia lumínica y un 10% de amplificación del daño luminoso."/>
+<string id="" text="Resistencia y Amplificación Ígnea"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de resistencia ígnea y un 10% de amplificación del daño ígneo."/>
+<string id="" text="Resistencia y Amplificacion Mágica"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de resistencia mágica y un 10% de amplificación del daño mágico."/>
+<string id="" text="Resistencia y Amplificacion Mágica"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de resistencia mágica y un 10% de amplificación del daño mágico."/>
+<string id="" text="Resistencia y Amplificacion Mágica"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de resistencia mágica y un 10% de amplificación del daño mágico."/>
+<string id="" text="Amplificación Sagrada"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de amplificación del daño sagrado."/>
+<string id="" text="Amplificación Sagrada"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de amplificación del daño sagrado."/>
+<string id="" text="Amplificación Sagrada"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de amplificación del daño sagrado."/>
+<string id="" text="Amplificación Sagrada"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de amplificación del daño sagrado."/>
+<string id="" text="Amplificación Helada"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de amplificación del daño helado."/>
+<string id="" text="Resistencia y Amplificacion Mágica"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de resistencia mágica y un 10% de amplificación del daño mágico."/>
+<string id="" text="Amplificación Sagrada"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de amplificación del daño sagrado."/>
+<string id="" text="Resistencia y Amplificación Ígnea"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de resistencia ígnea y un 10% de amplificación del daño ígneo."/>
+<string id="" text="Resistencia y Amplificación Lumínica"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de resistencia lumínica y un 10% de amplificación del daño luminoso."/>
+<string id="" text="Resistencia y Amplificacion Mágica"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de resistencia mágica y un 10% de amplificación del daño mágico."/>
+<string id="" text="Resistencia y Amplificacion Mágica"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de resistencia mágica y un 10% de amplificación del daño mágico."/>
+<string id="" text="Resistencia y Amplificacion Mágica"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de resistencia mágica y un 10% de amplificación del daño mágico."/>
+<string id="" text="Resistencia y Amplificacion Mágica"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de resistencia mágica y un 10% de amplificación del daño mágico."/>
+<string id="" text="Colmillo Rúnico"/>
+<string id="" text="Los Colmillos Rúnicos son espadas legendarias, empuñadas exclusivamente por los Condes Electores."/>
+<string id="" text="Colmillo Rúnico"/>
+<string id="" text="Los Colmillos Rúnicos son espadas legendarias, empuñadas exclusivamente por los Condes Electores."/>
+<string id="" text="Colmillo Rúnico"/>
+<string id="" text="Los Colmillos Rúnicos son espadas legendarias, empuñadas exclusivamente por los Condes Electores."/>
+<string id="" text="Colmillo Rúnico"/>
+<string id="" text="Los Colmillos Rúnicos son espadas legendarias, empuñadas exclusivamente por los Condes Electores."/>
+<string id="" text="Colmillo Rúnico"/>
+<string id="" text="Los Colmillos Rúnicos son espadas legendarias, empuñadas exclusivamente por los Condes Electores."/>
+<string id="" text="Colmillo Rúnico"/>
+<string id="" text="Los Colmillos Rúnicos son espadas legendarias, empuñadas exclusivamente por los Condes Electores."/>
+<string id="" text="Colmillo Rúnico"/>
+<string id="" text="Los Colmillos Rúnicos son espadas legendarias, empuñadas exclusivamente por los Condes Electores."/>
+<string id="" text="Colmillo Rúnico"/>
+<string id="" text="Los Colmillos Rúnicos son espadas legendarias, empuñadas exclusivamente por los Condes Electores."/>
+<string id="" text="Colmillo Rúnico"/>
+<string id="" text="Los Colmillos Rúnicos son espadas legendarias, empuñadas exclusivamente por los Condes Electores."/>
+<string id="" text="Colmillo Rúnico"/>
+<string id="" text="Los Colmillos Rúnicos son espadas legendarias, empuñadas exclusivamente por los Condes Electores."/>
+<string id="" text="Colmillo Rúnico"/>
+<string id="" text="Los Colmillos Rúnicos son espadas legendarias, empuñadas exclusivamente por los Condes Electores."/>
+<string id="" text="Daño Sagrado Adicional"/>
+<string id="" text="Aumenta el daño sagrado en 10% cuando es equipado."/>
+<string id="" text="Daño Sagrado Adicional"/>
+<string id="" text="Aumenta el daño sagrado en 10% cuando es equipado."/>
+<string id="" text="Amplificación Sagrada"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de amplificación del daño sagrado."/>
+<string id="" text="Daño Sagrado Adicional"/>
+<string id="" text="Aumenta el daño sagrado en 10% cuando es equipado."/>
+<string id="" text="Daño Sagrado Adicional"/>
+<string id="" text="Aumenta el daño sagrado en 10% cuando es equipado."/>
+<string id="" text="Daño Sagrado Adicional"/>
+<string id="" text="Aumenta el daño sagrado en 10% cuando es equipado."/>
+<string id="" text="Daño Sagrado Adicional"/>
+<string id="" text="Aumenta el daño sagrado en 10% cuando es equipado."/>
+<string id="" text="Daño Sagrado Adicional"/>
+<string id="" text="Aumenta el daño sagrado en 10% cuando es equipado."/>
+<string id="" text="Daño Sagrado Adicional"/>
+<string id="" text="Aumenta el daño sagrado en 10% cuando es equipado."/>
+<string id="" text="Amplificación Sagrada"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de amplificación del daño sagrado."/>
+<string id="" text="Amplificación Sagrada"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de amplificación del daño sagrado."/>
+<string id="" text="Amplificación Sagrada"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de amplificación del daño sagrado."/>
+<string id="" text="Amplificación Sagrada"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de amplificación del daño sagrado."/>
+<string id="" text="Amplificación Sagrada"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de amplificación del daño sagrado."/>
+<string id="" text="Amplificación Sagrada"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de amplificación del daño sagrado."/>
+<string id="" text="Amplificación Sagrada"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de amplificación del daño sagrado."/>
+<string id="" text="Amplificación Sagrada"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de amplificación del daño sagrado."/>
+<string id="" text="Resistencia y Amplificación Ígnea"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de resistencia ígnea y un 10% de amplificación del daño ígneo."/>
+<string id="" text="Resistencia y Amplificación Ígnea"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de resistencia ígnea y un 10% de amplificación del daño ígneo."/>
+<string id="" text="Resistencia y Amplificación Ígnea"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de resistencia ígnea y un 10% de amplificación del daño ígneo."/>
+<string id="" text="Resistencia y Amplificación Ígnea"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de resistencia ígnea y un 10% de amplificación del daño ígneo."/>
+<string id="" text="Daño Sagrado Adicional"/>
+<string id="" text="Aumenta el daño sagrado en 10% cuando es equipado."/>
+<string id="" text="Resistencia y Amplificacion Mágica"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de resistencia mágica y un 10% de amplificación del daño mágico."/>
+<string id="" text="Amplificación Sagrada"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de amplificación del daño sagrado."/>
+<string id="" text="Amplificación Sagrada"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de amplificación del daño sagrado."/>
+<string id="" text="Amplificación Sagrada"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de amplificación del daño sagrado."/>
+<string id="" text="Resistencia y Amplificación Lumínica"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de resistencia lumínica y un 10% de amplificación del daño luminoso."/>
+<string id="" text="Resistencia y Amplificacion Mágica"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de resistencia mágica y un 10% de amplificación del daño mágico."/>
+<string id="" text="Resistencia y Amplificacion Mágica"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de resistencia mágica y un 10% de amplificación del daño mágico."/>
+<string id="" text="Resistencia y Amplificacion Mágica"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de resistencia mágica y un 10% de amplificación del daño mágico."/>
+<string id="" text="Amplificación Sagrada"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de amplificación del daño sagrado."/>
+<string id="" text="Amplificación Sagrada"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de amplificación del daño sagrado."/>
+<string id="" text="Amplificación Sagrada"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de amplificación del daño sagrado."/>
+<string id="" text="Resistencia Física"/>
+<string id="" text="Este objeto proporciona a su portador un 20% de resistencia física"/>
+<string id="" text="Resistencia y Amplificación Lumínica"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de resistencia lumínica y un 10% de amplificación del daño luminoso."/>
+<string id="" text="Resistencia y Amplificación Lumínica"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de resistencia lumínica y un 10% de amplificación del daño luminoso."/>
+<string id="" text="Resistencia y Amplificación Lumínica"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de resistencia lumínica y un 10% de amplificación del daño luminoso."/>
+<string id="" text="Resistencia y Amplificación Ígnea"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de resistencia ígnea y un 10% de amplificación del daño ígneo."/>
+<string id="" text="Resistencia y Amplificación Ígnea"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de resistencia ígnea y un 10% de amplificación del daño ígneo."/>
+<string id="" text="Resistencia y Amplificacion Mágica"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de resistencia mágica y un 10% de amplificación del daño mágico."/>
+<string id="" text="Resistencia y Amplificacion Mágica"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de resistencia mágica y un 10% de amplificación del daño mágico."/>
+<string id="" text="Resistencia y Amplificacion Mágica"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de resistencia mágica y un 10% de amplificación del daño mágico."/>
+<string id="" text="Daño Sagrado Adicional"/>
+<string id="" text="Aumenta el daño sagrado en 10% cuando es equipado."/>
+<string id="" text="Resistencia y Amplificacion Mágica"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de resistencia mágica y un 10% de amplificación del daño mágico."/>
+<string id="" text="Resistencia y Amplificacion Mágica"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de resistencia mágica y un 10% de amplificación del daño mágico."/>
+<string id="" text="Resistencia y Amplificacion Mágica"/>
+<string id="" text="Este objeto proporciona a su portador un 10% de resistencia mágica y un 10% de amplificación del daño mágico."/>
+<string id="" text="Este libro otorga 5000 puntos en la habilidad Ingeniería tras ser leído."/>
+<string id="" text="He aprendido, tras largos años de estudio, a no juzgar el exterior de ningún objeto sin conocer todos los detalles de su interior. El edificio más grandioso puede esconder un núcleo podrido, y la pistola de peor aspecto puede esconder en su interior la mejor mano de obra. Esa me parece una buena máxima para cualquier ingeniero. A menudo hemos descubierto que la apariencia de un dispositivo no es garantía de su calidad. De hecho, aunque dudo en hacer la comparación directamente, lo mismo puede decirse de los hombres. Algunos de nosotros que parecemos más temibles por nuestra reputación, puede que, si nos examinamos más de cerca, resultemos ser débiles y cobardes. Por el contrario, incluso aquellos que han caído tan bajo, casi hasta el punto de convertirse en nada, pueden llevar en sí la chispa ardiente de la grandeza, lista en cualquier momento para saltar una vez más a las llamas..."/>
+<string id="" text="Este libro otorga 5000 puntos en la habilidad Encanto tras ser leído."/>
+<string id="" text="Esta colección de canciones y baladas cuenta las historias de la Dama del Lago y Gilles le Breton. El éxito con las mujeres después de una actuación en la taberna local está garantizado."/>
+<string id="" text="Este libro otorga 5000 puntos en la habilidad Encanto tras ser leído."/>
+<string id="" text="Mientras que algunos embajadores son elegidos por sus gustos exquisitos y su capacidad para malcriar a rivales y aliados con palabras y regalos cuidadosamente elegidos, otros pueden ser seleccionados por su agudo ingenio, sus redes de inteligencia o su innegable carisma. Sin embargo, todos los embajadores deben ser maestros en la negociación y otras interacciones sociales..."/>
+<string id="" text="Este libro otorga 5000 puntos en la habilidad Vileza tras ser leído."/>
+<string id="" text="Este libro otorga 2000 puntos en la habilidad Ballesta tras ser leído."/>
+<string id="" text="Navegar con un Arca Negra es uno de los mayores honores a los que cualquier Druchii podría aspirar. Entrené mucho y duro para ganarme un lugar en el Viento de la Condenación, matando a varios rivales que no lo merecían en el camino. Es una vida digna. Puedo practicar mis habilidades con regularidad con nuestros muchos enemigos y una décima parte del botín que tomo es mío. Esclavos, oro y fama, todo esto también puede ser tuyo si eres atrevido..."/>
+<string id="" text="Este libro otorga 5000 puntos en la habilidad Táctica tras ser leído."/>
+<string id="" text="Puedo ver en tus ojos que temes a este enemigo. Puedo ver en tus ojos que te preguntas cómo podemos luchar contra monstruos tan terribles. Hombres del Imperio, tengo la respuesta: los combatimos con nuestro acero, los combatimos con nuestro coraje, pero sobre todo los combatimos con nuestra fe en Sigmar..."/>
+<string id="" text="Este libro otorga 5000 puntos en la habilidad Exploración tras ser leído."/>
+<string id="" text="Este libro otorga 5000 puntos en la habilidad Arco tras ser leído."/>
+<string id="" text="Tuve el inmenso placer de acompañar a nuestro estimado Mariscal Cazador en varios de sus viajes y expediciones, actuando como su escribano y documentador no oficial. En este libro compartiré contigo todos sus conocimientos sobre la caza, las bestias y la naturaleza misma. Conocí al Mariscal Cazador por primera vez cuando me encontré con su campamento en Drakwald. Me había oído llegar, y en lugar de saludarme, lo primero que me dijo fue: '¡No andes como un borracho en los barrios pobres de Marienburgo, muchacho! Siente tu camino. Deja que el bosque te hable. Él te dirá todo lo que necesitas saber... si estás lo suficientemente callado para escuchar. Un bosque puede decirte esas cosas... más de las que la mayoría de la gente de la ciudad podría soñar'"/>
+<string id="" text="Este libro otorga 5000 puntos en la habilidad Exploración tras ser leído."/>
+<string id="" text="Este libro otorga 5000 puntos en la habilidad Ballesta tras ser leído."/>
+<string id="" text="Este libro otorga 5000 puntos en la habilidad Pólvora tras ser leído."/>
+<string id="" text="… Los kroxigors miden aproximadamente 9 pies de alto y pesan alrededor de dos vacas de Reikland, tienen dientes afilados y una quijada con al menos cien dientes. Su huella es aproximadamente entre 6 y 8 veces mayor que la de un hombre adulto. Su piel es gruesa y es casi imposible atravesarla con las armas más comunes. Un cazador sabio siempre se mantendría alejado de estas bestias. Cázalos en parejas, intenta usar trampas y usa puntas de flecha de acero o virotes de ballesta. Mejor aún, una pistola, a pesar del ruido que creará, debería poder perforar la piel de un Kroxigor. [Debajo de un boceto de un Kroxigor]"/>
+<string id="" text="Este libro otorga 5000 puntos en la habilidad Forja tras ser leído"/>
+<string id="" text="Busca el corazón de la montaña. Tómelo el último día de la tercera luna. Enciende el horno a medianoche. Cuando el mineral se ponga rojo, golpéalo antes del amanecer. Siete veces dobla el metal candente sobre sí mismo. Siete veces canta la canción de la forja. Apagar con la sangre de un dragón. Apaga al rojo vivo en el azogue de Karak Ungol. Haga esto en nombre del antepasado Haki. Templar en agua de Varn. Afila la hoja sobre el cuerno de un dragón. En la tercera luna del invierno, talla la runa asesina. Unge con sangre del Troll, asesinado el día de Grungni. Ata la empuñadura con piel de dragón, con el lado del cuerno dentro. Empuña la empuñadura con el oro de Azgal y átala con Azul-metal. Marca el pomo de colmillos de Orco con el signo de Grimnir. Haz el rito del nombramiento con cerveza en el altar de Valaya. Matar a un Troll de noche hará que la runa brille durante mil años..."/>
+<string id="" text="Este libro otorga 5000 puntos en la habilidad Cabalgar tras ser leído."/>
+<string id="" text="Ningún corcel del Imperio, ni de Estalia o Tilea, podía igualar la fuerza y ​​el poder de un caballo bretonniano de pura raza. Ninguno de ellos era igual en velocidad y los bretonnianos estaban, con razón, orgullosos de ellos. Protegidos por gruesas capas de bardas de placas bajo sus caparazones de tela fluida, y llevando el peso de un caballero completamente armado, los nobles corceles podían superar a cualquier caballo en el Viejo Mundo..."/>
+<string id="" text="Este libro otorga 5000 puntos en la habilidad Una Mano tras ser leído."/>
+<string id="" text="Paso 1 Presentaciones: Los duelistas consideran de mala educación cruzar espadas sin presentarse primero. En un torneo, el luchador que saca acero antes de intercambiar formalidades es descalificado. Este es un momento apropiado para comentar sobre reputaciones y ascendencia. Paso 2 Metodología: En medio de los ataques iniciales y las paradas del combate, un Duelista explica cómo ganará, en términos técnicos o incluso matemáticos. El discurso del torneo sigue un código estricto, lo que permite a cualquiera de las partes cuestionar los cálculos del otro. Las peleas callejeras son algo menos ordenadas y suenan más a concursos de gritos. Paso 3 Crítica: Después de intercambiar varios golpes, los Duelistas analizan vocalmente la técnica del otro. Las personalidades individuales marcan el tenor de este análisis, pero normalmente el objetivo es desmoralizar al enemigo. En teoría, los torneos imponen una conducta cortés, pero en la práctica esto sólo fomenta insultos velados y falsos tópicos. Paso 4 Carrera de victoria: El ganador habitualmente saluda a su oponente caído con una floritura deslumbrante. Si el oponente todavía está vivo, puede seguir un resumen verbal de la pelea. Los luchadores del torneo deben ceder la última palabra al vencedor."/>
+<string id="" text="Este libro otorga 5000 puntos en la habilidad Dos Manos tras ser leído."/>
+<string id="" text="Con un movimiento suave, el maestro de la espada saca su arma y sostiene la espada ante ellos. Sus piernas se abren y en un abrir y cerrar de ojos se encuentran con la espada en alto por encima de ellos. La espada gira en sus manos y su agarre se invierte, la espada corta en una intrincada serie de maniobras casi demasiado rápidas para seguirlas a simple vista. Sus pies están en constante movimiento mientras se lanzan, paran y empujan a oponentes imaginarios. Uno por uno, el portador realiza los treinta ejercicios básicos de los espadachines antes de pasar a técnicas más avanzadas. Una vez más, la enorme espada se levanta y se sostiene ante el rostro del portador..."/>
+<string id="" text="Este libro otorga 5000 puntos en la habilidad Comercio tras ser leído."/>
+<string id="" text="¿Cómo me convertí en magnate? Bueno, cuando era empleado doméstico y tenía sólo un pfennig a mi nombre, fui al granjero local y le compré una manzana. Luego fui al mercado y vendí la manzana por dos pfennigs. Al día siguiente compré dos manzanas al granjero, volví a caminar hasta el mercado y las vendí por cuatro pfennigs. Y así siguió, todos los días; caminé hasta la granja, compré algunas manzanas y luego caminé hasta el mercado para venderlas y obtener ganancias... Y cuando tenía veinticinco años, mi abuelo murió y me dejó varios miles de florines."/>
+<string id="" text="Este libro otorga 5000 puntos en la habilidad Arco tras ser leído."/>
+<string id="" text="El Arco está formado por una única pieza de madera flexible. Aunque son algo caros y difíciles de fabricar, pueden resultar mortales tanto en manos de cazadores como de soldados. Fabricados con madera, cuerno y tendones, los arcos ofrecen un alcance decente y al mismo tiempo causan un nivel respetable de daño, aunque a menudo se necesitan varios disparos para derribar a un oponente duro. Los arcos varían en calidad, según el tirón y la construcción. Un arco demasiado flexible carece de fuerza para impulsar flechas con gran efecto. Del mismo modo, un arco con muy poca flexibilidad es difícil de tirar y puede reducir la precisión..."/>
+<string id="" text="Este libro otorga 5000 puntos en la habilidad Ballesta tras ser leído."/>
+<string id="" text="Con la invención de la ballesta, en todo el Imperio, desde Nordland hasta Averland, surgió una unidad de infantería a distancia muy eficaz y se destacó como uno de los pilares de los ejércitos del imperio. Las ballestas pueden carecer del poder de penetración de las pistolas o de la velocidad de disparo de los arcos estándar, pero son igualmente viables en manos de un experto. Las ballestas tienen un alcance mayor que el de los arcos pero menor que el de las armas de fuego. Sus principales ventajas radican en el hecho de que se producen fácilmente y son más fáciles de dominar."/>
+<string id="" text="Este libro otorga 5000 puntos en la habilidad Liderazgo tras ser leído."/>
+<string id="" text="Comandar un ejército requiere el coraje de enviar hombres a la muerte sin dudas ni vacilaciones. Los ejércitos del Imperio están liderados por esos guerreros, generalmente miembros de la nobleza imperial o incluso, en casos raros, el propio emperador Karl Franz, entrenado para dirigir sus fuerzas como un espadachín empuña su espada. Sin embargo, como ocurre con todos los hombres, estos comandantes pueden diferir en sus niveles de habilidad y coraje, y algunos, como el extraordinariamente feroz Conde Elector de Middenheim, Boris Todbringer, encarnan el valor inquebrantable del pueblo de Sigmar. Otros son poco más que petimetres de alta cuna, pero aún poseen el derecho de comandar a los hombres en la batalla debido a un accidente de nacimiento..."/>
+<string id="" text="Este libro otorga 5000 puntos en la habilidad Armas de Asta tras ser leído."/>
+<string id="" text="La lanza es un arma más antigua que la humanidad. Es fácil de usar y requiere poco entrenamiento, pero aun así es un arma eficaz. Baratos de producir, fáciles de usar y especialmente letales en grandes cantidades, no sorprende que los lanceros sean algo común entre los ejércitos imperiales. Sin embargo, sólo un electorado puede afirmar que las ha dominado."/>
+<string id="" text="Este libro otorga 5000 puntos en la habilidad Arrojadizas tras ser leído."/>
+<string id="" text="Dado que la caza de ballenas es un comercio importante para Norsca, los balleneros son respetados incluso entre los guerreros debido a los peligros extremos de las aguas que rodean a Norsca. Nadando a través de las oscuras corrientes del Mar de las Garras hay enormes ballenas, muchas de las cuales tienen marcas extrañas y colores extraños, retorcidas y deformadas por el poder del Caos. Estos monstruos pueden volcar barcos y tragarse a cientos de hombres de un solo trago. Por lo tanto, los balleneros deben estar hechos de un material más resistente que los pescadores comunes..."/>
+<string id="" text="Este libro otorga 5000 puntos en la habilidad Atletismo tras ser leído."/>
+<string id="" text="Para un Bailarín Guerrero, incluso los demás Elfos parecen moverse más lentos, ya que cada movimiento realizado por uno de los parientes de Loec fluye hacia el siguiente, y hacia el siguiente, sin pensamiento ni guía conscientes. Renunciando a las armaduras, los Wardancers se adornan con diseños arremolinados y se tiñen el cabello con colores brillantes, asumiendo los roles de figuras míticas y feroces guerreros. Su forma de movimiento e incluso su estilo de lucha, rinden homenaje a quienes inspira su danza..."/>
+<string id="" text="Este libro otorga 5000 puntos en la habilidad Armas de asta tras ser leído."/>
+<string id="" text="Este libro otorga 5000 puntos en la habilidad Arco tras ser leído."/> 
+<string id="" text="Este libro otorga 2000 puntos en la habilidad Cabalgar tras ser leído."/> 
+<string id="" text="Los Asur mantienen relaciones comerciales en todo el mundo, desde la costa de Nordland hasta las lejanas Colonias de los Elfos, en las tierras del sur. Desde las islas Tortuga hasta las costas de Cathay. Diamantes árabes para la seda de Lothern, frutos de Lustria para el mármol de Yverria. Las rutas marítimas transportan mercancías, y esas mercancías necesitan protección. La Guardia del Mar, marines de élite de los Altos Elfos, están bien entrenados en combates versátiles. Saben luchar con lanzas contra grandes monstruos y, de manera similar, usan sus arcos para peleas a larga distancia contra los Druchii. En mar o tierra, hay una razón por la que estos soldados son la base del ejército de los Asur."/> 
+<string id="" text="Este libro otorga 5000 puntos en la habilidad Ingeniería tras ser leído."/> 
+<string id="" text="Este libro otorga 5000 puntos en la habilidad Comercio tras ser leído."/> 
+<string id="" text="Hubo innumerables desastres durante el prototipo y los jóvenes aprendices, aterrorizados, conocieron el proyecto como el «llenador de ataúdes». Las calderas de vapor como las que podían construir no podían hacerse lo suficientemente pequeñas y retener la energía necesaria sin volverse peligrosamente inestables, la ordenanza montada en el casco demostró tener la misma probabilidad de destrozar la máquina cuando se disparaba, y todo tenía tendencia a desmoronarse, cuando se intentaba el más mínimo cambio de dirección. Fue entonces cuando uno de los ingenieros de la Escuela de Artillería más inestables, un hombre llamado Hezekiah Guttmann (conocido menos afectuosamente como el "espantapájaros quemado" por sus compañeros), tuvo una epifanía. Si no podían construir una caldera pequeña y potente como la que tenía el Tanque de Vapor ¿Para qué molestarse? ¿Por qué no usar uno más grande y tosco, así la máquina podría ampliarse en consecuencia y, a la inversa, el cañón podría hacerse más pequeño?"/> 
+<string id="" text="Este libro otorga 5000 puntos en la habilidad Pólvora tras ser leído."/> 
+<string id="" text="La pistola es un arma verdaderamente devastadora, capaz de matar a algunos de los enemigos mejor blindados de un solo disparo bien dirigido. Pese a ello, estas armas requieren del cuidado y respeto que implica tal poder. Un pistolero debe mantener su suministro de pólvora y el interior de su brazo seco, la pólvora húmeda no se enciende. Pasado esto, el cañón de la pistola debe limpiarse periódicamente; La suciedad y la pólvora pueden acumularse y provocar fallos de disparo, imprecisiones o fallos en la salida de la bola de plomo del cañón tras la ignición. Finalmente, se debe mantener el bloqueo en la parte trasera del cañón. Después de algún uso, el martillo puede deformarse y ya no alinearse. Tenga en cuenta este mantenimiento y practique su puntería, y estará en el camino correcto hacia la maestría."/> 
+<string id="" text="Este libro otorga 5000 puntos en la habilidad Pólvora tras ser leído."/> 
+<string id="" text="Cuando la pistola dispara, la fuerza de la bola de plomo que sale del extremo del cañón provoca la rotación que presencia el observador. La rotación se detiene mediante el bloqueo de engranajes en la parte trasera de la pistola, que no se activa hasta que el siguiente cañón se haya alineado con el mecanismo de golpeo. ¿Qué es esta fuerza y ​​cómo describimos la capacidad de la cerradura para detenerla? La fuerza es claramente causada por la ignición de la pólvora negra en la parte trasera del cañón, que impulsa la bola hacia adelante mientras deshace el bloqueo del tambor ¿Es también la misma fuerza la que hace que la cerradura vuelva a rodear el tambor, evitando que gire sin cesar y permitiendo al usuario apuntar nuevamente? En mis experimentos..."/> 
+<string id="" text="Este libro otorga 5000 puntos en la habilidad Hechicería tras ser leído."/> 
+<string id="" text="La mayoría cree que el Culto a la Madre se extinguió hace mucho tiempo. Están equivocados. Las Grandes Familias de mi Orden continúan sus tradiciones, la mayoría de las cuales se esconden lejos de miradas indiscretas. Antes de formar nuestra Orden, Teclis llegó a nuestras grandes arboledas. Al canalizar a Ghyran, activó las Piedras del Camino que creíamos que habían sido levantadas por nuestros ancestros y nos mostró cuáles eran realmente nuestros "Oghams": una creación de la Raza Mayor, los Asur, los Elfos. Observamos con los ojos muy abiertos cómo Teclis explicaba la naturaleza de las creencias, la magia y de Hoeth, el dios que veneraba especialmente. No todos aceptamos sus costumbres extranjeras. De hecho, un tercio de las Familias Druídicas despreciaron obstinadamente a Teclis, negándose a creer en su «verdad» y huyeron a los bosques oscuros, al igual que las tribus prehistóricas de antaño. Pero los que se quedaron, escucharon y finalmente entendieron..."/> 
+<string id="" text="Este libro otorga 5000 puntos en la habilidad Hechicería tras ser leído."/> 
+<string id="" text="…Aunque esto podría ser cierto, no creo que nosotros, los maestros de los Colegios Imperiales de Magia, debamos seguir su ejemplo y elegir por nosotros mismos los Dioses a los que dedicarnos por completo y pedirles favores, para usarlos junto con nuestros hechizos arcanos. Nada en esta vida ni en la próxima es gratis, y aunque estoy dispuesto a confiar en mis propias habilidades y limitaciones, y a aceptar cualquier error que cometa al tejer mis hechizos, no deseo confiar en la continua benevolencia de una deidad cuya necesidad de mi fe y dedicación podrían superar con creces mi propia necesidad de su ayuda..."/> 
+<string id="" text="Este libro otorga 5000 puntos en la habilidad Hechicería tras ser leído."/> 
+<string id="" text="El séptimo viento de Aethyr. Dondequiera que haya pasión, discusión o emoción, ahí está Ashqy. Aunque el poder devastador de este viento reside en el control del fuego y las llamas: las bolas de fuego, las tormentas de llamas o la matanza de una cabeza en llamas son sólo una fracción de su poder. Pero el fuego no sirve sólo para destruir. La purificación de heridas, o incluso nuestra comida diaria, se sirve mejor cocida y, por tanto, requiere llama. El fuego es lo que permite la inspiración, la audacia y el heroísmo de los humanos. Ya sea descaro o coraje, el fuego es el compañero siempre presente de la humanidad. Todos estos aspectos están incorporados en el viento y son estudiados por la escuela de hechiceros brillantes. Los magistrados de la primera orden mágica jamás encontrada por Teclis utilizan sus conocimientos sobre hechizos llameantes para proteger el imperio."/> 
+<string id="" text="Este libro otorga 5000 puntos en la habilidad Hechicería tras ser leído."/> 
+<string id="" text="Este libro otorga 5000 puntos en la habilidad Forja tras ser leído."/> 
+<string id="" text="Ante la pregunta: ¿Cómo se llama la piedra que arde? Responderás: Azufre mezclado con mercurio. Ante la pregunta: ¿Cómo se llama el solvente universal? Responderás: Al-kahest. Cuando se le pregunta: ¿Cómo se llama el remedio para todas las enfermedades? Responderá: Panacea Universalis. Ante la pregunta: ¿Cómo se llama la cumbre del Arte? Responderás: El Elixir de la Vida. Ante la pregunta: ¿Cómo se llama el metal más noble? Responderás: Oro."/> 
+<string id="" text="Este libro otorga 2000 puntos en la habilidad Hechicería tras ser leído."/> 
+<string id="" text="Este libro otorga 5000 puntos en la habilidad Pólvora tras ser leído."/> 
+<string id="" text="Este libro otorga 2000 puntos en la habilidad Vileza tras ser leído."/> 
+<string id="" text="Incluso las lejanas costas de Lustria parecen no estar libres de la corrupción de los vampiros. Las leyendas dicen que un único vampiro loco, Luthor Harkon, estableció su propia colonia. Las leyendas dicen que su mente está destrozada desde que saqueó un templo de los hombres lagarto y lo maldijeron a él y a su cuerpo. Muchas personalidades diferentes luchan en su alma por el control, algunos podrían llamarlo una maldición o una bendición. Loco o no, logró conquistar y reclutar a muchos de los piratas en su ejército de no-muertos. Los vampiros, ya sea en busca de aventuras o cazados en Sylvania, buscan una nueva vida lejos de su antiguo hábitat y se convierten en capitanes y sus primeros oficiales para frecuentar las costas. Que Sigmar proteja a cualquier marinero vivo que tenga la desgracia de toparse con ellos."/> 
+
+      </strings>
+</base>

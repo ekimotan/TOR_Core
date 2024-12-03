@@ -2792,7 +2792,7 @@
     	</basic_mercenary_troops>
 	</Culture>
 	<Culture id="blooddragons"
-			 name="{=vampirefaction}Blood Dragons"
+			 name="{=blooddragonfaction}Blood Dragons"
 			 is_main_culture="false"
 			 color="0xFF303030"
 			 color2="0xFF1c0d14"

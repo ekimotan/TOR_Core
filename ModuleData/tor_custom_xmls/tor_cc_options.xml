@@ -164,7 +164,7 @@
 		</SkillsToIncrease>
 		<AttributeToIncrease>Vigor</AttributeToIncrease>
 		<OptionText>{=tor_cc_option11_label_str}Free Company Militiaman</OptionText>
-		<PositiveEffectText>"{=tor_cc_option11_effect_str}Mercenary" Career</PositiveEffectText>
+		<PositiveEffectText>{=tor_cc_option11_effect_str}Mercenary Career</PositiveEffectText>
 		<OptionFlavourText>{=tor_cc_option11_text_str}Fighting and drinking, what more could one need in life? With sword in hand you marched with your rag-tag Free Company from battle to battle, earning your fair share of scars. You would serve any lord, for the right price.</OptionFlavourText>
 	</CharacterCreationOption>
 	
@@ -177,7 +177,7 @@
 		</SkillsToIncrease>
 		<AttributeToIncrease>Discipline</AttributeToIncrease>
 		<OptionText>{=tor_cc_option12_label_str}Magister Apprentice</OptionText>
-		<PositiveEffectText>"{=tor_cc_option12_effect_str}Imperial Magister" Career</PositiveEffectText>
+		<PositiveEffectText>{=tor_cc_option12_effect_str}Imperial Magister Career</PositiveEffectText>
 		<OptionFlavourText>{=tor_cc_option12_text_str}Your aptitude for the Winds of Magic earned you a place within the Colleges of Altdorf, with time you learned to harness the basics of your power and learn the nature of your aligned wind.</OptionFlavourText>
 	</CharacterCreationOption>
 
@@ -203,7 +203,7 @@
 		</SkillsToIncrease>
 		<AttributeToIncrease>Cunning</AttributeToIncrease>
 		<OptionText>{=tor_cc_option14_label_str}Witch Hunter Initiate</OptionText>
-		<PositiveEffectText>"{=tor_cc_option14_effect_str}Witch Hunter" Career</PositiveEffectText>
+		<PositiveEffectText>{=tor_cc_option14_effect_str}Witch Hunter Career</PositiveEffectText>
 		<OptionFlavourText>{=tor_cc_option14_text_str}Heresy was the bane of the good people of the Empire, a rot that needed to be removed. Learning the arts of the Witch Hunters you readied yourself to face all manner of unholy beasts and magicians, with faith and silver. </OptionFlavourText>
 	</CharacterCreationOption> 
 
@@ -216,7 +216,7 @@
 		</SkillsToIncrease>
 		<AttributeToIncrease>Social</AttributeToIncrease>
 		<OptionText>{=tor_cc_option15_label_str}Merchant</OptionText>
-		<PositiveEffectText>"{=tor_cc_option15_effect_str}Mercenary" Career</PositiveEffectText>
+		<PositiveEffectText>{=tor_cc_option15_effect_str}Mercenary Career</PositiveEffectText>
 		<OptionFlavourText>{=tor_cc_option15_text_str}There are many trade goods within the Empire and you saw fit to take your place amongst its many Merchants, with the money you saved you set out to form your own caravan and make a name for yourself. </OptionFlavourText>
 	</CharacterCreationOption> 
 

@@ -74,7 +74,7 @@
     </Equipments>
   </NPCCharacter>
   <!-- Empire Notables -->
-  <NPCCharacter id="tor_notable_empire_0" name="{=!}Cautious imperial merchant" is_template="true" voice="ironic" default_group="Infantry" is_hero="false" culture="Culture.empire" occupation="Merchant">
+  <NPCCharacter id="tor_notable_empire_0" name="{=str_tor_notable_empire_0}Cautious imperial merchant" is_template="true" voice="ironic" default_group="Infantry" is_hero="false" culture="Culture.empire" occupation="Merchant">
     <face>
       <face_key_template value="BodyProperty.villager_empire" />
     </face>
@@ -88,7 +88,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_notable_empire_0b" name="{=!}{FIRSTNAME} the Vintner" is_template="true" voice="ironic" default_group="Infantry" is_hero="false" culture="Culture.empire" occupation="Merchant">
+  <NPCCharacter id="tor_notable_empire_0b" name="{=str_tor_notable_empire_0b}{FIRSTNAME} the Vintner" is_template="true" voice="ironic" default_group="Infantry" is_hero="false" culture="Culture.empire" occupation="Merchant">
     <face>
       <face_key_template value="BodyProperty.villager_empire" />
     </face>
@@ -103,7 +103,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_notable_empire_1" name="{=!}Empire merchant 3, ruthless" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.empire" occupation="Merchant">
+  <NPCCharacter id="tor_notable_empire_1" name="{=str_tor_notable_empire_1}Empire merchant 3, ruthless" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.empire" occupation="Merchant">
     <face>
       <face_key_template value="BodyProperty.villager_empire" />
     </face>
@@ -117,7 +117,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_notable_empire_1b" name="{=!}Cold imperial merchant" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.empire" occupation="Merchant">
+  <NPCCharacter id="tor_notable_empire_1b" name="{=str_tor_notable_empire_1b}Cold imperial merchant" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.empire" occupation="Merchant">
     <face>
       <face_key_template value="BodyProperty.villager_empire" />
     </face>
@@ -132,7 +132,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_notable_empire_2" name="{=!}{FIRSTNAME} the Saltpanner" voice="softspoken" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.empire" occupation="Merchant">
+  <NPCCharacter id="tor_notable_empire_2" name="{=str_tor_notable_empire_2}{FIRSTNAME} the Saltpanner" voice="softspoken" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.empire" occupation="Merchant">
     <face>
       <face_key_template value="BodyProperty.villager_empire" />
     </face>
@@ -146,7 +146,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_notable_empire_2b" name="{=!}Empire merchant 6, cautious" voice="softspoken" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.empire" occupation="Merchant">
+  <NPCCharacter id="tor_notable_empire_2b" name="{=str_tor_notable_empire_2b}Empire merchant 6, cautious" voice="softspoken" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.empire" occupation="Merchant">
     <face>
       <face_key_template value="BodyProperty.villager_empire" />
     </face>
@@ -161,7 +161,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_notable_empire_3" name="{=!}Empire merchant 7, selfmade" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.empire" occupation="Merchant">
+  <NPCCharacter id="tor_notable_empire_3" name="{=str_tor_notable_empire_3}Empire merchant 7, selfmade" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.empire" occupation="Merchant">
     <face>
       <face_key_template value="BodyProperty.villager_empire" />
     </face>
@@ -174,7 +174,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_notable_empire_3b" name="{=!}Empire merchant 8, jocular" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.empire" occupation="Merchant">
+  <NPCCharacter id="tor_notable_empire_3b" name="{=str_tor_notable_empire_3b}Empire merchant 8, jocular" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.empire" occupation="Merchant">
     <face>
       <face_key_template value="BodyProperty.villager_empire" />
     </face>
@@ -188,7 +188,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_notable_empire_4" name="{=!}Empire merchant 9, heiress" voice="curt" is_template="true" is_female="true" default_group="Infantry" is_hero="false" culture="Culture.empire" occupation="Merchant">
+  <NPCCharacter id="tor_notable_empire_4" name="{=str_tor_notable_empire_4}Empire merchant 9, heiress" voice="curt" is_template="true" is_female="true" default_group="Infantry" is_hero="false" culture="Culture.empire" occupation="Merchant">
     <face>
       <face_key_template value="BodyProperty.townswoman_empire" />
     </face>
@@ -202,7 +202,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_notable_empire_4b" name="{=!}Empire merchant 10, devious" voice="ironic" is_template="true" is_female="true" default_group="Infantry" is_hero="false" culture="Culture.empire" occupation="Merchant">
+  <NPCCharacter id="tor_notable_empire_4b" name="{=str_tor_notable_empire_4b}Empire merchant 10, devious" voice="ironic" is_template="true" is_female="true" default_group="Infantry" is_hero="false" culture="Culture.empire" occupation="Merchant">
     <face>
       <face_key_template value="BodyProperty.townswoman_empire" />
     </face>
@@ -218,7 +218,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_notable_empire_5" name="{=!}Messianic imperial preacher" voice="earnest" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.empire" occupation="Preacher">
+  <NPCCharacter id="tor_notable_empire_5" name="{=str_tor_notable_empire_5}Messianic imperial preacher" voice="earnest" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.empire" occupation="Preacher">
     <face>
       <face_key_template value="BodyProperty.villager_empire" />
     </face>
@@ -232,7 +232,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_notable_empire_6" name="{=!}Puritan imperial preacher" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.empire" occupation="Preacher">
+  <NPCCharacter id="tor_notable_empire_6" name="{=str_tor_notable_empire_6}Puritan imperial preacher" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.empire" occupation="Preacher">
     <face>
       <face_key_template value="BodyProperty.villager_empire" />
     </face>
@@ -246,7 +246,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_notable_empire_7" name="{=!}Female imperial mystic" voice="earnest" is_template="true" default_group="Infantry" is_female="true" culture="Culture.empire" occupation="Preacher">
+  <NPCCharacter id="tor_notable_empire_7" name="{=str_tor_notable_empire_7}Female imperial mystic" voice="earnest" is_template="true" default_group="Infantry" is_female="true" culture="Culture.empire" occupation="Preacher">
     <face>
       <face_key_template value="BodyProperty.townswoman_empire" />
     </face>
@@ -260,7 +260,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_notable_empire_8" name="{=!}Imperial gruff labor leader" voice="curt" is_template="true" default_group="Infantry" is_female="false" culture="Culture.empire" occupation="Artisan">
+  <NPCCharacter id="tor_notable_empire_8" name="{=str_tor_notable_empire_8}Imperial gruff labor leader" voice="curt" is_template="true" default_group="Infantry" is_female="false" culture="Culture.empire" occupation="Artisan">
     <face>
       <face_key_template value="BodyProperty.villager_empire" />
     </face>
@@ -273,7 +273,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_notable_empire_9" name="{=!}Imperial outgoing labor leader" voice="earnest" is_template="true" default_group="Infantry" is_female="false" culture="Culture.empire" occupation="Artisan">
+  <NPCCharacter id="tor_notable_empire_9" name="{=str_tor_notable_empire_9}Imperial outgoing labor leader" voice="earnest" is_template="true" default_group="Infantry" is_female="false" culture="Culture.empire" occupation="Artisan">
     <face>
       <face_key_template value="BodyProperty.fighter_empire" />
     </face>
@@ -286,7 +286,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_notable_empire_gl1" name="{=!}Protective imperial male gang leader" voice="softspoken" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.empire" occupation="GangLeader">
+  <NPCCharacter id="tor_notable_empire_gl1" name="{=str_tor_notable_empire_gl1}Protective imperial male gang leader" voice="softspoken" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.empire" occupation="GangLeader">
     <face>
       <face_key_template value="BodyProperty.fighter_empire" />
     </face>
@@ -301,7 +301,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_notable_empire_10" name="{=!}Ironic imperial gang leader" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.empire" occupation="GangLeader">
+  <NPCCharacter id="tor_notable_empire_10" name="{=str_tor_notable_empire_10}Ironic imperial gang leader" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.empire" occupation="GangLeader">
     <face>
       <face_key_template value="BodyProperty.fighter_empire" />
     </face>
@@ -316,7 +316,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_notable_empire_11" name="{=!}Intimidating male imperial gang leader" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.empire" occupation="GangLeader">
+  <NPCCharacter id="tor_notable_empire_11" name="{=str_tor_notable_empire_11}Intimidating male imperial gang leader" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.empire" occupation="GangLeader">
     <face>
       <face_key_template value="BodyProperty.fighter_empire" />
     </face>
@@ -331,7 +331,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_notable_empire_gl4" name="{=!}Bestial male imperial gang leader" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.empire" occupation="GangLeader">
+  <NPCCharacter id="tor_notable_empire_gl4" name="{=str_tor_notable_empire_gl4}Bestial male imperial gang leader" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.empire" occupation="GangLeader">
     <face>
       <face_key_template value="BodyProperty.fighter_empire" />
     </face>
@@ -346,7 +346,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_notable_empire_12" name="{=!}Female imperial gang leader" voice="ironic" is_template="true" is_female="true" culture="Culture.empire" occupation="GangLeader" default_group="Infantry">
+  <NPCCharacter id="tor_notable_empire_12" name="{=str_tor_notable_empire_12}Female imperial gang leader" voice="ironic" is_template="true" is_female="true" culture="Culture.empire" occupation="GangLeader" default_group="Infantry">
     <face>
       <face_key_template value="BodyProperty.townswoman_empire" />
     </face>
@@ -360,7 +360,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_notable_empire_13" name="{=!}Menacing female imperial gang leader" voice="softspoken" is_template="true" is_female="true" culture="Culture.empire" occupation="GangLeader" default_group="Infantry">
+  <NPCCharacter id="tor_notable_empire_13" name="{=str_tor_notable_empire_13}Menacing female imperial gang leader" voice="softspoken" is_template="true" is_female="true" culture="Culture.empire" occupation="GangLeader" default_group="Infantry">
     <face>
       <face_key_template value="BodyProperty.townswoman_empire" />
     </face>
@@ -375,7 +375,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_notable_empire_21" name="{=!}Empire gruff rural notable" voice="curt" is_template="true" default_group="Infantry" culture="Culture.empire" occupation="RuralNotable">
+  <NPCCharacter id="tor_notable_empire_21" name="{=str_tor_notable_empire_21}Empire gruff rural notable" voice="curt" is_template="true" default_group="Infantry" culture="Culture.empire" occupation="RuralNotable">
     <face>
       <face_key_template value="BodyProperty.villager_empire" />
     </face>
@@ -388,7 +388,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_notable_empire_22" name="{=!}Empire rural notable agreeable" voice="softspoken" is_template="true" default_group="Infantry" culture="Culture.empire" occupation="RuralNotable">
+  <NPCCharacter id="tor_notable_empire_22" name="{=str_tor_notable_empire_22}Empire rural notable agreeable" voice="softspoken" is_template="true" default_group="Infantry" culture="Culture.empire" occupation="RuralNotable">
     <face>
       <face_key_template value="BodyProperty.townsman_empire" />
     </face>
@@ -401,7 +401,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_empire_headman_1" name="{=!}empire rebellious headman" voice="earnest" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.empire" occupation="Headman">
+  <NPCCharacter id="tor_empire_headman_1" name="{=str_tor_empire_headman_1}empire rebellious headman" voice="earnest" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.empire" occupation="Headman">
     <face>
       <face_key_template value="BodyProperty.fighter_empire" />
     </face>
@@ -415,7 +415,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_empire_headman_2" name="{=!}empire conservative headman" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.empire" occupation="Headman">
+  <NPCCharacter id="tor_empire_headman_2" name="{=str_tor_empire_headman_2}empire conservative headman" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.empire" occupation="Headman">
     <face>
       <face_key_template value="BodyProperty.villager_empire" />
     </face>
@@ -429,7 +429,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_empire_headman_3" name="{=!}empire devious headman" voice="softspoken" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.empire" occupation="Headman">
+  <NPCCharacter id="tor_empire_headman_3" name="{=str_tor_empire_headman_3}empire devious headman" voice="softspoken" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.empire" occupation="Headman">
     <face>
       <face_key_template value="BodyProperty.villager_empire" />
     </face>
@@ -445,7 +445,7 @@
   </NPCCharacter>
 
   <!-- Sylvanian Notables -->
-  <NPCCharacter id="tor_notable_sylvania_0" name="{=!}Cautious imperial merchant" is_template="true" voice="ironic" default_group="Infantry" is_hero="false" culture="Culture.khuzait" occupation="Merchant">
+  <NPCCharacter id="tor_notable_sylvania_0" name="{=str_tor_notable_sylvania_0}Cautious imperial merchant" is_template="true" voice="ironic" default_group="Infantry" is_hero="false" culture="Culture.khuzait" occupation="Merchant">
     <face>
       <face_key_template value="BodyProperty.villager_empire" />
     </face>
@@ -459,7 +459,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_notable_sylvania_0b" name="{=!}{FIRSTNAME} the Vintner" is_template="true" voice="ironic" default_group="Infantry" is_hero="false" culture="Culture.khuzait" occupation="Merchant">
+  <NPCCharacter id="tor_notable_sylvania_0b" name="{=str_tor_notable_sylvania_0b}{FIRSTNAME} the Vintner" is_template="true" voice="ironic" default_group="Infantry" is_hero="false" culture="Culture.khuzait" occupation="Merchant">
     <face>
       <face_key_template value="BodyProperty.villager_empire" />
     </face>
@@ -474,7 +474,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_notable_sylvania_1" name="{=!}Empire merchant 3, ruthless" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.khuzait" occupation="Merchant">
+  <NPCCharacter id="tor_notable_sylvania_1" name="{=str_tor_notable_sylvania_1}Empire merchant 3, ruthless" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.khuzait" occupation="Merchant">
     <face>
       <face_key_template value="BodyProperty.villager_empire" />
     </face>
@@ -488,7 +488,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_notable_sylvania_1b" name="{=!}Cold imperial merchant" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.khuzait" occupation="Merchant">
+  <NPCCharacter id="tor_notable_sylvania_1b" name="{=str_tor_notable_sylvania_1b}Cold imperial merchant" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.khuzait" occupation="Merchant">
     <face>
       <face_key_template value="BodyProperty.villager_empire" />
     </face>
@@ -503,7 +503,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_notable_sylvania_2" name="{=!}{FIRSTNAME} the Saltpanner" voice="softspoken" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.khuzait" occupation="Merchant">
+  <NPCCharacter id="tor_notable_sylvania_2" name="{=str_tor_notable_sylvania_2}{FIRSTNAME} the Saltpanner" voice="softspoken" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.khuzait" occupation="Merchant">
     <face>
       <face_key_template value="BodyProperty.villager_empire" />
     </face>
@@ -517,7 +517,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_notable_sylvania_2b" name="{=!}Empire merchant 6, cautious" voice="softspoken" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.khuzait" occupation="Merchant">
+  <NPCCharacter id="tor_notable_sylvania_2b" name="{=str_tor_notable_sylvania_2b}Empire merchant 6, cautious" voice="softspoken" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.khuzait" occupation="Merchant">
     <face>
       <face_key_template value="BodyProperty.villager_empire" />
     </face>
@@ -532,7 +532,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_notable_sylvania_3" name="{=!}Empire merchant 7, selfmade" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.khuzait" occupation="Merchant">
+  <NPCCharacter id="tor_notable_sylvania_3" name="{=str_tor_notable_sylvania_3}Empire merchant 7, selfmade" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.khuzait" occupation="Merchant">
     <face>
       <face_key_template value="BodyProperty.villager_empire" />
     </face>
@@ -545,7 +545,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_notable_sylvania_3b" name="{=!}Empire merchant 8, jocular" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.khuzait" occupation="Merchant">
+  <NPCCharacter id="tor_notable_sylvania_3b" name="{=str_tor_notable_sylvania_3b}Empire merchant 8, jocular" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.khuzait" occupation="Merchant">
     <face>
       <face_key_template value="BodyProperty.villager_empire" />
     </face>
@@ -559,7 +559,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_notable_sylvania_4" name="{=!}Empire merchant 9, heiress" voice="curt" is_template="true" is_female="true" default_group="Infantry" is_hero="false" culture="Culture.khuzait" occupation="Merchant">
+  <NPCCharacter id="tor_notable_sylvania_4" name="{=str_tor_notable_sylvania_4}Empire merchant 9, heiress" voice="curt" is_template="true" is_female="true" default_group="Infantry" is_hero="false" culture="Culture.khuzait" occupation="Merchant">
     <face>
       <face_key_template value="BodyProperty.townswoman_empire" />
     </face>
@@ -573,7 +573,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_notable_sylvania_4b" name="{=!}Empire merchant 10, devious" voice="ironic" is_template="true" is_female="true" default_group="Infantry" is_hero="false" culture="Culture.khuzait" occupation="Merchant">
+  <NPCCharacter id="tor_notable_sylvania_4b" name="{=str_tor_notable_sylvania_4b}Empire merchant 10, devious" voice="ironic" is_template="true" is_female="true" default_group="Infantry" is_hero="false" culture="Culture.khuzait" occupation="Merchant">
     <face>
       <face_key_template value="BodyProperty.townswoman_empire" />
     </face>
@@ -589,7 +589,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_notable_sylvania_5" name="{=!}Messianic imperial preacher" voice="earnest" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.khuzait" occupation="Preacher">
+  <NPCCharacter id="tor_notable_sylvania_5" name="{=str_tor_notable_sylvania_5}Messianic imperial preacher" voice="earnest" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.khuzait" occupation="Preacher">
     <face>
       <face_key_template value="BodyProperty.villager_empire" />
     </face>
@@ -603,7 +603,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_notable_sylvania_6" name="{=!}Puritan imperial preacher" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.khuzait" occupation="Preacher">
+  <NPCCharacter id="tor_notable_sylvania_6" name="{=str_tor_notable_sylvania_6}Puritan imperial preacher" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.khuzait" occupation="Preacher">
     <face>
       <face_key_template value="BodyProperty.villager_empire" />
     </face>
@@ -617,7 +617,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_notable_sylvania_7" name="{=!}Female imperial mystic" voice="earnest" is_template="true" default_group="Infantry" is_female="true" culture="Culture.khuzait" occupation="Preacher">
+  <NPCCharacter id="tor_notable_sylvania_7" name="{=str_tor_notable_sylvania_7}Female imperial mystic" voice="earnest" is_template="true" default_group="Infantry" is_female="true" culture="Culture.khuzait" occupation="Preacher">
     <face>
       <face_key_template value="BodyProperty.townswoman_empire" />
     </face>
@@ -631,7 +631,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_notable_sylvania_8" name="{=!}Imperial gruff labor leader" voice="curt" is_template="true" default_group="Infantry" is_female="false" culture="Culture.khuzait" occupation="Artisan">
+  <NPCCharacter id="tor_notable_sylvania_8" name="{=str_tor_notable_sylvania_8}Imperial gruff labor leader" voice="curt" is_template="true" default_group="Infantry" is_female="false" culture="Culture.khuzait" occupation="Artisan">
     <face>
       <face_key_template value="BodyProperty.villager_empire" />
     </face>
@@ -644,7 +644,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_notable_sylvania_9" name="{=!}Imperial outgoing labor leader" voice="earnest" is_template="true" default_group="Infantry" is_female="false" culture="Culture.khuzait" occupation="Artisan">
+  <NPCCharacter id="tor_notable_sylvania_9" name="{=str_tor_notable_sylvania_9}Imperial outgoing labor leader" voice="earnest" is_template="true" default_group="Infantry" is_female="false" culture="Culture.khuzait" occupation="Artisan">
     <face>
       <face_key_template value="BodyProperty.fighter_empire" />
     </face>
@@ -657,7 +657,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_notable_sylvania_gl1" name="{=!}Protective imperial male gang leader" voice="softspoken" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.khuzait" occupation="GangLeader">
+  <NPCCharacter id="tor_notable_sylvania_gl1" name="{=str_tor_notable_sylvania_gl1}Protective imperial male gang leader" voice="softspoken" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.khuzait" occupation="GangLeader">
     <face>
       <face_key_template value="BodyProperty.fighter_empire" />
     </face>
@@ -672,7 +672,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_notable_sylvania_10" name="{=!}Ironic imperial gang leader" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.khuzait" occupation="GangLeader">
+  <NPCCharacter id="tor_notable_sylvania_10" name="{=str_tor_notable_sylvania_10}Ironic imperial gang leader" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.khuzait" occupation="GangLeader">
     <face>
       <face_key_template value="BodyProperty.fighter_empire" />
     </face>
@@ -687,7 +687,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_notable_sylvania_11" name="{=!}Intimidating male imperial gang leader" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.khuzait" occupation="GangLeader">
+  <NPCCharacter id="tor_notable_sylvania_11" name="{=str_tor_notable_sylvania_11}Intimidating male imperial gang leader" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.khuzait" occupation="GangLeader">
     <face>
       <face_key_template value="BodyProperty.fighter_empire" />
     </face>
@@ -702,7 +702,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_notable_sylvania_gl4" name="{=!}Bestial male imperial gang leader" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.khuzait" occupation="GangLeader">
+  <NPCCharacter id="tor_notable_sylvania_gl4" name="{=str_tor_notable_sylvania_gl4}Bestial male imperial gang leader" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.khuzait" occupation="GangLeader">
     <face>
       <face_key_template value="BodyProperty.fighter_empire" />
     </face>
@@ -717,7 +717,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_notable_sylvania_12" name="{=!}Female imperial gang leader" voice="ironic" is_template="true" is_female="true" culture="Culture.khuzait" occupation="GangLeader" default_group="Infantry">
+  <NPCCharacter id="tor_notable_sylvania_12" name="{=str_tor_notable_sylvania_12}Female imperial gang leader" voice="ironic" is_template="true" is_female="true" culture="Culture.khuzait" occupation="GangLeader" default_group="Infantry">
     <face>
       <face_key_template value="BodyProperty.townswoman_empire" />
     </face>
@@ -731,7 +731,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_notable_sylvania_13" name="{=!}Menacing female imperial gang leader" voice="softspoken" is_template="true" is_female="true" culture="Culture.khuzait" occupation="GangLeader" default_group="Infantry">
+  <NPCCharacter id="tor_notable_sylvania_13" name="{=str_tor_notable_sylvania_13}Menacing female imperial gang leader" voice="softspoken" is_template="true" is_female="true" culture="Culture.khuzait" occupation="GangLeader" default_group="Infantry">
     <face>
       <face_key_template value="BodyProperty.townswoman_empire" />
     </face>
@@ -746,7 +746,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_notable_sylvania_21" name="{=!}Empire gruff rural notable" voice="curt" is_template="true" default_group="Infantry" culture="Culture.khuzait" occupation="RuralNotable">
+  <NPCCharacter id="tor_notable_sylvania_21" name="{=str_tor_notable_sylvania_21}Empire gruff rural notable" voice="curt" is_template="true" default_group="Infantry" culture="Culture.khuzait" occupation="RuralNotable">
     <face>
       <face_key_template value="BodyProperty.villager_empire" />
     </face>
@@ -759,7 +759,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_notable_sylvania_22" name="{=!}Empire rural notable agreeable" voice="softspoken" is_template="true" default_group="Infantry" culture="Culture.khuzait" occupation="RuralNotable">
+  <NPCCharacter id="tor_notable_sylvania_22" name="{=str_tor_notable_sylvania_22}Empire rural notable agreeable" voice="softspoken" is_template="true" default_group="Infantry" culture="Culture.khuzait" occupation="RuralNotable">
     <face>
       <face_key_template value="BodyProperty.townsman_empire" />
     </face>
@@ -772,7 +772,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_sylvania_headman_1" name="{=!}empire rebellious headman" voice="earnest" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.khuzait" occupation="Headman">
+  <NPCCharacter id="tor_sylvania_headman_1" name="{=str_tor_sylvania_headman_1}empire rebellious headman" voice="earnest" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.khuzait" occupation="Headman">
     <face>
       <face_key_template value="BodyProperty.fighter_empire" />
     </face>
@@ -786,7 +786,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_sylvania_headman_2" name="{=!}empire conservative headman" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.khuzait" occupation="Headman">
+  <NPCCharacter id="tor_sylvania_headman_2" name="{=str_tor_sylvania_headman_2}empire conservative headman" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.khuzait" occupation="Headman">
     <face>
       <face_key_template value="BodyProperty.villager_empire" />
     </face>
@@ -800,7 +800,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_sylvania_headman_3" name="{=!}empire devious headman" voice="softspoken" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.khuzait" occupation="Headman">
+  <NPCCharacter id="tor_sylvania_headman_3" name="{=str_tor_sylvania_headman_3}empire devious headman" voice="softspoken" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.khuzait" occupation="Headman">
     <face>
       <face_key_template value="BodyProperty.villager_empire" />
     </face>
@@ -817,7 +817,7 @@
   
    <!-- Blood dragons -->
    
-     <NPCCharacter id="tor_notable_blooddragons_0" name="{=!}Cautious imperial merchant" is_template="true" voice="ironic" default_group="Infantry" is_hero="false" culture="Culture.blooddragons" occupation="Merchant">
+     <NPCCharacter id="tor_notable_blooddragons_0" name="{=str_tor_notable_blooddragons_0}Cautious imperial merchant" is_template="true" voice="ironic" default_group="Infantry" is_hero="false" culture="Culture.blooddragons" occupation="Merchant">
     <face>
       <face_key_template value="BodyProperty.villager_empire" />
     </face>
@@ -831,7 +831,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_notable_blooddragons_0b" name="{=!}{FIRSTNAME} the Vintner" is_template="true" voice="ironic" default_group="Infantry" is_hero="false" culture="Culture.blooddragons" occupation="Merchant">
+  <NPCCharacter id="tor_notable_blooddragons_0b" name="{=str_tor_notable_blooddragons_0b}{FIRSTNAME} the Vintner" is_template="true" voice="ironic" default_group="Infantry" is_hero="false" culture="Culture.blooddragons" occupation="Merchant">
     <face>
       <face_key_template value="BodyProperty.villager_empire" />
     </face>
@@ -846,7 +846,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_notable_blooddragons_1" name="{=!}Empire merchant 3, ruthless" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.blooddragons" occupation="Merchant">
+  <NPCCharacter id="tor_notable_blooddragons_1" name="{=str_tor_notable_blooddragons_1}Empire merchant 3, ruthless" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.blooddragons" occupation="Merchant">
     <face>
       <face_key_template value="BodyProperty.villager_empire" />
     </face>
@@ -860,7 +860,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_notable_blooddragons_1b" name="{=!}Cold imperial merchant" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.blooddragons" occupation="Merchant">
+  <NPCCharacter id="tor_notable_blooddragons_1b" name="{=str_tor_notable_blooddragons_1b}Cold imperial merchant" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.blooddragons" occupation="Merchant">
     <face>
       <face_key_template value="BodyProperty.villager_empire" />
     </face>
@@ -875,7 +875,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_notable_blooddragons_2" name="{=!}{FIRSTNAME} the Saltpanner" voice="softspoken" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.blooddragons" occupation="Merchant">
+  <NPCCharacter id="tor_notable_blooddragons_2" name="{=str_tor_notable_blooddragons_2}{FIRSTNAME} the Saltpanner" voice="softspoken" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.blooddragons" occupation="Merchant">
     <face>
       <face_key_template value="BodyProperty.villager_empire" />
     </face>
@@ -889,7 +889,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_notable_blooddragons_2b" name="{=!}Empire merchant 6, cautious" voice="softspoken" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.blooddragons" occupation="Merchant">
+  <NPCCharacter id="tor_notable_blooddragons_2b" name="{=str_tor_notable_blooddragons_2b}Empire merchant 6, cautious" voice="softspoken" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.blooddragons" occupation="Merchant">
     <face>
       <face_key_template value="BodyProperty.villager_empire" />
     </face>
@@ -904,7 +904,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_notable_blooddragons_3" name="{=!}Empire merchant 7, selfmade" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.blooddragons" occupation="Merchant">
+  <NPCCharacter id="tor_notable_blooddragons_3" name="{=str_tor_notable_blooddragons_3}Empire merchant 7, selfmade" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.blooddragons" occupation="Merchant">
     <face>
       <face_key_template value="BodyProperty.villager_empire" />
     </face>
@@ -917,7 +917,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_notable_blooddragons_3b" name="{=!}Empire merchant 8, jocular" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.blooddragons" occupation="Merchant">
+  <NPCCharacter id="tor_notable_blooddragons_3b" name="{=str_tor_notable_blooddragons_3b}Empire merchant 8, jocular" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.blooddragons" occupation="Merchant">
     <face>
       <face_key_template value="BodyProperty.villager_empire" />
     </face>
@@ -931,7 +931,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_notable_blooddragons_4" name="{=!}Empire merchant 9, heiress" voice="curt" is_template="true" is_female="true" default_group="Infantry" is_hero="false" culture="Culture.blooddragons" occupation="Merchant">
+  <NPCCharacter id="tor_notable_blooddragons_4" name="{=str_tor_notable_blooddragons_4}Empire merchant 9, heiress" voice="curt" is_template="true" is_female="true" default_group="Infantry" is_hero="false" culture="Culture.blooddragons" occupation="Merchant">
     <face>
       <face_key_template value="BodyProperty.townswoman_empire" />
     </face>
@@ -945,7 +945,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_notable_blooddragons_4b" name="{=!}Empire merchant 10, devious" voice="ironic" is_template="true" is_female="true" default_group="Infantry" is_hero="false" culture="Culture.blooddragons" occupation="Merchant">
+  <NPCCharacter id="tor_notable_blooddragons_4b" name="{=str_tor_notable_blooddragons_4b}Empire merchant 10, devious" voice="ironic" is_template="true" is_female="true" default_group="Infantry" is_hero="false" culture="Culture.blooddragons" occupation="Merchant">
     <face>
       <face_key_template value="BodyProperty.townswoman_empire" />
     </face>
@@ -961,7 +961,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_notable_blooddragons_5" name="{=!}Messianic imperial preacher" voice="earnest" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.blooddragons" occupation="Preacher">
+  <NPCCharacter id="tor_notable_blooddragons_5" name="{=str_tor_notable_blooddragons_5}Messianic imperial preacher" voice="earnest" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.blooddragons" occupation="Preacher">
     <face>
       <face_key_template value="BodyProperty.villager_empire" />
     </face>
@@ -975,7 +975,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_notable_blooddragons_6" name="{=!}Puritan imperial preacher" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.blooddragons" occupation="Preacher">
+  <NPCCharacter id="tor_notable_blooddragons_6" name="{=str_tor_notable_blooddragons_6}Puritan imperial preacher" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.blooddragons" occupation="Preacher">
     <face>
       <face_key_template value="BodyProperty.villager_empire" />
     </face>
@@ -989,7 +989,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_notable_blooddragons_7" name="{=!}Female imperial mystic" voice="earnest" is_template="true" default_group="Infantry" is_female="true" culture="Culture.blooddragons" occupation="Preacher">
+  <NPCCharacter id="tor_notable_blooddragons_7" name="{=str_tor_notable_blooddragons_7}Female imperial mystic" voice="earnest" is_template="true" default_group="Infantry" is_female="true" culture="Culture.blooddragons" occupation="Preacher">
     <face>
       <face_key_template value="BodyProperty.townswoman_empire" />
     </face>
@@ -1003,7 +1003,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_notable_blooddragons_8" name="{=!}Imperial gruff labor leader" voice="curt" is_template="true" default_group="Infantry" is_female="false" culture="Culture.blooddragons" occupation="Artisan">
+  <NPCCharacter id="tor_notable_blooddragons_8" name="{=str_tor_notable_blooddragons_8}Imperial gruff labor leader" voice="curt" is_template="true" default_group="Infantry" is_female="false" culture="Culture.blooddragons" occupation="Artisan">
     <face>
       <face_key_template value="BodyProperty.villager_empire" />
     </face>
@@ -1016,7 +1016,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_notable_blooddragons_9" name="{=!}Imperial outgoing labor leader" voice="earnest" is_template="true" default_group="Infantry" is_female="false" culture="Culture.blooddragons" occupation="Artisan">
+  <NPCCharacter id="tor_notable_blooddragons_9" name="{=str_tor_notable_blooddragons_9}Imperial outgoing labor leader" voice="earnest" is_template="true" default_group="Infantry" is_female="false" culture="Culture.blooddragons" occupation="Artisan">
     <face>
       <face_key_template value="BodyProperty.fighter_empire" />
     </face>
@@ -1029,7 +1029,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_notable_blooddragons_gl1" name="{=!}Protective imperial male gang leader" voice="softspoken" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.blooddragons" occupation="GangLeader">
+  <NPCCharacter id="tor_notable_blooddragons_gl1" name="{=str_tor_notable_blooddragons_gl1}Protective imperial male gang leader" voice="softspoken" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.blooddragons" occupation="GangLeader">
     <face>
       <face_key_template value="BodyProperty.fighter_empire" />
     </face>
@@ -1044,7 +1044,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_notable_blooddragons_10" name="{=!}Ironic imperial gang leader" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.blooddragons" occupation="GangLeader">
+  <NPCCharacter id="tor_notable_blooddragons_10" name="{=str_tor_notable_blooddragons_10}Ironic imperial gang leader" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.blooddragons" occupation="GangLeader">
     <face>
       <face_key_template value="BodyProperty.fighter_empire" />
     </face>
@@ -1059,7 +1059,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_notable_blooddragons_11" name="{=!}Intimidating male imperial gang leader" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.blooddragons" occupation="GangLeader">
+  <NPCCharacter id="tor_notable_blooddragons_11" name="{=str_tor_notable_blooddragons_11}Intimidating male imperial gang leader" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.blooddragons" occupation="GangLeader">
     <face>
       <face_key_template value="BodyProperty.fighter_empire" />
     </face>
@@ -1074,7 +1074,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_notable_blooddragons_gl4" name="{=!}Bestial male imperial gang leader" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.blooddragons" occupation="GangLeader">
+  <NPCCharacter id="tor_notable_blooddragons_gl4" name="{=str_tor_notable_blooddragons_gl4}Bestial male imperial gang leader" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.blooddragons" occupation="GangLeader">
     <face>
       <face_key_template value="BodyProperty.fighter_empire" />
     </face>
@@ -1089,7 +1089,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_notable_blooddragons_12" name="{=!}Female imperial gang leader" voice="ironic" is_template="true" is_female="true" culture="Culture.blooddragons" occupation="GangLeader" default_group="Infantry">
+  <NPCCharacter id="tor_notable_blooddragons_12" name="{=str_tor_notable_blooddragons_12}Female imperial gang leader" voice="ironic" is_template="true" is_female="true" culture="Culture.blooddragons" occupation="GangLeader" default_group="Infantry">
     <face>
       <face_key_template value="BodyProperty.townswoman_empire" />
     </face>
@@ -1103,7 +1103,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_notable_blooddragons_13" name="{=!}Menacing female imperial gang leader" voice="softspoken" is_template="true" is_female="true" culture="Culture.blooddragons" occupation="GangLeader" default_group="Infantry">
+  <NPCCharacter id="tor_notable_blooddragons_13" name="{=str_tor_notable_blooddragons_13}Menacing female imperial gang leader" voice="softspoken" is_template="true" is_female="true" culture="Culture.blooddragons" occupation="GangLeader" default_group="Infantry">
     <face>
       <face_key_template value="BodyProperty.townswoman_empire" />
     </face>
@@ -1118,7 +1118,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_notable_blooddragons_21" name="{=!}Empire gruff rural notable" voice="curt" is_template="true" default_group="Infantry" culture="Culture.blooddragons" occupation="RuralNotable">
+  <NPCCharacter id="tor_notable_blooddragons_21" name="{=str_tor_notable_blooddragons_21}Empire gruff rural notable" voice="curt" is_template="true" default_group="Infantry" culture="Culture.blooddragons" occupation="RuralNotable">
     <face>
       <face_key_template value="BodyProperty.villager_empire" />
     </face>
@@ -1131,7 +1131,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_notable_blooddragons_22" name="{=!}Empire rural notable agreeable" voice="softspoken" is_template="true" default_group="Infantry" culture="Culture.blooddragons" occupation="RuralNotable">
+  <NPCCharacter id="tor_notable_blooddragons_22" name="{=22}Empire rural notable agreeable" voice="softspoken" is_template="true" default_group="Infantry" culture="Culture.blooddragons" occupation="RuralNotable">
     <face>
       <face_key_template value="BodyProperty.townsman_empire" />
     </face>
@@ -1144,7 +1144,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_blooddragons_headman_1" name="{=!}empire rebellious headman" voice="earnest" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.blooddragons" occupation="Headman">
+  <NPCCharacter id="tor_blooddragons_headman_1" name="{=str_tor_blooddragons_headman_1}empire rebellious headman" voice="earnest" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.blooddragons" occupation="Headman">
     <face>
       <face_key_template value="BodyProperty.fighter_empire" />
     </face>
@@ -1158,7 +1158,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_blooddragons_headman_2" name="{=!}empire conservative headman" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.blooddragons" occupation="Headman">
+  <NPCCharacter id="tor_blooddragons_headman_2" name="{=str_tor_blooddragons_headman_2}empire conservative headman" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.blooddragons" occupation="Headman">
     <face>
       <face_key_template value="BodyProperty.villager_empire" />
     </face>
@@ -1172,7 +1172,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_blooddragons_headman_3" name="{=!}empire devious headman" voice="softspoken" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.blooddragons" occupation="Headman">
+  <NPCCharacter id="tor_blooddragons_headman_3" name="{=str_tor_blooddragons_headman_3}empire devious headman" voice="softspoken" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.blooddragons" occupation="Headman">
     <face>
       <face_key_template value="BodyProperty.villager_empire" />
     </face>
@@ -1188,7 +1188,7 @@
   </NPCCharacter>
   
   <!-- URBAN CHARACTERS OF BRETONNIA -->
-  <NPCCharacter id="spc_notable_bretonnia_merch1" name="{=!}Ironic bretonnia merchant" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.vlandia" occupation="Merchant">
+  <NPCCharacter id="spc_notable_bretonnia_merch1" name="{=str_spc_notable_bretonnia_merch1}Ironic bretonnia merchant" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.vlandia" occupation="Merchant">
     <face>
       <face_key_template value="BodyProperty.villager_vlandia" />
     </face>
@@ -1201,7 +1201,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_vlandia" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_bretonnia_merch2" name="{=!}curt bretonnia merchant" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.vlandia" occupation="Merchant">
+  <NPCCharacter id="spc_notable_bretonnia_merch2" name="{=str_spc_notable_bretonnia_merch2}curt bretonnia merchant" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.vlandia" occupation="Merchant">
     <face>
       <face_key_template value="BodyProperty.villager_vlandia" />
     </face>
@@ -1216,7 +1216,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_vlandia" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_bretonnia_merch3" name="{=!}Daring bretonnia merchant" voice="earnest" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.vlandia" occupation="Merchant">
+  <NPCCharacter id="spc_notable_bretonnia_merch3" name="{=str_spc_notable_bretonnia_merch3}Daring bretonnia merchant" voice="earnest" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.vlandia" occupation="Merchant">
     <face>
       <face_key_template value="BodyProperty.villager_vlandia" />
     </face>
@@ -1230,7 +1230,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_vlandia" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_bretonnia_merch4" name="{=!}Softspoken bretonnia merchant" voice="softspoken" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.vlandia" occupation="Merchant">
+  <NPCCharacter id="spc_notable_bretonnia_merch4" name="{=str_spc_notable_bretonnia_merch4}Softspoken bretonnia merchant" voice="softspoken" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.vlandia" occupation="Merchant">
     <face>
       <face_key_template value="BodyProperty.villager_vlandia" />
     </face>
@@ -1244,7 +1244,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_vlandia" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_bretonnia_merch5" name="{=!}{FIRSTNAME} the Manciple" voice="softspoken" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.vlandia" occupation="Merchant">
+  <NPCCharacter id="spc_notable_bretonnia_merch5" name="{=str_spc_notable_bretonnia_merch5}{FIRSTNAME} the Manciple" voice="softspoken" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.vlandia" occupation="Merchant">
     <face>
       <face_key_template value="BodyProperty.villager_vlandia" />
     </face>
@@ -1258,7 +1258,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_vlandia" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_bretonnia_1" name="{=!}{FIRSTNAME} the Warehouser" voice="ironic" is_template="true" is_female="true" default_group="Infantry" is_hero="false" culture="Culture.vlandia" occupation="Merchant">
+  <NPCCharacter id="spc_notable_bretonnia_1" name="{=str_spc_notable_bretonnia_1}{FIRSTNAME} the Warehouser" voice="ironic" is_template="true" is_female="true" default_group="Infantry" is_hero="false" culture="Culture.vlandia" occupation="Merchant">
     <face>
       <face_key_template value="BodyProperty.townswoman_vlandia" />
     </face>
@@ -1271,7 +1271,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_vlandia" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_bretonnia_1b" name="{=!}{FIRSTNAME} the Heiress" voice="ironic" is_template="true" is_female="true" default_group="Infantry" is_hero="false" culture="Culture.vlandia" occupation="Merchant">
+  <NPCCharacter id="spc_notable_bretonnia_1b" name="{=str_spc_notable_bretonnia_1b}{FIRSTNAME} the Heiress" voice="ironic" is_template="true" is_female="true" default_group="Infantry" is_hero="false" culture="Culture.vlandia" occupation="Merchant">
     <face>
       <face_key_template value="BodyProperty.townswoman_vlandia" />
     </face>
@@ -1285,7 +1285,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_vlandia" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_bretonnia_2" name="{=!}Puritan male preacher" voice="earnest" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.vlandia" occupation="Preacher">
+  <NPCCharacter id="spc_notable_bretonnia_2" name="{=str_spc_notable_bretonnia_2}Puritan male preacher" voice="earnest" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.vlandia" occupation="Preacher">
     <face>
       <face_key_template value="BodyProperty.villager_vlandia" />
     </face>
@@ -1298,7 +1298,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_vlandia" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_bretonnia_3" name="{=!}Rebellious female preacher" voice="earnest" is_template="true" default_group="Infantry" is_female="true" culture="Culture.vlandia" occupation="Preacher">
+  <NPCCharacter id="spc_notable_bretonnia_3" name="{=str_spc_notable_bretonnia_3}Rebellious female preacher" voice="earnest" is_template="true" default_group="Infantry" is_female="true" culture="Culture.vlandia" occupation="Preacher">
     <face>
       <face_key_template value="BodyProperty.townswoman_vlandia" />
     </face>
@@ -1311,7 +1311,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_vlandia" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_bretonnia_gangleader_1" name="{=!}Standard male gang leader" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.vlandia" occupation="GangLeader">
+  <NPCCharacter id="spc_bretonnia_gangleader_1" name="{=str_spc_bretonnia_gangleader_1}Standard male gang leader" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.vlandia" occupation="GangLeader">
     <face>
       <face_key_template value="BodyProperty.fighter_vlandia" />
     </face>
@@ -1324,7 +1324,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_vlandia" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_bretonnia_gangleader_2" name="{=!}Female gang leader" voice="ironic" is_template="true" default_group="Infantry" is_female="true" culture="Culture.vlandia" occupation="GangLeader">
+  <NPCCharacter id="spc_bretonnia_gangleader_2" name="{=str_spc_bretonnia_gangleader_2}Female gang leader" voice="ironic" is_template="true" default_group="Infantry" is_female="true" culture="Culture.vlandia" occupation="GangLeader">
     <face>
       <face_key_template value="BodyProperty.villager_vlandia" />
     </face>
@@ -1337,7 +1337,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_vlandia" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_bretonnia_gangleader_3" name="{=!}Male gang leader" voice="ironic" is_template="true" default_group="Infantry" is_female="true" culture="Culture.vlandia" occupation="GangLeader">
+  <NPCCharacter id="spc_bretonnia_gangleader_3" name="{=str_spc_bretonnia_gangleader_3}Male gang leader" voice="ironic" is_template="true" default_group="Infantry" is_female="true" culture="Culture.vlandia" occupation="GangLeader">
     <face>
       <face_key_template value="BodyProperty.fighter_vlandia" />
     </face>
@@ -1352,7 +1352,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_vlandia" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_bretonnia_artisan_1" name="{=!}Bretonnian artisan 1" voice="earnest" is_template="true" default_group="Infantry" culture="Culture.vlandia" occupation="Artisan">
+  <NPCCharacter id="spc_notable_bretonnia_artisan_1" name="{=str_spc_notable_bretonnia_artisan_1}Bretonnian artisan 1" voice="earnest" is_template="true" default_group="Infantry" culture="Culture.vlandia" occupation="Artisan">
     <face>
       <face_key_template value="BodyProperty.villager_vlandia" />
     </face>
@@ -1364,7 +1364,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_vlandia" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_bretonnia_artisan_2" name="{=!}Bretonnian artisan 2" voice="curt" is_template="true" default_group="Infantry" culture="Culture.vlandia" occupation="Artisan">
+  <NPCCharacter id="spc_notable_bretonnia_artisan_2" name="{=str_spc_notable_bretonnia_artisan_2}Bretonnian artisan 2" voice="curt" is_template="true" default_group="Infantry" culture="Culture.vlandia" occupation="Artisan">
     <face>
       <face_key_template value="BodyProperty.villager_vlandia" />
     </face>
@@ -1376,7 +1376,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_vlandia" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_bretonnia_rural_1" name="{=!}Bretonnian yeoman" voice="curt" is_template="true" default_group="Infantry" culture="Culture.vlandia" occupation="RuralNotable">
+  <NPCCharacter id="spc_notable_bretonnia_rural_1" name="{=str_spc_notable_bretonnia_rural_1}Bretonnian yeoman" voice="curt" is_template="true" default_group="Infantry" culture="Culture.vlandia" occupation="RuralNotable">
     <face>
       <face_key_template value="BodyProperty.villager_vlandia" />
     </face>
@@ -1388,7 +1388,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_vlandia" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_bretonnia_rural_2" name="{=!}Bretonnian yeoman" voice="softspoken" is_template="true" default_group="Infantry" culture="Culture.vlandia" occupation="RuralNotable">
+  <NPCCharacter id="spc_notable_bretonnia_rural_2" name="{=str_spc_notable_bretonnia_rural_2}Bretonnian yeoman" voice="softspoken" is_template="true" default_group="Infantry" culture="Culture.vlandia" occupation="RuralNotable">
     <face>
       <face_key_template value="BodyProperty.villager_vlandia" />
     </face>
@@ -1401,7 +1401,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_vlandia" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_bretonnia_headman_1" name="{=!}Bretonnian rebellious headman" voice="earnest" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.vlandia" occupation="Headman">
+  <NPCCharacter id="spc_bretonnia_headman_1" name="{=str_spc_bretonnia_headman_1}Bretonnian rebellious headman" voice="earnest" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.vlandia" occupation="Headman">
     <face>
       <face_key_template value="BodyProperty.villager_vlandia" />
     </face>
@@ -1415,7 +1415,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_vlandia" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_bretonnia_headman_2" name="{=!}Bretonnian conservative headman" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.vlandia" occupation="Headman">
+  <NPCCharacter id="spc_bretonnia_headman_2" name="{=str_spc_bretonnia_headman_2}Bretonnian conservative headman" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.vlandia" occupation="Headman">
     <face>
       <face_key_template value="BodyProperty.villager_vlandia" />
     </face>
@@ -1429,7 +1429,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_vlandia" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_bretonnia_headman_3" name="{=!}Bretonnian devious headman" voice="softspoken" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.vlandia" occupation="Headman">
+  <NPCCharacter id="spc_bretonnia_headman_3" name="{=str_spc_bretonnia_headman_3}Bretonnian devious headman" voice="softspoken" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.vlandia" occupation="Headman">
     <face>
       <face_key_template value="BodyProperty.villager_vlandia" />
     </face>
@@ -1445,7 +1445,7 @@
   </NPCCharacter>
 
   <!-- URBAN CHARACTERS OF MOUSILLON -->
-  <NPCCharacter id="spc_notable_mousillon_merch1" name="{=!}Ironic mousillon merchant" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.mousillon" occupation="Merchant">
+  <NPCCharacter id="spc_notable_mousillon_merch1" name="{=str_spc_notable_mousillon_merch1}Ironic mousillon merchant" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.mousillon" occupation="Merchant">
     <face>
       <face_key_template value="BodyProperty.villager_vlandia" />
     </face>
@@ -1458,7 +1458,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_vlandia" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_mousillon_merch2" name="{=!}curt mousillon merchant" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.mousillon" occupation="Merchant">
+  <NPCCharacter id="spc_notable_mousillon_merch2" name="{=str_spc_notable_mousillon_merch2}curt mousillon merchant" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.mousillon" occupation="Merchant">
     <face>
       <face_key_template value="BodyProperty.villager_vlandia" />
     </face>
@@ -1473,7 +1473,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_vlandia" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_mousillon_merch3" name="{=!}Daring mousillon merchant" voice="earnest" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.mousillon" occupation="Merchant">
+  <NPCCharacter id="spc_notable_mousillon_merch3" name="{=str_spc_notable_mousillon_merch3}Daring mousillon merchant" voice="earnest" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.mousillon" occupation="Merchant">
     <face>
       <face_key_template value="BodyProperty.villager_vlandia" />
     </face>
@@ -1487,7 +1487,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_vlandia" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_mousillon_merch4" name="{=!}Softspoken mousillon merchant" voice="softspoken" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.mousillon" occupation="Merchant">
+  <NPCCharacter id="spc_notable_mousillon_merch4" name="{=str_spc_notable_mousillon_merch4}Softspoken mousillon merchant" voice="softspoken" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.mousillon" occupation="Merchant">
     <face>
       <face_key_template value="BodyProperty.villager_vlandia" />
     </face>
@@ -1501,7 +1501,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_vlandia" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_mousillon_merch5" name="{=!}{FIRSTNAME} the Manciple" voice="softspoken" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.mousillon" occupation="Merchant">
+  <NPCCharacter id="spc_notable_mousillon_merch5" name="{=str_spc_notable_mousillon_merch5}{FIRSTNAME} the Manciple" voice="softspoken" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.mousillon" occupation="Merchant">
     <face>
       <face_key_template value="BodyProperty.villager_vlandia" />
     </face>
@@ -1515,7 +1515,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_vlandia" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_mousillon_1" name="{=!}{FIRSTNAME} the Warehouser" voice="ironic" is_template="true" is_female="true" default_group="Infantry" is_hero="false" culture="Culture.mousillon" occupation="Merchant">
+  <NPCCharacter id="spc_notable_mousillon_1" name="{=str_spc_notable_mousillon_1}{FIRSTNAME} the Warehouser" voice="ironic" is_template="true" is_female="true" default_group="Infantry" is_hero="false" culture="Culture.mousillon" occupation="Merchant">
     <face>
       <face_key_template value="BodyProperty.townswoman_vlandia" />
     </face>
@@ -1528,7 +1528,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_vlandia" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_mousillon_1b" name="{=!}{FIRSTNAME} the Heiress" voice="ironic" is_template="true" is_female="true" default_group="Infantry" is_hero="false" culture="Culture.mousillon" occupation="Merchant">
+  <NPCCharacter id="spc_notable_mousillon_1b" name="{=str_spc_notable_mousillon_1b}{FIRSTNAME} the Heiress" voice="ironic" is_template="true" is_female="true" default_group="Infantry" is_hero="false" culture="Culture.mousillon" occupation="Merchant">
     <face>
       <face_key_template value="BodyProperty.townswoman_vlandia" />
     </face>
@@ -1542,7 +1542,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_vlandia" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_mousillon_2" name="{=!}Puritan male preacher" voice="earnest" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.mousillon" occupation="Preacher">
+  <NPCCharacter id="spc_notable_mousillon_2" name="{=str_spc_notable_mousillon_2}Puritan male preacher" voice="earnest" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.mousillon" occupation="Preacher">
     <face>
       <face_key_template value="BodyProperty.villager_vlandia" />
     </face>
@@ -1555,7 +1555,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_vlandia" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_mousillon_3" name="{=!}Rebellious female preacher" voice="earnest" is_template="true" default_group="Infantry" is_female="true" culture="Culture.mousillon" occupation="Preacher">
+  <NPCCharacter id="spc_notable_mousillon_3" name="{=str_spc_notable_mousillon_3}Rebellious female preacher" voice="earnest" is_template="true" default_group="Infantry" is_female="true" culture="Culture.mousillon" occupation="Preacher">
     <face>
       <face_key_template value="BodyProperty.townswoman_vlandia" />
     </face>
@@ -1568,7 +1568,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_vlandia" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_mousillon_gangleader_1" name="{=!}Standard male gang leader" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.mousillon" occupation="GangLeader">
+  <NPCCharacter id="spc_mousillon_gangleader_1" name="{=str_spc_mousillon_gangleader_1}Standard male gang leader" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.mousillon" occupation="GangLeader">
     <face>
       <face_key_template value="BodyProperty.fighter_vlandia" />
     </face>
@@ -1581,7 +1581,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_vlandia" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_mousillon_gangleader_2" name="{=!}Female gang leader" voice="ironic" is_template="true" default_group="Infantry" is_female="true" culture="Culture.mousillon" occupation="GangLeader">
+  <NPCCharacter id="spc_mousillon_gangleader_2" name="{=str_spc_mousillon_gangleader_2}Female gang leader" voice="ironic" is_template="true" default_group="Infantry" is_female="true" culture="Culture.mousillon" occupation="GangLeader">
     <face>
       <face_key_template value="BodyProperty.villager_vlandia" />
     </face>
@@ -1594,7 +1594,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_vlandia" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_mousillon_gangleader_3" name="{=!}Male gang leader" voice="ironic" is_template="true" default_group="Infantry" is_female="true" culture="Culture.mousillon" occupation="GangLeader">
+  <NPCCharacter id="spc_mousillon_gangleader_3" name="{=str_spc_mousillon_gangleader_3}Male gang leader" voice="ironic" is_template="true" default_group="Infantry" is_female="true" culture="Culture.mousillon" occupation="GangLeader">
     <face>
       <face_key_template value="BodyProperty.fighter_vlandia" />
     </face>
@@ -1609,7 +1609,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_vlandia" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_mousillon_artisan_1" name="{=!}mousillonn artisan 1" voice="earnest" is_template="true" default_group="Infantry" culture="Culture.mousillon" occupation="Artisan">
+  <NPCCharacter id="spc_notable_mousillon_artisan_1" name="{=str_spc_notable_mousillon_artisan_1}mousillonn artisan 1" voice="earnest" is_template="true" default_group="Infantry" culture="Culture.mousillon" occupation="Artisan">
     <face>
       <face_key_template value="BodyProperty.villager_vlandia" />
     </face>
@@ -1621,7 +1621,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_vlandia" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_mousillon_artisan_2" name="{=!}mousillonn artisan 2" voice="curt" is_template="true" default_group="Infantry" culture="Culture.mousillon" occupation="Artisan">
+  <NPCCharacter id="spc_notable_mousillon_artisan_2" name="{=str_spc_notable_mousillon_artisan_2}mousillonn artisan 2" voice="curt" is_template="true" default_group="Infantry" culture="Culture.mousillon" occupation="Artisan">
     <face>
       <face_key_template value="BodyProperty.villager_vlandia" />
     </face>
@@ -1633,7 +1633,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_vlandia" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_mousillon_rural_1" name="{=!}mousillonn yeoman" voice="curt" is_template="true" default_group="Infantry" culture="Culture.mousillon" occupation="RuralNotable">
+  <NPCCharacter id="spc_notable_mousillon_rural_1" name="{=str_spc_notable_mousillon_rural_1}mousillonn yeoman" voice="curt" is_template="true" default_group="Infantry" culture="Culture.mousillon" occupation="RuralNotable">
     <face>
       <face_key_template value="BodyProperty.villager_vlandia" />
     </face>
@@ -1645,7 +1645,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_vlandia" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_mousillon_rural_2" name="{=!}mousillonn yeoman" voice="softspoken" is_template="true" default_group="Infantry" culture="Culture.mousillon" occupation="RuralNotable">
+  <NPCCharacter id="spc_notable_mousillon_rural_2" name="{=str_spc_notable_mousillon_rural_2}mousillonn yeoman" voice="softspoken" is_template="true" default_group="Infantry" culture="Culture.mousillon" occupation="RuralNotable">
     <face>
       <face_key_template value="BodyProperty.villager_vlandia" />
     </face>
@@ -1658,7 +1658,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_vlandia" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_mousillon_headman_1" name="{=!}mousillonn rebellious headman" voice="earnest" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.mousillon" occupation="Headman">
+  <NPCCharacter id="spc_mousillon_headman_1" name="{=str_spc_mousillon_headman_1}mousillonn rebellious headman" voice="earnest" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.mousillon" occupation="Headman">
     <face>
       <face_key_template value="BodyProperty.villager_vlandia" />
     </face>
@@ -1672,7 +1672,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_vlandia" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_mousillon_headman_2" name="{=!}mousillonn conservative headman" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.mousillon" occupation="Headman">
+  <NPCCharacter id="spc_mousillon_headman_2" name="{=str_spc_mousillon_headman_2}mousillonn conservative headman" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.mousillon" occupation="Headman">
     <face>
       <face_key_template value="BodyProperty.villager_vlandia" />
     </face>
@@ -1686,7 +1686,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_vlandia" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_mousillon_headman_3" name="{=!}mousillonn devious headman" voice="softspoken" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.mousillon" occupation="Headman">
+  <NPCCharacter id="spc_mousillon_headman_3" name="{=str_spc_mousillon_headman_3}mousillonn devious headman" voice="softspoken" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.mousillon" occupation="Headman">
     <face>
       <face_key_template value="BodyProperty.villager_vlandia" />
     </face>
@@ -1702,7 +1702,7 @@
   </NPCCharacter>
 
   <!-- URBAN CHARACTERS OF CHAOS -->
-  <NPCCharacter id="spc_notable_chaos_merch1" name="{=!}Ironic chaos merchant" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.chaos_culture" occupation="Merchant">
+  <NPCCharacter id="spc_notable_chaos_merch1" name="{=str_spc_notable_chaos_merch1}Ironic chaos merchant" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.chaos_culture" occupation="Merchant">
     <face>
       <face_key_template value="BodyProperty.villager_vlandia" />
     </face>
@@ -1715,7 +1715,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_vlandia" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_chaos_merch2" name="{=!}curt chaos merchant" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.chaos_culture" occupation="Merchant">
+  <NPCCharacter id="spc_notable_chaos_merch2" name="{=str_spc_notable_chaos_merch2}curt chaos merchant" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.chaos_culture" occupation="Merchant">
     <face>
       <face_key_template value="BodyProperty.villager_vlandia" />
     </face>
@@ -1730,7 +1730,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_vlandia" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_chaos_merch3" name="{=!}Daring chaos merchant" voice="earnest" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.chaos_culture" occupation="Merchant">
+  <NPCCharacter id="spc_notable_chaos_merch3" name="{=str_spc_notable_chaos_merch3}Daring chaos merchant" voice="earnest" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.chaos_culture" occupation="Merchant">
     <face>
       <face_key_template value="BodyProperty.villager_vlandia" />
     </face>
@@ -1744,7 +1744,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_vlandia" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_chaos_merch4" name="{=!}Softspoken chaos merchant" voice="softspoken" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.chaos_culture" occupation="Merchant">
+  <NPCCharacter id="spc_notable_chaos_merch4" name="{=str_spc_notable_chaos_merch4}Softspoken chaos merchant" voice="softspoken" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.chaos_culture" occupation="Merchant">
     <face>
       <face_key_template value="BodyProperty.villager_vlandia" />
     </face>
@@ -1758,7 +1758,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_vlandia" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_chaos_merch5" name="{=!}{FIRSTNAME} the Manciple" voice="softspoken" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.chaos_culture" occupation="Merchant">
+  <NPCCharacter id="spc_notable_chaos_merch5" name="{=str_spc_notable_chaos_merch5}{FIRSTNAME} the Manciple" voice="softspoken" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.chaos_culture" occupation="Merchant">
     <face>
       <face_key_template value="BodyProperty.villager_vlandia" />
     </face>
@@ -1772,7 +1772,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_vlandia" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_chaos_1" name="{=!}{FIRSTNAME} the Warehouser" voice="ironic" is_template="true" is_female="true" default_group="Infantry" is_hero="false" culture="Culture.chaos_culture" occupation="Merchant">
+  <NPCCharacter id="spc_notable_chaos_1" name="{=str_spc_notable_chaos_1}{FIRSTNAME} the Warehouser" voice="ironic" is_template="true" is_female="true" default_group="Infantry" is_hero="false" culture="Culture.chaos_culture" occupation="Merchant">
     <face>
       <face_key_template value="BodyProperty.townswoman_vlandia" />
     </face>
@@ -1785,7 +1785,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_vlandia" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_chaos_1b" name="{=!}{FIRSTNAME} the Heiress" voice="ironic" is_template="true" is_female="true" default_group="Infantry" is_hero="false" culture="Culture.chaos_culture" occupation="Merchant">
+  <NPCCharacter id="spc_notable_chaos_1b" name="{=str_spc_notable_chaos_1b}{FIRSTNAME} the Heiress" voice="ironic" is_template="true" is_female="true" default_group="Infantry" is_hero="false" culture="Culture.chaos_culture" occupation="Merchant">
     <face>
       <face_key_template value="BodyProperty.townswoman_vlandia" />
     </face>
@@ -1799,7 +1799,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_vlandia" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_chaos_2" name="{=!}Puritan male preacher" voice="earnest" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.chaos_culture" occupation="Preacher">
+  <NPCCharacter id="spc_notable_chaos_2" name="{=str_spc_notable_chaos_2}Puritan male preacher" voice="earnest" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.chaos_culture" occupation="Preacher">
     <face>
       <face_key_template value="BodyProperty.villager_vlandia" />
     </face>
@@ -1812,7 +1812,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_vlandia" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_chaos_3" name="{=!}Rebellious female preacher" voice="earnest" is_template="true" default_group="Infantry" is_female="true" culture="Culture.chaos_culture" occupation="Preacher">
+  <NPCCharacter id="spc_notable_chaos_3" name="{=str_spc_notable_chaos_3}Rebellious female preacher" voice="earnest" is_template="true" default_group="Infantry" is_female="true" culture="Culture.chaos_culture" occupation="Preacher">
     <face>
       <face_key_template value="BodyProperty.townswoman_vlandia" />
     </face>
@@ -1825,7 +1825,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_vlandia" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_chaos_gangleader_1" name="{=!}Standard male gang leader" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.chaos_culture" occupation="GangLeader">
+  <NPCCharacter id="spc_chaos_gangleader_1" name="{=str_spc_chaos_gangleader_1}Standard male gang leader" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.chaos_culture" occupation="GangLeader">
     <face>
       <face_key_template value="BodyProperty.fighter_vlandia" />
     </face>
@@ -1838,7 +1838,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_vlandia" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_chaos_gangleader_2" name="{=!}Female gang leader" voice="ironic" is_template="true" default_group="Infantry" is_female="true" culture="Culture.chaos_culture" occupation="GangLeader">
+  <NPCCharacter id="spc_chaos_gangleader_2" name="{=str_spc_chaos_gangleader_2}Female gang leader" voice="ironic" is_template="true" default_group="Infantry" is_female="true" culture="Culture.chaos_culture" occupation="GangLeader">
     <face>
       <face_key_template value="BodyProperty.villager_vlandia" />
     </face>
@@ -1851,7 +1851,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_vlandia" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_chaos_gangleader_3" name="{=!}Male gang leader" voice="ironic" is_template="true" default_group="Infantry" is_female="true" culture="Culture.chaos_culture" occupation="GangLeader">
+  <NPCCharacter id="spc_chaos_gangleader_3" name="{=str_spc_chaos_gangleader_3}Male gang leader" voice="ironic" is_template="true" default_group="Infantry" is_female="true" culture="Culture.chaos_culture" occupation="GangLeader">
     <face>
       <face_key_template value="BodyProperty.fighter_vlandia" />
     </face>
@@ -1866,7 +1866,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_vlandia" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_chaos_artisan_1" name="{=!}chaos artisan 1" voice="earnest" is_template="true" default_group="Infantry" culture="Culture.chaos_culture" occupation="Artisan">
+  <NPCCharacter id="spc_notable_chaos_artisan_1" name="{=str_spc_notable_chaos_artisan_1}chaos artisan 1" voice="earnest" is_template="true" default_group="Infantry" culture="Culture.chaos_culture" occupation="Artisan">
     <face>
       <face_key_template value="BodyProperty.villager_vlandia" />
     </face>
@@ -1878,7 +1878,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_vlandia" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_chaos_artisan_2" name="{=!}chaos artisan 2" voice="curt" is_template="true" default_group="Infantry" culture="Culture.chaos_culture" occupation="Artisan">
+  <NPCCharacter id="spc_notable_chaos_artisan_2" name="{=str_spc_notable_chaos_artisan_2}chaos artisan 2" voice="curt" is_template="true" default_group="Infantry" culture="Culture.chaos_culture" occupation="Artisan">
     <face>
       <face_key_template value="BodyProperty.villager_vlandia" />
     </face>
@@ -1890,7 +1890,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_vlandia" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_chaos_rural_1" name="{=!}chaos yeoman" voice="curt" is_template="true" default_group="Infantry" culture="Culture.chaos_culture" occupation="RuralNotable">
+  <NPCCharacter id="spc_notable_chaos_rural_1" name="{=str_spc_notable_chaos_rural_1}chaos yeoman" voice="curt" is_template="true" default_group="Infantry" culture="Culture.chaos_culture" occupation="RuralNotable">
     <face>
       <face_key_template value="BodyProperty.villager_vlandia" />
     </face>
@@ -1902,7 +1902,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_vlandia" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_chaos_rural_2" name="{=!}chaos yeoman" voice="softspoken" is_template="true" default_group="Infantry" culture="Culture.chaos_culture" occupation="RuralNotable">
+  <NPCCharacter id="spc_notable_chaos_rural_2" name="{=str_spc_notable_chaos_rural_3}chaos yeoman" voice="softspoken" is_template="true" default_group="Infantry" culture="Culture.chaos_culture" occupation="RuralNotable">
     <face>
       <face_key_template value="BodyProperty.villager_vlandia" />
     </face>
@@ -1915,7 +1915,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_vlandia" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_chaos_headman_1" name="{=!}chaos rebellious headman" voice="earnest" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.chaos_culture" occupation="Headman">
+  <NPCCharacter id="spc_chaos_headman_1" name="{=str_spc_chaos_headman_1}chaos rebellious headman" voice="earnest" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.chaos_culture" occupation="Headman">
     <face>
       <face_key_template value="BodyProperty.villager_vlandia" />
     </face>
@@ -1929,7 +1929,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_vlandia" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_chaos_headman_2" name="{=!}chaos conservative headman" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.chaos_culture" occupation="Headman">
+  <NPCCharacter id="spc_chaos_headman_2" name="{=str_spc_chaos_headman_2}chaos conservative headman" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.chaos_culture" occupation="Headman">
     <face>
       <face_key_template value="BodyProperty.villager_vlandia" />
     </face>
@@ -1943,7 +1943,7 @@
       <EquipmentSet id="npc_wanderer_equipment_template_vlandia" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_chaos_headman_3" name="{=!}chaos devious headman" voice="softspoken" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.chaos_culture" occupation="Headman">
+  <NPCCharacter id="spc_chaos_headman_3" name="{=str_spc_chaos_headman_3}chaos devious headman" voice="softspoken" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.chaos_culture" occupation="Headman">
     <face>
       <face_key_template value="BodyProperty.villager_vlandia" />
     </face>
@@ -1964,7 +1964,7 @@
 	
 	
 	
-	<NPCCharacter id="blacksmith_woodelf" default_group="Infantry" is_hero="false" occupation="Blacksmith" culture="Culture.battania" race ="elf" name="{=!}asrai Blacksmith" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+	<NPCCharacter id="blacksmith_woodelf" default_group="Infantry" is_hero="false" occupation="Blacksmith" culture="Culture.battania" race ="elf" name="{=str_blacksmith_woodelf}asrai Blacksmith" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
 	<face>
 		<face_key_template value="BodyProperty.male_wood_elf" />
 	</face>
@@ -1978,7 +1978,7 @@
 	</Equipments>
 	</NPCCharacter>
 	
-	<NPCCharacter id="weaponsmith_woodelf" default_group="Infantry" is_hero="false" occupation="Weaponsmith" culture="Culture.battania" race ="elf" name="{=!}asrai Weaponsmith" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+	<NPCCharacter id="weaponsmith_woodelf" default_group="Infantry" is_hero="false" occupation="Weaponsmith" culture="Culture.battania" race ="elf" name="{=str_weaponsmith_woodelf}asrai Weaponsmith" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
 	<face>
 		<face_key_template value="BodyProperty.male_wood_elf" />
 	</face>
@@ -1993,7 +1993,7 @@
 	</NPCCharacter>
 	
 	
-	<NPCCharacter id="armorer_woodelf" default_group="Infantry" is_hero="false" occupation="Armorer" culture="Culture.battania" race ="elf" name="{=!}asrai Armorer" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+	<NPCCharacter id="armorer_woodelf" default_group="Infantry" is_hero="false" occupation="Armorer" culture="Culture.battania" race ="elf" name="{=str_armorer_woodelf}asrai Armorer" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
 	<face>
 		<face_key_template value="BodyProperty.male_wood_elf" />
 	</face>
@@ -2007,7 +2007,7 @@
 	</Equipments>
 	</NPCCharacter>
 	
-	<NPCCharacter id="townsman_woodelf" default_group="Infantry" is_hero="false" occupation="Townsfolk" culture="Culture.battania" race ="elf" name="{=!}Halls dweller" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+	<NPCCharacter id="townsman_woodelf" default_group="Infantry" is_hero="false" occupation="Townsfolk" culture="Culture.battania" race ="elf" name="{=str_townsman_woodelf}Halls dweller" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
 	<face>
 		<face_key_template value="BodyProperty.male_wood_elf" />
 	</face>
@@ -2021,7 +2021,7 @@
 	</Equipments>
 	</NPCCharacter>
 	
-	<NPCCharacter id="townswoman_woodelf" default_group="Infantry" is_hero="false"  is_female="true" occupation="Townsfolk" culture="Culture.battania" race ="elf" name="{=!}Halls dweller" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+	<NPCCharacter id="townswoman_woodelf" default_group="Infantry" is_hero="false"  is_female="true" occupation="Townsfolk" culture="Culture.battania" race ="elf" name="{=str_townswoman_woodelf}Halls dweller" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
 	<face>
 		<face_key_template value="BodyProperty.female_wood_elf" />
 	</face>
@@ -2036,7 +2036,7 @@
 	</NPCCharacter>
 	
 	
-	<NPCCharacter id="village_woman_woodelf" default_group="Infantry" is_hero="false"  is_female="true" occupation="Villager" culture="Culture.battania" race ="elf" name="{=!}Asrai Villager" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+	<NPCCharacter id="village_woman_woodelf" default_group="Infantry" is_hero="false"  is_female="true" occupation="Villager" culture="Culture.battania" race ="elf" name="{=str_village_woman_woodelf}Asrai Villager" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
 	<face>
 		<face_key_template value="BodyProperty.female_wood_elf" />
 	</face>
@@ -2050,7 +2050,7 @@
 	</Equipments>
 	</NPCCharacter>
 	
-	<NPCCharacter id="shop_worker_woodelf" default_group="Infantry" is_hero="false"  is_female="false" occupation="ShopWorker" culture="Culture.battania" race ="elf" name="{=!}Asrai Shopworker" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+	<NPCCharacter id="shop_worker_woodelf" default_group="Infantry" is_hero="false"  is_female="false" occupation="ShopWorker" culture="Culture.battania" race ="elf" name="{=str_shop_worker_woodelf}Asrai Shopworker" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
 	<face>
 		<face_key_template value="BodyProperty.male_wood_elf" />
 	</face>
@@ -2064,7 +2064,7 @@
 	</Equipments>
 	</NPCCharacter>
 	
-	<NPCCharacter id="tavernkeeper_woodelf" name="{=!}asrai Tavernkeeper" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" race ="elf" culture="Culture.battania" occupation="Tavernkeeper">
+	<NPCCharacter id="tavernkeeper_woodelf" name="{=str_tavernkeeper_woodelf}asrai Tavernkeeper" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" race ="elf" culture="Culture.battania" occupation="Tavernkeeper">
     <face>
       <face_key_template value="BodyProperty.male_wood_elf" />
     </face>
@@ -2078,7 +2078,7 @@
     </Equipments>
 	</NPCCharacter>
 	
-	<NPCCharacter id="musician_woodelf" default_group="Infantry" is_hero="false"  is_female="false" occupation="Musician" culture="Culture.battania" race ="elf" name="{=!}Asrai Musician" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+	<NPCCharacter id="musician_woodelf" default_group="Infantry" is_hero="false"  is_female="false" occupation="Musician" culture="Culture.battania" race ="elf" name="{=str_musician_woodelf}Asrai Musician" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
 	<face>
 		<face_key_template value="BodyProperty.male_wood_elf" />
 	</face>
@@ -2093,7 +2093,7 @@
 	</NPCCharacter>
 	
 	
-	<NPCCharacter id="merchant_woodelf" name="{=!}asrai merchant" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" race ="elf" culture="Culture.battania" occupation="Merchant">
+	<NPCCharacter id="merchant_woodelf" name="{=str_merchant_woodelf}asrai merchant" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" race ="elf" culture="Culture.battania" occupation="Merchant">
     <face>
       <face_key_template value="BodyProperty.male_wood_elf" />
     </face>
@@ -2107,7 +2107,7 @@
     </Equipments>
 	</NPCCharacter>
 	
-	<NPCCharacter id="horseMerchant_woodelf" name="{=!}asrai Horse merchant" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" race ="elf" culture="Culture.battania" occupation="HorseTrader">
+	<NPCCharacter id="horseMerchant_woodelf" name="{=str_horseMerchant_woodelf}asrai Horse merchant" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" race ="elf" culture="Culture.battania" occupation="HorseTrader">
     <face>
       <face_key_template value="BodyProperty.male_wood_elf" />
     </face>
@@ -2121,7 +2121,7 @@
     </Equipments>
 	</NPCCharacter>
 	
-	<NPCCharacter id="merchant_notary_woodelf" name="{=!}Asrai Merchant notary" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" race ="elf" culture="Culture.battania" occupation="Townsfolk">
+	<NPCCharacter id="merchant_notary_woodelf" name="{=str_merchant_notary_woodelf}Asrai Merchant notary" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" race ="elf" culture="Culture.battania" occupation="Townsfolk">
     <face>
       <face_key_template value="BodyProperty.male_wood_elf" />
     </face>
@@ -2135,7 +2135,7 @@
     </Equipments>
 	</NPCCharacter>
 	
-	<NPCCharacter id="artisan_notary_woodelf" name="{=!}asrai Artisan notary" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" race ="elf" culture="Culture.battania" occupation="Townsfolk">
+	<NPCCharacter id="artisan_notary_woodelf" name="{=str_artisan_notary_woodelf}asrai Artisan notary" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" race ="elf" culture="Culture.battania" occupation="Townsfolk">
     <face>
       <face_key_template value="BodyProperty.male_wood_elf" />
     </face>
@@ -2149,7 +2149,7 @@
     </Equipments>
 	</NPCCharacter>
 	
-	<NPCCharacter id="rural_notable_notary_woodelf" name="{=!}asrai Rural Notary" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" race ="elf" culture="Culture.battania" occupation="RuralNotable">
+	<NPCCharacter id="rural_notable_notary_woodelf" name="{=str_rural_notable_notary_woodelf}asrai Rural Notary" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" race ="elf" culture="Culture.battania" occupation="RuralNotable">
     <face>
       <face_key_template value="BodyProperty.male_wood_elf" />
     </face>
@@ -2163,7 +2163,7 @@
     </Equipments>
 	</NPCCharacter>
 	
-	<NPCCharacter id="ransom_broker_woodelf" name="{=!}asrai Ransombroker" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" race ="elf" culture="Culture.battania" occupation="RansomBroker">
+	<NPCCharacter id="ransom_broker_woodelf" name="{=str_ransom_broker_woodelf}asrai Ransombroker" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" race ="elf" culture="Culture.battania" occupation="RansomBroker">
     <face>
       <face_key_template value="BodyProperty.male_wood_elf" />
     </face>
@@ -2177,7 +2177,7 @@
     </Equipments>
 	</NPCCharacter>	
 
-	<NPCCharacter id="gangleader_bodyguard_woodelf" name="{=!}Asrai Rogue" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" race ="elf" culture="Culture.battania" occupation="Gangster">
+	<NPCCharacter id="gangleader_bodyguard_woodelf" name="{=str_gangleader_bodyguard_woodelf}Asrai Rogue" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" race ="elf" culture="Culture.battania" occupation="Gangster">
     <face>
       <face_key_template value="BodyProperty.male_wood_elf" />
     </face>
@@ -2191,7 +2191,7 @@
     </Equipments>
 	</NPCCharacter>
 	
-  <NPCCharacter id="spc_notable_asrai_merch1" name="{=!}Ironic asrai merchant" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" race ="elf" culture="Culture.battania" occupation="Merchant">
+  <NPCCharacter id="spc_notable_asrai_merch1" name="{=str_spc_notable_asrai_merch1}Ironic asrai merchant" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" race ="elf" culture="Culture.battania" occupation="Merchant">
     <face>
       <face_key_template value="BodyProperty.male_wood_elf" />
     </face>
@@ -2204,7 +2204,7 @@
       <EquipmentSet id="tor_we_people_notable_artisan_merchant" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_asrai_merch2" name="{=!}Curt asrai merchant" voice="curt" is_template="true" default_group="Infantry" is_hero="false" race ="elf" culture="Culture.battania" occupation="Merchant">
+  <NPCCharacter id="spc_notable_asrai_merch2" name="{=str_spc_notable_asrai_merch2}Curt asrai merchant" voice="curt" is_template="true" default_group="Infantry" is_hero="false" race ="elf" culture="Culture.battania" occupation="Merchant">
     <face>
       <face_key_template value="BodyProperty.male_wood_elf" />
     </face>
@@ -2219,7 +2219,7 @@
       <EquipmentSet id="tor_we_people_notable_artisan_merchant" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_asrai_merch3" name="{=!}Daring asrai merchant" voice="earnest" is_template="true" default_group="Infantry" is_hero="false" race ="elf" culture="Culture.battania" occupation="Merchant">
+  <NPCCharacter id="spc_notable_asrai_merch3" name="{=str_spc_notable_asrai_merch3}Daring asrai merchant" voice="earnest" is_template="true" default_group="Infantry" is_hero="false" race ="elf" culture="Culture.battania" occupation="Merchant">
     <face>
       <face_key_template value="BodyProperty.male_wood_elf" />
     </face>
@@ -2233,7 +2233,7 @@
       <EquipmentSet id="tor_we_people_notable_artisan_merchant" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_asrai_merch4" name="{=!}Softspoken asrai merchant" voice="softspoken" is_template="true" default_group="Infantry" race ="elf" is_hero="false" culture="Culture.battania" occupation="Merchant">
+  <NPCCharacter id="spc_notable_asrai_merch4" name="{=str_spc_notable_asrai_merch4}Softspoken asrai merchant" voice="softspoken" is_template="true" default_group="Infantry" race ="elf" is_hero="false" culture="Culture.battania" occupation="Merchant">
     <face>
       <face_key_template value="BodyProperty.male_wood_elf" />
     </face>
@@ -2247,7 +2247,7 @@
       <EquipmentSet id="tor_we_people_notable_artisan_merchant" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_asrai_merch5" name="{=!}{FIRSTNAME} the Manciple" voice="softspoken" is_template="true" default_group="Infantry" race ="elf" is_hero="false" culture="Culture.battania" occupation="Merchant">
+  <NPCCharacter id="spc_notable_asrai_merch5" name="{=str_spc_notable_asrai_merch5}{FIRSTNAME} the Manciple" voice="softspoken" is_template="true" default_group="Infantry" race ="elf" is_hero="false" culture="Culture.battania" occupation="Merchant">
     <face>
       <face_key_template value="BodyProperty.male_wood_elf" />
     </face>
@@ -2261,7 +2261,7 @@
       <EquipmentSet id="tor_we_people_notable_artisan_merchant" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_asrai_1" name="{=!}{FIRSTNAME} the Warehouser" voice="ironic" is_template="true" is_female="true" default_group="Infantry" race ="elf" is_hero="false" culture="Culture.battania" occupation="Merchant">
+  <NPCCharacter id="spc_notable_asrai_1" name="{=str_spc_notable_asrai_1}{FIRSTNAME} the Warehouser" voice="ironic" is_template="true" is_female="true" default_group="Infantry" race ="elf" is_hero="false" culture="Culture.battania" occupation="Merchant">
     <face>
       <face_key_template value="BodyProperty.female_wood_elf" />
     </face>
@@ -2274,7 +2274,7 @@
       <EquipmentSet id="tor_we_people_notable_artisan_merchant" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_asrai_1b" name="{=!}{FIRSTNAME} the Heiress" voice="ironic" is_template="true" is_female="true" default_group="Infantry" race ="elf" is_hero="false" culture="Culture.battania" occupation="Merchant">
+  <NPCCharacter id="spc_notable_asrai_1b" name="{=str_spc_notable_asrai_1b}{FIRSTNAME} the Heiress" voice="ironic" is_template="true" is_female="true" default_group="Infantry" race ="elf" is_hero="false" culture="Culture.battania" occupation="Merchant">
     <face>
       <face_key_template value="BodyProperty.female_wood_elf" />
     </face>
@@ -2288,7 +2288,7 @@
       <EquipmentSet id="tor_we_people_notable_artisan_merchant" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_asrai_2" name="{=!}Puritan male preacher" voice="earnest" is_template="true" default_group="Infantry" is_hero="false" race ="elf" culture="Culture.battania" occupation="Preacher">
+  <NPCCharacter id="spc_notable_asrai_2" name="{=str_spc_notable_asrai_2}Puritan male preacher" voice="earnest" is_template="true" default_group="Infantry" is_hero="false" race ="elf" culture="Culture.battania" occupation="Preacher">
     <face>
       <face_key_template value="BodyProperty.villager_vlandia" />
     </face>
@@ -2301,7 +2301,7 @@
       <EquipmentSet id="tor_we_people_notable_villager" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_asrai_3" name="{=!}Rebellious female preacher" voice="earnest" is_template="true" default_group="Infantry" is_female="true" race ="elf" culture="Culture.battania" occupation="Preacher">
+  <NPCCharacter id="spc_notable_asrai_3" name="{=str_spc_notable_asrai_3}Rebellious female preacher" voice="earnest" is_template="true" default_group="Infantry" is_female="true" race ="elf" culture="Culture.battania" occupation="Preacher">
     <face>
       <face_key_template value="BodyProperty.female_wood_elf" />
     </face>
@@ -2314,7 +2314,7 @@
       <EquipmentSet id="tor_we_people_notable_villager_female" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_asrai_gangleader_1" name="{=!}Standard male gang leader" voice="curt" is_template="true" default_group="Infantry" is_hero="false" race ="elf" culture="Culture.battania" occupation="GangLeader">
+  <NPCCharacter id="spc_asrai_gangleader_1" name="{=str_spc_asrai_gangleader_1}Standard male gang leader" voice="curt" is_template="true" default_group="Infantry" is_hero="false" race ="elf" culture="Culture.battania" occupation="GangLeader">
     <face>
       <face_key_template value="BodyProperty.male_wood_elf" />
     </face>
@@ -2327,7 +2327,7 @@
       <EquipmentSet id="tor_we_people_notable_rogue_leader" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_asrai_gangleader_2" name="{=!}Female gang leader" voice="ironic" is_template="true" default_group="Infantry" is_female="true" race ="elf" culture="Culture.battania" occupation="GangLeader">
+  <NPCCharacter id="spc_asrai_gangleader_2" name="{=str_spc_asrai_gangleader_2}Female gang leader" voice="ironic" is_template="true" default_group="Infantry" is_female="true" race ="elf" culture="Culture.battania" occupation="GangLeader">
     <face>
       <face_key_template value="BodyProperty.male_wood_elf" />
     </face>
@@ -2340,7 +2340,7 @@
       <EquipmentSet id="tor_we_people_notable_rogue_leader" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_asrai_gangleader_3" name="{=!}Male gang leader" voice="ironic" is_template="true" default_group="Infantry" is_female="true" race ="elf" culture="Culture.battania" occupation="GangLeader">
+  <NPCCharacter id="spc_asrai_gangleader_3" name="{=str_spc_asrai_gangleader_3}Male gang leader" voice="ironic" is_template="true" default_group="Infantry" is_female="true" race ="elf" culture="Culture.battania" occupation="GangLeader">
     <face>
       <face_key_template value="BodyProperty.male_wood_elf" />
     </face>
@@ -2355,7 +2355,7 @@
       <EquipmentSet id="tor_we_people_notable_rogue_leader" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_asrai_artisan_1" name="{=!}Asrai Artisan 1" voice="earnest" is_template="true" default_group="Infantry" culture="Culture.battania" race ="elf" occupation="Artisan">
+  <NPCCharacter id="spc_notable_asrai_artisan_1" name="{=str_spc_notable_asrai_artisan_1}Asrai Artisan 1" voice="earnest" is_template="true" default_group="Infantry" culture="Culture.battania" race ="elf" occupation="Artisan">
     <face>
       <face_key_template value="BodyProperty.male_wood_elf" />
     </face>
@@ -2367,7 +2367,7 @@
       <EquipmentSet id="tor_we_people_notable_notary" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_asrai_artisan_2" name="{=!}asrai artisan 2" voice="curt" is_template="true" default_group="Infantry" culture="Culture.battania" race ="elf" occupation="Artisan">
+  <NPCCharacter id="spc_notable_asrai_artisan_2" name="{=str_spc_notable_asrai_artisan_2}asrai artisan 2" voice="curt" is_template="true" default_group="Infantry" culture="Culture.battania" race ="elf" occupation="Artisan">
     <face>
       <face_key_template value="BodyProperty.male_wood_elf" />
     </face>
@@ -2379,7 +2379,7 @@
       <EquipmentSet id="tor_we_people_notable_artisan_shopworker" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_asrai_rural_1" name="{=!}asrain yeoman" voice="curt" is_template="true" default_group="Infantry" culture="Culture.battania" race ="elf" occupation="RuralNotable">
+  <NPCCharacter id="spc_notable_asrai_rural_1" name="{=str_spc_notable_asrai_rural_1}asrain yeoman" voice="curt" is_template="true" default_group="Infantry" culture="Culture.battania" race ="elf" occupation="RuralNotable">
     <face>
       <face_key_template value="BodyProperty.male_wood_elf" />
     </face>
@@ -2391,7 +2391,7 @@
       <EquipmentSet id="tor_we_people_notable_villager" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_asrai_rural_2" name="{=!}Asrai yeoman" voice="softspoken" is_template="true" default_group="Infantry" culture="Culture.battania" race ="elf" occupation="RuralNotable">
+  <NPCCharacter id="spc_notable_asrai_rural_2" name="{=str_spc_notable_asrai_rural_2}Asrai yeoman" voice="softspoken" is_template="true" default_group="Infantry" culture="Culture.battania" race ="elf" occupation="RuralNotable">
     <face>
       <face_key_template value="BodyProperty.male_wood_elf" />
     </face>
@@ -2404,7 +2404,7 @@
       <EquipmentSet id="tor_we_eternal_guard_template" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_asrai_headman_1" name="{=!}Asrai rebellious headman" voice="earnest" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.battania" race ="elf" occupation="Headman">
+  <NPCCharacter id="spc_asrai_headman_1" name="{=str_asrai_headman_1}Asrai rebellious headman" voice="earnest" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.battania" race ="elf" occupation="Headman">
     <face>
       <face_key_template value="BodyProperty.male_wood_elf" />
     </face>
@@ -2418,7 +2418,7 @@
       <EquipmentSet id="tor_we_people_notable_villager" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_asrai_headman_2" name="{=!}asrain conservative headman" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.battania"  race ="elf" occupation="Headman">
+  <NPCCharacter id="spc_asrai_headman_2" name="{=str_asrai_headman_2}asrain conservative headman" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.battania"  race ="elf" occupation="Headman">
     <face>
       <face_key_template value="BodyProperty.male_wood_elf" />
     </face>
@@ -2432,7 +2432,7 @@
       <EquipmentSet id="tor_we_people_notable_villager" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_asrai_headman_3" name="{=!}asrain devious headman" voice="softspoken" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.battania" race ="elf" occupation="Headman">
+  <NPCCharacter id="spc_asrai_headman_3" name="{=str_asrai_headman_3}asrain devious headman" voice="softspoken" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.battania" race ="elf" occupation="Headman">
     <face>
       <face_key_template value="BodyProperty.male_wood_elf" />
     </face>
@@ -2447,7 +2447,7 @@
     </Equipments>
   </NPCCharacter>
   
-  	<NPCCharacter id="prison_guard_asrai" name="{=!}Prison Guard" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" race ="elf" culture="Culture.battania" occupation="PrisonGuard">
+  	<NPCCharacter id="prison_guard_asrai" name="{=str_prison_guard_asrai}Prison Guard" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" race ="elf" culture="Culture.battania" occupation="PrisonGuard">
     <face>
       <face_key_template value="BodyProperty.male_wood_elf" />
     </face>
@@ -2466,7 +2466,7 @@
 	
 	
 	
-	<NPCCharacter id="blacksmith_eonir" default_group="Infantry" is_hero="false" occupation="Blacksmith" culture="Culture.eonir" race ="elf" name="{=!}Eonir Blacksmith" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+	<NPCCharacter id="blacksmith_eonir" default_group="Infantry" is_hero="false" occupation="Blacksmith" culture="Culture.eonir" race ="elf" name="{=str_blacksmith_eonir}Eonir Blacksmith" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
 	<face>
 		<face_key_template value="BodyProperty.male_wood_elf" />
 	</face>
@@ -2480,7 +2480,7 @@
 	</Equipments>
 	</NPCCharacter>
 	
-	<NPCCharacter id="weaponsmith_eonir" default_group="Infantry" is_hero="false" occupation="Weaponsmith" culture="Culture.eonir" race ="elf" name="{=!}Eonir Weaponsmith" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+	<NPCCharacter id="weaponsmith_eonir" default_group="Infantry" is_hero="false" occupation="Weaponsmith" culture="Culture.eonir" race ="elf" name="{=str_weaponsmith_eonir}Eonir Weaponsmith" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
 	<face>
 		<face_key_template value="BodyProperty.male_wood_elf" />
 	</face>
@@ -2495,7 +2495,7 @@
 	</NPCCharacter>
 	
 	
-	<NPCCharacter id="armorer_eonir" default_group="Infantry" is_hero="false" occupation="Armorer" culture="Culture.eonir" race ="elf" name="{=!}Eonir Armorer" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+	<NPCCharacter id="armorer_eonir" default_group="Infantry" is_hero="false" occupation="Armorer" culture="Culture.eonir" race ="elf" name="{=str_armorer_eonir}Eonir Armorer" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
 	<face>
 		<face_key_template value="BodyProperty.male_wood_elf" />
 	</face>
@@ -2509,7 +2509,7 @@
 	</Equipments>
 	</NPCCharacter>
 	
-	<NPCCharacter id="townsman_eonir" default_group="Infantry" is_hero="false" occupation="Townsfolk" culture="Culture.eonir" race ="elf" name="{=!}Toriour" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+	<NPCCharacter id="townsman_eonir" default_group="Infantry" is_hero="false" occupation="Townsfolk" culture="Culture.eonir" race ="elf" name="{=str_townsman_eonir}Toriour" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
 	<face>
 		<face_key_template value="BodyProperty.male_wood_elf" />
 	</face>
@@ -2523,7 +2523,7 @@
 	</Equipments>
 	</NPCCharacter>
 	
-	<NPCCharacter id="townswoman_eonir" default_group="Infantry" is_hero="false"  is_female="true" occupation="Townsfolk" culture="Culture.eonir" race ="elf" name="{=!}Toriour" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+	<NPCCharacter id="townswoman_eonir" default_group="Infantry" is_hero="false"  is_female="true" occupation="Townsfolk" culture="Culture.eonir" race ="elf" name="{=str_townswoman_eonir}Toriour" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
 	<face>
 		<face_key_template value="BodyProperty.female_wood_elf" />
 	</face>
@@ -2538,7 +2538,7 @@
 	</NPCCharacter>
 	
 	
-	<NPCCharacter id="villager_eonir" default_group="Infantry" is_hero="false" occupation="Villager" culture="Culture.eonir" race ="elf" name="{=!}Faniour" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+	<NPCCharacter id="villager_eonir" default_group="Infantry" is_hero="false" occupation="Villager" culture="Culture.eonir" race ="elf" name="{=str_villager_eonir}Faniour" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
 	<face>
 		<face_key_template value="BodyProperty.male_wood_elf" />
 	</face>
@@ -2552,7 +2552,7 @@
 	</Equipments>
 	</NPCCharacter>
 	
-	<NPCCharacter id="village_woman_eonir" default_group="Infantry" is_hero="false"  is_female="true" occupation="Villager" culture="Culture.eonir" race ="elf" name="{=!}Faniour" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+	<NPCCharacter id="village_woman_eonir" default_group="Infantry" is_hero="false"  is_female="true" occupation="Villager" culture="Culture.eonir" race ="elf" name="{=str_village_woman_eonir}Faniour" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
 	<face>
 		<face_key_template value="BodyProperty.female_wood_elf" />
 	</face>
@@ -2566,7 +2566,7 @@
 	</Equipments>
 	</NPCCharacter>
 	
-	<NPCCharacter id="barber_eonir" default_group="Infantry" is_hero="false"  is_female="false" occupation="Townsfolk" culture="Culture.eonir" race ="elf" name="{=!}Eonir Hairdresser" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+	<NPCCharacter id="barber_eonir" default_group="Infantry" is_hero="false"  is_female="false" occupation="Townsfolk" culture="Culture.eonir" race ="elf" name="{=str_barber_eonir}Eonir Hairdresser" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
 	<face>
 		<face_key_template value="BodyProperty.male_wood_elf" />
 	</face>
@@ -2580,7 +2580,7 @@
 	</Equipments>
 	</NPCCharacter>
 	
-	<NPCCharacter id="shop_worker_eonir" default_group="Infantry" is_hero="false"  is_female="false" occupation="ShopWorker" culture="Culture.eonir" race ="elf" name="{=!}Eonir Shopworker" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+	<NPCCharacter id="shop_worker_eonir" default_group="Infantry" is_hero="false"  is_female="false" occupation="ShopWorker" culture="Culture.eonir" race ="elf" name="{=str_shop_worker_eonir}Eonir Shopworker" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
 	<face>
 		<face_key_template value="BodyProperty.male_wood_elf" />
 	</face>
@@ -2594,7 +2594,7 @@
 	</Equipments>
 	</NPCCharacter>
 	
-	<NPCCharacter id="tavernkeeper_eonir" name="{=!}Eonir Tavernkeeper" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" race ="elf" culture="Culture.eonir" occupation="Tavernkeeper">
+	<NPCCharacter id="tavernkeeper_eonir" name="{=str_tavernkeeper_eonir}Eonir Tavernkeeper" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" race ="elf" culture="Culture.eonir" occupation="Tavernkeeper">
     <face>
       <face_key_template value="BodyProperty.male_wood_elf" />
     </face>
@@ -2608,7 +2608,7 @@
     </Equipments>
 	</NPCCharacter>
 	
-	<NPCCharacter id="musician_eonir" default_group="Infantry" is_hero="false"  is_female="false" occupation="Musician" culture="Culture.eonir" race ="elf" name="{=!}Eonir Musician" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+	<NPCCharacter id="musician_eonir" default_group="Infantry" is_hero="false"  is_female="false" occupation="Musician" culture="Culture.eonir" race ="elf" name="{=str_musician_eonir}Eonir Musician" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
 	<face>
 		<face_key_template value="BodyProperty.male_wood_elf" />
 	</face>
@@ -2623,7 +2623,7 @@
 	</NPCCharacter>
 	
 	
-		<NPCCharacter id="wench_eonir" default_group="Infantry" is_hero="false"  is_female="true" occupation="Musician" culture="Culture.eonir" race ="elf" name="{=!}Eonir Dan" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+		<NPCCharacter id="wench_eonir" default_group="Infantry" is_hero="false"  is_female="true" occupation="Musician" culture="Culture.eonir" race ="elf" name="{=str_wench_eonir}Eonir Dan" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
 	<face>
 		<face_key_template value="BodyProperty.female_wood_elf" />
 	</face>
@@ -2637,7 +2637,7 @@
 	</Equipments>
 	</NPCCharacter>
 	
-	<NPCCharacter id="dancer_eonir" default_group="Infantry" is_hero="false"  is_female="true" occupation="Musician" culture="Culture.eonir" race ="elf" name="{=!}Eonir Dan" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+	<NPCCharacter id="dancer_eonir" default_group="Infantry" is_hero="false"  is_female="true" occupation="Musician" culture="Culture.eonir" race ="elf" name="{=str_dancer_eonir}Eonir Dan" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
 	<face>
 		<face_key_template value="BodyProperty.female_wood_elf" />
 	</face>
@@ -2652,7 +2652,7 @@
 	</NPCCharacter>
 	
 	
-	<NPCCharacter id="merchant_eonir" name="{=!}Eonir merchant" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" race ="elf" culture="Culture.eonir" occupation="Merchant">
+	<NPCCharacter id="merchant_eonir" name="{=str_merchant_eonir}Eonir merchant" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" race ="elf" culture="Culture.eonir" occupation="Merchant">
     <face>
       <face_key_template value="BodyProperty.male_wood_elf" />
     </face>
@@ -2666,7 +2666,7 @@
     </Equipments>
 	</NPCCharacter>
 	
-	<NPCCharacter id="horseMerchant_eonir" name="{=!}Eonir Horse merchant" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" race ="elf" culture="Culture.eonir" occupation="HorseTrader">
+	<NPCCharacter id="horseMerchant_eonir" name="{=str_horseMerchant_eonir}Eonir Horse merchant" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" race ="elf" culture="Culture.eonir" occupation="HorseTrader">
     <face>
       <face_key_template value="BodyProperty.male_wood_elf" />
     </face>
@@ -2680,7 +2680,7 @@
     </Equipments>
 	</NPCCharacter>
 	
-	<NPCCharacter id="merchant_notary_eonir" name="{=!}Eonir Merchant notary" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" race ="elf" culture="Culture.eonir" occupation="Townsfolk">
+	<NPCCharacter id="merchant_notary_eonir" name="{=str_merchant_notary_eonir}Eonir Merchant notary" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" race ="elf" culture="Culture.eonir" occupation="Townsfolk">
     <face>
       <face_key_template value="BodyProperty.male_wood_elf" />
     </face>
@@ -2694,7 +2694,7 @@
     </Equipments>
 	</NPCCharacter>
 	
-	<NPCCharacter id="artisan_notary_eonir" name="{=!}Eonir Artisan notary" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" race ="elf" culture="Culture.eonir" occupation="Townsfolk">
+	<NPCCharacter id="artisan_notary_eonir" name="{=str_artisan_notary_eonir}Eonir Artisan notary" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" race ="elf" culture="Culture.eonir" occupation="Townsfolk">
     <face>
       <face_key_template value="BodyProperty.male_wood_elf" />
     </face>
@@ -2708,7 +2708,7 @@
     </Equipments>
 	</NPCCharacter>
 	
-	<NPCCharacter id="rural_notable_notary_eonir" name="{=!}Eonir Rural Notary" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" race ="elf" culture="Culture.eonir" occupation="RuralNotable">
+	<NPCCharacter id="rural_notable_notary_eonir" name="{=str_rural_notable_notary_eonir}Eonir Rural Notary" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" race ="elf" culture="Culture.eonir" occupation="RuralNotable">
     <face>
       <face_key_template value="BodyProperty.male_wood_elf" />
     </face>
@@ -2722,7 +2722,7 @@
     </Equipments>
 	</NPCCharacter>
 	
-	<NPCCharacter id="ransom_broker_eonir" name="{=!}Eonir Ransombroker" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" race ="elf" culture="Culture.eonir" occupation="RansomBroker">
+	<NPCCharacter id="ransom_broker_eonir" name="{=str_ransom_broker_eonir}Eonir Ransombroker" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" race ="elf" culture="Culture.eonir" occupation="RansomBroker">
     <face>
       <face_key_template value="BodyProperty.male_wood_elf" />
     </face>
@@ -2736,7 +2736,7 @@
     </Equipments>
 	</NPCCharacter>	
 	
-	<NPCCharacter id="prison_guard_eonir" name="{=!}Prison Guard" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" race ="elf" culture="Culture.eonir" occupation="PrisonGuard">
+	<NPCCharacter id="prison_guard_eonir" name="{=str_prison_guard_eonir}Prison Guard" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" race ="elf" culture="Culture.eonir" occupation="PrisonGuard">
     <face>
       <face_key_template value="BodyProperty.male_wood_elf" />
     </face>
@@ -2750,7 +2750,7 @@
     </Equipments>
 	</NPCCharacter>
 	
-	<NPCCharacter id="tournament_master_eonir" name="{=!}Tournament Master" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" race ="elf" culture="Culture.eonir" occupation="ArenaMaster">
+	<NPCCharacter id="tournament_master_eonir" name="{=str_tournament_master_eonir}Tournament Master" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" race ="elf" culture="Culture.eonir" occupation="ArenaMaster">
     <face>
       <face_key_template value="BodyProperty.male_wood_elf" />
     </face>
@@ -2764,7 +2764,7 @@
     </Equipments>
 	</NPCCharacter>
 	
-	<NPCCharacter id="gangleader_bodyguard_eonir" name="{=!}Eonir Gang Leader" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" race ="elf" culture="Culture.eonir" occupation="Gangster">
+	<NPCCharacter id="gangleader_bodyguard_eonir" name="{=str_gangleader_bodyguard_eonir}Eonir Gang Leader" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" race ="elf" culture="Culture.eonir" occupation="Gangster">
     <face>
       <face_key_template value="BodyProperty.male_wood_elf" />
     </face>
@@ -2778,7 +2778,7 @@
     </Equipments>
 	</NPCCharacter>
 	
-  <NPCCharacter id="spc_notable_eonir_merch1" name="{=!}Ironic eonir merchant" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" race ="elf" culture="Culture.eonir" occupation="Merchant">
+  <NPCCharacter id="spc_notable_eonir_merch1" name="{=str_spc_notable_eonir_merch1}Ironic eonir merchant" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" race ="elf" culture="Culture.eonir" occupation="Merchant">
     <face>
       <face_key_template value="BodyProperty.male_wood_elf" />
     </face>
@@ -2791,7 +2791,7 @@
       <EquipmentSet id="tor_we_people_notable_artisan_merchant" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_eonir_merch2" name="{=!}curt eonir merchant" voice="curt" is_template="true" default_group="Infantry" is_hero="false" race ="elf" culture="Culture.eonir" occupation="Merchant">
+  <NPCCharacter id="spc_notable_eonir_merch2" name="{=str_spc_notable_eonir_merch2}curt eonir merchant" voice="curt" is_template="true" default_group="Infantry" is_hero="false" race ="elf" culture="Culture.eonir" occupation="Merchant">
     <face>
       <face_key_template value="BodyProperty.male_wood_elf" />
     </face>
@@ -2806,7 +2806,7 @@
       <EquipmentSet id="tor_we_people_notable_artisan_merchant" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_eonir_merch3" name="{=!}Daring eonir merchant" voice="earnest" is_template="true" default_group="Infantry" is_hero="false" race ="elf" culture="Culture.eonir" occupation="Merchant">
+  <NPCCharacter id="spc_notable_eonir_merch3" name="{=str_spc_notable_eonir_merch3}Daring eonir merchant" voice="earnest" is_template="true" default_group="Infantry" is_hero="false" race ="elf" culture="Culture.eonir" occupation="Merchant">
     <face>
       <face_key_template value="BodyProperty.male_wood_elf" />
     </face>
@@ -2820,7 +2820,7 @@
       <EquipmentSet id="tor_we_people_notable_artisan_merchant" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_eonir_merch4" name="{=!}Softspoken eonir merchant" voice="softspoken" is_template="true" default_group="Infantry" race ="elf" is_hero="false" culture="Culture.eonir" occupation="Merchant">
+  <NPCCharacter id="spc_notable_eonir_merch4" name="{=str_spc_notable_eonir_merch4}Softspoken eonir merchant" voice="softspoken" is_template="true" default_group="Infantry" race ="elf" is_hero="false" culture="Culture.eonir" occupation="Merchant">
     <face>
       <face_key_template value="BodyProperty.male_wood_elf" />
     </face>
@@ -2834,7 +2834,7 @@
       <EquipmentSet id="tor_we_people_notable_artisan_merchant" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_eonir_merch5" name="{=!}{FIRSTNAME} the Manciple" voice="softspoken" is_template="true" default_group="Infantry" race ="elf" is_hero="false" culture="Culture.eonir" occupation="Merchant">
+  <NPCCharacter id="spc_notable_eonir_merch5" name="{=str_spc_notable_eonir_merch5}{FIRSTNAME} the Manciple" voice="softspoken" is_template="true" default_group="Infantry" race ="elf" is_hero="false" culture="Culture.eonir" occupation="Merchant">
     <face>
       <face_key_template value="BodyProperty.male_wood_elf" />
     </face>
@@ -2848,7 +2848,7 @@
       <EquipmentSet id="tor_we_people_notable_artisan_merchant" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_eonir_1" name="{=!}{FIRSTNAME} the Warehouser" voice="ironic" is_template="true" is_female="true" default_group="Infantry" race ="elf" is_hero="false" culture="Culture.eonir" occupation="Merchant">
+  <NPCCharacter id="spc_notable_eonir_1" name="{=str_spc_notable_eonir_1}{FIRSTNAME} the Warehouser" voice="ironic" is_template="true" is_female="true" default_group="Infantry" race ="elf" is_hero="false" culture="Culture.eonir" occupation="Merchant">
     <face>
       <face_key_template value="BodyProperty.female_wood_elf" />
     </face>
@@ -2861,7 +2861,7 @@
       <EquipmentSet id="tor_we_people_notable_artisan_merchant" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_eonir_1b" name="{=!}{FIRSTNAME} the Heiress" voice="ironic" is_template="true" is_female="true" default_group="Infantry" race ="elf" is_hero="false" culture="Culture.eonir" occupation="Merchant">
+  <NPCCharacter id="spc_notable_eonir_1b" name="{=str_spc_notable_eonir_b}{FIRSTNAME} the Heiress" voice="ironic" is_template="true" is_female="true" default_group="Infantry" race ="elf" is_hero="false" culture="Culture.eonir" occupation="Merchant">
     <face>
       <face_key_template value="BodyProperty.female_wood_elf" />
     </face>
@@ -2875,7 +2875,7 @@
       <EquipmentSet id="tor_we_people_notable_artisan_merchant" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_eonir_2" name="{=!}Puritan male preacher" voice="earnest" is_template="true" default_group="Infantry" is_hero="false" race ="elf" culture="Culture.eonir" occupation="Preacher">
+  <NPCCharacter id="spc_notable_eonir_2" name="{=str_spc_notable_eonir_2}Puritan male preacher" voice="earnest" is_template="true" default_group="Infantry" is_hero="false" race ="elf" culture="Culture.eonir" occupation="Preacher">
     <face>
       <face_key_template value="BodyProperty.villager_vlandia" />
     </face>
@@ -2888,7 +2888,7 @@
       <EquipmentSet id="tor_we_people_notable_villager" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_eonir_3" name="{=!}Rebellious female preacher" voice="earnest" is_template="true" default_group="Infantry" is_female="true" race ="elf" culture="Culture.eonir" occupation="Preacher">
+  <NPCCharacter id="spc_notable_eonir_3" name="{=str_spc_notable_eonir_3}Rebellious female preacher" voice="earnest" is_template="true" default_group="Infantry" is_female="true" race ="elf" culture="Culture.eonir" occupation="Preacher">
     <face>
       <face_key_template value="BodyProperty.female_wood_elf" />
     </face>
@@ -2901,7 +2901,7 @@
       <EquipmentSet id="tor_we_people_notable_villager_female" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_eonir_gangleader_1" name="{=!}Standard male gang leader" voice="curt" is_template="true" default_group="Infantry" is_hero="false" race ="elf" culture="Culture.eonir" occupation="GangLeader">
+  <NPCCharacter id="spc_eonir_gangleader_1" name="{=str_spc_eonir_gangleader_1}Standard male gang leader" voice="curt" is_template="true" default_group="Infantry" is_hero="false" race ="elf" culture="Culture.eonir" occupation="GangLeader">
     <face>
       <face_key_template value="BodyProperty.male_wood_elf" />
     </face>
@@ -2914,7 +2914,7 @@
       <EquipmentSet id="tor_we_people_notable_rogue_leader" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_eonir_gangleader_2" name="{=!}Female gang leader" voice="ironic" is_template="true" default_group="Infantry" is_female="true" race ="elf" culture="Culture.eonir" occupation="GangLeader">
+  <NPCCharacter id="spc_eonir_gangleader_2" name="{=str_spc_eonir_gangleader_2}Female gang leader" voice="ironic" is_template="true" default_group="Infantry" is_female="true" race ="elf" culture="Culture.eonir" occupation="GangLeader">
     <face>
       <face_key_template value="BodyProperty.male_wood_elf" />
     </face>
@@ -2927,7 +2927,7 @@
       <EquipmentSet id="tor_we_people_notable_rogue_leader" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_eonir_gangleader_3" name="{=!}Male gang leader" voice="ironic" is_template="true" default_group="Infantry" is_female="true" race ="elf" culture="Culture.eonir" occupation="GangLeader">
+  <NPCCharacter id="spc_eonir_gangleader_3" name="{=str_spc_eonir_gangleader_3}Male gang leader" voice="ironic" is_template="true" default_group="Infantry" is_female="true" race ="elf" culture="Culture.eonir" occupation="GangLeader">
     <face>
       <face_key_template value="BodyProperty.male_wood_elf" />
     </face>
@@ -2942,7 +2942,7 @@
       <EquipmentSet id="tor_we_people_notable_rogue_leader" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_eonir_artisan_1" name="{=!}eonirn artisan 1" voice="earnest" is_template="true" default_group="Infantry" culture="Culture.eonir" race ="elf" occupation="Artisan">
+  <NPCCharacter id="spc_notable_eonir_artisan_1" name="{=str_spc_notable_eonir_artisan_1}eonirn artisan 1" voice="earnest" is_template="true" default_group="Infantry" culture="Culture.eonir" race ="elf" occupation="Artisan">
     <face>
       <face_key_template value="BodyProperty.male_wood_elf" />
     </face>
@@ -2954,7 +2954,7 @@
       <EquipmentSet id="tor_we_people_notable_artisan_shopworker" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_eonir_artisan_2" name="{=!}eonirn artisan 2" voice="curt" is_template="true" default_group="Infantry" culture="Culture.eonir" race ="elf" occupation="Artisan">
+  <NPCCharacter id="spc_notable_eonir_artisan_2" name="{=str_spc_notable_eonir_artisan_2}eonirn artisan 2" voice="curt" is_template="true" default_group="Infantry" culture="Culture.eonir" race ="elf" occupation="Artisan">
     <face>
       <face_key_template value="BodyProperty.male_wood_elf" />
     </face>
@@ -2966,7 +2966,7 @@
       <EquipmentSet id="tor_we_people_notable_artisan_shopworker" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_eonir_rural_1" name="{=!}eonirn yeoman" voice="curt" is_template="true" default_group="Infantry" culture="Culture.eonir" race ="elf" occupation="RuralNotable">
+  <NPCCharacter id="spc_notable_eonir_rural_1" name="{=str_spc_notable_eonir_rural_1}eonirn yeoman" voice="curt" is_template="true" default_group="Infantry" culture="Culture.eonir" race ="elf" occupation="RuralNotable">
     <face>
       <face_key_template value="BodyProperty.male_wood_elf" />
     </face>
@@ -2978,7 +2978,7 @@
       <EquipmentSet id="tor_we_people_notable_villager" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_notable_eonir_rural_2" name="{=!}Eonir yeoman" voice="softspoken" is_template="true" default_group="Infantry" culture="Culture.eonir" race ="elf" occupation="RuralNotable">
+  <NPCCharacter id="spc_notable_eonir_rural_2" name="{=str_spc_notable_eonir_rural_2}Eonir yeoman" voice="softspoken" is_template="true" default_group="Infantry" culture="Culture.eonir" race ="elf" occupation="RuralNotable">
     <face>
       <face_key_template value="BodyProperty.male_wood_elf" />
     </face>
@@ -2991,7 +2991,7 @@
       <EquipmentSet id="tor_eo_ranger_template" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_eonir_headman_1" name="{=!}eonirn rebellious headman" voice="earnest" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.eonir" race ="elf" occupation="Headman">
+  <NPCCharacter id="spc_eonir_headman_1" name="{=str_eonir_headman_1}eonirn rebellious headman" voice="earnest" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.eonir" race ="elf" occupation="Headman">
     <face>
       <face_key_template value="BodyProperty.male_wood_elf" />
     </face>
@@ -3005,7 +3005,7 @@
       <EquipmentSet id="tor_we_people_notable_villager" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_eonir_headman_2" name="{=!}eonirn conservative headman" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.eonir"  race ="elf" occupation="Headman">
+  <NPCCharacter id="spc_eonir_headman_2" name="{=str_eonir_headman_2}eonirn conservative headman" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.eonir"  race ="elf" occupation="Headman">
     <face>
       <face_key_template value="BodyProperty.male_wood_elf" />
     </face>
@@ -3019,7 +3019,7 @@
       <EquipmentSet id="tor_we_people_notable_villager" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="spc_eonir_headman_3" name="{=!}eonirn devious headman" voice="softspoken" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.eonir" race ="elf" occupation="Headman">
+  <NPCCharacter id="spc_eonir_headman_3" name="{=str_eonir_headman_3}eonirn devious headman" voice="softspoken" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.eonir" race ="elf" occupation="Headman">
     <face>
       <face_key_template value="BodyProperty.male_wood_elf" />
     </face>

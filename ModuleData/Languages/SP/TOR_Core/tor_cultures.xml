@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
+  <tags>
+    <tag language="Español (LA)" />
+  </tags>
+  <strings>
+
+<string id="empirefaction" text="Imperio"/>
+<string id="vampirefaction" text="Condes Vampiro"/>
+<string id="blooddragonfaction" text="Dragones Sangrientos"/>
+<string id="bretonniafaction" text="Bretonnia"/>
+<string id="mousillonfaction" text="Mousillón"/>
+<string id="str_tor_looterfaction" text="Bandidos"/>
+<string id="str_tor_deserterfaction" text="Desertores Imperiales"/>
+<string id="str_tor_cultistfaction" text="Cultistas del Caos"/>
+<string id="str_tor_beastmenfaction" text="Hombres Bestia"/>
+<string id="str_tor_norscaraidersfaction" text="Norsca"/>
+<string id="str_tor_bretonnianbanditfaction" text="Bandoleros"/>
+<string id="jKviMpbP" text="Neutral"/>
+<string id="str_exotic_culture" text="Exóticos"/>
+<string id="str_darkelves_culture" text="Druchii"/>
+<string id="str_highelves_culture" text="Asur"/>
+<string id="str_greenskins_culture" text="Pieles Verdes"/>
+<string id="str_woodelves_culture" text="Asrai"/>
+<string id="str_dwarves_culture" text="Enanos"/>
+<string id="str_chaos_culture" text="Caos"/>
+      </strings>
+</base>

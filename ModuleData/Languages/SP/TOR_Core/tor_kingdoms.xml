@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
+  <tags>
+    <tag language="Español (LA)" />
+  </tags>
+  <strings>
+
+<string id="str_tor_kingdom_name_averland" text="Provincia Imperial de Averland"/>
+<string id="str_tor_kingdom_shortname_averland" text="Averland"/>
+<string id="str_tor_kingdom_title_averland" text="Averland"/>
+<string id="str_tor_kingdom_rulertitle_averland" text="Conde Elector"/>
+<string id="str_tor_kingdom_text_averland" text="El Gran Condado de Averland es una provincia imperial que se encuentra directamente al sureste del Imperio. Averland tiene una economía basada principalmente en la agricultura y la cría de ganado vacuno y ganadero. A diferencia de la mayoría de los estados del Imperio, Averland contiene grandes extensiones de llanuras abiertas e ininterrumpidas y, aunque esta tierra no es tan fértil como las de Ostermark, resulta valiosa como zona de pastoreo para los rebaños de ganado. Averland también tiene el honor de defender el Paso del Fuego Negro, que cruza las Montañas del Fin del Mundo desde las Tierras Oscuras. Este es el principal paso en miles de kilómetros y, como tal, es una ruta popular para merodeadores Orcos y Goblins. Como resultado de años de defenderlo, los habitantes de Averland gozan de gran estima en el arte de las defensas de asedio."/>
+<string id="str_tor_kingdom_name_stirland" text="Provincia Imperial de Stirland"/>
+<string id="str_tor_kingdom_shortname_stirland" text="Stirland"/>
+<string id="str_tor_kingdom_title_stirland" text="Stirland"/>
+<string id="str_tor_kingdom_rulertitle_stirland" text="Conde Elector"/>
+<string id="str_tor_kingdom_text_stirland" text="El Gran Condado de Stirland es una provincia imperial que se encuentra dentro de los territorios orientales del Imperio. Stirland es una provincia montañosa escarpada famosa por su sociedad rural atrasada y su estrecha afiliación con la muerte. Tal actitud surge de la estrecha asociación de la provincia con la vecina Sylvania, una tierra plagada de bosques brumosos y antiguos castillos que descansan sobre picos escarpados como buitres dando vueltas. Desde el final de las Guerras Vampíricas, la provincia de Stirland ha recibido los derechos sobre todas las tierras del este de Sylvania. Básicamente, esto duplicó el tamaño de la provincia, pero hizo poco para mejorar la suerte de la provincia. De hecho, la provincia de Stirland es un territorio relativamente pobre en comparación con sus vecinos del sur, como Averland o Wissenland. Los ciudadanos de Stirland son un grupo conservador y supersticioso, conocido por su visión retrógrada y su intolerancia religiosa. El estandarte de Stirland muestra un esqueleto tocando un cuerno de caza, lo que significa un llamado a la batalla. El esqueleto en sí es un símbolo común de las tierras, una expresión tanto del grito de batalla de Stirland -Victoria o Muerte- como un sombrío recordatorio de las tierras de Sylvania con las que comparten fronteras."/>
+<string id="str_tor_kingdom_name_wissenland" text="Provincia Imperial de Wissenland"/>
+<string id="str_tor_kingdom_shortname_wissenland" text="Wissenland"/>
+<string id="str_tor_kingdom_title_wissenland" text="Wissenland"/>
+<string id="str_tor_kingdom_rulertitle_wissenland" text="Conde Elector"/>
+<string id="str_tor_kingdom_text_wissenland" text="El Gran Condado de Wissenland es una provincia imperial que se encuentra en los territorios más meridionales del Imperio. La provincia de Wissenland es considerada el arsenal del Imperio, ya que alberga dentro de sus fronteras la ciudad-estado de Nuln, la ciudad industrial más grande del Viejo Mundo. Desde sus talleres y fábricas, la ciudad de Nuln produce algunas de las armas de pólvora negra más devastadoras conocidas por la humanidad. Los territorios de Wissenland estaban originalmente confinados entre las Montañas Grises y el río Soll, pero tras la destrucción de Solland en 1707 IC, los territorios de Solland fueron entregados a Wissenland. Desde entonces, el pueblo de Wissenland ha expresado cierto dolor y recuerdo por sus vecinos, llegando incluso a añadir la bandera de Solland a sus propios estandartes como señal de respeto por sus compatriotas caídos."/>
+<string id="str_tor_kingdom_name_talabecland" text="Provincia Imperial de Talabecland"/>
+<string id="str_tor_kingdom_shortname_talabecland" text="Talabecland"/>
+<string id="str_tor_kingdom_title_talabecland" text="Talabecland"/>
+<string id="str_tor_kingdom_rulertitle_talabecland" text="Conde Elector"/>
+<string id="str_tor_kingdom_text_talabecland" text="El Gran Ducado de Talabecland es una provincia imperial que se ubica en el centro geográfico del Imperio. La provincia de Talabecland es quizás una de las más grandes de las provincias imperiales, y sus características dominantes incluyen su dominio sobre el río Stir y el río Talabec, así como el control político sobre casi todo el Gran Bosque. Gran parte del comercio de la provincia fluye a lo largo de estos ríos, así como el comercio que fluye hacia el norte y el sur a lo largo del Gran Carretera del Bosque."/>
+<string id="str_tor_kingdom_name_reikland" text="Provincia Imperial de Reikland"/>
+<string id="str_tor_kingdom_shortname_reikland" text="Reikland"/>
+<string id="str_tor_kingdom_title_reikland" text="Reikland"/>
+<string id="str_tor_kingdom_rulertitle_reikland" text="Emperador"/>
+<string id="str_tor_kingdom_text_reikland" text="El Gran Principado de Reikland es una provincia imperial ubicada al suroeste del Imperio en el centro del continente del Viejo Mundo. Reikland ha sido el estado más importante del Imperio durante casi cien años, ya que rodea Altdorf, la actual capital imperial, y sus ejércitos estatales son los que están bajo el mando del mismísimo emperador Karl Franz."/>
+<string id="str_tor_kingdom_name_middenland" text="Provincia Imperial de Middenland"/>
+<string id="str_tor_kingdom_shortname_middenland" text="Middenland"/>
+<string id="str_tor_kingdom_title_middenland" text="Middenland"/>
+<string id="str_tor_kingdom_rulertitle_middenland" text="Conde Elector"/>
+<string id="str_tor_kingdom_text_middenland" text="Middenland, oficialmente el Gran Ducado de Middenland y Middenheim, es una provincia imperial que se encuentra en la región centro-norte de ese reino. Elevándose sobre las sombrías copas de los árboles del bosque de Drakwald se encuentra un pináculo de roca blanca de lados escarpados en cuya cima se encuentra la ciudad-estado fortaleza de Middenheim, capital de Middenland y la Ciudad Sagrada del Lobo Blanco. El Lobo Blanco es el símbolo sagrado de Ulric, el dios imperial de la guerra, el invierno y los lobos."/>
+<string id="str_tor_kingdom_name_ostenmark" text="Provincia Imperial de Ostenmark"/>
+<string id="str_tor_kingdom_shortname_ostenmark" text="Ostermark"/>
+<string id="str_tor_kingdom_title_ostenmark" text="Ostermark"/>
+<string id="str_tor_kingdom_rulertitle_ostenmark" text="Conde Elector"/>
+<string id="str_tor_kingdom_text_ostenmark" text="Ostermark, oficialmente la Liga de Ostermark, pero a veces llamada la Marca del Este, es una provincia imperial que se con fundación en la historia Imperial. Se encuentra en el extremo noreste del Imperio."/>
+<string id="str_tor_kingdom_name_hochland" text="Provincia Imperial de Hochland"/>
+<string id="str_tor_kingdom_shortname_hochland" text="Hochland"/>
+<string id="str_tor_kingdom_title_hochland" text="Hochland"/>
+<string id="str_tor_kingdom_rulertitle_hochland" text="Conde Elector"/>
+<string id="str_tor_kingdom_text_hochland" text="Hochland, oficialmente la Gran Baronía de Hochland, es una de las provincias del Imperio. Se encuentra entre las provincias norteñas de Middenland, Ostland y las fronteras de Talabecland. Por lo tanto, los habitantes de Hochland son conocidos entre los pueblos más amigables y tolerantes del Imperio. Además de las ciudades Hergig y Krudenwald, existe una naturaleza indómita de bosques y montañas, además de tener limitados terrenos para la agricultura. Los habitantes de Hochland son famosos por su amor a las armas y los mejores regimientos de arqueros y tiradores del imperio son originarios de este estado. Se dice que los habitantes de Hochland aman más sus armas que a sus esposas."/>
+<string id="str_tor_kingdom_name_nordland" text="Provincia Imperial de Nordland"/>
+<string id="str_tor_kingdom_shortname_nordland" text="Nordland"/>
+<string id="str_tor_kingdom_title_nordland" text="Nordland"/>
+<string id="str_tor_kingdom_rulertitle_nordland" text="Conde Elector"/>
+<string id="str_tor_kingdom_text_nordland" text="Nordland, oficialmente la Gran Baronía de Nordland, es una provincia del Imperio que se encuentra en la costa noroeste de ese reino. Desde su incorporación como provincia, Nordland se ha hecho famosa por albergar la Segunda Flota de la Armada Imperial y sus carreteras costeras con elevados peajes, que proporcionan un paso seguro para los comerciantes ricos que viajan entre la ciudad de Marienburgo y la principal fuente de ingresos de su provincia. Muchas fortalezas marinas y torres de vigilancia bordean la costa de Nordland, ya que los asaltantes norska del otro lado del Mar de las Garras son una amenaza demasiado habitual que no se puede ignorar sin consecuencias nefastas."/>
+<string id="str_tor_kingdom_name_ostland" text="Provincia Imperial de Ostland"/>
+<string id="str_tor_kingdom_shortname_ostland" text="Ostland"/>
+<string id="str_tor_kingdom_title_ostland" text="Ostland"/>
+<string id="str_tor_kingdom_rulertitle_ostland" text="Conde Elector"/>
+<string id="str_tor_kingdom_text_ostland" text="Ostland, formalmente el Gran Principado de Ostland, es una provincia imperial que constituye gran parte de la frontera norte de esa nación. Ostland es un reino de nieblas húmedas y reptantes sombras cambiantes, y está cubierto casi en su totalidad por el oscuro dosel del Bosque de las Sombras. La gente de esta tierra ha aprendido a vivir una vida dura entre los árboles centenarios, limpiando parcelas de tierra para sus granjas y asentamientos, y vigilando atentamente las oscuras profundidades del bosque."/>
+<string id="str_tor_kingdom_name_brasskeep" text="Repugnantes del Torreón de Latón"/>
+<string id="str_tor_kingdom_shortname_brasskeep" text="Repugnantes"/>
+<string id="str_tor_kingdom_title_brasskeep" text="Torreón de Latón"/>
+<string id="str_tor_kingdom_rulertitle_brasskeep" text="Campeón del Caos"/>
+<string id="str_tor_kingdom_text_brasskeep" text="Después de la profanación del Torreón de Latón en la Gran Guerra contra el Caos, la fortaleza se convirtió en un desastre que rezumaba pestilencia a borbotones después de que los adoradores de Nurgle pidieran al padre de la plaga que bendijera los cimientos de la fortaleza. Después de ser aislados y rodeados, los guerreros no alineados con Nurgle cayeron lentamente ante las enfermedades. Sólo los sirvientes de Nurgle sobrevivieron a los dones de la plaga, y finalmente se les conoció como Señores de la Plaga. Ahora la mayoría de la banda son sirvientes triviales del caos y aspirantes a guerreros del abuelo Nurgle, mientras que están liderados por los supervivientes originales de la fortaleza."/>
+<string id="str_tor_kingdom_name_wasteland" text="El Páramo"/>
+<string id="str_tor_kingdom_shortname_wasteland" text="El Páramo"/>
+<string id="str_tor_kingdom_title_wasteland" text="El Páramo"/>
+<string id="str_tor_kingdom_rulertitle_wasteland" text="Lugarteniente"/>
+<string id="str_tor_kingdom_text_wasteland" text="El Páramo, anteriormente la provincia electoral del Imperio conocida como la Baronía de El Páramo, o simplemente el Páramo, es la región costera de páramos y pantanos que rodea la desembocadura del río Reik y es la tierra natal de la próspera ciudad comercial-estado de Marienburgo. El Páramo fue durante siglos parte del Imperio, conquistado por primera vez en 501 IC por el emperador Segismundo II, hasta que el Páramo se separó durante el reinado del emperador Dieter IV en 2429 IC proporcionando al emperador un fuerte soborno. A partir de entonces, la región se conoce simplemente como El Páramo."/>
+<string id="str_tor_kingdom_name_moot" text="La Asamblea"/>
+<string id="str_tor_kingdom_shortname_moot" text="La Asamblea"/>
+<string id="str_tor_kingdom_title_moot" text="La Asamblea"/>
+<string id="str_tor_kingdom_rulertitle_moot" text="Señor"/>
+<string id="str_tor_kingdom_text_moot" text="El Gran Condado de las tierras de La Asamblea, comúnmente conocido como La Asamblea, es una provincia del Imperio y el hogar de los Halflings. Su capital es la ciudad de Eicheschatten. Su símbolo es un gallo de pelea y sus colores son el rojo y el verde."/>
+<string id="str_tor_kingdom_name_couronne" text="Ducado de Couronne"/>
+<string id="str_tor_kingdom_shortname_couronne" text="Couronne"/>
+<string id="str_tor_kingdom_title_couronne" text="Couronne"/>
+<string id="str_tor_kingdom_rulertitle_couronne" text="Duque"/>
+<string id="str_tor_kingdom_text_couronne" text="El Ducado de Couronne es un ducado bretonniano que se encuentra en la costa norte de ese reino y es la actual sede del poder de la Corte Real del rey, ubicada en el ducado, y la capital del reino, el Castillo de Couronne."/>
+<string id="str_tor_kingdom_name_languille" text="Ducado de L'Anguille"/>
+<string id="str_tor_kingdom_shortname_languille" text="L'Anguille"/>
+<string id="str_tor_kingdom_title_languille" text="L'Anguille"/>
+<string id="str_tor_kingdom_rulertitle_languille" text="Duque"/>
+<string id="str_tor_kingdom_text_languille" text="L'Anguille, formalmente el Ducado de L'Anguille, es un ducado de Bretonia que se encuentra en la costa norte de ese reino. Conocido en todo el mundo por tener algunos de los puertos más activos de toda Bretonia, L'Anguille es un ducado rico que depende en gran medida del comercio marítimo para su fortuna. Como tal, hay un gran número de comerciantes y plebeyos de clase media entre la población campesina de la capital."/>
+<string id="str_tor_kingdom_name_lyonesse" text="Ducado de Lyonesse"/>
+<string id="str_tor_kingdom_shortname_lyonesse" text="Lyonesse"/>
+<string id="str_tor_kingdom_title_lyonesse" text="Lyonesse"/>
+<string id="str_tor_kingdom_rulertitle_lyonesse" text="Duque"/>
+<string id="str_tor_kingdom_text_lyonesse" text="Lyonesse, formalmente el Ducado de Lyonesse, es uno de los ducados bretonnianos, se encuentra en la costa noroeste de ese reino. Las tierras de Lyonesse, uno de los ducados más grandes, son famosas por su rivalidad no con los otros ducados bretonianos, además de entre su propia nobleza, incluso en comparación con los conflictos feudales que asolan los otros reinos de Bretonia. La gente culpa a la inusual geografía del ducado por la prevalencia de las luchas intestinas, en particular la profusión de excelentes sitios para fortificaciones, que disuaden a los ducados rivales de emprender la guerra o enemistarse con los señores de Lyonesse."/>
+<string id="str_tor_kingdom_name_artois" text="Ducado de Artois"/>
+<string id="str_tor_kingdom_shortname_artois" text="Artois"/>
+<string id="str_tor_kingdom_title_artois" text="Artois"/>
+<string id="str_tor_kingdom_rulertitle_artois" text="Duque"/>
+<string id="str_tor_kingdom_text_artois" text="Artois, formalmente el Ducado de Artois, es un ducado fundador de Bretonia que se encuentra en el corazón de las tierras del norte de ese reino. A diferencia de las exuberantes praderas de otros ducados de Bretonia, Artois es famoso por ser el único ducado cubierto enteramente por bosques naturales, conocidos por los bretonianos como el Bosque de Arden. Debido a esto, el ducado se encuentra en un constante estado de guerra contra las tribus de Hombres Bestia que han hecho del bosque su nuevo hogar."/>
+<string id="str_tor_kingdom_name_giroseux" text="Ducado de Gisoreux"/>
+<string id="str_tor_kingdom_shortname_giroseux" text="Gisoreux"/>
+<string id="str_tor_kingdom_title_giroseux" text="Gisoreux"/>
+<string id="str_tor_kingdom_rulertitle_giroseux" text="Duque"/>
+<string id="str_tor_kingdom_text_giroseux" text="Gisoreux, formalmente el Ducado de Gisoreux, es un ducado bretonniano que se encuentra en las traicioneras laderas de las Hermanas Pálidas y en los bosques bajos del Bosque de Arden. A diferencia de otras partes de Bretonia, donde gran parte de la tierra es de un solo tipo de paisaje y de un solo tipo de gente, la diversidad geográfica de este Ducado también ha creado una diversidad de culturas y costumbres. Los que viven en las llanuras cultivables del sur contienen los típicos agricultores y campesinos que son habituales en todos los reinos. Al este, las tierras están llenas de bosques duros, donde un pueblo diferente vive la vida como expertos tramperos y leñadores salvajes. Finalmente, al norte, las personas que pueden ganarse la vida a duras penas dentro de las Hermanas Pálidas son montañeros experimentados que pueden afrontar duras condiciones. El Ducado también contiene el Paso de Gisoreux, uno de los tres únicos lugares dentro de todas las Montañas Grises que permiten el paso entre Bretonia y el Imperio."/>
+<string id="str_tor_kingdom_name_parravon" text="Ducado de Parravon"/>
+<string id="str_tor_kingdom_shortname_parravon" text="Parravon"/>
+<string id="str_tor_kingdom_title_parravon" text="Parravon"/>
+<string id="str_tor_kingdom_rulertitle_parravon" text="Duque"/>
+<string id="str_tor_kingdom_text_parravon" text="En el extremo sur de las Montañas Grises se encuentra la morada bretoniana de Parravon. Parravon controla una de las 3 rutas que conducen directamente al Imperio desde las Montañas Grises, siendo el Paso de la Dama Gris. Debido a que el ducado está situado tanto en la base como en las Montañas Grises, los ciudadanos de Parravon tienen una afinidad con los pegasos residen en las cimas de las montañas. De hecho, el duque Cassyon de Parravon se ha hecho amigo del señor de todos los pegasos, Glorfinal."/>
+<string id="str_tor_kingdom_name_montfort" text="Ducado de Montfort"/>
+<string id="str_tor_kingdom_shortname_montfort" text="Montfort"/>
+<string id="str_tor_kingdom_title_montfort" text="Montfort"/>
+<string id="str_tor_kingdom_rulertitle_montfort" text="Duque"/>
+<string id="str_tor_kingdom_text_montfort" text="Al norte de la provincia sureña de Parravon y en el este de Bretonia se encuentran los castillos de Montfort. Al igual que Parravon, el ducado de Montfort reside tanto dentro como a los pies de las Montañas Grises. Dentro de Montfort se encuentra uno de los tres pasos hacia el Imperio desde las Montañas Grises, el Paso del Hacha Mordida. Al estar situados en las regiones montañosas, los monfortianos son montañeros resistentes y, debido a las constantes incursiones, también han desarrollado un prejuicio hacia cualquier forastero que no sea humano, como enanos, medianos o elfos."/>
+<string id="str_tor_kingdom_name_bastonne" text="Ducado de Bastonne"/>
+<string id="str_tor_kingdom_shortname_bastonne" text="Bastonne"/>
+<string id="str_tor_kingdom_title_bastonne" text="Bastonne"/>
+<string id="str_tor_kingdom_rulertitle_bastonne" text="Duque"/>
+<string id="str_tor_kingdom_text_bastonne" text="En el corazón mismo de Bretonia se encuentra el Ducado de Bastonne. De hecho, se encuentra en el corazón, pero muchos creen que Bastonne es el corazón de Bretonia. Fundada por Gilles le Breton, la Catedral para el Culto de la Dama se encuentra dentro de los muros del Castillo de Bastonne. De hecho, se dice que justo en el Bosque de Chȃlons es donde Gilles y los Compañeros conocieron a La Dama por primera vez. Como Bastonne es el corazón de Bretonia, la gente de Bastonne es la más altiva y engreída de los bretonianos. Bastonne tiene a su servicio a la mayoría de los Caballeros del Grial de Bretonia y, con razón, afirma ser el más importante de todos los ducados."/>
+<string id="str_tor_kingdom_name_bordeleaux" text="Ducado de Bordeleaux"/>
+<string id="str_tor_kingdom_shortname_bordeleaux" text="Bordeleaux"/>
+<string id="str_tor_kingdom_title_bordeleaux" text="Bordeleaux"/>
+<string id="str_tor_kingdom_rulertitle_bordeleaux" text="Duque"/>
+<string id="str_tor_kingdom_text_bordeleaux" text="La compañía que mantiene el Duque Alberic es interesante. A nadie excepto a los caballeros más incondicionales y talentosos se les permite luchar durante mucho tiempo junto al duque de Bordeleaux. Como tal, los hombres a quienes se confía la seguridad del reino son algunos de los luchadores más capaces y nobles más extravagantes de toda Bretonia."/>
+<string id="str_tor_kingdom_name_carcasonne" text="Ducado de Carcassonne"/>
+<string id="str_tor_kingdom_shortname_carcasonne" text="Carcassonne"/>
+<string id="str_tor_kingdom_title_carcasonne" text="Carcassonne"/>
+<string id="str_tor_kingdom_rulertitle_carcasonne" text="Duque"/>
+<string id="str_tor_kingdom_text_carcasonne" text="Carcasonne, un ducado altamente marcial, se centra en gran medida en la militarización y pone especial atención en la erradicación de las tribus Pieles Verdes en las montañas de Irrana. Casi todas las personas en Carcassonne, desde el campesino más bajo hasta el noble más alto, son guerreros. Carcasona tiene un fuerte vínculo con Brionne, debido a la afición de la gente de Carcasona por la poesía y la música. A menudo comentan con respecto a Brionne que luchamos para que los la gente de Brionne no tenga que hacerlo."/>
+<string id="str_tor_kingdom_name_aquitaine" text="Ducado de Aquitaine"/>
+<string id="str_tor_kingdom_shortname_aquitaine" text="Aquitaine"/>
+<string id="str_tor_kingdom_title_aquitaine" text="Aquitaine"/>
+<string id="str_tor_kingdom_rulertitle_aquitaine" text="Duque"/>
+<string id="str_tor_kingdom_text_aquitaine" text="Aquitaine, uno de los ducados fundadores de Bretonia, habita en la costa occidental de Bretonia, justo al sur de Bordeleaux. Conocida por tener algunas de las tierras más serenas de Bretonia, Aquitaine es famosa por sus tierras cultivables y sus suaves costas arenosas. Debido a su aislamiento de muchas amenazas externas, gran parte de la violencia que se produce se debe en realidad a pequeñas disputas entre duques o levantamientos y revueltas campesinas. Descripción del gobernante: Hereda el ducado de Aquitania después de la muerte de su hermano mayor, el duque Armand d'Aquitaine. Era el actual abanderado de Bretonia, después de que sus aventuras como caballero lo llevaran a convertirse en caballero del Grial. Después de enterarse de la noticia de la muerte de su hermano, se le ordenó por decreto que tomara el trono de Aquitaine. Ahora dirige el ducado como administrador y como mariscal."/>
+<string id="str_tor_kingdom_name_brionne" text="Ducado de Brionne"/>
+<string id="str_tor_kingdom_shortname_brionne" text="Brionne"/>
+<string id="str_tor_kingdom_title_brionne" text="Brionne"/>
+<string id="str_tor_kingdom_rulertitle_brionne" text="Duque"/>
+<string id="str_tor_kingdom_text_brionne" text="Brionne es a menudo llamada la Joya de Bretonia... por los brionnianos. Es realmente una ciudad de extraordinaria belleza, situada en una península unida al continente por un estrecho cuello. La península forma una colina y la ciudad se eleva hacia un lado, construida con piedra blanca local o, en el caso de las construcciones campesinas, con yeso blanco. La arena de la bahía es extremadamente buena para fabricar vidrio, por lo que prácticamente todas las ventanas de la ciudad están acristaladas y brillan con la luz del sol. El castillo Brionne está en el centro de la ciudad y en la cima de la isla. Es lo que otros castillos de Brionne quieren ser: la combinación perfecta de forma fantasiosa y funcionalidad impecable. Las numerosas torretas pequeñas pueden parecer desordenadas, pero proporcionan excelentes campos de tiro. De manera similar, las torres altas y esbeltas albergan puestos de vigilancia que un solo hombre puede defender contra un ejército y controlar gran parte del área circundante. Los numerosos jardines del patio se pueden sellar y convertir en salas de exterminio para deshacerse de los invasores. La Sala de los Juglares de Brionne es el centro de estos artistas más importante del mundo. Se levanta sobre un pequeño promontorio en el barrio sur de la ciudad y está rodeado por un jardín. El edificio en sí es circular, está construido con piedra blanca y alberga un auditorio con una acústica impecable. Se pueden encontrar juglares actuando allí a cualquier hora del día o de la noche."/>
+<string id="str_tor_kingdom_name_quenelles" text="Ducado de Quenelles"/>
+<string id="str_tor_kingdom_shortname_quenelles" text="Quenelles"/>
+<string id="str_tor_kingdom_title_quenelles" text="Quenelles"/>
+<string id="str_tor_kingdom_rulertitle_quenelles" text="Duque"/>
+<string id="str_tor_kingdom_text_quenelles" text="Los habitantes de Quenelles está fanáticamente dedicados a la destrucción total de los Pieles Verdes, en particular de aquellos que bajan del Cerro del Orco para saquear sus tierras. Sus caballeros exploradores son especialmente famosos entre los enanos, ya que muchos de ellos utilizan su búsqueda del Grial para aventurarse en las montañas y tierras yermas del Viejo Mundo. A pesar de esto, los Pieles Verdes siguen siendo una amenaza siempre presente para el Ducado, a pesar de siglos de intentos de exterminio y colonización del Cerro del Orco. Sigue siendo un misterio por qué Quenelles sufre tanto a causa de los Pieles Verdes en comparación con sus vecinos; algunos sospechan que los descendientes de Cuileux pueden haber sido maldecidos."/>
+<string id="str_tor_kingdom_name_sylvania" text="Sylvania"/>
+<string id="str_tor_kingdom_shortname_sylvania" text="Sylvania"/>
+<string id="str_tor_kingdom_title_sylvania" text="Sylvania"/>
+<string id="str_tor_kingdom_rulertitle_sylvania" text="Conde vampiro"/>
+<string id="str_tor_kingdom_text_sylvania" text="Sylvania es una región oscura y embrujada del Viejo Mundo. Aunque técnicamente forma parte de la provincia imperial de Stirland, es de facto el dominio independiente de los Condes Vampiro. Bajo la sombra de los vampiros, su población se ha convertido en un pueblo aterrorizado y supersticioso. Casi inhabitables, los bosques de Sylvania son sombríos bosquetes de árboles retorcidos y medio podridos que arrancan todo el alimento que pueden del suelo cubierto de huesos. Páramos desolados y ríos lentos de sangre coagulada salpican los bosques de hojas amarillas, azotados por el viento y envueltos por tormentas por nubes oscuras que se filtran desde las Montañas del Fin del Mundo casi a diario."/>
+<string id="str_tor_kingdom_name_blooddragons" text="Órden del Dragón Sangriento"/>
+<string id="str_tor_kingdom_shortname_blooddragons" text="Dragones Sangrientos"/>
+<string id="str_tor_kingdom_title_blooddragons" text="Castellano Sangriento"/>
+<string id="str_tor_kingdom_rulertitle_blooddragons" text="Gran Maestre"/>
+<string id="str_tor_kingdom_text_blooddragons" text="La Torre Sangrienta fue una vez el hogar de una valiente orden de Caballería conocida como Ordo Draconis. Una fatídica noche, un vampiro conocido como Walach Harkon desafió a todos los caballeros a un combate singular y finalmente convirtió a todos los que consideraba dignos en Vampiros. A la muerte del Ordo Draconis le siguió su renacimiento en sangre; Desde entonces, estos terroríficos guerreros han sido conocidos como los Dragones Sangrientos. Los imperiales sufrieron sus ataques y depravaciones durante sesenta años, antes de acumular una fuerza para arrasar la Fortaleza. Eso fue hace casi seis siglos, y durante todo ese tiempo las ruinas de la torre del homenaje permanecieron intactas. Ahora, la torre levanta de nuevo, construido por los silenciosos no-muertos, y los hombres del Imperio volverán a conocer el miedo."/>
+<string id="str_tor_kingdom_name_necrarchs" text="Escribas del Grimoire Necronium"/>
+<string id="str_tor_kingdom_shortname_necrarchs" text="Necrarcas"/>
+<string id="str_tor_kingdom_title_necrarchs" text="Torre Sombría"/>
+<string id="str_tor_kingdom_rulertitle_necrarchs" text="Gran Maestre"/>
+<string id="str_tor_kingdom_text_necrarchs" text="Los escribas del Grimoire Necronium se dedican al estudio del Grimoire Necronium, un poderoso tomo nigromántico. Fue creado por W'soran, uno de los primeros vampiros y el único que permaneció leal a Nagash. A cambio, el archiencromante permitió a W'soran estudiar sus propios tomos de hechicería, los Nueve Libros de Nagash. W'soran combinó su tradición con sus propios estudios del reino de los espíritus y más tarde, su aprendiz Melkhior continuó su trabajo."/>
+<string id="str_tor_kingdom_name_mousillon" text="Ducado de Mousillón"/>
+<string id="str_tor_kingdom_shortname_mousillon" text="Mousillón"/>
+<string id="str_tor_kingdom_title_mousillon" text="Mousillón"/>
+<string id="str_tor_kingdom_rulertitle_mousillon" text="Duque"/>
+<string id="str_tor_kingdom_text_mousillon" text="El ducado de Mousillon es una tierra demacrada y temible, llena de pantanos y ciénagas malditas. Una tierra empobrecida y constantemente plagada de enfermedades a las que muchos de sus habitantes se han acostumbrado. Como tal, muchos mousillianos son considerados mutantes y monstruos en comparación con los campesinos bretonianos normales. Los pueblos y castillos están a punto de derrumbarse, mientras las noches están atormentadas por apariciones y bestias viles. Sólo los tontos y los muertos salen de sus casas por la noche."/>
+<string id="str_tor_kingdom_name_athelloren" text="Reino de Athel Loren"/>
+<string id="str_tor_kingdom_shortname_athelloren" text="Athel Loren"/>
+<string id="str_tor_kingdom_title_athelloren" text="Athel Loren"/>
+<string id="str_tor_kingdom_rulertitle_athelloren" text="Noble"/>
+<string id="str_tor_kingdom_text_athelloren" text="Athel Loren, el gran bosque del viejo mundo, está dividido en doce reinos Asrai, cada uno gobernado por antiguos señores y damas del gran consejo. El flujo del tiempo funciona de manera diferente en Athel Loren. Algunos reinos están permanentemente bloqueados en el tiempo y lo que parece el paso de una temporada son en realidad años. Otros habitan en una noche eterna o en la gloria de la luz del sol del mediodía. Los salones mágicos de los señores y damas elfos están dispersos por los claros de estos reinos y tienen su propia identidad y costumbres. En estos lugares, envueltos por una luz tenue, se pueden escuchar risas y melodías fantasmales que recuerdan al viento que sopla entre las ramas primaverales. Sus magníficos portales de entrada están entrelazados con troncos de árboles centenarios o tallados en las laderas de una colina. Estos lugares permanecen ocultos para todos aquellos que no son bienvenidos por los Asrai. Estos seres podrán pasar muy cerca de estas entradas, pero nunca las descubrirán."/>
+<string id="str_tor_kingdom_name_laurelorn" text="Protectorado de Laurelorn"/>
+<string id="str_tor_kingdom_shortname_laurelorn" text="Laurelorn"/>
+<string id="str_tor_kingdom_title_laurelorn" text="Laurelorn"/>
+<string id="str_tor_kingdom_rulertitle_laurelorn" text="Noble"/>
+<string id="str_tor_kingdom_text_laurelorn" text="Los Eonir de Laurelorn antaño fueron una orgullosa colonia del Rey Fénix. Los Eonir son los últimos restos de los Altos Elfos que permanecenen el Viejo Mundo; sin embargo, afirman su total independencia de Ulthuan después de miles de años de separación. En los trágicos acontecimientos de la Guerra de la Barba contra los Enanos, todas las colonias fueron disueltas o incendiadas por los Enanos, lo que llevó a la mayoría de los elfos restantes a buscar refugio en la provincia más al norte de Tor Lithanel. Aunque pidieron el apoyo del Trono del Fénix, Tor Lithanel no recibió ninguna respuesta y tuvo una lucha duradera por su supervivencia. Como resultado de estos eventos, Laurelorn declaró su independencia. Hoy, la relación entre Ulthuan y Laurelorn ha vuelto a mejorar. Sin embargo, los Eonir ya no creen en la causa de los Asur. En cambio, arreglaron su situación en medio del imperio de los hombres."/>
+
+      </strings>
+</base>

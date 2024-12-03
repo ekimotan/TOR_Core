@@ -1,0 +1,439 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
+  <tags>
+    <tag language="Español (LA)" />
+  </tags>
+  <strings>
+
+<string id="" text="Empuñadura de Colmillo Rúnico"/>
+<string id="" text="Guarda de Colmillo Rúnico"/>
+<string id="" text="Pomo de Colmillo Rúnico"/>
+<string id="" text="Guarda de Colmillo Rúnico"/>
+<string id="" text="Guarda de Colmillo Rúnico"/>
+<string id="" text="Guarda de Colmillo Rúnico"/>
+<string id="" text="Guarda de Colmillo Rúnico"/>
+<string id="" text="Guarda de Colmillo Rúnico"/>
+<string id="" text="Guarda de Colmillo Rúnico"/>
+<string id="" text="Guarda de Colmillo Rúnico"/>
+<string id="" text="Guarda de Colmillo Rúnico"/>
+<string id="" text="Guarda de Colmillo Rúnico"/>
+<string id="" text="Guarda de Colmillo Rúnico"/>
+<string id="" text="Guarda de Colmillo Rúnico"/>
+<string id="" text="Espada Orca (fase de pruebas)"/>
+<string id="" text="Empuñadura de Espada Orca (fase de pruebas)"/>
+<string id="" text="Guarda de Espada Orca (fase de pruebas)"/>
+<string id="" text="Pomo de de Espada Orca (fase de pruebas)"/>
+<string id="" text="Hoja de la Guardia del Reik"/>
+<string id="" text="Empuñadura de la Hoja de la Guardia del Reik"/>
+<string id="" text="Guarda de la Hoja de la Guardia del Reik"/>
+<string id="" text="Pomo Hoja de la Guardia del Reik"/>
+<string id="" text="Hoja de la Guardia del Reik"/>
+<string id="" text="Empuñadura de la Hoja de la Guardia del Reik"/>
+<string id="" text="Guarda de la Hoja de la Guardia del Reik"/>
+<string id="" text="Pomo Hoja de la Guardia del Reik"/>
+<string id="" text="Hoja de la Guardia del Reik"/>
+<string id="" text="Empuñadura de la Hoja de la Guardia del Reik"/>
+<string id="" text="Guarda de la Hoja de la Guardia del Reik"/>
+<string id="" text="Pomo Hoja de la Guardia del Reik"/>
+<string id="" text="Hoja de la Guardia del Círculo Interior"/>
+<string id="" text="Empuñadurad e la Guardia del Círculo Interior"/>
+<string id="" text="Guarda de la Guardia del Círculo Interior"/>
+<string id="" text="Pomo de la Guardia del Círculo Interior"/>
+<string id="" text="Hoja de la Guardia del Círculo Interior"/>
+<string id="" text="Guarda de la Guardia del Círculo Interior"/>
+<string id="" text="Pomo de la Guardia del Círculo Interior"/>
+<string id="" text="Hoja de la Guardia del Círculo Interior"/>
+<string id="" text="Guarda de la Guardia del Círculo Interior"/>
+<string id="" text="Pomo de la Guardia del Círculo Interior"/>
+<string id="" text="Khopesh"/>
+<string id="" text="Empuñadura de Khopesh"/>
+<string id="" text="Guarda de Khopesh"/>
+<string id="" text="Hoja de Espada de Guerrero Esqueleto"/>
+<string id="" text="Empuñadura de Espada de Guerrero Esqueleto"/>
+<string id="" text="Guarda de Espada de Guerrero Esqueleto"/>
+<string id="" text="Pomo de Espada de Guerrero Esqueleto"/>
+<string id="" text="Hoja de Espada de Guerrero Esqueleto"/>
+<string id="" text="Empuñadura de Espada de Guerrero Esqueleto"/>
+<string id="" text="Guarda de Espada de Guerrero Esqueleto"/>
+<string id="" text="Pomo de Espada de Guerrero Esqueleto"/>
+<string id="" text="Hoja de Espada de Guerrero Esqueleto"/>
+<string id="" text="Empuñadura de Espada de Guerrero Esqueleto"/>
+<string id="" text="Pomo de Espada de Guerrero Esqueleto"/>
+<string id="" text="Hoja de Espada de Guerrero Esqueleto"/>
+<string id="" text="Empuñadura de Espada de Guerrero Esqueleto"/>
+<string id="" text="Guarda de Espada de Guerrero Esqueleto"/>
+<string id="" text="Pomo de Espada de Guerrero Esqueleto"/>
+<string id="" text="Hoja de Espada de Guerrero Esqueleto"/>
+<string id="" text="Empuñadura de Espada de Guerrero Esqueleto"/>
+<string id="" text="Hoja de Espada de Guerrero Esqueleto"/>
+<string id="" text="Hoja de Espada de Guardia de los Túmulos"/>
+<string id="" text="Empuñadura de Espada de Guardia de los Túmulos"/>
+<string id="" text="Guarda de Espada de Guardia de los Túmulos"/>
+<string id="" text="Pomo de Espada de Guardia de los Túmulos"/>
+<string id="" text="Hoja de Mannfred"/>
+<string id="" text="Empuñadura de la Hoja de Mannfred"/>
+<string id="" text="Guarda de la Hoja de Mannfred"/>
+<string id="" text="Pomo de la Hoja de Mannfred"/>
+<string id="" text="Hoja de Espada Vampírica"/>
+<string id="" text="Empuñadura de Hoja de Espada Vampírica"/>
+<string id="" text="Guarda de Hoja de Espada Vampírica"/>
+<string id="" text="Pomo de Espada Vampírica"/>
+<string id="" text="Hoja de Espada Vampírica"/>
+<string id="" text="Empuñadura de Hoja de Espada Vampírica"/>
+<string id="" text="Guarda de Hoja de Espada Vampírica"/>
+<string id="" text="Pomo de Espada Vampírica"/>
+<string id="" text="Hoja de Espada Vampírica"/>
+<string id="" text="Empuñadura de Hoja de Espada Vampírica"/>
+<string id="" text="Guarda de Hoja de Espada Vampírica"/>
+<string id="" text="Pomo de Espada Vampírica"/>
+<string id="" text="Hoja de Espada Vampírica"/>
+<string id="" text="Empuñadura de Hoja de Espada Vampírica"/>
+<string id="" text="Guarda de Hoja de Espada Vampírica"/>
+<string id="" text="Pomo de Espada Vampírica"/>
+<string id="" text="Hoja de Espada Vampírica"/>
+<string id="" text="Empuñadura de Hoja de Espada Vampírica"/>
+<string id="" text="Guarda de Hoja de Espada Vampírica"/>
+<string id="" text="Pomo de Espada Vampírica"/>
+<string id="" text="Hoja de Espada Vampírica"/>
+<string id="" text="Empuñadura de Hoja de Espada Vampírica"/>
+<string id="" text="Guarda de Hoja de Espada Vampírica"/>
+<string id="" text="Pomo de Espada Vampírica"/>
+<string id="" text="Hoja de Espada Vampírica"/>
+<string id="" text="Empuñadura de Hoja de Espada Vampírica"/>
+<string id="" text="Guarda de Hoja de Espada Vampírica"/>
+<string id="" text="Pomo de Espada Vampírica"/>
+<string id="" text="Hoja de Espada Vampírica"/>
+<string id="" text="Empuñadura de Hoja de Espada Vampírica"/>
+<string id="" text="Guarda de Hoja de Espada Vampírica"/>
+<string id="" text="Pomo de Espada Vampírica"/>
+<string id="" text="Hoja de Espada Vampírica"/>
+<string id="" text="Empuñadura de Hoja de Espada Vampírica"/>
+<string id="" text="Guarda de Hoja de Espada Vampírica"/>
+<string id="" text="Pomo de Espada Vampírica"/>
+<string id="" text="Hoja de Espada del Caos"/>
+<string id="" text="Empuñadura de Espada del Caos"/>
+<string id="" text="Guarda de Espada del Caos"/>
+<string id="" text="Pomo de Espada del Caos"/>
+<string id="" text="Hoja de Espada de Bretonnia"/>
+<string id="" text="Empuñadura de Espada de Bretonnia"/>
+<string id="" text="Guarda de Espada de Bretonnia"/>
+<string id="" text="Pomo de Espada de Bretonnia"/>
+<string id="" text="Hoja de Espada de Bretonnia"/>
+<string id="" text="Empuñadura de Espada de Bretonnia"/>
+<string id="" text="Guarda de Espada de Bretonnia"/>
+<string id="" text="Pomo de Espada de Bretonnia"/>
+<string id="" text="Pomo de Espada de Señor de los Claros"/>
+<string id="" text="Empuñadura de Espada de Señor de los Claros"/>
+<string id="" text="Hoja de Espada de Señor de los Claros"/>
+<string id="" text="Hoja de Espada de Elfo del Bosque"/>
+<string id="" text="Hoja de Espada de Elfo del Bosque"/>
+<string id="" text="Empuñadura de Espada de Elfo del Bosque"/>
+<string id="" text="Empuñadura de Espada de Elfo del Bosque"/>
+<string id="" text="Guarda de Espada de Elfo del Bosque"/>
+<string id="" text="Hoja de Espada Druchii"/>
+<string id="" text="Empuñadura de Espada Druchii"/>
+<string id="" text="Guarda de Espada Druchii"/>
+<string id="" text="Pomo de Espada Druchii"/>
+<string id="" text="Hoja de Espada Ungor"/>
+<string id="" text="Empuñadura de Hoja de Espada Ungor"/>
+<string id="" text="Guarda de Hoja de Espada Ungor"/>
+<string id="" text="Hoja de Espada Ungor"/>
+<string id="" text="Empuñadura de Hoja de Espada Ungor"/>
+<string id="" text="Guarda de Hoja de Espada Ungor"/>
+<string id="" text="Hoja de Espada Ungor"/>
+<string id="" text="Empuñadura de Hoja de Espada Ungor"/>
+<string id="" text="Guarda de Hoja de Espada Ungor"/>
+<string id="" text="Hoja de Mandoble Imperial"/>
+<string id="" text="Empuñadura de Mandoble Imperial"/>
+<string id="" text="Guarda de Mandoble Imperial"/>
+<string id="" text="Pomo de Mandoble Imperial"/>
+<string id="" text="Hoja de Mandoble Imperial"/>
+<string id="" text="Empuñadura de Mandoble Imperial"/>
+<string id="" text="Guarda de Mandoble Imperial"/>
+<string id="" text="Pomo de Mandoble Imperial"/>
+<string id="" text="Hoja de Gran Espada de la Guardia de los Túmulos"/>
+<string id="" text="Empuñadura de Gran Espada de la Guardia de los Túmulos"/>
+<string id="" text="Guarda de Gran Espada de la Guardia de los Túmulos"/>
+<string id="" text="Pomo de Gran Espada de la Guardia de los Túmulos"/>
+<string id="" text="Hoja de Gran Espada Vampírica"/>
+<string id="" text="Empuñadura de Gran Espada Vampírica"/>
+<string id="" text="Guarda de Gran Espada Vampírica"/>
+<string id="" text="Pomo de Gran Espada Vampírica"/>
+<string id="" text="Hoja de Espada de Lyonesse"/>
+<string id="" text="Empuñadura de Espada de Lyonesse"/>
+<string id="" text="Guarda de Espada de Lyonesse"/>
+<string id="" text="Pomo de Espada de Lyonesse"/>
+<string id="" text="Hoja de Gran Espada de Bretonnia"/>
+<string id="" text="Empuñadura de Gran Espada de Bretonnia"/>
+<string id="" text="Guarda de Gran Espada de Bretonnia"/>
+<string id="" text="Pomo de Gran Espada de Bretonnia"/>
+<string id="" text="Hoja de Gran Espada de Escudero Bretonniano"/>
+<string id="" text="Empuñadura de Gran Espada de Escudero Bretonniano"/>
+<string id="" text="Guarda de Gran Espada de Escudero Bretonniano"/>
+<string id="" text="Pomo de Gran Espada de Escudero Bretonniano"/>
+<string id="" text="Hoja de Gran Espada de Escudero Bretonniano"/>
+<string id="" text="Empuñadura de Gran Espada de Escudero Bretonniano"/>
+<string id="" text="Guarda de Gran Espada de Escudero Bretonniano"/>
+<string id="" text="Pomo de Gran Espada de Escudero Bretonniano"/>
+<string id="" text="Hoja de Gran Espada de Escudero Bretonniano"/>
+<string id="" text="Empuñadura de Gran Espada de Escudero Bretonniano"/>
+<string id="" text="Guarda de Gran Espada de Escudero Bretonniano"/>
+<string id="" text="Pomo de Gran Espada de Escudero Bretonniano"/>
+<string id="" text="Hoja de Gran Espada Asur"/>
+<string id="" text="Empuñadura de Gran Espada Asur"/>
+<string id="" text="Guarda de Gran Espada Asur"/>
+<string id="" text="Pomo de Gran Espada dAsur"/>
+<string id="" text="Hoja de Gran Espada de Elfo del Bosque"/>
+<string id="" text="Empuñadura de Gran Espada de Elfo del Bosque"/>
+<string id="" text="Guarda de Gran Espada de Elfo del Bosque"/>
+<string id="" text="Pomo de Gran Espada de Elfo del Bosque"/>
+<string id="" text="Ropera del Imperio"/>
+<string id="" text="Empuñadura de Ropera"/>
+<string id="" text="Guarda de Ropera"/>
+<string id="" text="Pomo de Ropera"/>
+<string id="" text="Ropera del Imperio"/>
+<string id="" text="Empuñadura de Ropera"/>
+<string id="" text="Pomo de Ropera"/>
+<string id="" text="Ropera del Imperio"/>
+<string id="" text="Empuñadura de Ropera"/>
+<string id="" text="Guarda de Ropera"/>
+<string id="" text="Pomo de Ropera"/>
+<string id="" text="Ropera del Imperio"/>
+<string id="" text="Empuñadura de Ropera"/>
+<string id="" text="Guarda de Ropera"/>
+<string id="" text="Pomo de Ropera"/>
+<string id="" text="Ropera del Imperio"/>
+<string id="" text="Empuñadura de Ropera"/>
+<string id="" text="Guarda de Ropera"/>
+<string id="" text="Pomo de Ropera"/>
+<string id="" text="Cabeza de Hacha Ungor"/>
+<string id="" text="Mango de Hacha Ungor"/>
+<string id="" text="Cabeza de Hacha Ungor"/>
+<string id="" text="Mango de Hacha Ungor"/>
+<string id="" text="Cabeza de Hacha Ungor"/>
+<string id="" text="Mango de Hacha Ungor"/>
+<string id="" text="Cabeza de Hacha Ungor"/>
+<string id="" text="Mango de Hacha Ungor"/>
+<string id="" text="Mango de Hacha Pétrea de Taal"/>
+<string id="" text="Cabeza de Archa de la Guardia de los Túmulos"/>
+<string id="" text="Mango de Archa de la Guardia de los Túmulos"/>
+<string id="" text="Cabeza de Gran Hacha Vampírica"/>
+<string id="" text="Mango de Gran Hacha Vampírica"/>
+<string id="" text="Cabeza de Gran Hacha Vampírica"/>
+<string id="" text="Mango de Gran Hacha Vampírica"/>
+<string id="" text="Cabeza de Gran Hacha Negra"/>
+<string id="" text="Mango de Gran Hacha Vampírica"/>
+<string id="" text="Cabeza de Hacha de los Elfos del Bosque"/>
+<string id="" text="Mango de Hacha de los Elfos del Bosque"/>
+<string id="" text="Cabeza de Hacha del León de Cracia"/>
+<string id="" text="Mango del León de Cracia"/>
+<string id="" text="Cabeza de Gran Hacha de Minotauro"/>
+<string id="" text="Mango de Gran Hacha de Minotauro"/>
+<string id="" text="Cabeza de Gran Hacha del Caos"/>
+<string id="" text="Mango de Gran Hacha del Caos"/>
+<string id="" text="Cabeza de Gran Hacha de Nurgle"/>
+<string id="" text="Mango de Gran Hacha de Nurgle"/>
+<string id="" text="Maza y Cadena del Cometa de 2 Colas"/>
+<string id="" text="Mango de Maza del Cometa de 2 Colas"/>
+<string id="" text="Cabeza de Martillo de Sacerdote Guerrero"/>
+<string id="" text="Mango de Martillo de Sacerdote Guerrero"/>
+<string id="" text="Cabeza de Martillo de Sacerdote Guerrero"/>
+<string id="" text="Mango de Martillo de Sacerdote Guerrero"/>
+<string id="" text="Cabeza de Martillo de Sacerdote Guerrero"/>
+<string id="" text="Mango de Martillo de Sacerdote Guerrero"/>
+<string id="" text="Cabeza de Martillo de Sacerdote Guerrero"/>
+<string id="" text="Mango de Martillo de Sacerdote Guerrero"/>
+<string id="" text="Mango de Maza de Flagelante"/>
+<string id="" text="Cabeza de Maza de Flagelante"/>
+<string id="" text="Mango de Maza de Flagelante"/>
+<string id="" text="Cabeza de Maza de Flagelante"/>
+<string id="" text="Cabeza de Maza de Flagelante"/>
+<string id="" text="Cabeza del Martillo de Luthor Huss"/>
+<string id="" text="Mango de Martillo de Luthor Huss"/>
+<string id="" text="Cabeza de Martillo Imperial"/>
+<string id="" text="Mango de Martillo Imperial"/>
+<string id="" text="Cabeza de Martillo Imperial"/>
+<string id="" text="Mango de Martillo Imperial"/>
+<string id="" text="Cabeza de Maza de Guerrero Esqueleto"/>
+<string id="" text="Mango de Maza de Guerrero Esqueleto"/>
+<string id="" text="Cabeza de Maza de Guerrero Esqueleto"/>
+<string id="" text="Mango de Maza de Guerrero Esqueleto"/>
+<string id="" text="Cabeza de Maza de Guerrero Esqueleto"/>
+<string id="" text="Mango de Maza de Guerrero Esqueleto"/>
+<string id="" text="Cabeza de Maza de Guerrero Esqueleto"/>
+<string id="" text="Mango de Maza de Guerrero Esqueleto"/>
+<string id="" text="Cabeza de Martillo de Nurgle"/>
+<string id="" text="Mango de Martillo de Nurgle"/>
+<string id="" text="Cabeza de de Ghal Maraz"/>
+<string id="" text="Mango de Ghal Maraz"/>
+<string id="" text="Cabeza de Martillo Plateado Sagrado"/>
+<string id="" text="Mango de Martillo Plateado Sagrado"/>
+<string id="" text="Cabeza de Maza de Flagelante"/>
+<string id="" text="Mango de Maza de Flagelante"/>
+<string id="" text="Cabeza de Martillo de Sacerdote Guerrero"/>
+<string id="" text="Mango de Martillo de Sacerdote Guerrero"/>
+<string id="" text="Cabeza de Martillo de Sacerdote Guerrero"/>
+<string id="" text="Mango de Martillo de Sacerdote Guerrero"/>
+<string id="" text="Cabeza de Martillo de Sacerdote Guerrero"/>
+<string id="" text="Mango de Martillo de Sacerdote Guerrero"/>
+<string id="" text="Cabeza de Gran Maza Vampírica"/>
+<string id="" text="Mango de Gran Maza Vampírica"/>
+<string id="" text="Cabeza de Gran Martillo de Sacerdote Guerrero"/>
+<string id="" text="Mango de Gran Martillo de Sacerdote Guerrero"/>
+<string id="" text="Cabeza de Gran Martillo de Sacerdote Guerrero"/>
+<string id="" text="Mango de Gran Martillo de Sacerdote Guerrero"/>
+<string id="" text="Cabeza de Gran Martillo de Sacerdote Guerrero"/>
+<string id="" text="Mango de Gran Martillo de Sacerdote Guerrero"/>
+<string id="" text="Cabeza de Lanza Imperial"/>
+<string id="" text="Cabeza de Lanza Imperial"/>
+<string id="" text="Cabeza de Lanza Imperial"/>
+<string id="" text="Cabeza de Lanza Imperial"/>
+<string id="" text="Cabeza de Lanza Imperial"/>
+<string id="" text="Cabeza de Lanza vieja"/>
+<string id="" text="Asta de Lanza vieja"/>
+<string id="" text="Guarda de Lanza vieja"/>
+<string id="" text="Pomo de Lanza viejo"/>
+<string id="" text="Tridente Bretonniano"/>
+<string id="" text="Asta de Tridente Bretonniano"/>
+<string id="" text="Cabeza de Lanza Bretonniana"/>
+<string id="" text="Asta de Lanza Bretonniana"/>
+<string id="" text="Pomo de Lanza Bretonniana"/>
+<string id="" text="Cabeza de Lanza Bretonniana"/>
+<string id="" text="Asta de Lanza Bretonniana"/>
+<string id="" text="Pomo de Lanza Bretonniana"/>
+<string id="" text="Cabeza de Lanza Bretonniana"/>
+<string id="" text="Asta de Lanza Bretonniana"/>
+<string id="" text="Pomo de Lanza Bretonniana"/>
+<string id="" text="Cabeza de Lanza del Bosque Salvaje"/>
+<string id="" text="Asta de Lanza del Bosque Salvaje"/>
+<string id="" text="Cabeza de Lanza de Elfo del Bosque"/>
+<string id="" text="Cabeza de Lanza de Elfo del Bosque"/>
+<string id="" text="Cabeza de Lanza de Elfo del Bosque"/>
+<string id="" text="Cabeza de Lanza de Elfo del Bosque"/>
+<string id="" text="Asta de Lanza de Elfo del Bosque"/>
+<string id="" text="Asta de Lanza Asur"/>
+<string id="" text="Asta de Lanza Druchii"/>
+<string id="" text="Cabeza de Lanza Druchii"/>
+<string id="" text="Cabeza de Lanza Druchii"/>
+<string id="" text="Cabeza de Lanza Ungor"/>
+<string id="" text="Asta de Lanza Ungor"/>
+<string id="" text="Cabeza de Lanza Ungor"/>
+<string id="" text="Asta de Lanza Ungor"/>
+<string id="" text="Cabeza de Lanza Ungor"/>
+<string id="" text="Asta de Lanza Ungor"/>
+<string id="" text="Cabeza de Lanza Ungor"/>
+<string id="" text="Asta de Lanza Ungor"/>
+<string id="" text="Cabeza de Alabarda Imperial"/>
+<string id="" text="Asta de Alabarda Imperial"/>
+<string id="" text="Cabeza de Alabarda Imperial"/>
+<string id="" text="Asta de Alabarda Imperial"/>
+<string id="" text="Cabeza de Alabarda Imperial"/>
+<string id="" text="Asta de Alabarda Imperial"/>
+<string id="" text="Cabeza de Alabarda Imperial"/>
+<string id="" text="Asta de Alabarda Imperial"/>
+<string id="" text="Cabeza de Alabarda Imperial"/>
+<string id="" text="Asta de Alabarda Imperial"/>
+<string id="" text="Cabeza de Alabarda Imperial"/>
+<string id="" text="Alabarda vieja"/>
+<string id="" text="Alabarda vieja"/>
+<string id="" text="Alabarda vieja"/>
+<string id="" text="Cabeza de Volgue Bretonniana"/>
+<string id="" text="Asta de Volgue Bretonniana"/>
+<string id="" text="Cabeza de Volgue Bretonniana"/>
+<string id="" text="Asta de Volgue Bretonniana"/>
+<string id="" text="Cabeza de Volgue Bretonniana"/>
+<string id="" text="Asta de Volgue Bretonniana"/>
+<string id="" text="Cabeza de Volgue Bretonniana"/>
+<string id="" text="Asta de Volgue Bretonniana"/>
+<string id="" text="Cabeza de Volgue Bretonniana"/>
+<string id="" text="Cabeza de Volgue Bretonniana"/>
+<string id="" text="Asta de Alabarda Asur"/>
+<string id="" text="Cabeza de Alabarda Asur"/>
+<string id="" text="Orbe Mágico"/>
+<string id="" text="Cabeza de Bastón de Hechicero Dragón Exiliado"/>
+<string id="" text="Báculo de Hechicero Dragón Exiliado"/>
+<string id="" text="Cabeza de Bastón de Hechicero Brillante"/>
+<string id="" text="Báculo de Hechicero Brillante"/>
+<string id="" text="Cabeza de Bastón de Hechicero Brillante"/>
+<string id="" text="Báculo de Hechicero Brillante"/>
+<string id="" text="Cabeza de Bastón de Volkmar el Sombrío"/>
+<string id="" text="Báculo de Volkmar el Sombrío"/>
+<string id="" text="Cabeza de Bastón de Baltasar Gelt"/>
+<string id="" text="Báculo de Baltasar Gelt"/>
+<string id="" text="Cabeza de Bastón de Hechicero Luminoso"/>
+<string id="" text="Báculo de Hechicero Luminoso"/>
+<string id="" text="Cabeza de Bastón de Hechicero Luminoso"/>
+<string id="" text="Báculo de Hechicero Luminoso"/>
+<string id="" text="Cabeza de Bastón de Hechicero Luminoso"/>
+<string id="" text="Báculo de Hechicero Luminoso"/>
+<string id="" text="Cabeza de Bastón de Hechicero Celestial"/>
+<string id="" text="Báculo de Hechicero Celestial"/>
+<string id="" text="Cabeza de Nigromante"/>
+<string id="" text="Báculo de Nigromante"/>
+<string id="" text="Cabeza de Bastón de Profetisa"/>
+<string id="" text="Báculo de Profetisa"/>
+<string id="" text="Empuñadura de Lanza de Justa"/>
+<string id="" text="Empuñadura de Lanza de Justa"/>
+<string id="" text="Empuñadura de Lanza de Hierro"/>
+<string id="" text="Empuñadura de Lanza de Hierro"/>
+<string id="" text="Guarda de Lanza de Justa Pesada"/>
+<string id="" text="Guarda de Lanza de Justa pintada"/>
+<string id="" text="Guarda de Lanza de Justa pintada"/>
+<string id="" text="Guarda de Lanza de Justa pintada"/>
+<string id="" text="Guarda de Lanza de Justa pintada"/>
+<string id="" text="Guarda de Lanza de Justa pintada"/>
+<string id="" text="Guarda de Lanza de Justa pintada"/>
+<string id="" text="Guarda de Lanza"/>
+<string id="" text="Pomo de Lanza de Justa"/>
+<string id="" text="Pomo de Lanza de Justa Pesada"/>
+<string id="" text="Pomo de Lanza de Hierro"/>
+<string id="" text="Cabeza de Lanza de Hierro"/>
+<string id="" text="Cabeza de Lanza"/>
+<string id="" text="Empuñadura de Lanza de la Guardia del Reik"/>
+<string id="" text="Guarda de Lanza de la Guardia del Reik"/>
+<string id="" text="Pomo de Lanza de la Guardia del Reik"/>
+<string id="" text="Cabeza de Lanza de la Guardia del Reik"/>
+<string id="" text="Empuñadura de Lanza de la Guardia del Reik"/>
+<string id="" text="Guarda de Lanza de la Guardia del Reik"/>
+<string id="" text="Pomo de Lanza de la Guardia del Reik"/>
+<string id="" text="Cabeza de Lanza de la Guardia del Reik"/>
+<string id="" text="Lanza de Caballero Negro"/>
+<string id="" text="Empuñadura de Lanza de Caballero Negro"/>
+<string id="" text="Guarda de Lanza de Caballero Negro"/>
+<string id="" text="Pomo de Lanza de Caballero Negro"/>
+<string id="" text="Empuñadura de Lanza del Caos"/>
+<string id="" text="Guarda de Lanza del Caos"/>
+<string id="" text="Pomo de Lanza del Caos"/>
+<string id="" text="Cabeza de Lanza del Caos"/>
+<string id="" text="Empuñadura de Lanza de Justa Bretonniana"/>
+<string id="" text="Guarda de Lanza de Justa Bretonniana"/>
+<string id="" text="Pomo de Lanza de Justa Bretonniana"/>
+<string id="" text="Cabeza de Lanza de Justa Bretonniana"/>
+<string id="" text="Empuñadura de Lanza de Justa Bretonniana"/>
+<string id="" text="Guarda de Lanza de Justa Bretonniana"/>
+<string id="" text="Pomo de Lanza de Justa Bretonniana"/>
+<string id="" text="Cabeza de Lanza de Justa Bretonniana"/>
+<string id="" text="Empuñadura de Lanza de Justa Bretonniana"/>
+<string id="" text="Guarda de Lanza de Justa Bretonniana"/>
+<string id="" text="Pomo de Lanza de Justa Bretonniana"/>
+<string id="" text="Cabeza de Lanza de Justa Bretonniana"/>
+<string id="" text="Empuñadura de Lanza de Justa Bretonniana"/>
+<string id="" text="Guarda de Lanza de Justa Bretonniana"/>
+<string id="" text="Pomo de Lanza de Justa Bretonniana"/>
+<string id="" text="Cabeza de Lanza de Justa Bretonniana"/>
+<string id="" text="Cabeza de Guadaña de Morr"/>
+<string id="" text="Mango de Guadaña de Morr"/>
+<string id="" text="Cabeza de Guadaña de Morr"/>
+<string id="" text="Mango de Guadaña de Morr"/>
+<string id="" text="Cabeza de Guadaña de Morr"/>
+<string id="" text="Mango de Guadaña de Morr"/>
+<string id="" text="Cabeza de Guadaña de Cuervo"/>
+<string id="" text="Mango de Guadaña de Cuervo"/>
+<string id="" text="Cabeza de Guadaña Vampírica"/>
+<string id="" text="Mango de Guadaña Vampírica"/>
+<string id="" text="Cabeza de Guadaña de Madera"/>
+<string id="" text="Mango de Guadaña de Madera"/>
+<string id="" text="Puños de Monstruo - Guarda"/>
+<string id="" text="Puños de Monstruo - Hoja"/>
+      </strings>
+</base>
