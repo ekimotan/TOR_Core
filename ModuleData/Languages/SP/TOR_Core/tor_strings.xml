@@ -5,8 +5,8 @@
   </tags>
   <strings>
 
-<string id="" text="Has pasado la mayor parte de tu vida venerando a una de las deidades del Panteón Asrai"/>
-<string id="" text="Elige tu camino"/>
+<string id="str_tor_cc_growth.battania" text="Has pasado la mayor parte de tu vida venerando a una de las deidades del Panteón Asrai"/>
+<string id="str_tor_cc_profession.battania" text="Elige tu camino"/>
 <string id="quest_tor_engineer_rogueengineerparty_str" text="Grupo de Bandidos de {ROGUE_ENGINEER_NAME}"/>
 <string id="quest_tor_engineer_rogueengineerfirstTime_str" text="Tienes el aspecto de alguien que nunca ha visto una sola mota de pólvora negra ni de grasa. ¿Te has perdido?"/>
 <string id="quest_tor_engineer_cultistdone_str" text="Ah, has vuelto. ¿Alguna novedad?"/>
@@ -71,7 +71,7 @@
 <string id="quest_tor_engineer_cultistEncounterPlayer1_str" text="Depongan sus armas y tal vez les perdone la vida."/>
 <string id="quest_tor_engineer_cultistEncounterPlayer2_str" text="¡Con armas o sin ellas, los mataremos a todos y recuperaremos lo robado!"/>
 <string id="quest_tor_engineer_cultistEncounterAnswer_str" text="¡No nos engañarás! ¡Servirán para un propósito mayor! ¡No te las llevarás!"/>
-<string id="quest_tor_engineer_rogueEngineerEncounter_str" text="¿Entonces ese viejo tonto te envió a buscarme? ¿Cómo me descubrió? No importa, no te interpondrás en el camino de mis creaciones. ¡Morirás aquí!"/>
+<string id="quest_tor_engineer_rogueEngineerEncounter_str" text="¿Ese viejo tonto te envió a buscarme? ¿Cómo me descubrió? No importa, no te interpondrás en el camino de mis creaciones. ¡Morirás aquí!"/>
 <string id="quest_tor_engineer_rogueEngineerEncounterPlayerAfterBattleAnswer_str" text="Se acabaron tus chapuzas...para siempre."/>
 <string id="culture_rich_name_khuzait_str" text="Condes Vampiro"/>
 <string id="culture_rich_name_empire_str" text="El Imperio"/>
@@ -653,7 +653,7 @@
 <string id="backstory_c_tor_wanderer_vampire_3_str" text="Y créame, si estás interesado, mis servicios pueden llegar a ser muy valiosos." />
 <string id="response_1_tor_wanderer_vampire_3_str" text="Interesante..."/>
 <string id="response_2_tor_wanderer_vampire_3_str" text="Supongo." />
-<string id="backstory_d_tor_wanderer_vampire_3_str" text="Bueno, ¿qué dices entonces?." />
+<string id="backstory_d_tor_wanderer_vampire_3_str" text="Bueno, ¿qué dices?." />
 <string id="generic_backstory_tor_wanderer_vampire_3_str" text="Soy una condesa lahmia, y no sólo puedo defenderme en la batalla, sino que también te sería de gran utilidad durante los viajes." />
 <string id="prebackstory_tor_wanderer_bretonnia_0_str" text="No tengo reparos en hablar de mi vida a extraños." />
 <string id="backstory_a_tor_wanderer_bretonnia_0_str" text="Nací en una familia noble de Carcasonne, mi padre fue Caballero antes que yo." />
@@ -967,13 +967,13 @@ El diálogo se reiniciará si pulsas en rechazar."/>
 <string id="str_tor_career_choice_basic_damage" text="Tus tropas heridas se recuperan antes ({EFFECT_VALUE})"/>
 <string id="str_tor_career_choice_basic_damage" text="Reduce el coste de mejora de las tropas en {EFFECT_VALUE}%."/>
 <string id="str_tor_career_choice_basic_damage" text="Aumenta tu munición en {EFFECT_VALUE}."/>
-<string id="inky_battlefield_strid_title" text="Signo del Pariente"/>
-<string id="inky_battlefield_strid_title" text="Signo del Bailarín Guerrero"/>
-<string id="inky_battlefield_strid_title" text="Signo del Arbóreo"/>
-<string id="inky_battlefield_strid_title" text="Signo de Orion"/>
-<string id="inky_battlefield_strid_title" text="Signo de Ariel"/>
-<string id="inky_battlefield_strid_title" text="Signo de Durthu"/>
-<string id="inky_battlefield_strid_title" text="Signo del Errante"/>
+<string id="str_tor_treesymbol_title_kithbandsymbol" text="Signo del Clan"/>
+<string id="str_tor_treesymbol_title_wardancersymbol" text="Signo del Bailarín Guerrero"/>
+<string id="str_tor_treesymbol_title_treekinsymbol" text="Signo del Arbóreo"/>
+<string id="str_tor_treesymbol_title_orionsymbol" text="Signo de Orion"/>
+<string id="str_tor_treesymbol_title_arielsymbol" text="Signo de Ariel"/>
+<string id="str_tor_treesymbol_title_durthusymbol" text="Signo de Durthu"/>
+<string id="str_tor_treesymbol_title_wanderersymbol" text="Signo del Errante"/>
 <string id="str_tor_treesymbol_description_kithbandsymbol" text="Aumenta el tamaño de tu ejército en un 50%. Ganas un 25% menos de armonía y el mantenimiento de tus tropas aumenta en 15%."/>
 <string id="str_tor_treesymbol_description_wardancersymbol" text="El jugador y sus compañeros ganan un 25% extra de salud y curan sus heridas un 35% más rápido. Tus tropas recuperan salud un 25% más despacio y ganas un 25% menos de armonía."/>
 <string id="str_tor_treesymbol_description_treekinsymbol" text="El mantenimiento de Armonía de los Espíritus del Bosque se reduce a la mitad. El mantenimiento en oro de las unidades de élfos aumenta en un 15%."/>
@@ -1082,6 +1082,45 @@ has servido durante {ENLISTING_DURATION} días. Has luchado en {HIRELING_BATTLE_
 <string id="hirelingactivity2_greylord_str" text="Pronuncia discursos sobre los dragones de Caledor."/>
 <string id="hirelingactivity3_greylord_str" text="Mantén la etiqueta de los Asur"/>
 <string id="hirelingactivity4_greylord_str" text="Experimenta con sustancias alquímicas"/>
+<string id="inky_continue_str" text="Continuar..."/>
+<string id="inky_end_str" text="Fin."/>
+<string id="inky_party_skill_check_template_str" text="({inky_skill_check_skill_name} probabilidad de éxito {inky_Party_skill_CheckChance}%)"/>
+<string id="inky_player_skill_check_template_str" text="({inky_skill_check_skill_name} probabilidad de éxito {inky_Player_skill_CheckChance}%)"/>
+<string id="inky_player_attribute_check_template_str" text="({inky_attribute_check_attribute_name} probabilidad de éxito {inky_Player_attribute_CheckChance}%)"/>
+<string id="inky_party_attribute_check_template_str" text="({inky_attribute_check_attribute_name} probabilidad de éxito {inky_Party_attribute_CheckChance}%)"/>
+<string id="inky_battlefield_strid_title" text="Campo de Batalla"/>
+<string id="inky_battlefield_start1_str" text="Un aura inquietante se cierne sobre el desolado campo de batalla que tienes ante ti, donde el valor del Imperio chocó con el poder oscuro de los Condes Vampiro. Te encuentras en el campo de batalla, donde el suelo está lleno de restos de la batalla: espadas rotas, escudos destrozados y cuerpos caídos de soldados y horrores no muertos. Un silencio impregna el aire, interrumpido sólo por los gritos distantes de las aves carroñeras. Puedes sentir débilmente el peso de la magia nigromántica contaminando el viento."/>
+<string id="inky_battlefield_start2_str" text="Los caídos yacen en un reposo solemne, sus vidas y destinos entrelazados para siempre en este lugar trágico. Cuando pisas la tierra empapada de sangre, el peso de la historia y el sacrificio caen sobre ti."/>
+<string id="inky_battlefield_start3_str" text="¿Qué harás en medio de esta conmovedora escena?"/>
+<string id="inky_battlefield_question1_1_str" text="Buscar supervivientes entre los caídos."/>
+<string id="" text=""/>
+<string id="" text=""/>
+<string id="" text=""/>
+<string id="inky_battlefield_search_for_survivors_1_str" text="Con una mezcla de esperanza y temor, navegas por la sombría escena de los soldados caídos, en busca de cualquier chispa de vida en medio del mar de la muerte. Tu determinación te lleva a un soldado herido, cuya respiración es dificultosa y débil. Arrodillándote a su lado, le ofreces ayuda y consuelo, atendiendo sus heridas lo mejor que puedes."/>
+<string id="inky_battlefield_search_for_survivors_2_str" text="Sus ojos se abren y la gratitud brilla en su interior. En voz baja, expresa su agradecimiento y promete devolverte tu amabilidad."/>
+<string id="" text=""/>
+<string id="" text=""/>
+<string id="inky_battlefield_use_ghyranmagic_1_str" text="Aprovechando la magia de Ghyran, tu mago invoca las energías curativas de la naturaleza misma. El aire brilla con energía verde mientras el mago canaliza el hechizo y lo guía hacia el soldado herido. Las heridas del soldado comienzan a sanar, su respiración se estabiliza y el color regresa a sus mejillas."/>
+<string id="inky_battlefield_use_ghyranmagic_2_str" text="Con una sonrisa débil pero agradecida, el superviviente reconoce tu milagrosa intervención. Expresa su más sincero agradecimiento y promete unirse a sus filas."/>
+<string id="" text=""/>
+<string id="inky_battlefield_help_but_die_1_str" text="A pesar de sus mejores esfuerzos, la condición del soldado se deteriora rápidamente. Su respiración dificultosa se vuelve más superficial y su mirada pierde el foco. A pesar de tus valientes intentos, la vida del soldado se desvanece, dejando tras de sí un aura de melancolía y una inquebrantable sensación de inutilidad."/>
+<string id="inky_battlefield_help_but_die_2_str" text="Con el corazón apesadumbrado, inclinas la cabeza en señal de reverencia, honrando la valiente lucha del soldado caído."/>
+<string id="" text=""/>
+<string id="inky_battlefield_pay_respect_1_str" text="Inclinando la cabeza en solemne reverencia, ofreces tus respetos a los soldados caídos que dieron sus vidas en este campo de batalla embrujado. Una sensación de camaradería y propósito compartido se apodera de tu grupo, un conmovedor recordatorio de la lucha duradera entre Morr y los no muertos."/>
+<string id="inky_battlefield_pay_respect_2_str" text="Una vez completado tu tributo silencioso, te pones en pie con determinación, decidido a vencer la oscuridad que amenaza el reino."/>
+<string id="inky_battlefield_continue_on_1_str" text="Eliges dejar atrás el campo de batalla y continuar tu viaje."/>
+<string id="inky_battlefield_continue_on_2_str" text="A medida que te alejas, el paisaje parece exhalar un suspiro de tristeza, siendo siempre testigo de las pruebas de aquellos que se atrevieron a enfrentarse a las mareas de la oscuridad."/>
+<string id="" text=""/>
+<string id="" text=""/>
+<string id="" text=""/>
+<string id="" text=""/>
+<string id="" text=""/>
+<string id="" text=""/>
+<string id="" text=""/>
+<string id="" text=""/>
+<string id="" text=""/>
+<string id="" text=""/>
+<string id="" text=""/>
 <string id="inky_Meadow_is_night_true_str" text="Una luz lunar plateada"/>
 <string id="inky_Meadow_is_night_false_str" text="Una luz solar dorada"/>
 <string id="inky_IsNight" text="se filtra a través de las copas de los árboles, bañando la pradera con calidez. Un suave aroma de flores en flor perfuma el aire. Los pájaros dan una serenata con sus melodías, llenando el claro con una sinfonía que se siente como un bálsamo para el espíritu cansado."/>

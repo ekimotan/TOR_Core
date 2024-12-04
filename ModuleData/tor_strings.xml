@@ -1484,8 +1484,8 @@
 
   <!-- Inky translation related.  Do NOT add texts inside quotation marks!-->
   <!-- every inky story starts with "inky: "+ ID of the file name. While the Variation accounts for the specific text block -->
-  <string id="inky_continue" text="{inky_continue_str}" />
-  <string id="inky_end" text="{inky_end_str}" />
+  <string id="inky_continue" text="{inky_continue_str}Continue..." />
+  <string id="inky_end" text="{inky_end_str}End." />
 
 
   <!--Ink !-->
@@ -1499,25 +1499,25 @@
 
 
   <!--Battlefield !-->
-  <string id="inky_Battlefield.Title" text="{=inky_battlefield_strid_title}" />
-  <string id="inky_Battlefield.STR_Start1" text="{=inky_battlefield_start1_str}" />
-  <string id="inky_Battlefield.STR_Start2" text="{=inky_battlefield_start1_str}" />
-  <string id="inky_Battlefield.STR_Start3" text="{=inky_battlefield_start1_str}" />
+  <string id="inky_Battlefield.Title" text="{=inky_battlefield_strid_title}Battlefield" />
+  <string id="inky_Battlefield.STR_Start1" text="{=inky_battlefield_start1_str}A haunting aura hangs over the desolate battlefield before you, where the Empire's valor clashed with the dark might of the Vampire Counts. You encounter a battlefield, where the ground is littered with the remnants of war – broken blades, shattered shields, and the fallen bodies of both soldiers and undead horrors. A hush pervades the air, punctuated only by the distant cries of carrion birds. You can faintly feel the weight of necromantic magic tainting the winds." />
+  <string id="inky_Battlefield.STR_Start2" text="{=inky_battlefield_start2_str}The fallen lie in solemn repose, their lives and fates forever intertwined in the tragedy of this place. As you step onto the blood-soaked earth, the weight of history and sacrifice bears down upon you." />
+  <string id="inky_Battlefield.STR_Start3" text="{=inky_battlefield_start3_str}What course of action will you choose amid this poignant scene?" />
 
-  <string id="inky_Battlefield.STR_SearchForSurvivors1" text="{=inky_battlefield_search_for_survivors_1_str}" />
-  <string id="inky_Battlefield.STR_SearchForSurvivors2" text="{=inky_battlefield_search_for_survivors_2_str}" />
+  <string id="inky_Battlefield.STR_SearchForSurvivors1" text="{=inky_battlefield_search_for_survivors_1_str}With a blend of hope and trepidation, you navigate the grim tableau of fallen soldiers, searching for any spark of life amidst the sea of death. Your determination leads you to a wounded soldier, his breathing labored and weak. Kneeling beside him, you offer aid and solace, tending to his injuries as best you can." />
+  <string id="inky_Battlefield.STR_SearchForSurvivors2" text="{=inky_battlefield_search_for_survivors_2_str}His eyes flutter open, and gratitude glimmers within them. In hushed tones, he expresses his thanks, vowing to repay your kindness." />
 
-  <string id="inky_Battlefield.STR_UseGhyranMagic1" text="{=inky_battlefield_use_ghyranmagic_1_str}" />
-  <string id="inky_Battlefield.STR_UseGhyranMagic2" text="{=inky_battlefield_use_ghyranmagic_2_str}" />
+  <string id="inky_Battlefield.STR_UseGhyranMagic1" text="{=inky_battlefield_use_ghyranmagic_1_str}Harnessing the magic of Ghyran, your wizard calls upon the life-giving energies of nature itself. The air shimmers with verdant energy as the wizard channels the spell, guiding it toward the wounded soldier. The soldier's injuries begin to mend, his breathing steadying and color returning to his cheeks." />
+  <string id="inky_Battlefield.STR_UseGhyranMagic2" text="{=inky_battlefield_use_ghyranmagic_2_str}With a weak but grateful smile, the survivor acknowledges your miraculous intervention. He expresses his heartfelt thanks and vows to join you ranks." />
 
-  <string id="inky_Battlefield.STR_HelpButDie1" text="{=inky_battlefield_help_but_die_1_str}" />
-  <string id="inky_Battlefield.STR_HelpButDie2" text="{=inky_battlefield_help_but_die_2_str}" />
+  <string id="inky_Battlefield.STR_HelpButDie1" text="{=inky_battlefield_help_but_die_1_str}Despite your best efforts, the soldier's condition deteriorates rapidly. His labored breaths grow shallower, and his gaze loses focus. Despite your valiant attempts, the soldier's life slips away, leaving behind an aura of melancholy and an unshakable sense of futility." />
+  <string id="inky_Battlefield.STR_HelpButDie2" text="{=inky_battlefield_help_but_die_2_str}With a heavy heart, you bow your head in reverence, honoring the fallen soldier's valiant struggle." />
 
-  <string id="inky_Battlefield.STR_PayRespects1" text="{=inky_battlefield_pay_respect_1_str}" />
-  <string id="inky_Battlefield.STR_PayRespects2" text="{=inky_battlefield_pay_respect_2_str}" />
+  <string id="inky_Battlefield.STR_PayRespects1" text="{=inky_battlefield_pay_respect_1_str}Bowing your head in solemn reverence, you offer your respects to the fallen soldiers who laid down their lives on this haunted battlefield. A sense of camaraderie and shared purpose settles over your party, a poignant reminder of the enduring struggle between Morr and undeath." />
+  <string id="inky_Battlefield.STR_PayRespects2" text="{=inky_battlefield_pay_respect_2_str}With your silent tribute complete, you gather your resolve, determined to vanquish the looming darkness that threatens the realm. " />
 
-  <string id="inky_Battlefield.STR_ContinueOn1" text="{=inky_battlefield_continue_on_1_str}" />
-  <string id="inky_Battlefield.STR_ContinueOn2" text="{=inky_battlefield_continue_on_2_str}" />
+  <string id="inky_Battlefield.STR_ContinueOn1" text="{=inky_battlefield_continue_on_1_str}You choose to leave the battlefield behind and continue on your journey." />
+  <string id="inky_Battlefield.STR_ContinueOn2" text="{=inky_battlefield_continue_on_2_str}As you walk away, the landscape seems to exhale a mournful sigh, forever bearing witness to the trials of those who dared to stand against the tides of darkness." />
 
   <!-- Cabin in the Wood!-->
   <string id="inky_CabinInTheWoodsLocked.DoorText_1" text="{=inky_cabin_in_the_woods_locked_door_text_weak_str} weak" />
