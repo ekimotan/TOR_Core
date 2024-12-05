@@ -113,7 +113,7 @@ public class KnightOldWorldCareerChoices(CareerObject id) : TORCareerChoicesBase
 
     protected override void InitializeKeyStones()
     {
-        _knightOldWorldRoot.Initialize(CareerID, "Adds a load for your next melee hit, adding 20% extra damage. For every point in one handed combat, your damage increases by 1% during the effect. The effect stays for a maximum of 15 seconds. For every keystone you get another use, enhancing your strike. Ability is charged by dealing melee damage.", null, true,
+        _knightOldWorldRoot.Initialize(CareerID, "Adds a load for your next melee hit, adding 20% extra damage. For every point in one handed combat, your damage increases by 1% during the effect. The effect stays for a maximum of 15 seconds. For every keystone you get another use, enhancing your strike. Ability is charged by dealing melee damage. Attacks below 15 damage neither cost charges or apply effects", null, true,
             ChoiceType.Keystone, new List<CareerChoiceObject.MutationObject>()
             {
                 new CareerChoiceObject.MutationObject()
@@ -175,7 +175,7 @@ public class KnightOldWorldCareerChoices(CareerObject id) : TORCareerChoicesBase
                 }
             }); 
         
-        _templarOrdersKeystone.Initialize(CareerID, "2 additional charges. Ability scales with Faith", "TemplarOrders", false,
+        _templarOrdersKeystone.Initialize(CareerID, "2 additional charges. Ability scales with Faith. Reduce base cooldown by 15 seconds", "TemplarOrders", false,
             ChoiceType.Keystone, new List<CareerChoiceObject.MutationObject>()
             {
                 new CareerChoiceObject.MutationObject()
@@ -185,6 +185,14 @@ public class KnightOldWorldCareerChoices(CareerObject id) : TORCareerChoicesBase
                     PropertyName = "ScaleVariable1",
                     PropertyValue = (choice, originalValue, agent) => 0.2f+ CareerHelper.AddSkillEffectToValue(choice, agent, new List<SkillObject>(){ TORSkills.Faith }, 0.004f),
                     MutationType = OperationType.Add
+                },
+                new CareerChoiceObject.MutationObject()
+                {
+                    MutationTargetType = typeof(AbilityTemplate),
+                    MutationTargetOriginalId = "KnightlyStrike",
+                    PropertyName = "CoolDown",
+                    PropertyValue = (choice, originalValue, agent) => (int) originalValue - 15,
+                    MutationType = OperationType.Replace
                 }
             }); 
         
@@ -253,7 +261,7 @@ public class KnightOldWorldCareerChoices(CareerObject id) : TORCareerChoicesBase
         _wrathAgainstChaosPassive1.Initialize(CareerID, "All units deal more damage against chaos.", "WrathAgainstChaos", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(PassiveEffectType.TroopDamage, new DamageProportionTuple(DamageType.Holy, 15), AttackTypeMask.All,
             (attacker, victim, mask) => victim.Character.Race != 0));
         _wrathAgainstChaosPassive2.Initialize(CareerID, "Gain 35% Magic Resistance.", "WrathAgainstChaos", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(PassiveEffectType.Resistance, new DamageProportionTuple(DamageType.Magical, 35), AttackTypeMask.Spell)); 
-        _wrathAgainstChaosPassive3.Initialize(CareerID, "Weapon swing speed increased by 15%.", "SwiftProcedure", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(15f, PassiveEffectType.SwingSpeed,true)); 
+        _wrathAgainstChaosPassive3.Initialize(CareerID, "Weapon swing speed increased by 15%.", "WrathAgainstChaos", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(15f, PassiveEffectType.SwingSpeed,true)); 
         _wrathAgainstChaosPassive4.Initialize(CareerID, "Extra 25% armor penetration of melee attacks.", "WrathAgainstChaos", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(-25, PassiveEffectType.ArmorPenetration, AttackTypeMask.Melee));
         
         _pathOfGloryPassive1.Initialize(CareerID, "Increases Hitpoints by 30.", "PathOfGlory", false, ChoiceType.Passive, null,new CareerChoiceObject.PassiveEffect(30, PassiveEffectType.Health)); 

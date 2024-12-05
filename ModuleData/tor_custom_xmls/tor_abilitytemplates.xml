@@ -4158,7 +4158,7 @@
 	<AbilityTemplate StringID="KnightlyStrike"
                      Name="{=apotheosis_label_str}Knightly Strike"
                      SpriteName="apoteosis_icon"
-                     CoolDown="80"
+                     CoolDown="60"
                      WindsOfMagicCost="8"
                      BaseMisCastChance="0.05"
                      Duration="12"

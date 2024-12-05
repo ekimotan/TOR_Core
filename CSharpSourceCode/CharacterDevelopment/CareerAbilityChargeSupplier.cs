@@ -467,7 +467,6 @@ namespace TOR_Core.CharacterDevelopment
             }
 
             return chargeValue;
-
         }
     }
 }

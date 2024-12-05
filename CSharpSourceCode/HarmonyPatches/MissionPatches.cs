@@ -60,8 +60,8 @@ namespace TOR_Core.HarmonyPatches
             ref HitParticleResultData hitParticleResultData,
             bool crushedThroughWithoutAgentCollision)
         {
-            int num1 = collisionData.InflictedDamage + collisionData.AbsorbedByArmor;
-            if (num1 < 1)
+            int inflictedDamage = collisionData.InflictedDamage + collisionData.AbsorbedByArmor;
+            if (inflictedDamage < 1)
             {
                 return;
             }
@@ -75,7 +75,7 @@ namespace TOR_Core.HarmonyPatches
             if (!model.ShouldCutThrough(collisionData, attacker, victim))
                 return;
             
-            float num2 = (float) collisionData.InflictedDamage / (float) num1;
+            float num2 = (float) collisionData.InflictedDamage / (float) inflictedDamage;
             inOutMomentumRemaining = num2 * 0.25f;
         }
 

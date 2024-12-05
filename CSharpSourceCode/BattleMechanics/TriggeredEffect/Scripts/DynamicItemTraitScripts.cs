@@ -159,12 +159,12 @@ namespace TOR_Core.BattleMechanics.TriggeredEffect.Scripts
 
             var additionalLoads = Hero.MainHero.GetAllCareerChoices().WhereQ(x=> x.Contains("Keystone")).Count();
 
-            if (Hero.MainHero.HasCareerChoice("SecularOrderKeystone"))
+            if (Hero.MainHero.HasCareerChoice("SecularOrdersKeystone"))
             {
                 additionalLoads += 2;
             }
             
-            if (Hero.MainHero.HasCareerChoice("TemplarOrderKeystone"))
+            if (Hero.MainHero.HasCareerChoice("TemplarOrdersKeystone"))
             {
                 additionalLoads += 2;
             }
@@ -185,7 +185,7 @@ namespace TOR_Core.BattleMechanics.TriggeredEffect.Scripts
             defaultTrait.AdditionalDamageTuple = additionalDamage;
             traitList.Add(defaultTrait);
 
-
+            triggeredByAgent.ApplyStatusEffect("knightly_strike",triggeredByAgent,30,false,false,true);
             for (int i = 0; i < additionalLoads; i++)
             {
                 triggeredByAgent.ApplyStatusEffect("knightly_strike",triggeredByAgent,30,false,false,true);

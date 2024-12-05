@@ -6,6 +6,7 @@ using TaleWorlds.MountAndBlade;
 using TOR_Core.BattleMechanics.StatusEffect;
 using TOR_Core.Extensions;
 using TOR_Core.Items;
+using TOR_Core.Utilities;
 
 namespace TOR_Core.BattleMechanics.TriggeredEffect.Scripts;
 
@@ -13,27 +14,26 @@ public class KnightlyStrikeOnHitScript: IWeaponHitScript
 {
     public void OnHit(Agent attackingAgent, Agent attackedAgent, int inflictedDamge, MissionWeapon missionWeapon)
     {
-        if(inflictedDamge<=0)
+        if(inflictedDamge<=15)
             return;
         
         var statusEffectComponent = attackingAgent.GetComponent<StatusEffectComponent>();
-        var list2 = statusEffectComponent.GetTemporaryAttributes(true);
 
-        List<string> knightlystrikes = new List<string>();
+        var knightlyStrikes = new List<string>();
 
         if (statusEffectComponent != null)
         {
             statusEffectComponent.RemoveStatusEffect("knightly_strike");
             var list = statusEffectComponent.GetTemporaryAttributes(true).Where(x => x == "KnightlyStrike").ToList();
-            knightlystrikes.AddRange(list);
+            knightlyStrikes.AddRange(list);
         }
-
+        
         if (Hero.MainHero.HasCareerChoice("WrathAgainstChaosKeystone"))
         {
             attackingAgent.ApplyStatusEffect("knightly_strike_ws",attackingAgent,5,true,false,false);
         }
-
-        if (knightlystrikes.Count > 0)
+        
+        if (knightlyStrikes.Count > 0)
         {
             return;
         }
