@@ -191,17 +191,14 @@ namespace TOR_Core.BattleMechanics.TriggeredEffect.Scripts
                 triggeredByAgent.ApplyStatusEffect("knightly_strike",triggeredByAgent,30,false,false,true);
             }
             
-
             foreach (Agent agent in triggeredAgents)
             {
                 var comp = agent.GetComponent<ItemTraitAgentComponent>();
                 if(comp != null)
                 {
-                
                     foreach (var trait in traitList)
                     {
                         comp.AddTraitToWieldedWeapon(trait, duration);
-  
                     }
                 }
             }

@@ -173,7 +173,6 @@ namespace TOR_Core.Items
                         _dynamicTraits.Remove(match);
                         UpdatePresets();
                     }
-     
                 }
             }
         }

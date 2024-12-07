@@ -69,16 +69,21 @@ namespace TOR_Core.Models
         public override ExplainedNumber GetDailyHealingForRegulars(MobileParty party, bool includeDescriptions = false)
         {
             var result = base.GetDailyHealingForRegulars(party, includeDescriptions);
+
+            if (party == MobileParty.MainParty)
+            {
+                AddCareerPassivesForTroopRegeneration(party, ref result);
+            }
+
+            if (party.HasBlessing("cult_of_sigmar"))
+            {
+                result.AddFactor(0.2f, GameTexts.FindText("tor_religion_blessing_name", "cult_of_sigmar"));
+            }
             
-            if (party == MobileParty.MainParty) AddCareerPassivesForTroopRegeneration(party, ref result);
-
-
-            if (party.HasBlessing("cult_of_sigmar")) result.AddFactor(0.2f, GameTexts.FindText("tor_religion_blessing_name", "cult_of_sigmar"));
             if (party.IsAffectedByCurse() && party.CurrentSettlement == null && party.BesiegedSettlement == null)
             {
                 result = new ExplainedNumber(0, true, new TextObject("{=!}Inside a cursed region"));
             }
-            
             
             if (Hero.MainHero.HasAttribute("WEWardancerSymbol"))
             {
@@ -134,8 +139,7 @@ namespace TOR_Core.Models
             if (party.LeaderHero.HasAnyCareer())
             {
                 CareerHelper.ApplyBasicCareerPassives(party.LeaderHero, ref explainedNumber, PassiveEffectType.TroopRegeneration, false);
-
-
+                
                 if (Hero.MainHero.HasCareer(TORCareers.KnightOldWorld))
                 {
                     var shallya = ReligionObject.All.FirstOrDefaultQ(x=> x.StringId == "cult_of_shallya");
@@ -163,8 +167,6 @@ namespace TOR_Core.Models
                         }
                         
                         explainedNumber.Add(bonus, new TextObject("Shallya Seal"));
-                
-                    
                     }
                 }
             }

@@ -97,10 +97,8 @@ public class KnightOldWorldCareerButtonBehavior(CareerObject career) : CareerBut
             var seal =  elem.Identifier as KnightPuritySeal;
             seals.Add(seal);
         }
-      
         
         var partyExtendedInfo = ExtendedInfoManager.Instance.GetPartyInfoFor(Hero.MainHero.PartyBelongedTo.StringId);
-
         var currentSeals = GetCurrentActiveSeals(_setCharacter);
         if (currentSeals!=null&& !currentSeals.IsEmpty())
         {
@@ -156,9 +154,7 @@ public class KnightOldWorldCareerButtonBehavior(CareerObject career) : CareerBut
         var list = new List<KnightPuritySeal>();
         list.AddRange(GetSecularSeals());
         list.AddRange(GetTemplarPuritySeals());
-
         return list;
-
     }
 
     private  List<KnightPuritySeal> GetSecularSeals()
@@ -174,8 +170,6 @@ public class KnightOldWorldCareerButtonBehavior(CareerObject career) : CareerBut
     {
         return new List<KnightPuritySeal>
         {
-
-            
             new("SigmarSeal1","apply_sigmar_seal_trait1","cult_of_sigmar",10, _sigmarSealIcon),
             new("SigmarSeal2",null,"cult_of_sigmar",10,_sigmarSealIcon),
             new("SigmarSeal3","apply_sigmar_seal_trait2","cult_of_sigmar",10,_sigmarSealIcon),
@@ -231,8 +225,7 @@ public class KnightOldWorldCareerButtonBehavior(CareerObject career) : CareerBut
            
             return true;
         }
-
-
+        
         if (characterObject.IsReligiousUnit())
         {
             var religionObject = ReligionObject.All.FirstOrDefaultQ(x => x.ReligiousTroops.Contains(characterObject));
@@ -245,8 +238,6 @@ public class KnightOldWorldCareerButtonBehavior(CareerObject career) : CareerBut
 
         }
         
-        
-
         var devotion = Hero.MainHero.GetDominantReligion();
         
         if (devotion!=null ||Hero.MainHero.HasCareerChoice("SecularOrdersPassive3"))
@@ -271,9 +262,6 @@ public class KnightPuritySeal()
     {
         Name = GameTexts.TryGetText("TORKnightPuritySealName", out var nameText,sealId ) ? nameText : new TextObject(sealId);
         Description = GameTexts.TryGetText("TORKnightPuritySealDescription", out var descriptionText, sealId ) ? descriptionText : new TextObject("No description found");
-
-        
-        
         triggeredEffectId = triggeredEffectIdId;
         Price = price;
         DeityCultId = deityCultId;
