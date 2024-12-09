@@ -483,6 +483,9 @@
     <Compile Include="CampaignMechanics\Careers\TORCareerPerkCampaignBehavior.cs" />
     <Compile Include="CampaignMechanics\Chaos\ChaosCampaignBehavior.cs" />
     <Compile Include="CampaignMechanics\CharacterCreation\FaceGenHelper.cs" />
+    <Compile Include="CampaignMechanics\Crafting\EnchantingScreen.cs" />
+    <Compile Include="CampaignMechanics\Crafting\EnchantingState.cs" />
+    <Compile Include="CampaignMechanics\Crafting\EnchantingVM.cs" />
     <Compile Include="CampaignMechanics\Crafting\TORCraftingCampaignBehavior.cs" />
     <Compile Include="CampaignMechanics\CustomDialogs\CareerSwitchCampaignBehavior.cs" />
     <Compile Include="CampaignMechanics\CustomDialogs\BloodKissSceneNotificationItem.cs" />
@@ -609,6 +612,7 @@
     <Compile Include="Extensions\ExtendedInfoSystem\MobilePartyExtendedInfo.cs" />
     <Compile Include="Extensions\FactionExtensions.cs" />
     <Compile Include="Extensions\FormationExtensions.cs" />
+    <Compile Include="Extensions\GameMenuExtensions.cs" />
     <Compile Include="Extensions\GameModelsExtensions.cs" />
     <Compile Include="Extensions\HeroExtensions.cs" />
     <Compile Include="Extensions\ItemObjectExtensions.cs" />
