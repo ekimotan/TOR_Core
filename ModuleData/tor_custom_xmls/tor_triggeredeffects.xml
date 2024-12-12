@@ -917,6 +917,22 @@
                              ScriptNameToTrigger="none">
         <ImbuedStatusEffect>physical_bonus_20</ImbuedStatusEffect>
     </TriggeredEffectTemplate>
+	 <!-- Death Magic -->
+	 
+    <TriggeredEffectTemplate StringID="taste_of_death"
+                             BurstParticleEffectPrefab="taste_of_death"
+                             SoundEffectId="none"
+                             SoundEffectLength="0"
+                             DamageType="Frost"
+                             DamageAmount="30"
+                             Radius="8"
+                             HasShockWave="true"
+                             TargetType="Enemy"
+                             DamageVariance="0.0"
+                             ImbuedStatusEffectDuration="15"
+                             ScriptNameToTrigger="none">
+    </TriggeredEffectTemplate>
+	
     <!-- High Magic -->
     <TriggeredEffectTemplate StringID="apotheosis_heal"
                              BurstParticleEffectPrefab="none"
@@ -1135,6 +1151,7 @@
         <ImbuedStatusEffect>ice_storm_ats</ImbuedStatusEffect>
         <ImbuedStatusEffect>ice_storm_dot</ImbuedStatusEffect>
     </TriggeredEffectTemplate>
+	
     <!-- Power of the Lady -->
     <TriggeredEffectTemplate StringID="ladys_favour"
                              BurstParticleEffectPrefab="none"
