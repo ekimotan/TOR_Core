@@ -218,6 +218,7 @@ namespace TOR_Core.Models
             out float[] damageResistances, 
             out float[]additionalDamagePercentages)
         {
+            Hero hero = agent.GetHero();
             damageProportions = new float[(int)DamageType.All + 1];
             damageAmplifications = new float[(int)DamageType.All + 1];
             damageResistances = new float[(int)DamageType.All + 1]; 
@@ -227,8 +228,18 @@ namespace TOR_Core.Models
                  //Hero item level attributes 
                  List<ItemTrait> itemTraits = new List<ItemTrait>();
                  List<ItemObject> armorItems;
-                 // get all equipment Pieces - here only armor
-                 armorItems = agent.Character.GetCharacterEquipment(EquipmentIndex.ArmorItemBeginSlot);
+                // get all equipment Pieces - here only armor
+                var templateDamageProportions = hero.GetTemplateDamageProportions();
+                foreach (var proportionTuple in templateDamageProportions) {
+                    damageProportions[(int)proportionTuple.DamageType] = proportionTuple.Percent;
+                }
+                var templateOffensiveProperties = hero.GetTemplateAttackProperties();
+                //add all offense properties of the Unit
+                foreach (var property in templateOffensiveProperties) {
+                    damageAmplifications[(int)property.AmplifiedDamageType] += property.DamageAmplifier;
+                }
+
+                armorItems = agent.Character.GetCharacterEquipment(EquipmentIndex.ArmorItemBeginSlot);
                  foreach (var item in armorItems)
                  {
                      if (item.HasTrait())
@@ -361,11 +372,14 @@ namespace TOR_Core.Models
              }
              if (propertyMask == PropertyMask.Defense || propertyMask == PropertyMask.All)
              {
-                 //Hero item level attributes 
+                //add all defense properties of the hero template
+                var defenseProperties = hero.GetTemplateDefenseProperties();
+                foreach (var property in defenseProperties) {
+                    damageResistances[(int)property.ResistedDamageType] += property.ReductionPercent;
+                }
 
-                 
-
-                 List<ItemTrait> itemTraits = new List<ItemTrait>();
+                //Hero item level attributes 
+                List<ItemTrait> itemTraits = new List<ItemTrait>();
                  List<ItemObject> items;
 
                  items = agent.Character.GetCharacterEquipment(EquipmentIndex.ArmorItemBeginSlot);

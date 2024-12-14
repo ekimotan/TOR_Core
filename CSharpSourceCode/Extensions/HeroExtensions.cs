@@ -1,3 +1,4 @@
+using NLog;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,6 +13,7 @@ using TaleWorlds.MountAndBlade;
 using TaleWorlds.TwoDimension;
 using TOR_Core.AbilitySystem;
 using TOR_Core.AbilitySystem.Spells;
+using TOR_Core.BattleMechanics.DamageSystem;
 using TOR_Core.CampaignMechanics;
 using TOR_Core.CampaignMechanics.BountyMaster;
 using TOR_Core.CampaignMechanics.CustomResources;
@@ -285,6 +287,49 @@ namespace TOR_Core.Extensions
                 return hero.GetExtendedInfo().AllAbilities.Contains(ability);
             }
             else return false;
+        }
+
+        public static List<DamageProportionTuple> GetTemplateDamageProportions(this Hero hero) {
+            if (hero.Template == null) {
+                return [new DamageProportionTuple(DamageType.Physical, 1)];
+            }
+
+            var list = new List<DamageProportionTuple>();
+            var info = ExtendedInfoManager.GetCharacterInfoFor(hero.Template.StringId)?.DamageProportions;
+            if (info != null) {
+                list.AddRange(info);
+            } else {
+                TORCommon.Log("Couldn't find damage propotions for " + hero.Name.ToString(), LogLevel.Warn);
+                var defaultProp = new DamageProportionTuple(DamageType.Physical, 1);
+                list.Add(defaultProp);
+            }
+            return list;
+        }
+
+        public static List<ResistanceTuple> GetTemplateDefenseProperties(this Hero hero) {
+            if (hero.Template == null) {
+                return [];
+            }
+
+            var list = new List<ResistanceTuple>();
+            var info = ExtendedInfoManager.GetCharacterInfoFor(hero.Template.StringId)?.Resistances;
+            if (info != null) {
+                list.AddRange(info);
+            }
+            return list;
+        }
+
+        public static List<AmplifierTuple> GetTemplateAttackProperties(this Hero hero) {
+            if (hero.Template == null) {
+                return [];
+            }
+
+            var list = new List<AmplifierTuple>();
+            var info = ExtendedInfoManager.GetCharacterInfoFor(hero.Template.StringId)?.DamageAmplifiers;
+            if (info != null) {
+                list.AddRange(info);
+            }
+            return list;
         }
 
         public static ChivalryLevel GetChivalryLevel(this Hero hero)
