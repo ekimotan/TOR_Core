@@ -1,0 +1,434 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
+  <tags>
+    <tag language="Español (LA)" />
+  </tags>
+  <strings>
+
+<string id="tor_crafting_runefang_001_handle" text="Empuñadura de Colmillo Rúnico"/>
+<string id="tor_crafting_runefang_001_guard" text="Guarda de Colmillo Rúnico"/>
+<string id="tor_crafting_runefang_001_pommel" text="Pomo de Colmillo Rúnico"/>
+<string id="tor_crafting_runefang_002_guard" text="Guarda de Colmillo Rúnico"/>
+<string id="tor_crafting_runefang_003_guard" text="Guarda de Colmillo Rúnico"/>
+<string id="tor_crafting_runefang_004_guard" text="Guarda de Colmillo Rúnico"/>
+<string id="tor_crafting_runefang_005_guard" text="Guarda de Colmillo Rúnico"/>
+<string id="tor_crafting_runefang_006_guard" text="Guarda de Colmillo Rúnico"/>
+<string id="tor_crafting_runefang_007_guard" text="Guarda de Colmillo Rúnico"/>
+<string id="tor_crafting_runefang_008_guard" text="Guarda de Colmillo Rúnico"/>
+<string id="tor_crafting_runefang_009_guard" text="Guarda de Colmillo Rúnico"/>
+<string id="tor_crafting_runefang_010_guard" text="Guarda de Colmillo Rúnico"/>
+<string id="tor_crafting_runefang_011_guard" text="Guarda de Colmillo Rúnico"/>
+<string id="tor_crafting_runefang_012_guard" text="Guarda de Colmillo Rúnico"/>
+<string id="tor_crafting_reiksguard_knight_sword_001_blade" text="Hoja de la Guardia del Reik"/>
+<string id="tor_crafting_reiksguard_knight_sword_001_handle" text="Empuñadura de la Hoja de la Guardia del Reik"/>
+<string id="tor_crafting_reiksguard_knight_sword_001_guard" text="Guarda de la Hoja de la Guardia del Reik"/>
+<string id="tor_crafting_reiksguard_knight_sword_001_pommel" text="Pomo Hoja de la Guardia del Reik"/>
+<string id="tor_crafting_reiksguard_knight_sword_002_blade" text="Hoja de la Guardia del Reik"/>
+<string id="tor_crafting_reiksguard_knight_sword_002_handle" text="Empuñadura de la Hoja de la Guardia del Reik"/>
+<string id="tor_crafting_reiksguard_knight_sword_002_guard" text="Guarda de la Hoja de la Guardia del Reik"/>
+<string id="tor_crafting_reiksguard_knight_sword_002_pommel" text="Pomo Hoja de la Guardia del Reik"/>
+<string id="tor_crafting_reiksguard_knight_sword_003_blade" text="Hoja de la Guardia del Reik"/>
+<string id="tor_crafting_reiksguard_knight_sword_003_handle" text="Empuñadura de la Hoja de la Guardia del Reik"/>
+<string id="tor_crafting_reiksguard_knight_sword_003_guard" text="Guarda de la Hoja de la Guardia del Reik"/>
+<string id="tor_crafting_reiksguard_knight_sword_003_pommel" text="Pomo Hoja de la Guardia del Reik"/>
+<string id="tor_crafting_reiksguard_circle_sword_001_blade" text="Hoja de la Guardia del Círculo Interior"/>
+<string id="tor_crafting_reiksguard_circle_sword_001_guard" text="Empuñadurad e la Guardia del Círculo Interior"/>
+<string id="tor_crafting_reiksguard_circle_sword_001_guard" text="Guarda de la Guardia del Círculo Interior"/>
+<string id="tor_crafting_reiksguard_circle_sword_001_pommel" text="Pomo de la Guardia del Círculo Interior"/>
+<string id="tor_crafting_reiksguard_circle_sword_002_blade" text="Hoja de la Guardia del Círculo Interior"/>
+<string id="tor_crafting_reiksguard_circle_sword_002_guard" text="Guarda de la Guardia del Círculo Interior"/>
+<string id="tor_crafting_reiksguard_circle_sword_002_pommel" text="Pomo de la Guardia del Círculo Interior"/>
+<string id="tor_crafting_reiksguard_circle_sword_003_blade" text="Hoja de la Guardia del Círculo Interior"/>
+<string id="tor_crafting_reiksguard_circle_sword_003_guard" text="Guarda de la Guardia del Círculo Interior"/>
+<string id="tor_crafting_reiksguard_circle_sword_003_pommel" text="Pomo de la Guardia del Círculo Interior"/>
+<string id="tor_crafting_vc_khopesh_001_blade" text="Khopesh"/>
+<string id="tor_crafting_vc_khopesh_001_handle" text="Empuñadura de Khopesh"/>
+<string id="tor_crafting_vc_khopesh_001_guard" text="Guarda de Khopesh"/>
+<string id="tor_crafting_skeleton_warrior_sword_001_blade" text="Hoja de Espada de Guerrero Esqueleto"/>
+<string id="tor_crafting_skeleton_warrior_sword_001_hilt" text="Empuñadura de Espada de Guerrero Esqueleto"/>
+<string id="tor_crafting_skeleton_warrior_sword_001_guard" text="Guarda de Espada de Guerrero Esqueleto"/>
+<string id="tor_crafting_skeleton_warrior_sword_001_pommel" text="Pomo de Espada de Guerrero Esqueleto"/>
+<string id="tor_crafting_skeleton_warrior_sword_002_blade" text="Hoja de Espada de Guerrero Esqueleto"/>
+<string id="tor_crafting_skeleton_warrior_sword_002_hilt" text="Empuñadura de Espada de Guerrero Esqueleto"/>
+<string id="tor_crafting_skeleton_warrior_sword_002_guard" text="Guarda de Espada de Guerrero Esqueleto"/>
+<string id="tor_crafting_skeleton_warrior_sword_002_pommel" text="Pomo de Espada de Guerrero Esqueleto"/>
+<string id="tor_crafting_skeleton_warrior_sword_003_blade" text="Hoja de Espada de Guerrero Esqueleto"/>
+<string id="tor_crafting_skeleton_warrior_sword_003_hilt" text="Empuñadura de Espada de Guerrero Esqueleto"/>
+<string id="tor_crafting_skeleton_warrior_sword_003_pommel" text="Pomo de Espada de Guerrero Esqueleto"/>
+<string id="tor_crafting_skeleton_warrior_sword_004_blade" text="Hoja de Espada de Guerrero Esqueleto"/>
+<string id="tor_crafting_skeleton_warrior_sword_004_hilt" text="Empuñadura de Espada de Guerrero Esqueleto"/>
+<string id="tor_crafting_skeleton_warrior_sword_004_guard" text="Guarda de Espada de Guerrero Esqueleto"/>
+<string id="tor_crafting_skeleton_warrior_sword_004_pommel" text="Pomo de Espada de Guerrero Esqueleto"/>
+<string id="tor_crafting_skeleton_warrior_sword_005_blade" text="Hoja de Espada de Guerrero Esqueleto"/>
+<string id="tor_crafting_skeleton_warrior_sword_005_hilt" text="Empuñadura de Espada de Guerrero Esqueleto"/>
+<string id="tor_crafting_grave_guard_sword_001_blade" text="Hoja de Espada de Guardia de los Túmulos"/>
+<string id="tor_crafting_grave_guard_sword_001_hilt" text="Empuñadura de Espada de Guardia de los Túmulos"/>
+<string id="tor_crafting_grave_guard_sword_001_guard" text="Guarda de Espada de Guardia de los Túmulos"/>
+<string id="tor_crafting_grave_guard_sword_001_pommel" text="Pomo de Espada de Guardia de los Túmulos"/>
+<string id="tor_crafting_mannfred_sword_blade" text="Hoja de Mannfred"/>
+<string id="tor_crafting_mannfred_sword_handle" text="Empuñadura de la Hoja de Mannfred"/>
+<string id="tor_crafting_mannfred_sword_guard" text="Guarda de la Hoja de Mannfred"/>
+<string id="tor_crafting_mannfred_sword_pommel" text="Pomo de la Hoja de Mannfred"/>
+<string id="tor_crafting_vampire_sword_001_blade" text="Hoja de Espada Vampírica"/>
+<string id="tor_crafting_vampire_sword_001_handle" text="Empuñadura de Hoja de Espada Vampírica"/>
+<string id="tor_crafting_vampire_sword_001_guard" text="Guarda de Hoja de Espada Vampírica"/>
+<string id="tor_crafting_vampire_sword_001_pommel" text="Pomo de Espada Vampírica"/>
+<string id="tor_crafting_vampire_sword_002_blade" text="Hoja de Espada Vampírica"/>
+<string id="tor_crafting_vampire_sword_002_handle" text="Empuñadura de Hoja de Espada Vampírica"/>
+<string id="tor_crafting_vampire_sword_002_guard" text="Guarda de Hoja de Espada Vampírica"/>
+<string id="tor_crafting_vampire_sword_002_pommel" text="Pomo de Espada Vampírica"/>
+<string id="tor_crafting_vampire_sword_003_blade" text="Hoja de Espada Vampírica"/>
+<string id="tor_crafting_vampire_sword_003_handle" text="Empuñadura de Hoja de Espada Vampírica"/>
+<string id="tor_crafting_vampire_sword_003_guard" text="Guarda de Hoja de Espada Vampírica"/>
+<string id="tor_crafting_vampire_sword_003_pommel" text="Pomo de Espada Vampírica"/>
+<string id="tor_crafting_vampire_sword_004_blade" text="Hoja de Espada Vampírica"/>
+<string id="tor_crafting_vampire_sword_004_handle" text="Empuñadura de Hoja de Espada Vampírica"/>
+<string id="tor_crafting_vampire_sword_004_guard" text="Guarda de Hoja de Espada Vampírica"/>
+<string id="tor_crafting_vampire_sword_004_pommel" text="Pomo de Espada Vampírica"/>
+<string id="tor_crafting_vampire_sword_005_blade" text="Hoja de Espada Vampírica"/>
+<string id="tor_crafting_vampire_sword_005_handle" text="Empuñadura de Hoja de Espada Vampírica"/>
+<string id="tor_crafting_vampire_sword_005_guard" text="Guarda de Hoja de Espada Vampírica"/>
+<string id="tor_crafting_vampire_sword_005_pommel" text="Pomo de Espada Vampírica"/>
+<string id="tor_crafting_vampire_sword_006_blade" text="Hoja de Espada Vampírica"/>
+<string id="tor_crafting_vampire_sword_006_handle" text="Empuñadura de Hoja de Espada Vampírica"/>
+<string id="tor_crafting_vampire_sword_006_guard" text="Guarda de Hoja de Espada Vampírica"/>
+<string id="tor_crafting_vampire_sword_006_pommel" text="Pomo de Espada Vampírica"/>
+<string id="tor_crafting_vampire_sword_007_blade" text="Hoja de Espada Vampírica"/>
+<string id="tor_crafting_vampire_sword_007_handle" text="Empuñadura de Hoja de Espada Vampírica"/>
+<string id="tor_crafting_vampire_sword_007_guard" text="Guarda de Hoja de Espada Vampírica"/>
+<string id="tor_crafting_vampire_sword_007_pommel" text="Pomo de Espada Vampírica"/>
+<string id="tor_crafting_vampire_sword_008_blade" text="Hoja de Espada Vampírica"/>
+<string id="tor_crafting_vampire_sword_008_handle" text="Empuñadura de Hoja de Espada Vampírica"/>
+<string id="tor_crafting_vampire_sword_008_guard" text="Guarda de Hoja de Espada Vampírica"/>
+<string id="tor_crafting_vampire_sword_008_pommel" text="Pomo de Espada Vampírica"/>
+<string id="tor_crafting_vampire_sword_009_blade" text="Hoja de Espada Vampírica"/>
+<string id="tor_crafting_vampire_sword_009_handle" text="Empuñadura de Hoja de Espada Vampírica"/>
+<string id="tor_crafting_vampire_sword_009_guard" text="Guarda de Hoja de Espada Vampírica"/>
+<string id="tor_crafting_vampire_sword_009_pommel" text="Pomo de Espada Vampírica"/>
+<string id="tor_crafting_chaos_sword_01_blade" text="Hoja de Espada del Caos"/>
+<string id="tor_crafting_chaos_sword_01_handle" text="Empuñadura de Espada del Caos"/>
+<string id="tor_crafting_chaos_sword_01_guard" text="Guarda de Espada del Caos"/>
+<string id="tor_crafting_chaos_sword_01_pommel" text="Pomo de Espada del Caos"/>
+<string id="tor_crafting_bretonnian_sword_001_blade" text="Hoja de Espada de Bretonnia"/>
+<string id="tor_crafting_bretonnian_sword_001_handle" text="Empuñadura de Espada de Bretonnia"/>
+<string id="tor_crafting_bretonnian_sword_001_guard" text="Guarda de Espada de Bretonnia"/>
+<string id="tor_crafting_bretonnian_sword_001_pommel" text="Pomo de Espada de Bretonnia"/>
+<string id="tor_crafting_bretonnian_sword_002_blade" text="Hoja de Espada de Bretonnia"/>
+<string id="tor_crafting_bretonnian_sword_002_handle" text="Empuñadura de Espada de Bretonnia"/>
+<string id="tor_crafting_bretonnian_sword_002_guard" text="Guarda de Espada de Bretonnia"/>
+<string id="tor_crafting_bretonnian_sword_002_pommel" text="Pomo de Espada de Bretonnia"/>
+<string id="tor_crafting_we_lord_sword_001_pommel" text="Pomo de Espada de Señor de los Claros"/>
+<string id="tor_crafting_we_lord_sword_001_handle" text="Empuñadura de Espada de Señor de los Claros"/>
+<string id="tor_crafting_we_lord_sword_001_blade" text="Hoja de Espada de Señor de los Claros"/>
+<string id="tor_crafting_we_sword_001_blade" text="Hoja de Espada de Elfo del Bosque"/>
+<string id="tor_crafting_we_sword_002_blade" text="Hoja de Espada de Elfo del Bosque"/>
+<string id="tor_crafting_we_sword_001_handle" text="Empuñadura de Espada de Elfo del Bosque"/>
+<string id="tor_crafting_we_sword_002_handle" text="Empuñadura de Espada de Elfo del Bosque"/>
+<string id="tor_crafting_we_sword_001_guard" text="Guarda de Espada de Elfo del Bosque"/>
+<string id="tor_crafting_de_sword_001_blade" text="Hoja de Espada Druchii"/>
+<string id="tor_crafting_de_sword_001_handle" text="Empuñadura de Espada Druchii"/>
+<string id="tor_crafting_de_sword_001_guard" text="Guarda de Espada Druchii"/>
+<string id="tor_crafting_de_sword_001_pommel" text="Pomo de Espada Druchii"/>
+<string id="tor_crafting_beastmen_ungor_sword_001_blade" text="Hoja de Espada Ungor"/>
+<string id="tor_crafting_beastmen_ungor_sword_001_handle" text="Empuñadura de Hoja de Espada Ungor"/>
+<string id="tor_crafting_beastmen_ungor_sword_001_guard" text="Guarda de Hoja de Espada Ungor"/>
+<string id="tor_crafting_beastmen_ungor_sword_002_blade" text="Hoja de Espada Ungor"/>
+<string id="tor_crafting_beastmen_ungor_sword_002_handle" text="Empuñadura de Hoja de Espada Ungor"/>
+<string id="tor_crafting_beastmen_ungor_sword_002_guard" text="Guarda de Hoja de Espada Ungor"/>
+<string id="tor_crafting_beastmen_ungor_sword_003_blade" text="Hoja de Espada Ungor"/>
+<string id="tor_crafting_beastmen_ungor_sword_003_handle" text="Empuñadura de Hoja de Espada Ungor"/>
+<string id="tor_crafting_empire_greatsword_001_blade" text="Hoja de Mandoble Imperial"/>
+<string id="tor_crafting_empire_greatsword_001_hilt" text="Empuñadura de Mandoble Imperial"/>
+<string id="tor_crafting_empire_greatsword_001_guard" text="Guarda de Mandoble Imperial"/>
+<string id="tor_crafting_empire_greatsword_001_pommel" text="Pomo de Mandoble Imperial"/>
+<string id="tor_crafting_empire_greatsword_002_blade" text="Hoja de Mandoble Imperial"/>
+<string id="tor_crafting_empire_greatsword_002_hilt" text="Empuñadura de Mandoble Imperial"/>
+<string id="tor_crafting_empire_greatsword_002_guard" text="Guarda de Mandoble Imperial"/>
+<string id="tor_crafting_empire_greatsword_002_pommel" text="Pomo de Mandoble Imperial"/>
+<string id="tor_crafting_grave_guard_greatsword_001_blade" text="Hoja de Gran Espada de la Guardia de los Túmulos"/>
+<string id="tor_crafting_grave_guard_greatsword_001_handle" text="Empuñadura de Gran Espada de la Guardia de los Túmulos"/>
+<string id="tor_crafting_grave_guard_greatsword_001_guard" text="Guarda de Gran Espada de la Guardia de los Túmulos"/>
+<string id="tor_crafting_grave_guard_greatsword_001_pommel" text="Pomo de Gran Espada de la Guardia de los Túmulos"/>
+<string id="tor_crafting_vampire_greatsword_001_blade" text="Hoja de Gran Espada Vampírica"/>
+<string id="tor_crafting_vampire_greatsword_001_hilt" text="Empuñadura de Gran Espada Vampírica"/>
+<string id="tor_crafting_vampire_greatsword_001_guard" text="Guarda de Gran Espada Vampírica"/>
+<string id="tor_crafting_vampire_greatsword_001_pommel" text="Pomo de Gran Espada Vampírica"/>
+<string id="tor_crafting_sword_de_lyonesse_blade" text="Hoja de Espada de Lyonesse"/>
+<string id="tor_crafting_sword_de_lyonesse_handle" text="Empuñadura de Espada de Lyonesse"/>
+<string id="tor_crafting_sword_de_lyonesse_guard" text="Guarda de Espada de Lyonesse"/>
+<string id="tor_crafting_sword_de_lyonesse_pommel" text="Pomo de Espada de Lyonesse"/>
+<string id="tor_crafting_bretonnian_greatsword_001_blade" text="Hoja de Gran Espada de Bretonnia"/>
+<string id="tor_crafting_bretonnian_greatsword_001_handle" text="Empuñadura de Gran Espada de Bretonnia"/>
+<string id="tor_crafting_bretonnian_greatsword_001_guard" text="Guarda de Gran Espada de Bretonnia"/>
+<string id="tor_crafting_bretonnian_greatsword_001_pommel" text="Pomo de Gran Espada de Bretonnia"/>
+<string id="tor_crafting_bret_squire_longsword_001_blade" text="Hoja de Gran Espada de Escudero Bretonniano"/>
+<string id="tor_crafting_bret_squire_longsword_001_handle" text="Empuñadura de Gran Espada de Escudero Bretonniano"/>
+<string id="tor_crafting_bret_squire_longsword_001_guard" text="Guarda de Gran Espada de Escudero Bretonniano"/>
+<string id="tor_crafting_bret_squire_longsword_001_pommel" text="Pomo de Gran Espada de Escudero Bretonniano"/>
+<string id="tor_crafting_bret_squire_longsword_002_blade" text="Hoja de Gran Espada de Escudero Bretonniano"/>
+<string id="tor_crafting_bret_squire_longsword_002_handle" text="Empuñadura de Gran Espada de Escudero Bretonniano"/>
+<string id="tor_crafting_bret_squire_longsword_002_guard" text="Guarda de Gran Espada de Escudero Bretonniano"/>
+<string id="tor_crafting_bret_squire_longsword_002_pommel" text="Pomo de Gran Espada de Escudero Bretonniano"/>
+<string id="tor_crafting_bret_squire_longsword_003_blade" text="Hoja de Gran Espada de Escudero Bretonniano"/>
+<string id="tor_crafting_bret_squire_longsword_003_handle" text="Empuñadura de Gran Espada de Escudero Bretonniano"/>
+<string id="tor_crafting_bret_squire_longsword_003_guard" text="Guarda de Gran Espada de Escudero Bretonniano"/>
+<string id="tor_crafting_bret_squire_longsword_003_pommel" text="Pomo de Gran Espada de Escudero Bretonniano"/>
+<string id="tor_crafting_he_greatsword_001_blade" text="Hoja de Gran Espada Asur"/>
+<string id="tor_crafting_he_greatsword_001_handle" text="Empuñadura de Gran Espada Asur"/>
+<string id="tor_crafting_he_greatsword_001_guard" text="Guarda de Gran Espada Asur"/>
+<string id="tor_crafting_he_greatsword_001_pommel" text="Pomo de Gran Espada dAsur"/>
+<string id="tor_crafting_we_greatsword_001_blade" text="Hoja de Gran Espada de Elfo del Bosque"/>
+<string id="tor_crafting_we_greatsword_001_handle" text="Empuñadura de Gran Espada de Elfo del Bosque"/>
+<string id="tor_crafting_we_greatsword_001_guard" text="Guarda de Gran Espada de Elfo del Bosque"/>
+<string id="tor_crafting_we_greatsword_001_pommel" text="Pomo de Gran Espada de Elfo del Bosque"/>
+<string id="tor_crafting_rapier_001_blade" text="Ropera del Imperio"/>
+<string id="tor_crafting_rapier_001_handle" text="Empuñadura de Ropera"/>
+<string id="tor_crafting_rapier_001_guard" text="Guarda de Ropera"/>
+<string id="tor_crafting_rapier_001_pommel" text="Pomo de Ropera"/>
+<string id="tor_crafting_empire_rapier_002_blade" text="Ropera del Imperio"/>
+<string id="tor_crafting_empire_rapier_002_handle" text="Empuñadura de Ropera"/>
+<string id="tor_crafting_empire_rapier_002_pommel" text="Pomo de Ropera"/>
+<string id="tor_crafting_empire_rapier_003_blade" text="Ropera del Imperio"/>
+<string id="tor_crafting_empire_rapier_003_handle" text="Empuñadura de Ropera"/>
+<string id="tor_crafting_empire_rapier_003_guard" text="Guarda de Ropera"/>
+<string id="tor_crafting_empire_rapier_003_pommel" text="Pomo de Ropera"/>
+<string id="tor_crafting_empire_rapier_004_blade" text="Ropera del Imperio"/>
+<string id="tor_crafting_empire_rapier_004_handle" text="Empuñadura de Ropera"/>
+<string id="tor_crafting_empire_rapier_004_guard" text="Guarda de Ropera"/>
+<string id="tor_crafting_empire_rapier_004_pommel" text="Pomo de Ropera"/>
+<string id="tor_crafting_empire_rapier_005_blade" text="Ropera del Imperio"/>
+<string id="tor_crafting_empire_rapier_005_handle" text="Empuñadura de Ropera"/>
+<string id="tor_crafting_empire_rapier_005_guard" text="Guarda de Ropera"/>
+<string id="tor_crafting_empire_rapier_005_pommel" text="Pomo de Ropera"/>
+<string id="tor_crafting_beastmen_ungor_axe_001_blade" text="Cabeza de Hacha Ungor"/>
+<string id="tor_crafting_beastmen_ungor_axe_001_handle" text="Mango de Hacha Ungor"/>
+<string id="tor_crafting_beastmen_ungor_axe_002_blade" text="Cabeza de Hacha Ungor"/>
+<string id="tor_crafting_beastmen_ungor_axe_002_handle" text="Mango de Hacha Ungor"/>
+<string id="tor_crafting_beastmen_ungor_axe_003_blade" text="Cabeza de Hacha Ungor"/>
+<string id="tor_crafting_beastmen_ungor_axe_003_handle" text="Mango de Hacha Ungor"/>
+<string id="tor_crafting_beastmen_ungor_axe_004_blade" text="Cabeza de Hacha Ungor"/>
+<string id="tor_crafting_beastmen_ungor_axe_004_handle" text="Mango de Hacha Ungor"/>
+<string id="tor_crafting_stoneaxe_of_taal_head" text="Mango de Hacha de Piedra de Taal"/>
+<string id="tor_crafting_stoneaxe_of_taal_handle" text="Empuñadura de Hacha de Piedra de Taal"/>
+<string id="tor_crafting_grave_guard_greataxe_001_blade" text="Cabeza de Archa de la Guardia de los Túmulos"/>
+<string id="tor_crafting_grave_guard_greataxe_001_handle" text="Mango de Archa de la Guardia de los Túmulos"/>
+<string id="tor_crafting_vampire_greataxe_001_blade" text="Cabeza de Gran Hacha Vampírica"/>
+<string id="tor_crafting_vampire_greataxe_001_handle" text="Mango de Gran Hacha Vampírica"/>
+<string id="tor_crafting_vampire_greataxe_002_blade" text="Cabeza de Gran Hacha Vampírica"/>
+<string id="tor_crafting_vampire_greataxe_002_handle" text="Mango de Gran Hacha Vampírica"/>
+<string id="tor_crafting_black_axe_of_krell_head" text="Cabeza de Gran Hacha Negra"/>
+<string id="tor_crafting_black_axe_of_krell_handle" text="Mango de Gran Hacha Vampírica"/>
+<string id="tor_crafting_we_2h_axe_001_blade" text="Cabeza de Hacha de los Elfos del Bosque"/>
+<string id="tor_crafting_we_2h_axe_001_handle" text="Mango de Hacha de los Elfos del Bosque"/>
+<string id="tor_crafting_he_whitelion_2h_axe_001_blade" text="Cabeza de Hacha de los Leones de Cracia"/>
+<string id="tor_crafting_he_whitelion_2h_axe_001_handle" text="Mango de los Leones de Cracia"/>
+<string id="tor_crafting_beastmen_2h_axe_001_blade" text="Cabeza de Gran Hacha de Minotauro"/>
+<string id="tor_crafting_beastmen_2h_axe_001_handle" text="Mango de Gran Hacha de Minotauro"/>
+<string id="tor_crafting_chaos_2h_greataxe_001_blade" text="Cabeza de Gran Hacha del Caos"/>
+<string id="tor_crafting_chaos_2h_greataxe_001_handle" text="Mango de Gran Hacha del Caos"/>
+<string id="tor_crafting_nurgle_greataxe_001_blade" text="Cabeza de Gran Hacha de Nurgle"/>
+<string id="tor_crafting_nurgle_greataxe_001_handle" text="Mango de Gran Hacha de Nurgle"/>
+<string id="tor_crafting_comet_flail_head" text="Maza y Cadena del Cometa de 2 Colas"/>
+<string id="tor_crafting_comet_flail_handle" text="Mango de Maza del Cometa de 2 Colas"/>
+<string id="tor_crafting_wp_hammer_001_head" text="Cabeza de Martillo de Sacerdote Guerrero"/>
+<string id="tor_crafting_wp_hammer_001_handle" text="Mango de Martillo de Sacerdote Guerrero"/>
+<string id="tor_crafting_wp_hammer_002_head" text="Cabeza de Martillo de Sacerdote Guerrero"/>
+<string id="tor_crafting_wp_hammer_002_handle" text="Mango de Martillo de Sacerdote Guerrero"/>
+<string id="tor_crafting_wp_hammer_003_head" text="Cabeza de Martillo de Sacerdote Guerrero"/>
+<string id="tor_crafting_wp_hammer_003_handle" text="Mango de Martillo de Sacerdote Guerrero"/>
+<string id="tor_crafting_wp_hammer_004_head" text="Cabeza de Martillo de Sacerdote Guerrero"/>
+<string id="tor_crafting_wp_hammer_004_handle" text="Mango de Martillo de Sacerdote Guerrero"/>
+<string id="tor_crafting_flagellant_mace_001_head" text="Mango de Maza de Flagelante"/>
+<string id="tor_crafting_flagellant_mace_001_handle" text="Cabeza de Maza de Flagelante"/>
+<string id="tor_crafting_flagellant_flail_handle_001" text="Mango de Maza de Flagelante"/>
+<string id="tor_crafting_flagellant_flail_head_002" text="Cabeza de Maza de Flagelante"/>
+<string id="tor_crafting_flagellant_flail_head_003" text="Cabeza de Maza de Flagelante"/>
+<string id="tor_crafting_empire_huss_hammer_head" text="Cabeza del Martillo de Luthor Huss"/>
+<string id="tor_crafting_empire_huss_hammer_handle" text="Mango de Martillo de Luthor Huss"/>
+<string id="tor_crafting_empire_hammer_001_head" text="Cabeza de Martillo Imperial"/>
+<string id="tor_crafting_empire_hammer_001_handle" text="Mango de Martillo Imperial"/>
+<string id="tor_crafting_empire_hammer_002_head" text="Cabeza de Martillo Imperial"/>
+<string id="tor_crafting_empire_hammer_002_handle" text="Mango de Martillo Imperial"/>
+<string id="tor_crafting_vc_skeleton_warrior_mace_001_blade" text="Cabeza de Maza de Guerrero Esqueleto"/>
+<string id="tor_crafting_vc_skeleton_warrior_mace_001_handle" text="Mango de Maza de Guerrero Esqueleto"/>
+<string id="tor_crafting_vc_skeleton_warrior_mace_002_blade" text="Cabeza de Maza de Guerrero Esqueleto"/>
+<string id="tor_crafting_vc_skeleton_warrior_mace_002_handle" text="Mango de Maza de Guerrero Esqueleto"/>
+<string id="tor_crafting_vc_skeleton_warrior_mace_003_blade" text="Cabeza de Maza de Guerrero Esqueleto"/>
+<string id="tor_crafting_vc_skeleton_warrior_mace_003_handle" text="Mango de Maza de Guerrero Esqueleto"/>
+<string id="tor_crafting_vc_skeleton_warrior_mace_004_blade" text="Cabeza de Maza de Guerrero Esqueleto"/>
+<string id="tor_crafting_vc_skeleton_warrior_mace_004_handle" text="Mango de Maza de Guerrero Esqueleto"/>
+<string id="tor_crafting_nurgle_hammer_001_head" text="Cabeza de Martillo de Nurgle"/>
+<string id="tor_crafting_nurgle_hammer_001_handle" text="Mango de Martillo de Nurgle"/>
+<string id="tor_crafting_ghal_maraz_head" text="Cabeza de de Ghal Maraz"/>
+<string id="tor_crafting_ghal_maraz_handle" text="Mango de Ghal Maraz"/>
+<string id="tor_crafting_holy_silver_hammer_head" text="Cabeza de Martillo Plateado Sagrado"/>
+<string id="tor_crafting_holy_silver_hammer_handle" text="Mango de Martillo Plateado Sagrado"/>
+<string id="tor_crafting_flagellant_mace_002_head" text="Cabeza de Maza de Flagelante"/>
+<string id="tor_crafting_flagellant_mace_002_handle" text="Mango de Maza de Flagelante"/>
+<string id="tor_crafting_wp_twohanded_hammer_001_head" text="Cabeza de Martillo de Sacerdote Guerrero"/>
+<string id="tor_crafting_wp_twohanded_hammer_001_handle" text="Mango de Martillo de Sacerdote Guerrero"/>
+<string id="tor_crafting_wp_twohanded_hammer_002_head" text="Cabeza de Martillo de Sacerdote Guerrero"/>
+<string id="tor_crafting_wp_twohanded_hammer_002_handle" text="Mango de Martillo de Sacerdote Guerrero"/>
+<string id="tor_crafting_wp_twohanded_hammer_003_head" text="Cabeza de Martillo de Sacerdote Guerrero"/>
+<string id="tor_crafting_wp_twohanded_hammer_003_handle" text="Mango de Martillo de Sacerdote Guerrero"/>
+<string id="tor_crafting_vampire_greatmace_001_head" text="Cabeza de Gran Maza Vampírica"/>
+<string id="tor_crafting_vampire_greatmace_001_handle" text="Mango de Gran Maza Vampírica"/>
+<string id="tor_crafting_wp_polehammer_001_head" text="Cabeza de Gran Martillo de Sacerdote Guerrero"/>
+<string id="tor_crafting_wp_polehammer_001_handle" text="Mango de Gran Martillo de Sacerdote Guerrero"/>
+<string id="tor_crafting_wp_polehammer_002_head" text="Cabeza de Gran Martillo de Sacerdote Guerrero"/>
+<string id="tor_crafting_wp_polehammer_002_handle" text="Mango de Gran Martillo de Sacerdote Guerrero"/>
+<string id="tor_crafting_wp_polehammer_003_head" text="Cabeza de Gran Martillo de Sacerdote Guerrero"/>
+<string id="tor_crafting_wp_polehammer_003_handle" text="Mango de Gran Martillo de Sacerdote Guerrero"/>
+<string id="tor_crafting_empire_spear_001_head" text="Cabeza de Lanza Imperial"/>
+<string id="tor_crafting_empire_spear_002_head" text="Cabeza de Lanza Imperial"/>
+<string id="tor_crafting_empire_spear_003_head" text="Cabeza de Lanza Imperial"/>
+<string id="tor_crafting_empire_spear_004_head" text="Cabeza de Lanza Imperial"/>
+<string id="tor_crafting_empire_spear_005_head" text="Cabeza de Lanza Imperial"/>
+<string id="tor_crafting_skeleton_spear_head" text="Cabeza de Lanza vieja"/>
+<string id="tor_crafting_skeleton_spear_shaft" text="Asta de Lanza vieja"/>
+<string id="tor_crafting_skeleton_spear_guard" text="Guarda de Lanza vieja"/>
+<string id="tor_crafting_skeleton_spear_pommel" text="Pomo de Lanza viejo"/>
+<string id="tor_crafting_bretonnian_trident_spear_head" text="Tridente Bretonniano"/>
+<string id="tor_crafting_bretonnian_trident_spear_shaft" text="Asta de Tridente Bretonniano"/>
+<string id="tor_crafting_bretonnian_spear_001_head" text="Cabeza de Lanza Bretonniana"/>
+<string id="tor_crafting_bretonnian_spear_001_shaft" text="Asta de Lanza Bretonniana"/>
+<string id="tor_crafting_bretonnian_spear_001_pommel" text="Pomo de Lanza Bretonniana"/>
+<string id="tor_crafting_bretonnian_spear_002_head" text="Cabeza de Lanza Bretonniana"/>
+<string id="tor_crafting_bretonnian_spear_002_shaft" text="Asta de Lanza Bretonniana"/>
+<string id="tor_crafting_bretonnian_spear_002_pommel" text="Pomo de Lanza Bretonniana"/>
+<string id="tor_crafting_bretonnian_spear_003_head" text="Cabeza de Lanza Bretonniana"/>
+<string id="tor_crafting_bretonnian_spear_003_shaft" text="Asta de Lanza Bretonniana"/>
+<string id="tor_crafting_bretonnian_spear_003_pommel" text="Pomo de Lanza Bretonniana"/>
+<string id="tor_crafting_we_wildrider_spear_001_head" text="Cabeza de Lanza del Bosque Salvaje"/>
+<string id="tor_crafting_we_wildrider_spear_001_shaft" text="Asta de Lanza del Bosque Salvaje"/>
+<string id="tor_crafting_we_spear_001_head" text="Cabeza de Lanza de Elfo del Bosque"/>
+<string id="tor_crafting_we_spear_002_head" text="Cabeza de Lanza de Elfo del Bosque"/>
+<string id="tor_crafting_we_spear_003_head" text="Cabeza de Lanza de Elfo del Bosque"/>
+<string id="tor_crafting_we_spear_004_head" text="Cabeza de Lanza de Elfo del Bosque"/>
+<string id="tor_crafting_we_spear_001_shaft" text="Asta de Lanza de Elfo del Bosque"/>
+<string id="tor_crafting_he_spearmen_spear_001_head" text="Cabeza de Lanza Asur"/>
+<string id="tor_crafting_he_spearmen_spear_001_shaft" text="Asta de Lanza Asur"/>
+<string id="tor_crafting_de_spear_001_shaft" text="Asta de Lanza Druchii"/>
+<string id="tor_crafting_de_spear_001_head" text="Cabeza de Lanza Druchii"/>
+<string id="tor_crafting_de_spear_002_head" text="Cabeza de Lanza Druchii"/>
+<string id="tor_crafting_beastmen_ungor_spear_001_head" text="Cabeza de Lanza Ungor"/>
+<string id="tor_crafting_beastmen_ungor_spear_001_shaft" text="Asta de Lanza Ungor"/>
+<string id="tor_crafting_beastmen_ungor_spear_002_head" text="Cabeza de Lanza Ungor"/>
+<string id="tor_crafting_beastmen_ungor_spear_002_shaft" text="Asta de Lanza Ungor"/>
+<string id="tor_crafting_beastmen_ungor_spear_003_head" text="Cabeza de Lanza Ungor"/>
+<string id="tor_crafting_beastmen_ungor_spear_003_shaft" text="Asta de Lanza Ungor"/>
+<string id="tor_crafting_beastmen_ungor_spear_004_head" text="Cabeza de Lanza Ungor"/>
+<string id="tor_crafting_beastmen_ungor_spear_004_shaft" text="Asta de Lanza Ungor"/>
+<string id="tor_crafting_empire_halberd_head" text="Cabeza de Alabarda Imperial"/>
+<string id="tor_crafting_empire_halberd_shaft" text="Asta de Alabarda Imperial"/>
+<string id="tor_crafting_empire_halberd_002_head" text="Cabeza de Alabarda Imperial"/>
+<string id="tor_crafting_empire_halberd_002_shaft" text="Asta de Alabarda Imperial"/>
+<string id="tor_crafting_empire_halberd_003_head" text="Cabeza de Alabarda Imperial"/>
+<string id="tor_crafting_empire_halberd_003_shaft" text="Asta de Alabarda Imperial"/>
+<string id="tor_crafting_empire_halberd_004_head" text="Cabeza de Alabarda Imperial"/>
+<string id="tor_crafting_empire_halberd_004_shaft" text="Asta de Alabarda Imperial"/>
+<string id="tor_crafting_empire_halberd_005_head" text="Cabeza de Alabarda Imperial"/>
+<string id="tor_crafting_empire_halberd_005_shaft" text="Asta de Alabarda Imperial"/>
+<string id="tor_crafting_empire_halberd_006_head" text="Cabeza de Alabarda Imperial"/>
+<string id="tor_crafting_vc_halberd_001_head" text="Alabarda vieja"/>
+<string id="tor_crafting_vc_halberd_002_head" text="Alabarda vieja"/>
+<string id="tor_crafting_vc_halberd_003_head" text="Alabarda vieja"/>
+<string id="tor_crafting_bretonnian_halberd_001_head" text="Cabeza de Volgue Bretonniana"/>
+<string id="tor_crafting_bretonnian_halberd_001_shaft" text="Asta de Volgue Bretonniana"/>
+<string id="tor_crafting_bretonnian_halberd_002_head" text="Cabeza de Volgue Bretonniana"/>
+<string id="tor_crafting_bretonnian_halberd_002_shaft" text="Asta de Volgue Bretonniana"/>
+<string id="tor_crafting_bretonnian_halberd_003_head" text="Cabeza de Volgue Bretonniana"/>
+<string id="tor_crafting_bretonnian_halberd_003_shaft" text="Asta de Volgue Bretonniana"/>
+<string id="tor_crafting_bretonnian_halberd_004_head" text="Cabeza de Volgue Bretonniana"/>
+<string id="tor_crafting_bretonnian_halberd_004_shaft" text="Asta de Volgue Bretonniana"/>
+<string id="tor_crafting_bretonnian_halberd_005_head" text="Cabeza de Volgue Bretonniana"/>
+<string id="tor_crafting_bretonnian_halberd_006_head" text="Cabeza de Volgue Bretonniana"/>
+<string id="tor_crafting_he_halberd_phoenix_001_shaft" text="Asta de Alabarda Asur"/>
+<string id="tor_crafting_he_halberd_phoenix_001_head" text="Cabeza de Alabarda Asur"/>
+<string id="tor_crafting_magic_orb_head" text="Orbe Mágico"/>
+<string id="tor_crafting_exiled_wizard_dragon_staff_001_head" text="Cabeza de Bastón de Hechicero Dragón Exiliado"/>
+<string id="tor_crafting_exiled_wizard_dragon_staff_001_handle" text="Báculo de Hechicero Dragón Exiliado"/>
+<string id="tor_crafting_bw_staff_001_head" text="Cabeza de Bastón de Hechicero Brillante"/>
+<string id="tor_crafting_bw_staff_001_handle" text="Báculo de Hechicero Brillante"/>
+<string id="tor_crafting_bw_staff_002_head" text="Cabeza de Bastón de Hechicero Brillante"/>
+<string id="tor_crafting_bw_staff_002_handle" text="Báculo de Hechicero Brillante"/>
+<string id="tor_crafting_volkmar_staff_head" text="Cabeza de Bastón de Volkmar el Sombrío"/>
+<string id="tor_crafting_volkmar_staff_handle" text="Báculo de Volkmar el Sombrío"/>
+<string id="tor_crafting_balthazar_gelt_staff_head" text="Cabeza de Bastón de Baltasar Gelt"/>
+<string id="tor_crafting_balthazar_gelt_staff_handle" text="Báculo de Baltasar Gelt"/>
+<string id="tor_crafting_empire_light_wizard_head" text="Cabeza de Bastón de Hechicero Luminoso"/>
+<string id="tor_crafting_empire_light_wizard_handle" text="Báculo de Hechicero Luminoso"/>
+<string id="tor_crafting_empire_light_wizard_002_head" text="Cabeza de Bastón de Hechicero Luminoso"/>
+<string id="tor_crafting_empire_light_wizard_002_handle" text="Báculo de Hechicero Luminoso"/>
+<string id="tor_crafting_empire_light_wizard_003_head" text="Cabeza de Bastón de Hechicero Luminoso"/>
+<string id="tor_crafting_empire_light_wizard_003_handle" text="Báculo de Hechicero Luminoso"/>
+<string id="tor_crafting_empire_celestial_wizard_head" text="Cabeza de Bastón de Hechicero Celestial"/>
+<string id="tor_crafting_nm_staff_001_head" text="Cabeza de Nigromante"/>
+<string id="tor_crafting_nm_staff_001_handle" text="Báculo de Nigromante"/>
+<string id="tor_crafting_prophetess_staff_001_head" text="Cabeza de Bastón de Profetisa"/>
+<string id="tor_crafting_prophetess_staff_001_handle" text="Báculo de Profetisa"/>
+<string id="tor_crafting_jousting_lance_handle_small1" text="Empuñadura de Lanza de Justa"/>
+<string id="tor_crafting_jousting_lance_handle_small_x" text="Empuñadura de Lanza de Justa"/>
+<string id="tor_crafting_lance_iron_handle" text="Empuñadura de Lanza de Hierro"/>
+<string id="tor_crafting_lance_iron_handle_x" text="Empuñadura de Lanza de Hierro"/>
+<string id="tor_crafting_jousting_lance_guard_long_x" text="Guarda de Lanza de Justa Pesada"/>
+<string id="tor_crafting_jousting_lance_guard_long_colored_bluewhite" text="Guarda de Lanza de Justa pintada"/>
+<string id="tor_crafting_jousting_lance_guard_long_colored_blueyellow" text="Guarda de Lanza de Justa pintada"/>
+<string id="tor_crafting_jousting_lance_guard_long_colored_blackwhite" text="Guarda de Lanza de Justa pintada"/>
+<string id="tor_crafting_jousting_lance_guard_long_colored_blackred" text="Guarda de Lanza de Justa pintada"/>
+<string id="tor_crafting_jousting_lance_guard_long_colored_redyellow" text="Guarda de Lanza de Justa pintada"/>
+<string id="tor_crafting_jousting_lance_guard_long_colored_redwhite" text="Guarda de Lanza de Justa pintada"/>
+<string id="tor_crafting_lance_iron_guard" text="Guarda de Lanza"/>
+<string id="tor_crafting_jousting_lance_pommel" text="Pomo de Lanza de Justa"/>
+<string id="tor_crafting_jousting_lance_pommel_x" text="Pomo de Lanza de Justa Pesada"/>
+<string id="tor_crafting_lance_iron_pommel" text="Pomo de Lanza de Hierro"/>
+<string id="tor_crafting_lance_iron_blade" text="Cabeza de Lanza de Hierro"/>
+<string id="tor_crafting_lance_blade_9" text="Cabeza de Lanza"/>
+<string id="tor_crafting_reiksguard_knight_lance_handle_001" text="Empuñadura de Lanza de la Guardia del Reik"/>
+<string id="tor_crafting_reiksguard_knight_lance_guard_001" text="Guarda de Lanza de la Guardia del Reik"/>
+<string id="tor_crafting_reiksguard_knight_lance_pommel_001" text="Pomo de Lanza de la Guardia del Reik"/>
+<string id="tor_crafting_reiksguard_knight_lance_blade_001" text="Cabeza de Lanza de la Guardia del Reik"/>
+<string id="tor_crafting_reiksguard_knight_lance_handle_002" text="Empuñadura de Lanza de la Guardia del Reik"/>
+<string id="tor_crafting_reiksguard_knight_lance_guard_002" text="Guarda de Lanza de la Guardia del Reik"/>
+<string id="tor_crafting_reiksguard_knight_lance_pommel_002" text="Pomo de Lanza de la Guardia del Reik"/>
+<string id="tor_crafting_reiksguard_knight_lance_blade_002" text="Cabeza de Lanza de la Guardia del Reik"/>
+<string id="tor_crafting_black_knight_lance_001_blade" text="Lanza de Caballero Negro"/>
+<string id="tor_crafting_black_knight_lance_001_handle" text="Empuñadura de Lanza de Caballero Negro"/>
+<string id="tor_crafting_black_knight_lance_001_guard" text="Guarda de Lanza de Caballero Negro"/>
+<string id="tor_crafting_black_knight_lance_001_pommel" text="Pomo de Lanza de Caballero Negro"/>
+<string id="tor_crafting_chaos_ud_lance_handle_001" text="Empuñadura de Lanza del Caos"/>
+<string id="tor_crafting_chaos_ud_lance_guard_001" text="Guarda de Lanza del Caos"/>
+<string id="tor_crafting_chaos_ud_lance_pommel_001" text="Pomo de Lanza del Caos"/>
+<string id="tor_crafting_chaos_ud_lance_blade_001" text="Cabeza de Lanza del Caos"/>
+<string id="tor_crafting_bretonnian_jousting_lance_handle_001" text="Empuñadura de Lanza de Justa Bretonniana"/>
+<string id="tor_crafting_bretonnian_jousting_lance_guard_001" text="Guarda de Lanza de Justa Bretonniana"/>
+<string id="tor_crafting_bretonnian_jousting_lance_pommel_001" text="Pomo de Lanza de Justa Bretonniana"/>
+<string id="tor_crafting_bretonnian_jousting_lance_blade_001" text="Cabeza de Lanza de Justa Bretonniana"/>
+<string id="tor_crafting_bretonnian_jousting_lance_handle_002" text="Empuñadura de Lanza de Justa Bretonniana"/>
+<string id="tor_crafting_bretonnian_jousting_lance_guard_002" text="Guarda de Lanza de Justa Bretonniana"/>
+<string id="tor_crafting_bretonnian_jousting_lance_pommel_002" text="Pomo de Lanza de Justa Bretonniana"/>
+<string id="tor_crafting_bretonnian_jousting_lance_blade_002" text="Cabeza de Lanza de Justa Bretonniana"/>
+<string id="tor_crafting_bretonnian_jousting_lance_handle_003" text="Empuñadura de Lanza de Justa Bretonniana"/>
+<string id="tor_crafting_bretonnian_jousting_lance_guard_003" text="Guarda de Lanza de Justa Bretonniana"/>
+<string id="tor_crafting_bretonnian_jousting_lance_pommel_003" text="Pomo de Lanza de Justa Bretonniana"/>
+<string id="tor_crafting_bretonnian_jousting_lance_blade_003" text="Cabeza de Lanza de Justa Bretonniana"/>
+<string id="tor_crafting_bretonnian_jousting_lance_handle_004" text="Empuñadura de Lanza de Justa Bretonniana"/>
+<string id="tor_crafting_bretonnian_jousting_lance_guard_004" text="Guarda de Lanza de Justa Bretonniana"/>
+<string id="tor_crafting_bretonnian_jousting_lance_pommel_004" text="Pomo de Lanza de Justa Bretonniana"/>
+<string id="tor_crafting_bretonnian_jousting_lance_blade_004" text="Cabeza de Lanza de Justa Bretonniana"/>
+<string id="tor_crafting_empire_morr_scythe_001_blade" text="Cabeza de Guadaña de Morr"/>
+<string id="tor_crafting_empire_morr_scythe_001_pole" text="Mango de Guadaña de Morr"/>
+<string id="tor_crafting_empire_morr_scythe_002_blade" text="Cabeza de Guadaña de Morr"/>
+<string id="tor_crafting_empire_morr_scythe_002_pole" text="Mango de Guadaña de Morr"/>
+<string id="tor_crafting_empire_morr_scythe_003_blade" text="Cabeza de Guadaña de Morr"/>
+<string id="tor_crafting_empire_morr_scythe_003_pole" text="Mango de Guadaña de Morr"/>
+<string id="tor_crafting_raven_scythe_blade" text="Cabeza de Guadaña de Cuervo"/>
+<string id="tor_crafting_raven_scythe_handle" text="Mango de Guadaña de Cuervo"/>
+<string id="tor_crafting_vampiric_scythe_blade" text="Cabeza de Guadaña Vampírica"/>
+<string id="tor_crafting_vampiric_scythe_handle" text="Mango de Guadaña Vampírica"/>
+<string id="tor_crafting_wood_scythe_blade" text="Cabeza de Guadaña de Madera"/>
+<string id="tor_crafting_wood_scythe_handle" text="Mango de Guadaña de Madera"/>
+<string id="tor_crafting_lhm_fist_weapon_handle" text="Puños de Monstruo - Guarda"/>
+<string id="tor_crafting_lhm_fist_weapon_blade" text="Puños de Monstruo - Hoja"/>
+      </strings>
+</base>

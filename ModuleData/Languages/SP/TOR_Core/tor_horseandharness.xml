@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
+  <tags>
+    <tag language="Español (LA)" />
+  </tags>
+  <strings>
+
+<string id="rO0oKtAo" text="Estandarte de Batalla pequeño"/>
+<string id="str_tor_horses_old_robb" text="Jamelgo viejo"/>
+<string id="str_tor_horses_empire_destrier" text="Destrero Imperial"/>
+<string id="str_tor_horses_empire_charger" text="Caballo de Carga Imperial"/>
+<string id="str_tor_horses_empire_warhorse" text="Caballo de Guerra Imperial"/>
+<string id="str_tor_horses_demigryph1" text="Semigrifo"/>
+<string id="str_tor_horses_demigryph2" text="Semigrifo"/>
+<string id="str_tor_horses_demigryph3" text="Semigrifo"/>
+<string id="str_tor_horses_demigryph4" text="Semigrifo"/>
+<string id="str_tor_horses_demigryph5" text="Semigrifo - León Nevado"/>
+<string id="str_tor_horses_zombie1" text="Caballo No Muerto"/>
+<string id="str_tor_horses_zombie2" text="Caballo No Muerto"/>
+<string id="str_tor_horses_skeleton" text="Caballo Esqueleto"/>
+<string id="str_tor_horses_skeleton2" text="Caballo Esqueleto"/>
+<string id="str_tor_horses_ghost1" text="Caballo Fantasma"/>
+<string id="str_tor_horses_ghost2" text="Caballo Fantasma"/>
+<string id="str_tor_horses_ghost3" text="Caballo Fantasma"/>
+<string id="str_tor_horses_chaos1" text="Caballo del Caos"/>
+<string id="str_tor_horses_stag1" text="Gran Ciervo"/>
+<string id="str_tor_horses_unicorn1" text="Unicornio"/>
+<string id="str_tor_horses_bretonnia1" text="Corcel Bretonniano"/>
+<string id="str_tor_horses_bretonnia2" text="Purasangre Bretonniano"/>
+<string id="str_tor_horses_bretonnia3" text="Caballo de Batalla Bretonniano"/>
+<string id="str_tor_harness_vampire1" text="Montura de Vampiro"/>
+<string id="str_tor_harness_vampire2" text="Montura de Vampiro"/>
+<string id="str_tor_harness_vampire3" text="Montura de Vampiro"/>
+<string id="str_tor_harness_blackknight1" text="Montura de Caballero Negro"/>
+<string id="str_tor_harness_ghost1" text="Montura Fantasmal"/>
+<string id="str_tor_harness_ghost2" text="Montura Fantasmal"/>
+<string id="str_tor_harness_empire1" text="Montura Imperial"/>
+<string id="str_tor_harness_empire2" text="Montura Imperial"/>
+<string id="str_tor_harness_royal_empire1" text="Montura Real Imperial"/>
+<string id="str_tor_harness_royal_empire2" text="Montura Real Imperial Plateada"/>
+<string id="str_tor_harness_demigryph_saddle1" text="Montura para Semigrifo"/>
+<string id="str_tor_harness_demigryph_armor1" text="Armadura para Semigrifo"/>
+<string id="str_tor_harness_demigryph_armor2" text="Armadura para Semigrifo"/>
+<string id="str_tor_harness_demigryph_armor3" text="Armadura para Semigrifo"/>
+<string id="str_tor_harness_demigryph_armor4" text="Armadura para Semigrifo"/>
+<string id="str_tor_harness_demigryph_armor5" text="Armadura de Caballería para Semigrifo"/>
+<string id="str_tor_harness_bretonnia1" text="Armadura de Caballería Bretonniana"/>
+<string id="str_tor_harness_bretonnia2" text="Armadura de Caballería Bretonniana"/>
+<string id="str_tor_harness_bretonnia3" text="Armadura de Caballería Bretonniana"/>
+<string id="str_tor_harness_bretonnia4" text="Armadura de Caballería Bretonniana"/>
+<string id="str_tor_harness_bretonnia5" text="Armadura de Caballería Bretonniana"/>
+<string id="str_tor_harness_stag1" text="Riendas del Gran Ciervo"/>
+  
+      </strings>
+</base>
+
+
+  

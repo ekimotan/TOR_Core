@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
+  <tags>
+    <tag language="Español (LA)" />
+  </tags>
+ <strings>
+
+<string id="str_XgjXfmM1" text="Guardia de la prisión"/>
+<string id="str_muu5cofb" text="Ciudadano"/>
+<string id="str_thbcgVVO" text="Mercader"/>
+<string id="str_tor_notable_empire_0" text="Mercader Imperial cauteloso"/>
+<string id="str_tor_notable_empire_0b" text="{FIRSTNAME} el Vinatero"/>
+<string id="str_tor_notable_empire_1" text="Mercader Imperial temerario"/>
+<string id="str_tor_notable_empire_1b" text="Mercader Imperial sombrío"/>
+<string id="str_tor_notable_empire_2" text="{FIRSTNAME} el Salado"/>
+<string id="str_tor_notable_empire_2b" text="Mercader Imperial preocupado"/>
+<string id="str_tor_notable_empire_3" text="Mercader Imperial artesano"/>
+<string id="str_tor_notable_empire_3b" text="Mercader Imperial jocoso"/>
+<string id="str_tor_notable_empire_4" text="Mercader Imperial soltera"/>
+<string id="str_tor_notable_empire_4b" text="Mercader Imperial devota"/>
+<string id="str_tor_notable_empire_5" text="Profeta Imperial"/>
+<string id="str_tor_notable_empire_6" text="Predicador Imperial"/>
+<string id="str_tor_notable_empire_7" text="Mística Imperial"/>
+<string id="str_tor_notable_empire_8" text="Capataz Imperial"/>
+<string id="str_tor_notable_empire_9" text="Supervisor Imperial"/>
+<string id="str_tor_notable_empire_gl1" text="Líder de Pandilla Imperial protector"/>
+<string id="str_tor_notable_empire_10" text="Líder de Pandilla Imperial irónico"/>
+<string id="str_tor_notable_empire_11" text="Líder de Pandilla Imperial intimidante"/>
+<string id="str_tor_notable_empire_gl4" text="Líder de Pandilla Imperial bruto"/>
+<string id="str_tor_notable_empire_12" text="Líder de Pandilla Imperial bruto"/>
+<string id="str_tor_notable_empire_13" text="Líder de Pandilla Imperial"/>
+<string id="str_tor_notable_empire_21" text="Líder de Pandilla Imperial amenazante"/>
+<string id="str_tor_notable_empire_22" text="Líder Campesino Imperial tosco"/>
+<string id="str_tor_empire_headman_1" text="Líder Campesino Imperial agradable"/>
+<string id="str_tor_empire_headman_2" text="Cabecilla Imperial rudo"/>
+<string id="str_tor_empire_headman_3" text="Cabecilla Imperial receloso"/>
+<string id="str_tor_notable_sylvania_0" text="Cabecilla Imperial taimado"/>
+<string id="str_tor_notable_sylvania_0b" text="Cabecilla Imperial cuidadoso"/>
+<string id="str_tor_notable_sylvania_1" text="{FIRSTNAME} el Vinatero"/>
+<string id="str_tor_notable_sylvania_1b" text="Mercader Imperial rudo"/>
+<string id="str_tor_notable_sylvania_2" text="Mercader Imperial sombrío"/>
+<string id="str_tor_notable_sylvania_2b" text="{FIRSTNAME} el Salado"/>
+<string id="str_tor_notable_sylvania_3" text="Mercader Imperial artesano"/>
+<string id="str_tor_notable_sylvania_3b" text="Mercader Imperial jocoso"/>
+<string id="str_tor_notable_sylvania_4" text="Mercader Imperial soltera"/>
+<string id="str_tor_notable_sylvania_4b" text="Mercader Imperial devota"/>
+<string id="str_tor_notable_sylvania_5" text="Profeta Imperial"/>
+<string id="str_tor_notable_sylvania_6" text="Predicador Imperial"/>
+<string id="str_tor_notable_sylvania_7" text="Mística Imperial"/>
+<string id="str_tor_notable_sylvania_8" text="Capataz Imperial"/>
+<string id="str_tor_notable_sylvania_9" text="Supervisor Imperial"/>
+<string id="str_tor_notable_sylvania_gl1" text="Líder de Pandilla Imperial"/>
+<string id="str_tor_notable_sylvania_10" text="Líder de Pandilla Imperial irónico"/>
+<string id="str_tor_notable_sylvania_11" text="Líder de Pandilla Imperial intimidante"/>
+<string id="str_tor_notable_sylvania_gl4" text="Líder de Pandilla Imperial bruto"/>
+<string id="str_tor_notable_sylvania_12" text="Líder de Pandilla Imperial"/>
+<string id="str_tor_notable_sylvania_13" text="Líder de Pandilla Imperial amenazante"/>
+<string id="str_tor_notable_sylvania_21" text="Líder Campesino Imperial notable"/>
+<string id="str_tor_notable_sylvania_22" text="Líder Campesino Imperial agradable"/>
+<string id="str_tor_sylvania_headman_1" text="Cabecilla Imperial rebelde"/>
+<string id="str_tor_sylvania_headman_2" text="Cabecilla Imperial precavido"/>
+<string id="str_tor_sylvania_headman_3" text="Cabecilla Imperial devoto"/>
+<string id="str_tor_notable_blooddragons_0" text="Cabecilla Imperial cauto"/>
+<string id="str_tor_notable_blooddragons_0b" text="{FIRSTNAME} el Vinatero"/>
+<string id="str_tor_notable_blooddragons_1" text="Mercader Imperial rudo"/>
+<string id="str_tor_notable_blooddragons_1b" text="Mercader Imperial sombrío"/>
+<string id="str_tor_notable_blooddragons_2" text="{FIRSTNAME} el Salado"/>
+<string id="str_tor_notable_blooddragons_2b" text="Mercader Imperial cauto"/>
+<string id="str_tor_notable_blooddragons_3" text="Mercader Imperial artesano"/>
+<string id="str_tor_notable_blooddragons_3b" text="Mercader Imperial jocoso"/>
+<string id="str_tor_notable_blooddragons_4" text="Mercader Imperial soltera"/>
+<string id="str_tor_notable_blooddragons_4b" text="Mercader Imperial devota"/>
+<string id="str_tor_notable_blooddragons_5" text="Profeta Imperial"/>
+<string id="str_tor_notable_blooddragons_6" text="Predicador Imperial"/>
+<string id="str_tor_notable_blooddragons_7" text="Mística Imperial"/>
+<string id="str_tor_notable_blooddragons_8" text="Capataz Imperial"/>
+<string id="str_tor_notable_blooddragons_9" text="Supervisor Imperial"/>
+<string id="str_tor_notable_blooddragons_gl1" text="Líder de Pandilla Imperial"/>
+<string id="str_tor_notable_blooddragons_10" text="Líder de Pandilla Imperial irónico"/>
+<string id="str_tor_notable_blooddragons_11" text="Líder de Pandilla Imperial intimidante"/>
+<string id="str_tor_notable_blooddragons_gl4" text="Líder de Pandilla Imperial bruto"/>
+<string id="str_tor_notable_blooddragons_12" text="Líder de Pandilla Imperial"/>  
+<string id="str_tor_notable_blooddragons_13" text="Líder de Pandilla Imperial amenazante"/>  
+<string id="str_tor_notable_blooddragons_21" text="Líder Campesino Imperial"/>  
+<string id="str_tor_notable_blooddragons_22" text="Líder Campesino Imperial Agradable"/>  
+<string id="str_tor_blooddragons_headman_1" text="Cabecilla Imperial Rebelde"/>  
+<string id="str_tor_blooddragons_headman_2" text="Cabecilla Imperial cuidadoso"/> 
+<string id="str_tor_blooddragons_headman_3" text="Cabecilla Imperial devoto"/> 
+<string id="str_spc_notable_bretonnia_merch1" text="Mercader Bretonniano irónico"/>  
+<string id="str_spc_notable_bretonnia_merch2" text="Mercader Bretonniano brusco"/> 
+<string id="str_spc_notable_bretonnia_merch3" text="Mercader Bretonniano osado"/> 
+<string id="str_spc_notable_bretonnia_merch4" text="Mercader Bretonniano calmado"/> 
+<string id="str_spc_notable_bretonnia_merch5" text="{FIRSTNAME} el Suministrador"/> 
+<string id="str_spc_notable_bretonnia_1" text="{FIRSTNAME} el Arrendador"/> 
+<string id="str_spc_notable_bretonnia_1b" text="{FIRSTNAME} la Soltera"/> 
+<string id="str_spc_notable_bretonnia_2" text="Predicador puritano"/> 
+<string id="str_spc_notable_bretonnia_3" text="Predicadora"/> 
+<string id="str_spc_bretonnia_gangleader_1" text="Líder de Pandilla"/> 
+<string id="str_spc_bretonnia_gangleader_2" text="Líder de Pandilla"/> 
+<string id="str_spc_bretonnia_gangleader_3" text="Líder de Pandilla"/> 
+<string id="str_spc_notable_bretonnia_artisan_1" text="Artesano Bretonniano"/> 
+<string id="str_spc_notable_bretonnia_artisan_2" text="Artesano Bretonniano"/> 
+<string id="str_spc_notable_bretonnia_rural_1" text="Terrateniente Bretonniano"/> 
+<string id="str_spc_notable_bretonnia_rural_2" text="Terrateniente Bretonniano"/> 
+<string id="str_spc_bretonnia_headman_1" text="Cabecilla Bretonniano"/> 
+<string id="str_spc_bretonnia_headman_2" text="Cabecilla Bretonniano"/> 
+<string id="str_spc_bretonnia_headman_3" text="Cabecilla Bretonniano"/> 
+<string id="str_spc_notable_mousillon_merch1" text="Mercader de Mousillón"/> 
+<string id="str_spc_notable_mousillon_merch2" text="Mercader de Mousillón tozudo"/> 
+<string id="str_spc_notable_mousillon_merch3" text="Mercader de Mousillón osado"/> 
+<string id="str_spc_notable_mousillon_merch4" text="Mercader de Mousillón agradable"/> 
+<string id="str_spc_notable_mousillon_merch5" text="{FIRSTNAME} el Suministrador"/> 
+<string id="str_spc_notable_mousillon_1" text="{FIRSTNAME} el Arrendatario"/> 
+<string id="str_spc_notable_mousillon_1b" text="{FIRSTNAME} la Soltera"/> 
+<string id="str_spc_notable_mousillon_2" text="Predicador puritano"/> 
+<string id="str_spc_notable_mousillon_3" text="Predicadora"/> 
+<string id="str_spc_mousillon_gangleader_1" text="Líder de Pandilla"/> 
+<string id="str_spc_mousillon_gangleader_2" text="Líder de Pandilla"/> 
+<string id="str_spc_mousillon_gangleader_3" text="Líder de Pandilla"/> 
+<string id="str_spc_notable_mousillon_artisan_1" text="Artesano de Mousillón"/> 
+<string id="str_spc_notable_mousillon_artisan_2" text="Artesano de Mousillón"/> 
+<string id="str_spc_notable_mousillon_rural_1" text="Terrateniente de Mousillón"/> 
+<string id="str_spc_notable_mousillon_rural_2" text="Terrateniente de Mousillón"/> 
+<string id="str_spc_mousillon_headman_1" text="Cabecilla de Mousillón"/> 
+<string id="str_spc_mousillon_headman_2" text="Cabecilla de Mousillón cauto"/> 
+<string id="str_spc_mousillon_headman_3" text="Cabecilla de Mousillón devoto"/> 
+<string id="str_spc_notable_chaos_merch1" text="Mercader del Caos Irónico"/> 
+<string id="str_spc_notable_chaos_merch2" text="Mercader del Caos Brusco"/> 
+<string id="str_spc_notable_chaos_merch3" text="Mercader del Caos Atrevido"/> 
+<string id="str_spc_notable_chaos_merch4" text="Mercader del Caos Embriagador"/> 
+<string id="str_spc_notable_chaos_merch5" text="{FIRSTNAME} el Tesorero"/> 
+<string id="str_spc_notable_chaos_1" text="{FIRSTNAME} el Guardián"/> 
+<string id="str_spc_notable_chaos_1b" text="{FIRSTNAME} la Soltera"/> 
+<string id="str_spc_notable_chaos_2" text="Predicador puritano"/>  
+<string id="str_spc_notable_chaos_3" text="Predicadora"/>  
+<string id="str_spc_chaos_gangleader_1" text="Líder de Pandilla"/> 
+<string id="str_spc_chaos_gangleader_2" text="Líder de Pandilla"/> 
+<string id="str_spc_chaos_gangleader_3" text="Líder de Pandilla"/> 
+<string id="str_spc_notable_chaos_artisan_1" text="Artesano del Caos"/> 
+<string id="str_spc_notable_chaos_artisan_2" text="Artesano del Caos"/> 
+<string id="str_spc_notable_chaos_rural_1" text="Terrateniente del Caos"/> 
+<string id="str_spc_notable_chaos_rural_2" text="Terrateniente del Caos"/> 
+<string id="str_spc_chaos_headman_1" text="Cabecilla de Mousillón"/> 
+<string id="str_spc_chaos_headman_2" text="Cabecilla de Mousillón cauto"/> 
+<string id="str_spc_chaos_headman_3" text="Cabecilla de Mousillón devoto"/> 
+<string id="str_blacksmith_woodelf" text="Herrero Asrai"/> 
+<string id="str_weaponsmith_woodelf" text="Forjador Asrai"/> 
+<string id="str_armorer_woodelf" text="Armero Asrai"/> 
+<string id="str_townsman_woodelf" text="Morador de los Salones"/> 
+<string id="str_townswoman_woodelf" text="Moradora de los Salones"/> 
+<string id="str_village_woman_woodelf" text="Aldeano Asrai"/> 
+<string id="str_shop_worker_woodelf" text="Tendero Asrai"/> 
+<string id="str_tavernkeeper_woodelf" text="Tabernero Asrai"/> 
+<string id="str_musician_woodelf" text="Músico Asrai"/> 
+<string id="str_merchant_woodelf" text="Mercader Asrai"/> 
+<string id="str_horseMerchant_woodelf" text="Vendedor de Caballos Asrai"/> 
+<string id="str_merchant_notary_woodelf" text="Mercader Notable Asrai"/> 
+<string id="str_artisan_notary_woodelf" text="Artesano Notable Asrai"/> 
+<string id="str_rural_notable_notary_woodelf" text="Eminencia Rural Asrai"/> 
+<string id="str_ransom_broker_woodelf" text="Rescatista Asrai"/> 
+<string id="str_gangleader_bodyguard_woodelf" text="Truhán Asrai"/> 
+<string id="str_spc_notable_asrai_merch1" text="Mercader Asrai irónico"/> 
+<string id="str_spc_notable_asrai_merch2" text="Mercader Asrai brusco"/> 
+<string id="str_spc_notable_asrai_merch3" text="Mercader Asrai osado"/> 
+<string id="str_spc_notable_asrai_merch4" text="Mercader Asrai calmado"/> 
+<string id="str_spc_notable_asrai_merch5" text="{FIRSTNAME} el Tesorero"/> 
+<string id="str_spc_notable_asrai_1" text="{FIRSTNAME} el Guardián"/> 
+<string id="str_spc_notable_asrai_1b" text="{FIRSTNAME} la Soltera"/> 
+<string id="str_spc_notable_asrai_2" text="Predicador puritano"/> 
+<string id="str_spc_notable_asrai_3" text="Predicadora"/> 
+<string id="str_spc_asrai_gangleader_1" text="Líder de Pandilla"/> 
+<string id="str_spc_asrai_gangleader_2" text="Líder de Pandilla"/> 
+<string id="str_spc_asrai_gangleader_3" text="Líder de Pandilla"/> 
+<string id="str_spc_notable_asrai_artisan_1" text="Artesano Asrai"/> 
+<string id="str_spc_notable_asrai_artisan_2" text="Artesano Asrai"/> 
+<string id="str_spc_notable_asrai_rural_1" text="Terrateniente Asrai"/> 
+<string id="str_spc_notable_asrai_rural_2" text="Terrateniente Asrai"/> 
+<string id="str_asrai_headman_1" text="Cabecilla Asrai"/> 
+<string id="str_asrai_headman_2" text="Cabecilla Asrai cauto"/> 
+<string id="str_asrai_headman_3" text="Cabecilla Asrai devoto"/> 
+<string id="str_prison_guard_asrai" text="Guardia de la Prisión"/> 
+<string id="str_blacksmith_eonir" text="Herrero"/> 
+<string id="str_weaponsmith_eonir" text="Forjador"/> 
+<string id="str_armorer_eonir" text="Armero"/> 
+<string id="str_townsman_eonir" text="Toriour"/> 
+<string id="str_townswoman_eonir" text="Toriour"/> 
+<string id="str_villager_eonir" text="Faniour"/> 
+<string id="str_village_woman_eonir" text="Faniour"/> 
+<string id="str_barber_eonir" text="Peluquera Eonir"/> 
+<string id="str_shop_worker_eonir" text="Tendero"/> 
+<string id="str_tavernkeeper_eonir" text="Tavernero"/> 
+<string id="str_musician_eonir" text="Músico"/> 
+<string id="str_wench_eonir" text="Moza Eonir"/> 
+<string id="str_dancer_eonir" text="Bailarín Eonir"/> 
+<string id="str_merchant_eonir" text="Mercader"/> 
+<string id="str_horseMerchant_eonir" text="Mercader de Caballos"/> 
+<string id="str_merchant_notary_eonir" text="Mercader Notable Eonir"/> 
+<string id="str_artisan_notary_eonir" text="Artesano Notable Eonir"/> 
+<string id="str_rural_notable_notary_eonir" text="Eminencia Rural Eonir"/> 
+<string id="str_ransom_broker_eonir" text="Rescatista Eonir"/> 
+<string id="str_prison_guard_eonir" text="Guardia de la Prisión"/> 
+<string id="str_tournament_master_eonir" text="Maestro del Torneo"/> 
+<string id="str_gangleader_bodyguard_eonir" text="Guardaespaldas Eonir"/> 
+<string id="str_spc_notable_eonir_merch1" text="Mercader Eonir irónico"/> 
+<string id="str_spc_notable_eonir_merch2" text="Mercader Eonir Brusco"/> 
+<string id="str_spc_notable_eonir_merch3" text="Mercader Eonir Osado"/> 
+<string id="str_spc_notable_eonir_merch4" text="Mercader Eonir Calmado"/> 
+<string id="str_spc_notable_eonir_merch5" text="{FIRSTNAME} el Tesorero"/> 
+<string id="str_spc_notable_eonir_1" text="{FIRSTNAME} el Guardián"/> 
+<string id="str_spc_notable_eonir_1b" text="{FIRSTNAME} la Soltera"/> 
+<string id="str_spc_notable_eonir_2" text="Predicador puritano"/> 
+<string id="str_spc_notable_eonir_3" text="Predicadora"/> 
+<string id="str_spc_eonir_gangleader_1" text="Líder de Pandilla"/> 
+<string id="str_spc_eonir_gangleader_2" text="Líder de Pandilla"/> 
+<string id="str_spc_eonir_gangleader_3" text="Líder de Pandilla"/> 
+<string id="str_spc_notable_eonir_artisan_1" text="Artesano Eonir"/> 
+<string id="str_spc_notable_eonir_artisan_2" text="Artesano Eonir"/> 
+<string id="str_spc_notable_eonir_rural_1" text="Terrateniente Eonir"/> 
+<string id="str_spc_notable_eonir_rural_2" text="Terrateniente Eonir"/> 
+<string id="str_eonir_headman_1" text="Cabecilla Eonir"/> 
+<string id="str_eonir_headman_2" text="Cabecilla Eonir cauto"/> 
+<string id="str_eonir_headman_3" text="Cabecilla Eonir devoto"/> 
+
+      </strings>
+</base>

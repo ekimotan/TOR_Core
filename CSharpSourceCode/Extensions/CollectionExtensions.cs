@@ -1,8 +1,11 @@
-﻿using System;
+﻿using HarmonyLib;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TaleWorlds.Core;
+using TaleWorlds.Library;
 
 namespace TOR_Core.Extensions
 {
@@ -49,6 +52,12 @@ namespace TOR_Core.Extensions
         public static TValue GetValueOrDefault<TKey, TValue>(this Dictionary<TKey, TValue> dictionary, TKey key, TValue defaultValue = default)
         {
             return dictionary.TryGetValue(key, out TValue value) ? value : defaultValue;
+        }
+
+        public static void AddEquipment(this MBEquipmentRoster roster, Equipment equipment)
+        {
+            MBList<Equipment> equipments = (MBList<Equipment>)AccessTools.Field(typeof(MBEquipmentRoster), "_equipments").GetValue(roster);
+            equipments.Add(equipment);
         }
     }
 }

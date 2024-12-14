@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
+  <tags>
+    <tag language="Español (LA)" />
+  </tags>
+  <strings>
+
+<string id="dart_label_str" text="Proyectil Mágico"/>
+<string id="dart_label_description_str" text="Lanza un rayo mágico al enemigo. El misil se dirige al objetivo y causa 40 daños en un radio de 3 metros al hacer contacto."/>
+<string id="ward_of_arrows_label_str" text="Custodia de Flechas"/>
+<string id="ward_of_arrows_description_str" text="Agrega al lanzador un 40% de resistencia física contra daño a distancia durante 15 segundos."/>
+<string id="minor_heal_label_str" text="Curación Menor"/>
+<string id="minor_heal_description_str" text="Cura al lanzador 20 puntos de salud por segundo durante 5 segundos."/>
+<string id="foetid_cloud_label_str" text="Nube Fétida"/>
+<string id="foetid_cloud_description_str" text="Lanza una enfermiza nube de gas venenoso de corto alcance."/>
+<string id="enchant_weapon_label_str" text="Arma Encantada"/>
+<string id="enchant_weapon_description_str" text="Mejora el arma de un aliado objetivo para que cause daño mágico adicional."/>
+<string id="aura_of_resistance_label_str" text="Aura de Resistencia"/>
+<string id="aura_of_resistance_description_str" text="Los aliados a una distancia de 3 metros del lanzador ganan un 20% de resistencia física durante 15 segundos."/>
+<string id="strength_of_combat_label_str" text="Fuerza del Combatiente"/>
+<string id="strength_of_combat_description_str" text="El lanzador hace un 20% extra de daño físico durante 15 segundos."/>
+<string id="dust_storm_label_str" text="Tormenta de Polvo"/>
+<string id="dust_storm_description_str" text="Los vientos secos del desierto derriban a las víctimas y causan daños menores."/>
+<string id="fireball_label_str" text="Bola de Fuego"/>
+<string id="fireball_description_str" text="No hay nada tan acogedor como una bola de fuego en la cara. Causa 80 de daño en un radio de 3 metros e imbuye el efecto de estado de quemadura durante 5 segundos."/>
+<string id="cinder_blast_label_str" text="Explosión de Ceniza"/>
+<string id="cinder_blast_description_str" text="Lanza fragmentos de lava solidificada al enemigo, lo que inflige un daño medio al contacto."/>
+<string id="bolt_of_aqshy_label_str" text="Proyectil de Aqshy"/>
+<string id="bolt_of_aqshy_description_str" text="Un proyectil llameante que se mueve rápidamente y que causa un daño medio al impactar."/>
+<string id="sear_label_str" text="Abrasión"/>
+<string id="sear_description_str" text="Ataca al enemigo con llamas abrasadoras de corto alcance que causan un daño medio."/>
+<string id="cascading_fire_cloak_label_str" text="Capa Protectora Ígnea"/>
+<string id="cascading_fire_cloak_description_str" text="El lanzador se envuelve en una capa de llamas mágicas que lo protege del daño físico (30%) y del fuego (70%) durante 15 segundos."/>
+<string id="flaming_swords_label_str" text="Espada Flamígera"/>
+<string id="flaming_swords_description_str" text="Mejora las armas de los aliados en un radio de 5 metros añadiéndoles el rasgo Flamígero durante 20 segundos. Las armas estallan en fuego y queman a todos los enemigos que golpean."/>
+<string id="burning_head_label_str" text="Calavera en Llamas"/>
+<string id="burning_head_description_str" text="Conjura una gran calavera en llamas que avanza quemando todo a su paso."/>
+<string id="flame_storm_label_str" text="Tormenta de Llamas"/>
+<string id="flame_storm_description_str" text="Un tornado de fuego que se mueve aleatoriamente. Causa mucho daño."/>
+<string id="lightning_bolt_label_str" text="Proyectil de Luz"/>
+<string id="lightning_bolt_description_str" text="Lanza un rayo eléctrico al enemigo que causa un daño medio al impactar."/>
+<string id="wind_blast_label_str" text="Vendaval"/>
+<string id="wind_blast_description_str" text="Una ráfaga de viento derriba a las víctimas y causa daños menores."/>
+<string id="chain_lightning_label_str" text="Relámpagos Encadenados"/>
+<string id="chain_lightning_description_str" text="Una bola de relámpagos que golpea a los enemigos en área con un daño medio."/>
+<string id="harmonic_convergence_label_str" text="Convergencia Armónica"/>
+<string id="harmonic_convergence_description_str" text="Al adivinar los signos favorables, el conjurador guía las mentes de sus compañeros guerreros. Los aliados en un radio de 3 metros obtienen un 50% de resistencia física durante 15 segundos."/>
+<string id="blizzard_label_str" text="Ventisca"/>
+<string id="blizzard_description_str" text="Nubes tormentosas se ciernen sobre el área, bañando a los que están debajo con afilados témpanos de hielo."/>
+<string id="comet_of_casandora_label_str" text="Cometa de Casandora"/>
+<string id="comet_of_casandora_description_str" text="Un gran meteorito golpea el área matando a todos los que están debajo en una onda de choque gigante."/>
+<string id="thunderbolt_label_str" text="Relámpago de Urannon"/>
+<string id="thunderbolt_description_str" text="Un gran rayo cae del cielo ocasionando un daño eléctrico considerable."/>
+<string id="curse_of_midnight_wind_label_str" text="Maldición del Viento de Medianoche"/>
+<string id="curse_of_midnight_wind_description_str" text="El mago pronuncia un antiguo maleficio de tres palabras, maldiciendo a los enemigos e imponiendo una penalización del 40% a la velocidad de movimiento y ataque, así como al daño infligido."/>
+<string id="shem_gaze_label_str" text="Mirada Ardiente de Shem"/>
+<string id="shem_gaze_description_str" text="Un rayo de energía purificadora sale volando de las manos del conjurador, quemando el mal dondequiera que golpee."/>
+<string id="healing_light_label_str" text="Luz Curativa"/>
+<string id="healing_light_description_str" text="Los aliados dentro del área de efecto regeneran salud con el tiempo."/>
+<string id="pha_protection_label_str" text="Protección de Pha"/>
+<string id="pha_protection_description_str" text="El mago invoca al benévolo Guardián de la Luz para que proteja a sus aliados del daño. Otorga un 50% de resistencia física durante 15 segundos en un radio de 3 metros."/>
+<string id="deathly_shards_label_str" text="Esquirlas Mortales"/>
+<string id="deathly_shards_description_str" text="Afilados fragmentos de luz vuelan hacia el objetivo y atraviesan la armadura más resistente."/>
+<string id="radiance_pillar_label_str" text="Pilar Resplandeciente"/>
+<string id="radiance_pillar_description_str" text="Un gran pilar de luz causa un gran daño a aquellos atrapados junto a él."/>
+<string id="radiant_gaze_label_str" text="Mirada Radiante"/>
+<string id="radiant_gaze_description_str" text="Pilares de luz que se alzan desde el suelo."/>
+<string id="net_of_amyntok_label_str" text="Red de Amyntok"/>
+<string id="net_of_amyntok_description_str" text="El mago conjura una red arcana en el área seleccionada. Cualquier enemigo atrapado en el hechizo se detiene durante 15 segundos."/>
+<string id="bironas_timewarp_label_str" text="Deformación Temporal de Birona"/>
+<string id="bironas_timewarp_description_str" text="Ralentiza el tiempo, mientras que las unidades a tu alrededor se mueven sin problema."/>
+<string id="nagash_gaze_label_str" text="Mirada de Nagash"/>
+<string id="nagash_gaze_description_str" text="Un rayo de Dhar sale volando de los ojos del conjurador, la carne que toca se ennegrece y se marchita, desprendiéndose por completo para revelar un hueso blanco blanqueado debajo."/>
+<string id="summon_skeleton_label_str" text="Alzar a los Muertos"/>
+<string id="summon_skeleton_description_str" text="Exhuma a los viejos huesos. Convoca a 25 esqueletos durante la batalla."/>
+<string id="shadowblood_label_str" text="Sangre Sombría"/>
+<string id="shadowblood_description_str" text="Orbes sombríos de sangre vuelan hacia el objetivo manchando el suelo debajo de cada paso del camino."/>
+<string id="morkharn_label_str" text="Aliento de Oscuridad de Morkharn"/>
+<string id="morkharn_description_str" text="El mago usa los Viento de la Muerte para restaurar a sus secuaces y llenarlos de un vigor impío. Cura brevemente a los aliados a tu alrededor."/>
+<string id="vanhelsdansemacabre_label_str" text="Danza Macabra de van Hel"/>
+<string id="vanhelsdansemacabre_description_str" text="Los muertos resucitados normalmente son lentos y torpes; este hechizo, sin embargo, les da gracia y velocidad y, como resultado, los hace aún más letales."/>
+<string id="wind_of_death_label_str" text="Viento de Muerte"/>
+<string id="wind_of_death_description_str" text="Invoca a los espíritus de los muertos para consumir las almas de los vivos. Aplica un gran daño mientras se mueve a lo largo de su camino."/>
+<string id="grave_call_label_str" text="Llamada de los Túmulos"/>
+<string id="grave_call_description_str" text="Extrayendo la energía oscura que corre por la tierra, el nigromante busca cadáveres durante mucho tiempo para responder a su llamada. Convoca 25 Guardias de los Túmulos."/>
+<string id="curse_of_years_label_str" text="Paso de los Años"/>
+<string id="curse_of_years_description_str" text="El usuario lanza una antigua maldición que hace que el enemigo envejezca a un ritmo terrible. Reduce el ataque enemigo y la velocidad de movimiento en un 50% durante 15 segundos."/>
+<string id="chillwind_label_str" text="Viento Frío"/>
+<string id="chillwind_description_str" text="El lanzador ataca al enemigo con un vendaval helado."/>
+<string id="doom_bolt_label_str" text="Proyectil de Perdición"/>
+<string id="doom_bolt_description_str" text="El mago abre el cielo y lanza sobre el enemigo un rayo que arde con llamas oscuras."/>
+<string id="death_spasm_label_str" text="Espasmo Mortal"/>
+<string id="death_spasm_description_str" text="Un rayo de energía oscura crepitante que explota en una bola de fuego y prende fuego a las víctimas"/>
+<string id="soul_rain_label_str" text="Lluvia de Almas"/>
+<string id="soul_rain_description_str" text="Una nube negra se cierne sobre el área objetivo y golpea a los que están debajo con rayos arcanos."/>
+<string id="power_of_darkness_label_str" text="Poder de la Oscuridad"/>
+<string id="power_of_darkness_description_str" text="El lanzador extrae poder inestable del Reino del Caos para potenciar a sus secuaces. Otorga un 20% de daño físico adicional en área durante 15 segundos."/>
+<string id="screaming_skull_label_str" text="Calavera Aullante"/>
+<string id="screaming_skull_description_str" text="Conjura una calavera aullante que gotea ácido y que avanza dañando todo a su paso."/>
+<string id="black_horror_label_str" text="Horror Negro de Arnzipal"/>
+<string id="black_horror_description_str" text="El lanzador derriba los muros entre las realidades y una nube negra de energía turbulenta recorre el campo de batalla. A medida que la oscuridad viaja, tentáculos viscosos salen de sus profundidades, arrastrando a las desafortunadas víctimas gritando hacia un destino desconocido."/>
+<string id="soul_stealer_label_str" text="Ladrón de Almas"/>
+<string id="soul_stealer_description_str" text="Los enemigos en el área experimentan un efecto de daño directo que drena el alma en el tiempo, lo que les hace recibir 12 puntos de daño cada segundo durante 10 segundos."/>
+<string id="apotheosis_label_str" text="Apoteosis"/>
+<string id="apotheosis_description_str" text="El mago infunde y vigoriza a sus aliados con energías mágicas puras."/>
+<string id="fiery_convocation_label_str" text="Convocatoria Ardiente"/>
+<string id="fiery_convocation_description_str" text="Pronuncia una palabra secreta y tus enemigos estallarán en fuego y llamas. Inflige un gran daño y daño a lo largo del tiempo en el área."/>
+<string id="soul_quench_label_str" text="Saciar el Alma"/>
+<string id="soul_quench_description_str" text="Una brillante esfera de luz emerge de las yemas de los dedos del mago. Los enemigos afectados sufren un daño medio."/>
+<string id="courage_of_aenarion_label_str" text="Coraje de Aenarion"/>
+<string id="courage_of_aenarion_description_str" text="El mago elfo canaliza los ocho Vientos de la Magia e invoca el nombre de Aenarion, el primero de los Reyes Fénix. Los aliados alrededor del mago atacan con mayor frecuencia."/>
+<string id="curse_of_arrowattraction_label_str" text="Maldición de Atracción de Proyectiles"/>
+<string id="curse_of_arrowattraction_description_str" text="El mago lanza una maldición en el área: el aire alrededor de los enemigos distorsiona y guía los proyectiles aliados con una precisión asombrosa."/>
+<string id="tempest_label_str" text="Tempestad"/>
+<string id="tempest_description_str" text="Evoca un brillante vórtice de luz reluciente que contiene los ocho colores de los vientos de magia."/>
+<string id="shield_of_saphery_label_str" text="Escudo de Saphery"/>
+<string id="shield_of_saphery_description_str" text="El conjurador invoca una cúpula etérea para proteger a sus aliados del fuego a distancia."/>
+<string id="dwellers_below_label_str" text="Población del Subterráneo"/>
+<string id="dwellers_below_description_str" text="Zarcillos emergen del suelo y atacan a los enemigos que pasan por el área. Derriba y desmonta a los enemigos, ralentiza (0,8%) e inflige 5 daños por segundo durante 16 segundos."/>
+<string id="the_green_eye_label_str" text="El Ojo Verde"/>
+<string id="the_green_eye_description_str" text="El lanzador concentra su mirada y dispara un único proyectil rápido y penetrante en la dirección apuntada."/>
+<string id="barkskin_label_str" text="Piel Robliza"/>
+<string id="barkskin_description_str" text="Endurece la piel de los objetivos, haciéndolos más resistentes, proporcionando un 35 % de resistencia física durante 8 segundos."/>
+<string id="summer_heat_label_str" text="Calor Estival"/>
+<string id="summer_heat_description_str" text="Hace que un área pequeña irradie un calor insoportable, causando fatiga, perjudicando el movimiento en un 50% y haciendo que los enemigos sean vulnerables al daño del fuego en un 25% durante 8 segundos."/>
+<string id="regrowth_label_str" text="Renacimiento"/>
+<string id="regrowth_description_str" text="Invocando el nombre de Duthandor, señor de los antiguos santuarios salvajes, el mago cura las heridas y los huesos rotos de sus camaradas. Los aliados en un radio de 3 metros recuperan 5 puntos de golpe por segundo durante 12 segundos."/>
+<string id="drain_life_label_str" text="Absorción de Vida"/>
+<string id="drain_life_description_str" text="Drena la esencia vital de un enemigo, causando 5 daños por segundo durante 10 segundos."/>
+<string id="storm_of_renewal_label_str" text="Tormenta de Renovación"/>
+<string id="storm_of_renewal_description_str" text="La energía pura fluye por el campo de batalla, renovando el vigor perdido y curando heridas. Cura 30 puntos de vida fijos y 10 puntos de vida a todos los objetivos amigos dentro del área durante 12 segundos."/>
+<string id="shieldofthorns_label_str" text="Escudo de Espinas"/>
+<string id="shieldofthorns_description_str" text="Tallos espinosos protegen a los aliados alrededor del hechicero. Reflejando el 25% del daño cuerpo a cuerpo recibido."/>
+<string id="amber_spear_label_str" text="Lanza de Ámbar"/>
+<string id="amber_spear_description_str" text="El lanzador arroja una jabalina de color ámbar en la dirección objetivo que penetra múltiples objetivos."/>
+<string id="tangling_thorn_label_str" text="Enredadera"/>
+<string id="tangling_thorn_description_str" text="Las raíces brotan del suelo impidiendo que los enemigos se muevan durante 4 segundos."/>
+<string id="panns_impenetrable_pelt_label_str" text="Piel Impenetrable de Pann"/>
+<string id="panns_impenetrable_pelt_description_str" text="Una piel mágica rodea al lanzador protegiéndolo del daño físico (35%) durante 12 segundos."/>
+<string id="hail_storm_label_str" text="Avalancha"/>
+<string id="hail_storm_description_str" text="Una avalancha cae sobre tus enemigos causando daño físico."/>
+<string id="flock_of_doom_label_str" text="Manada de la Condenación"/>
+<string id="flock_of_doom_description_str" text="Invoca una bandada de cuervos junto al objetivo. Los enemigos atrapados en el área sufren daño a lo largo del tiempo durante 5 segundos y su resistencia física se reduce en un 20%."/>
+<string id="the_beast_unleashed_label_str" text="Bestia Desatada"/>
+<string id="the_beast_unleashed_description_str" text="Desata el salvajismo primitivo en los aliados del hechicero, llevándolos al frenesí. Otorga un 25% más de daño físico y un 25% de velocidad de ataque en un radio de 3 metros durante 20 segundos."/>
+<string id="curse_of_anraheir_label_str" text="Maldición de Anraheir"/>
+<string id="curse_of_anraheir_description_str" text="Los espíritus del bosque obstaculizan a todos los enemigos atrapados en el área durante 11 segundos, reduciendo el movimiento (35%), la velocidad de ataque (50%) y causando 3 puntos de daño por segundo."/>
+<string id="quicksilver_swords_label_str" text="Espadas Plateadas Veloces"/>
+<string id="quicksilver_swords_description_str" text="Infunde energías brillantes a las armas de los aliados. Incluso una espada oxidada se vuelve mortal con la ayuda de un Hechicero Dorado. Las unidades amigas infligen un 20% de daño mágico y de fuego durante 60 segundos."/>
+<string id="gleaming_arrow_label_str" text="Flecha Reluciente"/>
+<string id="gleaming_arrow_description_str" text="El Hechicero Dorado dispara un proyectil de energía. El misil apunta al objetivo y causa 100 puntos de daño físico."/>
+<string id="meteoric_ironclad_label_str" text="Coraza Meteórica"/>
+<string id="meteoric_ironclad_description_str" text="Los aliados están protegidos por un encantamiento de hierro y plata. Proporciona un 60% de resistencia física durante una duración de 45 segundos."/>
+<string id="plague_of_rust_label_str" text="Oxidación"/>
+<string id="plague_of_rust_description_str" text="Con un movimiento de muñeca del hechicero, la armadura de los enemigos queda consumida por el óxido. Impone una penalización de resistencia física del 70% durante 120 segundos."/>
+<string id="wind_blast_label_str" text="Explosión de Viento"/>
+<string id="wind_blast_description_str" text="Una ráfaga de viento derriba a las víctimas y les causa daños menores."/>
+<string id="gehennas_golden_globe_label_str" text="Orbe Dorado de Gehennas"/>
+<string id="gehennas_golden_globe_description_str" text="Un brillante orbe de energía envuelve y quema vivos a los enemigos. Aquellos que tienen la mala suerte de sobrevivir también se ven ralentizados durante un breve período de tiempo."/>
+<string id="final_transmutation_label_str" text="Transmutación Final"/>
+<string id="final_transmutation_description_str" text="Tejiendo el brillante Viento de Chamon, el mago intenta transmutar a sus enemigos en estatuas de oro puro. Inflige daño continuo y ralentiza enormemente a los enemigos."/>
+<string id="gehennas_golden_hounds_label_str" text="Sabuesos Dorados de Gehennas"/>
+<string id="gehennas_golden_hounds_description_str" text="El mago invoca un par de enormes perros dorados que viajan en un movimiento circular."/>
+<string id="mortar_spawner_label_str" text="Colocar mortero"/>
+<string id="great_cannon_spawner_label_str" text="Colocar gran cañón"/>
+<string id="field_trebuchet_spawner_label_str" text="Colocar trebuquete"/>
+<string id="shadowstep_label_str" text="Forma de Bruma"/>
+<string id="righteous_fury_label_str" text="Furia Justa"/>
+<string id="accusation_str" text="Acusación"/>
+<string id="red_fury_label_str" text="Furia Roja"/>
+<string id="let_them_have_it_str" text="Darles su Merecido"/>
+<string id="axe_of_ulric_str" text="Hacha de Ulric"/>
+<string id="knightly_charge_label_str" text="Carga Caballerosa"/>
+<string id="greater_harbinger_label_str" text="Heraldo"/>
+<string id="greater_harbinger_description_str" text="Convoca un campeón en la ubicación seleccionada."/>
+<string id="mindcontrol_label_str" text="Control Mental"/>
+<string id="mindcontrol_description_str" text="Influyes en la mente de tu enemigo para obligarle a luchar por tí."/> 
+<string id="blast_of_agony_label_str" text="Explosión de Agonía"/>
+<string id="blast_of_agony_description_str" text="Lanza una devastadora explosión de agonía."/>
+<string id="arcane_conduit_label_str" text="Conducto Arcano"/>
+<string id="arrow_kurnous_label_str" text="Flecha de Kurnous"/>
+<string id="arrow_kurnous_description_str" text="Lanza una devastadora flecha guiada."/>
+<string id="wrath_of_woods_label_str" text="Ira del Bosque"/>
+<string id="wrath_of_woods_description_str" text="Convoca dríadas en la ubicación seleccionada."/>
+<string id="fey_paths_label_str" text="Pasos de las Hadas"/>
+<string id="fey_paths_description_str" text="La Damisela deambula por los senderos de las hadas. Teletransporta instantáneamente al jugador a la ubicación seleccionada. Se carga usando hechizos de daño o curación."/>
+<string id="regrowth_label_str" text="Crecer de Nuevo"/>
+<string id="regrowth_description_str" text="Invocando el nombre de Duthandor, señor de los antiguos santuarios salvajes, el mago cura las heridas y los huesos rotos de sus camaradas. Los aliados en un radio de 3 metros ganan 5 HP por segundo durante 12 segundos."/>
+<string id="comet_of_sigmar_label_str" text="Cometa de Sigmar"/>
+<string id="comet_of_sigmar_description_str" text="El sacerdote lanza un misil de fuego que toma la forma del famoso cometa de dos colas de Sigmar. Un cometa de Sigmar es un misil sagrado que causa 30 puntos dedaño. Puede derribar unidades o derribarlas. Sólo afecta a los enemigos"/>
+<string id="healing_hand_label_str" text="Mano Sanadora"/>
+<string id="healing_hand_description_str" text="Los aliados en un radio de 8 metros recuperan 5 HP cada 2 segundos durante 12 segundos."/>
+<string id="armor_of_righteousness_label_str" text="Armadura de Justicia"/>
+<string id="armor_of_righteousness_description_str" text="Los aliados en un radio de 15 metros obtienen un 40% de resistencia física durante 45 segundos."/>
+<string id="vanquish_label_str" text="Purga"/>
+<string id="vanquish_description_str" text="Mejora las armas de los aliados en un radio de 12 metros con el rasgo Flamígero durante 50 segundos. Las armas estallan en fuego y queman a todos los enemigos que golpean."/>
+<string id="ulric_gift_label_str" text="Regalo de Ulric"/>
+<string id="ulric_gift_description_str" text="El sacerdote-lobo deja escapar un poderoso aullido y dedica su matanza a Ulric. Gana +30 % de velocidad de movimiento y ataque durante 25 segundos."/>
+<string id="heart_of_wolf_label_str" text="Corazón del Lobo"/>
+<string id="heart_of_wolf_description_str" text="Los aliados del sacerdote se ven envueltos en un celoso frenesí. Las tropas amigas en un radio de 10 metros obtienen +35 % de daño físico, además de irrompibles e imparables durante 20 segundos."/>
+<string id="ice_storm_label_str" text="Tormenta de Hielo"/>
+<string id="ice_storm_description_str" text="El sacerdote-lobo invoca una granizada helada dentro de un área. Los enemigos sufren una penalización de -50% en velocidad de movimiento y ataque, así como daño en el tiempo."/>
+<string id="snow_king_label_str" text="Decreto del Rey de las Nieves"/>
+<string id="snow_king_description_str" text="El sacerdote ruge con una gran oración y convoca una ráfaga helada de llamas azules para limpiar el área objetivo de cobardes y débiles. Los enemigos afectados reciben daño, sufren una penalización de -50% en movimiento y velocidad de ataque, así como daño con en el tiempo."/>
+<string id="aerial_shield_label_str" text="Escudo Aéreo"/>
+<string id="aerial_shield_description_str" text="El poder de la Dama hace que los misiles enemigos desaparezcan en el aire. Otorga un 95% de resistencia física a distancia en un radio de 12 metros."/>
+<string id="aura_of_the_lady_label_str" text="Aura de la Dama"/>
+<string id="aura_of_the_lady_description_str" text="La Dama protege a las Damiselas y a sus seguidores de cualquier daño. Otorga un 80% de resistencia a la magia, a luz y el fuego en un radio de 15 metros."/>
+<string id="shield_of_combat_label_str" text="Escudo de Combate"/>
+<string id="shield_of_combat_description_str" text="El poder divino de la Dama hace que las armaduras de los aliados desvíen los golpes enemigos. Otorga un 50% de resistencia física en un radio de 12 metros."/>
+<string id="ladys_favour_label_str" text="El Favor de la Dama"/>
+<string id="ladys_favour_description_str" text="La Damisela evoca una visión de la Dama del Lago para guiar a los bretonianos hacia la batalla. Otorga una bonificación de velocidad de ataque del 25 % en un radio de 10 metros."/>
+		
+      </strings>
+</base>

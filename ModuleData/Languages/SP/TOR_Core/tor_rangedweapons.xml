@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
+  <tags>
+    <tag language="Español (LA)" />
+  </tags>
+  <strings>
+
+<string id="str_tor_empire_weapon_crossbow_empire_crossbow_001" text="Ballesta Imperial"/>
+<string id="str_tor_we_weapon_bow_001" text="Arco decorado Asrai"/>
+<string id="str_tor_we_weapon_bow_002" text="Arco Élfico"/>
+<string id="str_tor_we_weapon_bow_003" text="Arco Élfico"/>
+<string id="str_tor_we_weapon_bow_004" text="Arco decorado Asrai"/>
+<string id="str_tor_we_weapon_bow_005" text="Arco Élfico"/>
+<string id="str_tor_we_weapon_bow_006" text="Arco Élfico"/>
+<string id="str_tor_we_weapon_bow_007" text="Arco decorado Asrai"/>
+<string id="str_tor_we_weapon_bow_008" text="Arco Élfico"/>
+<string id="str_tor_we_weapon_bow_009" text="Arco Élfico"/>
+<string id="str_tor_we_weapon_bow_010" text="Arco decorado Asrai"/>
+<string id="str_tor_we_weapon_bow_011" text="Arco Élfico"/>
+<string id="str_tor_we_weapon_bow_012" text="Arco de Forestal"/>
+<string id="str_tor_we_weapon_bow_013" text="Arco de Forestal"/>
+<string id="str_tor_we_weapon_bow_legendary" text="Arco de Kurnous"/>
+<string id="str_tor_neutral_weapon_gun_old_rifle" text="Rifle Anticuado"/>
+<string id="str_tor_empire_weapon_gun_arquebus_001" text="Arcabuz"/>
+<string id="str_tor_empire_weapon_gun_arquebus_002" text="Arcabuz"/>
+<string id="str_tor_empire_weapon_gun_handgun_001" text="Mosquete Imperial"/>
+<string id="str_tor_empire_weapon_gun_flintlock_001" text="Revólver Imperial"/>
+<string id="str_tor_empire_weapon_gun_empire_repeater_001" text="Rifle de Repetición Imperial de 6 cañones"/>
+<string id="str_tor_empire_weapon_gun_handgun_002" text="Rifle de Repetición Imperial de 6 cañones"/>
+<string id="str_tor_empire_weapon_gun_empire_repeater_003" text="Rifle de Repetición Imperial de 6 cañones"/>
+<string id="str_tor_empire_weapon_gun_handgun_003" text="Pistola con Bayoneta"/>
+<string id="str_tor_empire_weapon_gun_flintlock_pistol_005" text="Pistola con Bayoneta de 2 cañones"/>
+<string id="str_tor_empire_weapon_gun_flintlock_pistol_006" text="Revólver Imperial"/>
+<string id="str_tor_empire_weapon_gun_flintlock_pistol_007" text="Revólver Automático Imperial"/>
+<string id="str_tor_empire_weapon_gun_flintlock_pistol_008" text="Revólver de 4 cañones"/>
+<string id="str_tor_empire_weapon_gun_longrifle_001" text="Rifle Largo de Hochland"/>
+<string id="str_tor_empire_weapon_gun_longrifle_002" text="Rifle Largo de Hochland"/>
+<string id="str_tor_empire_weapon_gun_longrifle_003" text="Rifle Largo de Hochland"/>
+<string id="str_tor_empire_weapon_gun_longrifle_004" text="Rifle Largo de Hochland"/>
+<string id="str_tor_empire_weapon_gun_blunderbuss_001" text="Trabuco Imperial"/>
+<string id="str_tor_empire_weapon_gun_blunderbuss_002" text="Trabuco Imperial"/>
+<string id="str_tor_empire_weapon_gun_big_musket_001" text="Mosquete Grande"/>
+<string id="str_tor_empire_weapon_gun_big_musket_002" text="Mosquete Grande"/>
+<string id="str_tor_empire_weapon_gun_special_musket_001" text="Mosquete Imperial decorado"/>
+<string id="str_tor_empire_weapon_gun_special_musket_002" text="Mosquete Imperial decorado"/>
+
+      </strings>
+</base>
+
