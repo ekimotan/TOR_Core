@@ -225,20 +225,21 @@ namespace TOR_Core.Models
             additionalDamagePercentages = new float[(int)DamageType.All + 1];
              if (propertyMask == PropertyMask.Attack || propertyMask == PropertyMask.All)
              {
-                 //Hero item level attributes 
-                 List<ItemTrait> itemTraits = new List<ItemTrait>();
-                 List<ItemObject> armorItems;
-                // get all equipment Pieces - here only armor
+                // Apply damage proportions of this hero's template
                 var templateDamageProportions = hero.GetTemplateDamageProportions();
                 foreach (var proportionTuple in templateDamageProportions) {
                     damageProportions[(int)proportionTuple.DamageType] = proportionTuple.Percent;
                 }
                 var templateOffensiveProperties = hero.GetTemplateAttackProperties();
-                //add all offense properties of the Unit
+                // Apply all offensive properties of this hero's template
                 foreach (var property in templateOffensiveProperties) {
                     damageAmplifications[(int)property.AmplifiedDamageType] += property.DamageAmplifier;
                 }
 
+                 //Hero item level attributes 
+                 List<ItemTrait> itemTraits = new List<ItemTrait>();
+                 List<ItemObject> armorItems;
+                // get all equipment Pieces - here only armor
                 armorItems = agent.Character.GetCharacterEquipment(EquipmentIndex.ArmorItemBeginSlot);
                  foreach (var item in armorItems)
                  {
