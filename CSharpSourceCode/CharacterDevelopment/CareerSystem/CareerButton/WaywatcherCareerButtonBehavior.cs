@@ -118,15 +118,10 @@ public class WaywatcherCareerButtonBehavior : CareerButtonBehaviorBase
         }
         
         var partyExtendedInfo = ExtendedInfoManager.Instance.GetPartyInfoFor(Hero.MainHero.PartyBelongedTo.StringId);
-        var attributes = partyExtendedInfo.TroopAttributes.FirstOrDefault(x => x.Key == _setCharacter.StringId).Value;
-
-
-        
         
         var arrowType = GetCurrentActiveArrowType(_setCharacter);
 
         if (arrowType != null) partyExtendedInfo.RemoveTroopAttribute(_setCharacter.StringId, arrowType.Effect);
-        
         
         if (arrow != null)
         {

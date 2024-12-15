@@ -9,6 +9,7 @@ using TaleWorlds.CampaignSystem.Party;
 using TaleWorlds.CampaignSystem.Roster;
 using TaleWorlds.Core;
 using TaleWorlds.Library;
+using TaleWorlds.LinQuick;
 using TaleWorlds.Localization;
 using TaleWorlds.MountAndBlade;
 using TOR_Core.AbilitySystem;
@@ -19,6 +20,7 @@ using TOR_Core.BattleMechanics.DamageSystem;
 using TOR_Core.BattleMechanics.StatusEffect;
 using TOR_Core.BattleMechanics.TriggeredEffect;
 using TOR_Core.BattleMechanics.TriggeredEffect.Scripts;
+using TOR_Core.CampaignMechanics.Religion;
 using TOR_Core.CharacterDevelopment.CareerSystem.Button;
 using TOR_Core.CharacterDevelopment.CareerSystem.CareerButton;
 using TOR_Core.CharacterDevelopment.CareerSystem.Choices;
@@ -76,9 +78,6 @@ namespace TOR_Core.CharacterDevelopment.CareerSystem
 
             return skillValue*scalingFactor;
         }
-
-
-        
         
         public static void ApplyBasicCareerPassives(Hero hero, ref ExplainedNumber number, PassiveEffectType passiveEffectType, AttackTypeMask mask, bool asFactor = false)
         {
@@ -94,7 +93,6 @@ namespace TOR_Core.CharacterDevelopment.CareerSystem
                     var attackMask = choice.Passive.AttackTypeMask;
                     if ((mask & attackMask) == 0) //if mask does NOT contains attackmask
                         continue;
-                    
                     
                     var value = choice.Passive.EffectMagnitude;
                     if (choice.Passive.InterpretAsPercentage)
@@ -468,10 +466,57 @@ namespace TOR_Core.CharacterDevelopment.CareerSystem
                         break;
                     }
                 }
-                
-                
+            }
+        }
+        
+        public static ItemTrait GetTraitForReligion(Hero hero, ReligionObject religionObject)
+        {
+            var traitName = "ReligionKnightlyStrikeTrait";
+            var religion = Hero.MainHero.GetDominantReligion();
+            
+            ItemTrait trait = new ItemTrait();
+            trait.ItemTraitName = traitName;
+            if (religion == null || Hero.MainHero.GetDevotionLevelForReligion(religion) < DevotionLevel.Fanatic)
+            {
+                var damageTuple = new DamageProportionTuple { DamageType = DamageType.Physical, Percent = 0.2f };
+                trait.AdditionalDamageTuple = damageTuple;
+            }
+            
+            switch (religion.StringId)
+            {
+                case "cult_of_sigmar":
+                {
+                   
+                    var damageTuple = new DamageProportionTuple { DamageType = DamageType.Holy, Percent = 0.2f };
+                    trait.AdditionalDamageTuple = damageTuple;
+                    trait.WeaponParticlePreset = new WeaponParticlePreset { ParticlePrefab = "psys_light_weapon" };
+                    break;
+                }
+                case "cult_of_ulric":
+                {
+                    var damageTuple = new DamageProportionTuple { DamageType = DamageType.Frost, Percent = 0.2f };
+                    trait.AdditionalDamageTuple = damageTuple;
+                    trait.WeaponParticlePreset = new WeaponParticlePreset { ParticlePrefab = "psys_light_weapon" };
+                    break;
+                }
+                case "cult_of_taal":
+                {
+                    var damageTuple = new DamageProportionTuple { DamageType = DamageType.Holy, Percent = 0.2f };
+                    trait.AdditionalDamageTuple = damageTuple;
+                    trait.WeaponParticlePreset = new WeaponParticlePreset { ParticlePrefab = "psys_light_weapon" };
+                    break;
+                }
+                case "cult_of_manaan":
+                    trait.AdditionalDamageTuple.DamageType = DamageType.Lightning;
+                    trait.WeaponParticlePreset = new WeaponParticlePreset { ParticlePrefab = "electric_weapon" };
+                    break;
+                case "cult_of_shallya":
+                    trait.AdditionalDamageTuple.DamageType = DamageType.Holy;
+                    trait.WeaponParticlePreset = new WeaponParticlePreset { ParticlePrefab = "psys_light_weapon" };
+                    break;
             }
 
+            return trait;
         }
 
         public static void RemoveCareerRelatedTroopAttributes(MobileParty mobileParty, string troopId,
@@ -482,6 +527,34 @@ namespace TOR_Core.CharacterDevelopment.CareerSystem
             if(Hero.MainHero.HasCareer(TORCareers.ImperialMagister))
             {
                 RemovePowerstone(mobilePartyinfo.TroopAttributes[troopId]);
+            }
+        }
+
+        public static void PuritySealAssignment(Agent agent)
+        {
+            MobilePartyExtendedInfo extendedInfo = ExtendedInfoManager.Instance.GetPartyInfoFor(Hero.MainHero.PartyBelongedTo.StringId);
+            
+            var button =  CareerHelper.GetCareerButton() as KnightOldWorldCareerButtonBehavior;
+            var seals = button.GetAllPuritySeals();
+            extendedInfo.TroopAttributes.TryGetValue(agent.Character.StringId , out var attributes);
+
+            if (attributes == null)
+            {
+                return;
+            }
+
+            foreach (var seal in seals)
+            {
+                foreach (var attribute in attributes)
+                {
+                    if (attribute == seal.SealId)
+                    {
+                        if (seal.triggeredEffectId != null)
+                        {
+                            AddMissionPermanentEffect(agent, seal.triggeredEffectId);
+                        }
+                    }
+                }
             }
         }
     }

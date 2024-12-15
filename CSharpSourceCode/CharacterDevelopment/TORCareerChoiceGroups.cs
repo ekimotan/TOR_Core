@@ -148,6 +148,15 @@ namespace TOR_Core.CharacterDevelopment
         private CareerChoiceGroupObject _byAllMeans;
         private CareerChoiceGroupObject _secretOfFellfang;
         
+        // Knight of the Old World
+
+        private CareerChoiceGroupObject _secularOrders;
+        private CareerChoiceGroupObject _pathOfConquest;
+        private CareerChoiceGroupObject _squires;
+        private CareerChoiceGroupObject _templarOrders;
+        private CareerChoiceGroupObject _pathOfViligance;
+        private CareerChoiceGroupObject _wrathAgainstChaos;
+        private CareerChoiceGroupObject _pathOfGlory;
         
         public TORCareerChoiceGroups()
         {
@@ -294,6 +303,16 @@ namespace TOR_Core.CharacterDevelopment
             _forbiddenScrollsOfSaphery = Game.Current.ObjectManager.RegisterPresumedObject(new CareerChoiceGroupObject(nameof(_forbiddenScrollsOfSaphery).UnderscoreFirstCharToUpper()));
             _byAllMeans = Game.Current.ObjectManager.RegisterPresumedObject(new CareerChoiceGroupObject(nameof(_byAllMeans).UnderscoreFirstCharToUpper()));
             _secretOfFellfang = Game.Current.ObjectManager.RegisterPresumedObject(new CareerChoiceGroupObject(nameof(_secretOfFellfang).UnderscoreFirstCharToUpper()));
+            
+            //Knight of The Old World
+            
+            _secularOrders = Game.Current.ObjectManager.RegisterPresumedObject(new CareerChoiceGroupObject(nameof(_secularOrders).UnderscoreFirstCharToUpper()));
+            _pathOfConquest = Game.Current.ObjectManager.RegisterPresumedObject(new CareerChoiceGroupObject(nameof(_pathOfConquest).UnderscoreFirstCharToUpper()));
+            _squires = Game.Current.ObjectManager.RegisterPresumedObject(new CareerChoiceGroupObject(nameof(_squires).UnderscoreFirstCharToUpper()));
+            _templarOrders = Game.Current.ObjectManager.RegisterPresumedObject(new CareerChoiceGroupObject(nameof(_templarOrders).UnderscoreFirstCharToUpper()));
+            _pathOfViligance = Game.Current.ObjectManager.RegisterPresumedObject(new CareerChoiceGroupObject(nameof(_pathOfViligance).UnderscoreFirstCharToUpper()));
+            _wrathAgainstChaos = Game.Current.ObjectManager.RegisterPresumedObject(new CareerChoiceGroupObject(nameof(_wrathAgainstChaos).UnderscoreFirstCharToUpper()));
+            _pathOfGlory = Game.Current.ObjectManager.RegisterPresumedObject(new CareerChoiceGroupObject(nameof(_pathOfGlory).UnderscoreFirstCharToUpper()));
 
         }
 
@@ -918,6 +937,47 @@ namespace TOR_Core.CharacterDevelopment
                 text = "Required clan renown: 4";
                 return hero.Clan.Tier >= 4;
             });
+            
+            //Knight of the Old World
+            _secularOrders.Initialize("Secular Orders", TORCareers.KnightOldWorld, 1, (Hero hero, out string text) =>
+            {
+                text = string.Empty;
+                return true;
+            });
+            _pathOfConquest.Initialize("Path of Conquest", TORCareers.KnightOldWorld, 1, (Hero hero, out string text) =>
+            {
+                text = string.Empty;
+                return true;
+            });
+            _squires.Initialize("Squires", TORCareers.KnightOldWorld, 1, (Hero hero, out string text) =>
+            {
+                text = string.Empty;
+                return true;
+            });
+            _templarOrders.Initialize("Templar Orders", TORCareers.KnightOldWorld, 2, (Hero hero, out string text) =>
+            {
+                text = "Required clan renown: 2";
+                return hero.Clan.Tier >= 2;
+            });
+            
+            _pathOfViligance.Initialize("Path of Vigiliance", TORCareers.KnightOldWorld, 2, (Hero hero, out string text) =>
+            {
+                text = "Required clan renown: 2";
+                return hero.Clan.Tier >= 2;
+            });
+            
+            _wrathAgainstChaos.Initialize("Wrath against Chaos", TORCareers.KnightOldWorld, 2, (Hero hero, out string text) =>
+            {
+                text = "Required clan renown: 2";
+                return hero.Clan.Tier >= 2;
+            });
+          
+            _pathOfGlory.Initialize("Path of Glory", TORCareers.KnightOldWorld, 3, (Hero hero, out string text) =>
+            {
+                text = "Required clan renown: 4";
+                return hero.Clan.Tier >= 4;
+            });
+
 
         }
     }

@@ -44,7 +44,8 @@ namespace TOR_Core.CharacterDevelopment
                 new ImperialMagisterCareerChoices(TORCareers.ImperialMagister),
                 new WaywatcherCareerChoices(TORCareers.Waywatcher),
                 new SpellsingerCareerChoices(TORCareers.Spellsinger),
-                new GreyLordCareerChoices(TORCareers.GreyLord)
+                new GreyLordCareerChoices(TORCareers.GreyLord),
+                new KnightOldWorldCareerChoices(TORCareers.KnightOldWorld),
             ];
         }
 

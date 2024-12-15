@@ -55,12 +55,12 @@ namespace TOR_Core.BattleMechanics.StatusEffect
             while (_unprocessedAgents.Count>0)
             {
                 var queueAgent = _unprocessedAgents.Dequeue();
-                CheckPermanentEffectsForAddingPermanentEffects(queueAgent);
+                CheckUnitForAddingPermanentEffects(queueAgent);
             }
         }
 
 
-        private void CheckPermanentEffectsForAddingPermanentEffects(Agent agent)
+        private void CheckUnitForAddingPermanentEffects(Agent agent)
         {
             if (agent?.Character == null)
             {
@@ -78,6 +78,11 @@ namespace TOR_Core.BattleMechanics.StatusEffect
             {
                 CareerHelper.PowerstoneEffectAssignment(agent);
                 return;
+            }
+
+            if (agent.BelongsToMainParty() && Hero.MainHero.HasCareer(TORCareers.KnightOldWorld))
+            {
+                CareerHelper.PuritySealAssignment(agent);
             }
 
             if (agent.GetOriginMobileParty().HasBlessing("cult_of_loec"))
