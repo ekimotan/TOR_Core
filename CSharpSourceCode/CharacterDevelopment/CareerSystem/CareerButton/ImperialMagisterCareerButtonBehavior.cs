@@ -29,6 +29,7 @@ namespace TOR_Core.CharacterDevelopment.CareerSystem.CareerButton
         private string _lifeIcon = "CareerSystem\\ghyran";
         private string _beastIcon = "CareerSystem\\ghur";
         private string _metalIcon = "CareerSystem\\chamon";
+        private string _deathIcon = "CareerSystem\\chamon";
         
         
         public List<PowerStone> AvailablePowerStones { get; } = new List<PowerStone>();
@@ -107,6 +108,7 @@ namespace TOR_Core.CharacterDevelopment.CareerSystem.CareerButton
             MBTextManager.SetTextVariable("LIFE_ICON", string.Format("<img src=\"{0}\"/>",_lifeIcon));
             MBTextManager.SetTextVariable("BEAST_ICON", string.Format("<img src=\"{0}\"/>",_beastIcon));
             MBTextManager.SetTextVariable("METAL_ICON", string.Format("<img src=\"{0}\"/>",_metalIcon));
+            MBTextManager.SetTextVariable("DEATH_ICON", string.Format("<img src=\"{0}\"/>",_metalIcon));
             AvailablePowerStones = CreateStoneList();
         }
 
@@ -174,7 +176,20 @@ namespace TOR_Core.CharacterDevelopment.CareerSystem.CareerButton
                 new PowerStone("metal_res_30_debuff", new TextObject("Lesser Burdening Goldstone"),new TextObject("+30% physical resistance, 35% reduced speed"), "powerstone_metal_res_less", 
                     15,
                     10,
-                    "LoreOfMetal", PowerSize.Lesser)
+                    "LoreOfMetal", PowerSize.Lesser),
+                
+                new PowerStone("death_dmg_15", new TextObject("Lesser Harming Endstone"), new TextObject("+15% physical damage"),"powerstone_metal_dmg1", 
+                15, 
+                10,
+                "LoreOfDeath", PowerSize.Lesser),
+                new PowerStone("death_res_mag_20", new TextObject("Lesser Encouraging Endstone"),new TextObject("+20% magic damage resistance"), "powerstone_metal_dmg2", 
+                    15, 
+                    10,
+                    "LoreOfDeath", PowerSize.Lesser),
+                new PowerStone("death_res_30_debuff", new TextObject("Lesser deadening Endstone"),new TextObject("+25% physical resistance, 20% reduced swing-speed"), "powerstone_metal_res_less", 
+                    15,
+                    10,
+                    "LoreOfDeath", PowerSize.Lesser)
             };
 
             return list;
@@ -225,7 +240,13 @@ namespace TOR_Core.CharacterDevelopment.CareerSystem.CareerButton
                     20, 4,
                     "LoreOfMetal", PowerSize.Greater),
                 new PowerStone("metal_magic_dmg_20", new TextObject("Greater Goldstone of Sharpening"),new TextObject("+50% Armor penetration"), "powerstone_metal_pen", 20, 4,
-                    "LoreOfMetal", PowerSize.Greater)
+                    "LoreOfMetal", PowerSize.Greater),
+                
+                new PowerStone("death_trait_undead_bane", new TextObject("Greater Banishing Endstone"),new TextObject("50% more damage against undead and vampires"), "powerstone_death_undead_bane",
+                20, 4,
+                "LoreOfDeath", PowerSize.Greater),
+                new PowerStone("death_dmg_mag_20", new TextObject("Greater Harming Endstone"),new TextObject("20% extra magical damage"), "powerstone_death_dmg_trait", 20, 4,
+                    "LoreOfDeath", PowerSize.Greater),
             };
 
             return list;
@@ -256,7 +277,10 @@ namespace TOR_Core.CharacterDevelopment.CareerSystem.CareerButton
                     "LoreOfHeavens", PowerSize.Mighty),
 
                 new PowerStone("metal_magic_dmg_phys", new TextObject("Mighty Goldstone"),new TextObject("40% Armor penetration, 20% magical, 20% fire"),  "powerstone_metal_trait2", 50, 50,
-                    "LoreOfMetal", PowerSize.Mighty)
+                    "LoreOfMetal", PowerSize.Mighty),
+                
+                new PowerStone("death_magic_surv_100", new TextObject("Mighty Endstone"),new TextObject("100% survival Chance for Unit"),  "powerstone_metal_trait2", 50, 50,
+                "LoreOfDeath", PowerSize.Mighty)
             };
 
             return list;
@@ -383,7 +407,7 @@ namespace TOR_Core.CharacterDevelopment.CareerSystem.CareerButton
                     case "LoreOfBeasts": return _beastIcon;
                     case "LoreOfLife": return _lifeIcon;
                     case "LoreOfMetal": return _metalIcon;
-             
+                    case "LoreOfDeath": return _deathIcon;
                 }
             }
             switch (stoneLoreId)
@@ -394,6 +418,7 @@ namespace TOR_Core.CharacterDevelopment.CareerSystem.CareerButton
                 case "LoreOfBeasts": return "BEAST_ICON";
                 case "LoreOfLife": return "LIFE_ICON";
                 case "LoreOfMetal": return "METAL_ICON";
+                case "LoreOfDeath": return "DEATH_ICON";
                 default: return "{}"; 
             }
         }

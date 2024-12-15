@@ -1830,12 +1830,12 @@
 	<AbilityTemplate StringID="TasteOfDeath"
                      Name="{=tasteofdeath_label_str}Taste of Death"
                      SpriteName="snow_kings_decree_icon"
-                     CoolDown="70"
-                     WindsOfMagicCost="0"
+                     CoolDown="10"
+                     WindsOfMagicCost="8"
                      BaseMisCastChance="0.05"
                      Duration="5"
                      Radius="8"
-                     AbilityType="Prayer"
+                     AbilityType="Spell"
                      AbilityEffectType="Hex"
                      BaseMovementSpeed="0"
                      TickInterval="-1"
@@ -1846,7 +1846,7 @@
                      LightFlickeringMagnitude="0"
                      LightFlickeringInterval="0"
                      ShadowCastEnabled="true"
-                     ParticleEffectPrefab="snow_king_decree_explosion"
+                     ParticleEffectPrefab=""
                      ParticleEffectSizeModifier="1"
                      SoundEffectToPlay=""
                      ShouldSoundLoopOverDuration="false"
@@ -1914,7 +1914,7 @@
                 <y>170</y>
             </AsVec2>
         </LightColorRGB>
-        <TriggeredEffect>deathspasm_explosion</TriggeredEffect>
+        <TriggeredEffect>ashes_and_dust_explosion</TriggeredEffect>
     </AbilityTemplate>
 	
 	<AbilityTemplate StringID="PurpleSun"
@@ -1978,7 +1978,7 @@
                      AbilityType="Spell"
                      AbilityEffectType="Hex"
                      BaseMovementSpeed="0"
-                     TickInterval="1"
+                     TickInterval="2"
                      TriggerType="EveryTick"
                      HasLight="false"
                      LightIntensity="0"
@@ -1999,7 +1999,7 @@
                      MaxDistance="20"
                      CrosshairType="TargetedAOE"
                      SpellTier="4"
-                     BelongsToLoreID="LoreOfBeasts"
+                     BelongsToLoreID="LoreOfDeath"
                      TooltipDescription="{=curse_of_anraheir_description_str}Woodland sprites hinder all enemies caught in the area for 15 seconds, reducing movement (35%) and attack speed (50%) as well as causing 3 damage per second.">
         <LightColorRGB x="255"
                        y="170"
@@ -2010,7 +2010,7 @@
                 <y>170</y>
             </AsVec2>
         </LightColorRGB>
-        <TriggeredEffect>curse_of_anraheir</TriggeredEffect>
+        <TriggeredEffect>fate_of_bjuna</TriggeredEffect>
     </AbilityTemplate>
 
     <AbilityTemplate StringID="Amaranth"
@@ -2043,7 +2043,7 @@
                      AbilityTargetType="AlliesInAOE"
                      TargetCapturingRadius="7"
                      MaxDistance="0.5"
-                     CrosshairType="TargetedAOE"
+                     CrosshairType="Self"
                      SpellTier="3"
                      BelongsToLoreID="LoreOfDeath"
                      TooltipDescription="{=barkskin_description_str}Hardens the skin of targets, making them tougher, providing 50% physical resistance for 80 secouds">
@@ -2056,22 +2056,23 @@
                 <y>170</y>
             </AsVec2>
         </LightColorRGB>
-        <TriggeredEffect>bark_skin</TriggeredEffect>
+        <TriggeredEffect>amaranth</TriggeredEffect>
     </AbilityTemplate>
 	
 	<AbilityTemplate StringID="SpiritLeech"
-                     Name="{=flock_of_doom_label_str}Caress of Laniph"
+                     Name="{=flock_of_doom_label_str}Spirit Leech"
                      SpriteName="flockofdoom_icon"
                      CoolDown="35"
                      WindsOfMagicCost="26"
                      BaseMisCastChance="0.05"
-                     Duration="10"
+					 Duration="0"
+                     
                      Radius="7.5"
                      AbilityType="Spell"
                      AbilityEffectType="Hex"
                      BaseMovementSpeed="0"
-                     TickInterval="1"
-                     TriggerType="EveryTick"
+                     TickInterval="-1"
+                     TriggerType="TickOnce"
                      HasLight="false"
                      LightIntensity="0"
                      LightRadius="0"
@@ -2087,8 +2088,8 @@
                      AnimationActionName="act_release_heavy_thrown"
                      Offset="0.5"
                      AbilityTargetType="EnemiesInAOE"
-                     TargetCapturingRadius="10"
-                     MaxDistance="20"
+                     TargetCapturingRadius="4"
+                     MaxDistance="100"
                      CrosshairType="TargetedAOE"
                      SpellTier="3"
                      BelongsToLoreID="LoreOfDeath"
@@ -2102,12 +2103,12 @@
                 <y>170</y>
             </AsVec2>
         </LightColorRGB>
-        <TriggeredEffect>flock_of_doom</TriggeredEffect>
+        <TriggeredEffect>spirit_leech</TriggeredEffect>
     </AbilityTemplate>
 	
 	
     <AbilityTemplate StringID="CaressOfLaniph"
-                     Name="{=flock_of_doom_label_str}Caress of Laniph"
+                     Name="{=caress_of_laniph_label_str}Caress of Laniph"
                      SpriteName="flockofdoom_icon"
                      CoolDown="35"
                      WindsOfMagicCost="26"
@@ -2126,7 +2127,7 @@
                      LightFlickeringInterval="0"
                      ShadowCastEnabled="true"
                      ParticleEffectPrefab=""
-                     ParticleEffectSizeModifier="0"
+                     ParticleEffectSizeModifier="3"
                      SoundEffectToPlay=""
                      ShouldSoundLoopOverDuration="false"
                      CastType="Instant"
@@ -2149,7 +2150,7 @@
                 <y>170</y>
             </AsVec2>
         </LightColorRGB>
-        <TriggeredEffect>flock_of_doom</TriggeredEffect>
+        <TriggeredEffect>caress_of_laniph</TriggeredEffect>
     </AbilityTemplate>
 	
     <!-- Dark Magic -->

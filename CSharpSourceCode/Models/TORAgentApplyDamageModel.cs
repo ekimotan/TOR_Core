@@ -125,6 +125,11 @@ namespace TOR_Core.Models
                             weaponComponentData.WeaponFlags |= WeaponFlags.BonusAgainstShield;
                         }
                     }
+
+                if (defender.IsUndead()|| defender.IsVampire() && attacker.HasAttribute("UndeadBane"))
+                {
+                    resultDamage.AddFactor(0.5f);
+                }
             }
             
             if (attacker.IsTreeSpirit())
@@ -248,6 +253,9 @@ namespace TOR_Core.Models
                      }
 
                  }
+
+                 Agent t;
+                 
 
                  var statusEffectAmplifiers = agent.GetComponent<StatusEffectComponent>().GetAmplifiers(attackTypeMask);
 

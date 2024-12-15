@@ -19,9 +19,15 @@ namespace TOR_Core.Models
     {
         public override float GetSurvivalChance(PartyBase party, CharacterObject character, DamageTypes damageType, bool canDamageKillEvenIfBlunt, PartyBase enemyParty = null)
         {
+            if (character.HasAttribute("Survivor"))
+            {
+                return 1;
+            }
+            
             var result = base.GetSurvivalChance(party, character, damageType, canDamageKillEvenIfBlunt, enemyParty);
             
             if (result < 0.5f && party != null && party.LeaderHero != null && party.LeaderHero.GetPerkValue(TORPerks.Faith.Revival)) result = TORPerks.Faith.Revival.PrimaryBonus;
+                
             if (!character.IsUndead()) 
                 return result;   
             //undead "survival chance"
