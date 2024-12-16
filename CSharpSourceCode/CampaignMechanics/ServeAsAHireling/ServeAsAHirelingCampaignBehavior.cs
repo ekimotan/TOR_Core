@@ -171,8 +171,16 @@ namespace TOR_Core.CampaignMechanics.ServeAsAHireling
             if (_startBattle && obj.MenuContext.GameMenu.StringId == "encounter" && !_debugSkipBattles)
             {
                 _startBattle = false;
+
+                if (Hero.MainHero.PartyBelongedTo.MapEvent != null)
+                {
+                    MenuHelper.EncounterAttackConsequence(obj);
+                }
+                else
+                {
+                    _startBattle = true;
+                }
                 
-                MenuHelper.EncounterAttackConsequence(obj);
             }
             if (_debugSkipBattles && _hirelingEnlistingLordIsAttacking)
             {

@@ -1579,13 +1579,13 @@
       <Equipment slot="Item0" id="Item.peasant_pickaxe_1_t1" />
       <Equipment slot="Item1" id="Item.western_spear_2_t2" />
       <Equipment slot="Head" id="Item.imperial_cloth_coif" />
-      <Equipment slot="Body" id="Item.sackcloth_tunic" />
+      <Equipment slot="Body" id="Item.vlandia_bandit_b" />
     </EquipmentSet>
     <EquipmentSet civilian="true">
       <Equipment slot="Item0" id="Item.peasant_pickaxe_1_t1" />
       <Equipment slot="Item1" id="Item.western_spear_2_t2" />
       <Equipment slot="Head" id="Item.imperial_cloth_coif" />
-      <Equipment slot="Body" id="Item.sackcloth_tunic" />
+      <Equipment slot="Body" id="Item.vlandia_bandit_b" />
     </EquipmentSet>
     <EquipmentSet>
       <Equipment slot="Item0" id="Item.peasant_2haxe_1_t1" />
@@ -1596,6 +1596,28 @@
       <Equipment slot="Item0" id="Item.peasant_2haxe_1_t1" />
       <Equipment slot="Head" id="Item.imperial_leather_coif" />
       <Equipment slot="Body" id="Item.sackcloth_tunic" />
+    </EquipmentSet>
+    <EquipmentSet>
+      <Equipment slot="Item0" id="Item.peasant_pitchfork_1_t1" />
+      <Equipment slot="Head" id="Item.head_wrapping" />
+      <Equipment slot="Body" id="Item.long_hemp_tunic" />
+      <Equipment slot="Cape" id="Item.hood" />
+    </EquipmentSet>
+    <EquipmentSet civilian="true">
+      <Equipment slot="Item0" id="Item.peasant_pitchfork_1_t1" />
+      <Equipment slot="Head" id="Item.head_wrapping" />
+      <Equipment slot="Body" id="Item.long_hemp_tunic" />
+      <Equipment slot="Cape" id="Item.hood" />
+    </EquipmentSet>
+    <EquipmentSet>
+      <Equipment slot="Item0" id="Item.peasant_2haxe_1_t1" />
+      <Equipment slot="Head" id="Item.tor_bretonnian_head_helm_hood_001" />
+      <Equipment slot="Body" id="Item.long_hemp_tunic" />
+    </EquipmentSet>
+    <EquipmentSet civilian="true">
+      <Equipment slot="Item0" id="Item.peasant_2haxe_1_t1" />
+      <Equipment slot="Head" id="Item.tor_bretonnian_head_helm_hood_001" />
+      <Equipment slot="Body" id="Item.long_hemp_tunic" />
     </EquipmentSet>
   </EquipmentRoster>
   <EquipmentRoster id="tor_br_peasant_levy_template" culture="Culture.vlandia">
@@ -1625,13 +1647,13 @@
       <Equipment slot="Item0" id="Item.peasant_pickaxe_1_t1" />
       <Equipment slot="Item1" id="Item.western_spear_2_t2" />
       <Equipment slot="Head" id="Item.imperial_cloth_coif" />
-      <Equipment slot="Body" id="Item.sackcloth_tunic" />
+      <Equipment slot="Body" id="Item.vlandia_bandit_b" />
     </EquipmentSet>
     <EquipmentSet civilian="true">
       <Equipment slot="Item0" id="Item.peasant_pickaxe_1_t1" />
       <Equipment slot="Item1" id="Item.western_spear_2_t2" />
       <Equipment slot="Head" id="Item.imperial_cloth_coif" />
-      <Equipment slot="Body" id="Item.sackcloth_tunic" />
+      <Equipment slot="Body" id="Item.vlandia_bandit_b" />
     </EquipmentSet>
     <EquipmentSet>
       <Equipment slot="Item0" id="Item.peasant_2haxe_1_t1" />
@@ -1642,6 +1664,28 @@
       <Equipment slot="Item0" id="Item.peasant_2haxe_1_t1" />
       <Equipment slot="Head" id="Item.imperial_leather_coif" />
       <Equipment slot="Body" id="Item.sackcloth_tunic" />
+    </EquipmentSet>
+    <EquipmentSet>
+      <Equipment slot="Item0" id="Item.peasant_pitchfork_1_t1" />
+      <Equipment slot="Head" id="Item.head_wrapping" />
+      <Equipment slot="Body" id="Item.long_hemp_tunic" />
+      <Equipment slot="Cape" id="Item.hood" />
+    </EquipmentSet>
+    <EquipmentSet civilian="true">
+      <Equipment slot="Item0" id="Item.peasant_pitchfork_1_t1" />
+      <Equipment slot="Head" id="Item.head_wrapping" />
+      <Equipment slot="Body" id="Item.long_hemp_tunic" />
+      <Equipment slot="Cape" id="Item.hood" />
+    </EquipmentSet>
+    <EquipmentSet>
+      <Equipment slot="Item0" id="Item.peasant_2haxe_1_t1" />
+      <Equipment slot="Head" id="Item.tor_bretonnian_head_helm_hood_001" />
+      <Equipment slot="Body" id="Item.long_hemp_tunic" />
+    </EquipmentSet>
+    <EquipmentSet civilian="true">
+      <Equipment slot="Item0" id="Item.peasant_2haxe_1_t1" />
+      <Equipment slot="Head" id="Item.tor_bretonnian_head_helm_hood_001" />
+      <Equipment slot="Body" id="Item.long_hemp_tunic" />
     </EquipmentSet>
   </EquipmentRoster>
   <EquipmentRoster id="tor_br_manatarms_militia_template" culture="Culture.vlandia">
@@ -19585,6 +19629,28 @@
       <Equipment slot="Gloves" id="Item.highland_gloves" />
       <Equipment slot="Leg" id="Item.fine_town_boots" />
       <Equipment slot="Horse" id="Item.vlandia_horse_tournament" />
+      <Equipment slot="HorseHarness" id="Item.light_harness" />
+    </EquipmentSet>
+  </EquipmentRoster>
+  <EquipmentRoster id="tor_cc_empire_knight_3" culture="Culture.empire">
+    <EquipmentSet>
+      <Equipment slot="Item0" id="Item.bastard_sword_t2" />
+      <Equipment slot="Item1" id="Item.highland_spear_3_t3" />
+      <Equipment slot="Head" id="Item.open_mail_coif" />
+      <Equipment slot="Body" id="Item.nordic_sloven" />
+      <Equipment slot="Cape" id="Item.wrapped_scarf" />
+      <Equipment slot="Leg" id="Item.fine_town_boots" />
+      <Equipment slot="Horse" id="Item.empire_horse_tournament" />
+      <Equipment slot="HorseHarness" id="Item.light_harness" />
+    </EquipmentSet>
+    <EquipmentSet civilian="true">
+      <Equipment slot="Item0" id="Item.bastard_sword_t2" />
+      <Equipment slot="Item1" id="Item.highland_spear_3_t3" />
+      <Equipment slot="Head" id="Item.open_mail_coif" />
+      <Equipment slot="Body" id="Item.nordic_sloven" />
+      <Equipment slot="Cape" id="Item.wrapped_scarf" />
+      <Equipment slot="Leg" id="Item.fine_town_boots" />
+      <Equipment slot="Horse" id="Item.empire_horse_tournament" />
       <Equipment slot="HorseHarness" id="Item.light_harness" />
     </EquipmentSet>
   </EquipmentRoster>

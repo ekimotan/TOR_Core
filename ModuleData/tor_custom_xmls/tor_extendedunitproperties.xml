@@ -6591,6 +6591,21 @@
       <string>SpellCaster</string>
     </Attributes>
   </CharacterExtendedInfo>
+  <CharacterExtendedInfo id="tor_dw_lord">
+    <Abilities>
+      <string>AshesAndDust</string>
+      <string>Amaranth</string>
+      <string>TasteOfDeath</string>
+      <string>SpiritLeech</string>
+      <string>CaressOfLaniph</string>
+      <string>PurpleSun</string>
+      <string>FateOfBjuna</string>
+    </Abilities>
+    <Attributes>
+      <string>AbilityUser</string>
+      <string>SpellCaster</string>
+    </Attributes>
+  </CharacterExtendedInfo>
   <CharacterExtendedInfo id="tor_prophetess_lw">
     <Abilities>
       <string>DwellersBelow</string>

@@ -1234,12 +1234,13 @@
   <string id="career_title.Waywatcher" text="{=tor_career_title_waywatcher_str}Waywatcher" />
   <string id="career_title.Spellsinger" text="{=tor_career_title_spellsinger_str}Spellsinger" />
   <string id="career_title.GreyLord" text="{=tor_career_title_greylord_str}Grey Lord Wizard" />
+  <string id="career_title.KnightOldWorld" text="{=tor_career_title_greylord_str}Knight of the Old World" />
 
 
   <string id="career_switch_title.MinorVampire" text="{=tor_career_switch_title_minorvampire_str}Become a Carstein Vampire" />
   <string id="career_switch_title.BloodKnight" text="{=tor_career_switch_title_bloodknight_str}Become a Blood Knight" />
   <string id="career_switch_title.BlackGrailKnight" text="{=tor_career_switch_title_blackgrailknight_str}Become a Knight of Mousillon" />
-    <string id="career_switch_title.Necrarch" text="{=tor_career_switch_title_necrarch_str}Become a Necrach" />
+   <string id="career_switch_title.Necrarch" text="{=tor_career_switch_title_necrarch_str}Become a Necrach" />
 
   <string id="career_switch_explaination.MinorVampire" text="{=tor_career_switch_explanation_minorvampire_str}
   By accepting you are becoming a Vampire, this decision is permanent and can't be changed back for the rest of your playthrough.{newline}
@@ -1342,6 +1343,10 @@
   <string id="career_choicegroup1_name.GreyLord" text="{=career_choicegroup1_greylord_str}Exile's Apprentice" />
   <string id="career_choicegroup2_name.GreyLord" text="{=career_choicegroup2_greylord_str}Grey Mage" />
   <string id="career_choicegroup3_name.GreyLord" text="{=career_choicegroup3_greylord_str}Grey Lord" />
+  
+  <string id="career_choicegroup1_name.KnightOldWorld" text="{=career_choicegroup1_greylord_str}Initiate Knight" />
+  <string id="career_choicegroup2_name.KnightOldWorld" text="{=career_choicegroup2_greylord_str}Seasoned Knight" />
+  <string id="career_choicegroup3_name.KnightOldWorld" text="{=career_choicegroup3_greylord_str}Knight Commander" />
 
   <!--Career related !-->
   <string id="career_description.WarriorPriest" text="{=career_description_warriorpriest_str}In life, Sigmar stood for the unification of Mankind, the destruction of evil and defiance against corruption. You hold the path set for you in his example high in your mind. To be a Priest of His faith is to be a Shepard to all mankind. Many of the cloth remain in their temples and cathedrals but you know the truth; the cursed and the damned must be sought out and vanquished." />
@@ -1359,6 +1364,8 @@
   <string id="career_description.Waywatcher" text="{=career_description_waywatcher_str}Waywatchers serve as the ultimate watchmen of Athel Loren, lords over the many paths leading in and out of the ancient wood. Master woodsmen and hunters, they can lie in ambush for several days, fire unerringly accurate barrages of arrows, and lay terrifying traps designed to kill, maim and dishearten any trespasser. Few marksmen can even approach a Waywatcher’s ability with the bow, even among the elves, as these elves have drifted the furthest away from elven civilization, embracing fully the call of the living forest." />
   <string id="career_description.GreyLord" text="{=career_description_greylord_str}The Greylords were once powerful mages of Ulthuan, but they were exiled for their cruel experiments. Today, the Greylords continue their often-dangerous experiments in secret in Laurelorn, willingly teach their apprentices the forbidden magic. The Greylords are not to be trifled with, by their power alone has the forest of Laurelorn been saved many times, though some remain fearful their powers may also doom the Eonir." />
   <string id="career_description.Spellsinger" text="{=career_description_spellsinger_str}Spellsingers have a unique bond with Athel Loren, they are bound to the forest through magical ritual, giving then the same communal awareness that dryads or treekin enjoy, without sacrificing their individuality. While the lesser Spellsingers commune with the forest, the greater ones can reshape it for building of homes or destruction of enemies. In Athel Loren Spellsingers are artists and mages, and invariably are the ones that travel outside the forest to engage in rare diplomacy. While both men and women become Spellsingers, the women typically become stronger due to Ariel's bond with the forest of Athel Loren." />
+  <string id="career_description.KnightOldWorld" text="{=career_description_knight_oldworld_str}The Old World is a home to numerous Knightly Orders. Their members ordinarily follow one particular deity, like the ferocious White Wolves of Ulric or the accomplished Blazing Suns of Myrmidia. But it's not uncommon to encounter secular Orders like the Knights Panther.
+While rather varied in terms of equipment, faiths, or beliefs, such knights ultimately share similar goals: promotion of their Orders and annihilation of all things foul. Knights of the Old World are also famous for their elite training, finest gear, as well as influence that extends across the four corners of the realm." />
 
 
   <string id="TORKnightPuritySealName.SecularSeal1" text="{=tor_knightpuritysealname_secular_1_str}Lesser Secular Seal" />
