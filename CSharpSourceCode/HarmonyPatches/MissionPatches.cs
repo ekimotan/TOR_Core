@@ -7,10 +7,12 @@ using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.Party;
 using TaleWorlds.CampaignSystem.Siege;
 using TaleWorlds.Core;
+using TaleWorlds.Engine;
 using TaleWorlds.Library;
 using TaleWorlds.MountAndBlade;
 using TOR_Core.AbilitySystem;
 using TOR_Core.Extensions;
+using TOR_Core.Models;
 using TOR_Core.Utilities;
 
 namespace TOR_Core.HarmonyPatches
@@ -41,6 +43,40 @@ namespace TOR_Core.HarmonyPatches
                 return false;
             }
             return true;
+        }
+        
+        [HarmonyPostfix]
+        [HarmonyPatch(typeof(Mission), "MeleeHitCallback")]
+        private static void MeleeHitCallbackPostfix(
+            ref AttackCollisionData collisionData,
+            Agent attacker,
+            Agent victim,
+            GameEntity realHitEntity,
+            ref float inOutMomentumRemaining,
+            ref MeleeCollisionReaction colReaction,
+            CrushThroughState crushThroughState,
+            Vec3 blowDir,
+            Vec3 swingDir,
+            ref HitParticleResultData hitParticleResultData,
+            bool crushedThroughWithoutAgentCollision)
+        {
+            int inflictedDamage = collisionData.InflictedDamage + collisionData.AbsorbedByArmor;
+            if (inflictedDamage < 1)
+            {
+                return;
+            }
+            
+            var model = (TORAgentApplyDamageModel) MissionGameModels.Current.AgentApplyDamageModel;
+            if(model == null)
+            {
+                return;
+            }
+            
+            if (!model.ShouldCutThrough(collisionData, attacker, victim))
+                return;
+            
+            float num2 = (float) collisionData.InflictedDamage / (float) inflictedDamage;
+            inOutMomentumRemaining = num2 * 0.25f;
         }
 
         

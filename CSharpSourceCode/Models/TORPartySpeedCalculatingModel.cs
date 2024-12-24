@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.Linq;
 using Helpers;
 using SandBox;
@@ -11,9 +12,11 @@ using TaleWorlds.Core;
 using TaleWorlds.Library;
 using TaleWorlds.LinQuick;
 using TaleWorlds.Localization;
+using TOR_Core.CampaignMechanics.Religion;
 using TOR_Core.CharacterDevelopment;
 using TOR_Core.CharacterDevelopment.CareerSystem;
 using TOR_Core.Extensions;
+using TOR_Core.Extensions.ExtendedInfoSystem;
 using TOR_Core.Utilities;
 
 namespace TOR_Core.Models
@@ -41,6 +44,36 @@ namespace TOR_Core.Models
 
             if (mobileParty.Party != null && mobileParty == MobileParty.MainParty)
             {
+                if (Hero.MainHero.HasCareer(TORCareers.KnightOldWorld))
+                {
+                    var taal = ReligionObject.All.FirstOrDefaultQ(x => x.StringId == "cult_of_taal");
+                    if (Hero.MainHero.GetDevotionLevelForReligion(taal) >= DevotionLevel.Fanatic)
+                    {
+                        var info = ExtendedInfoManager.Instance.GetPartyInfoFor(mobileParty.StringId);
+
+                        if (info != null)
+                        {
+                            var troopAttributes = info.TroopAttributes;
+
+                            var bonus = 0f;
+                            foreach (var troop in mobileParty.MemberRoster.GetTroopRoster())
+                            {
+                                if (troopAttributes.TryGetValue(troop.Character.StringId, out List<string> elementAttributes))
+                                {
+                                    if (elementAttributes.Contains("TaalSeal1"))
+                                    {
+                                        bonus += 0.05f * troop.Number;
+                                    }
+                                }
+                            }
+
+                            result.Add(bonus, new TextObject("Taal Seal"));
+                        }
+                        
+                    }
+                }
+
+
                 TerrainType faceTerrainType = Campaign.Current.MapSceneWrapper.GetFaceTerrainType(mobileParty.CurrentNavigationFace);
                 if (MobileParty.MainParty.LeaderHero == Hero.MainHero && MobileParty.MainParty.LeaderHero.IsVampire())
                 {
@@ -98,13 +131,8 @@ namespace TOR_Core.Models
                                 result.Add(-snowEffect.number, choice.BelongsToGroup.Name);
                             }
                     }
-                   
-                   
                 }
             }
-
-            
-
             return result;
         }
 
@@ -115,6 +143,7 @@ namespace TOR_Core.Models
             {
                 CareerHelper.ApplyBasicCareerPassives(party.LeaderHero, ref explainedNumber, PassiveEffectType.PartyMovementSpeed, false);
             }
+            
         }
     }
 }

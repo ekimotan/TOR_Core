@@ -914,6 +914,7 @@
 		applies_for_attack_type="Ranged"
 		type="DamageAmplification">
 	</StatusEffectTemplate>
+	
 	<StatusEffectTemplate 
 		id="let_them_have_it_melee_dmg" 
 		particle_id="psys_energy_sphere"
@@ -923,6 +924,7 @@
 		applies_for_attack_type="Melee"
 		type="DamageAmplification">
 	</StatusEffectTemplate>
+	
 	<StatusEffectTemplate 
 		id="let_them_have_it_melee_res" 
 		particle_id="psys_energy_sphere"
@@ -1016,7 +1018,32 @@
 		<temporary_attribute>Thorns</temporary_attribute>		
 	</StatusEffectTemplate>
 		
+
+	<StatusEffectTemplate 
+		id="knightly_strike" 
+		do_not_attach_to_agent_skeleton="true"
+		particle_id=""
+		particle_intensity="Low"
+		base_effect_value="0.0"
+		damage_type="Physical"
+		type="TemporaryAttributeOnly"
+		rotation="true"
+		rotation_speed="200">
+		<temporary_attribute>KnightlyStrike</temporary_attribute>		
+		</StatusEffectTemplate>
 		
+	<StatusEffectTemplate 
+		id="knightly_strike_ws" 
+		do_not_attach_to_agent_skeleton="true"
+		particle_id="armour_of_the_righteous"
+		particle_intensity="Low"
+		base_effect_value="0.25"
+		damage_type="All"
+		type="Resistance"
+		rotation="true"
+		rotation_speed="200">		
+		</StatusEffectTemplate>
+
 	<StatusEffectTemplate 
 		id="armour_of_the_righteous" 
 		do_not_attach_to_agent_skeleton="true"
@@ -1234,19 +1261,70 @@
 		<temporary_attribute>FellfangMark</temporary_attribute>		
 	</StatusEffectTemplate>
 
+	<StatusEffectTemplate
+		id="caress_of_laniph_dot"
+		particle_id="caress_of_laniph"
+		particle_intensity="High"
+    	base_effect_value="4"
+		do_not_attach_to_agent_skeleton="true"
+		type="DamageOverTime"
+		damage_type="Physical"/>
+
+	<StatusEffectTemplate
+		id="amaranth"
+		particle_id="amaranth"
+		particle_intensity="High"
+    	base_effect_value="40"
+		do_not_attach_to_agent_skeleton="true"
+		type="Resistance"
+		damage_type="Physical"/>
 	
-	
-	<!-- powerstones -->
 	
 	<StatusEffectTemplate
-		id="powerstone_fire_amp_1"
-		particle_id="general_fire_buff"
+		id="spirit_leech_dot"
+		particle_id="death_debuff"
+		particle_intensity="High"
+    	base_effect_value="10"
 		do_not_attach_to_agent_skeleton="true"
-		base_effect_value="0.5"
+		type="DamageOverTime"
+		damage_type="Physical"/>
+		
+	<StatusEffectTemplate
+		id="spirit_leech_heal"
+		particle_id="death_buff"
+		particle_intensity="High"
+    	base_effect_value="3"
+		do_not_attach_to_agent_skeleton="true"
+		type="HealthOverTime"
+		damage_type="Physical"/>
+		
+	<StatusEffectTemplate
+		id="fate_of_bjuna_dot"
+		particle_id="fate_of_bjuna_debuff"
+		do_not_attach_to_agent_skeleton="true"
+		base_effect_value="3"
 		applies_for_attack_type="Ranged"
-		type="DamageAmplification"
+		type="DamageOverTime"
 		damage_type="Fire">
 	</StatusEffectTemplate>
+	
+	<StatusEffectTemplate
+		id="fate_of_bjuna_mvs"
+		particle_id="fate_of_bjuna_debuff"
+		do_not_attach_to_agent_skeleton="true"
+		base_effect_value="-0.5"
+		applies_for_attack_type="Ranged"
+		type="MovementManipulation"
+		damage_type="Fire">
+	</StatusEffectTemplate>
+	
+
+	<!-- powerstones -->
+	
+	
+
+	
+
 	
 	<StatusEffectTemplate
 		id="powerstone_fire_amp_2"
@@ -1633,7 +1711,7 @@
 		do_not_attach_to_agent_skeleton="true"
 		base_effect_value="0.30"
 		applies_for_attack_type="All"
-		type="DamageAmplification"
+		type="Resistance"
 		damage_type="Physical">
 	</StatusEffectTemplate>
 	
@@ -1656,6 +1734,69 @@
 		type="TemporaryAttributeOnly"
 		damage_type="Physical">
 		<temporary_attribute>Piercing</temporary_attribute>	
+	</StatusEffectTemplate>
+	
+	
+	<StatusEffectTemplate
+		id="powerstone_de_dmg1"
+		particle_id="general_metal_buff"
+		do_not_attach_to_agent_skeleton="true"
+		base_effect_value="0.15"
+		applies_for_attack_type="All"
+		type="DamageAmplification"
+		damage_type="Physical">
+	</StatusEffectTemplate>
+	
+	<StatusEffectTemplate
+		id="powerstone_de_magic_res"
+		particle_id="general_metal_buff"
+		do_not_attach_to_agent_skeleton="true"
+		base_effect_value="0.15"
+		applies_for_attack_type="All"
+		type="Resistance"
+		damage_type="Magical">
+	</StatusEffectTemplate>	
+	
+	<StatusEffectTemplate
+		id="powerstone_de_res"
+		particle_id="general_metal_buff"
+		do_not_attach_to_agent_skeleton="true"
+		base_effect_value="0.25"
+		applies_for_attack_type="All"
+		type="Resistance"
+		damage_type="Physical">
+	</StatusEffectTemplate>
+
+	<StatusEffectTemplate
+		id="powerstone_de_mov_debuff"
+		particle_id="general_metal_buff"
+		do_not_attach_to_agent_skeleton="true"
+		base_effect_value="-0.35"
+		applies_for_attack_type="All"
+		type="MovementManipulation"
+		damage_type="Physical">
+	</StatusEffectTemplate>
+	
+	<StatusEffectTemplate
+		id="powerstone_de_undead_bane"
+		particle_id="general_metal_buff"
+		do_not_attach_to_agent_skeleton="true"
+		base_effect_value="0.0"
+		applies_for_attack_type="All"
+		type="TemporaryAttributeOnly"
+		damage_type="Physical">
+		<temporary_attribute>UndeadBane</temporary_attribute>	
+	</StatusEffectTemplate>
+	
+	<StatusEffectTemplate
+		id="powerstone_de_undead_survivor"
+		particle_id=""
+		do_not_attach_to_agent_skeleton="true"
+		base_effect_value="0.0"
+		applies_for_attack_type="All"
+		type="TemporaryAttributeOnly"
+		damage_type="Physical">
+		<temporary_attribute>Survivor</temporary_attribute>	
 	</StatusEffectTemplate>
 	
 	
@@ -1698,5 +1839,136 @@
 		type="AttackSpeedManipulation"
 		damage_type="Physical">
 	</StatusEffectTemplate>
+	
+	<StatusEffectTemplate
+		id="kow_secular_phys"
+		particle_id=""
+		do_not_attach_to_agent_skeleton="true"
+		base_effect_value="0.10"
+		applies_for_attack_type="All"
+		type="DamageAmplification"
+		damage_type="Physical">
+	</StatusEffectTemplate>
+	
+	<StatusEffectTemplate
+		id="kow_secular_charge"
+		particle_id=""
+		do_not_attach_to_agent_skeleton="true"
+		applies_for_attack_type="All"
+		type="TemporaryAttributeOnly"
+		damage_type="Physical">
+		<temporary_attribute>KOWChargeBonus</temporary_attribute>	
+	</StatusEffectTemplate>
+	
+	<StatusEffectTemplate
+		id="kow_sigmar_phys20"
+		particle_id=""
+		do_not_attach_to_agent_skeleton="true"
+		base_effect_value="0.2"
+		applies_for_attack_type="All"
+		type="DamageAmplification"
+		damage_type="Physical">
+	</StatusEffectTemplate>
+	
+	<StatusEffectTemplate
+		id="kow_sigmar_res_ward"
+		particle_id="general_life_buff"
+		do_not_attach_to_agent_skeleton="true"
+		base_effect_value="0.15"
+		applies_for_attack_type="All"
+		type="Resistance"
+		damage_type="All">
+	</StatusEffectTemplate>
+	
+	<StatusEffectTemplate
+		id="kow_ulric_res_ward"
+		particle_id=""
+		do_not_attach_to_agent_skeleton="true"
+		base_effect_value="0.15"
+		applies_for_attack_type="All"
+		type="Resistance"
+		damage_type="All">
+	</StatusEffectTemplate>
+	
+	<StatusEffectTemplate
+		id="kow_ulric_unstop"
+		particle_id=""
+		do_not_attach_to_agent_skeleton="true"
+		applies_for_attack_type="All"
+		type="TemporaryAttributeOnly"
+		damage_type="Physical">
+		<temporary_attribute>Unstoppable</temporary_attribute>	
+	</StatusEffectTemplate>
+	
+	<StatusEffectTemplate
+		id="kow_ulric_pierc"
+		particle_id=""
+		do_not_attach_to_agent_skeleton="true"
+		applies_for_attack_type="All"
+		type="TemporaryAttributeOnly"
+		damage_type="Physical">
+		<temporary_attribute>Piercing</temporary_attribute>	
+	</StatusEffectTemplate>
+	
+	<StatusEffectTemplate
+		id="kow_taal_res_range"
+		particle_id=""
+		do_not_attach_to_agent_skeleton="true"
+		base_effect_value="0.30"
+		applies_for_attack_type="Ranged"
+		type="Resistance"
+		damage_type="Physical">
+	</StatusEffectTemplate>
+
+	<StatusEffectTemplate
+		id="kow_taal_res_ward"
+		particle_id=""
+		do_not_attach_to_agent_skeleton="true"
+		base_effect_value="0.15"
+		applies_for_attack_type="All"
+		type="Resistance"
+		damage_type="All">
+	</StatusEffectTemplate>
+
+	<StatusEffectTemplate
+		id="kow_shallya_res_ward"
+		particle_id=""
+		do_not_attach_to_agent_skeleton="true"
+		base_effect_value="0.25"
+		applies_for_attack_type="All"
+		type="Resistance"
+		damage_type="All">
+	</StatusEffectTemplate>
+
+	<StatusEffectTemplate
+		id="kow_shallya_unstoppable"
+		particle_id=""
+		do_not_attach_to_agent_skeleton="true"
+		applies_for_attack_type="All"
+		type="TemporaryAttributeOnly"
+		damage_type="Physical">
+		<temporary_attribute>Unstoppable</temporary_attribute>	
+	</StatusEffectTemplate>
+	
+	<StatusEffectTemplate
+		id="kow_manaan_charge"
+		particle_id=""
+		do_not_attach_to_agent_skeleton="true"
+		applies_for_attack_type="All"
+		type="TemporaryAttributeOnly"
+		damage_type="Physical">
+		<temporary_attribute>KOWChargeBonus</temporary_attribute>	
+	</StatusEffectTemplate>
+
+	<StatusEffectTemplate
+		id="kow_manaan_res_magic"
+		particle_id=""
+		do_not_attach_to_agent_skeleton="true"
+		base_effect_value="0.45"
+		applies_for_attack_type="All"
+		type="Resistance"
+		damage_type="Magical">
+	</StatusEffectTemplate>
+	
 	
 </StatusEffects>

@@ -1,3 +1,4 @@
+using System.Linq;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.CharacterDevelopment;
 using TaleWorlds.CampaignSystem.GameComponents;
@@ -5,11 +6,13 @@ using TaleWorlds.CampaignSystem.Party;
 using TaleWorlds.CampaignSystem.Roster;
 using TaleWorlds.Core;
 using TaleWorlds.Library;
+using TaleWorlds.LinQuick;
 using TaleWorlds.Localization;
 using TOR_Core.CampaignMechanics.CustomResources;
 using TOR_Core.CharacterDevelopment;
 using TOR_Core.CharacterDevelopment.CareerSystem;
 using TOR_Core.Extensions;
+using TOR_Core.Extensions.ExtendedInfoSystem;
 using TOR_Core.Utilities;
 
 namespace TOR_Core.Models
@@ -79,6 +82,21 @@ namespace TOR_Core.Models
                         foreach (var line in careerFactors.GetLines())
                         {
                             value.Add(line.number, new TextObject(line.name));
+                        }
+                        
+                        if (Hero.MainHero.HasCareer(TORCareers.KnightOldWorld))
+                        {
+                            var partyAttributes = ExtendedInfoManager.Instance.GetPartyInfoFor(Hero.MainHero.PartyBelongedTo.StringId);
+
+                            var attributes = partyAttributes.TroopAttributes.FirstOrDefaultQ(x => x.Key == elementCopyAtIndex.Character.StringId).Value;
+
+                            if (attributes != null)
+                            {
+                                foreach (var attribute in attributes.Where(attribute => attribute == "SecularSeal2"))
+                                {
+                                    value.AddFactor(0.2f,new TextObject("Secular Seal"));
+                                }
+                            }
                         }
                     }
                     if(elementCopyAtIndex.Character.IsHero && elementCopyAtIndex.Character.HeroObject == Hero.MainHero)

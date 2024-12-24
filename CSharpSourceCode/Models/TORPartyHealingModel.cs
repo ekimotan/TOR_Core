@@ -1,13 +1,17 @@
+using System.Collections.Generic;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.GameComponents;
 using TaleWorlds.CampaignSystem.Party;
 using TaleWorlds.Core;
 using TaleWorlds.Library;
+using TaleWorlds.LinQuick;
 using TaleWorlds.Localization;
 using TOR_Core.CampaignMechanics.CustomResources;
+using TOR_Core.CampaignMechanics.Religion;
 using TOR_Core.CharacterDevelopment;
 using TOR_Core.CharacterDevelopment.CareerSystem;
 using TOR_Core.Extensions;
+using TOR_Core.Extensions.ExtendedInfoSystem;
 using TOR_Core.Utilities;
 
 namespace TOR_Core.Models
@@ -19,9 +23,15 @@ namespace TOR_Core.Models
     {
         public override float GetSurvivalChance(PartyBase party, CharacterObject character, DamageTypes damageType, bool canDamageKillEvenIfBlunt, PartyBase enemyParty = null)
         {
+            if (character.HasAttribute("Survivor"))
+            {
+                return 1;
+            }
+            
             var result = base.GetSurvivalChance(party, character, damageType, canDamageKillEvenIfBlunt, enemyParty);
             
             if (result < 0.5f && party != null && party.LeaderHero != null && party.LeaderHero.GetPerkValue(TORPerks.Faith.Revival)) result = TORPerks.Faith.Revival.PrimaryBonus;
+                
             if (!character.IsUndead()) 
                 return result;   
             //undead "survival chance"
@@ -65,16 +75,21 @@ namespace TOR_Core.Models
         public override ExplainedNumber GetDailyHealingForRegulars(MobileParty party, bool includeDescriptions = false)
         {
             var result = base.GetDailyHealingForRegulars(party, includeDescriptions);
+
+            if (party == MobileParty.MainParty)
+            {
+                AddCareerPassivesForTroopRegeneration(party, ref result);
+            }
+
+            if (party.HasBlessing("cult_of_sigmar"))
+            {
+                result.AddFactor(0.2f, GameTexts.FindText("tor_religion_blessing_name", "cult_of_sigmar"));
+            }
             
-            if (party == MobileParty.MainParty) AddCareerPassivesForTroopRegeneration(party, ref result);
-
-
-            if (party.HasBlessing("cult_of_sigmar")) result.AddFactor(0.2f, GameTexts.FindText("tor_religion_blessing_name", "cult_of_sigmar"));
             if (party.IsAffectedByCurse() && party.CurrentSettlement == null && party.BesiegedSettlement == null)
             {
                 result = new ExplainedNumber(0, true, new TextObject("{=!}Inside a cursed region"));
             }
-            
             
             if (Hero.MainHero.HasAttribute("WEWardancerSymbol"))
             {
@@ -130,6 +145,36 @@ namespace TOR_Core.Models
             if (party.LeaderHero.HasAnyCareer())
             {
                 CareerHelper.ApplyBasicCareerPassives(party.LeaderHero, ref explainedNumber, PassiveEffectType.TroopRegeneration, false);
+                
+                if (Hero.MainHero.HasCareer(TORCareers.KnightOldWorld))
+                {
+                    var shallya = ReligionObject.All.FirstOrDefaultQ(x=> x.StringId == "cult_of_shallya");
+                    if (Hero.MainHero.GetDevotionLevelForReligion(shallya) >= DevotionLevel.Fanatic)
+                    {
+                        var info =ExtendedInfoManager.Instance.GetPartyInfoFor(party.StringId);
+
+                        if (info == null)
+                        {
+                            return;
+                        }
+                            
+                        var troopAttributes = info.TroopAttributes;
+
+                        var bonus = 0f;
+                        foreach (var troop in  party.MemberRoster.GetTroopRoster())
+                        {
+                            if (troopAttributes.TryGetValue(troop.Character.StringId, out List<string> elementAttributes))
+                            {
+                                if (elementAttributes.Contains("ShallyaSeal1"))
+                                {
+                                    bonus += 0.1f * troop.Number;
+                                }
+                            }
+                        }
+                        
+                        explainedNumber.Add(bonus, new TextObject("Shallya Seal"));
+                    }
+                }
             }
         }
         

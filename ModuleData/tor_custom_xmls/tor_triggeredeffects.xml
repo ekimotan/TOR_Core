@@ -917,6 +917,99 @@
                              ScriptNameToTrigger="none">
         <ImbuedStatusEffect>physical_bonus_20</ImbuedStatusEffect>
     </TriggeredEffectTemplate>
+	 <!-- Death Magic -->
+	 
+    <TriggeredEffectTemplate StringID="taste_of_death"
+                             BurstParticleEffectPrefab="taste_of_death"
+                             SoundEffectId="none"
+                             SoundEffectLength="0"
+                             DamageType="Magical"
+                             DamageAmount="101"
+                             Radius="8"
+                             HasShockWave="true"
+                             TargetType="Enemy"
+                             DamageVariance="0.0"
+                             ImbuedStatusEffectDuration="15"
+                             ScriptNameToTrigger="none">
+    </TriggeredEffectTemplate>
+
+    <TriggeredEffectTemplate StringID="caress_of_laniph"
+                             BurstParticleEffectPrefab="none"
+                             SoundEffectId="none"
+                             SoundEffectLength="0"
+                             DamageType="Physical"
+                             ImbuedStatusEffectDuration="20"
+                             DamageAmount="0"
+                             Radius="8"
+                             HasShockWave="false"
+                             TargetType="Enemy"
+                             DamageVariance="2">
+        <ImbuedStatusEffect>caress_of_laniph_dot</ImbuedStatusEffect>
+    </TriggeredEffectTemplate>
+	
+	<TriggeredEffectTemplate StringID="amaranth"
+                             BurstParticleEffectPrefab="none"
+                             SoundEffectId="none"
+                             SoundEffectLength="0"
+                             DamageType="Physical"
+                             DamageAmount="0"
+                             Radius="20"
+                             HasShockWave="false"
+                             TargetType="Self"
+                             ImbuedStatusEffectDuration="20"
+                             ScriptNameToTrigger="none">
+        <ImbuedStatusEffect>amaranth</ImbuedStatusEffect>
+    </TriggeredEffectTemplate>
+	
+	
+	<TriggeredEffectTemplate StringID="spirit_leech"
+                             BurstParticleEffectPrefab="none"
+                             SoundEffectId="none"
+                             SoundEffectLength="0"
+                             DamageType="Physical"
+                             ImbuedStatusEffectDuration="5"
+                             DamageAmount="0"
+                             Radius="4"
+                             HasShockWave="false"
+							 ScriptNameToTrigger="TOR_Core.BattleMechanics.TriggeredEffect.Scripts.SpiritLeech"
+                             TargetType="Enemy"
+                             DamageVariance="2">
+        <ImbuedStatusEffect>spirit_leech_dot</ImbuedStatusEffect>
+    </TriggeredEffectTemplate>
+	
+	
+    <TriggeredEffectTemplate StringID="ashes_and_dust_explosion"
+                             BurstParticleEffectPrefab="ashes_and_dust_explosion"
+                             SoundEffectId="fireball_explosion"
+                             SoundEffectLength="2.5"
+                             DamageType="Fire"
+                             DamageAmount="80"
+                             Radius="5"
+                             HasShockWave="false"
+                             TargetType="All"
+                             ImbuedStatusEffectDuration="5"
+                             DamageVariance="0.05"
+                             ScriptNameToTrigger="none">
+    </TriggeredEffectTemplate>
+	
+	
+	<TriggeredEffectTemplate StringID="fate_of_bjuna"
+                             BurstParticleEffectPrefab="none"
+                             SoundEffectId="none"
+                             SoundEffectLength="0"
+                             DamageType="Lightning"
+                             DamageAmount="4"
+                             Radius="4"
+							 ImbuedStatusEffectDuration="8"
+                             HasShockWave="false"
+                             TargetType="All"
+                             DamageVariance="0.1"
+                             ScriptNameToTrigger="none">
+		 <ImbuedStatusEffect>fate_of_bjuna_dot</ImbuedStatusEffect>
+		 <ImbuedStatusEffect>fate_of_bjuna_mvs</ImbuedStatusEffect>
+	</TriggeredEffectTemplate>
+	
+	
     <!-- High Magic -->
     <TriggeredEffectTemplate StringID="apotheosis_heal"
                              BurstParticleEffectPrefab="none"
@@ -996,6 +1089,7 @@
                              ImbuedStatusEffectDuration="0"
                              DamageVariance="0.2"
                              ScriptNameToTrigger="none" />
+							 
     <TriggeredEffectTemplate StringID="healing_hand_tick"
                              BurstParticleEffectPrefab="none"
                              SoundEffectId="none"
@@ -1010,6 +1104,21 @@
                              ScriptNameToTrigger="none">
         <ImbuedStatusEffect>healing_hand_tick</ImbuedStatusEffect>
     </TriggeredEffectTemplate>
+	
+	<TriggeredEffectTemplate StringID="apply_knightly_strike_trait"
+                             BurstParticleEffectPrefab="none"
+                             SoundEffectId="none"
+                             SoundEffectLength="0"
+                             DamageType="Invalid"
+                             DamageAmount="0"
+                             Radius="5"
+                             HasShockWave="false"
+                             TargetType="Friendly"
+                             ImbuedStatusEffectDuration="20"
+                             DamageVariance="0"
+                             ScriptNameToTrigger="TOR_Core.BattleMechanics.TriggeredEffect.Scripts.ApplyKnightlyStrikeTraitScript" />
+	
+	
     <TriggeredEffectTemplate StringID="apply_swift_shiver_trait"
                              BurstParticleEffectPrefab="none"
                              SoundEffectId="none"
@@ -1046,6 +1155,222 @@
                              ImbuedStatusEffectDuration="6"
                              DamageVariance="0"
                              ScriptNameToTrigger="TOR_Core.BattleMechanics.TriggeredEffect.Scripts.ApplyStarFireTrait" />
+							 
+	
+	<TriggeredEffectTemplate StringID="apply_secular_seal_trait1"
+                             BurstParticleEffectPrefab="none"
+                             SoundEffectId="none"
+                             SoundEffectLength="0"
+                             DamageType="Invalid"
+                             DamageAmount="0"
+                             Radius="25"
+                             HasShockWave="false"
+                             TargetType="Friendly"
+                             ImbuedStatusEffectDuration="45"
+                             DamageVariance="0"
+							 ScriptNameToTrigger="none" >
+							 <ImbuedStatusEffect>kow_secular_phys</ImbuedStatusEffect>
+	 </TriggeredEffectTemplate>
+                             	
+							 
+	<TriggeredEffectTemplate StringID="apply_secular_seal_trait2"
+                             BurstParticleEffectPrefab="none"
+                             SoundEffectId="none"
+                             SoundEffectLength="0"
+                             DamageType="Invalid"
+                             DamageAmount="0"
+                             Radius="25"
+                             HasShockWave="false"
+                             TargetType="Friendly"
+                             ImbuedStatusEffectDuration="45"
+                             DamageVariance="0"
+							 ScriptNameToTrigger="none" >
+							 <ImbuedStatusEffect>kow_secular_charge</ImbuedStatusEffect>
+	 </TriggeredEffectTemplate>
+	 
+	<TriggeredEffectTemplate StringID="apply_sigmar_seal_trait1"
+                             BurstParticleEffectPrefab="none"
+                             SoundEffectId="none"
+                             SoundEffectLength="0"
+                             DamageType="Invalid"
+                             DamageAmount="0"
+                             Radius="25"
+                             HasShockWave="false"
+                             TargetType="Friendly"
+                             ImbuedStatusEffectDuration="45"
+                             DamageVariance="0"
+							 ScriptNameToTrigger="none" >
+							 <ImbuedStatusEffect>kow_sigmar_phys20</ImbuedStatusEffect>
+	 </TriggeredEffectTemplate>
+	 
+	<TriggeredEffectTemplate StringID="apply_sigmar_seal_trait2"
+                             BurstParticleEffectPrefab="none"
+                             SoundEffectId="none"
+                             SoundEffectLength="0"
+                             DamageType="Invalid"
+                             DamageAmount="0"
+                             Radius="25"
+                             HasShockWave="false"
+                             TargetType="Friendly"
+                             ImbuedStatusEffectDuration="45"
+                             DamageVariance="0"
+							 ScriptNameToTrigger="none" >
+							 <ImbuedStatusEffect>kow_sigmar_res_ward</ImbuedStatusEffect>
+	 </TriggeredEffectTemplate>	 
+
+	<TriggeredEffectTemplate StringID="apply_ulric_seal_trait1"
+                             BurstParticleEffectPrefab="none"
+                             SoundEffectId="none"
+                             SoundEffectLength="0"
+                             DamageType="Invalid"
+                             DamageAmount="0"
+                             Radius="25"
+                             HasShockWave="false"
+                             TargetType="Friendly"
+                             ImbuedStatusEffectDuration="45"
+                             DamageVariance="0"
+							 ScriptNameToTrigger="none" >
+							 <ImbuedStatusEffect>kow_ulric_res_ward</ImbuedStatusEffect>
+	 </TriggeredEffectTemplate>
+	 
+	 <TriggeredEffectTemplate StringID="apply_ulric_seal_trait2"
+                             BurstParticleEffectPrefab="none"
+                             SoundEffectId="none"
+                             SoundEffectLength="0"
+                             DamageType="Invalid"
+                             DamageAmount="0"
+                             Radius="25"
+                             HasShockWave="false"
+                             TargetType="Friendly"
+                             ImbuedStatusEffectDuration="45"
+                             DamageVariance="0"
+							 ScriptNameToTrigger="none" >
+							 <ImbuedStatusEffect>kow_ulric_unstop</ImbuedStatusEffect>
+	 </TriggeredEffectTemplate>
+	 
+	<TriggeredEffectTemplate StringID="apply_ulric_seal_trait3"
+                             BurstParticleEffectPrefab="none"
+                             SoundEffectId="none"
+                             SoundEffectLength="0"
+                             DamageType="Invalid"
+                             DamageAmount="0"
+                             Radius="25"
+                             HasShockWave="false"
+                             TargetType="Friendly"
+                             ImbuedStatusEffectDuration="45"
+                             DamageVariance="0"
+							 ScriptNameToTrigger="none" >
+							 <ImbuedStatusEffect>kow_ulric_pierc</ImbuedStatusEffect>
+	 </TriggeredEffectTemplate>
+	 
+	<TriggeredEffectTemplate StringID="apply_taal_seal_trait1"
+                             BurstParticleEffectPrefab="none"
+                             SoundEffectId="none"
+                             SoundEffectLength="0"
+                             DamageType="Invalid"
+                             DamageAmount="0"
+                             Radius="25"
+                             HasShockWave="false"
+                             TargetType="Friendly"
+                             ImbuedStatusEffectDuration="45"
+                             DamageVariance="0"
+							 ScriptNameToTrigger="none" >
+							 <ImbuedStatusEffect>kow_taal_res_range</ImbuedStatusEffect>
+	 </TriggeredEffectTemplate>
+	 
+	 <TriggeredEffectTemplate StringID="apply_taal_seal_trait2"
+                             BurstParticleEffectPrefab="none"
+                             SoundEffectId="none"
+                             SoundEffectLength="0"
+                             DamageType="Invalid"
+                             DamageAmount="0"
+                             Radius="25"
+                             HasShockWave="false"
+                             TargetType="Friendly"
+                             ImbuedStatusEffectDuration="45"
+                             DamageVariance="0"
+							 ScriptNameToTrigger="none" >
+							 <ImbuedStatusEffect>kow_taal_res_ward</ImbuedStatusEffect>
+	 </TriggeredEffectTemplate>	
+
+	 <TriggeredEffectTemplate StringID="apply_shallya_seal_trait1"
+                             BurstParticleEffectPrefab="none"
+                             SoundEffectId="none"
+                             SoundEffectLength="0"
+                             DamageType="Invalid"
+                             DamageAmount="0"
+                             Radius="25"
+                             HasShockWave="false"
+                             TargetType="Friendly"
+                             ImbuedStatusEffectDuration="45"
+                             DamageVariance="0"
+							 ScriptNameToTrigger="none" >
+							 <ImbuedStatusEffect>kow_shallya_res_ward</ImbuedStatusEffect>
+	 </TriggeredEffectTemplate>	
+
+	 <TriggeredEffectTemplate StringID="apply_shallya_seal_trait2"
+                             BurstParticleEffectPrefab="none"
+                             SoundEffectId="none"
+                             SoundEffectLength="0"
+                             DamageType="Invalid"
+                             DamageAmount="0"
+                             Radius="25"
+                             HasShockWave="false"
+                             TargetType="Friendly"
+                             ImbuedStatusEffectDuration="45"
+                             DamageVariance="0"
+							 ScriptNameToTrigger="none" >
+							 <ImbuedStatusEffect>kow_shallya_unstoppable</ImbuedStatusEffect>
+	 </TriggeredEffectTemplate>	 
+
+
+	 <TriggeredEffectTemplate StringID="apply_manaan_seal_trait1"
+                             BurstParticleEffectPrefab="none"
+                             SoundEffectId="none"
+                             SoundEffectLength="0"
+                             DamageType="Invalid"
+                             DamageAmount="0"
+                             Radius="25"
+                             HasShockWave="false"
+                             TargetType="Friendly"
+                             ImbuedStatusEffectDuration="45"
+                             DamageVariance="0"
+							 ScriptNameToTrigger="none" >
+							 <ImbuedStatusEffect>kow_manaan_charge</ImbuedStatusEffect>
+	 </TriggeredEffectTemplate>
+
+
+	 <TriggeredEffectTemplate StringID="apply_manaan_seal_trait2"
+                             BurstParticleEffectPrefab="none"
+                             SoundEffectId="none"
+                             SoundEffectLength="0"
+                             DamageType="Invalid"
+                             DamageAmount="0"
+                             Radius="25"
+                             HasShockWave="false"
+                             TargetType="Friendly"
+                             ImbuedStatusEffectDuration="45"
+                             DamageVariance="0"
+							 ScriptNameToTrigger="TOR_Core.BattleMechanics.TriggeredEffect.Scripts.ApplyLesserHeavensItemTraitScript" />
+
+
+
+	 <TriggeredEffectTemplate StringID="apply_manaan_seal_trait3"
+                             BurstParticleEffectPrefab="none"
+                             SoundEffectId="none"
+                             SoundEffectLength="0"
+                             DamageType="Invalid"
+                             DamageAmount="0"
+                             Radius="25"
+                             HasShockWave="false"
+                             TargetType="Friendly"
+                             ImbuedStatusEffectDuration="45"
+                             DamageVariance="0"
+							 ScriptNameToTrigger="none" >
+							 <ImbuedStatusEffect>kow_manaan_res_magic</ImbuedStatusEffect>
+	 </TriggeredEffectTemplate>	 
+							 
+	 
     <TriggeredEffectTemplate StringID="apply_flaming_sword_trait"
                              BurstParticleEffectPrefab="none"
                              SoundEffectId="none"
@@ -1135,6 +1460,7 @@
         <ImbuedStatusEffect>ice_storm_ats</ImbuedStatusEffect>
         <ImbuedStatusEffect>ice_storm_dot</ImbuedStatusEffect>
     </TriggeredEffectTemplate>
+	
     <!-- Power of the Lady -->
     <TriggeredEffectTemplate StringID="ladys_favour"
                              BurstParticleEffectPrefab="none"
@@ -1625,7 +1951,8 @@
                              TargetType="Enemy"
                              DamageVariance="0"
                              ScriptNameToTrigger="none" />
-    <!-- Powerstones -->
+    
+	<!-- Powerstones -->
     <TriggeredEffectTemplate StringID="powerstone_fire_trait"
                              BurstParticleEffectPrefab="none"
                              SoundEffectId="none"
@@ -2093,4 +2420,92 @@
                              ScriptNameToTrigger="TOR_Core.BattleMechanics.TriggeredEffect.Scripts.ApplyMetalItemTraitScript">
         <ImbuedStatusEffect>powerstone_metal_pen</ImbuedStatusEffect>
     </TriggeredEffectTemplate>
+	
+	<TriggeredEffectTemplate StringID="powerstone_death_dmg"
+                             BurstParticleEffectPrefab="none"
+                             SoundEffectId="none"
+                             SoundEffectLength="0"
+                             DamageType="Physical"
+                             DamageAmount="0"
+                             Radius="15"
+                             HasShockWave="false"
+                             TargetType="Friendly"
+                             ImbuedStatusEffectDuration="8"
+                             ScriptNameToTrigger="none">
+        <ImbuedStatusEffect>powerstone_de_dmg1</ImbuedStatusEffect>
+    </TriggeredEffectTemplate>
+	
+	<TriggeredEffectTemplate StringID="powerstone_death_res_magic"
+                             BurstParticleEffectPrefab="none"
+                             SoundEffectId="none"
+                             SoundEffectLength="0"
+                             DamageType="Physical"
+                             DamageAmount="0"
+                             Radius="15"
+                             HasShockWave="false"
+                             TargetType="Friendly"
+                             ImbuedStatusEffectDuration="8"
+                             ScriptNameToTrigger="none">
+        <ImbuedStatusEffect>powerstone_de_magic_res</ImbuedStatusEffect>
+    </TriggeredEffectTemplate>
+	
+	<TriggeredEffectTemplate StringID="powerstone_death_res_less"
+                             BurstParticleEffectPrefab="none"
+                             SoundEffectId="none"
+                             SoundEffectLength="0"
+                             DamageType="Physical"
+                             DamageAmount="0"
+                             Radius="15"
+                             HasShockWave="false"
+                             TargetType="Friendly"
+                             ImbuedStatusEffectDuration="8"
+                             ScriptNameToTrigger="none">
+        <ImbuedStatusEffect>powerstone_de_res</ImbuedStatusEffect>
+        <ImbuedStatusEffect>powerstone_de_mov_debuff</ImbuedStatusEffect>
+    </TriggeredEffectTemplate>
+	
+	<TriggeredEffectTemplate StringID="powerstone_death_dmg_trait"
+                             BurstParticleEffectPrefab="none"
+                             SoundEffectId="none"
+                             SoundEffectLength="0"
+                             DamageType="Physical"
+                             DamageAmount="0"
+                             Radius="15"
+                             HasShockWave="false"
+                             TargetType="Friendly"
+                             ImbuedStatusEffectDuration="8"
+                             ScriptNameToTrigger="TOR_Core.BattleMechanics.TriggeredEffect.Scripts.ApplyDeathDamageItemTraitScript">
+    </TriggeredEffectTemplate>
+	
+	
+	<TriggeredEffectTemplate StringID="powerstone_death_undead_bane"
+                             BurstParticleEffectPrefab="none"
+                             SoundEffectId="none"
+                             SoundEffectLength="0"
+                             DamageType="Physical"
+                             DamageAmount="0"
+                             Radius="15"
+                             HasShockWave="false"
+                             TargetType="Friendly"
+                             ImbuedStatusEffectDuration="8"
+                             ScriptNameToTrigger="none">
+		 <ImbuedStatusEffect>powerstone_de_undead_bane</ImbuedStatusEffect>
+	</TriggeredEffectTemplate>
+	
+	<TriggeredEffectTemplate StringID="powerstone_death_survivor"
+                             BurstParticleEffectPrefab="none"
+                             SoundEffectId="none"
+                             SoundEffectLength="0"
+                             DamageType="Physical"
+                             DamageAmount="0"
+                             Radius="15"
+                             HasShockWave="false"
+                             TargetType="Friendly"
+                             ImbuedStatusEffectDuration="8"
+                             ScriptNameToTrigger="none">
+		 <ImbuedStatusEffect>powerstone_de_survivor</ImbuedStatusEffect>
+	</TriggeredEffectTemplate>
+	
+	
+	
 </TriggeredEffectTemplates>

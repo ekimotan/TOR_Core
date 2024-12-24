@@ -34,6 +34,7 @@ namespace TOR_Core.HarmonyPatches
                 list.Add(Game.Current.ObjectManager.GetObject<BasicCharacterObject>("tor_prophetess_bw"));
                 list.Add(Game.Current.ObjectManager.GetObject<BasicCharacterObject>("tor_glade_lord"));
                 list.Add(Game.Current.ObjectManager.GetObject<BasicCharacterObject>("tor_hm_lord"));
+                list.Add(Game.Current.ObjectManager.GetObject<BasicCharacterObject>("tor_dw_lord"));
             }
             catch (Exception e)
             {

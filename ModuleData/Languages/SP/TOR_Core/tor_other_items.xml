@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
+  <tags>
+    <tag language="Español (LA)" />
+  </tags>
+  <strings>
+
+<string id="str_tor_empire_artillery_mortar_001" text="Mortero"/>
+<string id="str_tor_empire_artillery_cannon_001" text="Gran Cañón"/>
+<string id="str_tor_bretonnia_artillery_fieldtrebuchet_001" text="Fundíbulo"/>
+<string id="str_tor_books_engineering_001" text="La Sabiduría de Leonardo Da Miragliano por Fredirick Haupstersand"/>
+<string id="str_tor_books_charm_001" text="Canciones Valerosas de Tristán el Trovador"/>
+<string id="str_tor_books_charm_002" text="El Arte de Hablar con la Boca Cerrada"/>
+<string id="str_tor_book_rougery_001" text="Los Saqueos de los Druchii"/>
+<string id="str_tor_book_tactics_001" text="El Arte de la Guerra Total"/>
+<string id="str_tor_book_range_001" text="Los Viajes de Wulfhart: Una Introducción de Herwitz Frankfurther"/>
+<string id="str_tor_book_range_002" text="Los Viajes de Wulfhart: Las Bestias de Lustria"/>
+<string id="str_tor_book_crafting_001" text="Grungnaz Kron"/>
+<string id="str_tor_book_riding_001" text="Rápidos y Furiosos: Los Caballos de Bretonnia"/>
+<string id="str_tor_book_onehanded_001" text="Guía sobre los duelos de Estalia por Estevan"/>
+<string id="str_tor_book_twohanded_001" text="Enseñanzas de un Maestro de la Espada de ultramar"/>
+<string id="str_tor_book_trade_001" text="Secretos comerciales de Suiddock"/>
+<string id="str_tor_book_bow_001" text="De Arquero a Cazador"/>
+<string id="str_tor_book_crossbow_001" text="Heráldica del Imperio: La Ballesta"/>
+<string id="str_tor_book_leadership_001" text="Sobre el Arte de Comandar"/>
+<string id="str_tor_book_polearm_001" text="Ser un Hombre en Ostland"/>
+<string id="str_tor_book_throwing_001" text="Monster Hunter’s. Manual Traducido por Johann Kruyf"/>
+<string id="str_tor_book_athletics_001" text="Desnudo y sin vergüenza"/>
+<string id="str_tor_book_hybrid_001" text="Guardia del Mar de Lothern: Los Guardianes del Gran Océano"/>
+<string id="str_tor_books_engineering_002" text="La Maravilla de la Época"/>
+<string id="str_tor_books_gunpowder_001" text="&quot;Cerradura, Culata y Cañón: Manual de campo para un artillero&quot;"/>
+<string id="str_tor_books_gunpowder_002" text="Las Teorías Mecánicas de von Meinkopt sobre la cabalgata giratoria de la Muerte"/>
+<string id="str_tor_book_spellcraft_001" text="Guardianes de la Naturaleza por Erowin Grunfeld"/>
+<string id="str_tor_book_spellcraft_002" text="Mirando hacia el Abismo por Volans"/>
+<string id="str_tor_book_spellcraft_003" text="Vientos de Magia: Ashqy"/>
+<string id="str_tor_book_hybrid_002" text="Entrenamiento en Alquimia por Balthasar Gelt"/>
+<string id="str_tor_book_hybrid_003" text="Piratas de los Vampiros: La Maldición de la Perla Negra de Lustria por Joshamee Gibbs"/>
+
+      </strings>
+</base>

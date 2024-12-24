@@ -15,6 +15,7 @@ using TOR_Core.CharacterDevelopment.CareerSystem;
 using TOR_Core.Extensions;
 using TOR_Core.Extensions.ExtendedInfoSystem;
 using TOR_Core.Items;
+using TOR_Core.Utilities;
 
 namespace TOR_Core.Models
 {
@@ -125,6 +126,11 @@ namespace TOR_Core.Models
                             weaponComponentData.WeaponFlags |= WeaponFlags.BonusAgainstShield;
                         }
                     }
+
+                if (defender.IsUndead()|| defender.IsVampire() && attacker.HasAttribute("UndeadBane"))
+                {
+                    resultDamage.AddFactor(0.5f);
+                }
             }
             
             if (attacker.IsTreeSpirit())
@@ -132,9 +138,17 @@ namespace TOR_Core.Models
                 resultDamage.AddFactor(20f);
             }
 
-            if ( collisionData.IsHorseCharge && attacker.IsMounted && attacker.IsPlayerCharacter && attacker.HeroObject.HasAnyCareer())
+            if ( collisionData.IsHorseCharge && attacker.IsMounted)
             {
-                CareerHelper.ApplyBasicCareerPassives(attacker.HeroObject, ref resultDamage, PassiveEffectType.HorseChargeDamage);
+                if (attacker.IsPlayerCharacter && attacker.HeroObject.HasAnyCareer())
+                {
+                    CareerHelper.ApplyBasicCareerPassives(attacker.HeroObject, ref resultDamage, PassiveEffectType.HorseChargeDamage);
+                }
+
+                if (attacker.HasAttribute("KOWChargeBonus"))
+                {
+                    resultDamage.AddFactor(0.25f);
+                }
             }
              
             return resultDamage.ResultNumber;
@@ -147,6 +161,15 @@ namespace TOR_Core.Models
             bool isFatalHit)
         {
             var collisionReaction = base.DecidePassiveAttackCollisionReaction(attacker, defender, isFatalHit);
+
+            if (isFatalHit && attacker.IsMainAgent)
+            {
+                if (Hero.MainHero.HasCareer(TORCareers.KnightOldWorld) &&  attacker.HasAttribute("KnightlyStrike")&& Hero.MainHero.HasCareerChoice("PathOfViliganceKeystone"))
+                {
+                    attacker.ApplyStatusEffect("knightly_strike",attacker,30,false,false,true);
+                }
+            }
+            
             if (collisionReaction == MeleeCollisionReaction.Bounced)
                 if (attacker.Character.IsPlayerCharacter || attacker.GetPartyLeaderCharacter() == CharacterObject.PlayerCharacter)
                 {
@@ -249,6 +272,9 @@ namespace TOR_Core.Models
 
                  }
 
+                 Agent t;
+                 
+
                  var statusEffectAmplifiers = agent.GetComponent<StatusEffectComponent>().GetAmplifiers(attackTypeMask);
 
                  for (int i = 0; i < damageAmplifications.Length; i++)
@@ -303,7 +329,7 @@ namespace TOR_Core.Models
                          var weapon = agent.WieldedWeapon.Item;
                          var offhand = agent.WieldedOffhandWeapon.Item;
                          List<ItemTrait> meleeItemTraits = new List<ItemTrait>();
-                         meleeItemTraits.AddRange(weapon.GetTraits());
+                         meleeItemTraits.AddRange(weapon.GetTraits(agent));
                          if (offhand != null)
                              meleeItemTraits.AddRange(offhand.GetTraits());
                             
@@ -729,6 +755,14 @@ namespace TOR_Core.Models
                 result.LimitMin (0.11f);
             }
             return result.ResultNumber;
+        }
+
+        public bool ShouldCutThrough(AttackCollisionData collisionData, Agent attacker, Agent victim)
+        {
+            if ( attacker.HasAttribute("Slice"))
+                return true;
+
+            return false;
         }
     }
 }

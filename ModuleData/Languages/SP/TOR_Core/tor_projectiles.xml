@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
+  <tags>
+    <tag language="Español (LA)" />
+  </tags>
+  <strings>
+
+<string id="str_tor_projectile_dwarf_grenade" text="Granada Enana"/>
+<string id="str_tor_projectile_musket_ball" text="Balas"/>
+<string id="str_tor_projectile_silver_bullet" text="Balas de Plata"/>
+<string id="str_tor_projectile_buck_shots" text="Saquitos de metralla"/>
+<string id="str_tor_projectile_cannonball" text="Bala de Cañón"/>
+<string id="str_tor_projectile_broken_weapon" text="Arma Rota"/>
+<string id="str_tor_projectile_grenades" text="Granadas"/>
+<string id="str_tor_projectile_amber_spear" text="Lanza de Ámbar"/> 
+<string id="str_tor_projectile_green_eye" text="El Ojo verde"/>
+<string id="str_tor_projectile_we_tournament_arrow" text="Flechas Élficas de madera para torneos"/>
+<string id="str_tor_projectile_arrow_potency" text="Flechas de Potencia"/>
+      </strings>
+</base>

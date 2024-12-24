@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
+  <tags>
+    <tag language="Español (LA)" />
+  </tags>
+  <strings>
+
+<string id="" text="The Old Realms Manual"/>
+<string id="" text="El Manual de The Old Realms se ha movido"/>
+<string id="" text="Puedes encontrar la versión en español del manual en el discord de The Old Realms: #how-to-play-tor."/>
+  
+      </strings>
+</base>

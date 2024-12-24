@@ -42,18 +42,27 @@ namespace TOR_Core.Extensions.UI
 
         public PartyCharacterVMExtension(ViewModel vm) : base(vm)
         {
+      
             _buttonHint = new BasicTooltipViewModel(GetButtonHintText);
 
             if (Hero.MainHero.HasAnyCareer())
             {
-                var careerButton = CareerHelper.GetCareerButton();
-                if (careerButton != null)
+
+                if (PartyScreenManager.Instance.CurrentMode != PartyScreenMode.Normal)
                 {
-                    careerButton.Register();
+                    SpecialbuttonEventManagerHandler.Instance.Disable();
                 }
                 else
                 {
-                    SpecialbuttonEventManagerHandler.Instance.Disable();
+                    var careerButton = CareerHelper.GetCareerButton();
+                    if (careerButton != null)
+                    {
+                        careerButton.Register();
+                    }
+                    else
+                    {
+                        SpecialbuttonEventManagerHandler.Instance.Disable();
+                    }
                 }
             }
             

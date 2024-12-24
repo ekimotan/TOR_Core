@@ -466,6 +466,7 @@
     <Compile Include="BattleMechanics\TriggeredEffect\Scripts\DynamicItemTraitScripts.cs" />
     <Compile Include="BattleMechanics\TriggeredEffect\Scripts\ITriggeredScript.cs" />
     <Compile Include="BattleMechanics\TriggeredEffect\Scripts\KnockDownScript.cs" />
+    <Compile Include="BattleMechanics\TriggeredEffect\Scripts\OnHitScripts.cs" />
     <Compile Include="BattleMechanics\TriggeredEffect\Scripts\PrefabSpawnerScript.cs" />
     <Compile Include="BattleMechanics\TriggeredEffect\Scripts\SummonScript.cs" />
     <Compile Include="BattleMechanics\TriggeredEffect\Scripts\TraitHelper.cs" />
@@ -555,6 +556,7 @@
     <Compile Include="CharacterDevelopment\CareerSystem\CareerButton\CareerButtons.cs" />
     <Compile Include="CharacterDevelopment\CareerSystem\CareerButton\GrailKnightCareerButtonBehavior.cs" />
     <Compile Include="CharacterDevelopment\CareerSystem\CareerButton\ImperialMagisterCareerButtonBehavior.cs" />
+    <Compile Include="CharacterDevelopment\CareerSystem\CareerButton\KnightOldWorldCareerButtonBehavior.cs" />
     <Compile Include="CharacterDevelopment\CareerSystem\CareerButton\MercenaryCareerButtonBehavior.cs" />
     <Compile Include="CharacterDevelopment\CareerSystem\CareerAbilityEffectVM.cs" />
     <Compile Include="CharacterDevelopment\CareerSystem\CareerButton\NecrarchCareerButtonBehavior.cs" />
@@ -579,6 +581,7 @@
     <Compile Include="CharacterDevelopment\CareerSystem\Choices\GrailDamselCareerChoices.cs" />
     <Compile Include="CharacterDevelopment\CareerSystem\Choices\GreyLordCareerChoices.cs" />
     <Compile Include="CharacterDevelopment\CareerSystem\Choices\ImperialMagisterCareerChoices.cs" />
+    <Compile Include="CharacterDevelopment\CareerSystem\Choices\KnightOldWorldCareerChoices.cs" />
     <Compile Include="CharacterDevelopment\CareerSystem\Choices\MercenaryCareerChoices.cs" />
     <Compile Include="CharacterDevelopment\CareerSystem\Choices\NecrarchCareerChoices.cs" />
     <Compile Include="CharacterDevelopment\CareerSystem\Choices\NecromancerCareerChoices.cs" />

@@ -532,6 +532,7 @@
     <Abilities />
     <Attributes>
       <string>Unbreakable</string>
+      <string>Knightly</string>
     </Attributes>
     <Resistances />
     <DamageAmplifiers>
@@ -2838,7 +2839,9 @@
   </CharacterExtendedInfo>
   <CharacterExtendedInfo id="tor_ror_blazing_sun_initiate">
     <Abilities />
-    <Attributes />
+    <Attributes>
+      <string>Knightly</string>
+    </Attributes>
     <Resistances />
     <DamageAmplifiers />
     <DamageProportions>
@@ -2849,6 +2852,7 @@
     <Abilities />
     <Attributes>
       <string>Unbreakable</string>
+      <string>Knightly</string>
     </Attributes>
     <Resistances>
       <ResistanceTuple ResistedDamageType="Magical" ReductionPercent="0.10" />
@@ -2864,6 +2868,7 @@
     <Abilities />
     <Attributes>
       <string>Unbreakable</string>
+      <string>Knightly</string>
     </Attributes>
     <Resistances>
       <ResistanceTuple ResistedDamageType="Magical" ReductionPercent="0.15" />
@@ -2879,6 +2884,7 @@
     <Abilities />
     <Attributes>
       <string>Unbreakable</string>
+      <string>Knightly</string>
     </Attributes>
     <Resistances>
       <ResistanceTuple ResistedDamageType="Magical" ReductionPercent="0.15" />
@@ -2894,6 +2900,7 @@
     <Abilities />
     <Attributes>
       <string>Unbreakable</string>
+      <string>Knightly</string>
     </Attributes>
     <Resistances>
       <ResistanceTuple ResistedDamageType="Magical" ReductionPercent="0.25" />
@@ -2909,6 +2916,7 @@
     <Abilities />
     <Attributes>
       <string>Unbreakable</string>
+      <string>Knightly</string>
     </Attributes>
     <Resistances>
       <ResistanceTuple ResistedDamageType="Magical" ReductionPercent="0.25" />
@@ -3057,7 +3065,9 @@
   </CharacterExtendedInfo>
   <CharacterExtendedInfo id="tor_ror_griffon_initiate">
     <Abilities />
-    <Attributes />
+    <Attributes>
+      <string>Knightly</string>
+    </Attributes>
     <Resistances />
     <DamageAmplifiers />
     <DamageProportions>
@@ -3066,7 +3076,9 @@
   </CharacterExtendedInfo>
   <CharacterExtendedInfo id="tor_ror_griffon_knight">
     <Abilities />
-    <Attributes />
+    <Attributes>
+      <string>Knightly</string>
+    </Attributes>
     <Resistances />
     <DamageAmplifiers />
     <DamageProportions>
@@ -3076,7 +3088,9 @@
   </CharacterExtendedInfo>
   <CharacterExtendedInfo id="tor_ror_griffon_preceptor_knight">
     <Abilities />
-    <Attributes />
+    <Attributes>
+      <string>Knightly</string>
+    </Attributes>
     <Resistances />
     <DamageAmplifiers />
     <DamageProportions>
@@ -3086,7 +3100,9 @@
   </CharacterExtendedInfo>
   <CharacterExtendedInfo id="tor_ror_griffon_innercircle_knight">
     <Abilities />
-    <Attributes />
+    <Attributes>
+      <string>Knightly</string>
+    </Attributes>
     <Resistances />
     <DamageAmplifiers />
     <DamageProportions>
@@ -3096,7 +3112,9 @@
   </CharacterExtendedInfo>
   <CharacterExtendedInfo id="tor_ror_griffon_demi_knight">
     <Abilities />
-    <Attributes />
+    <Attributes>
+      <string>Knightly</string>
+    </Attributes>
     <Resistances />
     <DamageAmplifiers />
     <DamageProportions>
@@ -3106,7 +3124,9 @@
   </CharacterExtendedInfo>
   <CharacterExtendedInfo id="tor_ror_griffon_demi_preceptor_knight">
     <Abilities />
-    <Attributes />
+    <Attributes>
+      <string>Knightly</string>
+    </Attributes>
     <Resistances />
     <DamageAmplifiers />
     <DamageProportions>
@@ -6565,6 +6585,21 @@
       <string>GehennasGoldenGlobe</string>
       <string>FinalTransmutation</string>
       <string>GehennasGoldenHounds</string>
+    </Abilities>
+    <Attributes>
+      <string>AbilityUser</string>
+      <string>SpellCaster</string>
+    </Attributes>
+  </CharacterExtendedInfo>
+  <CharacterExtendedInfo id="tor_dw_lord">
+    <Abilities>
+      <string>AshesAndDust</string>
+      <string>Amaranth</string>
+      <string>TasteOfDeath</string>
+      <string>SpiritLeech</string>
+      <string>CaressOfLaniph</string>
+      <string>PurpleSun</string>
+      <string>FateOfBjuna</string>
     </Abilities>
     <Attributes>
       <string>AbilityUser</string>

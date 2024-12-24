@@ -1,0 +1,380 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
+  <tags>
+    <tag language="Español (LA)" />
+  </tags>
+  <strings>
+
+<string id="str_tor_empire_villager" text="Aldeano Imperial"/>
+<string id="str_tor_empire_recruit" text="Recluta Imperial"/>
+<string id="str_tor_empire_state_troop" text="Tropa Estatal Imperial"/>
+<string id="str_tor_empire_swordsman" text="Espadero Imperial"/>
+<string id="str_tor_empire_spearman" text="Lancero Imperial"/>
+<string id="str_tor_empire_armored_spearman" text="Lancero Acorazado Imperial"/>
+<string id="str_tor_empire_veteran_swordsman" text="Espadero Veterano Imperial"/>
+<string id="str_tor_empire_halberdier" text="Alabardero Imperial"/>
+<string id="str_tor_empire_greatsword" text="Gran Espadero Imperial"/>
+<string id="str_tor_empire_pikeman" text="Piquero Imperial"/>
+<string id="str_tor_empire_sergeant" text="Sargento Imperial"/>
+<string id="str_tor_empire_scout" text="Rastreador Imperial"/>
+<string id="str_tor_empire_archer" text="Arquero Imperial"/>
+<string id="str_tor_empire_skirmisher" text="Escaramuzador Imperial"/>
+<string id="str_tor_empire_handgunner" text="Arcabucero Imperial"/>
+<string id="str_tor_empire_crossbowman" text="Ballestero Imperial"/>
+<string id="str_tor_empire_longbowman" text="Arco Largo Imperial"/>
+<string id="str_tor_empire_huntsman" text="Cazador Imperial"/>
+<string id="str_tor_empire_marksman_crossbowman" text="Ballestero Veterano Imperial"/>
+<string id="str_tor_empire_marksman_handgunner" text="Arcabucero Veterano Imperial"/>
+<string id="str_tor_empire_young_noble_squire" text="Escudero Imperial"/>
+<string id="str_tor_empire_noble_cavalry" text="Caballero Imperial"/>
+<string id="str_tor_empire_reiksguard_knight" text="Caballero de la Guardia del Reik"/>
+<string id="str_tor_empire_pistolier" text="Pistolero Imperial"/>
+<string id="str_tor_empire_outrider" text="Herreruelo Imperial"/>
+<string id="str_tor_empire_reiksguard_preceptor" text="Preceptor de la Guardia del Reik"/>
+<string id="str_tor_empire_innercircle_knight" text="Caballero del Círculo Interior"/>
+<string id="str_tor_demigryph_knight" text="Caballero en Semigrifo"/>
+<string id="str_tor_valiant_outrider" text="Batidor Imperial"/>
+<string id="str_tor_valiant_outrider_grenade" text="Batidor Imperial (Lanzagranadas)"/>
+<string id="str_tor_reiksguard_preceptor_innercircle" text="Preceptor del Círculo Interior de la Guardia del Reik"/>
+<string id="str_tor_demigryph_innercircle" text="Caballero del Círculo Interior de la Guardia del Reik en Semigrifo"/>
+<string id="str_tor_empire_novice_engineer" text="Ingeniero novato"/>
+<string id="str_tor_empire_trainee_artillery_crew" text="Artillero Entrenado"/>
+<string id="str_tor_empire_apprentice_engineer" text="Aprendiz de Ingeniería"/>
+<string id="str_tor_empire_iron_company_guard" text="Guardia de la Compañía de Hierro"/>
+<string id="str_tor_empire_experienced_artillery_crew" text="Artillero Experimentado"/>
+<string id="str_tor_empire_associate_engineer" text="Ingeniero Asociado"/>
+<string id="str_tor_empire_iron_company_troop" text="Soldado de la Compañía de Hierro"/>
+<string id="str_tor_empire_veteran_artillery_crew" text="Artillero Veterano"/>
+<string id="str_tor_empire_master_engineer" text="Maestro Ingeniero"/>
+<string id="str_tor_empire_ironsider" text="Arcabucero Acorazado de Nuln"/>
+<string id="str_tor_empire_caravan_captain" text="Capitán de Caravana Imperial"/>
+<string id="str_tor_empire_caravan_guard" text="Guardia de Caravana Imperial"/>
+<string id="str_tor_empire_caravan_vetguard" text="Caballero del Imperio"/>
+<string id="str_tor_empire_caravan_ranged" text="Ballestero del Imperio"/>
+<string id="str_tor_empire_flagellant" text="Flagelante"/>
+<string id="str_tor_empire_wolfkin" text="Amigo del Lobo"/>
+<string id="str_tor_empire_wolfbrother" text="Hermano del Lobo"/>
+<string id="str_tor_empire_warrior_ulric" text="Guerrero de Ulric"/>
+<string id="str_tor_empire_teutogen_guard" text="Guardia Teutógena"/>
+<string id="str_tor_empire_whitewolf_knight" text="Caballero del Lobo Blanco"/>
+<string id="str_tor_br_villager" text="Aldeano Bretonniano"/>
+<string id="str_tor_br_battle_pilgrim" text="Peregrino de Batalla"/>
+<string id="str_tor_br_peasant_levy" text="Leva Campesina Bretonniana"/>
+<string id="str_tor_br_peasant_archer" text="Arquero Campesino Bretonniano"/>
+<string id="str_tor_br_longbowman" text="Arco Largo Bretonniano"/>
+<string id="str_tor_br_villein" text="Villano Bretonniano"/>
+<string id="str_tor_br_manatarms_militia" text="Miliciano Bretonniano"/>
+<string id="str_tor_br_manatarms" text="Hombre de Armas Bretonniano"/>
+<string id="str_tor_br_manatarms_halberd" text="Hombre de Armas con Volgue Bretonniano"/>
+<string id="str_tor_br_yeoman" text="Soldado Bretonniano"/>
+<string id="str_tor_br_yeoman_warden" text="Guardia Bretonniano"/>
+<string id="str_tor_br_foot_squire" text="Escudero a Pie"/>
+<string id="str_tor_br_mounted_yeoman" text="Soldado Montado Bretonniano"/>
+<string id="str_tor_br_mounted_warden" text="Guardia Montado Bretonniano"/>
+<string id="str_tor_br_noble" text="Noble Bretonniano"/>
+<string id="str_tor_br_knight_errant" text="Caballero Novel"/>
+<string id="str_tor_br_realm_knight" text="Caballero del Reino"/>
+<string id="str_tor_br_quest_knight" text="Caballero Andante"/>
+<string id="str_tor_br_grail_knight" text="Caballero del Grial"/>
+<string id="str_tor_br_caravan_guard" text="Jinete de Caravana Bretonniano"/>
+<string id="str_tor_br_caravan_ranged" text="Arquero de Caravana Bretonniano"/>
+<string id="str_tor_br_caravan_elite_ranged" text="Arco Largo de Caravana Bretonniano"/>
+<string id="str_tor_br_caravan_captain" text="Capitán de Caravana Bretonniano"/>
+<string id="str_tor_m_villager" text="Aldeano de Moussillón"/>
+<string id="str_tor_m_peasant_levy" text="Leva de Moussillón"/>
+<string id="str_tor_m_peasant_archer" text="Arquero Campesino de Moussillón"/>
+<string id="str_tor_m_longbowman" text="Arco Largo de Moussillón"/>
+<string id="str_tor_m_villein" text="Villano de Moussillón"/>
+<string id="str_tor_m_manatarms_militia" text="Miliciano de Moussillón"/>
+<string id="str_tor_m_manatarms" text="Hombre de Armas de Moussillón"/>
+<string id="str_tor_m_manatarms_halberd" text="Hombre de Armas con Volgue de Moussillón"/>
+<string id="str_tor_m_yeoman" text="Soldado de de Moussillón"/>
+<string id="str_tor_m_mounted_yeoman" text="Soldado Montado de Moussillón"/>
+<string id="str_tor_m_illfated_squire" text="Escudero Maldito de Moussillón"/>
+<string id="str_tor_m_outcast_errant" text="Caballero Novel de Moussillón"/>
+<string id="str_tor_m_knight_of_misfortune" text="Caballero Desdichado de Moussillón"/>
+<string id="str_tor_m_doomed_questing_knight" text="Caballero Andante Maldito"/>
+<string id="str_tor_m_knight_of_the_black_grail" text="Caballero del Grial Negro"/>
+<string id="str_tor_m_caravan_guard" text="Jinete de Caravana de Moussillón"/>
+<string id="str_tor_m_caravan_ranged" text="Arquero de Caravana de Moussillón"/>
+<string id="str_tor_m_caravan_elite_ranged" text="Arco Largo de Caravana de Moussillón"/>
+<string id="str_tor_m_caravan_captain" text="Capitán de Caravana de Moussillón"/>
+<string id="str_tor_we_servant" text="Sirviente Asrai"/>
+<string id="str_tor_we_militia" text="Milicia Asrai"/>
+<string id="str_tor_we_glade_guard" text="Guardia del Claro Asrai"/>
+<string id="str_tor_we_eternal_guard" text="Guardia Eterna Asrai"/>
+<string id="str_tor_we_deepwood_scout" text="Explorador del Bosque Profundo Asrai"/>
+<string id="str_tor_we_glade_rider" text="Jinete del Claro Asrai"/>
+<string id="str_tor_we_eternal_warden" text="Guardián Eterno Asrai"/>
+<string id="str_tor_we_master_scout" text="Maestro Explorador Asrai"/>
+<string id="str_tor_we_waywatcher" text="Forestal Asrai"/>
+<string id="str_tor_we_glade_knight" text="Caballero del Claro Asrai"/>
+<string id="str_tor_we_waywatcher_sentinel" text="Forestal Centinela Asrai"/>
+<string id="str_tor_we_wardancer" text="Bailarín Guerrero Asrai"/>
+<string id="str_tor_we_shadowdancer" text="Bailarín Sombrío Asrai"/>
+<string id="str_tor_we_bladesinger" text="Señor de Bailarines Asrai"/>
+<string id="str_tor_we_wildwood_ranger" text="Explorador del Bosque Salvaje de Cythral"/>
+<string id="str_tor_we_wildwood_warden" text="Guardián del Bosque Salvaje de Cythral"/>
+<string id="str_tor_we_wild_rider" text="Jinete Salvaje"/>
+<string id="str_tor_we_great_stag_knight" text="Caballero del Gran Ciervo"/>
+<string id="str_tor_we_dryad" text="Dríada"/>
+<string id="str_tor_we_treeman" text="Hombre Árbol"/>
+<string id="str_tor_we_ancient_treeman" text="Hombre Árbol Anciano"/>
+<string id="str_tor_we_caravan_guard" text="Mercader Asrai"/>
+<string id="str_tor_we_caravan_ranged" text="Guardia Mercader Asrai"/>
+<string id="str_tor_we_caravan_elite_ranged" text="Mercader Asrai de Élite"/>
+<string id="str_tor_we_caravan_captain" text="Maestro Mercader Asrai"/>
+<string id="str_tor_eo_forestborn" text="Nacido del Bosque Eonir"/>
+<string id="str_tor_eo_militia" text="Milicia Eonir"/>
+<string id="str_tor_eo_kithband_aspirant" text="Aspirante Eonir"/>
+<string id="str_tor_eo_kithband_warrior" text="Guerrero del Clan Eonir"/>
+<string id="str_tor_eo_mounted_kithband_warrior" text="Guerrero del Clan a Caballo Eonir"/>
+<string id="str_tor_eo_armoured_kithband_warrior" text="Guerrero del Clan Acorazado Eonir"/>
+<string id="str_tor_eo_veteran_kithband_warrior_sword" text="Espadachín Veterano del Clan Eonir"/>
+<string id="str_tor_eo_veteran_kithband_warrior_spear" text="Lancero Veterano del Clan Eonir"/>
+<string id="str_tor_eo_kithband_sentinel" text="Centinela del Clan Eonir"/>
+<string id="str_tor_eo_ranger" text="Explorador Eonir"/>
+<string id="str_tor_eo_mounted_ranger" text="Explorador a Caballo Eonir"/>
+<string id="str_tor_eo_cityborn_militia" text="Milicia Ciudadana Eonir"/>
+<string id="str_tor_eo_cityborn_guard" text="Guardia Ciudadana Eonir"/>
+<string id="str_tor_eo_cityborn_council_guard" text="Guardia del Consejo Eonir"/>
+<string id="str_tor_eo_cityborn_council_sentinel" text="Centinela del Consejo Eonir"/>
+<string id="str_tor_eo_queens_guard_sword" text="Espadachín de la Reina"/>
+<string id="str_tor_eo_queens_guard_halberd" text="Alabardero de la Reina"/>
+<string id="str_tor_eo_envoy_guard" text="Guardia de Embajadores"/>
+<string id="str_tor_eo_caravan_guard" text="Guardia de Caravanas Eonir"/>
+<string id="str_tor_eo_caravan_ranged" text="Arquero de Caravana Eonir"/>
+<string id="str_tor_eo_caravan_elite_ranged" text="Arquero de Caravana Eonir de Élite"/>
+<string id="str_tor_eo_caravan_captain" text="Capitán de Caravana Eonir"/>
+<string id="str_tor_eo_thug" text="Bribón Eonir"/>
+<string id="str_tor_eo_expert_thug" text="Ladrón Eonir"/>
+<string id="str_tor_eo_master_thug" text="Maestro Ladrón Eonir"/>
+<string id="str_tor_he_seaelf_militia" text="Milicia del Mar de Lothern"/>
+<string id="str_tor_he_seaelf_archer" text="Arquero del Mar de Lothern"/>
+<string id="str_tor_he_seaelf_hawkeye" text="Halcón Marino Asur"/>
+<string id="str_tor_he_seaelf_spearman" text="Lancero Asur"/>
+<string id="str_tor_he_seaelf_sentinel" text="Centinela Asur"/>
+<string id="str_tor_he_white_lion_chrace" text="León Blanco de Cracia"/>
+<string id="str_tor_de_conscript" text="Recluta Druchii"/>
+<string id="str_tor_de_bleaksword" text="Espadas Marchitadoras"/>
+<string id="str_tor_de_dreadspear" text="Lanzas Siniestras"/>
+<string id="str_tor_de_darkshard" text="Saeta Oscura"/>
+<string id="str_tor_de_darkrider" text="Jinete Oscuro"/>
+<string id="str_tor_vc_villager" text="Aldeano de Sylvania"/>
+<string id="str_tor_vc_empire_recruit" text="Recluta de Sylvania"/>
+<string id="str_tor_vc_empire_levy" text="Leva de Sylvania"/>
+<string id="str_tor_vc_empire_state_troop" text="Tropa Estatal de Sylvania"/>
+<string id="str_tor_vc_empire_veteran_state_troop" text="Tropa Estatal Veterana de Sylvania"/>
+<string id="str_tor_vc_empire_sergeant" text="Sargento de Sylvania"/>
+<string id="str_tor_vc_empire_archer" text="Arquero de Sylvania"/>
+<string id="str_tor_vc_empire_hunter" text="Cazador de Sylvania"/>
+<string id="str_tor_vc_empire_ranger" text="Guardabosques de Sylvania"/>
+<string id="str_tor_vc_summoned_skeleton" text="Esqueleto Resucitado"/>
+<string id="str_tor_vc_skeleton" text="Esqueleto"/>
+<string id="str_tor_vc_skeleton_swordsman" text="Esqueleto con Espada"/>
+<string id="str_tor_vc_skeleton_warrior" text="Guerrero Esqueleto"/>
+<string id="str_tor_vc_crypt_warrior" text="Soldado de los Túmulos"/>
+<string id="str_tor_vc_grave_guard_warrior" text="Guardia de los Túmulos"/>
+<string id="str_tor_vc_grave_guard_seneschal" text="Senescal de la Guardia de los Túmulos"/>
+<string id="str_tor_vc_skeleton_spearman" text="Lancero Esqueleto"/>
+<string id="str_tor_vc_skeleton_guard" text="Guardia Esqueleto"/>
+<string id="str_tor_vc_crypt_guard" text="Protector de los Túmulos"/>
+<string id="str_tor_vc_grave_guard_spearman" text="Lancero de la Guardia de los Túmulos"/>
+<string id="str_tor_vc_grave_guardian" text="Senescal Lancero de la Guardia de los Túmulos"/>
+<string id="str_tor_vc_black_knight" text="Caballero Negro"/>
+<string id="str_tor_vc_hell_knight" text="Caballero Infernal"/>
+<string id="str_tor_vc_spirit_host" text="Espíritu"/>
+<string id="str_tor_vc_cairn_wraith" text="Fantasma"/>
+<string id="str_tor_vc_crypt_wraith" text="Espectro"/>
+<string id="str_tor_vc_hex_wraith" text="Fantasma Maldito"/>
+<string id="str_tor_vc_hell_wraith" text="Espectro Condenador"/>
+<string id="str_tor_vc_con_carstein_noble" text="Noble von Carstein"/>
+<string id="str_tor_vc_von_carstein_knight" text="Caballero von Carstein"/>
+<string id="str_tor_vc_drakenhof_templar" text="Templario de Drakenhof"/>
+<string id="str_tor_vc_drakenhof_kastelan" text="Castellano de Drakenhof"/>
+<string id="str_tor_bd_blooddragon_initiate" text="Iniciado del Dragón Sangriento"/>
+<string id="str_tor_bd_blooddragon_knight" text="Caballero del Dragón Sangriento"/>
+<string id="str_tor_bd_blooddragon_templar" text="Templario del Dragón Sangriento"/>
+<string id="str_tor_bd_blooddragon_kastelan" text="Castellano del Dragón Sangriento"/>
+<string id="str_tor_vc_lahmian_sister" text="Lahmia"/>
+<string id="str_tor_vc_lahmian_noblewoman" text="Lahmia Noble"/>
+<string id="str_tor_vc_lahmian_countess" text="Condesa Lahmia"/>
+<string id="str_tor_vc_caravan_captain" text="Capitán de Caravanas de Sylvania"/>
+<string id="str_tor_vc_caravan_guard" text="Jinete de Caravana de Sylvania"/>
+<string id="str_tor_vc_caravan_ranged" text="Ballestero de Caravana de Sylvania"/>
+<string id="str_tor_chaos_enslaved_villager" text="Aldeano Esclavizado"/>
+<string id="str_tor_chaos_norscan_tribesman" text="Guerrero Norsca"/>
+<string id="str_tor_chaos_norscan_raider" text="Desvalijador Norsca"/>
+<string id="str_tor_chaos_norscan_marauder" text="Bárbaro Norsca"/>
+<string id="str_tor_chaos_norscan_champion" text="Campeón Norsca"/>
+<string id="str_tor_chaos_norscan_whaler" text="Arponeador Norsca"/>
+<string id="str_tor_chaos_norscan_reaver" text="Saqueador Norsca"/>
+<string id="str_tor_chaos_norscan_horseman" text="Jinete Norsca"/>
+<string id="str_tor_chaos_norscan_horsemaster" text="Jinete Bárbaro Norsca"/>
+<string id="str_tor_chaos_aspiring_warrior" text="Guerrero Aspirante"/>
+<string id="str_tor_chaos_pit_fighter" text="Luchador de los Fosos"/>
+<string id="str_tor_chaos_pugulist" text="Púgil"/>
+<string id="str_tor_chaos_undivided_warrior" text="Guerrero del Caos Indiviso"/>
+<string id="str_tor_chaos_gladiator" text="Gladiador del Caos"/>
+<string id="str_tor_chaos_slaanesh_warrior" text="Guerrero de Slaanesh"/>
+<string id="str_tor_chaos_khorne_warrior" text="Guerrero de Khorne"/>
+<string id="str_tor_chaos_nurgle_warrior" text="Guerrero de Nurgle"/>
+<string id="str_tor_chaos_tzeench_warrior" text="Guerrero de Tzeentch"/>
+<string id="str_tor_chaos_undivided_knight" text="Caballero del Caos Indiviso"/>
+<string id="str_tor_chaos_caravan_ranged" text="Explorador de Caravana del Caos"/>
+<string id="str_tor_chaos_caravan_guard" text="Guardia de Caravana del Caos"/>
+<string id="str_tor_chaos_caravan_horseman" text="Jinete de Caravana del Caos"/>
+<string id="str_tor_chaos_caravan_captain" text="Capitán de Caravana del Caos"/>
+<string id="str_tor_chaos_cultist_of_chaos" text="Cultista del Caos"/>
+<string id="str_tor_chaos_darksoul_of_chaos" text="Alma Oscura del Caos"/>
+<string id="str_tor_chaos_acolyte_of_chaos" text="Acólito del Caos"/>
+<string id="str_tor_beast_ungor" text="Ungor"/>
+<string id="str_tor_beast_shielded_ungor" text="Ungor Escudado"/>
+<string id="str_tor_beast_ungor_raider" text="Saqueador Ungor"/>
+<string id="str_tor_beast_ungor_chief" text="Jefe Ungor"/>
+<string id="str_tor_beast_gor" text="Gor"/>
+<string id="str_tor_beast_gor_foerender" text="Gor Desafiante"/>
+<string id="str_tor_beast_gor_manripper" text="Gor Desgarrador"/>
+<string id="str_tor_beast_minotaur" text="Minotauro"/>
+<string id="str_tor_dog_braganza_01" text="Ballestero Sitiador"/>
+<string id="str_tor_dog_braganza_02" text="Sitiador con Arbalesta"/>
+<string id="str_tor_dog_braganza_03" text="Sitiador de Braganza"/>
+<string id="str_tor_dog_cursed_company_01" text="Guerrero Esclavizado"/>
+<string id="str_tor_dog_cursed_company_02" text="Guerrero Maldito"/>
+<string id="str_tor_dog_cursed_company_03" text="Soldado de la Compañía Maldita"/>
+<string id="str_tor_dog_leopard_01" text="Mercenario Leopardo"/>
+<string id="str_tor_dog_leopard_02" text="Piquero Leopardo"/>
+<string id="str_tor_dog_leopard_03" text="Piquero Leopardo de Leopold"/>
+<string id="str_tor_dog_voland_01" text="Caballería Cazadora Mercenaria"/>
+<string id="str_tor_dog_voland_02" text="Cazador Condottiero"/>
+<string id="str_tor_dog_voland_03" text="Cazador de Voland"/>
+<string id="str_tor_dog_muktar_01" text="Jinete Mercenario Árabe"/>
+<string id="str_tor_dog_muktar_02" text="Caballero del Desierto"/>
+<string id="str_tor_dog_muktar_03" text="Perro del Desierto de Al Muktar"/>
+<string id="str_tor_dog_miragliano_01" text="Ballestero de Miragliano"/>
+<string id="str_tor_dog_miragliano_02" text="Arbalesta de Miragliano"/>
+<string id="str_tor_dog_miragliano_03" text="Tirador de Miragliano"/>
+<string id="str_tor_dog_ricco_01" text="Patriota Reman"/>
+<string id="str_tor_dog_ricco_02" text="Piquero Reman"/>
+<string id="str_tor_dog_ricco_03" text="Guardia Republicana de Ricco"/>
+<string id="str_tor_merc_free_company_volunteer" text="Voluntario de la Compañía Libre"/>
+<string id="str_tor_merc_free_company_scout" text="Cazador de la Compañía Libre"/>
+<string id="str_tor_merc_free_company_militiaman" text="Miliciano de la Compañía Libre"/>
+<string id="str_tor_merc_free_company_bowman" text="Arquero de la Compañía Libre"/>
+<string id="str_tor_merc_free_company_pistolier" text="Pistolero de la Compañía Libre"/>
+<string id="str_tor_ror_kragsburg_retainer" text="Recluta von Kragsburg"/>
+<string id="str_tor_ror_kragsburg_sergeant" text="Sargento von Kragsburg"/>
+<string id="str_tor_ror_kragsburg_house_guard" text="Guardia de la Casa von Kragsburg"/>
+<string id="str_tor_ror_kragsburg_personal_guard" text="Guardia Personal von Kragsburg"/>
+<string id="str_tor_ror_stir_river_scout" text="Cazador del Río Stir"/>
+<string id="str_tor_ror_stir_river_patrolman" text="Patrulla del Río Stir"/>
+<string id="str_tor_ror_stir_river_patrol_guardsman" text="Vigilante del Río Stir"/>
+<string id="str_tor_ror_stir_river_patrol_nimrod" text="Nimrod del Río Stir"/>
+<string id="str_tor_ror_blazing_sun_initiate" text="Iniciado del Sol Llameante"/>
+<string id="str_tor_ror_blazing_sun_knight" text="Caballero del Sol Llameante"/>
+<string id="str_tor_ror_blazing_sun_preceptor" text="Gran Maestre del Sol Llameante"/>
+<string id="str_tor_ror_blazing_sun_demigryph_knight" text="Caballero del Sol Llameante en Semigrifo"/>
+<string id="str_tor_ror_blazing_sun_innercircle" text="Caballero del Círculo Interior del Sol Llameante"/>
+<string id="str_tor_ror_blazing_sun_demigryph_innercircle" text="Caballero del Círculo Interior del Sol Llameante en Semigrifo"/>
+<string id="str_tor_ror_grundel_defender_troop" text="Defensor de Grundel"/>
+<string id="str_tor_ror_grundel_defender_stalwart" text="Vigoroso Defensor de Grundel"/>
+<string id="str_tor_ror_grundel_defender_sergeant" text="Sargento Defensor de Grundel"/>
+<string id="str_tor_ror_grundel_defender_defender" text="Valeroso Defensor de Grundel"/>
+<string id="str_tor_ror_deathjack_longbowman" text="Arco Largo Deathjack"/>
+<string id="str_tor_ror_deathjack_marksman" text="Tirador Deathjack"/>
+<string id="str_tor_ror_deathjack_toxophilite" text="Sagitario Deathjack"/>
+<string id="str_tor_ror_ward_of_taal" text="Protector de Taal"/>
+<string id="str_tor_ror_hunter_of_taal" text="Cazador de Taal"/>
+<string id="str_tor_ror_horned_hunter" text="Cazador Cornudo"/>
+<string id="str_tor_ror_longshank_initiate" text="Iniciado Zanquilargo"/>
+<string id="str_tor_ror_longshank_strider" text="Explorador Zanquilargo"/>
+<string id="str_tor_ror_longshank_warden" text="Guardián Zanquilargo"/>
+<string id="str_tor_ror_longshank_ranger" text="Cazador Zanquilargo"/>
+<string id="str_tor_ror_griffon_initiate" text="Iniciado del Grifo"/>
+<string id="str_tor_ror_griffon_knight" text="Caballero del Grifo"/>
+<string id="str_tor_ror_griffon_preceptor_knight" text="Preceptor del Grifo"/>
+<string id="str_tor_ror_griffon_innercircle_knight" text="Caballero del Grifo del Círculo Interior"/>
+<string id="str_tor_ror_griffon_demi_knight" text="Caballero del Grifo en Semigrifo"/>
+<string id="str_tor_ror_griffon_demi_preceptor_knight" text="Preceptor del Grifo en Semigrifo"/>
+<string id="str_tor_ror_son_of_altdorf" text="Hijo de Altdorf"/>
+<string id="str_tor_ror_altdorf_companyman" text="Compañero de Altdorf"/>
+<string id="str_tor_ror_altdorf_company_sergeant" text="Sargento de la Compañía de Altdorf"/>
+<string id="str_tor_ror_hochland_scout" text="Explorador de Hochland"/>
+<string id="str_tor_ror_hochland_longrifle" text="Rifle Largo de Hochland"/>
+<string id="str_tor_ror_hergig_jaegerkorps" text="jaegerkorp de Hergig"/>
+<string id="str_tor_ror_ostland_shield" text="Escudo de Ostland"/>
+<string id="str_tor_ror_ostland_blackguard" text="Guardia Negra de Ostland"/>
+<string id="str_tor_ror_hochland_drakwald_patrol" text="Patrulla de Drakwald"/>
+<string id="str_tor_ror_gundermans_surefire" text="Certero de Gunderman"/>
+<string id="str_tor_ror_marienburg_sailor" text="Marinero de Marienburgo"/>
+<string id="str_tor_ror_marienburg_private_militia" text="Milicia Privada de Marienburgo"/>
+<string id="str_tor_ror_klumpfs_buccaneer" text="Bucanero de Van Klumpf"/>
+<string id="str_tor_ror_nordland_mariner" text="Marinero de Nordland"/>
+<string id="str_tor_ror_nordland_seahawk" text="Halcón Marino de Nordland"/>
+<string id="str_tor_ror_sternieste_skeleton" text="Esqueleto del Castillo Sternieste"/>
+<string id="str_tor_ror_sternieste_grave_guard" text="Guardia del Castillo Sternieste"/>
+<string id="str_tor_ror_sternieste_sternsmen" text="Adusto"/>
+<string id="str_tor_ror_sternieste_black_knight" text="Caballero Negro del Castillo Sternieste"/>
+<string id="str_tor_ror_sternieste_reaver" text="Raptor de Verek"/>
+<string id="str_tor_ror_konigstein_skeleton" text="Esqueleto de Konigstein"/>
+<string id="str_tor_ror_konigstein_swordsman" text="Soldado de Konigstein"/>
+<string id="str_tor_ror_konigstein_spearman" text="Lancero de Konigstein"/>
+<string id="str_tor_ror_peasant_squire" text="Escuderos Campesinos de Wainfleet"/>
+<string id="str_tor_ror_peasant_squight" text="Escuderos Armados de Wainfleet"/>
+<string id="str_tor_ror_peasant_knight" text="Caballero Campesino de Wainfleet"/>
+<string id="str_tor_ror_maisontaal_cultist" text="Cultista de La Maisontaal"/>
+<string id="str_tor_ror_maisontaal_acetic" text="Fanático de La Maisontaal"/>
+<string id="str_tor_ror_maisontaal_warden" text="Santo Guardián de La Maisontaal"/>
+<string id="str_tor_ror_bergerac_herrimault" text="Bandolero Honorable"/>
+<string id="str_tor_ror_bergerac_ranger" text="Guardabosques de Bergerac"/>
+<string id="str_tor_ror_bergerac_bowman" text="Arquero de Bergerac"/>
+<string id="str_tor_ror_anguille_sailor" text="Marinero de L'Anguille"/>
+<string id="str_tor_ror_corduin_mariner" text="Marinero de Corduin"/>
+<string id="str_tor_ror_corduin_knightly_mariner" text="Caballeros Marineros de Corduin"/>
+<string id="str_tor_ror_carcasonne_mountain_guard" text="Guardia de Montaña de Carcasonne"/>
+<string id="str_tor_ror_kharmourts_blades" text="Espadas de Kharmourt"/>
+<string id="str_tor_ror_br_mounted_bowman" text="Arquero a Caballo Bretonniano"/>
+<string id="str_tor_ror_warden_montfort" text="Guardián de Montfort"/>
+<string id="str_tor_ror_bastonne_squire" text="Escudero de Bastonne"/>
+<string id="str_tor_ror_bastonne_beastslayer" text="Cazabestias de Bastonne"/>
+<string id="str_tor_ror_lyonesse_knight_errant" text="Caballero Andante de Lyonesse"/>
+<string id="str_tor_ror_lionhearted_knight" text="Caballero Corazón de León"/>
+<string id="str_tor_ror_loec_trickster" text="Embaucador de Loec"/>
+<string id="str_tor_wh_retinue" text="Séquito"/>
+<string id="str_tor_wh_retinue_hunter" text="Séquito del Cazador de Bujas"/>
+<string id="str_tor_wh_retinue_headhunter" text="Séquito Cazador de Cabezas"/>
+<string id="str_tor_vc_harbinger_champion" text="Heraldo Campeón"/>
+<string id="str_tor_vc_harbinger_champion_two_handed" text="Heraldo Campeón con arma a dos manos"/>
+<string id="str_tor_vc_harbinger_champion_plate" text="Heraldo Campeón Acorazado"/>
+<string id="str_tor_vc_harbinger_champion_plate_two_handed" text="Heraldo Campeón Acorazado con arma a dos manos"/>
+<string id="str_tor_chaos_cult_acolyte" text="Cultista del Caos"/>
+<string id="str_tor_chaos_cult_darksoul" text="Alma Oscura del Caos"/>
+<string id="str_tor_chaos_cult_magister" text="Acólito del Caos"/>
+<string id="str_tor_cult_bw_expelled_magister" text="Maestro Expulsado"/>
+<string id="str_tor_cult_bw_vengeful_cultist" text="Cultista Vengativo"/>
+<string id="str_tor_cult_bw_sorcerer_broken_wheel" text="Hechicero de la Rueda Rota"/>
+<string id="str_tor_cult_coi_unlit_candle" text="Llama Apagada"/>
+<string id="str_tor_cult_coi_beacon" text="Antorcha"/>
+<string id="str_tor_cult_coi_order_of_star_acolyte" text="Miembro de la Orden de la Estrella"/>
+<string id="str_tor_cult_fsf_puer_ulceris" text="Puerco Ulcerante"/>
+<string id="str_tor_cult_fsf_ulcus_frater" text="Hermano Ulcerante"/>
+<string id="str_tor_cult_fsf_ulcerator" text="Ulcerador"/>
+<string id="str_tor_roaming_undead_skeleton" text="No-Muerto Errante"/>
+<string id="str_tor_roaming_undead_warrior" text="Guerrero No-Muerto Errante"/>
+<string id="str_tor_empire_outlaw" text="Bandido"/>
+<string id="str_tor_empire_outlaw_leader" text="Líder bandido"/>
+<string id="str_tor_tor_empire_deserter" text="Desertor"/>
+<string id="str_tor_empire_deserter_sergeant" text="Desertor Sargento"/>
+<string id="str_tor_empire_deserter_scout" text="Desertor Cazador"/>
+<string id="str_tor_br_bandit" text="Encapuchado"/>
+<string id="str_tor_br_bandit_leader" text="Bandido"/>
+<string id="str_tor_br_bandit_scout" text="Ladrón"/>
+<string id="str_tor_bandit_norscan_raider" text="Saqueador Bandido de Norsca"/>
+<string id="str_tor_bandit_norscan_whaler" text="Arponeador Bandido de Norsca"/>
+<string id="str_tor_bandit_norscan_marauder" text="Bárbaro de Norsca"/>
+<string id="str_tor_bandit_norscan_champion" text="Campeón Bandido de Norsca"/>
+<string id="str_tor_ti_vittorio" text="Vittorio de Luca"/>
+
+      </strings>
+</base>

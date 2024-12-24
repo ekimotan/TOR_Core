@@ -33,7 +33,7 @@
                      MaxDistance="100"
                      CrosshairType="SingleTarget"
                      AbilityTargetType="EnemiesInAOE"
-                     TooltipDescription="Hurl a magical bolt at the enemy. The missile homes in on the target and does 40 damage in a 3 meter radius on contact.">
+                     TooltipDescription="{=dart_label_description_str}Hurl a magical bolt at the enemy. The missile homes in on the target and does 40 damage in a 3 meter radius on contact.">
         <LightColorRGB x="0"
                        y="204"
                        z="255"
@@ -1823,6 +1823,336 @@
         </LightColorRGB>
         <TriggeredEffect>curse_of_years_hex</TriggeredEffect>
     </AbilityTemplate>
+	
+	<!-- Death Magic -->
+	
+	
+	<AbilityTemplate StringID="TasteOfDeath"
+                     Name="{=tasteofdeath_label_str}Taste of Death"
+                     SpriteName="snow_kings_decree_icon"
+                     CoolDown="10"
+                     WindsOfMagicCost="8"
+                     BaseMisCastChance="0.05"
+                     Duration="5"
+                     Radius="8"
+                     AbilityType="Spell"
+                     AbilityEffectType="Hex"
+                     BaseMovementSpeed="0"
+                     TickInterval="-1"
+                     TriggerType="TickOnce"
+                     HasLight="false"
+                     LightIntensity="0"
+                     LightRadius="0"
+                     LightFlickeringMagnitude="0"
+                     LightFlickeringInterval="0"
+                     ShadowCastEnabled="true"
+                     ParticleEffectPrefab=""
+                     ParticleEffectSizeModifier="1"
+                     SoundEffectToPlay=""
+                     ShouldSoundLoopOverDuration="false"
+                     CastType="Instant"
+                     CastTime="0.5"
+                     AnimationActionName="act_release_heavy_thrown"
+                     Offset="0.5"
+                     AbilityTargetType="SingleEnemy"
+                     TargetCapturingRadius="4"
+                     MaxDistance="50"
+                     CrosshairType="SingleTarget"
+                     SpellTier="4"
+                     BelongsToLoreID="LoreOfDeath"
+                     TooltipDescription="{=snow_king_description_str}The priest roars with a grand prayer and calls freezing blast of blue flames to cleanse a targeted area of cowards and weaklings. Affected enemies take damage, suffer a -50% movement and attack speed penalty as well as damage over time.">
+        <LightColorRGB x="255"
+                       y="170"
+                       z="0"
+                       w="-1">
+            <AsVec2>
+                <x>255</x>
+                <y>170</y>
+            </AsVec2>
+        </LightColorRGB>
+        <TriggeredEffect>taste_of_death</TriggeredEffect>
+    </AbilityTemplate>
+
+    <AbilityTemplate StringID="AshesAndDust"
+                     Name="{=ashesanddust_label_str}Ashes and Dust"
+                     SpriteName="deathspasm_icon"
+                     CoolDown="15"
+                     WindsOfMagicCost="12"
+                     BaseMisCastChance="0.05"
+                     Duration="3"
+                     Radius="0.5"
+                     AbilityType="Spell"
+                     AbilityEffectType="Missile"
+                     BaseMovementSpeed="45"
+                     TickInterval="-1"
+                     TriggerType="OnCollision"
+                     HasLight="false"
+                     LightIntensity="50"
+                     LightRadius="10"
+                     LightFlickeringMagnitude="3"
+                     LightFlickeringInterval="0.7"
+                     ShadowCastEnabled="true"
+                     ParticleEffectPrefab="ashes_and_dust"
+                     ParticleEffectSizeModifier="1"
+                     SoundEffectToPlay="evilbolt_cast"
+                     ShouldSoundLoopOverDuration="false"
+                     CastType="WindUp"
+                     CastTime="0.5"
+                     AnimationActionName="act_release_stone"
+                     Offset="0.5"
+                     CrosshairType="Missile"
+                     AbilityTargetType="WorldPosition"
+                     SpellTier="2"
+                     BelongsToLoreID="LoreOfDeath"
+                     TooltipDescription="{=death_spasm_description_str}A crackling black bolt of energy that explodes in a fireball and sets victims on fire.">
+        <LightColorRGB x="255"
+                       y="170"
+                       z="0"
+                       w="-1">
+            <AsVec2>
+                <x>255</x>
+                <y>170</y>
+            </AsVec2>
+        </LightColorRGB>
+        <TriggeredEffect>ashes_and_dust_explosion</TriggeredEffect>
+    </AbilityTemplate>
+	
+	<AbilityTemplate StringID="PurpleSun"
+                     Name="{=black_horror_label_str}Purple Sun of Xereus"
+                     SpriteName="arzipalsblackhorror_icon"
+                     CoolDown="70"
+                     WindsOfMagicCost="35"
+                     BaseMisCastChance="0.3"
+                     Duration="8"
+                     Radius="2"
+                     AbilityType="Spell"
+                     AbilityEffectType="Vortex"
+                     BaseMovementSpeed="0.5"
+                     TickInterval="0.5"
+                     TriggerType="EveryTick"
+                     HasLight="false"
+                     LightIntensity="50"
+                     LightRadius="10"
+                     LightFlickeringMagnitude="0"
+                     LightFlickeringInterval="0"
+                     ShadowCastEnabled="false"
+                     ParticleEffectPrefab="purple_sun"
+                     ParticleEffectSizeModifier="1"
+                     SoundEffectToPlay="windofdeath_whispers"
+                     ShouldSoundLoopOverDuration="true"
+                     CastType="WindUp"
+                     CastTime="0.5"
+                     AnimationActionName="act_release_heavy_thrown"
+                     Offset="0"
+                     AbilityTargetType="GroundAtPosition"
+                     CrosshairType="TargetedAOE"
+                     MinDistance="3"
+                     MaxDistance="20"
+                     TargetCapturingRadius="3"
+                     MaxRandomDeviation="2"
+                     ShouldRotateVisuals="false"
+                     VisualsRotationVelocity="0"
+                     SpellTier="4"
+                     BelongsToLoreID="LoreOfDeath"
+                     TooltipDescription="{=black_horror_description_str}The caster tears down the walls between realities, and a black cloud of roiling energy sweeps across the battlefield. As the darkness travels, slimy tentacles lash out from its depths, draggin unfortunate victims screaming to an unknown fate.">
+        <LightColorRGB x="255"
+                       y="170"
+                       z="0"
+                       w="-1">
+            <AsVec2>
+                <x>255</x>
+                <y>170</y>
+            </AsVec2>
+        </LightColorRGB>
+        <TriggeredEffect>witheringwave_tick</TriggeredEffect>
+    </AbilityTemplate>
+	
+	<AbilityTemplate StringID="FateOfBjuna"
+                     Name="{=curse_of_anraheir_label_str}Fate of Bjuna"
+                     SpriteName="curseofanraheir_icon"
+                     CoolDown="90"
+                     WindsOfMagicCost="32"
+                     BaseMisCastChance="0.05"
+                     Duration="15"
+                     Radius="10"
+                     AbilityType="Spell"
+                     AbilityEffectType="Hex"
+                     BaseMovementSpeed="0"
+                     TickInterval="2"
+                     TriggerType="EveryTick"
+                     HasLight="false"
+                     LightIntensity="0"
+                     LightRadius="0"
+                     LightFlickeringMagnitude="0"
+                     LightFlickeringInterval="0"
+                     ShadowCastEnabled="true"
+                     ParticleEffectPrefab="fate_of_bjuna"
+                     ParticleEffectSizeModifier="0"
+                     SoundEffectToPlay=""
+                     ShouldSoundLoopOverDuration="false"
+                     CastType="Instant"
+                     CastTime="0.5"
+                     AnimationActionName="act_release_heavy_thrown"
+                     Offset="0.5"
+                     AbilityTargetType="EnemiesInAOE"
+                     TargetCapturingRadius="10"
+                     MaxDistance="20"
+                     CrosshairType="TargetedAOE"
+                     SpellTier="4"
+                     BelongsToLoreID="LoreOfDeath"
+                     TooltipDescription="{=curse_of_anraheir_description_str}Woodland sprites hinder all enemies caught in the area for 15 seconds, reducing movement (35%) and attack speed (50%) as well as causing 3 damage per second.">
+        <LightColorRGB x="255"
+                       y="170"
+                       z="0"
+                       w="-1">
+            <AsVec2>
+                <x>255</x>
+                <y>170</y>
+            </AsVec2>
+        </LightColorRGB>
+        <TriggeredEffect>fate_of_bjuna</TriggeredEffect>
+    </AbilityTemplate>
+
+    <AbilityTemplate StringID="Amaranth"
+                     Name="{=barkskin_label_str}Amaranth"
+                     SpriteName="barkskin_icon"
+                     CoolDown="100"
+                     WindsOfMagicCost="25"
+                     BaseMisCastChance="0.05"
+                     Duration="0"
+                     Radius="3"
+                     AbilityType="Spell"
+                     AbilityEffectType="Augment"
+                     BaseMovementSpeed="0"
+                     TickInterval="-1"
+                     TriggerType="TickOnce"
+                     HasLight="false"
+                     LightIntensity="0"
+                     LightRadius="0"
+                     LightFlickeringMagnitude="0"
+                     LightFlickeringInterval="0"
+                     ShadowCastEnabled="true"
+                     ParticleEffectPrefab=""
+                     ParticleEffectSizeModifier="0"
+                     SoundEffectToPlay=""
+                     ShouldSoundLoopOverDuration="false"
+                     CastType="Instant"
+                     CastTime="0.5"
+                     AnimationActionName="act_release_heavy_thrown"
+                     Offset="0.5"
+                     AbilityTargetType="AlliesInAOE"
+                     TargetCapturingRadius="7"
+                     MaxDistance="0.5"
+                     CrosshairType="Self"
+                     SpellTier="3"
+                     BelongsToLoreID="LoreOfDeath"
+                     TooltipDescription="{=barkskin_description_str}Hardens the skin of targets, making them tougher, providing 50% physical resistance for 80 secouds">
+        <LightColorRGB x="255"
+                       y="170"
+                       z="0"
+                       w="-1">
+            <AsVec2>
+                <x>255</x>
+                <y>170</y>
+            </AsVec2>
+        </LightColorRGB>
+        <TriggeredEffect>amaranth</TriggeredEffect>
+    </AbilityTemplate>
+	
+	<AbilityTemplate StringID="SpiritLeech"
+                     Name="{=flock_of_doom_label_str}Spirit Leech"
+                     SpriteName="flockofdoom_icon"
+                     CoolDown="35"
+                     WindsOfMagicCost="26"
+                     BaseMisCastChance="0.05"
+					 Duration="0"
+                     
+                     Radius="7.5"
+                     AbilityType="Spell"
+                     AbilityEffectType="Hex"
+                     BaseMovementSpeed="0"
+                     TickInterval="-1"
+                     TriggerType="TickOnce"
+                     HasLight="false"
+                     LightIntensity="0"
+                     LightRadius="0"
+                     LightFlickeringMagnitude="0"
+                     LightFlickeringInterval="0"
+                     ShadowCastEnabled="true"
+                     ParticleEffectPrefab=""
+                     ParticleEffectSizeModifier="0"
+                     SoundEffectToPlay=""
+                     ShouldSoundLoopOverDuration="false"
+                     CastType="Instant"
+                     CastTime="0.5"
+                     AnimationActionName="act_release_heavy_thrown"
+                     Offset="0.5"
+                     AbilityTargetType="EnemiesInAOE"
+                     TargetCapturingRadius="4"
+                     MaxDistance="100"
+                     CrosshairType="TargetedAOE"
+                     SpellTier="3"
+                     BelongsToLoreID="LoreOfDeath"
+                     TooltipDescription="{=flock_of_doom_description_str}Summons a nightmare of crows in the targeted area. Affected enemies suffer light damage over time and their physical resistance is reduced by 20% for 10 seconds.">
+        <LightColorRGB x="255"
+                       y="170"
+                       z="0"
+                       w="-1">
+            <AsVec2>
+                <x>255</x>
+                <y>170</y>
+            </AsVec2>
+        </LightColorRGB>
+        <TriggeredEffect>spirit_leech</TriggeredEffect>
+    </AbilityTemplate>
+	
+	
+    <AbilityTemplate StringID="CaressOfLaniph"
+                     Name="{=caress_of_laniph_label_str}Caress of Laniph"
+                     SpriteName="flockofdoom_icon"
+                     CoolDown="35"
+                     WindsOfMagicCost="26"
+                     BaseMisCastChance="0.05"
+                     Duration="10"
+                     Radius="7.5"
+                     AbilityType="Spell"
+                     AbilityEffectType="Hex"
+                     BaseMovementSpeed="0"
+                     TickInterval="1"
+                     TriggerType="EveryTick"
+                     HasLight="false"
+                     LightIntensity="0"
+                     LightRadius="0"
+                     LightFlickeringMagnitude="0"
+                     LightFlickeringInterval="0"
+                     ShadowCastEnabled="true"
+                     ParticleEffectPrefab=""
+                     ParticleEffectSizeModifier="3"
+                     SoundEffectToPlay=""
+                     ShouldSoundLoopOverDuration="false"
+                     CastType="Instant"
+                     CastTime="0.5"
+                     AnimationActionName="act_release_heavy_thrown"
+                     Offset="0.5"
+                     AbilityTargetType="EnemiesInAOE"
+                     TargetCapturingRadius="10"
+                     MaxDistance="20"
+                     CrosshairType="TargetedAOE"
+                     SpellTier="3"
+                     BelongsToLoreID="LoreOfDeath"
+                     TooltipDescription="{=flock_of_doom_description_str}Summons a nightmare of crows in the targeted area. Affected enemies suffer light damage over time and their physical resistance is reduced by 20% for 10 seconds.">
+        <LightColorRGB x="255"
+                       y="170"
+                       z="0"
+                       w="-1">
+            <AsVec2>
+                <x>255</x>
+                <y>170</y>
+            </AsVec2>
+        </LightColorRGB>
+        <TriggeredEffect>caress_of_laniph</TriggeredEffect>
+    </AbilityTemplate>
+	
     <!-- Dark Magic -->
     <AbilityTemplate StringID="Chillwind"
                      Name="{=chillwind_label_str}Chillwind"
@@ -2195,6 +2525,7 @@
         <TriggeredEffect>soulstealer</TriggeredEffect>
     </AbilityTemplate>
     <!-- High Magic -->
+	
     <AbilityTemplate StringID="Apotheosis"
                      Name="{=apotheosis_label_str}Apotheosis"
                      SpriteName="apoteosis_icon"
@@ -2831,7 +3162,7 @@
         <TriggeredEffect>storm_of_renewal</TriggeredEffect>
     </AbilityTemplate>
 	<AbilityTemplate StringID="ShieldOfThorns"
-                     Name="{=barkskin_label_str}Shield of Thorns"
+                     Name="{=shieldofthorns_label_str}Shield of Thorns"
                      SpriteName="shield_of_thorns_icon"
                      CoolDown="70"
                      WindsOfMagicCost="16"
@@ -3224,7 +3555,7 @@
                      CrosshairType="TargetedAOE"
                      SpellTier="3"
                      BelongsToLoreID="LoreOfMetal"
-                     TooltipDescription="{=quicksilver_swords_label_str}Infuses weapons of allies with gleaming energies - Even a rusty sword turns deadly with the help of a Metal Wizard. Friendly units deal 20% magic and fire damage for a duration of 60 seconds.">
+                     TooltipDescription="{=quicksilver_swords_description_str}Infuses weapons of allies with gleaming energies - Even a rusty sword turns deadly with the help of a Metal Wizard. Friendly units deal 20% magic and fire damage for a duration of 60 seconds.">
         <LightColorRGB x="255"
                        y="170"
                        z="0"
@@ -4153,6 +4484,54 @@
         </LightColorRGB>
         <TriggeredEffect>apply_arcaneconduit</TriggeredEffect>
     </AbilityTemplate>
+	
+	<AbilityTemplate StringID="KnightlyStrike"
+                     Name="{=apotheosis_label_str}Knightly Strike"
+                     SpriteName="knightlycharge_icon"
+                     CoolDown="60"
+                     WindsOfMagicCost="8"
+                     BaseMisCastChance="0.05"
+                     Duration="12"
+                     Radius="3"
+                     AbilityType="CareerAbility"
+                     AbilityEffectType="Augment"
+                     BaseMovementSpeed="0"
+                     TickInterval="-1"
+                     TriggerType="TickOnce"
+                     HasLight="false"
+                     LightIntensity="0"
+                     LightRadius="0"
+                     LightFlickeringMagnitude="0"
+                     LightFlickeringInterval="0"
+                     ShadowCastEnabled="true"
+                     ParticleEffectPrefab=""
+                     ParticleEffectSizeModifier="0"
+                     SoundEffectToPlay=""
+                     ShouldSoundLoopOverDuration="false"
+                     CastType="Instant"
+                     CastTime="0.5"
+                     AnimationActionName=""
+                     Offset="0.5"
+                     AbilityTargetType="Self"
+                     TargetCapturingRadius="4"
+                     MaxDistance="25"
+                     CrosshairType="TargetedAOE"
+                     SpellTier="2"
+                     TooltipDescription="{=apotheosis_description_str}The wizard infuses and invigorates his allies with pure magical energies.">
+        <LightColorRGB x="255"
+                       y="255"
+                       z="255"
+                       w="-1">
+            <AsVec2>
+                <x>255</x>
+                <y>255</y>
+                <z>255</z>
+            </AsVec2>
+        </LightColorRGB>
+        <TriggeredEffect>apply_knightly_strike_trait</TriggeredEffect>
+    </AbilityTemplate>
+	
+	
     <AbilityTemplate StringID="ArrowOfKurnous"
                      Name="Arrow of Kurnous"
                      SpriteName="arrowofkurnous_icon"
@@ -4513,7 +4892,7 @@
         <TriggeredEffect>apply_holy_sword_trait</TriggeredEffect>
     </AbilityTemplate>
     <AbilityTemplate StringID="UlricsGift"
-                     Name="{=armor_of_righteousness_label_str}Ulric's Gift"
+                     Name="{=ulric_gift_label_str}Ulric's Gift"
                      SpriteName="ulrics_gift_icon"
                      CoolDown="70"
                      WindsOfMagicCost="0"
@@ -4545,7 +4924,7 @@
                      CrosshairType="TargetedAOE"
                      SpellTier="2"
                      BelongsToLoreID="UlricanPrayers"
-                     TooltipDescription="{=armor_of_righteousness_description_str}The wolf-priest lets out a mighty howl and dedicates the kill to Ulric. Gain +30% movement and attack speed for 25 seconds.">
+                     TooltipDescription="{=ulric_gift_description_str}The wolf-priest lets out a mighty howl and dedicates the kill to Ulric. Gain +30% movement and attack speed for 25 seconds.">
         <LightColorRGB x="255"
                        y="170"
                        z="0"
@@ -4558,7 +4937,7 @@
         <TriggeredEffect>ulrics_gift</TriggeredEffect>
     </AbilityTemplate>
     <AbilityTemplate StringID="HeartOfTheWolf"
-                     Name="{=armor_of_righteousness_label_str}Heart of The Wolf"
+                     Name="{=heart_of_wolf_label_str}Heart of The Wolf"
                      SpriteName="heart_of_wolf_icon"
                      CoolDown="70"
                      WindsOfMagicCost="0"
@@ -4590,7 +4969,7 @@
                      CrosshairType="TargetedAOE"
                      SpellTier="3"
                      BelongsToLoreID="UlricanPrayers"
-                     TooltipDescription="{=armor_of_righteousness_description_str}The priest's allies are driven into a zealous frenzy. Friendly troops in a 10 meter radius gain +35% physical damage as well as Unbreakable and Unstoppable for 20 seconds.">
+                     TooltipDescription="{=heart_of_wolf_description_str}The priest's allies are driven into a zealous frenzy. Friendly troops in a 10 meter radius gain +35% physical damage as well as Unbreakable and Unstoppable for 20 seconds.">
         <LightColorRGB x="255"
                        y="170"
                        z="0"
@@ -4603,7 +4982,7 @@
         <TriggeredEffect>heart_of_the_wolf</TriggeredEffect>
     </AbilityTemplate>
     <AbilityTemplate StringID="IceStorm"
-                     Name="{=armor_of_righteousness_label_str}Ice Storm"
+                     Name="{=ice_storm_label_str}Ice Storm"
                      SpriteName="ice_storm_icon"
                      CoolDown="70"
                      WindsOfMagicCost="0"
@@ -4635,7 +5014,7 @@
                      CrosshairType="TargetedAOE"
                      SpellTier="3"
                      BelongsToLoreID="UlricanPrayers"
-                     TooltipDescription="{=armor_of_righteousness_description_str}The wolf-priest summons an icy hailstorm within an area. Enemies suffer a -50% movement and attack speed penalty as well as damage over time.">
+                     TooltipDescription="{=ice_storm_description_str}The wolf-priest summons an icy hailstorm within an area. Enemies suffer a -50% movement and attack speed penalty as well as damage over time.">
         <LightColorRGB x="255"
                        y="170"
                        z="0"
@@ -4648,7 +5027,7 @@
         <TriggeredEffect>ice_storm</TriggeredEffect>
     </AbilityTemplate>
     <AbilityTemplate StringID="SnowKingDecree"
-                     Name="{=armor_of_righteousness_label_str}The Snow King's Decree"
+                     Name="{=snow_king_label_str}The Snow King's Decree"
                      SpriteName="snow_kings_decree_icon"
                      CoolDown="70"
                      WindsOfMagicCost="0"
@@ -4680,7 +5059,7 @@
                      CrosshairType="SingleTarget"
                      SpellTier="4"
                      BelongsToLoreID="UlricanPrayers"
-                     TooltipDescription="{=armor_of_righteousness_description_str}The priest roars with a grand prayer and calls freezing blast of blue flames to cleanse a targeted area of cowards and weaklings. Affected enemies take damage, suffer a -50% movement and attack speed penalty as well as damage over time.">
+                     TooltipDescription="{=snow_king_description_str}The priest roars with a grand prayer and calls freezing blast of blue flames to cleanse a targeted area of cowards and weaklings. Affected enemies take damage, suffer a -50% movement and attack speed penalty as well as damage over time.">
         <LightColorRGB x="255"
                        y="170"
                        z="0"
