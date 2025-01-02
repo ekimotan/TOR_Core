@@ -290,6 +290,17 @@ namespace TOR_Core.Utilities
             return "Ink Stories reloaded. \n";
         }
 
+        [CommandLineFunctionality.CommandLineArgumentFunction("reload_config", "tor")]
+        public static string ReloadTorConfig(List<string> arguments)
+        {
+            if (!CampaignCheats.CheckCheatUsage(ref CampaignCheats.ErrorType))
+                return CampaignCheats.ErrorType;
+
+            TORConfig.ReadConfig();
+
+            return "TOR config reloaded. \n";
+        }
+
         [CommandLineFunctionality.CommandLineArgumentFunction("open_test_mission", "tor")]
         public static string OpenTestMission(List<string> arguments)
         {

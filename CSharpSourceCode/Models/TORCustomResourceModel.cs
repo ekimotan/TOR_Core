@@ -108,6 +108,11 @@ public class TORCustomResourceModel : GameModel
                         {
                             var value = 0;
 
+                            if (settlement.IsVillage)
+                            {
+                                continue;
+                            }
+
                             if (settlement.IsCastle)
                             {
                                 value = 2;

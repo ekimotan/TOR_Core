@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using System.Linq;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.Core;
+using TaleWorlds.Engine;
+using TaleWorlds.Library;
 using TaleWorlds.MountAndBlade;
 using TOR_Core.AbilitySystem;
 using TOR_Core.Extensions;
@@ -14,6 +16,19 @@ namespace TOR_Core.HarmonyPatches
     [HarmonyPatch]
     public static class AgentPatches
     {
+        [HarmonyPrefix]
+        [HarmonyPatch(typeof(MetaMesh), nameof(MetaMesh.UseHeadBoneFaceGenScaling))]
+        public static bool ModifyHeadBoneScalingForCustomSkeletons(Skeleton skeleton, sbyte headLookDirectionBoneIndex, ref MatrixFrame frame)
+        {
+            var skeletonName = skeleton.GetName();
+            if (skeletonName == "orc_skeleton2")
+            {
+                frame.rotation.OrthonormalizeAccordingToForwardAndKeepUpAsZAxis();
+            }
+            return true;
+        }
+
+
         [HarmonyPrefix]
         [HarmonyPatch(typeof(Equipment), nameof(Equipment.GetRandomEquipmentElements))]
         public static bool FixEquipments(ref Equipment __result, BasicCharacterObject character, bool randomEquipmentModifier, bool isCivilianEquipment = false, int seed = -1)
