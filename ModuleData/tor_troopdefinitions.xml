@@ -1106,7 +1106,7 @@
       <EquipmentSet id="tor_we_servant_template" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_we_militia" default_group="infantry" level="6" name="{=str_tor_we_militia}Asrai Militia" occupation="Villager" culture="Culture.battania" skill_template="SkillSet.tor_skills_level6" is_basic_troop="true" race="elf">
+  <NPCCharacter id="tor_we_militia" default_group="infantry" level="6" name="{=str_tor_we_militia}Asrai Militia" occupation="Soldier" culture="Culture.battania" skill_template="SkillSet.tor_skills_level6" is_basic_troop="true" race="elf">
     <face>
       <face_key_template value="BodyProperty.male_wood_elf" />
       <hair_tags>
@@ -1510,6 +1510,26 @@
       <EquipmentSet id="tor_we_caravan_captain_template" civilian="true" />
     </Equipments>
   </NPCCharacter>
+  <NPCCharacter id="tor_dw_dawi_commoner" default_group="infantry" level="1" name="{=str_tor_dw_dawi_commoner}Dawi Commoner" occupation="Villager" culture="Culture.sturgia" skill_template="SkillSet.tor_skills_level1" race="dwarf">
+    <face>
+      <face_key_template value="BodyProperty.fighter_empire" />
+    </face>
+    <upgrade_targets />
+    <Equipments>
+      <EquipmentSet id="tor_dw_dwarf_warrior_template" />
+      <EquipmentSet id="tor_dw_dwarf_warrior_template" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="tor_dw_dawi_recruit" default_group="infantry" level="6" name="{=str_tor_dw_dawi_recruit}Dawi Recruit" occupation="Soldier" culture="Culture.sturgia" skill_template="SkillSet.tor_skills_level6" is_basic_troop="true" race="dwarf">
+    <face>
+      <face_key_template value="BodyProperty.fighter_empire" />
+    </face>
+    <upgrade_targets />
+    <Equipments>
+      <EquipmentSet id="tor_dw_dwarf_warrior_template" />
+      <EquipmentSet id="tor_dw_dwarf_warrior_template" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
   <NPCCharacter id="tor_eo_forestborn" default_group="infantry" level="1" name="{=str_tor_eo_forestborn}Eonir Forestborn" occupation="Villager" culture="Culture.eonir" skill_template="SkillSet.tor_skills_level1" race="elf">
     <face>
       <face_key_template value="BodyProperty.male_wood_elf" />
@@ -1528,7 +1548,7 @@
       <EquipmentSet id="tor_eo_forestborn_template" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_eo_militia" default_group="infantry" level="6" name="{=str_tor_eo_militia}Eonir Forestborn Militia" occupation="Villager" culture="Culture.eonir" skill_template="SkillSet.tor_skills_level6" is_basic_troop="true" race="elf">
+  <NPCCharacter id="tor_eo_militia" default_group="infantry" level="6" name="{=str_tor_eo_militia}Eonir Forestborn Militia" occupation="Soldier" culture="Culture.eonir" skill_template="SkillSet.tor_skills_level6" is_basic_troop="true" race="elf">
     <face>
       <face_key_template value="BodyProperty.male_wood_elf" />
       <hair_tags>

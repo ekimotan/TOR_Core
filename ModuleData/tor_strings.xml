@@ -707,8 +707,9 @@
   <string id="str_crafting_template.tor_axe_template" text="{=sma}TOR-Axes" />
   <string id="str_crafting_template.tor_twohandedaxe" text="{=smgra}TOR-Greataxes" />
   <string id="str_crafting_template.tor_mace_template" text="{=smma}TOR-Maces" />
-  <string id="str_crafting_template.tor_twohandedmace" text="{=smthma}TOR-Two-Handed Mace" />
+  <string id="str_crafting_template.tor_twohandedmace" text="{=smthma}TOR-Two-Handed Maces" />
   <string id="str_crafting_template.tor_lance_template" text="{=smla}TOR-Lances" />
+  <string id="str_crafting_template.tor_dwarven_axe_template" text="{=smda}TOR-Dwarven Axes" />
   <string id="str_weapon_usage.TorOneHandedSword" text="{=weapon_usage_TorOneHandedSword_str}One Handed Sword" />
   <string id="str_weapon_usage.TorTwoHandedSword" text="{=weapon_usage_TorTwoHandedSword_str}Two Handed Sword" />
   <string id="str_weapon_usage.TorRapier" text="{=weapon_usage_TorRapier_str}Rapier" />
@@ -723,6 +724,7 @@
   <string id="str_weapon_usage.TorScythe" text="{=weapon_usage_TorScythe_str}Scythe" />
   <string id="str_weapon_usage.TorLance" text="{=weapon_usage_TorLance_str}Lance" />
   <string id="str_weapon_usage.TorLance_Couchable" text="{=weapon_usage_TorLance_Couchable_str}Couche Lance" />
+  <string id="str_weapon_usage.TorDwarvenOneHandedAxe" text="{=weapon_usage_TorDwarvenOneHandedAxe_str}Dwarven Axe" />
 
   <!--inventory-->
   <string id="str_inventory_weapon.22" text="{=inventory_weapon_22_str}Pistol" />

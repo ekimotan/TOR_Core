@@ -46,6 +46,7 @@ namespace TOR_Core.Utilities
             public const string BEASTMEN =  "steppe_bandits";
             public const string CHAOS = "chaos_culture";
             public const string EONIR = "eonir";
+            public const string DAWI = "sturgia";
         }
     }
 }

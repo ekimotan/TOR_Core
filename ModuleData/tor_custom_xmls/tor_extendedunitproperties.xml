@@ -1222,6 +1222,24 @@
       <DamageProportionTuple DamageType="Physical" Percent="1.00" />
     </DamageProportions>
   </CharacterExtendedInfo>
+  <CharacterExtendedInfo id="tor_dw_dawi_commoner">
+    <Abilities />
+    <Attributes />
+    <Resistances />
+    <DamageAmplifiers />
+    <DamageProportions>
+      <DamageProportionTuple DamageType="Physical" Percent="1.00" />
+    </DamageProportions>
+  </CharacterExtendedInfo>
+  <CharacterExtendedInfo id="tor_dw_dawi_recruit">
+    <Abilities />
+    <Attributes />
+    <Resistances />
+    <DamageAmplifiers />
+    <DamageProportions>
+      <DamageProportionTuple DamageType="Physical" Percent="1.00" />
+    </DamageProportions>
+  </CharacterExtendedInfo>
   <CharacterExtendedInfo id="tor_eo_forestborn">
     <Abilities />
     <Attributes>
@@ -2801,7 +2819,9 @@
   <CharacterExtendedInfo id="tor_ror_stir_river_scout">
     <Abilities />
     <Attributes />
-    <Resistances />
+    <Resistances>
+      <ResistanceTuple ResistedDamageType="Lightning" ReductionPercent="0.15" />
+    </Resistances>
     <DamageAmplifiers />
     <DamageProportions>
       <DamageProportionTuple DamageType="Physical" Percent="1.00" />
@@ -2810,7 +2830,9 @@
   <CharacterExtendedInfo id="tor_ror_stir_river_patrolman">
     <Abilities />
     <Attributes />
-    <Resistances />
+    <Resistances>
+      <ResistanceTuple ResistedDamageType="Lightning" ReductionPercent="0.15" />
+    </Resistances>
     <DamageAmplifiers />
     <DamageProportions>
       <DamageProportionTuple DamageType="Physical" Percent="1.00" />
@@ -2820,7 +2842,9 @@
   <CharacterExtendedInfo id="tor_ror_stir_river_patrol_guardsman">
     <Abilities />
     <Attributes />
-    <Resistances />
+    <Resistances>
+      <ResistanceTuple ResistedDamageType="Lightning" ReductionPercent="0.30" />
+    </Resistances>
     <DamageAmplifiers />
     <DamageProportions>
       <DamageProportionTuple DamageType="Physical" Percent="1.00" />
@@ -2830,7 +2854,9 @@
   <CharacterExtendedInfo id="tor_ror_stir_river_patrol_nimrod">
     <Abilities />
     <Attributes />
-    <Resistances />
+    <Resistances>
+      <ResistanceTuple ResistedDamageType="Lightning" ReductionPercent="0.30" />
+    </Resistances>
     <DamageAmplifiers />
     <DamageProportions>
       <DamageProportionTuple DamageType="Physical" Percent="1.00" />
@@ -3239,7 +3265,9 @@
     <Attributes>
       <string>Expendable</string>
     </Attributes>
-    <Resistances />
+    <Resistances>
+      <ResistanceTuple ResistedDamageType="Lightning" ReductionPercent="0.25" />
+    </Resistances>
     <DamageAmplifiers />
     <DamageProportions>
       <DamageProportionTuple DamageType="Physical" Percent="1.00" />
@@ -3248,7 +3276,9 @@
   <CharacterExtendedInfo id="tor_ror_marienburg_private_militia">
     <Abilities />
     <Attributes />
-    <Resistances />
+    <Resistances>
+      <ResistanceTuple ResistedDamageType="Lightning" ReductionPercent="0.25" />
+    </Resistances>
     <DamageAmplifiers />
     <DamageProportions>
       <DamageProportionTuple DamageType="Physical" Percent="1.00" />
@@ -3257,7 +3287,9 @@
   <CharacterExtendedInfo id="tor_ror_klumpfs_buccaneer">
     <Abilities />
     <Attributes />
-    <Resistances />
+    <Resistances>
+      <ResistanceTuple ResistedDamageType="Lightning" ReductionPercent="0.50" />
+    </Resistances>
     <DamageAmplifiers />
     <DamageProportions>
       <DamageProportionTuple DamageType="Physical" Percent="1.00" />
@@ -3266,7 +3298,9 @@
   <CharacterExtendedInfo id="tor_ror_nordland_mariner">
     <Abilities />
     <Attributes />
-    <Resistances />
+    <Resistances>
+      <ResistanceTuple ResistedDamageType="Lightning" ReductionPercent="0.50" />
+    </Resistances>
     <DamageAmplifiers />
     <DamageProportions>
       <DamageProportionTuple DamageType="Physical" Percent="1.00" />
@@ -3275,7 +3309,9 @@
   <CharacterExtendedInfo id="tor_ror_nordland_seahawk">
     <Abilities />
     <Attributes />
-    <Resistances />
+    <Resistances>
+      <ResistanceTuple ResistedDamageType="Lightning" ReductionPercent="0.25" />
+    </Resistances>
     <DamageAmplifiers />
     <DamageProportions>
       <DamageProportionTuple DamageType="Physical" Percent="1.00" />
@@ -3494,7 +3530,9 @@
     <Attributes>
       <string>Expendable</string>
     </Attributes>
-    <Resistances />
+    <Resistances>
+      <ResistanceTuple ResistedDamageType="Lightning" ReductionPercent="0.25" />
+    </Resistances>
     <DamageAmplifiers />
     <DamageProportions>
       <DamageProportionTuple DamageType="Physical" Percent="1.00" />
@@ -3503,7 +3541,9 @@
   <CharacterExtendedInfo id="tor_ror_corduin_mariner">
     <Abilities />
     <Attributes />
-    <Resistances />
+    <Resistances>
+      <ResistanceTuple ResistedDamageType="Lightning" ReductionPercent="0.50" />
+    </Resistances>
     <DamageAmplifiers />
     <DamageProportions>
       <DamageProportionTuple DamageType="Physical" Percent="1.00" />
@@ -3513,7 +3553,9 @@
   <CharacterExtendedInfo id="tor_ror_corduin_knightly_mariner">
     <Abilities />
     <Attributes />
-    <Resistances />
+    <Resistances>
+      <ResistanceTuple ResistedDamageType="Lightning" ReductionPercent="0.50" />
+    </Resistances>
     <DamageAmplifiers />
     <DamageProportions>
       <DamageProportionTuple DamageType="Physical" Percent="1.00" />
@@ -4521,13 +4563,18 @@
     <Attributes />
   </CharacterExtendedInfo>
   <CharacterExtendedInfo id="tor_emp_lord_middenland_first_7">
-    <Abilities />
-    <Attributes />
+    <Abilities>
+      <string>UlricsGift</string>
+      <string>HeartOfTheWolf</string>
+      <string>IceStorm</string>
+      <string>SnowKingDecree</string>
+    </Abilities>
+    <Attributes>
+      <string>AbilityUser</string>
+    </Attributes>
   </CharacterExtendedInfo>
   <CharacterExtendedInfo id="tor_emp_lord_middenland_first_8">
-    <Abilities>
-      <string>c</string>
-    </Abilities>
+    <Abilities />
     <Attributes>
       <string>AICompanion</string>
     </Attributes>
@@ -4557,8 +4604,15 @@
     <Attributes />
   </CharacterExtendedInfo>
   <CharacterExtendedInfo id="tor_emp_lord_middenland_third_2">
-    <Abilities />
-    <Attributes />
+    <Abilities>
+      <string>UlricsGift</string>
+      <string>HeartOfTheWolf</string>
+      <string>IceStorm</string>
+      <string>SnowKingDecree</string>
+    </Abilities>
+    <Attributes>
+      <string>AbilityUser</string>
+    </Attributes>
   </CharacterExtendedInfo>
   <CharacterExtendedInfo id="tor_emp_lord_middenland_third_3">
     <Abilities />
@@ -6593,17 +6647,24 @@
   </CharacterExtendedInfo>
   <CharacterExtendedInfo id="tor_dw_lord">
     <Abilities>
-      <string>AshesAndDust</string>
-      <string>Amaranth</string>
-      <string>TasteOfDeath</string>
-      <string>SpiritLeech</string>
-      <string>CaressOfLaniph</string>
-      <string>PurpleSun</string>
-      <string>FateOfBjuna</string>
+      <string>QuicksilverSwords</string>
+      <string>GleamingArrow</string>
+      <string>MeteroicIronclad</string>
+      <string>PlagueOfRust</string>
+      <string>GehennasGoldenGlobe</string>
+      <string>FinalTransmutation</string>
+      <string>GehennasGoldenHounds</string>
     </Abilities>
     <Attributes>
       <string>AbilityUser</string>
       <string>SpellCaster</string>
+    </Attributes>
+  </CharacterExtendedInfo>
+  <CharacterExtendedInfo id="tor_bret_lord">
+    <Abilities />
+    <Attributes>
+      <string>AbilityUser</string>
+      <string>CanPlaceArtillery</string>
     </Attributes>
   </CharacterExtendedInfo>
   <CharacterExtendedInfo id="tor_prophetess_lw">
@@ -6652,6 +6713,10 @@
     </Attributes>
   </CharacterExtendedInfo>
   <CharacterExtendedInfo id="tor_glade_lord">
+    <Abilities />
+    <Attributes />
+  </CharacterExtendedInfo>
+  <CharacterExtendedInfo id="tor_slayer_lord">
     <Abilities />
     <Attributes />
   </CharacterExtendedInfo>
@@ -6782,6 +6847,22 @@
       <string>SpellCaster</string>
     </Attributes>
   </CharacterExtendedInfo>
+  <CharacterExtendedInfo id="tor_wanderer_empire_11">
+    <Abilities>
+      <string>HeartOfTheWolf</string>
+    </Abilities>
+    <Attributes>
+      <string>AbilityUser</string>
+    </Attributes>
+  </CharacterExtendedInfo>
+  <CharacterExtendedInfo id="tor_wanderer_empire_12">
+    <Abilities />
+    <Attributes />
+  </CharacterExtendedInfo>
+  <CharacterExtendedInfo id="tor_wanderer_empire_13">
+    <Abilities />
+    <Attributes />
+  </CharacterExtendedInfo>
   <CharacterExtendedInfo id="tor_wanderer_bretonnia_0">
     <Abilities />
     <Attributes />
@@ -6795,6 +6876,14 @@
       <string>AbilityUser</string>
       <string>SpellCaster</string>
     </Attributes>
+  </CharacterExtendedInfo>
+  <CharacterExtendedInfo id="tor_wanderer_bretonnia_2">
+    <Abilities />
+    <Attributes />
+  </CharacterExtendedInfo>
+  <CharacterExtendedInfo id="tor_wanderer_bretonnia_3">
+    <Abilities />
+    <Attributes />
   </CharacterExtendedInfo>
   <CharacterExtendedInfo id="tor_wanderer_mousillon_0">
     <Abilities />

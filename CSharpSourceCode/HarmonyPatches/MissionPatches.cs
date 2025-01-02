@@ -47,7 +47,7 @@ namespace TOR_Core.HarmonyPatches
         
         [HarmonyPostfix]
         [HarmonyPatch(typeof(Mission), "MeleeHitCallback")]
-        private static void MeleeHitCallbackPostfix(
+        public static void MeleeHitCallbackPostfix(
             ref AttackCollisionData collisionData,
             Agent attacker,
             Agent victim,
@@ -60,22 +60,24 @@ namespace TOR_Core.HarmonyPatches
             ref HitParticleResultData hitParticleResultData,
             bool crushedThroughWithoutAgentCollision)
         {
+            if (Campaign.Current == null) return;
+
             int inflictedDamage = collisionData.InflictedDamage + collisionData.AbsorbedByArmor;
             if (inflictedDamage < 1)
             {
-                return;
+                return; 
             }
-            
-            var model = (TORAgentApplyDamageModel) MissionGameModels.Current.AgentApplyDamageModel;
-            if(model == null)
+
+            var model = MissionGameModels.Current.AgentApplyDamageModel as TORAgentApplyDamageModel;
+            if (model == null)
             {
                 return;
             }
-            
+
             if (!model.ShouldCutThrough(collisionData, attacker, victim))
                 return;
-            
-            float num2 = (float) collisionData.InflictedDamage / (float) inflictedDamage;
+
+            float num2 = (float)collisionData.InflictedDamage / (float)inflictedDamage; 
             inOutMomentumRemaining = num2 * 0.25f;
         }
 

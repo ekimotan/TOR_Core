@@ -35,6 +35,8 @@ namespace TOR_Core.HarmonyPatches
                 list.Add(Game.Current.ObjectManager.GetObject<BasicCharacterObject>("tor_glade_lord"));
                 list.Add(Game.Current.ObjectManager.GetObject<BasicCharacterObject>("tor_hm_lord"));
                 list.Add(Game.Current.ObjectManager.GetObject<BasicCharacterObject>("tor_dw_lord"));
+                list.Add(Game.Current.ObjectManager.GetObject<BasicCharacterObject>("tor_bret_lord"));
+                list.Add(Game.Current.ObjectManager.GetObject<BasicCharacterObject>("tor_slayer_lord"));
             }
             catch (Exception e)
             {
@@ -58,6 +60,7 @@ namespace TOR_Core.HarmonyPatches
                 list.Add(Game.Current.ObjectManager.GetObject<BasicCultureObject>(TORConstants.Cultures.SYLVANIA));
                 list.Add(Game.Current.ObjectManager.GetObject<BasicCultureObject>(TORConstants.Cultures.BRETONNIA));
                 list.Add(Game.Current.ObjectManager.GetObject<BasicCultureObject>(TORConstants.Cultures.ASRAI));
+                list.Add(Game.Current.ObjectManager.GetObject<BasicCultureObject>(TORConstants.Cultures.DAWI));
             }
             catch (Exception e)
             {
@@ -76,6 +79,7 @@ namespace TOR_Core.HarmonyPatches
                 CultureCode.Khuzait => Game.Current.ObjectManager.GetObject<BasicCharacterObject>("tor_vc_skeleton_recruit"),
                 CultureCode.Vlandia => Game.Current.ObjectManager.GetObject<BasicCharacterObject>("tor_br_peasant_levy"),
                 CultureCode.Battania => Game.Current.ObjectManager.GetObject<BasicCharacterObject>("tor_we_eternal_guard"),
+                CultureCode.Sturgia => Game.Current.ObjectManager.GetObject<BasicCharacterObject>("tor_dw_dawi_recruit"),
                 _ => Game.Current.ObjectManager.GetObject<BasicCharacterObject>("tor_empire_recruit"),
             };
         }

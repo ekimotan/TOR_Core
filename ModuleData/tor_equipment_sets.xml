@@ -8542,7 +8542,7 @@
     <EquipmentSet>
       <Equipment slot="Item0" id="Item.tor_bretonnia_weapon_sword_002" />
       <Equipment slot="Item1" id="Item.tor_empire_weapon_shield_noble_003" />
-      <Equipment slot="Item2" id="Item.vlandia_lance_1_t3" />
+      <Equipment slot="Item2" id="Item.western_spear_4_t4" />
       <Equipment slot="Head" id="Item.tor_bretonnian_head_helm_001" />
       <Equipment slot="Body" id="Item.tor_bretonnia_body_armor_manatarms_002" />
       <Equipment slot="Cape" id="Item.empire_cape_a" />
@@ -8615,7 +8615,7 @@
   <EquipmentRoster id="tor_br_mounted_yeoman_warden_template" culture="Culture.vlandia">
     <EquipmentSet>
       <Equipment slot="Item0" id="Item.tor_bretonnia_weapon_sword_001" />
-      <Equipment slot="Item1" id="Item.western_spear_4_t4" />
+      <Equipment slot="Item1" id="Item.vlandia_lance_1_t3" />
       <Equipment slot="Item2" id="Item.tor_empire_weapon_shield_noble_003" />
       <Equipment slot="Head" id="Item.tor_bretonnian_head_helm_004" />
       <Equipment slot="Body" id="Item.tor_bretonnia_body_armor_manatarms_002" />
@@ -18766,6 +18766,38 @@
       <Equipment slot="Cape" id="Item.tor_we_shoulder_cape_wildrider_001" />
       <Equipment slot="Gloves" id="Item.tor_we_arm_bracers_gladeguard_001" />
       <Equipment slot="Leg" id="Item.tor_we_leg_boots_militia_001" />
+    </EquipmentSet>
+  </EquipmentRoster>
+  <EquipmentRoster id="tor_dw_slayer_lord_template" culture="Culture.sturgia">
+    <EquipmentSet>
+      <Equipment slot="Item0" id="Item.tor_dwarf_weapon_axe_slayer_1h_001" />
+      <Equipment slot="Head" id="Item.tor_dw_head_helm_slayer_adept_001" />
+      <Equipment slot="Body" id="Item.tor_dw_body_armour_slayer_adept_001" />
+      <Equipment slot="Gloves" id="Item.tor_dw_arm_bracers_slayer_adept_001" />
+    </EquipmentSet>
+    <EquipmentSet civilian="true">
+      <Equipment slot="Item0" id="Item.tor_dwarf_weapon_axe_slayer_1h_001" />
+      <Equipment slot="Head" id="Item.tor_dw_head_helm_slayer_adept_001" />
+      <Equipment slot="Body" id="Item.tor_dw_body_armour_slayer_adept_001" />
+      <Equipment slot="Gloves" id="Item.tor_dw_arm_bracers_slayer_adept_001" />
+    </EquipmentSet>
+  </EquipmentRoster>
+  <EquipmentRoster id="tor_dw_dwarf_warrior_template" culture="Culture.sturgia">
+    <EquipmentSet>
+      <Equipment slot="Item0" id="Item.tor_dwarf_weapon_1h_axe_001" />
+      <Equipment slot="Item1" id="Item.tor_dwarf_weapon_shield_003" />
+      <Equipment slot="Head" id="Item.tor_dw_head_helm_warrior_001" />
+      <Equipment slot="Body" id="Item.tor_dw_body_armour_warrior_001" />
+      <Equipment slot="Gloves" id="Item.tor_dw_arm_bracers_warrior_001" />
+      <Equipment slot="Leg" id="Item.tor_dw_leg_boots_warrior_001" />
+    </EquipmentSet>
+    <EquipmentSet civilian="true">
+      <Equipment slot="Item0" id="Item.tor_dwarf_weapon_1h_axe_001" />
+      <Equipment slot="Item1" id="Item.tor_dwarf_weapon_shield_003" />
+      <Equipment slot="Head" id="Item.tor_dw_head_helm_warrior_001" />
+      <Equipment slot="Body" id="Item.tor_dw_body_armour_warrior_001" />
+      <Equipment slot="Gloves" id="Item.tor_dw_arm_bracers_warrior_001" />
+      <Equipment slot="Leg" id="Item.tor_dw_leg_boots_warrior_001" />
     </EquipmentSet>
   </EquipmentRoster>
   <EquipmentRoster id="tor_archaon_template" culture="Culture.chaos_culture">
