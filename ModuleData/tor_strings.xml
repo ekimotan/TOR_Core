@@ -1346,9 +1346,9 @@
   <string id="career_choicegroup2_name.GreyLord" text="{=career_choicegroup2_greylord_str}Grey Mage" />
   <string id="career_choicegroup3_name.GreyLord" text="{=career_choicegroup3_greylord_str}Grey Lord" />
   
-  <string id="career_choicegroup1_name.KnightOldWorld" text="{=career_choicegroup1_greylord_str}Initiate Knight" />
-  <string id="career_choicegroup2_name.KnightOldWorld" text="{=career_choicegroup2_greylord_str}Seasoned Knight" />
-  <string id="career_choicegroup3_name.KnightOldWorld" text="{=career_choicegroup3_greylord_str}Knight Commander" />
+  <string id="career_choicegroup1_name.KnightOldWorld" text="{=career_choicegroup1_knight_oldworld_str}Initiate Knight" />
+  <string id="career_choicegroup2_name.KnightOldWorld" text="{=career_choicegroup2_knight_oldworld_str}Seasoned Knight" />
+  <string id="career_choicegroup3_name.KnightOldWorld" text="{=career_choicegroup3_knight_oldworld_str}Knight Commander" />
 
   <!--Career related !-->
   <string id="career_description.WarriorPriest" text="{=career_description_warriorpriest_str}In life, Sigmar stood for the unification of Mankind, the destruction of evil and defiance against corruption. You hold the path set for you in his example high in your mind. To be a Priest of His faith is to be a Shepard to all mankind. Many of the cloth remain in their temples and cathedrals but you know the truth; the cursed and the damned must be sought out and vanquished." />
@@ -1378,21 +1378,21 @@ While rather varied in terms of equipment, faiths, or beliefs, such knights ulti
   <string id="TORKnightPuritySealName.SigmarSeal2" text="{=tor_knightpuritysealname_sigmar_2_str}Sigmar Seal" />
   <string id="TORKnightPuritySealName.SigmarSeal3" text="{=tor_knightpuritysealname_sigmar_3_str}Greater Sigmar Seal" />
 
-  <string id="TORKnightPuritySealName.TaalSeal1" text="{=tor_knightpuritysealname_sigmar_1_str}Lesser Taal Seal" />
-  <string id="TORKnightPuritySealName.TaalSeal2" text="{=tor_knightpuritysealname_sigmar_2_str}Taal Seal" />
-  <string id="TORKnightPuritySealName.TaalSeal3" text="{=tor_knightpuritysealname_sigmar_3_str}Greater Taal Seal" />
+  <string id="TORKnightPuritySealName.TaalSeal1" text="{=tor_knightpuritysealname_taal_1_str}Lesser Taal Seal" />
+  <string id="TORKnightPuritySealName.TaalSeal2" text="{=tor_knightpuritysealname_taal_2_str}Taal Seal" />
+  <string id="TORKnightPuritySealName.TaalSeal3" text="{=tor_knightpuritysealname_taal_3_str}Greater Taal Seal" />
  
-  <string id="TORKnightPuritySealName.UlricSeal1" text="{=tor_knightpuritysealname_sigmar_1_str}Lesser Ulric Seal" />
-  <string id="TORKnightPuritySealName.Ulriceal2" text="{=tor_knightpuritysealname_sigmar_2_str}Ulric Seal" />
-  <string id="TORKnightPuritySealName.UlricSeal3" text="{=tor_knightpuritysealname_sigmar_3_str}Greater Ulric Seal" />
+  <string id="TORKnightPuritySealName.UlricSeal1" text="{=tor_knightpuritysealname_ulric_1_str}Lesser Ulric Seal" />
+  <string id="TORKnightPuritySealName.Ulriceal2" text="{=tor_knightpuritysealname_ulric_2_str}Ulric Seal" />
+  <string id="TORKnightPuritySealName.UlricSeal3" text="{=tor_knightpuritysealname_ulric_3_str}Greater Ulric Seal" />
 
-  <string id="TORKnightPuritySealName.ManaanSeal1" text="{=tor_knightpuritysealname_sigmar_1_str}Lesser Manaan Seal" />
-  <string id="TORKnightPuritySealName.ManaanSeal2" text="{=tor_knightpuritysealname_sigmar_2_str}Manaan Seal" />
-  <string id="TORKnightPuritySealName.ManaanSeal3" text="{=tor_knightpuritysealname_sigmar_3_str}Greater Manaan Seal" />
+  <string id="TORKnightPuritySealName.ManaanSeal1" text="{=tor_knightpuritysealname_manaan_1_str}Lesser Manaan Seal" />
+  <string id="TORKnightPuritySealName.ManaanSeal2" text="{=tor_knightpuritysealname_manaan_2_str}Manaan Seal" />
+  <string id="TORKnightPuritySealName.ManaanSeal3" text="{=tor_knightpuritysealname_manaan_3_str}Greater Manaan Seal" />
   
-  <string id="TORKnightPuritySealName.ShallyaSeal1" text="{=tor_knightpuritysealname_sigmar_1_str}Lesser Shallya Seal" />
-  <string id="TORKnightPuritySealName.ShallyaSeal2" text="{=tor_knightpuritysealname_sigmar_2_str}Shallya Seal" />
-  <string id="TORKnightPuritySealName.ShallyaSeal3" text="{=tor_knightpuritysealname_sigmar_3_str}Greater Shallya Seal" />
+  <string id="TORKnightPuritySealName.ShallyaSeal1" text="{=tor_knightpuritysealname_shallya_1_str}Lesser Shallya Seal" />
+  <string id="TORKnightPuritySealName.ShallyaSeal2" text="{=tor_knightpuritysealname_shallya_2_str}Shallya Seal" />
+  <string id="TORKnightPuritySealName.ShallyaSeal3" text="{=tor_knightpuritysealname_shallya_3_str}Greater Shallya Seal" />
   
   
   
@@ -1501,21 +1501,21 @@ While rather varied in terms of equipment, faiths, or beliefs, such knights ulti
   <!--TOR_CHOICE_HORSECHARGEDAMAGE !-->
   <string id="tor_careerchoice_basic.WindsOfMagic" text="{=str_tor_career_choice_basic_windsofmagic}Increases max Winds of Magic by {EFFECT_VALUE}%." />
   <!--TOR_CHOICE_WINDSOFMAGIC !-->
-  <string id="tor_careerchoice_basic.WindsCostReduction" text="{=str_tor_career_choice_basic_damage}{EFFECT_VALUE}% cost reduction for spells." />
+  <string id="tor_careerchoice_basic.WindsCostReduction" text="{=str_tor_career_choice_basic_windscostreduction}{EFFECT_VALUE}% cost reduction for spells." />
   <!--TOR_CHOICE_WINDSCOSTREDUCTION !-->
-  <string id="tor_careerchoice_basic.WindsCooldownReduction" text="{=str_tor_career_choice_basic_damage}{EFFECT_VALUE}% spell cooldown reduction." />
+  <string id="tor_careerchoice_basic.WindsCooldownReduction" text="{=str_tor_career_choice_basic_windscooldownreduction}{EFFECT_VALUE}% spell cooldown reduction." />
   <!--TOR_CHOICE_WINDSCOOLDOWNREDUCTION!-->
-  <string id="tor_careerchoice_basic.PrayerCooldownReduction" text="{=str_tor_career_choice_basic_damage}{EFFECT_VALUE}% prayer cooldown reduction." />
+  <string id="tor_careerchoice_basic.PrayerCooldownReduction" text="{=str_tor_career_choice_prayercooldownreduction}{EFFECT_VALUE}% prayer cooldown reduction." />
   <!--TOR_CHOICE_WINDSCOOLDOWNREDUCTION!-->
-  <string id="tor_careerchoice_basic.PartyMovementSpeed" text="{=str_tor_career_choice_basic_damage}Party movement speed is increased by {EFFECT_VALUE}." />
+  <string id="tor_careerchoice_basic.PartyMovementSpeed" text="{=str_tor_career_choice_basic_partymovementspeed}Party movement speed is increased by {EFFECT_VALUE}." />
   <!--TOR_CHOICE_PARTYMOVEMENTSPEED !-->
-  <string id="tor_careerchoice_basic.PartySize" text="{=str_tor_career_choice_basic_damage}Party size is increased by {EFFECT_VALUE}" />
+  <string id="tor_careerchoice_basic.PartySize" text="{=str_tor_career_choice_basic_partysize}Party size is increased by {EFFECT_VALUE}" />
   <!--TOR_CHOICE_PARTYSIZE-->
-  <string id="tor_careerchoice_basic.TroopRegeneration" text="{=str_tor_career_choice_basic_damage}Wounded troops in your party heal faster ({EFFECT_VALUE})." />
+  <string id="tor_careerchoice_basic.TroopRegeneration" text="{=str_tor_career_choice_basic_troopregeneration}Wounded troops in your party heal faster ({EFFECT_VALUE})." />
   <!--TOR_CHOICE_TROOPREGENERATION!-->
-  <string id="tor_careerchoice_basic.TroopUpgradeCost" text="{=str_tor_career_choice_basic_damage}Upgrade costs are reduced by {EFFECT_VALUE}%." />
+  <string id="tor_careerchoice_basic.TroopUpgradeCost" text="{=str_tor_career_choice_basic_troopupgradecost}Upgrade costs are reduced by {EFFECT_VALUE}%." />
   <!--TOR_CHOICE_TROOPUPGRADECOST !-->
-  <string id="tor_careerchoice_basic.Ammo" text="{=str_tor_career_choice_basic_damage}{EFFECT_VALUE} extra ammunition" />
+  <string id="tor_careerchoice_basic.Ammo" text="{=str_tor_career_choice_basic_ammo}{EFFECT_VALUE} extra ammunition" />
   <!--TOR_CHOICE_AMMO !-->
 
   <!--Warrior Priest !-->
