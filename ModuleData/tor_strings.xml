@@ -1236,7 +1236,7 @@
   <string id="career_title.Waywatcher" text="{=tor_career_title_waywatcher_str}Waywatcher" />
   <string id="career_title.Spellsinger" text="{=tor_career_title_spellsinger_str}Spellsinger" />
   <string id="career_title.GreyLord" text="{=tor_career_title_greylord_str}Grey Lord Wizard" />
-  <string id="career_title.KnightOldWorld" text="{=tor_career_title_greylord_str}Knight of the Old World" />
+  <string id="career_title.KnightOldWorld" text="{=tor_career_title_knight_oldworld_str}Knight of the Old World" />
 
 
   <string id="career_switch_title.MinorVampire" text="{=tor_career_switch_title_minorvampire_str}Become a Carstein Vampire" />
@@ -1249,7 +1249,7 @@
   {newline}
   By Becoming a vampire, you will be stripped of your magic(beside Minor Magic ) and faith skill.{newline}
   Beside that you will gain Vampire powers.... {newline}
-  See more in the Wiki for more information.{newline}
+  See more in the Manual for more information.{newline}
   {newline}
   The Dialog can be restarted if you decline.
   " />
@@ -1260,7 +1260,7 @@
   By Becoming a Blood Knight Vampire, you will be stripped completly of your  spellcraft and faith skill, and will not be able to perform magic. {newline}
   {newline}
   Beside that you will switch to the melee focused Bloodknight Career{newline}
-  See more in the Wiki for more information.{newline}
+  See more in the Manual for more information.{newline}
   {newline}
   The Dialog can be restarted if you decline.
   " />
@@ -1270,13 +1270,13 @@
   {newline}
   By Becoming a Knight of Mousillon, you will be stripped of your faith skill. {newline}
   {newline}
-  See more in the Wiki for more information.{newline}
+  See more in the Manual for more information.{newline}
   {newline}
   The Dialog can be restarted if you decline.
   " />
 
 
-  <string id="career_switch_explaination.Necrarch" text="{=tor_career_switch_title_explanation_str}
+  <string id="career_switch_explaination.Necrarch" text="{=tor_career_switch_title_explanation_necrarch_str}
   By accepting you are becoming a Necrach Vampire, this decision is permanent and can't be changed back for the rest of your playthrough.{newline}
   {newline}
   By Becoming a vampire, you will be stripped of Life Magic or Light magic (if you posess it), and the  faith skill.{newline}
