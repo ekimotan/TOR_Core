@@ -1760,8 +1760,8 @@
       <Trait id="Generosity" value="1" />
     </Traits>
     <Equipments>
-      <EquipmentSet id="tor_generic_empire_lord_heavy_hammer_template" />
-      <EquipmentSet id="tor_generic_empire_lord_heavy_hammer_template" civilian="true" />
+      <EquipmentSet id="tor_boris_todbringer_template" />
+      <EquipmentSet id="tor_boris_todbringer_template" civilian="true" />
     </Equipments>
   </NPCCharacter>
   <NPCCharacter id="tor_emp_lord_middenland_first_2" default_group="cavalry" name="{=str_tor_emp_lord_middenland_first_2}Heinrich Todbringer" occupation="Lord" culture="Culture.empire" voice="curt" age="20" skill_template="SkillSet.tor_skills_warrior_lord" is_hero="true">
@@ -7400,7 +7400,7 @@
   </NPCCharacter>
   <NPCCharacter id="tor_br_bergerac_2" default_group="ranged" name="{=str_tor_br_bergerac_2}Gui le Gros" occupation="Special" culture="Culture.vlandia" voice="curt" age="53" skill_template="SkillSet.tor_skills_warrior_lord" is_hero="true">
     <face>
-      <BodyProperties version="4" age="43" weight="0.5693" build="0.8107" key="0013600540CC2A0EA631882B9875D476738567878385437C25DA345A465ADADD6A91D6030C78879AC9A8FE7AC24C47C2000000000000000C00000000318C2002" />
+      <BodyProperties version="4" age="43" weight="0.5693" build="0.8107" key="0005AC0B8070200C767887E1CE2C00A167884877557363887A4AFE1A79986896EEEFF603031985F56F5FC74A4727BAEA0000000000000003000000004C6C4002" />
     </face>
     <Traits>
       <Trait id="BalancedFightingSkills" value="5" />
@@ -7418,7 +7418,7 @@
   </NPCCharacter>
   <NPCCharacter id="tor_br_bergerac_3" default_group="ranged" name="{=str_tor_br_bergerac_3}Hugo le Petit" occupation="Special" culture="Culture.vlandia" voice="curt" age="53" skill_template="SkillSet.tor_skills_warrior_lord" is_hero="true">
     <face>
-      <BodyProperties version="4" age="43" weight="0.9988" build="0.3889" key="0005AC0B8070200C767887E1CE2C00A167884877557363887A4AFE1A79986896EEEFF603031985F56F5FC74A4727BAEA0000000000000003000000004C6C4002" />
+      <BodyProperties version="4" age="43" weight="0.9988" build="0.3889" key="0013600540CC2A0EA631882B9875D476738567878385437C25DA345A465ADADD6A91D6030C78879AC9A8FE7AC24C47C2000000000000000C00000000318C2002" />
     </face>
     <Traits>
       <Trait id="BalancedFightingSkills" value="5" />
@@ -7610,8 +7610,8 @@
       <Trait id="Generosity" value="-1" />
     </Traits>
     <Equipments>
-      <EquipmentSet id="dog_muktar_hero_template" />
-      <EquipmentSet id="dog_muktar_hero_template" civilian="true" />
+      <EquipmentSet id="dog_al_muktar_template" />
+      <EquipmentSet id="dog_al_muktar_template" civilian="true" />
     </Equipments>
   </NPCCharacter>
 </NPCCharacters>
