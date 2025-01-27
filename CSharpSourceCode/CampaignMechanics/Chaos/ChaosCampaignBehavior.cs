@@ -42,7 +42,8 @@ namespace TOR_Core.CampaignMechanics.Chaos
             {
                 var mostPowerfulKingdom = Kingdom.All.WhereQ(x => (x.Culture.StringId == TORConstants.Cultures.EMPIRE || x.Culture.StringId == TORConstants.Cultures.BRETONNIA) && x.Fiefs.Count > 1).MaxBy(x => x.TotalStrength);
 
-                var eligibleSettlements = Settlement.All.WhereQ(x=>x.OwnerClan != null && x.OwnerClan.Kingdom != null && 
+                var eligibleSettlements = Settlement.All.WhereQ(x => x.OwnerClan != null && 
+                x.OwnerClan.Kingdom != null &&
                 x.OwnerClan.Kingdom == mostPowerfulKingdom &&
                 x.IsTown && !x.IsUnderSiege &&
                 x.Party.MapEvent == null && x.Party.SiegeEvent == null &&
