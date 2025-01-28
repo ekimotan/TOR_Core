@@ -1442,11 +1442,11 @@
       <Trait id="Valor" value="-1" />
     </Traits>
     <Equipments>
-      <EquipmentSet id="tor_cult_fsf_archbacillus_template" />
-      <EquipmentSet id="tor_cult_fsf_archbacillus_template" civilian="true" />
+      <EquipmentSet id="tor_chaos_wanderer_template" />
+      <EquipmentSet id="tor_chaos_wanderer_template" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_engineerquesthero" default_group="infantry" name="{=str_tor_engineerquesthero}Goswin" occupation="Lord" culture="Culture.empire" voice="ironic" age="30" is_template="true" is_hero="false">
+  <NPCCharacter id="tor_engineerquesthero" default_group="infantry" name="{=str_tor_engineerquesthero}{=!}Goswin" occupation="Lord" culture="Culture.empire" voice="ironic" age="30" is_template="true" is_hero="false">
     <face>
       <face_key_template value="BodyProperty.fighter_empire" />
     </face>
@@ -1462,7 +1462,7 @@
       <EquipmentSet id="tor_qnpc_engineerquest_goswin_template" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_bountymaster_empire_0" default_group="infantry" name="{=str_tor_bountymaster_empire_0}Templar Witch Hunter" occupation="Special" culture="Culture.empire" voice="ironic" age="30" is_template="true" is_hero="false">
+  <NPCCharacter id="tor_bountymaster_empire_0" default_group="infantry" name="{=str_tor_bountymaster_empire_0}{=!}Templar Witch Hunter" occupation="Special" culture="Culture.empire" voice="ironic" age="30" is_template="true" is_hero="false">
     <face>
       <face_key_template value="BodyProperty.fighter_empire" />
     </face>
@@ -1478,7 +1478,7 @@
       <EquipmentSet id="tor_qnpc_witchhunter_template" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_nulnengineernpc_empire" default_group="infantry" name="{=str_tor_nulnengineernpc_empire}Master Engineer" occupation="Special" culture="Culture.empire" voice="ironic" age="30" is_template="true" is_hero="false">
+  <NPCCharacter id="tor_nulnengineernpc_empire" default_group="infantry" name="{=str_tor_nulnengineernpc_empire}{=!}Master Engineer" occupation="Special" culture="Culture.empire" voice="ironic" age="30" is_template="true" is_hero="false">
     <face>
       <face_key_template value="BodyProperty.fighter_empire" />
     </face>
@@ -1494,7 +1494,7 @@
       <EquipmentSet id="tor_qnpc_masterengineer_template" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_prestige_noble_empire" default_group="infantry" name="{=str_tor_prestige_noble_empire}Connected Noble" occupation="Special" culture="Culture.empire" voice="ironic" age="30" is_template="true" is_hero="false">
+  <NPCCharacter id="tor_prestige_noble_empire" default_group="infantry" name="{=str_tor_prestige_noble_empire}{=!}Connected Noble" occupation="Special" culture="Culture.empire" voice="ironic" age="30" is_template="true" is_hero="false">
     <face>
       <face_key_template value="BodyProperty.fighter_empire" />
     </face>
@@ -1510,7 +1510,7 @@
       <EquipmentSet id="tor_qnpc_prestige_noble_template" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_spelltrainer_empire_0" default_group="infantry" name="{=str_tor_spelltrainer_empire_0}College Magister" occupation="Special" culture="Culture.empire" voice="ironic" age="30" is_template="true" is_hero="false">
+  <NPCCharacter id="tor_spelltrainer_empire_0" default_group="infantry" name="{=str_tor_spelltrainer_empire_0}{=!}College Magister" occupation="Special" culture="Culture.empire" voice="ironic" age="30" is_template="true" is_hero="false">
     <face>
       <face_key_template value="BodyProperty.fighter_empire" />
     </face>
@@ -1526,7 +1526,7 @@
       <EquipmentSet id="tor_qnpc_collegemagister_template" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_spelltrainer_vc_0" default_group="infantry" name="{=str_tor_spelltrainer_vc_0}Dark Magister" occupation="Special" culture="Culture.khuzait" voice="ironic" age="30" is_template="true" is_hero="false">
+  <NPCCharacter id="tor_spelltrainer_vc_0" default_group="infantry" name="{=str_tor_spelltrainer_vc_0}{=!}Dark Magister" occupation="Special" culture="Culture.khuzait" voice="ironic" age="30" is_template="true" is_hero="false">
     <face>
       <face_key_template value="BodyProperty.fighter_empire" />
     </face>
@@ -1542,7 +1542,7 @@
       <EquipmentSet id="tor_qnpc_necromagister_template" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_spelltrainer_bretonnia_0" default_group="infantry" name="{=str_tor_spelltrainer_bretonnia_0}The Fay Enchantress" occupation="Special" culture="Culture.vlandia" voice="ironic" age="30" is_template="true" is_hero="false">
+  <NPCCharacter id="tor_spelltrainer_bretonnia_0" default_group="infantry" name="{=str_tor_spelltrainer_bretonnia_0}{=!}The Fay Enchantress" occupation="Special" culture="Culture.vlandia" voice="ironic" age="30" is_template="true" is_hero="false">
     <face>
       <face_key_template value="BodyProperty.fey_enchantress" />
     </face>
@@ -1558,7 +1558,7 @@
       <EquipmentSet id="tor_fay_enchantress_template" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_spelltrainer_woodelves_0" default_group="infantry" name="{=str_tor_spelltrainer_woodelves_0}Wise Spellsinger" occupation="Special" culture="Culture.battania" voice="ironic" age="30" race="elf" is_female="true" is_template="true" is_hero="false">
+  <NPCCharacter id="tor_spelltrainer_woodelves_0" default_group="infantry" name="{=str_tor_spelltrainer_woodelves_0}{=!}Wise Spellsinger" occupation="Special" culture="Culture.battania" voice="ironic" age="30" race="elf" is_female="true" is_template="true" is_hero="false">
     <face>
       <face_key_template value="BodyProperty.fey_enchantress" />
     </face>
@@ -1574,7 +1574,7 @@
       <EquipmentSet id="tor_we_spellsinger_template" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_eonir_druchii_envoy_0" default_group="infantry" name="{=str_tor_eonir_druchii_envoy_0}Witch King Envoy" occupation="Special" culture="Culture.eonir" voice="ironic" age="30" race="elf" is_template="true" is_hero="false">
+  <NPCCharacter id="tor_eonir_druchii_envoy_0" default_group="infantry" name="{=str_tor_eonir_druchii_envoy_0}{=!}Witch King Envoy" occupation="Special" culture="Culture.eonir" voice="ironic" age="30" race="elf" is_template="true" is_hero="false">
     <face>
       <face_key_template value="BodyProperty.male_wood_elf" />
     </face>
@@ -1590,7 +1590,7 @@
       <EquipmentSet id="tor_qnpc_eonir_envoy_druchii" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_eonir_asur_envoy_0" default_group="infantry" name="{=str_tor_eonir_asur_envoy_0}Phoenix King Envoy" occupation="Special" culture="Culture.eonir" voice="ironic" age="30" race="elf" is_template="true" is_hero="false">
+  <NPCCharacter id="tor_eonir_asur_envoy_0" default_group="infantry" name="{=str_tor_eonir_asur_envoy_0}{=!}Phoenix King Envoy" occupation="Special" culture="Culture.eonir" voice="ironic" age="30" race="elf" is_template="true" is_hero="false">
     <face>
       <face_key_template value="BodyProperty.male_wood_elf" />
     </face>
@@ -1606,7 +1606,7 @@
       <EquipmentSet id="tor_qnpc_eonir_envoy_asur" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_eonir_empire_envoy_0" default_group="infantry" name="{=str_tor_eonir_empire_envoy_0}Empire Envoy" occupation="Special" culture="Culture.eonir" voice="ironic" age="30" is_template="true" is_hero="false">
+  <NPCCharacter id="tor_eonir_empire_envoy_0" default_group="infantry" name="{=str_tor_eonir_empire_envoy_0}{=!}Empire Envoy" occupation="Special" culture="Culture.eonir" voice="ironic" age="30" is_template="true" is_hero="false">
     <face>
       <face_key_template value="BodyProperty.fighter_empire" />
     </face>
@@ -1622,7 +1622,7 @@
       <EquipmentSet id="tor_qnpc_eonir_envoy_empire" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_eonir_spellsinger_envoy_0" default_group="infantry" name="{=str_tor_eonir_spellsinger_envoy_0}Forestguardian" occupation="Special" culture="Culture.eonir" voice="ironic" age="30" race="elf" is_template="true" is_hero="false">
+  <NPCCharacter id="tor_eonir_spellsinger_envoy_0" default_group="infantry" name="{=str_tor_eonir_spellsinger_envoy_0}{=!}Forestguardian" occupation="Special" culture="Culture.eonir" voice="ironic" age="30" race="elf" is_template="true" is_hero="false">
     <face>
       <face_key_template value="BodyProperty.male_wood_elf" />
     </face>
