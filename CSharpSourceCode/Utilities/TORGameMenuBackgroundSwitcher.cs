@@ -143,8 +143,11 @@ namespace TOR_Core.Utilities
                 case "mousillon":
                     args.MenuContext.SetBackgroundMeshName("vlandia_tavern");
                     return;
-                case "eonir":
-                    args.MenuContext.SetBackgroundMeshName("eonir_town_background");
+                case TORConstants.Cultures.EONIR:
+                    args.MenuContext.SetBackgroundMeshName("we_tavern");
+                    return;
+                case TORConstants.Cultures.ASRAI:
+                    args.MenuContext.SetBackgroundMeshName("we_tavern");
                     return;
             }
         }

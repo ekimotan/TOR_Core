@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Settlements>
   <!--Custom Settlements-->
   <Settlement id="oak_of_ages" name="{=str_tor_settlements_oak_of_ages}Oak of Ages" owner="Faction.athel_loren_clan_1" posX="1218.711" posY="798.5" culture="Culture.battania" text="{=!}Oak of Ages">
@@ -233,7 +233,7 @@
   </Settlement>
   <Settlement id="loec_shrine_01" name="{=str_tor_settlements_shrine_loec1}Shrine of Loec" owner="Faction.athel_loren_clan_8" posX="1220.387" posY="863.503" culture="Culture.battania" text="{=!}Shrine of Loec">
     <Components>
-      <Shrine id="loec_shrine_01" religion="cult_of_loec" background_crop_position="0.0" background_mesh="oak_of_ages" wait_mesh="wait_empire_village" gate_rotation="0.0" />
+      <Shrine id="loec_shrine_01" religion="cult_of_loec" background_crop_position="0.0" background_mesh="shrine_of_loec" wait_mesh="shrine_of_loec" gate_rotation="0.0" />
     </Components>
   </Settlement>
   <Settlement id="anath_shrine_01" name="{=str_tor_settlements_shrine_anathraema1}Shrine of Anath Raema" owner="Faction.athel_loren_clan_12" posX="1248.776" posY="859.788" culture="Culture.battania" text="{=!}Shrine of Anath Raema">
@@ -243,12 +243,12 @@
   </Settlement>
   <Settlement id="vaul_shrine_01" name="{=str_tor_settlements_shrine_vaul1}Shrine of Vaul" owner="Faction.athel_loren_clan_11" posX="1184.427" posY="818.268" culture="Culture.battania" text="{=!}Shrine of Vaul">
     <Components>
-      <Shrine id="vaul_shrine_01" religion="cult_of_vaul" background_crop_position="0.0" background_mesh="oak_of_ages" wait_mesh="shrine_of_vaul" gate_rotation="0.0" />
+      <Shrine id="vaul_shrine_01" religion="cult_of_vaul" background_crop_position="0.0" background_mesh="shrine_of_vaul" wait_mesh="shrine_of_vaul" gate_rotation="0.0" />
     </Components>
   </Settlement>
   <Settlement id="kurnous_shrine_01" name="{=str_tor_settlements_shrine_kurnous1}Shrine of Kurnous" owner="Faction.athel_loren_clan_1" posX="1228.865" posY="790.497" culture="Culture.battania" text="{=!}Shrine of Kurnous">
     <Components>
-      <Shrine id="kurnous_shrine_01" religion="cult_of_kurnous" background_crop_position="0.0" background_mesh="oak_of_ages" wait_mesh="wait_empire_village" gate_rotation="0.0" />
+      <Shrine id="kurnous_shrine_01" religion="cult_of_kurnous" background_crop_position="0.0" background_mesh="shrine_of_kurnous" wait_mesh="shrine_of_kurnous" gate_rotation="0.0" />
     </Components>
   </Settlement>
   <Settlement id="isha_shrine_01" name="{=str_tor_settlements_shrine_isha1}Shrine of Isha" owner="Faction.athel_loren_clan_2" posX="1236.481" posY="782.302" culture="Culture.battania" text="{=!}Shrine of Isha">
@@ -352,7 +352,7 @@
   </Settlement>
   <Settlement id="castle_AV2" name="{=Settlements.Settlement.name.castle_AV2}Wuppertal" owner="Faction.averland_clan_1" posX="1393.959" posY="889.762" culture="Culture.empire" gate_posX="1393.126" gate_posY="888.7434" text="{=Settlements.Settlement.text.castle_AV2}Wuppertal is a picturesque Averlandish town, some might even say frozen in its cherished past. The city is known for carpentry, fine beer and ale (by human standards) and its tradition abiding Averlander inhabitants. The town also hosts many pilgrims and zealots, serving as one of the southern strongholds for the cult of Sigmar whose shrine here is dedicated to Joseph the Reverent. The town also hosts a large temple of Verena and a Garden of Morr. As with many settlements along the Upper Reik, a ferry operates to bring goods and people across the river into Averland or out to Wissenland.">
     <Components>
-      <Town id="castle_comp_AV2" is_castle="true" level="3" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="empire_city_background" gate_rotation="0.908" prosperity="800" />
+      <Town id="castle_comp_AV2" is_castle="true" level="3" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="empire_castle" gate_rotation="0.908" prosperity="800" />
     </Components>
     <Locations complex_template="LocationComplexTemplate.castle_complex">
       <Location id="center" scene_name="empire_castle_g" scene_name_1="empire_castle_g" scene_name_2="empire_castle_g" scene_name_3="empire_castle_g" />
@@ -4589,10 +4589,10 @@
       <Town id="town_comp_LL1" is_castle="false" level="3" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="eonir_town_background" gate_rotation="0.908" prosperity="7500" />
     </Components>
     <Locations complex_template="LocationComplexTemplate.town_complex">
-      <Location id="center" scene_name="city_building_eonir" scene_name_1="TOR_eonir_city_001" scene_name_2="TOR_eonir_city_001" scene_name_3="TOR_eonir_city_001" />
-      <Location id="arena" scene_name="TOR_eonir_arena_001" />
-      <Location id="tavern" scene_name="TOR_eonir_tavern_001" />
-      <Location id="lordshall" scene_name_1="TOR_eonir_keep_001" scene_name_2="TOR_eonir_keep_001" scene_name_3="TOR_eonir_keep_001" />
+      <Location id="center" scene_name="city_building_eonir" scene_name_1="TOR_eonir_city_001" scene_name_2="TOR_eonir_city_001" scene_name_3="TOR_eonir_city_002" />
+      <Location id="arena" scene_name="TOR_eonir_arena_002" />
+      <Location id="tavern" scene_name="TOR_eonir_tavern_002" />
+      <Location id="lordshall" scene_name_1="TOR_eonir_keep_002" scene_name_2="TOR_eonir_keep_002" scene_name_3="TOR_eonir_keep_002" />
       <Location id="prison" scene_name="vlandia_dungeon_a" />
       <Location id="house_1" scene_name="TOR_wizard_hall_001_forceatmo" />
       <Location id="house_2" scene_name="empire_house_d_interior_house" />
@@ -4859,7 +4859,7 @@
   </Settlement>
   <Settlement id="castle_WA1" name="{=Settlements.Settlement.name.castle_WA3}Fort Solace" owner="Faction.wasteland_clan_1" posX="1143.799" posY="1272.055" culture="Culture.empire" gate_posX="1148.326" gate_posY="1272.27" text="{=Settlements.Settlement.text.castle_WA3}Fort Solace is a fortified lighthouse across the Manannspoort Sea from Reaver’s point. It is owned and operated by the Wasteland Import-Export exchange in Marienburg, who maintain a governor and private garrison here. Fort Solace is a relatively new settlement, constructed in response to Almshoven’s abandonment and the destruction of its lighthouse. Most ships will stop here if arriving too late in the evening to make it into Marienburg, few will stop here with the intention of bypassing Marienburg all together on their way to Norsca or Kislev.">
     <Components>
-      <Town id="castle_comp_WA1" is_castle="true" level="3" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="empire_city_background" gate_rotation="0.908" prosperity="800" />
+      <Town id="castle_comp_WA1" is_castle="true" level="3" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="empire_castle" gate_rotation="0.908" prosperity="800" />
     </Components>
     <Locations complex_template="LocationComplexTemplate.castle_complex">
       <Location id="center" scene_name="empire_castle_c" scene_name_1="empire_castle_c" scene_name_2="empire_castle_c" scene_name_3="empire_castle_c" />
