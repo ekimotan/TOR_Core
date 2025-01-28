@@ -124,6 +124,30 @@
 		<skill id="Spellcraft"
 			   value="200" />
 	</SkillSet>
+		<SkillSet id="tor_skills_necrarch_lord">
+		<skill id="Athletics"
+			   value="200" />
+		<skill id="Riding"
+			   value="220" />
+		<skill id="OneHanded"
+			   value="200" />
+		<skill id="TwoHanded"
+			   value="200" />
+		<skill id="Polearm"
+			   value="200" />
+		<skill id="Steward"
+			   value="120" />
+		<skill id="Medicine"
+			   value="200" />
+		<skill id="Engineering"
+			   value="260" />
+		<skill id="Tactics"
+			   value="280" />
+		<skill id="Faith"
+			   value="200" />
+		<skill id="Spellcraft"
+			   value="300" />
+	</SkillSet>
 	<!--Custom Battle Generic Lords-->
 	<SkillSet id="tor_custombattle_generic">
 		<skill id="Athletics"

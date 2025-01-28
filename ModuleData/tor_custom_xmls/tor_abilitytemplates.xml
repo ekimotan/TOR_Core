@@ -1088,7 +1088,7 @@
                      CrosshairType="TargetedAOE"
                      SpellTier="3"
                      BelongsToLoreID="LoreOfHeavens"
-                     TooltipDescription="{=curse_of_midnight_wind_description_str}The wizard speaks an ancient three-word hex, cursing the enemies and iposing a 40% penalty to movement and attack speed, as well as damage dealt.">
+                     TooltipDescription="{=curse_of_midnight_wind_description_str}The wizard speaks an ancient three-word hex, cursing the enemies and imposing a 40% penalty to movement and attack speed, as well as damage dealt.">
         <LightColorRGB x="255"
                        y="170"
                        z="0"
