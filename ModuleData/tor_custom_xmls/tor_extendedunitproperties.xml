@@ -5489,16 +5489,16 @@
   </CharacterExtendedInfo>
   <CharacterExtendedInfo id="tor_vc_lord_necrarch_first_factionleader">
     <Abilities>
-      <string>SummonSkeleton</string>
-      <string>Morkharn</string>
+      <string>GraveCall</string>
+      <string>CurseOfAnraheir</string>
       <string>VanHelsDanseMacabre</string>
-      <string>WindOfDeath</string>
-      <string>CascadingFireCloak</string>
-      <string>ChainLightning</string>
-      <string>DeathSpasm</string>
+      <string>PannsImpenetrablePelt</string>
+      <string>DoomBolt</string>
+      <string>CurseOfYears</string>
       <string>SoulRain</string>
       <string>SoulStealer</string>
-      <string>PlagueOfRust</string>
+      <string>Blizzard</string>
+      <string>CurseOfMidnightWind</string>
     </Abilities>
     <Attributes>
       <string>AbilityUser</string>
@@ -5576,16 +5576,16 @@
   </CharacterExtendedInfo>
   <CharacterExtendedInfo id="tor_vc_lord_necrarch_second_1">
     <Abilities>
-      <string>SummonSkeleton</string>
-      <string>Morkharn</string>
+      <string>GraveCall</string>
+      <string>CurseOfAnraheir</string>
       <string>VanHelsDanseMacabre</string>
-      <string>WindOfDeath</string>
-      <string>CascadingFireCloak</string>
-      <string>ChainLightning</string>
-      <string>DeathSpasm</string>
+      <string>PannsImpenetrablePelt</string>
+      <string>DoomBolt</string>
+      <string>CurseOfYears</string>
       <string>SoulRain</string>
       <string>SoulStealer</string>
-      <string>PlagueOfRust</string>
+      <string>Blizzard</string>
+      <string>CurseOfMidnightWind</string>
     </Abilities>
     <Attributes>
       <string>AbilityUser</string>

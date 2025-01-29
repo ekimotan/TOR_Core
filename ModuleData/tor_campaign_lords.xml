@@ -1760,8 +1760,8 @@
       <Trait id="Generosity" value="1" />
     </Traits>
     <Equipments>
-      <EquipmentSet id="tor_generic_empire_lord_heavy_hammer_template" />
-      <EquipmentSet id="tor_generic_empire_lord_heavy_hammer_template" civilian="true" />
+      <EquipmentSet id="tor_boris_todbringer_template" />
+      <EquipmentSet id="tor_boris_todbringer_template" civilian="true" />
     </Equipments>
   </NPCCharacter>
   <NPCCharacter id="tor_emp_lord_middenland_first_2" default_group="cavalry" name="{=str_tor_emp_lord_middenland_first_2}Heinrich Todbringer" occupation="Lord" culture="Culture.empire" voice="curt" age="20" skill_template="SkillSet.tor_skills_warrior_lord" is_hero="true">
@@ -4248,7 +4248,7 @@
       <EquipmentSet id="tor_blooddragon_templar_template" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_vc_lord_necrarch_first_factionleader" default_group="cavalry" name="{=str_tor_vc_lord_necrarch_first_factionleader}Zacharias the Everliving" occupation="Lord" culture="Culture.khuzait" voice="curt" age="40" skill_template="SkillSet.tor_skills_vampire_lord" race="necrarch" is_hero="true">
+  <NPCCharacter id="tor_vc_lord_necrarch_first_factionleader" default_group="cavalry" name="{=str_tor_vc_lord_necrarch_first_factionleader}Zacharias the Everliving" occupation="Lord" culture="Culture.khuzait" voice="curt" age="40" skill_template="SkillSet.tor_skills_necrarch_lord" race="necrarch" is_hero="true">
     <face>
       <BodyProperties version="4" age="40" weight="0.5997" build="0.386" key="003F7C0C402C08824D8A94B94D88E48A885876D56C9A785A16763C8B9E9AB9AD9793C6030C989859C64318BFCA98367B000000000000000C0000000045A47080" />
     </face>
@@ -4338,7 +4338,7 @@
       <EquipmentSet id="tor_necromancer_template" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_vc_lord_necrarch_second_1" default_group="cavalry" name="{=str_tor_vc_lord_necrarch_second_1}Dentomaz" occupation="Lord" culture="Culture.khuzait" voice="curt" age="80" skill_template="SkillSet.tor_skills_vampire_lord" race="necrarch" is_hero="true">
+  <NPCCharacter id="tor_vc_lord_necrarch_second_1" default_group="cavalry" name="{=str_tor_vc_lord_necrarch_second_1}Dentomaz" occupation="Lord" culture="Culture.khuzait" voice="curt" age="80" skill_template="SkillSet.tor_skills_necrarch_lord" race="necrarch" is_hero="true">
     <face>
       <BodyProperties version="4" age="19" weight="0.5997" build="0.386" key="001F5C0AD9A008C077959A79A3A2B81A75B9B398FDDF84C7462A85899A73699B559AB6030B5178B685827988A565C5D7000000000000000B00000000576C1000" />
     </face>
@@ -6854,8 +6854,8 @@
       <Trait id="Generosity" value="0" />
     </Traits>
     <Equipments>
-      <EquipmentSet id="tor_we_glade_lord_female_template" />
-      <EquipmentSet id="tor_we_glade_lord_female_template" civilian="true" />
+      <EquipmentSet id="tor_we_sister_thorne_lord_2_template" />
+      <EquipmentSet id="tor_we_sister_thorne_lord_2_template" civilian="true" />
     </Equipments>
   </NPCCharacter>
   <NPCCharacter id="tor_we_lord_athel_loren_tenth_2" default_group="cavalry" name="{=str_tor_we_lord_athel_loren_tenth_2}Naieth the Prophetess" occupation="Lord" culture="Culture.battania" voice="curt" age="50" skill_template="SkillSet.tor_skills_caster_lord" is_female="true" race="elf" is_hero="true">
@@ -7400,7 +7400,7 @@
   </NPCCharacter>
   <NPCCharacter id="tor_br_bergerac_2" default_group="ranged" name="{=str_tor_br_bergerac_2}Gui le Gros" occupation="Special" culture="Culture.vlandia" voice="curt" age="53" skill_template="SkillSet.tor_skills_warrior_lord" is_hero="true">
     <face>
-      <BodyProperties version="4" age="43" weight="0.5693" build="0.8107" key="0013600540CC2A0EA631882B9875D476738567878385437C25DA345A465ADADD6A91D6030C78879AC9A8FE7AC24C47C2000000000000000C00000000318C2002" />
+      <BodyProperties version="4" age="43" weight="0.5693" build="0.8107" key="0005AC0B8070200C767887E1CE2C00A167884877557363887A4AFE1A79986896EEEFF603031985F56F5FC74A4727BAEA0000000000000003000000004C6C4002" />
     </face>
     <Traits>
       <Trait id="BalancedFightingSkills" value="5" />
@@ -7418,7 +7418,7 @@
   </NPCCharacter>
   <NPCCharacter id="tor_br_bergerac_3" default_group="ranged" name="{=str_tor_br_bergerac_3}Hugo le Petit" occupation="Special" culture="Culture.vlandia" voice="curt" age="53" skill_template="SkillSet.tor_skills_warrior_lord" is_hero="true">
     <face>
-      <BodyProperties version="4" age="43" weight="0.9988" build="0.3889" key="0005AC0B8070200C767887E1CE2C00A167884877557363887A4AFE1A79986896EEEFF603031985F56F5FC74A4727BAEA0000000000000003000000004C6C4002" />
+      <BodyProperties version="4" age="43" weight="0.9988" build="0.3889" key="0013600540CC2A0EA631882B9875D476738567878385437C25DA345A465ADADD6A91D6030C78879AC9A8FE7AC24C47C2000000000000000C00000000318C2002" />
     </face>
     <Traits>
       <Trait id="BalancedFightingSkills" value="5" />
@@ -7610,8 +7610,8 @@
       <Trait id="Generosity" value="-1" />
     </Traits>
     <Equipments>
-      <EquipmentSet id="dog_muktar_hero_template" />
-      <EquipmentSet id="dog_muktar_hero_template" civilian="true" />
+      <EquipmentSet id="dog_al_muktar_template" />
+      <EquipmentSet id="dog_al_muktar_template" civilian="true" />
     </Equipments>
   </NPCCharacter>
 </NPCCharacters>
