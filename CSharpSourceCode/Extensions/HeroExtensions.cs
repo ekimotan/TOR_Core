@@ -32,6 +32,7 @@ namespace TOR_Core.Extensions
 
         public static bool IsEnlisted(this Hero hero)
         {
+            if (hero != Hero.MainHero) return false;
             var hirelingCampaignBehavior = Campaign.Current.GetCampaignBehavior<ServeAsAHirelingCampaignBehavior>();
             if (hirelingCampaignBehavior != null)
             {

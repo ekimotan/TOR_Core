@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,6 +12,7 @@ using TaleWorlds.Library;
 using TaleWorlds.LinQuick;
 using TaleWorlds.ObjectSystem;
 using TOR_Core.CampaignMechanics.RegimentsOfRenown;
+using TOR_Core.CampaignMechanics.ServeAsAHireling;
 using TOR_Core.Extensions;
 using TOR_Core.Utilities;
 
@@ -116,7 +117,7 @@ namespace TOR_Core.Models
             
             var value = base.MaximumIndexHeroCanRecruitFromHero(buyerHero, sellerHero, useValueAsRelation);
 
-            if (buyerHero.IsEnlisted())
+            if (buyerHero.IsEnlisted()) //make sure only the player is affected!
             {
                 return -1;
             }
