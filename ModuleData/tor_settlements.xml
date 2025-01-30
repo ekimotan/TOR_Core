@@ -447,7 +447,7 @@
   </Settlement>
   <Settlement id="castle_AV4" name="{=Settlements.Settlement.name.castle_AV4}Pfungzig" owner="Faction.averland_clan_1" posX="1520.65" posY="888.975" culture="Culture.empire" gate_posX="1521.654" gate_posY="889.658" text="{=Settlements.Settlement.text.village_castle_AV4}On the eastern border of Averland stands Pfungzig, a fortress and seat of power belonging to von Heine. Pfungzig commands a view of many miles around it, allowing one to watch over a large stretch of the Blue Reach, the southern Wailing Woods and Southern Stirland. While no bridge stands here to cross the nearby river, the fortress maintains a ferry for those with crowns who wish to cross.">
     <Components>
-      <Town id="castle_comp_AV4" is_castle="true" level="3" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="empire_city_background" gate_rotation="0.908" prosperity="800" />
+      <Town id="castle_comp_AV4" is_castle="true" level="3" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="empire_castle" gate_rotation="0.908" prosperity="800" />
     </Components>
     <Locations complex_template="LocationComplexTemplate.castle_complex">
       <Location id="center" scene_name="empire_siege_001" scene_name_1="empire_siege_001" scene_name_2="empire_siege_001" scene_name_3="empire_siege_001" />
@@ -556,7 +556,7 @@
   </Settlement>
   <Settlement id="castle_ST1" name="{=Settlements.Settlement.name.castle_ST1}Flensburg" owner="Faction.stirland_clan_3" posX="1382.963" posY="985.17" culture="Culture.empire" gate_posX="1382.936" gate_posY="986.4858" text="{=Settlements.Settlement.text.castle_ST1}Flensburg is a small market town nestled in the Zaya Hills to the West of the Stirhügel. The hills are perfect for sheep grazing, and the town’s economy is based on fleece, lamb and mutton. The town is also noted in the region for having a major temple of Shallya.">
     <Components>
-      <Town id="castle_comp_ST1" is_castle="true" level="3" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="empire_city_background" gate_rotation="0.908" prosperity="800" />
+      <Town id="castle_comp_ST1" is_castle="true" level="3" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="empire_castle" gate_rotation="0.908" prosperity="800" />
     </Components>
     <Locations complex_template="LocationComplexTemplate.castle_complex">
       <Location id="center" scene_name="TOR_empire_castle_03" scene_name_1="TOR_empire_castle_03" scene_name_2="TOR_empire_castle_03" scene_name_3="TOR_empire_castle_03" />
@@ -592,7 +592,7 @@
   </Settlement>
   <Settlement id="castle_ST2" name="{=Settlements.Settlement.name.castle_ST2}Franzen" owner="Faction.stirland_clan_3" posX="1430.99" posY="940.184" culture="Culture.empire" gate_posX="1429.681" gate_posY="940.0459" text="{=Settlements.Settlement.text.castle_ST2}Franzen is a somewhat unremarkable town, sitting in the shadow of large settlements nearby. It has a healthy fishing trade from the Lammer and the Aver, and also boasts a well-used ferry across the Lammer which allows travellers to continue the road West to Russbach.">
     <Components>
-      <Town id="castle_comp_ST2" is_castle="true" level="3" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="empire_city_background" gate_rotation="0.908" prosperity="800" />
+      <Town id="castle_comp_ST2" is_castle="true" level="3" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="empire_castle" gate_rotation="0.908" prosperity="800" />
     </Components>
     <Locations complex_template="LocationComplexTemplate.castle_complex">
       <Location id="center" scene_name="TOR_empire_castle_002" scene_name_1="TOR_empire_castle_002" scene_name_2="TOR_empire_castle_002" scene_name_3="TOR_empire_castle_002" />
@@ -628,7 +628,7 @@
   </Settlement>
   <Settlement id="castle_ST3" name="{=Settlements.Settlement.name.castle_ST3}Halstedt" owner="Faction.stirland_clan_1" posX="1473.422" posY="962.008" culture="Culture.empire" gate_posX="1473.438" gate_posY="961.0407" text="{=Settlements.Settlement.text.castle_ST3}Halstedt Keep is on the South-East edge of the Stirhügel hills and is a staging point for the Roadwardens of the region. Originally it was a manor house belonging to some long forgotten lord, over time it has become more fortified as each subsequent owner has sought to protect its inhabitants against bandits and the greenskins from nearby Altern Forest. Eventually it fell into state hands, and was turned into a fortress lodge for the official Roadwardens who protect the locale.">
     <Components>
-      <Town id="castle_comp_ST3" is_castle="true" level="3" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="empire_city_background" gate_rotation="0.908" prosperity="800" />
+      <Town id="castle_comp_ST3" is_castle="true" level="3" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="empire_castle" gate_rotation="0.908" prosperity="800" />
     </Components>
     <Locations complex_template="LocationComplexTemplate.castle_complex">
       <Location id="center" scene_name="empire_siege_001" scene_name_1="empire_siege_001" scene_name_2="empire_siege_001" scene_name_3="empire_siege_001" />
@@ -842,7 +842,7 @@
   </Settlement>
   <Settlement id="castle_ST4" name="{=Settlements.Settlement.name.castle_ST4}Wördern" owner="Faction.stirland_clan_1" posX="1449.83" posY="969.534" culture="Culture.empire" gate_posX="1451.507" gate_posY="972.974" text="{=Settlements.Settlement.text.castle_village_ST4_1}Wördern is a small town hidden between mountains and valleys. The rough terrain makes expansion near impossible, but the intersection of the Old Dwarf Road and the Prager strasse makes passing along viable; not that it matters, as no outsider finds kindness in Wörden. The odd mootlander can occasionally be seen purchasing supplies for the road, but its main attraction is the Wörden Meat and Cattle auction house. It’s the only town in Stirland that can be smelled before it is seen.">
     <Components>
-      <Town id="castle_comp_ST4" is_castle="true" level="3" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="empire_city_background" gate_rotation="0.908" prosperity="800" />
+      <Town id="castle_comp_ST4" is_castle="true" level="3" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="empire_castle" gate_rotation="0.908" prosperity="800" />
     </Components>
     <Locations complex_template="LocationComplexTemplate.castle_complex">
       <Location id="center" scene_name="TOR_empire_castle_002" scene_name_1="TOR_empire_castle_002" scene_name_2="TOR_empire_castle_002" scene_name_3="TOR_empire_castle_002" />
@@ -878,7 +878,7 @@
   </Settlement>
   <Settlement id="castle_ST5" name="{=Settlements.Settlement.name.castle_ST5}Marberg" owner="Faction.stirland_clan_1" posX="1500.251" posY="1025.955" culture="Culture.empire" gate_posX="1499.559" gate_posY="1026.592" text="{=Settlements.Settlement.text.castle_ST5}Marberg Castle lies to the south of Mittlenburg near the pilgrim trail leading to the seven temples of Sharanorak. The castle was erected to safeguard the passes leading out of the World’s Edge mountains for Dwarf traders as well as to watch over the territory north of the Black Fire Pass.">
     <Components>
-      <Town id="castle_comp_ST5" is_castle="true" level="3" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="empire_city_background" gate_rotation="0.908" prosperity="800" />
+      <Town id="castle_comp_ST5" is_castle="true" level="3" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="empire_castle" gate_rotation="0.908" prosperity="800" />
     </Components>
     <Locations complex_template="LocationComplexTemplate.castle_complex">
       <Location id="center" scene_name="empire_siege_001" scene_name_1="empire_siege_001" scene_name_2="empire_siege_001" scene_name_3="empire_siege_001" />
@@ -1467,7 +1467,7 @@
   </Settlement>
   <Settlement id="castle_WI1" name="{=Settlements.Settlement.name.castle_WI1}Wusterburg" owner="Faction.wissenland_clan_3" posX="1372.31" posY="775.865" culture="Culture.empire" gate_posX="1373.623" gate_posY="775.9476" text="{=Settlements.Settlement.text.castle_WI1}Within sight of the Black Mountains, where the waters of the Soll, Sonne, Aulen and Hornberg meet, is the town of Wusterburg. Wursterburg caters to the many Black Dwarfs from Karak Hirn that pass through, on their way to Nuln and further. Wursterburg actually possesses a rather large community of Black and Imperial Dwarfs, This may be in part due to the site of the famous Bugman’s Brewery which sits just outside of Wusterburg. While this famous beer company was destroyed by a goblin horde, its memory goes on in the minds of those who can remember its taste. Wursterburg mourns this disgrace to the art of Brewery, yet the town remains important as a centre of trade and as one of the only ferries across the River Soll. Baron Manfred von Eigenhof is the ruler of Wusterburg, and is known to be decently wealthy by nobleman’s standards thanks to the flow of trade.">
     <Components>
-      <Town id="castle_comp_WI1" is_castle="true" level="3" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="empire_city_background" gate_rotation="0.908" prosperity="800" />
+      <Town id="castle_comp_WI1" is_castle="true" level="3" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="empire_castle" gate_rotation="0.908" prosperity="800" />
     </Components>
     <Locations complex_template="LocationComplexTemplate.castle_complex">
       <Location id="center" scene_name="TOR_empire_castle_002" scene_name_1="TOR_empire_castle_002" scene_name_2="TOR_empire_castle_002" scene_name_3="TOR_empire_castle_002" />
@@ -1477,7 +1477,7 @@
   </Settlement>
   <Settlement id="castle_WI2" name="{=Settlements.Settlement.name.castle_WI2}Nehren" owner="Faction.wissenland_clan_3" posX="1318.63" posY="799.401" culture="Culture.empire" gate_posX="1317.519" gate_posY="799.7532" text="{=Settlements.Settlement.text.castle_WI2}Nehren is a small fort established to guard the upper River Soll and the fertile pasture lands near the Wild Pass leading into the forest of Athel Loren.">
     <Components>
-      <Town id="castle_comp_WI2" is_castle="true" level="3" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="empire_city_background" gate_rotation="0.908" prosperity="800" />
+      <Town id="castle_comp_WI2" is_castle="true" level="3" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="empire_castle" gate_rotation="0.908" prosperity="800" />
     </Components>
     <Locations complex_template="LocationComplexTemplate.castle_complex">
       <Location id="center" scene_name="TOR_empire_castle_03" scene_name_1="TOR_empire_castle_03" scene_name_2="TOR_empire_castle_03" scene_name_3="TOR_empire_castle_03" />
@@ -1487,7 +1487,7 @@
   </Settlement>
   <Settlement id="castle_WI3" name="{=Settlements.Settlement.name.castle_WI3}Sonnefurt" owner="Faction.wissenland_clan_3" posX="1360.027" posY="750.485" culture="Culture.empire" gate_posX="1360.12" gate_posY="749.2765" text="{=Settlements.Settlement.text.castle_WI3}Sonnefurt lies at the point where the River Sonne meets the River Soll. The castle here was built at some point after Magnus the Pious attempted to restore Old Solland, since then it has served as an invaluable defensive point to guard against Greenskins entering the Empire from the Icy Wind or Winter’s Teeth Passes.">
     <Components>
-      <Town id="castle_comp_WI3" is_castle="true" level="3" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="empire_city_background" gate_rotation="0.908" prosperity="800" />
+      <Town id="castle_comp_WI3" is_castle="true" level="3" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="empire_castle" gate_rotation="0.908" prosperity="800" />
     </Components>
     <Locations complex_template="LocationComplexTemplate.castle_complex">
       <Location id="center" scene_name="empire_castle_g" scene_name_1="empire_castle_g" scene_name_2="empire_castle_g" scene_name_3="empire_castle_g" />
@@ -1497,7 +1497,7 @@
   </Settlement>
   <Settlement id="castle_WI4" name="{=Settlements.Settlement.name.castle_WI4}Mendelhof" owner="Faction.wissenland_clan_3" posX="1452.673" posY="820.927" culture="Culture.empire" gate_posX="1451.364" gate_posY="820.7916" text="{=Settlements.Settlement.text.castle_WI4}Mendelhof used to be a small Sollander village in the Oggelland, today a fort stands in place of the former settlement. Built on the east shores of the River Oggel, the fort was constructed in order to watch over the Oggelland Pass as well as the disputed land between Wissenland and Averland, which lies between the Oggel and the upper River Reik.">
     <Components>
-      <Town id="castle_comp_WI4" is_castle="true" level="3" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="empire_city_background" gate_rotation="0.908" prosperity="800" />
+      <Town id="castle_comp_WI4" is_castle="true" level="3" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="empire_castle" gate_rotation="0.908" prosperity="800" />
     </Components>
     <Locations complex_template="LocationComplexTemplate.castle_complex">
       <Location id="center" scene_name="empire_siege_001" scene_name_1="empire_siege_001" scene_name_2="empire_siege_001" scene_name_3="empire_siege_001" />
@@ -1507,7 +1507,7 @@
   </Settlement>
   <Settlement id="castle_WI5" name="{=Settlements.Settlement.name.castle_WI5}Kolbhugel" owner="Faction.wissenland_clan_3" posX="1398.247" posY="794.033" culture="Culture.empire" gate_posX="1398.518" gate_posY="792.8398" text="{=Settlements.Settlement.text.castle_WI5}Kolbhugel was established a stopover between Wusterburg and Waldbach, eventually a former Elector-Count of Wissenland saw fit to establish a permanent garrison here, both to help combat highwaymen and to use the site to send reinforcements to either Mendelhof to Sonnefurt should they require assistance.">
     <Components>
-      <Town id="castle_comp_WI5" is_castle="true" level="3" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="empire_city_background" gate_rotation="0.908" prosperity="800" />
+      <Town id="castle_comp_WI5" is_castle="true" level="3" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="empire_castle" gate_rotation="0.908" prosperity="800" />
     </Components>
     <Locations complex_template="LocationComplexTemplate.castle_complex">
       <Location id="center" scene_name="TOR_empire_castle_002" scene_name_1="TOR_empire_castle_002" scene_name_2="TOR_empire_castle_002" scene_name_3="TOR_empire_castle_002" />
@@ -1517,7 +1517,7 @@
   </Settlement>
   <Settlement id="castle_WI6" name="{=Settlements.Settlement.name.castle_WI6}Staig" owner="Faction.wissenland_clan_1" posX="1389.475" posY="870.086" culture="Culture.empire" gate_posX="1390.324" gate_posY="870.6859" text="{=Settlements.Settlement.text.castle_WI6}Staig is a small fort established to watch over the upper Reik. Over the years the garrison here has stopped many goblin river pirates from travelling deeper into the empire.">
     <Components>
-      <Town id="castle_comp_WI6" is_castle="true" level="3" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="empire_city_background" gate_rotation="0.908" prosperity="800" />
+      <Town id="castle_comp_WI6" is_castle="true" level="3" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="empire_castle" gate_rotation="0.908" prosperity="800" />
     </Components>
     <Locations complex_template="LocationComplexTemplate.castle_complex">
       <Location id="center" scene_name="TOR_empire_castle_002" scene_name_1="TOR_empire_castle_002" scene_name_2="TOR_empire_castle_002" scene_name_3="TOR_empire_castle_002" />
@@ -2219,7 +2219,7 @@
   </Settlement>
   <Settlement id="castle_TB1" name="{=Settlements.Settlement.name.castle_TB1}Gostahof" owner="Faction.talabecland_clan_3" posX="1409.373" posY="1027.743" culture="Culture.empire" gate_posX="1409.615" gate_posY="1026.6" text="{=Settlements.Settlement.text.castle_TB1}Between the River Stir and a part of the Great forest lies the minor fortification of Gostahof. Gostahof processes most of the timber that gets chopped from the great forest and that comes in from the east due to its fancy watermill of dwarfen make.">
     <Components>
-      <Town id="castle_comp_TB1" is_castle="true" level="3" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="empire_city_background" gate_rotation="0.908" prosperity="800" />
+      <Town id="castle_comp_TB1" is_castle="true" level="3" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="empire_castle" gate_rotation="0.908" prosperity="800" />
     </Components>
     <Locations complex_template="LocationComplexTemplate.castle_complex">
       <Location id="center" scene_name="TOR_empire_castle_002" scene_name_1="TOR_empire_castle_002" scene_name_2="TOR_empire_castle_002" scene_name_3="TOR_empire_castle_002" />
@@ -2255,7 +2255,7 @@
   </Settlement>
   <Settlement id="castle_TB2" name="{=Settlements.Settlement.name.castle_TB2}Hermsdorf" owner="Faction.talabecland_clan_3" posX="1445.09" posY="1035.964" culture="Culture.empire" gate_posX="1444.37" gate_posY="1035.044" text="{=Settlements.Settlement.text.castle_TB2}The southernmost settlement on the Old Forest Road is a small logging town with nearly 400 inhabitants. Hermsdorf is built near the crest of a low hill, overlooking the Wurtbad valley that extends 15 miles to the south. The local ruler, Baron Waldemar von Züten, spends most of his time carousing in Wurtbad and leaves routine administrative duties to his bailiff. Hermsdorf is situated at the junction of two major roads along the River Stir and receives a great deal of traffic.">
     <Components>
-      <Town id="castle_comp_TB2" is_castle="true" level="3" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="empire_city_background" gate_rotation="0.908" prosperity="800" />
+      <Town id="castle_comp_TB2" is_castle="true" level="3" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="empire_castle" gate_rotation="0.908" prosperity="800" />
     </Components>
     <Locations complex_template="LocationComplexTemplate.castle_complex">
       <Location id="center" scene_name="TOR_empire_castle_03" scene_name_1="TOR_empire_castle_03" scene_name_2="TOR_empire_castle_03" scene_name_3="TOR_empire_castle_03" />
@@ -2291,7 +2291,7 @@
   </Settlement>
   <Settlement id="castle_TB3" name="{=Settlements.Settlement.name.castle_TB3}Obelheim" owner="Faction.talabecland_clan_2" posX="1450.676" posY="1081.248" culture="Culture.empire" gate_posX="1451.838" gate_posY="1081.373" text="{=Settlements.Settlement.text.castle_TB3}One of the few stops along the Old Forest Road, Obelhem relies on its surrounding villages to provide it food. Most of the imported wheat and barley gets turned into beer for its inn.">
     <Components>
-      <Town id="castle_comp_TB3" is_castle="true" level="3" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="empire_city_background" gate_rotation="0.908" prosperity="800" />
+      <Town id="castle_comp_TB3" is_castle="true" level="3" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="empire_castle" gate_rotation="0.908" prosperity="800" />
     </Components>
     <Locations complex_template="LocationComplexTemplate.castle_complex">
       <Location id="center" scene_name="empire_siege_001" scene_name_1="empire_siege_001" scene_name_2="empire_siege_001" scene_name_3="empire_siege_001" />
@@ -2327,7 +2327,7 @@
   </Settlement>
   <Settlement id="castle_TB4" name="{=Settlements.Settlement.name.castle_TB4}Ravenstein" owner="Faction.talabecland_clan_1" posX="1384.99" posY="1109.68" culture="Culture.empire" gate_posX="1383.053" gate_posY="1109.851" text="{=Settlements.Settlement.text.castle_TB4}Castle Ravenstein stands a proud vigil looking over its northern neighbours. Surrounded by the river Talabec and the River Lug the Castle is well defended. Combined with its walls it is indeed a tough place to siege. Its inhabitants work hard to provide food for the castle.">
     <Components>
-      <Town id="castle_comp_TB4" is_castle="true" level="3" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="empire_city_background" gate_rotation="0.908" prosperity="800" />
+      <Town id="castle_comp_TB4" is_castle="true" level="3" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="empire_castle" gate_rotation="0.908" prosperity="800" />
     </Components>
     <Locations complex_template="LocationComplexTemplate.castle_complex">
       <Location id="center" scene_name="empire_castle_g" scene_name_1="empire_castle_g" scene_name_2="empire_castle_g" scene_name_3="empire_castle_g" />
@@ -2668,7 +2668,7 @@
   </Settlement>
   <Settlement id="castle_RL1" name="{=Settlements.Settlement.name.castle_RL1}Stimmigen" owner="Faction.reikland_clan_2" posX="1291.684" posY="980.917" culture="Culture.empire" gate_posX="1290.492" gate_posY="980.3779" text="{=Settlements.Settlement.text.castle_RL1}In the Suden Vorbergland of Reikland sits the market town of Stimmigen. Stimmigen sits on the river Ober, where the Stimmigen and Grey Lady canals meet. The town is especially famous for Ernwald, a variety of apples known for its sweet, yet tart taste, that the people of Stimmigen put into pies, pastries, crumbles and cider, as well as the infamous local dish ‘rat-apple stew.’ Stimmigen has a large population of Halflings, who specialise in the Ernwald cultivation as well as its derivative goods.">
     <Components>
-      <Town id="castle_comp_RL1" is_castle="true" level="3" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="empire_city_background" gate_rotation="0.908" prosperity="800" />
+      <Town id="castle_comp_RL1" is_castle="true" level="3" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="empire_castle" gate_rotation="0.908" prosperity="800" />
     </Components>
     <Locations complex_template="LocationComplexTemplate.castle_complex">
       <Location id="center" scene_name="TOR_empire_castle_002" scene_name_1="TOR_empire_castle_002" scene_name_2="TOR_empire_castle_002" scene_name_3="TOR_empire_castle_002" />
@@ -2704,7 +2704,7 @@
   </Settlement>
   <Settlement id="castle_RL2" name="{=Settlements.Settlement.name.castle_RL2}Kemperbad" owner="Faction.reikland_clan_1" posX="1323.062" posY="1008.906" culture="Culture.empire" gate_posX="1324.203" gate_posY="1009.562" text="{=Settlements.Settlement.text.castle_RL2}The Grand Freistadt of Kemperbad is a major trade city that sits at the confluences of the rivers Riek and Stir. The city holds a commanding position over this portion of the river trade and is crucial to ensuring the southern empires continued economic prosperity. The city purchased its charter from Emperor Boris the Incompetent in 1066 IC, from then on being ruled directly by the Council of Thirteen which represents the largest merchants in town plus representatives from the local temples of Sigmar and Shallya.">
     <Components>
-      <Town id="castle_comp_RL2" is_castle="true" level="3" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="empire_city_background" gate_rotation="0.908" prosperity="800" />
+      <Town id="castle_comp_RL2" is_castle="true" level="3" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="empire_castle" gate_rotation="0.908" prosperity="800" />
     </Components>
     <Locations complex_template="LocationComplexTemplate.castle_complex">
       <Location id="center" scene_name="empire_siege_001" scene_name_1="empire_siege_001" scene_name_2="empire_siege_001" scene_name_3="empire_siege_001" />
@@ -2740,7 +2740,7 @@
   </Settlement>
   <Settlement id="castle_RL3" name="{=Settlements.Settlement.name.castle_RL3}Castle Reikguard" owner="Faction.reikland_clan_1" posX="1302.871" posY="1050.253" culture="Culture.empire" gate_posX="1303.586" gate_posY="1051.358" text="{=Settlements.Settlement.text.castle_RL3}Castle Reikguard is the fortress of the Grand Order of the Reiksguard Knights. It sits on the confluence of the rivers Teufel and Reik. In the time of Emperor Sigismund, while the Reikland was under threat of Gorbad Ironclaw, it was refortified and increased in size by dwarfen architects. It remains a powerful citadel capable of holding hundreds of soldiers and staff and serves as Karl-Franz’s summer home.">
     <Components>
-      <Town id="castle_comp_RL3" is_castle="true" level="3" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="empire_city_background" gate_rotation="0.908" prosperity="800" />
+      <Town id="castle_comp_RL3" is_castle="true" level="3" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="empire_castle" gate_rotation="0.908" prosperity="800" />
     </Components>
     <Locations complex_template="LocationComplexTemplate.castle_complex">
       <Location id="center" scene_name="TOR_empire_castle_reiksguard" scene_name_1="TOR_empire_castle_reiksguard" scene_name_2="TOR_empire_castle_reiksguard" scene_name_3="TOR_empire_castle_reiksguard" />
@@ -2776,7 +2776,7 @@
   </Settlement>
   <Settlement id="castle_RL4" name="{=Settlements.Settlement.name.castle_RL4}Castle Gauenburg" owner="Faction.reikland_clan_4" posX="1241.518" posY="1059.337" culture="Culture.empire" gate_posX="1242.15" gate_posY="1058.399" text="{=Settlements.Settlement.text.castle_RL4}Castle Grauenburg is the seat of Graf Wilhelm von Saponatheim’s rule over the central Reikland and his barony. It is a fortress along the river Bogen that protects Bogenhafen and other nearby locations from attack.">
     <Components>
-      <Town id="castle_comp_RL4" is_castle="true" level="3" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="empire_city_background" gate_rotation="0.908" prosperity="800" />
+      <Town id="castle_comp_RL4" is_castle="true" level="3" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="empire_castle" gate_rotation="0.908" prosperity="800" />
     </Components>
     <Locations complex_template="LocationComplexTemplate.castle_complex">
       <Location id="center" scene_name="TOR_empire_castle_03" scene_name_1="TOR_empire_castle_03" scene_name_2="TOR_empire_castle_03" scene_name_3="TOR_empire_castle_03" />
@@ -3195,7 +3195,7 @@
   </Settlement>
   <Settlement id="castle_ML1" name="{=Settlements.Settlement.name.castle_ML1}Leichlinberg" owner="Faction.middenland_clan_1" posX="1320.77" posY="1224.873" culture="Culture.empire" gate_posX="1322.556" gate_posY="1223.545" text="{=Settlements.Settlement.text.castle_ML1}Not too far outside of Middenheim, this caste-fort stands watch over some of the more open lands of the Northern Empire, keeping a wary eye and a ready garrison for signs of any beast or raider who would trespass too close to the nearby city or its villages. ">
     <Components>
-      <Town id="castle_comp_ML1" is_castle="true" level="3" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="empire_city_background" gate_rotation="0.908" prosperity="800" />
+      <Town id="castle_comp_ML1" is_castle="true" level="3" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="empire_castle" gate_rotation="0.908" prosperity="800" />
     </Components>
     <Locations complex_template="LocationComplexTemplate.castle_complex">
       <Location id="center" scene_name="TOR_empire_castle_03" scene_name_1="TOR_empire_castle_03" scene_name_2="TOR_empire_castle_03" scene_name_3="TOR_empire_castle_03" />
@@ -3257,7 +3257,7 @@
   </Settlement>
   <Settlement id="castle_ML2" name="{=Settlements.Settlement.name.castle_ML2}Middenstag" owner="Faction.middenland_clan_1" posX="1344.808" posY="1160.875" culture="Culture.empire" gate_posX="1346.883" gate_posY="1160.533" text="{=Settlements.Settlement.text.castle_ML2}A key garrison that is home to the Knighs Panther, this foreboding castle rises up out of the Drakwald along the Hochland border. Those who reside within its walls are held responsible for the defence of the primary route from Hochland to Delberz and who patrol the Howling Hills, an area infamous for its dangers.">
     <Components>
-      <Town id="castle_comp_ML2" is_castle="true" level="3" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="empire_city_background" gate_rotation="0.908" prosperity="800" />
+      <Town id="castle_comp_ML2" is_castle="true" level="3" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="empire_castle" gate_rotation="0.908" prosperity="800" />
     </Components>
     <Locations complex_template="LocationComplexTemplate.castle_complex">
       <Location id="center" scene_name="empire_siege_001" scene_name_1="empire_siege_001" scene_name_2="empire_siege_001" scene_name_3="empire_siege_001" />
@@ -3280,7 +3280,7 @@
   </Settlement>
   <Settlement id="castle_ML3" name="{=Settlements.Settlement.name.castle_ML3}Deinste" owner="Faction.middenland_clan_1" posX="1230.229" posY="1234.281" culture="Culture.empire" gate_posX="1230.175" gate_posY="1236.477" text="{=Settlements.Settlement.text.castle_ML3}This castle stands vigil along the Great Northern Road to and from the Wastelands, the garrison that patrols its walls often watch a wide range of traders, travellers. Pilgrims and more pass by on their way to and from the Capital. More importantly it safeguards against a tribe of forest goblins that have made the surrounding Drakwald their home. ">
     <Components>
-      <Town id="castle_comp_ML3" is_castle="true" level="3" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="empire_city_background" gate_rotation="0.908" prosperity="800" />
+      <Town id="castle_comp_ML3" is_castle="true" level="3" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="empire_castle" gate_rotation="0.908" prosperity="800" />
     </Components>
     <Locations complex_template="LocationComplexTemplate.castle_complex">
       <Location id="center" scene_name="TOR_empire_castle_03" scene_name_1="TOR_empire_castle_03" scene_name_2="TOR_empire_castle_03" scene_name_3="TOR_empire_castle_03" />
@@ -3554,7 +3554,7 @@
   </Settlement>
   <Settlement id="castle_OM1" name="{=Settlements.Settlement.name.castle_OM1}Essen" owner="Faction.ostermark_clan_1" posX="1633.003" posY="1039.08" culture="Culture.empire" gate_posX="1633.302" gate_posY="1038.165" text="{=Settlements.Settlement.text.castle_OM1}With the Dead wood lying in the west, the Eerie downs in the east and Hel fen to the south. It is often speculated that the dead walk with the living and ghosts roam the streets as often as any living man. The reality is much more grim, the town is under constant threat of being attacked by the undead or a stray chaos creature that wanders too far from the dead wood. The commoners living in Essen live out their meagre lives behind the walls while the militia, well versed in the culling of the undead, are constantly on patrol to preserve the lives of their loved ones.">
     <Components>
-      <Town id="castle_comp_OM1" is_castle="true" level="3" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="empire_city_background" gate_rotation="0.908" prosperity="800" />
+      <Town id="castle_comp_OM1" is_castle="true" level="3" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="empire_castle" gate_rotation="0.908" prosperity="800" />
     </Components>
     <Locations complex_template="LocationComplexTemplate.castle_complex">
       <Location id="center" scene_name="empire_castle_f" scene_name_1="empire_castle_f" scene_name_2="empire_castle_f" scene_name_3="empire_castle_f" />
@@ -3577,7 +3577,7 @@
   </Settlement>
   <Settlement id="castle_OM2" name="{=Settlements.Settlement.name.castle_OM2}Fortenhaf" owner="Faction.ostermark_clan_1" posX="1683.452" posY="1158.165" culture="Culture.empire" gate_posX="1682.7" gate_posY="1157.476" text="{=Settlements.Settlement.text.castle_OM2}An important strategic position both for protection against invasions and collecting revenues from crossing the river. Being so close to the northern border it is no surprise that many of Fortenhaf’s inhabitants are from Kislev, relations between the Imperials and the Kislevites are often cold at best, and many tavern brawls are broken up around nighttime. However, they both know one thing, if their home is threatened, they will stand shoulder to shoulder to defend it till their dying breath.">
     <Components>
-      <Town id="castle_comp_OM2" is_castle="true" level="3" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="empire_city_background" gate_rotation="0.908" prosperity="800" />
+      <Town id="castle_comp_OM2" is_castle="true" level="3" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="empire_castle" gate_rotation="0.908" prosperity="800" />
     </Components>
     <Locations complex_template="LocationComplexTemplate.castle_complex">
       <Location id="center" scene_name="TOR_empire_castle_03" scene_name_1="TOR_empire_castle_03" scene_name_2="TOR_empire_castle_03" scene_name_3="TOR_empire_castle_03" />
@@ -3791,7 +3791,7 @@
   </Settlement>
   <Settlement id="castle_HL1" name="{=Settlements.Settlement.name.castle_HL1}Fort Korve" owner="Faction.hochland_clan_1" posX="1485.25" posY="1153.28" culture="Culture.empire" gate_posX="1482.88" gate_posY="1153.907" text="{=Settlements.Settlement.text.castle_HL1}Just to the west of this castle stands the mighty Talabheim, just across the River Talabec. Much of the trade ships that sail the river can be seen from the castle walls, and the garrison is often called to patrol it’s shores.">
     <Components>
-      <Town id="castle_comp_HL1" is_castle="true" level="3" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="empire_city_background" gate_rotation="0.908" prosperity="800" />
+      <Town id="castle_comp_HL1" is_castle="true" level="3" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="empire_castle" gate_rotation="0.908" prosperity="800" />
     </Components>
     <Locations complex_template="LocationComplexTemplate.castle_complex">
       <Location id="center" scene_name="empire_castle_c" scene_name_1="empire_castle_c" scene_name_2="empire_castle_c" scene_name_3="empire_castle_c" />
@@ -3814,7 +3814,7 @@
   </Settlement>
   <Settlement id="castle_HL2" name="{=Settlements.Settlement.name.castle_HL2}Fort Schippel" owner="Faction.hochland_clan_1" posX="1424.193" posY="1180.031" culture="Culture.empire" gate_posX="1424.775" gate_posY="1180.813" text="{=Settlements.Settlement.text.castle_HL2}A lonely bastion overlooking the treacherous fens and hill country known as the Weiss Hills, it’s walls have seen and survived various sieges but stand resolute nontheless. It’s garrison numbers have lessened over the years but it’s no less able to safeguard its surroundings.">
     <Components>
-      <Town id="castle_comp_HL2" is_castle="true" level="3" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="empire_city_background" gate_rotation="0.908" prosperity="800" />
+      <Town id="castle_comp_HL2" is_castle="true" level="3" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="empire_castle" gate_rotation="0.908" prosperity="800" />
     </Components>
     <Locations complex_template="LocationComplexTemplate.castle_complex">
       <Location id="center" scene_name="empire_siege_001" scene_name_1="empire_siege_001" scene_name_2="empire_siege_001" scene_name_3="empire_siege_001" />
@@ -3850,7 +3850,7 @@
   </Settlement>
   <Settlement id="castle_HL3" name="{=Settlements.Settlement.name.castle_HL3}Fort Denkh" owner="Faction.hochland_clan_3" posX="1387.836" posY="1177.96" culture="Culture.empire" gate_posX="1387.637" gate_posY="1177.205" text="{=Settlements.Settlement.text.castle_HL3}Resting against the river Drakwasser and bordering Middenland, this fort oversees a myriad of surrounding villages in the hopes of safeguarding them, as there are many threats lurking within the forests and hills of Hochland.">
     <Components>
-      <Town id="castle_comp_HL3" is_castle="true" level="3" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="empire_city_background" gate_rotation="0.908" prosperity="800" />
+      <Town id="castle_comp_HL3" is_castle="true" level="3" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="empire_castle" gate_rotation="0.908" prosperity="800" />
     </Components>
     <Locations complex_template="LocationComplexTemplate.castle_complex">
       <Location id="center" scene_name="TOR_empire_castle_03" scene_name_1="TOR_empire_castle_03" scene_name_2="TOR_empire_castle_03" scene_name_3="TOR_empire_castle_03" />
@@ -4145,7 +4145,7 @@
   </Settlement>
   <Settlement id="castle_NL1" name="{=Settlements.Settlement.name.castle_NL1}Manannsheim" owner="Faction.nordland_clan_1" posX="1396.003" posY="1361.51" culture="Culture.empire" gate_posX="1396.101" gate_posY="1359.005" text="{=Settlements.Settlement.text.castle_NL1}Manannsheim is an Imperial fort situated on a small island in the Drosselspule Bay of Nordland. It is also home to the Monastery of the Order of the Triton. The fort is heavily armed with canons and trained Nordland mariners.">
     <Components>
-      <Town id="castle_comp_NL1" is_castle="true" level="3" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="empire_city_background" gate_rotation="0.908" prosperity="800" />
+      <Town id="castle_comp_NL1" is_castle="true" level="3" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="empire_castle" gate_rotation="0.908" prosperity="800" />
     </Components>
     <Locations complex_template="LocationComplexTemplate.castle_complex">
       <Location id="center" scene_name="TOR_empire_castle_002" scene_name_1="TOR_empire_castle_002" scene_name_2="TOR_empire_castle_002" scene_name_3="TOR_empire_castle_002" />
@@ -4432,7 +4432,7 @@
   </Settlement>
   <Settlement id="castle_OL1" name="{=Settlements.Settlement.name.castle_OL1}Bohsenfels" owner="Faction.ostland_clan_1" posX="1501.018" posY="1294.397" culture="Culture.empire" gate_posX="1501.469" gate_posY="1296.432" text="{=Settlements.Settlement.text.castle_OL1}Bohsenfels, also known as Little Middenheim, is a fortress-city located in the outer march of Ostland. It is built upon large rocks with caves and tunnels dug underneath, forming a subterranean labyrinth that allows the fortress to maintain enough supplies to hold out against a long siege.">
     <Components>
-      <Town id="castle_comp_OL1" is_castle="true" level="3" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="empire_city_background" gate_rotation="0.908" prosperity="800" />
+      <Town id="castle_comp_OL1" is_castle="true" level="3" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="empire_castle" gate_rotation="0.908" prosperity="800" />
     </Components>
     <Locations complex_template="LocationComplexTemplate.castle_complex">
       <Location id="center" scene_name="TOR_empire_castle_002" scene_name_1="TOR_empire_castle_002" scene_name_2="TOR_empire_castle_002" scene_name_3="TOR_empire_castle_002" />
@@ -4468,7 +4468,7 @@
   </Settlement>
   <Settlement id="castle_OL2" name="{=Settlements.Settlement.name.castle_OL2}Castle Lenkster" owner="Faction.ostland_clan_2" posX="1473.015" posY="1211.275" culture="Culture.empire" gate_posX="1470.772" gate_posY="1211.327" text="{=Settlements.Settlement.text.castle_OL2}Castle Lenkster is a fort overlooking a border crossing that leads through the Middle Mountains to Hochland. It is said that the mountains where it stands were once cursed by the last Dwarf priests of Karaz Ghumzul. It maintains a permanent garrison of Ostlander border guards.">
     <Components>
-      <Town id="castle_comp_OL2" is_castle="true" level="3" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="empire_city_background" gate_rotation="0.908" prosperity="800" />
+      <Town id="castle_comp_OL2" is_castle="true" level="3" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="empire_castle" gate_rotation="0.908" prosperity="800" />
     </Components>
     <Locations complex_template="LocationComplexTemplate.castle_complex">
       <Location id="center" scene_name="empire_castle_c" scene_name_1="empire_castle_c" scene_name_2="empire_castle_c" scene_name_3="empire_castle_c" />
@@ -4491,7 +4491,7 @@
   </Settlement>
   <Settlement id="castle_OL3" name="{=Settlements.Settlement.name.castle_OL3}Grenzburg" owner="Faction.ostland_clan_1" posX="1553.584" posY="1207.562" culture="Culture.empire" gate_posX="1553.379" gate_posY="1209.496" text="{=Settlements.Settlement.text.castle_OL3}The castle-town of Grenzburg is the monastic home of the Sigmarite cult of the Purging Hammer. It guards one of Ostland’s main southern roads into Kislev.">
     <Components>
-      <Town id="castle_comp_OL3" is_castle="true" level="3" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="empire_city_background" gate_rotation="0.908" prosperity="800" />
+      <Town id="castle_comp_OL3" is_castle="true" level="3" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="empire_castle" gate_rotation="0.908" prosperity="800" />
     </Components>
     <Locations complex_template="LocationComplexTemplate.castle_complex">
       <Location id="center" scene_name="empire_siege_001" scene_name_1="empire_siege_001" scene_name_2="empire_siege_001" scene_name_3="empire_siege_001" />
@@ -4540,7 +4540,7 @@
   </Settlement>
   <Settlement id="castle_OL4" name="{=Settlements.Settlement.name.castle_OL4}Roezfels" owner="Faction.ostland_clan_2" posX="1436.242" posY="1250.658" culture="Culture.empire" gate_posX="1438.081" gate_posY="1251.761" text="{=Settlements.Settlement.text.castle_OL4}The castle-town of Roezfels guards the western passes from Ostland through the Middle Mountains to Hochland. It has long been ruled by the staunchly traditionalist Margraves of the von Döbreiner noble house.">
     <Components>
-      <Town id="castle_comp_OL4" is_castle="true" level="3" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="empire_city_background" gate_rotation="0.908" prosperity="800" />
+      <Town id="castle_comp_OL4" is_castle="true" level="3" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="empire_castle" gate_rotation="0.908" prosperity="800" />
     </Components>
     <Locations complex_template="LocationComplexTemplate.castle_complex">
       <Location id="center" scene_name="TOR_empire_castle_03" scene_name_1="TOR_empire_castle_03" scene_name_2="TOR_empire_castle_03" scene_name_3="TOR_empire_castle_03" />
@@ -4895,7 +4895,7 @@
   </Settlement>
   <Settlement id="castle_WA2" name="{=Settlements.Settlement.name.castle_WA4}Fort Bergbres" owner="Faction.wasteland_clan_1" posX="1099.616" posY="1121.383" culture="Culture.empire" gate_posX="1099.085" gate_posY="1122.169" text="{=Settlements.Settlement.text.castle_WA4}Fort Bergbres demarcates the border between the Wasteland and Bretonnia. As part of a deal between the Duke of Gisoreux and Marienburg’s Directorate, the tolling station is operated by both the excise men of the Wasteland and Gisereux's roadwardens. Both the excise men and the roadwardens are tasked with seeing to the safe flow of trade through the Gisoreux gap and along the Bitter Moors, but they are notorious for inaction unless suitably ‘paid’ up-front, giving credence to the nickname ‘Fort Beg-Bribe.’ While the tolling station is neutral ground, the fort itself is just over the border in Marienburg’s favour, as such the wealthy city-state has maintained a formidable garrison here.">
     <Components>
-      <Town id="castle_comp_WA2" is_castle="true" level="3" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="empire_city_background" gate_rotation="0.908" prosperity="800" />
+      <Town id="castle_comp_WA2" is_castle="true" level="3" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="empire_castle" gate_rotation="0.908" prosperity="800" />
     </Components>
     <Locations complex_template="LocationComplexTemplate.castle_complex">
       <Location id="center" scene_name="empire_castle_c" scene_name_1="empire_castle_c" scene_name_2="empire_castle_c" scene_name_3="empire_castle_c" />
@@ -8151,7 +8151,7 @@
   </Settlement>
   <Settlement id="castle_AL1" name="{=Settlements.Settlement.name.castle_AL1}Vaul’s Anvil" owner="Faction.athel_loren_clan_11" posX="1190.645" posY="816.5811" culture="Culture.battania" gate_posX="1191.301" gate_posY="816.7258" text="{=Settlements.Settlement.text.castle_AL1}Torgovann, also known as the Forge of Starlight is a realm in the Forest of Loren ruled by Lord Daith. Torgovann is the only area within Athel Loren where fire is a sacred symbol. Both a temple and a forge, Vaul's Anvil is used every night to forge weapons. The local Forest Spirits are drawn to the raging fire, but keep their distance, for they know it to be extremely dangerous.">
     <Components>
-      <Town id="castle_comp_AL1" is_castle="true" level="3" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="empire_city_background" gate_rotation="0.908" prosperity="800" />
+      <Town id="castle_comp_AL1" is_castle="true" level="3" background_crop_position="0.0" background_mesh="we_halls" wait_mesh="we_halls" gate_rotation="0.908" prosperity="800" />
     </Components>
     <Locations complex_template="LocationComplexTemplate.castle_complex">
       <Location id="center" scene_name="empire_castle_c" scene_name_1="empire_castle_c" scene_name_2="empire_castle_c" scene_name_3="empire_castle_c" />
@@ -8174,7 +8174,7 @@
   </Settlement>
   <Settlement id="castle_AL2" name="{=Settlements.Settlement.name.castle_AL2}The Halls of Equos" owner="Faction.athel_loren_clan_6" posX="1208.409" posY="766.929" culture="Culture.battania" gate_posX="1207.738" gate_posY="766.899" text="{=Settlements.Settlement.text.castle_AL2}Cavaroc, the Skymark Reaches, is a High Realm of Athel Loren, ruled by Lord Edrael of Equos. It is the land of the meadow glades, the sparsely-wooded grassland plains that lie on Athel Loren's south border. The Elves of Cavaroc are horsemasters as fine as any in the world, and the first to march when the war-horns are sounded. They are swift to act, and swift to anger as well. it is all but a certainty that the Glade Riders of the Skymark Reaches will be found at the head of that mad charge.">
     <Components>
-      <Town id="castle_comp_AL2" is_castle="true" level="3" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="empire_city_background" gate_rotation="0.908" prosperity="800" />
+      <Town id="castle_comp_AL2" is_castle="true" level="3" background_crop_position="0.0" background_mesh="we_halls" wait_mesh="we_halls" gate_rotation="0.908" prosperity="800" />
     </Components>
     <Locations complex_template="LocationComplexTemplate.castle_complex">
       <Location id="center" scene_name="empire_siege_001" scene_name_1="empire_siege_001" scene_name_2="empire_siege_001" scene_name_3="empire_siege_001" />
@@ -8197,7 +8197,7 @@
   </Settlement>
   <Settlement id="castle_AL3" name="{=Settlements.Settlement.name.castle_AL3}Tal Enda Varian" owner="Faction.athel_loren_clan_4" posX="1216.944" posY="924.341" culture="Culture.battania" gate_posX="1217.577" gate_posY="924.5664" text="{=Settlements.Settlement.text.castle_AL3}Argwylon, or The Moonspring Glades is one of the twelve kingdoms of Athel Loren. It is ruled by Lord Thalandor Doomstar.The amount of magic in Argwylon far surpasses that of any other of the Forest's realms. Here, miracles and wonders are performed daily. This is one rare place in Athel Loren where records of history are kept, similar to those in Ulthuan. The elves here are also the only ones in Athel Loren that know the ancient tongue of the Eagles. However, Argwylon's elves are notoriously arrogant, and consider themselves superior to all other elves. It is a rare occurrence when an elf of another realm talks to an elf of Argwylon.">
     <Components>
-      <Town id="castle_comp_AL3" is_castle="true" level="3" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="empire_city_background" gate_rotation="0.908" prosperity="800" />
+      <Town id="castle_comp_AL3" is_castle="true" level="3" background_crop_position="0.0" background_mesh="we_halls" wait_mesh="we_halls" gate_rotation="0.908" prosperity="800" />
     </Components>
     <Locations complex_template="LocationComplexTemplate.castle_complex">
       <Location id="center" scene_name="empire_castle_c" scene_name_1="empire_castle_c" scene_name_2="empire_castle_c" scene_name_3="empire_castle_c" />
@@ -8233,7 +8233,7 @@
   </Settlement>
   <Settlement id="castle_AL4" name="{=Settlements.Settlement.name.castle_AL4}Tal Esth" owner="Faction.athel_loren_clan_5" posX="1278.498" posY="905.248" culture="Culture.battania" gate_posX="1277.859" gate_posY="905.4531" text="{=Settlements.Settlement.text.castle_AL4}Arranoc, also known as The Summerstrand is one of the twelve realms of Athel Loren. It is always summer in Arranoc, and in some parts night rarely falls. This causes the Forest Spirits in the Summerstrand to be especially strong. Arranoc is ruled by Amadri Ironbark, a former Wood Elf noble who later became a Tree Kin. Arranoc is under constant threat, because on its borders are the Vaults of Winter.">
     <Components>
-      <Town id="castle_comp_AL4" is_castle="true" level="3" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="empire_city_background" gate_rotation="0.908" prosperity="800" />
+      <Town id="castle_comp_AL4" is_castle="true" level="3" background_crop_position="0.0" background_mesh="we_halls" wait_mesh="we_halls" gate_rotation="0.908" prosperity="800" />
     </Components>
     <Locations complex_template="LocationComplexTemplate.castle_complex">
       <Location id="center" scene_name="empire_castle_f" scene_name_1="empire_castle_f" scene_name_2="empire_castle_f" scene_name_3="empire_castle_f" />
@@ -8256,7 +8256,7 @@
   </Settlement>
   <Settlement id="castle_AL5" name="{=Settlements.Settlement.name.castle_AL5}Tal Driacha" owner="Faction.athel_loren_clan_10" posX="1193.16" posY="933.504" culture="Culture.battania" gate_posX="1192.492" gate_posY="933.4398" text="{=Settlements.Settlement.text.castle_AL5}Anmyr, the Witherhold, is a High Realm of Athel Loren, ruled by Lady Tevaril and Lady Delynna. It is a realm in desperate decline. Many years ago, the foul Beastlord Morghur was slain in the heart of the region, and his blood corrupted the land for many leagues around. Ever since those days, the Wood Elves of Anmyr have been fighting a losing battle against Morghur's taint. Each year, the Beastmen warherds grow larger, increasing numbers of forest spirits are lost to madness and whole groves of trees wither and perish. In Athel Loren, the loss of even a single tree is a tragedy, so the ongoing legacy of Morghur's blood is cause for sorrow beyond words.">
     <Components>
-      <Town id="castle_comp_AL5" is_castle="true" level="3" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="empire_city_background" gate_rotation="0.908" prosperity="800" />
+      <Town id="castle_comp_AL5" is_castle="true" level="3" background_crop_position="0.0" background_mesh="we_halls" wait_mesh="we_halls" gate_rotation="0.908" prosperity="800" />
     </Components>
     <Locations complex_template="LocationComplexTemplate.castle_complex">
       <Location id="center" scene_name="empire_castle_f" scene_name_1="empire_castle_f" scene_name_2="empire_castle_f" scene_name_3="empire_castle_f" />
@@ -8292,7 +8292,7 @@
   </Settlement>
   <Settlement id="castle_AL6" name="{=Settlements.Settlement.name.castle_AL6}Tyr Vanna" owner="Faction.athel_loren_clan_7" posX="1283.237" posY="752.625" culture="Culture.battania" gate_posX="1282.737" gate_posY="753.0734" text="{=Settlements.Settlement.text.castle_AL6}Cythral, the Wildwood, is a High Realm of Athel Loren, ruled by Lady Draya the Nighthawk. Not all the spirits of Athel Loren dwell in harmony with the Elves. Even now, thousands of years after the first great council, there are those beings who actively seek the Elves' destruction. Some revel in malevolence purely for its own sake, others would war against the Elves with all the cunning and might at their command, were they free to do so. It was to guard against this threat that the first Wood Elves planted a fence of waystones in the southeast of Athel Loren, creating the Wildwood — a prison for the most malevolent of forest spirits. Tyr Vanna serves as the main stronghold of the Wildwood hosting a strong security and many look outs.">
     <Components>
-      <Town id="castle_comp_AL6" is_castle="true" level="3" background_crop_position="0.0" background_mesh="menu_empire_1" wait_mesh="empire_city_background" gate_rotation="0.908" prosperity="800" />
+      <Town id="castle_comp_AL6" is_castle="true" level="3" background_crop_position="0.0" background_mesh="we_halls" wait_mesh="we_halls" gate_rotation="0.908" prosperity="800" />
     </Components>
     <Locations complex_template="LocationComplexTemplate.castle_complex">
       <Location id="center" scene_name="empire_castle_f" scene_name_1="empire_castle_f" scene_name_2="empire_castle_f" scene_name_3="empire_castle_f" />
