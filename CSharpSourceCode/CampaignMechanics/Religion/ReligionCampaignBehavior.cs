@@ -86,8 +86,9 @@ namespace TOR_Core.CampaignMechanics.Religion
 
         private void HourlyPartyTick(MobileParty party)
         {
-            if(party.IsLordParty && party.IsActive && !party.IsDisbanding && party.CurrentSettlement != null && 
-                party.CurrentSettlement.IsTown && party.LeaderHero!=null && party.LeaderHero.GetPerkValue(TORPerks.Faith.Imperturbable))
+            if (party == null) return;
+            if (party.IsLordParty && party.IsActive && !party.IsDisbanding && party.CurrentSettlement != null &&
+                party.CurrentSettlement.IsTown && party.LeaderHero != null && party.LeaderHero.GetPerkValue(TORPerks.Faith.Imperturbable))
             {
                 party.LeaderHero.AddSkillXp(TORSkills.Faith, TORPerks.Faith.Imperturbable.PrimaryBonus / 24);
             }
