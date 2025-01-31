@@ -184,7 +184,7 @@ namespace TOR_Core.CharacterDevelopment.CareerSystem.Choices
             _inspirationOfTheLadyPassive3.Initialize(CareerID, "All Knight troops wages are reduced by 25%.", "InspirationOfTheLady", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(-25, PassiveEffectType.TroopWages, true, 
                 characterObject => !characterObject.IsHero && characterObject.IsKnightUnit()));
             _inspirationOfTheLadyPassive4.Initialize(CareerID, "10% Ward save if your armor weight does not exceed 11 weight.", "InspirationOfTheLady", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(PassiveEffectType.Resistance, new DamageProportionTuple(DamageType.All, 10), AttackTypeMask.All, 
-                 (attacker, victim, attackmask) => attacker.IsMainAgent && CareerChoicesHelper.ArmorWeightUndershootCheck(attacker,11)));
+                 (attacker, victim, attackmask) => attacker.IsMainAgent && CareerChoicesHelper.ArmorWeightCheck(attacker,11)));
 
             _talesOfGilesPassive1.Initialize(CareerID, "{=tales_of_giles_passive1_str}Increases max Winds of Magic by 10.", "TalesOfGiles", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(10, PassiveEffectType.WindsOfMagic));
             _talesOfGilesPassive2.Initialize(CareerID, "{=tales_of_giles_passive2_str}Bretonnian units receive 10% Ward save.", "TalesOfGiles", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(PassiveEffectType.TroopResistance, new DamageProportionTuple(DamageType.All, 10), AttackTypeMask.Spell,
@@ -200,7 +200,7 @@ namespace TOR_Core.CharacterDevelopment.CareerSystem.Choices
             _justCausePassive1.Initialize(CareerID, "Upgrade costs are halved.", "JustCause", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(-0.5f, PassiveEffectType.TroopUpgradeCost));
             _justCausePassive2.Initialize(CareerID, "Non-knight units in the party gain 100 XP every day.", "JustCause", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(100, PassiveEffectType.Special, false)); //CareerPerkCampaign Behavior 101
             _justCausePassive3.Initialize(CareerID, "Extra 15% Wardsave if your armor weight does not exceed 11 weight.", "JustCause", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(PassiveEffectType.Resistance, new DamageProportionTuple(DamageType.All, 15), AttackTypeMask.Spell,
-                (attacker, victim, attackmask) => attacker.IsMainAgent && CareerChoicesHelper.ArmorWeightUndershootCheck(attacker,11)));
+                (attacker, victim, attackmask) => attacker.IsMainAgent && CareerChoicesHelper.ArmorWeightCheck(attacker,11)));
             _justCausePassive4.Initialize(CareerID, "Increases positive Relation gains by 20%.", "JustCause", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(20, PassiveEffectType.Special, true)); //TorDiplomacy model 23
             
             _secretsOfTheGrailPassive1.Initialize(CareerID, "{=secrets_of_the_grail_Passive1_str}Increases lightning spell damage by 30%.", "SecretsOfTheGrail", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(PassiveEffectType.Damage, new DamageProportionTuple(DamageType.Lightning, 30), AttackTypeMask.Spell));

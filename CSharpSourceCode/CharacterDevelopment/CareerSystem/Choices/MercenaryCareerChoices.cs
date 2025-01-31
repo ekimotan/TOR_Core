@@ -298,13 +298,13 @@ namespace TOR_Core.CharacterDevelopment.CareerSystem.Choices
 
             _mercenaryLordPassive1.Initialize(CareerID, "4 extra special ammo like grenades or buckshot.", "MercenaryLord", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(4, PassiveEffectType.Special, false)); //TORAgentStatCalculateModel 97
             _mercenaryLordPassive2.Initialize(CareerID, "Increases the damage of all ranged troops by 15%.", "MercenaryLord", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(PassiveEffectType.TroopDamage, new DamageProportionTuple(DamageType.Physical, 15), AttackTypeMask.Ranged, 
-                (attacker, victim, mask) => !attacker.BelongsToMainParty() && !(attacker.IsMainAgent || attacker.IsHero)&& mask == AttackTypeMask.Ranged));
+                (attacker, victim, mask) => attacker.BelongsToMainParty() && !(attacker.IsMainAgent || attacker.IsHero)&& mask == AttackTypeMask.Ranged));
             _mercenaryLordPassive3.Initialize(CareerID, "Higher mercenary contract payment, lower Influence loss. Scales with the Trade skill.", "MercenaryLord", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(0, PassiveEffectType.Special, true)); // TOR_Core.Models.TORClanFinanceModel. 53
             _mercenaryLordPassive4.Initialize(CareerID, "Ranged shots can penetrate multiple targets.", "MercenaryLord", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(25, PassiveEffectType.Special)); //TORAgentApplyDamage 29
 
             _commanderPassive1.Initialize(CareerID, "Companion limit of party is increased by 5.", "Commander", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(5, PassiveEffectType.CompanionLimit));
             _commanderPassive2.Initialize(CareerID, "Increases the damage of all melee troops by 15%.", "Commander", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(PassiveEffectType.TroopDamage, new DamageProportionTuple(DamageType.Physical, 15), AttackTypeMask.Melee, 
-                (attacker, victim, mask) => !attacker.BelongsToMainParty() && !(attacker.IsMainAgent || attacker.IsHero)&& mask == AttackTypeMask.Ranged));
+                (attacker, victim, mask) => attacker.BelongsToMainParty() && !(attacker.IsMainAgent || attacker.IsHero)&& mask == AttackTypeMask.Melee));
             
             _commanderPassive3.Initialize(CareerID, "Hits below 15 damage do not stagger the player.", "Commander", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(25, PassiveEffectType.Special)); // Agent extension 83
             _commanderPassive4.Initialize(CareerID, "Companion health of party is increased by 25.", "Commander", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(25, PassiveEffectType.Special));

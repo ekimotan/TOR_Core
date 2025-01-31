@@ -270,7 +270,7 @@ namespace TOR_Core.CharacterDevelopment.CareerSystem.Choices
 
             _guiltyByAssociationPassive1.Initialize(CareerID, "Increases troop regeneration by 2.", "GuiltyByAssociation", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(2, PassiveEffectType.TroopRegeneration)); //TORAgentApplyDamage 29
             _guiltyByAssociationPassive2.Initialize(CareerID, "Every ranged troop deals 15% extra holy damage.", "GuiltyByAssociation", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(PassiveEffectType.TroopDamage, new DamageProportionTuple(DamageType.Holy, 10), AttackTypeMask.Ranged, 
-                (attacker, victim, mask) => attacker.BelongsToMainParty()&& attacker.IsMainAgent && mask == AttackTypeMask.Ranged)); 
+                (attacker, victim, mask) => attacker.BelongsToMainParty()&& !attacker.IsMainAgent && mask == AttackTypeMask.Ranged)); 
             
             _guiltyByAssociationPassive3.Initialize(CareerID, "Companions have 50 additional health points.", "GuiltyByAssociation", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(50, PassiveEffectType.Special));
             _guiltyByAssociationPassive4.Initialize(CareerID, "Killing blows in the head increase temporary reload & swing speed", "GuiltyByAssociation", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(5, PassiveEffectType.Special));

@@ -158,6 +158,17 @@ namespace TOR_Core.CharacterDevelopment
         private CareerChoiceGroupObject _wrathAgainstChaos;
         private CareerChoiceGroupObject _pathOfGlory;
         
+        
+        //Ironbreaker
+        
+        private CareerChoiceGroupObject _nestCleansing;
+        private CareerChoiceGroupObject _tunnelWatch;
+        private CareerChoiceGroupObject _ironPrice;
+        private CareerChoiceGroupObject _shieldWall;
+        private CareerChoiceGroupObject _ironDrakes;
+        private CareerChoiceGroupObject _gromrilArmor;
+        private CareerChoiceGroupObject _runeWeapons;
+        
         public TORCareerChoiceGroups()
         {
             Instance = this;
@@ -313,6 +324,14 @@ namespace TOR_Core.CharacterDevelopment
             _pathOfViligance = Game.Current.ObjectManager.RegisterPresumedObject(new CareerChoiceGroupObject(nameof(_pathOfViligance).UnderscoreFirstCharToUpper()));
             _wrathAgainstChaos = Game.Current.ObjectManager.RegisterPresumedObject(new CareerChoiceGroupObject(nameof(_wrathAgainstChaos).UnderscoreFirstCharToUpper()));
             _pathOfGlory = Game.Current.ObjectManager.RegisterPresumedObject(new CareerChoiceGroupObject(nameof(_pathOfGlory).UnderscoreFirstCharToUpper()));
+            
+            _nestCleansing = Game.Current.ObjectManager.RegisterPresumedObject(new CareerChoiceGroupObject(nameof(_nestCleansing).UnderscoreFirstCharToUpper()));
+            _tunnelWatch = Game.Current.ObjectManager.RegisterPresumedObject(new CareerChoiceGroupObject(nameof(_tunnelWatch).UnderscoreFirstCharToUpper()));
+            _ironPrice = Game.Current.ObjectManager.RegisterPresumedObject(new CareerChoiceGroupObject(nameof(_ironPrice).UnderscoreFirstCharToUpper()));
+            _shieldWall = Game.Current.ObjectManager.RegisterPresumedObject(new CareerChoiceGroupObject(nameof(_shieldWall).UnderscoreFirstCharToUpper()));
+            _ironDrakes = Game.Current.ObjectManager.RegisterPresumedObject(new CareerChoiceGroupObject(nameof(_ironDrakes).UnderscoreFirstCharToUpper()));
+            _gromrilArmor = Game.Current.ObjectManager.RegisterPresumedObject(new CareerChoiceGroupObject(nameof(_gromrilArmor).UnderscoreFirstCharToUpper()));
+            _runeWeapons = Game.Current.ObjectManager.RegisterPresumedObject(new CareerChoiceGroupObject(nameof(_runeWeapons).UnderscoreFirstCharToUpper()));
 
         }
 
@@ -977,8 +996,44 @@ namespace TOR_Core.CharacterDevelopment
                 text = "Required clan renown: 4";
                 return hero.Clan.Tier >= 4;
             });
+            
+            //Ironbreaker
+            _nestCleansing.Initialize("Nest Cleansing", TORCareers.Ironbreaker, 1, (Hero hero, out string text) =>
+            {
+                text = string.Empty;
+                return true;
+            });
+            _tunnelWatch.Initialize("Tunnel Watch", TORCareers.Ironbreaker, 1, (Hero hero, out string text) =>
+            {
+                text = string.Empty;
+                return true;
+            });
+            _ironPrice.Initialize("Iron Price", TORCareers.Ironbreaker, 2, (Hero hero, out string text) =>
+            {
+                text = string.Empty;
+                return hero.Clan.Tier >= 2;
+            });
+            _shieldWall.Initialize("Shield Wall", TORCareers.Ironbreaker, 2, (Hero hero, out string text) =>
+            {
+                text = "Required clan renown: 2";
+                return hero.Clan.Tier >= 2;
+            });
+            _ironDrakes.Initialize("Iron Drakes", TORCareers.Ironbreaker, 2, (Hero hero, out string text) =>
+            {
+                text = "Required clan renown: 2";
+                return hero.Clan.Tier >= 2;
+            });
+            _gromrilArmor.Initialize("Gromril Armor", TORCareers.Ironbreaker, 3, (Hero hero, out string text) =>
+            {
+                text = "Required clan renown: 4";
+                return hero.Clan.Tier >= 4;
+            });
+            _runeWeapons.Initialize("Rune Weapons", TORCareers.Ironbreaker, 3, (Hero hero, out string text) =>
+            {
+                text = "Required clan renown: 4";
+                return hero.Clan.Tier>= 4;
 
-
+            });
         }
     }
 }
