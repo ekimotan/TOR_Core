@@ -4443,7 +4443,7 @@
         <TriggeredEffect>apply_blastofagony</TriggeredEffect>
     </AbilityTemplate>
     <AbilityTemplate StringID="ArcaneConduit"
-                     Name="{=red_fury_label_str}Arcane Conduit"
+                     Name="{=arcane_conduit_label_str}Arcane Conduit"
                      SpriteName="arcaneconduit_icon"
                      CoolDown="120"
                      WindsOfMagicCost="0"
