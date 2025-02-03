@@ -67,6 +67,15 @@ namespace TOR_Core.Models
             return accuracy.ResultNumber;
         }
 
+        public override float GetKnockDownResistance(Agent agent, StrikeType strikeType)
+        {
+            if (agent.HasAttribute("Tubthumping"))
+            {
+                return 1;
+            }
+            return base.GetKnockDownResistance(agent, strikeType);
+        }
+
         public override void InitializeMissionEquipment(Agent agent)
         {
             if (agent.Origin is SummonedAgentOrigin) return;

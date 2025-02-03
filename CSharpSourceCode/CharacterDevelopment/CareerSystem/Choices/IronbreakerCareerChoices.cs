@@ -3,6 +3,7 @@ using System.Linq;
 using TaleWorlds.Core;
 using TOR_Core.AbilitySystem;
 using TOR_Core.BattleMechanics.DamageSystem;
+using TOR_Core.BattleMechanics.TriggeredEffect;
 using TOR_Core.CampaignMechanics.Choices;
 using TOR_Core.Extensions;
 using TOR_Core.Extensions.ExtendedInfoSystem;
@@ -18,43 +19,43 @@ public class IronbreakerCareerChoices(CareerObject id) : TORCareerChoicesBase(id
     private CareerChoiceObject _nestCleansingPassive2;
     private CareerChoiceObject _nestCleansingPassive3;
     private CareerChoiceObject _nestCleansingPassive4;
-    private CareerChoiceObject _nestCleansingPassive5;
+    private CareerChoiceObject _nestCleansingKeystone;
 
     private CareerChoiceObject _tunnelWatchPassive1;
     private CareerChoiceObject _tunnelWatchPassive2;
     private CareerChoiceObject _tunnelWatchPassive3;
     private CareerChoiceObject _tunnelWatchPassive4;
-    private CareerChoiceObject _tunnelWatchPassive5;
+    private CareerChoiceObject _tunnelWatchKeystone;
 
     private CareerChoiceObject _ironPricePassive1;
     private CareerChoiceObject _ironPricePassive2;
     private CareerChoiceObject _ironPricePassive3;
     private CareerChoiceObject _ironPricePassive4;
-    private CareerChoiceObject _ironPricePassive5;
+    private CareerChoiceObject _ironPriceKeystone;
 
     private CareerChoiceObject _shieldwallPassive1;
     private CareerChoiceObject _shieldwallPassive2;
     private CareerChoiceObject _shieldwallPassive3;
     private CareerChoiceObject _shieldwallPassive4;
-    private CareerChoiceObject _shieldwallPassive5;
+    private CareerChoiceObject _shieldwallKeystone;
 
     private CareerChoiceObject _ironDrakesPassive1;
     private CareerChoiceObject _ironDrakesPassive2;
     private CareerChoiceObject _ironDrakesPassive3;
     private CareerChoiceObject _ironDrakesPassive4;
-    private CareerChoiceObject _ironDrakesPassive5;
+    private CareerChoiceObject _ironDrakesKeystone;
 
     private CareerChoiceObject _gromrilArmorPassive1;
     private CareerChoiceObject _gromrilArmorPassive2;
     private CareerChoiceObject _gromrilArmorPassive3;
     private CareerChoiceObject _gromrilArmorPassive4;
-    private CareerChoiceObject _gromrilArmorPassive5;
+    private CareerChoiceObject _gromrilArmorKeystone;
 
     private CareerChoiceObject _runeWeaponsPassive1;
     private CareerChoiceObject _runeWeaponsPassive2;
     private CareerChoiceObject _runeWeaponsPassive3;
     private CareerChoiceObject _runeWeaponsPassive4;
-    private CareerChoiceObject _runeWeaponsPassive5;
+    private CareerChoiceObject _runeWeaponsKeystone;
 
 
 
@@ -70,8 +71,8 @@ public class IronbreakerCareerChoices(CareerObject id) : TORCareerChoicesBase(id
             Game.Current.ObjectManager.RegisterPresumedObject(new CareerChoiceObject(nameof(_nestCleansingPassive3).UnderscoreFirstCharToUpper()));
         _nestCleansingPassive4 =
             Game.Current.ObjectManager.RegisterPresumedObject(new CareerChoiceObject(nameof(_nestCleansingPassive4).UnderscoreFirstCharToUpper()));
-        _nestCleansingPassive5 =
-            Game.Current.ObjectManager.RegisterPresumedObject(new CareerChoiceObject(nameof(_nestCleansingPassive5).UnderscoreFirstCharToUpper()));
+        _nestCleansingKeystone =
+            Game.Current.ObjectManager.RegisterPresumedObject(new CareerChoiceObject(nameof(_nestCleansingKeystone).UnderscoreFirstCharToUpper()));
 
         _tunnelWatchPassive1 =
             Game.Current.ObjectManager.RegisterPresumedObject(new CareerChoiceObject(nameof(_tunnelWatchPassive1).UnderscoreFirstCharToUpper()));
@@ -81,8 +82,8 @@ public class IronbreakerCareerChoices(CareerObject id) : TORCareerChoicesBase(id
             Game.Current.ObjectManager.RegisterPresumedObject(new CareerChoiceObject(nameof(_tunnelWatchPassive3).UnderscoreFirstCharToUpper()));
         _tunnelWatchPassive4 =
             Game.Current.ObjectManager.RegisterPresumedObject(new CareerChoiceObject(nameof(_tunnelWatchPassive4).UnderscoreFirstCharToUpper()));
-        _tunnelWatchPassive5 =
-            Game.Current.ObjectManager.RegisterPresumedObject(new CareerChoiceObject(nameof(_tunnelWatchPassive5).UnderscoreFirstCharToUpper()));
+        _tunnelWatchKeystone =
+            Game.Current.ObjectManager.RegisterPresumedObject(new CareerChoiceObject(nameof(_tunnelWatchKeystone).UnderscoreFirstCharToUpper()));
 
         _ironPricePassive1 =
             Game.Current.ObjectManager.RegisterPresumedObject(new CareerChoiceObject(nameof(_ironPricePassive1).UnderscoreFirstCharToUpper()));
@@ -92,8 +93,8 @@ public class IronbreakerCareerChoices(CareerObject id) : TORCareerChoicesBase(id
             Game.Current.ObjectManager.RegisterPresumedObject(new CareerChoiceObject(nameof(_ironPricePassive3).UnderscoreFirstCharToUpper()));
         _ironPricePassive4 =
             Game.Current.ObjectManager.RegisterPresumedObject(new CareerChoiceObject(nameof(_ironPricePassive4).UnderscoreFirstCharToUpper()));
-        _ironPricePassive5 =
-            Game.Current.ObjectManager.RegisterPresumedObject(new CareerChoiceObject(nameof(_ironPricePassive5).UnderscoreFirstCharToUpper()));
+        _ironPriceKeystone =
+            Game.Current.ObjectManager.RegisterPresumedObject(new CareerChoiceObject(nameof(_ironPriceKeystone).UnderscoreFirstCharToUpper()));
 
         _shieldwallPassive1 =
             Game.Current.ObjectManager.RegisterPresumedObject(new CareerChoiceObject(nameof(_shieldwallPassive1).UnderscoreFirstCharToUpper()));
@@ -103,8 +104,8 @@ public class IronbreakerCareerChoices(CareerObject id) : TORCareerChoicesBase(id
             Game.Current.ObjectManager.RegisterPresumedObject(new CareerChoiceObject(nameof(_shieldwallPassive3).UnderscoreFirstCharToUpper()));
         _shieldwallPassive4 =
             Game.Current.ObjectManager.RegisterPresumedObject(new CareerChoiceObject(nameof(_shieldwallPassive4).UnderscoreFirstCharToUpper()));
-        _shieldwallPassive5 =
-            Game.Current.ObjectManager.RegisterPresumedObject(new CareerChoiceObject(nameof(_shieldwallPassive5).UnderscoreFirstCharToUpper()));
+        _shieldwallKeystone =
+            Game.Current.ObjectManager.RegisterPresumedObject(new CareerChoiceObject(nameof(_shieldwallKeystone).UnderscoreFirstCharToUpper()));
 
         _ironDrakesPassive1 =
             Game.Current.ObjectManager.RegisterPresumedObject(new CareerChoiceObject(nameof(_ironDrakesPassive1).UnderscoreFirstCharToUpper()));
@@ -114,8 +115,8 @@ public class IronbreakerCareerChoices(CareerObject id) : TORCareerChoicesBase(id
             Game.Current.ObjectManager.RegisterPresumedObject(new CareerChoiceObject(nameof(_ironDrakesPassive3).UnderscoreFirstCharToUpper()));
         _ironDrakesPassive4 =
             Game.Current.ObjectManager.RegisterPresumedObject(new CareerChoiceObject(nameof(_ironDrakesPassive4).UnderscoreFirstCharToUpper()));
-        _ironDrakesPassive5 =
-            Game.Current.ObjectManager.RegisterPresumedObject(new CareerChoiceObject(nameof(_ironDrakesPassive5).UnderscoreFirstCharToUpper()));
+        _ironDrakesKeystone =
+            Game.Current.ObjectManager.RegisterPresumedObject(new CareerChoiceObject(nameof(_ironDrakesKeystone).UnderscoreFirstCharToUpper()));
 
         _gromrilArmorPassive1 =
             Game.Current.ObjectManager.RegisterPresumedObject(new CareerChoiceObject(nameof(_gromrilArmorPassive1).UnderscoreFirstCharToUpper()));
@@ -125,8 +126,8 @@ public class IronbreakerCareerChoices(CareerObject id) : TORCareerChoicesBase(id
             Game.Current.ObjectManager.RegisterPresumedObject(new CareerChoiceObject(nameof(_gromrilArmorPassive3).UnderscoreFirstCharToUpper()));
         _gromrilArmorPassive4 =
             Game.Current.ObjectManager.RegisterPresumedObject(new CareerChoiceObject(nameof(_gromrilArmorPassive4).UnderscoreFirstCharToUpper()));
-        _gromrilArmorPassive5 =
-            Game.Current.ObjectManager.RegisterPresumedObject(new CareerChoiceObject(nameof(_gromrilArmorPassive5).UnderscoreFirstCharToUpper()));
+        _gromrilArmorKeystone =
+            Game.Current.ObjectManager.RegisterPresumedObject(new CareerChoiceObject(nameof(_gromrilArmorKeystone).UnderscoreFirstCharToUpper()));
 
         _runeWeaponsPassive1 =
             Game.Current.ObjectManager.RegisterPresumedObject(new CareerChoiceObject(nameof(_runeWeaponsPassive1).UnderscoreFirstCharToUpper()));
@@ -136,34 +137,150 @@ public class IronbreakerCareerChoices(CareerObject id) : TORCareerChoicesBase(id
             Game.Current.ObjectManager.RegisterPresumedObject(new CareerChoiceObject(nameof(_runeWeaponsPassive3).UnderscoreFirstCharToUpper()));
         _runeWeaponsPassive4 =
             Game.Current.ObjectManager.RegisterPresumedObject(new CareerChoiceObject(nameof(_runeWeaponsPassive4).UnderscoreFirstCharToUpper()));
-        _runeWeaponsPassive5 =
-            Game.Current.ObjectManager.RegisterPresumedObject(new CareerChoiceObject(nameof(_runeWeaponsPassive5).UnderscoreFirstCharToUpper()));
+        _runeWeaponsKeystone =
+            Game.Current.ObjectManager.RegisterPresumedObject(new CareerChoiceObject(nameof(_runeWeaponsKeystone).UnderscoreFirstCharToUpper()));
         
 
     }
 
     protected override void InitializeKeyStones()
     {
-        _ironbreakerRoot.Initialize(CareerID, "Adds a load for your next melee hit, adding 20% extra damage. For every point in one handed combat, your damage increases by 1% during the effect. The effect stays for a maximum of 15 seconds. For every keystone you get another use, enhancing your strike. Ability is charged by dealing melee damage. Attacks below 15 damage neither cost charges or apply effects", null, true,
+        _ironbreakerRoot.Initialize(CareerID, "The Character will not receive any damage for a short amount of time and will shrug any damage off. The movement speed is reduced by 25% though. The duration expands with growing athletics skill.", null, true,
             ChoiceType.Keystone, new List<CareerChoiceObject.MutationObject>()
             {
                 new CareerChoiceObject.MutationObject()
                 {
-                    MutationTargetType = typeof(AbilityTemplate),
-                    MutationTargetOriginalId = "KnightlyStrike",
-                    PropertyName = "ScaleVariable1",
+                    MutationTargetType = typeof(TriggeredEffectTemplate),
+                    MutationTargetOriginalId = "apply_impenetrable",
+                    PropertyName = "ImbuedStatusEffectDuration",
+                    PropertyValue = (choice, originalValue, agent) => 0.2f+ CareerHelper.AddSkillEffectToValue(choice, agent, new List<SkillObject>(){ DefaultSkills.Athletics }, 0.004f),
+                    MutationType = OperationType.Add
+                }
+            });
+        
+        _nestCleansingKeystone.Initialize(CareerID, "Immune to fire damage, explosives and knockback resistance during ability", "NestCleansing", false,
+            ChoiceType.Keystone, new List<CareerChoiceObject.MutationObject>()
+            {
+                new CareerChoiceObject.MutationObject()
+                {
+                    MutationTargetType = typeof(TriggeredEffectTemplate),
+                    MutationTargetOriginalId = "apply_impenetrable",
+                    PropertyName = "ImbuedStatusEffects",
+                    PropertyValue = (choice, originalValue, agent) => ((List<string>)originalValue).Concat(new[] { "impenetrable_fire_res" }).ToList(),
+                    MutationType = OperationType.Replace
+                },
+            });
+        
+        _tunnelWatchKeystone.Initialize(CareerID, "Scouting counts towards ability. Ability starts charged", "TunnelWatch", false,
+            ChoiceType.Keystone, new List<CareerChoiceObject.MutationObject>()
+            {
+                new CareerChoiceObject.MutationObject()
+                {
+                    MutationTargetType = typeof(TriggeredEffectTemplate),
+                    MutationTargetOriginalId = "apply_impenetrable",
+                    PropertyName = "ImbuedStatusEffectDuration",
+                    PropertyValue = (choice, originalValue, agent) => CareerHelper.AddSkillEffectToValue(choice, agent, new List<SkillObject>(){ DefaultSkills.Scouting }, 0.004f),
+                    MutationType = OperationType.Add
+                }
+            });
+        
+        _ironPriceKeystone.Initialize(CareerID, "Leadership counts towards Careerability. Charge ability by dealing damage", "IronPrice", false,
+            ChoiceType.Keystone, new List<CareerChoiceObject.MutationObject>()
+            {
+                new CareerChoiceObject.MutationObject()
+                {
+                    MutationTargetType = typeof(TriggeredEffectTemplate),
+                    MutationTargetOriginalId = "apply_impenetrable",
+                    PropertyName = "ImbuedStatusEffectDuration",
+                    PropertyValue = (choice, originalValue, agent) => 0.2f+ CareerHelper.AddSkillEffectToValue(choice, agent, new List<SkillObject>(){ DefaultSkills.Scouting }, 0.004f),
+                    MutationType = OperationType.Add
+                }
+            });
+        
+        _shieldwallKeystone.Initialize(CareerID, "Dwarfs in the immediate surrounding also benefit from effect. Scales with onehanded", "ShieldWall", false,
+            ChoiceType.Keystone, new List<CareerChoiceObject.MutationObject>()
+            {
+                new CareerChoiceObject.MutationObject()
+                {
+                    MutationTargetType = typeof(TriggeredEffectTemplate),
+                    MutationTargetOriginalId = "apply_impenetrable",
+                    PropertyName = "ImbuedStatusEffectDuration",
                     PropertyValue = (choice, originalValue, agent) => 0.2f+ CareerHelper.AddSkillEffectToValue(choice, agent, new List<SkillObject>(){ DefaultSkills.OneHanded }, 0.004f),
                     MutationType = OperationType.Add
                 }
             });
+        
+        _ironDrakesKeystone.Initialize(CareerID, "Dwarfs in the immediate surrounding also benefit from effect. Scales with onehanded", "IronDrake", false,
+            ChoiceType.Keystone, new List<CareerChoiceObject.MutationObject>()
+            {
+                new CareerChoiceObject.MutationObject()
+                {
+                    MutationTargetType = typeof(TriggeredEffectTemplate),
+                    MutationTargetOriginalId = "apply_impenetrable",
+                    PropertyName = "ImbuedStatusEffects",
+                    PropertyValue = (choice, originalValue, agent) => ((List<string>)originalValue).Concat(new[] { "impenetrable_rls" }).ToList(),
+                    MutationType = OperationType.Replace
+                },
+                new CareerChoiceObject.MutationObject()
+                {
+                MutationTargetType = typeof(TriggeredEffectTemplate),
+                MutationTargetOriginalId = "apply_impenetrable",
+                PropertyName = "ImbuedStatusEffectDuration",
+                PropertyValue = (choice, originalValue, agent) => 0.2f+ CareerHelper.AddSkillEffectToValue(choice, agent, new List<SkillObject>(){ TORSkills.GunPowder }, 0.004f),
+                MutationType = OperationType.Add
+            }
+            });
+        
+        _gromrilArmorKeystone.Initialize(CareerID, "Receiving damage during ability will stack upon, and add for each taken hit 0.5% physical resistance post ability.", "GromrilArmor", false,
+            ChoiceType.Keystone, new List<CareerChoiceObject.MutationObject>()
+            {
+                new CareerChoiceObject.MutationObject()
+                {
+                    MutationTargetType = typeof(TriggeredEffectTemplate),
+                    MutationTargetOriginalId = "apply_impenetrable",
+                    PropertyName = "ImbuedStatusEffects",
+                    PropertyValue = (choice, originalValue, agent) => ((List<string>)originalValue).Concat(new[] { "impenetrable_rls" }).ToList(),
+                    MutationType = OperationType.Replace
+                },
+                new CareerChoiceObject.MutationObject()
+                {
+                    MutationTargetType = typeof(TriggeredEffectTemplate),
+                    MutationTargetOriginalId = "apply_impenetrable",
+                    PropertyName = "ImbuedStatusEffectDuration",
+                    PropertyValue = (choice, originalValue, agent) => 0.2f+ CareerHelper.AddSkillEffectToValue(choice, agent, new List<SkillObject>(){ TORSkills.GunPowder }, 0.004f),
+                    MutationType = OperationType.Add
+                }
+            });
+        
+        _runeWeaponsKeystone.Initialize(CareerID, "For every taken hit during  your ability, physical damage is increased by 0.5% for the next 5 seconds", "RuneWeapons", false,
+            ChoiceType.Keystone, new List<CareerChoiceObject.MutationObject>()
+            {
+                new CareerChoiceObject.MutationObject()
+                {
+                    MutationTargetType = typeof(TriggeredEffectTemplate),
+                    MutationTargetOriginalId = "apply_impenetrable",
+                    PropertyName = "ImbuedStatusEffects",
+                    PropertyValue = (choice, originalValue, agent) => ((List<string>)originalValue).Concat(new[] { "impenetrable_rls" }).ToList(),
+                    MutationType = OperationType.Replace
+                },
+                new CareerChoiceObject.MutationObject()
+                {
+                    MutationTargetType = typeof(TriggeredEffectTemplate),
+                    MutationTargetOriginalId = "apply_impenetrable",
+                    PropertyName = "ImbuedStatusEffectDuration",
+                    PropertyValue = (choice, originalValue, agent) => 0.2f+ CareerHelper.AddSkillEffectToValue(choice, agent, new List<SkillObject>(){ TORSkills.GunPowder }, 0.004f),
+                    MutationType = OperationType.Add
+                }
+            });
+
     }
 
     protected override void InitializePassives()
     {
         _nestCleansingPassive1.Initialize(CareerID, "{=_tunnel_watch_passive1_str}Increases Hitpoints by 25.", "NestCleansing", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(25, PassiveEffectType.Health));
-        _nestCleansingPassive2.Initialize(CareerID, "{=_tunnel_watch_passive1_str}Increases Fire resistance by 25%.", "NestCleansing", false, ChoiceType.Passive, null,new CareerChoiceObject.PassiveEffect(PassiveEffectType.Resistance, new DamageProportionTuple(DamageType.Fire,25),AttackTypeMask.All));
-        _nestCleansingPassive3.Initialize(CareerID, "{=_tunnel_watch_passive1_str}CUSTOM", "NestCleansing", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(-25, PassiveEffectType.CustomResourceUpgradeCostModifier, true, characterObject => characterObject.HasAttribute("Knightly")));
-        _nestCleansingPassive4.Initialize(CareerID, "{=_tunnel_watch_passive1_str}CUSTOM", "NestCleansing", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(-25, PassiveEffectType.CustomResourceUpgradeCostModifier, true,
+        _nestCleansingPassive2.Initialize(CareerID, "{=_tunnel_watch_passive2_str}Increases Fire resistance by 25%.", "NestCleansing", false, ChoiceType.Passive, null,new CareerChoiceObject.PassiveEffect(PassiveEffectType.Resistance, new DamageProportionTuple(DamageType.Fire,25),AttackTypeMask.All));
+        _nestCleansingPassive3.Initialize(CareerID, "{=_tunnel_watch_passive3_str}CUSTOM", "NestCleansing", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(-25, PassiveEffectType.CustomResourceUpgradeCostModifier, true, characterObject => characterObject.HasAttribute("Knightly")));
+        _nestCleansingPassive4.Initialize(CareerID, "{=_tunnel_watch_passive4_str}CUSTOM", "NestCleansing", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(-25, PassiveEffectType.CustomResourceUpgradeCostModifier, true,
                 characterObject => characterObject.HasAttribute("Knightly")));
         
     _tunnelWatchPassive1.Initialize(CareerID, "{=tunnel_watch_passive1_str}Increases Hitpoints by 25.", "TunnelWatch", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(25, PassiveEffectType.Health));

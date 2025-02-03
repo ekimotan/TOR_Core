@@ -1971,4 +1971,65 @@
 	</StatusEffectTemplate>
 	
 	
+	<StatusEffectTemplate
+		id="impenetrable_invincible"
+		particle_id="black_knightly_charge_res"
+		do_not_attach_to_agent_skeleton="true"
+		base_effect_value="1"
+		applies_for_attack_type="All"
+		type="Resistance"
+		damage_type="Physical">
+	</StatusEffectTemplate>
+	
+	
+	<StatusEffectTemplate
+		id="impenetrable_attribute"
+		particle_id=""
+		do_not_attach_to_agent_skeleton="true"
+		applies_for_attack_type="All"
+		type="TemporaryAttributeOnly"
+		damage_type="Physical">
+		<temporary_attribute>Impenetrable</temporary_attribute>	
+	</StatusEffectTemplate>
+	
+	<StatusEffectTemplate
+		id="impenetrable_fire_res"
+		particle_id=""
+		do_not_attach_to_agent_skeleton="true"
+		base_effect_value="1"
+		applies_for_attack_type="All"
+		type="Resistance"
+		damage_type="Fire">
+		<temporary_attribute>Tubthumping</temporary_attribute>
+	</StatusEffectTemplate>
+	
+	<StatusEffectTemplate
+		id="impenetrable_rls"
+		particle_id=""
+		do_not_attach_to_agent_skeleton="true"
+		base_effect_value="0.25"
+		applies_for_attack_type="All"
+		type="ReloadSpeedManipulation"
+		damage_type="Fire">
+	</StatusEffectTemplate>
+	
+	<StatusEffectTemplate
+		id="impenetrable_res_buff"
+		particle_id=""
+		do_not_attach_to_agent_skeleton="true"
+		base_effect_value="0.05"
+		applies_for_attack_type="All"
+		type="Resistance"
+		damage_type="Physical">
+	</StatusEffectTemplate>
+	
+	<StatusEffectTemplate
+		id="impenetrable_dmg_buff"
+		particle_id=""
+		do_not_attach_to_agent_skeleton="true"
+		base_effect_value="0.05"
+		applies_for_attack_type="All"
+		type="DamageAmplification"
+		damage_type="Physical">
+	</StatusEffectTemplate>
 </StatusEffects>

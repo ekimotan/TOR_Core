@@ -1951,6 +1951,23 @@
                              TargetType="Enemy"
                              DamageVariance="0"
                              ScriptNameToTrigger="none" />
+							 
+							 
+    <TriggeredEffectTemplate StringID="apply_impenetrable"
+                             BurstParticleEffectPrefab="none"
+                             SoundEffectId="none"
+                             SoundEffectLength="0"
+                             DamageType="Invalid"
+                             DamageAmount="0"
+                             Radius="5"
+                             HasShockWave="false"
+                             TargetType="Self"
+                             ImbuedStatusEffectDuration="5"
+                             DamageVariance="0.0"
+                             ScriptNameToTrigger="none">
+        <ImbuedStatusEffect>impenetrable_invincible</ImbuedStatusEffect>
+		<ImbuedStatusEffect>impenetrable_attribute</ImbuedStatusEffect>
+    </TriggeredEffectTemplate>
     
 	<!-- Powerstones -->
     <TriggeredEffectTemplate StringID="powerstone_fire_trait"

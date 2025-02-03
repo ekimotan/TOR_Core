@@ -212,6 +212,20 @@ namespace TOR_Core.BattleMechanics
             }
         }
 
+        public override void OnMeleeHit(Agent attacker, Agent victim, bool isCanceled, AttackCollisionData collisionData)
+        {
+            
+            if (victim.BelongsToMainParty()&& Hero.MainHero.HasCareer(TORCareers.Ironbreaker) && victim.IsMainAgent && Hero.MainHero.HasCareerChoice("GromrilArmorKeystone"))
+            {
+                if(Agent.Main.HasAttribute("Impenetrable"))
+                {
+                    GromrilArmorBehavior();
+                }
+         
+            }
+            
+        }
+
         public override void OnAgentHit(Agent affectedAgent, Agent affectorAgent, in MissionWeapon affectorWeapon, in Blow blow, in AttackCollisionData attackCollisionData)
         {
             
@@ -223,10 +237,17 @@ namespace TOR_Core.BattleMechanics
                 WitchHunterAccusationBehavior(affectorAgent, affectedAgent, blow.InflictedDamage);
             }
             
+            
+            
             if(affectedAgent.HasAttribute("Thorns"))
             {
                 affectorAgent.ApplyDamage((int)(blow.InflictedDamage*0.25f),affectedAgent.Position);
             }
+        }
+
+        private void GromrilArmorBehavior()
+        {
+            CareerMissionVariables[0] += 1;
         }
         
         private void WitchHunterAccusationBehavior(Agent affectorAgent, Agent affectedAgent, int inflictedDamge)

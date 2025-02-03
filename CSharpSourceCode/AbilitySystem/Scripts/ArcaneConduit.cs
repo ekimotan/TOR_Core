@@ -23,8 +23,6 @@ namespace TOR_Core.AbilitySystem.Scripts
         private void Init()
         {
             var effects = GetEffectsToTrigger();
-
-            foreach (var effect in effects) TORCommon.Say(effect.ImbuedStatusEffectDuration + "");
             
             if (Hero.MainHero.HasCareerChoice("CollegeOrdersKeystone"))
             {
