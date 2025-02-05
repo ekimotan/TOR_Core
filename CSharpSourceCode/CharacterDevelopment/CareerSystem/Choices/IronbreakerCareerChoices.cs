@@ -289,10 +289,10 @@ public class IronbreakerCareerChoices(CareerObject id) : TORCareerChoicesBase(id
         (attacker, victim, mask) => attacker.IsMainAgent && mask == AttackTypeMask.Melee && victim.Character.Culture.StringId == "aserai"));
     _tunnelWatchPassive4.Initialize(CareerID, "{=tunnel_watch_passive4_str}10% extra melee damage.", "TunnelWatch", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(PassiveEffectType.Damage, new DamageProportionTuple(DamageType.Physical, 10), AttackTypeMask.Melee));
 
-    _ironPricePassive1.Initialize(CareerID, "Custom", "IronPrice", false, ChoiceType.Passive, null); // Agent extension 83,
-    _ironPricePassive2.Initialize(CareerID, "Custom.", "IronPrice", false, ChoiceType.Passive, null);
-    _ironPricePassive3.Initialize(CareerID, "custom resource upgrade costs for knights are reduced by 25%.", "IronPrice", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(-25, PassiveEffectType.CustomResourceUpgradeCostModifier, true, characterObject => characterObject.HasAttribute("Ironbreaker")));
-    _ironPricePassive4.Initialize(CareerID, "Custom.", "IronPrice", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(-25, PassiveEffectType.CustomResourceUpgradeCostModifier, true, characterObject => characterObject.HasAttribute("Knightly")));
+    _ironPricePassive1.Initialize(CareerID, "{=iron_price_passive1_str}Hits below 15 damage won't stagger", "IronPrice", false, ChoiceType.Passive, null);
+    _ironPricePassive2.Initialize(CareerID, "{=iron_price_passive2_str}Attacks deal bonus damage against shields.", "IronPrice", false, ChoiceType.Passive, null);
+    _ironPricePassive3.Initialize(CareerID, "{=iron_price_passive3_str}custom resource upgrade costs for Ironbreaker units are reduced by 25%.", "IronPrice", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(-25, PassiveEffectType.CustomResourceUpgradeCostModifier, true, characterObject => characterObject.HasAttribute("Ironbreaker")));
+    _ironPricePassive4.Initialize(CareerID, "{=iron_price_passive4_str}Custom.", "IronPrice", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(-25, PassiveEffectType.CustomResourceUpgradeCostModifier, true, characterObject => characterObject.HasAttribute("Knightly")));
 
     _shieldwallPassive1.Initialize(CareerID, "{=shield_wall_passive1_str}Increases Hitpoints by 25.", "ShieldWall", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(25, PassiveEffectType.Health));
     _shieldwallPassive2.Initialize(CareerID, "{=shield_wall_passive2_str}Onehanded combat skill for dwarf units is increased by 20", "ShieldWall", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(20, DefaultSkills.OneHanded, characterObject => characterObject.Culture.StringId == TORConstants.Cultures.EMPIRE));

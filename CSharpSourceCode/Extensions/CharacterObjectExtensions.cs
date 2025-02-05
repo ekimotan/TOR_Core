@@ -237,6 +237,11 @@ namespace TOR_Core.Extensions
             return characterObject.GetAttributes().Contains("Undead");
         }
 
+        public static bool IsIronbreakerUnit(this BasicCharacterObject characterObject)
+        {
+            return characterObject.IsSoldier && characterObject.Culture.StringId == TORConstants.Cultures.DAWI && characterObject.StringId.Contains("ironbreaker");
+        }
+
         public static bool IsVampire(this BasicCharacterObject characterObject)
         {
             return characterObject.Race == FaceGen.GetRaceOrDefault("vampire");

@@ -119,6 +119,8 @@ namespace TOR_Core.Extensions
                     return true;
                 if (choices.Contains("PathOfViligancePassive3"))
                     return true;
+                if (choices.Contains("IronPricePassive1"))
+                    return true;
             }
 
             if (Hero.MainHero.HasCareer(TORCareers.Necromancer))
@@ -134,12 +136,12 @@ namespace TOR_Core.Extensions
         {
             return agent.GetAttributes().Contains("ClearBloodBurst");
         }
-
+        
         public static bool IsVampire(this Agent agent)
         {
             return agent.Character != null ? agent.Character.IsVampire() : false;
         }
-
+        
         public static bool IsAbilityUser(this Agent agent)
         {
             return agent.GetAttributes().Contains("AbilityUser");

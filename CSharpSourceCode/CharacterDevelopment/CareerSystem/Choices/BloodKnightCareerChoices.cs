@@ -387,7 +387,7 @@ namespace TOR_Core.CharacterDevelopment.CareerSystem.Choices
                 characterObject => !characterObject.IsHero && characterObject.IsVampire() && characterObject.IsKnightUnit())); 
             _avatarOfDeathPassive3.Initialize(CareerID, "{=avatar_of_death_passive3_str}The player gains 35% Magic resistance against spells.", "AvatarOfDeath", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(PassiveEffectType.Resistance, new DamageProportionTuple(DamageType.Magical, 35), AttackTypeMask.Spell));
             _avatarOfDeathPassive4.Initialize(CareerID, "{=avatar_of_death_passive4_str}25% Ward save for all vampire units.", "AvatarOfDeath", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(PassiveEffectType.TroopResistance, new DamageProportionTuple(DamageType.All, 25), AttackTypeMask.Spell, 
-                (attacker, victim, mask) =>  !victim.BelongsToMainParty()&& victim.IsHero && victim.IsVampire()));
+                (attacker, victim, mask) =>  !victim.BelongsToMainParty()&& victim.IsHero && victim.Character.IsVampire()));
             
             _dreadKnightPassive1.Initialize(CareerID, "{=dread_knight_passive1_str}Increases Hitpoints by 75.", "DreadKnight", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(75, PassiveEffectType.Health));
             _dreadKnightPassive2.Initialize(CareerID, "{=dread_knight_passive2_str}Horse charge damage is increased by 50%.", "DreadKnight", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(50, PassiveEffectType.HorseChargeDamage, true));

@@ -137,6 +137,30 @@ namespace TOR_Core.Models
                                     equipment.SetAmountOfSlot(equipmentIndex, (short)result, true);
                                 }
                             }
+
+
+                            if (currentUsageItem.IsShield)
+                            {
+                                if ( agent == Agent.Main && Hero.MainHero.HasCareer(TORCareers.Ironbreaker) && Hero.MainHero.HasCareerChoice("ShieldwallPassive2"))
+                                {
+                                    int hitPoints = missionWeapon.HitPoints;
+
+                                    var smithingSkill = Hero.MainHero.GetSkillValue(DefaultSkills.Crafting);
+
+                                    hitPoints += (int) (smithingSkill *0.5f);
+
+                                    equipment.SetHitPointsOfSlot(equipmentIndex, (short) hitPoints, true);
+                                }
+                            }
+                        }
+                    }
+
+                    if (agent.Character.IsIronbreakerUnit())
+                    {
+                        if (Hero.MainHero.HasCareer(TORCareers.Ironbreaker) && Hero.MainHero.HasCareerChoice("NestCleansingPassive4"))
+                        {
+                            TORCommon.Say("Explosive Charge!");
+                            //TODO add explosives to the catalog.
                         }
                     }
                 }

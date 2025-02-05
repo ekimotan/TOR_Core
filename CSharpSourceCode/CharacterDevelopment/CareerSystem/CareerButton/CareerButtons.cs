@@ -32,6 +32,7 @@ namespace TOR_Core.CharacterDevelopment.CareerSystem.CareerButton
             _careerButtons.Add(TORCareers.ImperialMagister.StringId, new ImperialMagisterCareerButtonBehavior(TORCareers.ImperialMagister));
             _careerButtons.Add(TORCareers.Waywatcher.StringId, new WaywatcherCareerButtonBehavior(TORCareers.Waywatcher) );
             _careerButtons.Add(TORCareers.KnightOldWorld.StringId, new KnightOldWorldCareerButtonBehavior(TORCareers.KnightOldWorld));
+            _careerButtons.Add(TORCareers.Ironbreaker.StringId, new IronbreakerCareerButtonBehavior(TORCareers.Ironbreaker));
         }
 
         public CareerButtonBehaviorBase GetCareerButton(CareerObject careerObject)
