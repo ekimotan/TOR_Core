@@ -337,7 +337,8 @@ namespace TOR_Core.CharacterDevelopment.CareerSystem.Choices
         protected override void InitializePassives()
         {
             _curseOfMousillonPassive1.Initialize(CareerID, "Increases Hitpoints by 40.", "CurseOfMousillon", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(40, PassiveEffectType.Health));
-            _curseOfMousillonPassive2.Initialize(CareerID, "All Knight troops receive 30 bonus points in their Polearm skill.", "CurseOfMousillon", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(30, PassiveEffectType.Special)); //
+            _curseOfMousillonPassive2.Initialize(CareerID, "{=curse_of_mousillon_passive2_str}All Knight troops receive 30 bonus points in their Polearm skill.", "CurseOfMousillon", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(30, DefaultSkills.Polearm,
+                (characterObject) => characterObject.IsKnightUnit()));
             _curseOfMousillonPassive3.Initialize(CareerID, "Mousillon ranged troops gain 15% extra ranged damage.", "CurseOfMousillon", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(PassiveEffectType.TroopDamage, new DamageProportionTuple(DamageType.Physical, 15), AttackTypeMask.All,
                 (attacker, victim, mask) => attacker.BelongsToMainParty() && !attacker.IsHero && mask == AttackTypeMask.Ranged && attacker.Character.Culture.StringId == "mousillon" && attacker.Character.IsRanged));
             _curseOfMousillonPassive4.Initialize(CareerID, "Ill fated Knight Companions occasionally train Bretonnian Peasants to Mousillon Peasants.", "CurseOfMousillon", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(25, PassiveEffectType.Special)); //
@@ -346,7 +347,7 @@ namespace TOR_Core.CharacterDevelopment.CareerSystem.Choices
             _swampRiderPassive2.Initialize(CareerID, "10% extra melee damage while on horseback.", "SwampRider", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(PassiveEffectType.Damage, new DamageProportionTuple(DamageType.Physical, 10), AttackTypeMask.Melee,
                 (attacker, victim, mask) => attacker.IsMainAgent && mask == AttackTypeMask.Melee && attacker.HasMount));
             _swampRiderPassive3.Initialize(CareerID, "Every melee kill gives roguery XP.", "SwampRider", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(-25, PassiveEffectType.TroopUpgradeCost, true)); //
-            _swampRiderPassive4.Initialize(CareerID, "All Knight troops receive 20 bonus points in their One and Two-handed skill.", "SwampRider", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(20, PassiveEffectType.Special)); //
+            _swampRiderPassive4.Initialize(CareerID, "{=curse_of_mousillon_passive2_str}All Knight troops receive 20 bonus points in their One and Two-handed skill.", "SwampRider", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(20, new List<SkillObject>(){DefaultSkills.TwoHanded,DefaultSkills.OneHanded}, characterObject => characterObject.IsKnightUnit()));
 
             _unbreakableArmyPassive1.Initialize(CareerID, "All mousillon peasant troops wages are reduced by 75%.", "UnbreakableArmy", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(-75, PassiveEffectType.TroopWages, true,
                 characterObject => !characterObject.IsKnightUnit() && characterObject.Culture.StringId == "mousillon"));

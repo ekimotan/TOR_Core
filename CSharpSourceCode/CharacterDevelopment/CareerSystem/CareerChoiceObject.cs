@@ -2,6 +2,7 @@ using HarmonyLib;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using Ink.Runtime;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.Core;
@@ -162,12 +163,14 @@ namespace TOR_Core.CharacterDevelopment.CareerSystem
         public class PassiveEffect
         {
             public float EffectMagnitude = 0f;
+            public string TargetEffect ="";
             public OperationType Operation = OperationType.None;
             public PassiveEffectType PassiveEffectType = PassiveEffectType.Special;
             public bool InterpretAsPercentage = true;
             public bool WithFactorFlatSwitch;
             public DamageProportionTuple DamageProportionTuple;
             public AttackTypeMask AttackTypeMask = AttackTypeMask.Melee;
+            
             
             public delegate bool SpecialCombatInteractionFunction(Agent attacker, Agent victim, AttackTypeMask mask);
             private readonly SpecialCombatInteractionFunction _specialCombatInteractionFunction;
@@ -208,6 +211,27 @@ namespace TOR_Core.CharacterDevelopment.CareerSystem
                 PassiveEffectType = type;
                 _specialCharacterEvaluationFunction = function;
                 WithFactorFlatSwitch = withFactorFlatSwitch;
+            }
+
+            public PassiveEffect(float effectValue, SkillObject skillObject, SpecialCharacterEvaluationFunction function = null)
+            {
+                TargetEffect = skillObject.StringId;
+                EffectMagnitude = effectValue;
+                PassiveEffectType = PassiveEffectType.TroopSkill;
+                _specialCharacterEvaluationFunction = function;
+            }
+            
+            public PassiveEffect(float effectValue, List<SkillObject> skillObjects, SpecialCharacterEvaluationFunction function = null)
+            {
+                var concat = new StringBuilder();
+                foreach (var obj in skillObjects)
+                {
+                    concat.Append(obj.StringId);
+                }
+                TargetEffect = concat.ToString();
+                EffectMagnitude = effectValue;
+                PassiveEffectType = PassiveEffectType.TroopSkill;
+                _specialCharacterEvaluationFunction = function;
             }
         }
         
@@ -275,6 +299,7 @@ namespace TOR_Core.CharacterDevelopment.CareerSystem
         TroopUpgradeCost,
         Ammo,               //Player ammo , flat number
         SwingSpeed,
-        EquipmentWeightReduction
+        EquipmentWeightReduction,
+        TroopSkill          // adds for troops additional skill value
     }
 }

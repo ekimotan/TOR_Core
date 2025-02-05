@@ -235,10 +235,10 @@ namespace TOR_Core.CharacterDevelopment.CareerSystem.Choices
 
         protected override void InitializePassives()
         {
-            _toolsOfJudgementPassive1.Initialize(CareerID, "Increases Hitpoints by 25.", "ToolsOfJudgement", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(25, PassiveEffectType.Health));
-            _toolsOfJudgementPassive2.Initialize(CareerID, "5 extra ammo", "ToolsOfJudgement", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(5, PassiveEffectType.Ammo));
-            _toolsOfJudgementPassive3.Initialize(CareerID, "Extra melee damage (10%).", "ToolsOfJudgement", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(PassiveEffectType.Damage, new DamageProportionTuple(DamageType.Physical, 10), AttackTypeMask.Melee));
-            _toolsOfJudgementPassive4.Initialize(CareerID, "Every headshot kill gains you roguery, count twice for marked targets.", "ToolsOfJudgement", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(10,PassiveEffectType.Special,true));
+            _toolsOfJudgementPassive1.Initialize(CareerID, "{=tools_Of_judgement_passive1_str}Increases Hitpoints by 25.", "ToolsOfJudgement", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(25, PassiveEffectType.Health));
+            _toolsOfJudgementPassive2.Initialize(CareerID, "{=tools_Of_judgement_passive2_str}5 extra ammo", "ToolsOfJudgement", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(5, PassiveEffectType.Ammo));
+            _toolsOfJudgementPassive3.Initialize(CareerID, "{=tools_Of_judgement_passive3_str}Extra melee damage (10%).", "ToolsOfJudgement", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(PassiveEffectType.Damage, new DamageProportionTuple(DamageType.Physical, 10), AttackTypeMask.Melee));
+            _toolsOfJudgementPassive4.Initialize(CareerID, "{=tools_Of_judgement_passive4_str}Every headshot kill gains you roguery, count twice for marked targets.", "ToolsOfJudgement", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(10,PassiveEffectType.Special,true));
            
             _huntTheWickedPassive1.Initialize(CareerID, "Increases health regeneration after battles by 3.", "HuntTheWicked", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(5, PassiveEffectType.HealthRegeneration));
             _huntTheWickedPassive2.Initialize(CareerID, "Ranged Infantry wages are 15% reduced.", "HuntTheWicked", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(-15, PassiveEffectType.TroopWages,true, 
@@ -254,7 +254,8 @@ namespace TOR_Core.CharacterDevelopment.CareerSystem.Choices
             _silverHammerPassive4.Initialize(CareerID, "Troops can be upgraded to Witch Hunter Retinues.", "SilverHammer", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(10, PassiveEffectType.Special, true));          //TORAgentStatCalculateModel 458
 
             _noRestAgainstEvilPassive1.Initialize(CareerID, "Extra holy melee damage (20%).", "NoRestAgainstEvil", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(PassiveEffectType.Damage, new DamageProportionTuple(DamageType.Holy, 20), AttackTypeMask.Melee));
-            _noRestAgainstEvilPassive2.Initialize(CareerID, "All regular troops have 20 higher ranged and melee skill", "NoRestAgainstEvil", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(20, PassiveEffectType.Special, true));          //TORAgentStatCalculateModel 458
+            _noRestAgainstEvilPassive2.Initialize(CareerID, "All ranged troops have a 20 points higher ranged skill.", "NoRestAgainstEvil", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(20, new List<SkillObject>(){DefaultSkills.Bow,DefaultSkills.Crossbow,DefaultSkills.Throwing,TORSkills.GunPowder}, 
+                characterObject => !characterObject.IsHero && characterObject.IsRanged));
             _noRestAgainstEvilPassive3.Initialize(CareerID, "Increases accuracy by 15%.", "NoRestAgainstEvil", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(-15, PassiveEffectType.AccuracyPenalty, true));  
             _noRestAgainstEvilPassive4.Initialize(CareerID, "Increases Companion Limit by 5.", "NoRestAgainstEvil", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(5, PassiveEffectType.CompanionLimit));
             

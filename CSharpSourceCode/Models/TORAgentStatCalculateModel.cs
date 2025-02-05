@@ -173,69 +173,9 @@ namespace TOR_Core.Models
                     {
                         if (mobileParty.LeaderHero.HasAnyCareer())
                         {
-                            var choices = Agent.Main.GetHero().GetAllCareerChoices();
-
-                            if ((skill == DefaultSkills.OneHanded || skill == DefaultSkills.TwoHanded) && choices.Contains("ErrantryWarPassive3") && agent.Character.IsKnightUnit())
+                            if (!agent.IsMainAgent && !agent.Character.IsHero )
                             {
-                                var choice = TORCareerChoices.GetChoice("ErrantryWarPassive3");
-                                if (choice.Passive != null)
-                                    resultNumber.Add(choice.GetPassiveValue(), choice.BelongsToGroup.Name);
-                            }
-
-                            if ((skill == DefaultSkills.OneHanded || skill == DefaultSkills.TwoHanded) && choices.Contains("SwampRiderPassive4") && agent.Character.IsKnightUnit())
-                            {
-                                var choice = TORCareerChoices.GetChoice("SwampRiderPassive4");
-                                if (choice.Passive != null)
-                                    resultNumber.Add(choice.GetPassiveValue(), choice.BelongsToGroup.Name);
-                            }
-
-                            if (skill == DefaultSkills.Polearm && choices.Contains("EnhancedHorseCombatPassive4") && agent.Character.IsKnightUnit())
-                            {
-                                var choice = TORCareerChoices.GetChoice("EnhancedHorseCombatPassive4");
-                                if (choice.Passive != null)
-                                    resultNumber.Add(choice.GetPassiveValue(), choice.BelongsToGroup.Name);
-                            }
-                            
-                            if (skill == DefaultSkills.OneHanded || skill == DefaultSkills.TwoHanded && choices.Contains("SecularOrdersPassive2") && agent.Character.IsKnightUnit())
-                            {
-                                var choice = TORCareerChoices.GetChoice("SecularOrdersPassive2");
-                                if (choice.Passive != null)
-                                    resultNumber.Add(choice.GetPassiveValue(), choice.BelongsToGroup.Name);
-                            }
-                            
-                            if (skill == DefaultSkills.Polearm && choices.Contains("PathOfConquestPassive4") && agent.Character.IsKnightUnit())
-                            {
-                                var choice = TORCareerChoices.GetChoice("PathOfConquestPassive4");
-                                if (choice.Passive != null)
-                                    resultNumber.Add(choice.GetPassiveValue(), choice.BelongsToGroup.Name);
-                            }
-
-                            if (skill == DefaultSkills.Polearm && choices.Contains("CurseOfMousillonPassive2") && agent.Character.IsKnightUnit())
-                            {
-                                var choice = TORCareerChoices.GetChoice("CurseOfMousillonPassive2");
-                                if (choice.Passive != null)
-                                    resultNumber.Add(choice.GetPassiveValue(), choice.BelongsToGroup.Name);
-                            }
-
-                            if ((skill == DefaultSkills.OneHanded || skill == DefaultSkills.TwoHanded || skill == DefaultSkills.Polearm) && choices.Contains("NightRider2") && (agent.Character.IsUndead() || agent.Character.IsVampire()))
-                            {
-                                var choice = TORCareerChoices.GetChoice("NightRider2");
-                                if (choice.Passive != null)
-                                    resultNumber.Add(choice.GetPassiveValue(), choice.BelongsToGroup.Name);
-                            }
-
-                            if ((skill == DefaultSkills.Bow || skill == DefaultSkills.Throwing || skill == DefaultSkills.Crossbow || skill == TORSkills.GunPowder) && choices.Contains("NoRestAgainstEvilPassive2"))
-                            {
-                                var choice = TORCareerChoices.GetChoice("NoRestAgainstEvilPassive2");
-                                if (choice.Passive != null)
-                                    resultNumber.Add(choice.GetPassiveValue(), choice.BelongsToGroup.Name);
-                            }
-
-                            if (skill == DefaultSkills.Bow && choices.Contains("EyeOfTheHunterPassive3"))
-                            {
-                                var choice = TORCareerChoices.GetChoice("EyeOfTheHunterPassive3");
-                                if (choice.Passive != null)
-                                    resultNumber.Add(choice.GetPassiveValue(), choice.BelongsToGroup.Name);
+                                CareerHelper.ApplySkillBonusForTroops(ref resultNumber, skill, agent.Character);
                             }
                         }
                     }

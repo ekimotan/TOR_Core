@@ -204,6 +204,40 @@ namespace TOR_Core.CharacterDevelopment.CareerSystem
             }
         }
 
+        public static void ApplySkillBonusForTroops(ref ExplainedNumber resultNumber, SkillObject skillObject, BasicCharacterObject troopCharacterObject)
+        {
+            var choices = Hero.MainHero.GetAllCareerChoices();
+            
+            if (troopCharacterObject == null)
+            {
+                return;
+            }
+            
+            foreach (var choiceID in choices)
+            {
+                var choice = TORCareerChoices.GetChoice(choiceID);
+                
+                if (choice?.Passive == null || choice.Passive.PassiveEffectType != PassiveEffectType.TroopSkill) continue;
+
+                if (!choice.Passive.IsValidCharacterObject(troopCharacterObject as CharacterObject))
+                {
+                    continue;
+                }
+                
+                var skillEffectID = choice.Passive.TargetEffect;
+
+                if (!skillEffectID.Contains(skillObject.StringId))
+                {
+                    continue;
+                }
+                
+                var value = choice.Passive.EffectMagnitude;
+                
+                
+                resultNumber.Add(value, choice.BelongsToGroup.Name);
+            }
+        }
+
         public static float[] AddCareerPassivesForDamageValues(Agent attacker, Agent victim, AttackTypeMask attackTypeMask, PropertyMask mask)
         {
             var damageValues = new float[(int)DamageType.All + 1];
