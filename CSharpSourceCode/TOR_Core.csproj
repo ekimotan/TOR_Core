@@ -550,6 +550,7 @@
     <Compile Include="CharacterDevelopment\CareerAbilityChargeSupplier.cs" />
     <Compile Include="CharacterDevelopment\CareerSystem\CareerButton\BlackGrailKnightCareerButtonBehavior.cs" />
     <Compile Include="CharacterDevelopment\CareerSystem\CareerButton\CareerButtonBehaviorBase.cs" />
+    <Compile Include="CharacterDevelopment\CareerSystem\CareerButton\CareerButtonHelper.cs" />
     <Compile Include="CharacterDevelopment\CareerSystem\CareerButton\CareerButtons.cs" />
     <Compile Include="CharacterDevelopment\CareerSystem\CareerButton\GrailKnightCareerButtonBehavior.cs" />
     <Compile Include="CharacterDevelopment\CareerSystem\CareerButton\ImperialMagisterCareerButtonBehavior.cs" />
@@ -628,7 +629,6 @@
     <Compile Include="Extensions\UI\MissionConversationVMExtension.cs" />
     <Compile Include="Extensions\UI\PartyCharacterVMExtension.cs" />
     <Compile Include="Extensions\UI\PartyNameplateItemVMExtension.cs" />
-    <Compile Include="Extensions\UI\PartyScreenLogicExtension.cs" />
     <Compile Include="Extensions\UI\UnitEncyclopediaVMExtension.cs" />
     <Compile Include="Extensions\UI\ViewModelExtensionAttribute.cs" />
     <Compile Include="Extensions\UI\ViewModelExtensionManager.cs" />

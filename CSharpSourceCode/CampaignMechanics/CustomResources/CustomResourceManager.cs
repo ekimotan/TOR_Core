@@ -485,11 +485,15 @@ namespace TOR_Core.CampaignMechanics.CustomResources
 
                 if (requirement != null)
                 {
-                    Instance._resourceChanges.Add(new Tuple<string, int>(requirement.Item1.StringId,
-                        requirement.Item2 * command.TotalNumber));
+                    AddResourceChanges(requirement.Item1, requirement.Item2 * command.TotalNumber);
                     partyVM.GetExtensionInstance().RefreshValues();
                 }
             }
+        }
+
+        public static void AddResourceChanges(CustomResource resource, int amount)
+        {
+            Instance._resourceChanges.Add(new Tuple<string, int>(resource.StringId,amount));
         }
 
         public static Dictionary<CustomResource, int> GetPendingResources()

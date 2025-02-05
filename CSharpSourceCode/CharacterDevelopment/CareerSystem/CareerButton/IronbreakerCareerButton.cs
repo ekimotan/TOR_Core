@@ -1,10 +1,17 @@
-﻿using HarmonyLib;
+﻿using System.Collections.Generic;
+using System.Linq;
+using HarmonyLib;
+using SandBox.View.Map;
 using TaleWorlds.CampaignSystem;
+using TaleWorlds.CampaignSystem.GameMenus;
 using TaleWorlds.CampaignSystem.Party;
 using TaleWorlds.CampaignSystem.Roster;
+using TaleWorlds.Core;
 using TaleWorlds.Library;
+using TaleWorlds.LinQuick;
 using TaleWorlds.Localization;
 using TaleWorlds.ObjectSystem;
+using TaleWorlds.ScreenSystem;
 using TaleWorlds.TwoDimension;
 using TOR_Core.CampaignMechanics.CustomResources;
 using TOR_Core.Extensions;
@@ -15,52 +22,55 @@ namespace TOR_Core.CharacterDevelopment.CareerSystem.CareerButton;
 
 public class IronbreakerCareerButtonBehavior(CareerObject careerObject) : CareerButtonBehaviorBase(careerObject)
 {
-    private TroopRoster _copiedTroopRoster;
-    private const string _ironbreakerId = "tor_m_knight_of_misfortune";
-    private CharacterObject _originalTroop;
-    private CharacterObject _ironbreakerUnit;
-    private int _exchangeCost = 15;
-    private bool _isPrisoner;
+    private const string IronbreakerId = "tor_m_knight_of_misfortune";
+    private const int ExchangeCost = 15;
+
+    private static readonly List<CharacterObject> ResetCharacterObjects = [];
 
     public override void ButtonClickedEvent(CharacterObject characterObject, bool isPrisoner = false)
     {
-        var index = Hero.MainHero.PartyBelongedTo.MemberRoster.FindIndexOfTroop(characterObject);
+        CustomResourceManager.AddResourceChanges(Hero.MainHero.GetCultureSpecificCustomResource(),ExchangeCost);
+        PartyVMExtension.ViewModelInstance.RefreshValues();
+        
+        ResetCharacterObjects.Add(characterObject);
+        
+        var ironbreakerUnit = MBObjectManager.Instance.GetObject<CharacterObject>(IronbreakerId);
+        CareerButtonHelper.ExchangeUnitForNewUnit(characterObject, ironbreakerUnit, true);
+        
+        PartyScreenManager.PartyScreenLogic.PartyScreenClosedEvent += OnClose;
+        PartyScreenManager.PartyScreenLogic.AfterReset += AfterReset;
+    }
 
-        _ironbreakerUnit = MBObjectManager.Instance.GetObject<CharacterObject>(_ironbreakerId);
-        
-        TroopRosterElement unit = new TroopRosterElement(characterObject);
-        
-        int indexToInsertTroop = PartyVMExtension.ViewModelInstance.PartyScreenLogic.GetIndexToInsertTroop(PartyScreenLogic.PartyRosterSide.Right, PartyScreenLogic.TroopType.Member,unit);
-        PartyScreenLogic.PresentationUpdate update = PartyVMExtension.ViewModelInstance.PartyScreenLogic.UpdateDelegate;
-        PartyScreenLogic.PartyCommand command = new PartyScreenLogic.PartyCommand();
-        
-        
-         Hero.MainHero.PartyBelongedTo.MemberRoster.AddToCountsAtIndex(index, -1,0,0,false);
-         command.FillForRecruitTroop(PartyScreenLogic.PartyRosterSide.Right,PartyScreenLogic.TroopType.Member,characterObject,-1,indexToInsertTroop);
-         update(command); 
-         
-         
-         Hero.MainHero.PartyBelongedTo.MemberRoster.AddToCounts(_ironbreakerUnit, 1);
-         command.FillForRecruitTroop(PartyScreenLogic.PartyRosterSide.Right,PartyScreenLogic.TroopType.Member,_ironbreakerUnit,1,indexToInsertTroop);
-         update(command);
-        
-        
-        
-        
+    private void AfterReset(PartyScreenLogic partyscreenlogic, bool fromcancel)
+    {
+        ResetTroops();
+    }
 
-      //  PartyVMExtension.ViewModelInstance.PartyScreenLogic.DoneLogic(false);
+    private void OnClose(PartyBase leftownerparty, TroopRoster leftmemberroster, TroopRoster leftprisonroster, PartyBase rightownerparty, TroopRoster rightmemberroster, TroopRoster rightprisonroster, bool fromcancel)
+    {
+        if (fromcancel)
+        {
+            ResetTroops();
+        }
+        ResetCharacterObjects.Clear();      //just to be sure
         
-         
-        // command.FillForSortTroops(PartyScreenLogic.PartyRosterSide.Right,PartyScreenLogic.TroopSortType.Name,true);
+        PartyScreenManager.PartyScreenLogic.PartyScreenClosedEvent-=OnClose;
+        PartyScreenManager.PartyScreenLogic.AfterReset -= AfterReset;
+    }
 
-         
-
-         if (PartyVMExtension.ViewModelInstance != null)
-         {
-             PartyVMExtension.ViewModelInstance.RefreshValues();
-         }
-         
-         
+    private void ResetTroops()
+    {
+        if (ResetCharacterObjects.IsEmpty())
+        {
+            return;
+        }
+        
+        var ironbreakerUnit = MBObjectManager.Instance.GetObject<CharacterObject>(IronbreakerId);
+        foreach (var character in ResetCharacterObjects)
+        {
+            CareerButtonHelper.ExchangeUnitForNewUnit(ironbreakerUnit, character, false);
+        }
+        ResetCharacterObjects.Clear();
     }
 
     public override bool ShouldButtonBeVisible(CharacterObject characterObject, bool isPrisoner = false)
@@ -85,6 +95,15 @@ public class IronbreakerCareerButtonBehavior(CareerObject careerObject) : Career
     public override bool ShouldButtonBeActive(CharacterObject characterObject, out TextObject displayText, bool isPrisoner = false)
     {
         displayText = new TextObject();
+
+        var t = CustomResourceManager.GetPendingResources().Values.ToList().Sum();
+
+        if (Hero.MainHero.GetCultureSpecificCustomResourceValue() < t+ ExchangeCost)
+        {
+            displayText = new TextObject("Not enough resources");
+            return false;
+        }
+        
         var index = Hero.MainHero.PartyBelongedTo.MemberRoster.FindIndexOfTroop(characterObject);
 
         var number = Hero.MainHero.PartyBelongedTo.MemberRoster.GetElementNumber(characterObject);
