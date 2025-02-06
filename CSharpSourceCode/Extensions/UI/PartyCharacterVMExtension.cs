@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,12 +13,15 @@ using TaleWorlds.CampaignSystem.ViewModelCollection.Encyclopedia.Pages;
 using TaleWorlds.CampaignSystem.ViewModelCollection.Party;
 using TaleWorlds.Core;
 using TaleWorlds.Core.ViewModelCollection.Information;
+using TaleWorlds.Engine.InputSystem;
+using TaleWorlds.InputSystem;
 using TaleWorlds.Library;
 using TaleWorlds.Localization;
 using TaleWorlds.MountAndBlade;
 using TaleWorlds.ObjectSystem;
 using TaleWorlds.ScreenSystem;
 using TaleWorlds.TwoDimension;
+using TaleWorlds.TwoDimension.Standalone;
 using TOR_Core.BattleMechanics.DamageSystem;
 using TOR_Core.CampaignMechanics;
 using TOR_Core.CharacterDevelopment.CareerSystem;
@@ -110,7 +113,13 @@ namespace TOR_Core.Extensions.UI
         {
             var troop = ( (PartyCharacterVM)_vm ).Troop.Character;
             var isPrisoner = ( (PartyCharacterVM)_vm ).IsPrisonerOfPlayer;
-            SpecialbuttonEventManagerHandler.Instance.OnButtonClicked(troop,isPrisoner );
+            var shiftPress = false;
+
+            if (Input.IsKeyDown(InputKey.LeftShift))
+            {
+                shiftPress = true;
+            }
+            SpecialbuttonEventManagerHandler.Instance.OnButtonClicked(troop,isPrisoner, shiftPress);
         }
         
 

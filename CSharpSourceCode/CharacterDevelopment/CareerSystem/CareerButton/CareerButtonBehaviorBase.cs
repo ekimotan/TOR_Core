@@ -1,4 +1,4 @@
-﻿using TaleWorlds.CampaignSystem;
+using TaleWorlds.CampaignSystem;
 using TaleWorlds.Localization;
 using TOR_Core.CampaignMechanics;
 
@@ -14,7 +14,7 @@ namespace TOR_Core.CharacterDevelopment.CareerSystem.CareerButton
             isDialogStart = false;
         }
 
-        public delegate void OnCareerButtonClickedEvent(CharacterObject troopID, bool isPrisoner);
+        public delegate void OnCareerButtonClickedEvent(CharacterObject troopID, bool isPrisoner,bool isShiftClick);
 
         public delegate bool OnShouldButtonBeVisible(CharacterObject characterObject, bool isPrisoner);
 
@@ -31,10 +31,10 @@ namespace TOR_Core.CharacterDevelopment.CareerSystem.CareerButton
             SpecialbuttonEventManagerHandler.Instance.RegisterNewButton(this);
         }
         
-        public abstract void ButtonClickedEvent(CharacterObject characterObject, bool isPrisoner = false);
+        public abstract void ButtonClickedEvent(CharacterObject characterObject, bool isPrisoner, bool shiftClick);
 
-        public abstract bool ShouldButtonBeVisible(CharacterObject characterObject, bool isPrisoner = false);
+        public abstract bool ShouldButtonBeVisible(CharacterObject characterObject, bool isPrisoner);
 
-        public abstract bool ShouldButtonBeActive(CharacterObject characterObject, out TextObject displayText, bool isPrisoner = false);
+        public abstract bool ShouldButtonBeActive(CharacterObject characterObject, out TextObject displayText, bool isPrisoner);
     }
 }

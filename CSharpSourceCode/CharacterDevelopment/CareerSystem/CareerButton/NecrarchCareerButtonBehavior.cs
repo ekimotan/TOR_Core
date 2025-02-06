@@ -15,7 +15,7 @@ namespace TOR_Core.CharacterDevelopment.CareerSystem.CareerButton
         {
         }
 
-        public override void ButtonClickedEvent(CharacterObject characterObject, bool isPrisoner = false)
+        public override void ButtonClickedEvent(CharacterObject characterObject, bool isPrisoner = false, bool shiftClick = false)
         {
             Hero.MainHero.AddCustomResource("WindsOfMagic", gainForClick);
             Hero.MainHero.AddCustomResource("DarkEnergy", -_costForClick);

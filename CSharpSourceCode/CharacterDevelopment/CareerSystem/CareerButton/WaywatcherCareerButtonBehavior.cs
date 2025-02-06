@@ -71,7 +71,7 @@ public class WaywatcherCareerButtonBehavior : CareerButtonBehaviorBase
         MBTextManager.SetTextVariable("STARFIRESHAFT_ICON", string.Format("<img src=\"{0}\"/>", _starfireShaftsIcon));
     }
 
-    public override void ButtonClickedEvent(CharacterObject characterObject, bool isPrisoner = false)
+    public override void ButtonClickedEvent(CharacterObject characterObject, bool isPrisoner = false, bool shiftClicked=false)
     {
         _setCharacter = characterObject;
         var list = new List<InquiryElement>();

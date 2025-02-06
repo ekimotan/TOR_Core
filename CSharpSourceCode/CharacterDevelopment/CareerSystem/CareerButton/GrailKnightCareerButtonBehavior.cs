@@ -54,7 +54,7 @@ namespace TOR_Core.CharacterDevelopment.CareerSystem.CareerButton
             MobileParty.MainParty.MemberRoster.AddToCountsAtIndex(MobileParty.MainParty.MemberRoster.FindIndexOfTroop(_currentCharacterTemplate), -1);
         }
         
-        public override void ButtonClickedEvent(CharacterObject characterObject, bool isPrisoner=false)
+        public override void ButtonClickedEvent(CharacterObject characterObject, bool isPrisoner=false, bool shiftClick=false)
         {
             InitiateDialog(characterObject.StringId);
         }

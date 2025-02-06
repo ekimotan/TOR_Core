@@ -25,7 +25,7 @@ public class KnightOldWorldCareerButtonBehavior(CareerObject career) : CareerBut
     private readonly string _manaanSealIcon = "CareerSystem\\manaan";
     private CharacterObject _setCharacter;
 
-    public override void ButtonClickedEvent(CharacterObject characterObject, bool isPrisoner = false)
+    public override void ButtonClickedEvent(CharacterObject characterObject, bool isPrisoner = false, bool shiftClick = false)
     {
         _setCharacter = characterObject;
         

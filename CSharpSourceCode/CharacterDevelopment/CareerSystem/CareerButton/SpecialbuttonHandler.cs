@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using TaleWorlds.CampaignSystem;
@@ -54,11 +54,11 @@ namespace TOR_Core.CampaignMechanics
             }
         }
         
-        public void OnButtonClicked(CharacterObject troopID, bool isPrisoner)
+        public void OnButtonClicked(CharacterObject troopID, bool isPrisoner, bool shiftPress)
         {
             if (_clickEvent != null)
             {
-                _clickEvent.Invoke(troopID, isPrisoner);
+                _clickEvent.Invoke(troopID, isPrisoner, shiftPress);
             }
         }
 
