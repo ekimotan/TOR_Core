@@ -25,24 +25,26 @@ public class IronbreakerCareerButtonBehavior(CareerObject careerObject) : Career
     private const string IronbreakerId = "tor_m_knight_of_misfortune";
     private const int ExchangeCost = 15;
 
-    private static readonly List<CharacterObject> ResetCharacterObjects = [];
-
     public override void ButtonClickedEvent(CharacterObject characterObject, bool isPrisoner, bool shiftClick)
     {
         var ironbreakerUnit = MBObjectManager.Instance.GetObject<CharacterObject>(IronbreakerId);
         if (shiftClick)
         {
             
-            var affordable = 1;//maximum affordable
+            var buyable = 1;//maximum affordable
+            var count = Hero.MainHero.PartyBelongedTo.MemberRoster.GetElementNumber(characterObject);
             var pending = CustomResourceManager.GetPendingResources().Values.ToList().Sum();
             var rest = Hero.MainHero.GetCultureSpecificCustomResourceValue() - pending;
 
 
-            affordable = (int)(( rest / ExchangeCost >= 5) ? 5 : rest / ExchangeCost);
             
-            for (int i = 0; i < affordable; i++)
+            
+            buyable = (int)(( rest / ExchangeCost >= 5) ? 5 : rest / ExchangeCost);
+            
+            buyable = MathF.Min(buyable, count);
+            
+            for (int i = 0; i < buyable; i++)
             {
-                ResetCharacterObjects.Add(characterObject);
                 CustomResourceManager.AddResourceChanges(Hero.MainHero.GetCultureSpecificCustomResource(),ExchangeCost);
                 CareerButtonHelper.ExchangeUnitForNewUnit(characterObject, ironbreakerUnit, true);
                 
@@ -51,52 +53,10 @@ public class IronbreakerCareerButtonBehavior(CareerObject careerObject) : Career
         else
         {
             CustomResourceManager.AddResourceChanges(Hero.MainHero.GetCultureSpecificCustomResource(),ExchangeCost);
-            ResetCharacterObjects.Add(characterObject);
             CareerButtonHelper.ExchangeUnitForNewUnit(characterObject, ironbreakerUnit, true);
         }
         
         PartyVMExtension.ViewModelInstance.RefreshValues();
-        
-        PartyScreenManager.PartyScreenLogic.PartyScreenClosedEvent += OnClose;
-        PartyScreenManager.PartyScreenLogic.AfterReset += AfterReset;
-    }
-
-    private void AfterReset(PartyScreenLogic partyscreenlogic, bool fromcancel)
-    {
-        if (!fromcancel)
-        {
-          //  ResetTroops();
-        }
-        PartyScreenManager.PartyScreenLogic.AfterReset -= AfterReset;
-    }
-
-    private void OnClose(PartyBase leftownerparty, TroopRoster leftmemberroster, TroopRoster leftprisonroster, PartyBase rightownerparty, TroopRoster rightmemberroster, TroopRoster rightprisonroster, bool fromcancel)
-    {
-        if (fromcancel)
-        {
-           // ResetTroops();
-        }
-        ResetCharacterObjects.Clear();      //just to be sure
-        
-        PartyScreenManager.PartyScreenLogic.PartyScreenClosedEvent-=OnClose;
-        
-    }
-
-    private void ResetTroops()
-    {
-        if (ResetCharacterObjects.IsEmpty())
-        {
-            return;
-        }
-        
-        TORCommon.Say("hello Reset troops");
-        
-        var ironbreakerUnit = MBObjectManager.Instance.GetObject<CharacterObject>(IronbreakerId);
-        foreach (var character in ResetCharacterObjects)
-        {
-            CareerButtonHelper.ExchangeUnitForNewUnit(ironbreakerUnit, character, false);
-        }
-        ResetCharacterObjects.Clear();
     }
 
     public override bool ShouldButtonBeVisible(CharacterObject characterObject, bool isPrisoner = false)
