@@ -2773,7 +2773,7 @@
       <EquipmentSet id="tor_chaos_pugulist_template" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_chaos_undivided_warrior" default_group="infantry" level="36" name="{=str_tor_chaos_undivided_warrior}Undivided Chaos Warrior" occupation="Soldier" culture="Culture.chaos_culture" skill_template="SkillSet.tor_skills_level36" race="marauder">
+  <NPCCharacter id="tor_chaos_undivided_warrior" default_group="infantry" level="36" name="{=str_tor_chaos_undivided_warrior}Chaos Warrior" occupation="Soldier" culture="Culture.chaos_culture" skill_template="SkillSet.tor_skills_level36" race="marauder">
     <face>
       <face_key_template value="BodyProperty.undivided_cultist" />
     </face>
@@ -2838,7 +2838,7 @@
       <EquipmentSet id="tor_chaos_tzeench_warrior_template" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_chaos_undivided_knight" default_group="cavalry" level="46" name="{=str_tor_chaos_undivided_knight}Undivided Chaos Knight" occupation="Soldier" culture="Culture.chaos_culture" skill_template="SkillSet.tor_skills_level46" race="marauder">
+  <NPCCharacter id="tor_chaos_undivided_knight" default_group="cavalry" level="46" name="{=str_tor_chaos_undivided_knight}Chaos Knight" occupation="Soldier" culture="Culture.chaos_culture" skill_template="SkillSet.tor_skills_level46" race="marauder">
     <face>
       <face_key_template value="BodyProperty.undivided_cultist" />
     </face>
@@ -2959,7 +2959,7 @@
       <EquipmentSet id="tor_beast_ungor_raider_template" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_beast_ungor_chief" default_group="infantry" level="21" name="{=str_tor_beast_ungor_chief}Ungor Chief" occupation="Bandit" culture="Culture.steppe_bandits" skill_template="SkillSet.tor_skills_level21" race="ungor">
+  <NPCCharacter id="tor_beast_ungor_chief" default_group="infantry" level="21" name="{=str_tor_beast_ungor_chief}Ungor Halfhorn" occupation="Bandit" culture="Culture.steppe_bandits" skill_template="SkillSet.tor_skills_level21" race="ungor">
     <face>
       <face_key_template value="BodyProperty.ungor" />
     </face>
@@ -2981,7 +2981,7 @@
       <EquipmentSet id="tor_beast_gor_template" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_beast_gor_foerender" default_group="infantry" level="31" name="{=str_tor_beast_gor_foerender}Gor Foe render" occupation="Bandit" culture="Culture.steppe_bandits" skill_template="SkillSet.tor_skills_level31" race="gor">
+  <NPCCharacter id="tor_beast_gor_foerender" default_group="infantry" level="31" name="{=str_tor_beast_gor_foerender}Gor Foe-render" occupation="Bandit" culture="Culture.steppe_bandits" skill_template="SkillSet.tor_skills_level31" race="gor">
     <face>
       <face_key_template value="BodyProperty.ungor" />
     </face>

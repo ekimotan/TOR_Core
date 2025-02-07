@@ -2312,9 +2312,13 @@
   </CharacterExtendedInfo>
   <CharacterExtendedInfo id="tor_chaos_slaanesh_warrior">
     <Abilities />
-    <Attributes />
+    <Attributes>
+      <string>Piercing</string>
+    </Attributes>
     <Resistances />
-    <DamageAmplifiers />
+    <DamageAmplifiers>
+      <AmplifierTuple AmplifiedDamageType="Physical" DamageAmplifier="0.50" />
+    </DamageAmplifiers>
     <DamageProportions>
       <DamageProportionTuple DamageType="Physical" Percent="1.00" />
     </DamageProportions>
@@ -2322,8 +2326,12 @@
   <CharacterExtendedInfo id="tor_chaos_khorne_warrior">
     <Abilities />
     <Attributes />
-    <Resistances />
-    <DamageAmplifiers />
+    <Resistances>
+      <ResistanceTuple ResistedDamageType="Magical" ReductionPercent="0.50" />
+    </Resistances>
+    <DamageAmplifiers>
+      <AmplifierTuple AmplifiedDamageType="Physical" DamageAmplifier="0.25" />
+    </DamageAmplifiers>
     <DamageProportions>
       <DamageProportionTuple DamageType="Physical" Percent="1.00" />
     </DamageProportions>
@@ -2331,7 +2339,9 @@
   <CharacterExtendedInfo id="tor_chaos_nurgle_warrior">
     <Abilities />
     <Attributes />
-    <Resistances />
+    <Resistances>
+      <ResistanceTuple ResistedDamageType="Physical" ReductionPercent="0.40" />
+    </Resistances>
     <DamageAmplifiers />
     <DamageProportions>
       <DamageProportionTuple DamageType="Physical" Percent="1.00" />
@@ -2340,10 +2350,15 @@
   <CharacterExtendedInfo id="tor_chaos_tzeench_warrior">
     <Abilities />
     <Attributes />
-    <Resistances />
-    <DamageAmplifiers />
+    <Resistances>
+      <ResistanceTuple ResistedDamageType="All" ReductionPercent="0.15" />
+    </Resistances>
+    <DamageAmplifiers>
+      <AmplifierTuple AmplifiedDamageType="Magical" DamageAmplifier="0.50" />
+    </DamageAmplifiers>
     <DamageProportions>
-      <DamageProportionTuple DamageType="Physical" Percent="1.00" />
+      <DamageProportionTuple DamageType="Physical" Percent="0.75" />
+      <DamageProportionTuple DamageType="Magical" Percent="0.25" />
     </DamageProportions>
   </CharacterExtendedInfo>
   <CharacterExtendedInfo id="tor_chaos_undivided_knight">
@@ -6469,9 +6484,16 @@
     </Attributes>
   </CharacterExtendedInfo>
   <CharacterExtendedInfo id="tor_chaos_lord_brasskeep_factionleader">
-    <Abilities />
+    <Abilities>
+      <string>PurpleSun</string>
+      <string>FateOfBjuna</string>
+      <string>CaressOfLaniph</string>
+      <string>SpiritLeech</string>
+    </Abilities>
     <Attributes>
       <string>Brasskeep</string>
+      <string>AbilityUser</string>
+      <string>SpellCaster</string>
     </Attributes>
   </CharacterExtendedInfo>
   <CharacterExtendedInfo id="tor_chaos_lord_brasskeep_first_2">
@@ -6493,9 +6515,16 @@
     </Attributes>
   </CharacterExtendedInfo>
   <CharacterExtendedInfo id="tor_chaos_lord_brasskeep_first_5">
-    <Abilities />
+    <Abilities>
+      <string>PurpleSun</string>
+      <string>FateOfBjuna</string>
+      <string>CaressOfLaniph</string>
+      <string>SpiritLeech</string>
+    </Abilities>
     <Attributes>
       <string>Brasskeep</string>
+      <string>AbilityUser</string>
+      <string>SpellCaster</string>
     </Attributes>
   </CharacterExtendedInfo>
   <CharacterExtendedInfo id="tor_chaos_lord_brasskeep_first_6">
