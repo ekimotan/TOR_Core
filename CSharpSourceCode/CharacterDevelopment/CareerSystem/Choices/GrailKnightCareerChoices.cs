@@ -337,7 +337,7 @@ namespace TOR_Core.CharacterDevelopment.CareerSystem.Choices
         {
             _errantryWarPassive1.Initialize(CareerID, "{=errantry_war_passive1_str}10% extra melee damage.", "ErrantryWar", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(PassiveEffectType.Damage, new DamageProportionTuple(DamageType.Physical, 10), AttackTypeMask.Melee)); //
             _errantryWarPassive2.Initialize(CareerID, "{=errantry_war_passive2_str}Increases Hitpoints by 40.", "ErrantryWar", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(40, PassiveEffectType.Health)); // 
-            _errantryWarPassive3.Initialize(CareerID, "{=errantry_war_passive3_str}All Knight troops receive 20 bonus points in One and Two Handed skills.", "ErrantryWar", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(20, new List<SkillObject>{DefaultSkills.OneHanded,DefaultSkills.TwoHanded}, 
+            _errantryWarPassive3.Initialize(CareerID, "{=errantry_war_passive3_str}All Knight troops receive 20 bonus points in One and Two Handed skills.", "ErrantryWar", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(20, new List<string>{nameof(DefaultSkills.OneHanded),nameof(DefaultSkills.TwoHanded)}, 
                 characterObject => characterObject.IsKnightUnit())); //
             _errantryWarPassive4.Initialize(CareerID, "{=errantry_war_passive4_str}All melee troops in the party gain 25 exp per day.", "ErrantryWar", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(25, PassiveEffectType.Special)); //
 
@@ -346,7 +346,7 @@ namespace TOR_Core.CharacterDevelopment.CareerSystem.Choices
                 (attacker, victim, mask) => attacker.IsMainAgent&& mask == AttackTypeMask.Melee && attacker.HasMount));
             
             _enhancedHorseCombatPassive3.Initialize(CareerID, "{=enhanced_horse_combat_passive3_str}Upgrade costs are reduced by 25%.", "EnhancedHorseCombat", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(-25, PassiveEffectType.TroopUpgradeCost, true)); //
-            _enhancedHorseCombatPassive4.Initialize(CareerID, "{=enhanced_horse_combat_passive4_str}All Knight troops receive 30 bonus points in their Polearm skill.", "EnhancedHorseCombat", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(30, DefaultSkills.Polearm,
+            _enhancedHorseCombatPassive4.Initialize(CareerID, "{=enhanced_horse_combat_passive4_str}All Knight troops receive 30 bonus points in their Polearm skill.", "EnhancedHorseCombat", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(30, nameof(DefaultSkills.Polearm),
                 (characterObject) => characterObject.IsKnightUnit()));
 
             _questingVowPassive1.Initialize(CareerID, "{=questing_vow_passive1_str}Increases Hitpoints by 40.", "QuestingVow", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(40, PassiveEffectType.Health)); //

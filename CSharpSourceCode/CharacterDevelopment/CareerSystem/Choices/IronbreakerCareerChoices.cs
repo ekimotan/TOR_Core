@@ -295,7 +295,7 @@ public class IronbreakerCareerChoices(CareerObject id) : TORCareerChoicesBase(id
     _ironPricePassive4.Initialize(CareerID, "{=iron_price_passive4_str}Custom.", "IronPrice", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(-25, PassiveEffectType.CustomResourceUpgradeCostModifier, true, characterObject => characterObject.HasAttribute("Knightly")));
 
     _shieldwallPassive1.Initialize(CareerID, "{=shield_wall_passive1_str}Increases Hitpoints by 25.", "ShieldWall", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(25, PassiveEffectType.Health));
-    _shieldwallPassive2.Initialize(CareerID, "{=shield_wall_passive2_str}Onehanded combat skill for dwarf units is increased by 20", "ShieldWall", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(20, DefaultSkills.OneHanded, characterObject => characterObject.Culture.StringId == TORConstants.Cultures.EMPIRE));
+    _shieldwallPassive2.Initialize(CareerID, "{=shield_wall_passive2_str}Onehanded combat skill for dwarf units is increased by 20", "ShieldWall", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(20, nameof(DefaultSkills.OneHanded), characterObject => characterObject.Culture.StringId == TORConstants.Cultures.EMPIRE));
 
     _shieldwallPassive3.Initialize(CareerID, "{=shield_wall_passive3_str}20% physical resistance while wearing a shield.", "ShieldWall", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(PassiveEffectType.Resistance, new DamageProportionTuple(DamageType.Physical, 20), AttackTypeMask.All,
         (attacker, victim, mask) => mask == AttackTypeMask.Melee && victim.IsMainAgent && victim.WieldedOffhandWeapon.IsShield() ));

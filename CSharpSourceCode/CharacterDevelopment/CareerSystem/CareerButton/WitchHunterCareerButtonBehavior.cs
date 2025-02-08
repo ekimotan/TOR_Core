@@ -7,119 +7,43 @@ using TaleWorlds.Core;
 using TaleWorlds.Localization;
 using TaleWorlds.ObjectSystem;
 using TaleWorlds.TwoDimension;
+using TOR_Core.CampaignMechanics.CustomResources;
 using TOR_Core.Extensions;
 using TOR_Core.Utilities;
 
 namespace TOR_Core.CharacterDevelopment.CareerSystem.CareerButton
 {
-    public class WitchHunterCareerButtonBehavior : CareerButtonBehaviorBase
+    public class WitchHunterCareerButtonBehavior(CareerObject career) : CareerButtonBehaviorBase(career)
     {
-        private TroopRoster copiedTroopRoster;
+        private const int ExchangeCost = 3;
 
-        private CharacterObject originalTroop;
-        private CharacterObject _retinue;
-        private int level;
+        private const int GoldCost = 250;
 
-        private int retinueCost = 3;
-
-        private const string retinueID = "tor_wh_retinue";
+        private const string RetinueId = "tor_wh_retinue";
 
         public override string CareerButtonIcon => "CareerSystem\\ghal_maraz";
-
-        public WitchHunterCareerButtonBehavior(CareerObject career) : base(career)
-        {
-        }
-
-        public void SetUpRetinueExchange(CharacterObject characterTemplate)
-        {
-            originalTroop = characterTemplate;
-            level = characterTemplate.Level;
-            var index = Hero.MainHero.PartyBelongedTo.MemberRoster.FindIndexOfTroop(characterTemplate);
-            
-            var healthyTroops= Hero.MainHero.PartyBelongedTo.MemberRoster.GetElementNumber(index);
-            var woundedTroops = Hero.MainHero.PartyBelongedTo.MemberRoster.GetElementWoundedNumber(index);
-            
-            var count = healthyTroops - woundedTroops;
-            
-            var value = Hero.MainHero.GetCustomResourceValue("Prestige");
-            
-            var canAfford = (int) value/retinueCost;
-
-            var availableRetinues = (int) Mathf.Min(count, canAfford);
-            
-            _retinue = MBObjectManager.Instance.GetObject<CharacterObject>(retinueID);
-
-            if (_retinue != null)
-            {
-                var roster = TroopRoster.CreateDummyTroopRoster();
-                roster.AddToCounts(_retinue, availableRetinues);
-                copiedTroopRoster = TroopRoster.CreateDummyTroopRoster();
-                foreach (var elem in Hero.MainHero.PartyBelongedTo.MemberRoster.ToFlattenedRoster())
-                {
-                    if (!elem.Troop.IsHero)
-                    {
-                        copiedTroopRoster.AddToCounts(elem.Troop, 1,false,0,elem.Xp,true);
-                        Hero.MainHero.PartyBelongedTo.MemberRoster.RemoveTroop(elem.Troop);
-                    }
-                }
-                copiedTroopRoster.RemoveZeroCounts();
-                PartyScreenManager.OpenScreenAsReceiveTroops(roster, new TextObject("Witch Hunter Retinues"), AddRetinuesAndCalculateXPGain);
-            }
-        }
-
-        private void AddRetinuesAndCalculateXPGain(PartyBase leftownerparty, TroopRoster leftmemberroster, TroopRoster leftPrisonRoster, PartyBase rightownerparty, TroopRoster rightmemberroster, TroopRoster rightprisonroster, bool fromcancel)
-        {
-            //TODO rework, needs a bit more love
-            var count = rightmemberroster.TotalManCount - rightmemberroster.TotalHeroes;
-            if (count >= 0)
-            {
-                rightownerparty.MemberRoster.Add(copiedTroopRoster);
-                rightownerparty.AddMember(originalTroop, -count);
-                
-                Hero.MainHero.AddCustomResource("Prestige", - retinueCost*count);
-
-
-                var retinues = rightownerparty.MobileParty.MemberRoster.ToFlattenedRoster().ToList();
-                retinues = retinues.Where(x => x.Troop.StringId.Contains(retinueID)).ToList();
-                
-                var xpGain = CalculateXPGainForRetinues(count, level, retinues);
-                if (xpGain >= 0)
-                {
-                    foreach (var retinue in rightownerparty.MobileParty.MemberRoster.GetTroopRoster().Where(x=> x.Character.StringId.Contains(retinueID)))
-                    {
-                        if (retinue.Character.UpgradeTargets.Length <= 0) continue;
-                        MobileParty.MainParty.MemberRoster.AddXpToTroop(xpGain * retinue.Number, retinue.Character);
-                    }
-                }
-                
-            }
-            
-            _retinue = null;
-            Game.Current.GameStateManager.PopState();
-        }
-
-        private int CalculateXPGainForRetinues(int unitCount, int level, List<FlattenedTroopRosterElement> retinues)
-        {
-            var retinueCount = retinues.Count;
-            foreach (var elem in retinues)
-            {
-                if (elem.Troop.UpgradeTargets.Length > 0)
-                {
-                    if (elem.Troop.GetUpgradeXpCost(PartyBase.MainParty, 0)<=0)
-                    {
-                        retinueCount--;
-                    }
-                }
-            }
-            
-            if (retinueCount <= 0) return 0;
-
-            return ( 15 * level * unitCount ) / retinueCount;
-        }
         
         public override void ButtonClickedEvent(CharacterObject characterObject, bool isPrisoner=false, bool shiftClick=false)
         {
-            SetUpRetinueExchange(characterObject);
+            var witchHunterRetinue = MBObjectManager.Instance.GetObject<CharacterObject>(RetinueId);
+
+            if (shiftClick)
+            {
+                var affordable = CareerButtonHelper.GetMaximumExchangeTroops(characterObject, false, 5, 250, ExchangeCost);
+
+                for (int i = 0; i < affordable; i++)
+                {
+                    CustomResourceManager.AddResourceChanges(Hero.MainHero.GetCultureSpecificCustomResource(),ExchangeCost);
+                    PartyScreenManager.PartyScreenLogic.CurrentData.PartyGoldChangeAmount -= GoldCost;
+                    CareerButtonHelper.ExchangeUnitForNewUnit(characterObject, witchHunterRetinue, true);
+                }
+            }
+            else
+            {
+                CustomResourceManager.AddResourceChanges(Hero.MainHero.GetCultureSpecificCustomResource(),ExchangeCost);
+                PartyScreenManager.PartyScreenLogic.CurrentData.PartyGoldChangeAmount -= GoldCost;
+                CareerButtonHelper.ExchangeUnitForNewUnit(characterObject, witchHunterRetinue, true);
+            }
         }
 
         public override bool ShouldButtonBeVisible(CharacterObject characterObject, bool isPrisoner)
@@ -133,9 +57,7 @@ namespace TOR_Core.CharacterDevelopment.CareerSystem.CareerButton
             
             if (!Hero.MainHero.HasCareerChoice("SilverHammerPassive4")) return false;
 
-            if (Hero.MainHero.GetCustomResourceValue("Prestige") < retinueCost) return false;
-
-            if (characterObject.StringId.Contains(retinueID))
+            if (characterObject.StringId.Contains(RetinueId))
                 return false;
 
             if (!characterObject.IsHero)
@@ -171,6 +93,14 @@ namespace TOR_Core.CharacterDevelopment.CareerSystem.CareerButton
             {
                 displayText = new TextObject("Needs to be part of the empire or southern realms");
                 return false;
+            }
+            
+            
+            var pendingResources = CustomResourceManager.GetPendingResources();
+            if (!pendingResources.IsEmpty()&& pendingResources[Hero.MainHero.GetCultureSpecificCustomResource()] + ExchangeCost > Hero.MainHero.GetCultureSpecificCustomResourceValue())
+            {
+                displayText = new TextObject("Requires atleast " + ExchangeCost + " " + CustomResourceManager.GetResourceObject("DarkEnergy").GetCustomResourceIconAsText());
+                return false; 
             }
 
             return true;

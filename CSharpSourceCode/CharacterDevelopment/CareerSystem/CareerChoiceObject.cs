@@ -213,20 +213,20 @@ namespace TOR_Core.CharacterDevelopment.CareerSystem
                 WithFactorFlatSwitch = withFactorFlatSwitch;
             }
 
-            public PassiveEffect(float effectValue, SkillObject skillObject, SpecialCharacterEvaluationFunction function = null)
+            public PassiveEffect(float effectValue, string skillId, SpecialCharacterEvaluationFunction function = null)
             {
-                TargetEffect = skillObject.StringId;
+                TargetEffect = skillId;
                 EffectMagnitude = effectValue;
                 PassiveEffectType = PassiveEffectType.TroopSkill;
                 _specialCharacterEvaluationFunction = function;
             }
             
-            public PassiveEffect(float effectValue, List<SkillObject> skillObjects, SpecialCharacterEvaluationFunction function = null)
+            public PassiveEffect(float effectValue, List<string> skillObjectIDs, SpecialCharacterEvaluationFunction function = null)
             {
                 var concat = new StringBuilder();
-                foreach (var obj in skillObjects)
+                foreach (var obj in skillObjectIDs)
                 {
-                    concat.Append(obj.StringId);
+                    concat.Append(obj);
                 }
                 TargetEffect = concat.ToString();
                 EffectMagnitude = effectValue;

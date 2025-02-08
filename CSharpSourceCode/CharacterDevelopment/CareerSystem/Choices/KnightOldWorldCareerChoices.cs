@@ -226,7 +226,7 @@ public class KnightOldWorldCareerChoices(CareerObject id) : TORCareerChoicesBase
     {
         _secularOrdersPassive1.Initialize(CareerID, "{=secular_orders_passive1_str}custom resource upgrade costs for knights are reduced by 25%.", "SecularOrders", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(-25, PassiveEffectType.CustomResourceUpgradeCostModifier, true, 
             characterObject => characterObject.HasAttribute("Knightly")));
-        _secularOrdersPassive2.Initialize(CareerID, "{=secular_orders_passive2_str}All Knight troops receive 20 bonus points in their One and Two-handed skill.", "SecularOrders", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(20, new List<SkillObject>(){DefaultSkills.TwoHanded,DefaultSkills.OneHanded}, characterObject => 
+        _secularOrdersPassive2.Initialize(CareerID, "{=secular_orders_passive2_str}All Knight troops receive 20 bonus points in their One and Two-handed skill.", "SecularOrders", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(20, new List<string>(){nameof(DefaultSkills.TwoHanded),nameof(DefaultSkills.OneHanded)}, characterObject => 
             characterObject.HasAttribute("Knightly")));
 
         _secularOrdersPassive3.Initialize(CareerID, "{=secular_orders_passive3_str}All Knight troops wages are reduced by 25%.", "SecularOrders", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(-25, PassiveEffectType.TroopUpgradeCost, true, 
@@ -236,7 +236,7 @@ public class KnightOldWorldCareerChoices(CareerObject id) : TORCareerChoicesBase
         _pathOfConquestPassive1.Initialize(CareerID, "{=path_of_conquest_passive1_str}Extra melee damage (10%).", "PathOfConquest", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(PassiveEffectType.Damage, new DamageProportionTuple(DamageType.Physical, 10), AttackTypeMask.Melee));
         _pathOfConquestPassive2.Initialize(CareerID, "{=path_of_conquest_passive2_str}Party movement speed is increased by 2.", "PathOfConquest", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(2, PassiveEffectType.PartyMovementSpeed));
         _pathOfConquestPassive3.Initialize(CareerID, "{=path_of_conquest_passive3_str}Horse charge damage is increased by 40%.", "PathOfConquest", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(40, PassiveEffectType.HorseChargeDamage, true));
-        _pathOfConquestPassive4.Initialize(CareerID, "{=path_of_conquest_passive4_str}All Knight troops receive 30 bonus points in their Polearm skill.", "PathOfConquest", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(30, DefaultSkills.Polearm,
+        _pathOfConquestPassive4.Initialize(CareerID, "{=path_of_conquest_passive4_str}All Knight troops receive 30 bonus points in their Polearm skill.", "PathOfConquest", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(30, nameof(DefaultSkills.Polearm),
             (characterObject) => characterObject.HasAttribute("Knightly")));
         
         _squiresPassive1.Initialize(CareerID, "{=squires_passive1_str}Increases Hitpoints by 30.", "Squires", false, ChoiceType.Passive, null,new CareerChoiceObject.PassiveEffect(30, PassiveEffectType.Health));

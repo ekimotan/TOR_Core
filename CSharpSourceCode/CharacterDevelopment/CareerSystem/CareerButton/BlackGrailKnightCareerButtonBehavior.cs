@@ -13,97 +13,34 @@ using TOR_Core.Utilities;
 
 namespace TOR_Core.CharacterDevelopment.CareerSystem.CareerButton
 {
-    public class BlackGrailKnightCareerButtonBehavior : CareerButtonBehaviorBase
+    public class BlackGrailKnightCareerButtonBehavior(CareerObject career) : CareerButtonBehaviorBase(career)
     {
-        private TroopRoster _copiedTroopRoster;
         private const string _knightId = "tor_m_knight_of_misfortune";
-        private CharacterObject _originalTroop;
-        private CharacterObject _convertedKnight;
-        private int _exchangeCost = 15;
-        private bool _isPrisoner;
+        private const int ExchangeCost = 15;
 
         public override string CareerButtonIcon => "CareerSystem\\blackgrail";
 
-        public BlackGrailKnightCareerButtonBehavior(CareerObject career) : base(career)
-        {
-        }
-
         public override void ButtonClickedEvent(CharacterObject characterObject, bool isPrisoner = false, bool shiftClick = false)
         {
-            SetupKnightExchange(characterObject, isPrisoner);
-        }
-
-        private void SetupKnightExchange(CharacterObject characterObject, bool isPrisoner)
-        {
-            _isPrisoner = isPrisoner;
-            _originalTroop = characterObject;
-            var index = Hero.MainHero.PartyBelongedTo.MemberRoster.FindIndexOfTroop(characterObject);
-            var count = 0;
-            if (!_isPrisoner)
+            var knightUnit = MBObjectManager.Instance.GetObject<CharacterObject>(_knightId);
+            
+            if (shiftClick)
             {
-                count += Hero.MainHero.PartyBelongedTo.MemberRoster.GetElementCopyAtIndex(index).Number;
+                var affordable = CareerButtonHelper.GetMaximumExchangeTroops(characterObject, isPrisoner, 5, 0, ExchangeCost);
+
+                for (int i = 0; i < affordable; i++)
+                {
+                    CustomResourceManager.AddResourceChanges(Hero.MainHero.GetCultureSpecificCustomResource(),ExchangeCost);
+                    CareerButtonHelper.ExchangeUnitForNewUnit(characterObject, knightUnit, isPrisoner);
+                }
             }
             else
             {
-                index = Hero.MainHero.PartyBelongedTo.PrisonRoster.FindIndexOfTroop(characterObject);
-                count = Hero.MainHero.PartyBelongedTo.PrisonRoster.GetElementNumber(index);
+                CustomResourceManager.AddResourceChanges(Hero.MainHero.GetCultureSpecificCustomResource(),ExchangeCost);
+                CareerButtonHelper.ExchangeUnitForNewUnit(characterObject, knightUnit, true, isPrisoner);
             }
             
-            var value = Hero.MainHero.GetCustomResourceValue("DarkEnergy");
-
-            var canAfford = (int)value / _exchangeCost;
-
-            var availableKnights = (int)Mathf.Min(count, canAfford);
-            availableKnights -= Hero.MainHero.PartyBelongedTo.MemberRoster.GetElementWoundedNumber(index);
-
-            _convertedKnight = MBObjectManager.Instance.GetObject<CharacterObject>(_knightId);
-
-            if (_convertedKnight != null)
-            {
-                var roster = TroopRoster.CreateDummyTroopRoster();
-                roster.AddToCounts(_convertedKnight, availableKnights);
-                _copiedTroopRoster = TroopRoster.CreateDummyTroopRoster();
-                foreach (var elem in Hero.MainHero.PartyBelongedTo.MemberRoster.ToFlattenedRoster())
-                {
-                    if (!elem.Troop.IsHero)
-                    {
-                        if (elem.IsWounded)
-                        {
-                            _copiedTroopRoster.AddToCounts(elem.Troop, 0, false, 1, elem.Xp, true);
-                        }
-                        else
-                        {
-                            _copiedTroopRoster.AddToCounts(elem.Troop, 1, false, 0, elem.Xp, true);
-                        }
-
-                        Hero.MainHero.PartyBelongedTo.MemberRoster.RemoveTroop(elem.Troop);
-                    }
-                }
-
-                _copiedTroopRoster.RemoveZeroCounts();
-                PartyScreenManager.OpenScreenAsReceiveTroops(roster, new TextObject("Ill fated Knights: Exchange " + _originalTroop.Name.ToString() + "for mousillon Knights"), ExchangeKnights);
-            }
-        }
-
-        private void ExchangeKnights(PartyBase leftownerparty, TroopRoster leftmemberroster, TroopRoster leftPrisonRoster, PartyBase rightownerparty, TroopRoster rightmemberroster, TroopRoster rightprisonroster, bool fromcancel)
-        {
-            var count = rightmemberroster.TotalManCount - rightmemberroster.TotalHeroes;
-            if (count >= 0)
-            {
-                rightownerparty.MemberRoster.Add(_copiedTroopRoster);
-                if (!_isPrisoner)
-                {
-                    rightownerparty.AddMember(_originalTroop, -count);
-                }
-                else
-                {
-                    rightownerparty.AddPrisoner(_originalTroop, -count);
-                }
-
-                Hero.MainHero.AddCustomResource("DarkEnergy", -_exchangeCost * count);
-            }
-
-            Game.Current.GameStateManager.PopState();
+            PartyVMExtension.ViewModelInstance.RefreshValues(); //important refresh otherwise the methods don't get re-evaluated.
         }
 
         public override bool ShouldButtonBeVisible(CharacterObject characterObject, bool isPrisoner = false)
@@ -157,10 +94,11 @@ namespace TOR_Core.CharacterDevelopment.CareerSystem.CareerButton
                 }
             }
             
-            if (_exchangeCost > Hero.MainHero.GetCustomResourceValue("DarkEnergy"))
+            var pendingResources = CustomResourceManager.GetPendingResources();
+            if (!pendingResources.IsEmpty()&& pendingResources[Hero.MainHero.GetCultureSpecificCustomResource()] + ExchangeCost > Hero.MainHero.GetCultureSpecificCustomResourceValue())
             {
-                displayText = new TextObject("Requires atleast " + _exchangeCost + " " + CustomResourceManager.GetResourceObject("DarkEnergy").GetCustomResourceIconAsText());
-                return false;
+                displayText = new TextObject("Requires atleast " + ExchangeCost + " " + CustomResourceManager.GetResourceObject("DarkEnergy").GetCustomResourceIconAsText());
+                return false; 
             }
 
             displayText = new TextObject("");

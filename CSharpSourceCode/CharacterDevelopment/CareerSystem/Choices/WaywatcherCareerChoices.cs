@@ -364,7 +364,7 @@ public class WaywatcherCareerChoices(CareerObject id) : TORCareerChoicesBase(id)
         _eyeOfTheHunterPassive1.Initialize(CareerID, "20% Equipment weight Reduction", "EyeOfTheHunter", false, ChoiceType.Passive, null,
             new CareerChoiceObject.PassiveEffect(-20, PassiveEffectType.EquipmentWeightReduction, true));
         _eyeOfTheHunterPassive2.Initialize(CareerID, "Arrows can pierce multiple targets", "EyeOfTheHunter", false, ChoiceType.Passive);
-        _eyeOfTheHunterPassive3.Initialize(CareerID, "All archer troops gain 50 to their bow skill.", "EyeOfTheHunter", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(50, DefaultSkills.Bow,
+        _eyeOfTheHunterPassive3.Initialize(CareerID, "All archer troops gain 50 to their bow skill.", "EyeOfTheHunter", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(50, nameof(DefaultSkills.Bow),
             (characterObject) => characterObject.IsElf() && characterObject.IsRanged));
         _eyeOfTheHunterPassive4.Initialize(CareerID, "Special shot efficiency is doubled", "EyeOfTheHunter", false, ChoiceType.Passive);
     }

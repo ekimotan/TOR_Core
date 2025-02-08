@@ -24,28 +24,20 @@ public class IronbreakerCareerButtonBehavior(CareerObject careerObject) : Career
 {
     private const string IronbreakerId = "tor_m_knight_of_misfortune";
     private const int ExchangeCost = 15;
+    private const int GoldCost = 1000;
 
     public override void ButtonClickedEvent(CharacterObject characterObject, bool isPrisoner, bool shiftClick)
     {
         var ironbreakerUnit = MBObjectManager.Instance.GetObject<CharacterObject>(IronbreakerId);
+        
         if (shiftClick)
         {
+            var buyableTroops = CareerButtonHelper.GetMaximumExchangeTroops(characterObject, false, 5,GoldCost,ExchangeCost);
             
-            var buyable = 1;//maximum affordable
-            var count = Hero.MainHero.PartyBelongedTo.MemberRoster.GetElementNumber(characterObject);
-            var pending = CustomResourceManager.GetPendingResources().Values.ToList().Sum();
-            var rest = Hero.MainHero.GetCultureSpecificCustomResourceValue() - pending;
-
-
-            
-            
-            buyable = (int)(( rest / ExchangeCost >= 5) ? 5 : rest / ExchangeCost);
-            
-            buyable = MathF.Min(buyable, count);
-            
-            for (int i = 0; i < buyable; i++)
+            for (int i = 0; i < buyableTroops; i++)
             {
                 CustomResourceManager.AddResourceChanges(Hero.MainHero.GetCultureSpecificCustomResource(),ExchangeCost);
+                PartyScreenManager.PartyScreenLogic.CurrentData.PartyGoldChangeAmount -= GoldCost;
                 CareerButtonHelper.ExchangeUnitForNewUnit(characterObject, ironbreakerUnit, true);
                 
             }
@@ -71,7 +63,7 @@ public class IronbreakerCareerButtonBehavior(CareerObject careerObject) : Career
         {
             return false;
         }
-        return true;
+        return true;    //Todo recheck after troop tree is working
         if (characterObject.Culture.StringId != TORConstants.Cultures.DAWI)
             return false;
         
