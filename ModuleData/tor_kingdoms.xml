@@ -737,4 +737,51 @@
              ruler_title="{=str_tor_kingdom_rulertitle_laurelorn}Highborn"
              text="{=str_tor_kingdom_text_laurelorn}Once a proud colony of the Phoenix King, the Eonir of Laurelorn are the last remains of the High elves in the Old World, however, they assert their complete independence from Ulthuan after thousands of years of separation. In the Tragic events of the War of the Beards against the Dwarves, All colonies were either dissolved or burned down by the Dwarfs, leading to most of the remaining elves searching for shelter in the most northern province in Tor Lithanel. Though they called for support from the Phoenix Throne, Tor Lithanel did not receive any response and had a long-lasting fight for their survival as a result of these events, Laurelorn declared their independence. Today, the relationship between Ulthuan and Laurelorn has improved again. Yet, the Eonir do not believe anymore in the cause of the Asur. Instead, they arranged their situation in the middle of the empire of men. ">
     </Kingdom>
+	<Kingdom id="ostland"
+             owner="Hero.tor_emp_lord_ostland_factionleader"
+             banner_key="11.14.140.8000.8000.764.764.0.1.0.505.140.116.681.681.764.764.0.0.0:kingdom_ostland"
+             primary_banner_color="0xfff0f0f0"
+             secondary_banner_color="0xff050505"
+             label_color="FFf0f0f0"
+             color="FFf0f0f0"
+             color2="FF050505"
+             alternative_color="FFffffff"
+             alternative_color2="FF660653"
+             culture="Culture.empire"
+             settlement_banner_mesh="encounter_flag_a"
+             flag_mesh="info_screen_flags_b"
+             name="{=str_tor_kingdom_name_ostland}Ostland"
+             short_name="{=str_tor_kingdom_shortname_ostland}Ostland"
+             title="{=str_tor_kingdom_title_ostland}Ostland"
+             ruler_title="{=str_tor_kingdom_rulertitle_ostland}Elector Count"
+             text="{=str_tor_kingdom_text_ostland}Ostland, formally the Grand Principality of Ostland, is a founding Electoral Province of the Empire that makes up much of the northern border of that nation. Ostland is a realm of damp, creeping mists and shifting shadows, and is covered almost entirely by the dark canopy of the Forest of Shadows. The people of this land have learned to live out a rugged life among the ancient trees, clearing patches of land for their farms and settlements, and keeping a watchful eye on the dark depths of the forest.">
+        <relationships />
+        <policies>
+            <policy id="policy_feudal_inheritance" />
+        </policies>
+    </Kingdom>
+	<Kingdom id="karak_kadrin"
+             owner="Hero.tor_dw_lord_karak_kadrin_factionleader"
+             banner_key="11.14.140.8000.8000.764.764.0.1.0.505.140.116.681.681.764.764.0.0.0:kingdom_ostland"
+             primary_banner_color="0xfff0f0f0"
+             secondary_banner_color="0xff050505"
+             label_color="FFf0f0f0"
+             color="FFf0f0f0"
+             color2="FF050505"
+             alternative_color="FFffffff"
+             alternative_color2="FF660653"
+             culture="Culture.sturgia"
+             settlement_banner_mesh="encounter_flag_a"
+             flag_mesh="info_screen_flags_b"
+             name="{=str_tor_kingdom_name_karak_kadrin}Karak Kadrin"
+             short_name="{=str_tor_kingdom_shortname_karak_kadrin}Karak Kadrin"
+             title="{=str_tor_kingdom_title_karak_kadrin}Karak Kadrin"
+             ruler_title="{=str_tor_kingdom_rulertitle_ostland}King"
+             text="{=str_tor_kingdom_text_ostland}Karak Kadrin, which means 'Hold of the Mountain Pass' in Khazalid, also known as Slayers Keep, is a Dwarf stronghold which guards a region of mountainous passes known simply as Peak Pass, an important trading route which runs through the Worlds Edge Mountains from the distant east to the Old World. A mighty and well-known kingdom, Karak Kadrin benefits from its position, having become both a wealthy trading center and the largest, most populous and most powerful Dwarf kingdom in the Pass. Peak Pass is also an invasion route for the creatures plaguing the lands to the east, who, unchecked, would be free to rampage into the Old World. The Dwarfs and the many outposts they garrison along the route provide welcome security to the caravans in what would otherwise be a dangerous region, as well as keep a vital trade route open. In return, the Dwarfs collect much gold in tolls, paid willingly by merchants.At Karak Kadrin, a weary Slayer may find lodging, food, and hospitality for as long as he needs it before resuming his quest for death. In return, those Slayers who remain at the keep are expected to help the King uphold his pledge to guard Peak Pass.">
+        <relationships />
+        <policies>
+            <policy id="policy_feudal_inheritance" />
+        </policies>
+    </Kingdom>
+	
 </Kingdoms>

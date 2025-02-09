@@ -38,7 +38,7 @@ namespace TOR_Core.Quests
         private const string RogueEngineerPartyTemplateId = "empire_deserters_boss_party";
         private const string RogueEngineerLeaderTemplateId = "tor_engineerquesthero";
         public EngineerQuestStates CurrentActiveLog => (EngineerQuestStates)_currentActiveLog;
-        private List<JournalLog> _logs;
+        private List<JournalLog> _logs = [];
 
         private delegate void InializeVisuals(MobileParty party);
 
@@ -57,7 +57,7 @@ namespace TOR_Core.Quests
 
         private void LoadAllLogs()
         {
-            _logs = new List<JournalLog>();
+            _logs.Clear();
             var log0 = new JournalLog(CampaignTime.Now, new TextObject("{=tor_engineer_quest_log0_str}The Master Engineer has tasked me with hunting down thieving runaways, I should find them and bring back what they stole."), new TextObject("{=tor_engineer_quest_task0_str}Track down runaway thieves"), 0, 1, LogType.Discreate);
             var log1 = new JournalLog(CampaignTime.Now, new TextObject("{=tor_engineer_quest_log1_str}I found the thieves, but they did not have the stolen components. I should return to the Master Engineer with the news."), new TextObject("{=tor_engineer_quest_task1_str}Return to the Master Engineer in Nuln"), 0, 0, LogType.Discreate);
             var log2 = new JournalLog(CampaignTime.Now, new TextObject("{=tor_engineer_quest_log2_str}It would appear a traitorous Engineer has the stolen parts, the Master Engineer has asked for my help in finding him."), new TextObject("{=tor_engineer_quest_task2_str}Track down Goswin and retrieve the stolen components."), 0, 1, LogType.Discreate);
