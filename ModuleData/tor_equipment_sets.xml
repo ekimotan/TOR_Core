@@ -19497,6 +19497,344 @@
       <Equipment slot="Gloves" id="Item.tor_dw_arm_bracers_warrior_001" />
       <Equipment slot="Leg" id="Item.tor_dw_leg_boots_warrior_001" />
     </EquipmentSet>
+    <EquipmentSet>
+      <Equipment slot="Item0" id="Item.tor_dwarf_weapon_1h_axe_001" />
+      <Equipment slot="Item1" id="Item.tor_dwarf_weapon_shield_003" />
+      <Equipment slot="Head" id="Item.tor_dw_head_helm_warrior_001" />
+      <Equipment slot="Body" id="Item.tor_dw_body_armour_warrior_001" />
+      <Equipment slot="Gloves" id="Item.tor_dw_arm_bracers_warrior_001" />
+      <Equipment slot="Leg" id="Item.tor_dw_leg_boots_warrior_001" />
+    </EquipmentSet>
+    <EquipmentSet civilian="true">
+      <Equipment slot="Item0" id="Item.tor_dwarf_weapon_1h_axe_001" />
+      <Equipment slot="Item1" id="Item.tor_dwarf_weapon_shield_003" />
+      <Equipment slot="Head" id="Item.tor_dw_head_helm_warrior_001" />
+      <Equipment slot="Body" id="Item.tor_dw_body_armour_warrior_001" />
+      <Equipment slot="Gloves" id="Item.tor_dw_arm_bracers_warrior_001" />
+      <Equipment slot="Leg" id="Item.tor_dw_leg_boots_warrior_001" />
+    </EquipmentSet>
+    <EquipmentSet>
+      <Equipment slot="Item0" id="Item.tor_dwarf_weapon_1h_axe_001" />
+      <Equipment slot="Item1" id="Item.tor_dwarf_weapon_shield_003" />
+      <Equipment slot="Head" id="Item.tor_dw_head_helm_warrior_001" />
+      <Equipment slot="Body" id="Item.tor_dw_body_armour_warrior_001" />
+      <Equipment slot="Gloves" id="Item.tor_dw_arm_bracers_warrior_001" />
+      <Equipment slot="Leg" id="Item.tor_dw_leg_boots_warrior_001" />
+    </EquipmentSet>
+    <EquipmentSet civilian="true">
+      <Equipment slot="Item0" id="Item.tor_dwarf_weapon_1h_axe_001" />
+      <Equipment slot="Item1" id="Item.tor_dwarf_weapon_shield_003" />
+      <Equipment slot="Head" id="Item.tor_dw_head_helm_warrior_001" />
+      <Equipment slot="Body" id="Item.tor_dw_body_armour_warrior_001" />
+      <Equipment slot="Gloves" id="Item.tor_dw_arm_bracers_warrior_001" />
+      <Equipment slot="Leg" id="Item.tor_dw_leg_boots_warrior_001" />
+    </EquipmentSet>
+  </EquipmentRoster>
+  <EquipmentRoster id="tor_dw_militia_template" culture="Culture.sturgia">
+    <EquipmentSet>
+      <Equipment slot="Item0" id="Item.tor_dwarf_weapon_1h_axe_001" />
+      <Equipment slot="Item1" id="Item.tor_dwarf_weapon_shield_003" />
+      <Equipment slot="Head" id="Item.tor_dw_head_helm_warrior_001" />
+      <Equipment slot="Body" id="Item.tor_dw_body_armour_warrior_001" />
+      <Equipment slot="Gloves" id="Item.tor_dw_arm_bracers_warrior_001" />
+      <Equipment slot="Leg" id="Item.tor_dw_leg_boots_warrior_001" />
+    </EquipmentSet>
+    <EquipmentSet civilian="true">
+      <Equipment slot="Item0" id="Item.tor_dwarf_weapon_1h_axe_001" />
+      <Equipment slot="Item1" id="Item.tor_dwarf_weapon_shield_003" />
+      <Equipment slot="Head" id="Item.tor_dw_head_helm_warrior_001" />
+      <Equipment slot="Body" id="Item.tor_dw_body_armour_warrior_001" />
+      <Equipment slot="Gloves" id="Item.tor_dw_arm_bracers_warrior_001" />
+      <Equipment slot="Leg" id="Item.tor_dw_leg_boots_warrior_001" />
+    </EquipmentSet>
+  </EquipmentRoster>
+  <EquipmentRoster id="tor_dw_miner_template" culture="Culture.sturgia">
+    <EquipmentSet>
+      <Equipment slot="Item0" id="Item.tor_dwarf_weapon_1h_axe_001" />
+      <Equipment slot="Item1" id="Item.tor_dwarf_weapon_shield_003" />
+      <Equipment slot="Head" id="Item.tor_dw_head_helm_warrior_001" />
+      <Equipment slot="Body" id="Item.tor_dw_body_armour_warrior_001" />
+      <Equipment slot="Gloves" id="Item.tor_dw_arm_bracers_warrior_001" />
+      <Equipment slot="Leg" id="Item.tor_dw_leg_boots_warrior_001" />
+    </EquipmentSet>
+    <EquipmentSet civilian="true">
+      <Equipment slot="Item0" id="Item.tor_dwarf_weapon_1h_axe_001" />
+      <Equipment slot="Item1" id="Item.tor_dwarf_weapon_shield_003" />
+      <Equipment slot="Head" id="Item.tor_dw_head_helm_warrior_001" />
+      <Equipment slot="Body" id="Item.tor_dw_body_armour_warrior_001" />
+      <Equipment slot="Gloves" id="Item.tor_dw_arm_bracers_warrior_001" />
+      <Equipment slot="Leg" id="Item.tor_dw_leg_boots_warrior_001" />
+    </EquipmentSet>
+  </EquipmentRoster>
+  <EquipmentRoster id="tor_dw_prospector_template" culture="Culture.sturgia">
+    <EquipmentSet>
+      <Equipment slot="Item0" id="Item.tor_dwarf_weapon_1h_axe_001" />
+      <Equipment slot="Item1" id="Item.tor_dwarf_weapon_shield_003" />
+      <Equipment slot="Head" id="Item.tor_dw_head_helm_warrior_001" />
+      <Equipment slot="Body" id="Item.tor_dw_body_armour_warrior_001" />
+      <Equipment slot="Gloves" id="Item.tor_dw_arm_bracers_warrior_001" />
+      <Equipment slot="Leg" id="Item.tor_dw_leg_boots_warrior_001" />
+    </EquipmentSet>
+    <EquipmentSet civilian="true">
+      <Equipment slot="Item0" id="Item.tor_dwarf_weapon_1h_axe_001" />
+      <Equipment slot="Item1" id="Item.tor_dwarf_weapon_shield_003" />
+      <Equipment slot="Head" id="Item.tor_dw_head_helm_warrior_001" />
+      <Equipment slot="Body" id="Item.tor_dw_body_armour_warrior_001" />
+      <Equipment slot="Gloves" id="Item.tor_dw_arm_bracers_warrior_001" />
+      <Equipment slot="Leg" id="Item.tor_dw_leg_boots_warrior_001" />
+    </EquipmentSet>
+  </EquipmentRoster>
+  <EquipmentRoster id="tor_dw_warrior_template" culture="Culture.sturgia">
+    <EquipmentSet>
+      <Equipment slot="Item0" id="Item.tor_dwarf_weapon_1h_axe_001" />
+      <Equipment slot="Item1" id="Item.tor_dwarf_weapon_shield_003" />
+      <Equipment slot="Head" id="Item.tor_dw_head_helm_warrior_001" />
+      <Equipment slot="Body" id="Item.tor_dw_body_armour_warrior_001" />
+      <Equipment slot="Gloves" id="Item.tor_dw_arm_bracers_warrior_001" />
+      <Equipment slot="Leg" id="Item.tor_dw_leg_boots_warrior_001" />
+    </EquipmentSet>
+    <EquipmentSet civilian="true">
+      <Equipment slot="Item0" id="Item.tor_dwarf_weapon_1h_axe_001" />
+      <Equipment slot="Item1" id="Item.tor_dwarf_weapon_shield_003" />
+      <Equipment slot="Head" id="Item.tor_dw_head_helm_warrior_001" />
+      <Equipment slot="Body" id="Item.tor_dw_body_armour_warrior_001" />
+      <Equipment slot="Gloves" id="Item.tor_dw_arm_bracers_warrior_001" />
+      <Equipment slot="Leg" id="Item.tor_dw_leg_boots_warrior_001" />
+    </EquipmentSet>
+  </EquipmentRoster>
+  <EquipmentRoster id="tor_dw_longbeard_template" culture="Culture.sturgia">
+    <EquipmentSet>
+      <Equipment slot="Item0" id="Item.tor_dwarf_weapon_1h_axe_001" />
+      <Equipment slot="Item1" id="Item.tor_dwarf_weapon_shield_003" />
+      <Equipment slot="Head" id="Item.tor_dw_head_helm_warrior_001" />
+      <Equipment slot="Body" id="Item.tor_dw_body_armour_warrior_001" />
+      <Equipment slot="Gloves" id="Item.tor_dw_arm_bracers_warrior_001" />
+      <Equipment slot="Leg" id="Item.tor_dw_leg_boots_warrior_001" />
+    </EquipmentSet>
+    <EquipmentSet civilian="true">
+      <Equipment slot="Item0" id="Item.tor_dwarf_weapon_1h_axe_001" />
+      <Equipment slot="Item1" id="Item.tor_dwarf_weapon_shield_003" />
+      <Equipment slot="Head" id="Item.tor_dw_head_helm_warrior_001" />
+      <Equipment slot="Body" id="Item.tor_dw_body_armour_warrior_001" />
+      <Equipment slot="Gloves" id="Item.tor_dw_arm_bracers_warrior_001" />
+      <Equipment slot="Leg" id="Item.tor_dw_leg_boots_warrior_001" />
+    </EquipmentSet>
+  </EquipmentRoster>
+  <EquipmentRoster id="tor_dw_scout_template" culture="Culture.sturgia">
+    <EquipmentSet>
+      <Equipment slot="Item0" id="Item.tor_dwarf_weapon_1h_axe_001" />
+      <Equipment slot="Item1" id="Item.tor_dwarf_weapon_shield_003" />
+      <Equipment slot="Head" id="Item.tor_dw_head_helm_warrior_001" />
+      <Equipment slot="Body" id="Item.tor_dw_body_armour_warrior_001" />
+      <Equipment slot="Gloves" id="Item.tor_dw_arm_bracers_warrior_001" />
+      <Equipment slot="Leg" id="Item.tor_dw_leg_boots_warrior_001" />
+    </EquipmentSet>
+    <EquipmentSet civilian="true">
+      <Equipment slot="Item0" id="Item.tor_dwarf_weapon_1h_axe_001" />
+      <Equipment slot="Item1" id="Item.tor_dwarf_weapon_shield_003" />
+      <Equipment slot="Head" id="Item.tor_dw_head_helm_warrior_001" />
+      <Equipment slot="Body" id="Item.tor_dw_body_armour_warrior_001" />
+      <Equipment slot="Gloves" id="Item.tor_dw_arm_bracers_warrior_001" />
+      <Equipment slot="Leg" id="Item.tor_dw_leg_boots_warrior_001" />
+    </EquipmentSet>
+  </EquipmentRoster>
+  <EquipmentRoster id="tor_dw_quarreller_template" culture="Culture.sturgia">
+    <EquipmentSet>
+      <Equipment slot="Item0" id="Item.tor_dwarf_weapon_1h_axe_001" />
+      <Equipment slot="Item1" id="Item.tor_dwarf_weapon_shield_003" />
+      <Equipment slot="Head" id="Item.tor_dw_head_helm_warrior_001" />
+      <Equipment slot="Body" id="Item.tor_dw_body_armour_warrior_001" />
+      <Equipment slot="Gloves" id="Item.tor_dw_arm_bracers_warrior_001" />
+      <Equipment slot="Leg" id="Item.tor_dw_leg_boots_warrior_001" />
+    </EquipmentSet>
+    <EquipmentSet civilian="true">
+      <Equipment slot="Item0" id="Item.tor_dwarf_weapon_1h_axe_001" />
+      <Equipment slot="Item1" id="Item.tor_dwarf_weapon_shield_003" />
+      <Equipment slot="Head" id="Item.tor_dw_head_helm_warrior_001" />
+      <Equipment slot="Body" id="Item.tor_dw_body_armour_warrior_001" />
+      <Equipment slot="Gloves" id="Item.tor_dw_arm_bracers_warrior_001" />
+      <Equipment slot="Leg" id="Item.tor_dw_leg_boots_warrior_001" />
+    </EquipmentSet>
+  </EquipmentRoster>
+  <EquipmentRoster id="tor_dw_veteran_quarreller_template" culture="Culture.sturgia">
+    <EquipmentSet>
+      <Equipment slot="Item0" id="Item.tor_dwarf_weapon_1h_axe_001" />
+      <Equipment slot="Item1" id="Item.tor_dwarf_weapon_shield_003" />
+      <Equipment slot="Head" id="Item.tor_dw_head_helm_warrior_001" />
+      <Equipment slot="Body" id="Item.tor_dw_body_armour_warrior_001" />
+      <Equipment slot="Gloves" id="Item.tor_dw_arm_bracers_warrior_001" />
+      <Equipment slot="Leg" id="Item.tor_dw_leg_boots_warrior_001" />
+    </EquipmentSet>
+    <EquipmentSet civilian="true">
+      <Equipment slot="Item0" id="Item.tor_dwarf_weapon_1h_axe_001" />
+      <Equipment slot="Item1" id="Item.tor_dwarf_weapon_shield_003" />
+      <Equipment slot="Head" id="Item.tor_dw_head_helm_warrior_001" />
+      <Equipment slot="Body" id="Item.tor_dw_body_armour_warrior_001" />
+      <Equipment slot="Gloves" id="Item.tor_dw_arm_bracers_warrior_001" />
+      <Equipment slot="Leg" id="Item.tor_dw_leg_boots_warrior_001" />
+    </EquipmentSet>
+  </EquipmentRoster>
+  <EquipmentRoster id="tor_dw_thunderer_template" culture="Culture.sturgia">
+    <EquipmentSet>
+      <Equipment slot="Item0" id="Item.tor_dwarf_weapon_1h_axe_001" />
+      <Equipment slot="Item1" id="Item.tor_dwarf_weapon_shield_003" />
+      <Equipment slot="Head" id="Item.tor_dw_head_helm_warrior_001" />
+      <Equipment slot="Body" id="Item.tor_dw_body_armour_warrior_001" />
+      <Equipment slot="Gloves" id="Item.tor_dw_arm_bracers_warrior_001" />
+      <Equipment slot="Leg" id="Item.tor_dw_leg_boots_warrior_001" />
+    </EquipmentSet>
+    <EquipmentSet civilian="true">
+      <Equipment slot="Item0" id="Item.tor_dwarf_weapon_1h_axe_001" />
+      <Equipment slot="Item1" id="Item.tor_dwarf_weapon_shield_003" />
+      <Equipment slot="Head" id="Item.tor_dw_head_helm_warrior_001" />
+      <Equipment slot="Body" id="Item.tor_dw_body_armour_warrior_001" />
+      <Equipment slot="Gloves" id="Item.tor_dw_arm_bracers_warrior_001" />
+      <Equipment slot="Leg" id="Item.tor_dw_leg_boots_warrior_001" />
+    </EquipmentSet>
+  </EquipmentRoster>
+  <EquipmentRoster id="tor_dw_sharpshooter_template" culture="Culture.sturgia">
+    <EquipmentSet>
+      <Equipment slot="Item0" id="Item.tor_dwarf_weapon_1h_axe_001" />
+      <Equipment slot="Item1" id="Item.tor_dwarf_weapon_shield_003" />
+      <Equipment slot="Head" id="Item.tor_dw_head_helm_warrior_001" />
+      <Equipment slot="Body" id="Item.tor_dw_body_armour_warrior_001" />
+      <Equipment slot="Gloves" id="Item.tor_dw_arm_bracers_warrior_001" />
+      <Equipment slot="Leg" id="Item.tor_dw_leg_boots_warrior_001" />
+    </EquipmentSet>
+    <EquipmentSet civilian="true">
+      <Equipment slot="Item0" id="Item.tor_dwarf_weapon_1h_axe_001" />
+      <Equipment slot="Item1" id="Item.tor_dwarf_weapon_shield_003" />
+      <Equipment slot="Head" id="Item.tor_dw_head_helm_warrior_001" />
+      <Equipment slot="Body" id="Item.tor_dw_body_armour_warrior_001" />
+      <Equipment slot="Gloves" id="Item.tor_dw_arm_bracers_warrior_001" />
+      <Equipment slot="Leg" id="Item.tor_dw_leg_boots_warrior_001" />
+    </EquipmentSet>
+  </EquipmentRoster>
+  <EquipmentRoster id="tor_dw_oldguard_template" culture="Culture.sturgia">
+    <EquipmentSet>
+      <Equipment slot="Item0" id="Item.tor_dwarf_weapon_1h_axe_001" />
+      <Equipment slot="Item1" id="Item.tor_dwarf_weapon_shield_003" />
+      <Equipment slot="Head" id="Item.tor_dw_head_helm_warrior_001" />
+      <Equipment slot="Body" id="Item.tor_dw_body_armour_warrior_001" />
+      <Equipment slot="Gloves" id="Item.tor_dw_arm_bracers_warrior_001" />
+      <Equipment slot="Leg" id="Item.tor_dw_leg_boots_warrior_001" />
+    </EquipmentSet>
+    <EquipmentSet civilian="true">
+      <Equipment slot="Item0" id="Item.tor_dwarf_weapon_1h_axe_001" />
+      <Equipment slot="Item1" id="Item.tor_dwarf_weapon_shield_003" />
+      <Equipment slot="Head" id="Item.tor_dw_head_helm_warrior_001" />
+      <Equipment slot="Body" id="Item.tor_dw_body_armour_warrior_001" />
+      <Equipment slot="Gloves" id="Item.tor_dw_arm_bracers_warrior_001" />
+      <Equipment slot="Leg" id="Item.tor_dw_leg_boots_warrior_001" />
+    </EquipmentSet>
+  </EquipmentRoster>
+  <EquipmentRoster id="tor_dw_ironbreaker_template" culture="Culture.sturgia">
+    <EquipmentSet>
+      <Equipment slot="Item0" id="Item.tor_dwarf_weapon_1h_axe_001" />
+      <Equipment slot="Item1" id="Item.tor_dwarf_weapon_shield_003" />
+      <Equipment slot="Head" id="Item.tor_dw_head_helm_warrior_001" />
+      <Equipment slot="Body" id="Item.tor_dw_body_armour_warrior_001" />
+      <Equipment slot="Gloves" id="Item.tor_dw_arm_bracers_warrior_001" />
+      <Equipment slot="Leg" id="Item.tor_dw_leg_boots_warrior_001" />
+    </EquipmentSet>
+    <EquipmentSet civilian="true">
+      <Equipment slot="Item0" id="Item.tor_dwarf_weapon_1h_axe_001" />
+      <Equipment slot="Item1" id="Item.tor_dwarf_weapon_shield_003" />
+      <Equipment slot="Head" id="Item.tor_dw_head_helm_warrior_001" />
+      <Equipment slot="Body" id="Item.tor_dw_body_armour_warrior_001" />
+      <Equipment slot="Gloves" id="Item.tor_dw_arm_bracers_warrior_001" />
+      <Equipment slot="Leg" id="Item.tor_dw_leg_boots_warrior_001" />
+    </EquipmentSet>
+  </EquipmentRoster>
+  <EquipmentRoster id="tor_dw_veteran_ironbreeaker_template" culture="Culture.sturgia">
+    <EquipmentSet>
+      <Equipment slot="Item0" id="Item.tor_dwarf_weapon_1h_axe_001" />
+      <Equipment slot="Item1" id="Item.tor_dwarf_weapon_shield_003" />
+      <Equipment slot="Head" id="Item.tor_dw_head_helm_warrior_001" />
+      <Equipment slot="Body" id="Item.tor_dw_body_armour_warrior_001" />
+      <Equipment slot="Gloves" id="Item.tor_dw_arm_bracers_warrior_001" />
+      <Equipment slot="Leg" id="Item.tor_dw_leg_boots_warrior_001" />
+    </EquipmentSet>
+    <EquipmentSet civilian="true">
+      <Equipment slot="Item0" id="Item.tor_dwarf_weapon_1h_axe_001" />
+      <Equipment slot="Item1" id="Item.tor_dwarf_weapon_shield_003" />
+      <Equipment slot="Head" id="Item.tor_dw_head_helm_warrior_001" />
+      <Equipment slot="Body" id="Item.tor_dw_body_armour_warrior_001" />
+      <Equipment slot="Gloves" id="Item.tor_dw_arm_bracers_warrior_001" />
+      <Equipment slot="Leg" id="Item.tor_dw_leg_boots_warrior_001" />
+    </EquipmentSet>
+  </EquipmentRoster>
+  <EquipmentRoster id="tor_dw_irondrake_template" culture="Culture.sturgia">
+    <EquipmentSet>
+      <Equipment slot="Item0" id="Item.tor_dwarf_weapon_1h_axe_001" />
+      <Equipment slot="Item1" id="Item.tor_dwarf_weapon_shield_003" />
+      <Equipment slot="Head" id="Item.tor_dw_head_helm_warrior_001" />
+      <Equipment slot="Body" id="Item.tor_dw_body_armour_warrior_001" />
+      <Equipment slot="Gloves" id="Item.tor_dw_arm_bracers_warrior_001" />
+      <Equipment slot="Leg" id="Item.tor_dw_leg_boots_warrior_001" />
+    </EquipmentSet>
+    <EquipmentSet civilian="true">
+      <Equipment slot="Item0" id="Item.tor_dwarf_weapon_1h_axe_001" />
+      <Equipment slot="Item1" id="Item.tor_dwarf_weapon_shield_003" />
+      <Equipment slot="Head" id="Item.tor_dw_head_helm_warrior_001" />
+      <Equipment slot="Body" id="Item.tor_dw_body_armour_warrior_001" />
+      <Equipment slot="Gloves" id="Item.tor_dw_arm_bracers_warrior_001" />
+      <Equipment slot="Leg" id="Item.tor_dw_leg_boots_warrior_001" />
+    </EquipmentSet>
+  </EquipmentRoster>
+  <EquipmentRoster id="tor_dw_irondrake_trollhammer_template" culture="Culture.sturgia">
+    <EquipmentSet>
+      <Equipment slot="Item0" id="Item.tor_dwarf_weapon_1h_axe_001" />
+      <Equipment slot="Item1" id="Item.tor_dwarf_weapon_shield_003" />
+      <Equipment slot="Head" id="Item.tor_dw_head_helm_warrior_001" />
+      <Equipment slot="Body" id="Item.tor_dw_body_armour_warrior_001" />
+      <Equipment slot="Gloves" id="Item.tor_dw_arm_bracers_warrior_001" />
+      <Equipment slot="Leg" id="Item.tor_dw_leg_boots_warrior_001" />
+    </EquipmentSet>
+    <EquipmentSet civilian="true">
+      <Equipment slot="Item0" id="Item.tor_dwarf_weapon_1h_axe_001" />
+      <Equipment slot="Item1" id="Item.tor_dwarf_weapon_shield_003" />
+      <Equipment slot="Head" id="Item.tor_dw_head_helm_warrior_001" />
+      <Equipment slot="Body" id="Item.tor_dw_body_armour_warrior_001" />
+      <Equipment slot="Gloves" id="Item.tor_dw_arm_bracers_warrior_001" />
+      <Equipment slot="Leg" id="Item.tor_dw_leg_boots_warrior_001" />
+    </EquipmentSet>
+  </EquipmentRoster>
+  <EquipmentRoster id="tor_dw_hammerer_template" culture="Culture.sturgia">
+    <EquipmentSet>
+      <Equipment slot="Item0" id="Item.tor_dwarf_weapon_1h_axe_001" />
+      <Equipment slot="Item1" id="Item.tor_dwarf_weapon_shield_003" />
+      <Equipment slot="Head" id="Item.tor_dw_head_helm_warrior_001" />
+      <Equipment slot="Body" id="Item.tor_dw_body_armour_warrior_001" />
+      <Equipment slot="Gloves" id="Item.tor_dw_arm_bracers_warrior_001" />
+      <Equipment slot="Leg" id="Item.tor_dw_leg_boots_warrior_001" />
+    </EquipmentSet>
+    <EquipmentSet civilian="true">
+      <Equipment slot="Item0" id="Item.tor_dwarf_weapon_1h_axe_001" />
+      <Equipment slot="Item1" id="Item.tor_dwarf_weapon_shield_003" />
+      <Equipment slot="Head" id="Item.tor_dw_head_helm_warrior_001" />
+      <Equipment slot="Body" id="Item.tor_dw_body_armour_warrior_001" />
+      <Equipment slot="Gloves" id="Item.tor_dw_arm_bracers_warrior_001" />
+      <Equipment slot="Leg" id="Item.tor_dw_leg_boots_warrior_001" />
+    </EquipmentSet>
+  </EquipmentRoster>
+  <EquipmentRoster id="tor_dw_gatekeeper_template" culture="Culture.sturgia">
+    <EquipmentSet>
+      <Equipment slot="Item0" id="Item.tor_dwarf_weapon_1h_axe_001" />
+      <Equipment slot="Item1" id="Item.tor_dwarf_weapon_shield_003" />
+      <Equipment slot="Head" id="Item.tor_dw_head_helm_warrior_001" />
+      <Equipment slot="Body" id="Item.tor_dw_body_armour_warrior_001" />
+      <Equipment slot="Gloves" id="Item.tor_dw_arm_bracers_warrior_001" />
+      <Equipment slot="Leg" id="Item.tor_dw_leg_boots_warrior_001" />
+    </EquipmentSet>
+    <EquipmentSet civilian="true">
+      <Equipment slot="Item0" id="Item.tor_dwarf_weapon_1h_axe_001" />
+      <Equipment slot="Item1" id="Item.tor_dwarf_weapon_shield_003" />
+      <Equipment slot="Head" id="Item.tor_dw_head_helm_warrior_001" />
+      <Equipment slot="Body" id="Item.tor_dw_body_armour_warrior_001" />
+      <Equipment slot="Gloves" id="Item.tor_dw_arm_bracers_warrior_001" />
+      <Equipment slot="Leg" id="Item.tor_dw_leg_boots_warrior_001" />
+    </EquipmentSet>
   </EquipmentRoster>
   <EquipmentRoster id="tor_archaon_template" culture="Culture.chaos_culture">
     <EquipmentSet>

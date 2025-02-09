@@ -309,6 +309,23 @@
 			<PartyTemplateStack min_value="2" max_value="4" troop="NPCCharacter.tor_eo_queens_guard_halberd" />
 		</stacks>
 	</MBPartyTemplate>
+	<MBPartyTemplate id="dawi_lordparty_template" >
+		<stacks>
+			<PartyTemplateStack min_value="20" max_value="35" troop="NPCCharacter.tor_dw_militia" />
+			<PartyTemplateStack min_value="20" max_value="35" troop="NPCCharacter.tor_dw_miner" />
+			<PartyTemplateStack min_value="15" max_value="30" troop="NPCCharacter.tor_eo_kithband_warrior" />
+			<PartyTemplateStack min_value="16" max_value="26" troop="NPCCharacter.tor_dw_warrior" />
+			<PartyTemplateStack min_value="4" max_value="16" troop="NPCCharacter.tor_dw_longbeard" />
+			<PartyTemplateStack min_value="12" max_value="26" troop="NPCCharacter.tor_dw_scout" />
+			<PartyTemplateStack min_value="12" max_value="26" troop="NPCCharacter.tor_dw_quarreller" />
+			<PartyTemplateStack min_value="4" max_value="12" troop="NPCCharacter.tor_dw_ironbreaker" />
+			<PartyTemplateStack min_value="4" max_value="10" troop="NPCCharacter.tor_dw_oldguard" />
+			<PartyTemplateStack min_value="4" max_value="10" troop="NPCCharacter.tor_dw_sharpshooter" />
+			<PartyTemplateStack min_value="5" max_value="15" troop="NPCCharacter.tor_dw_irondrake" />
+			<PartyTemplateStack min_value="2" max_value="4" troop="NPCCharacter.tor_dw_veteran_quarreller" />
+			<PartyTemplateStack min_value="2" max_value="4" troop="NPCCharacter.tor_dw_irondrake" />
+		</stacks>
+	</MBPartyTemplate>
 	<MBPartyTemplate id="chaos_lordparty_template" >
 		<stacks>
 			<PartyTemplateStack min_value="20" max_value="30" troop="NPCCharacter.tor_chaos_norscan_tribesman" />
@@ -500,6 +517,11 @@
 		  <PartyTemplateStack min_value="15" max_value="30" troop="NPCCharacter.tor_vc_villager" />
 		</stacks>
 	</MBPartyTemplate>
+	<MBPartyTemplate id="dw_villager_template" >
+		<stacks>
+		  <PartyTemplateStack min_value="15" max_value="30" troop="NPCCharacter.tor_dw_dawi_commoner" />
+		</stacks>
+	</MBPartyTemplate>
 	<MBPartyTemplate id="empire_militia_template" >
 		<stacks>
 			<PartyTemplateStack min_value="8" max_value="8" troop="NPCCharacter.tor_empire_state_troop" />
@@ -536,6 +558,12 @@
 			<PartyTemplateStack min_value="8" max_value="8" troop="NPCCharacter.tor_eo_kithband_aspirant" />
 			<PartyTemplateStack min_value="8" max_value="8" troop="NPCCharacter.tor_eo_kithband_warrior" />
 			<PartyTemplateStack min_value="8" max_value="8" troop="NPCCharacter.tor_eo_kithband_sentinel" />
+		</stacks>
+	</MBPartyTemplate>
+	<MBPartyTemplate id="dw_militia_template" >
+		<stacks>
+			<PartyTemplateStack min_value="8" max_value="8" troop="NPCCharacter.tor_dw_militia" />
+			<PartyTemplateStack min_value="8" max_value="8" troop="NPCCharacter.tor_dw_scout" />
 		</stacks>
 	</MBPartyTemplate>
 	<MBPartyTemplate id="sylvania_militia_template" >

@@ -62,6 +62,9 @@ namespace TOR_Core.CampaignMechanics.CustomResources
             Instance._resources.Add("CouncilFavor",
                 new CustomResource("CouncilFavor", "Eonir Council Favor",
                     "Retrieve power in the Eonir council and use it to your benefit.", "favor_icon_45", TORConstants.Cultures.EONIR,FavorHelper.GetFavorInfo));
+            Instance._resources.Add("OathGold",
+                new CustomResource("OathGold", "Oath Gold",
+                    "The .", "prestige_icon_45", TORConstants.Cultures.DAWI));
             Instance._resources.Add("WindsOfMagic",
                 new CustomResource("WindsOfMagic", "Winds of Magic",
                     "Winds of Magic is used by spellcasters to cast spells.", "winds_icon_45"));
