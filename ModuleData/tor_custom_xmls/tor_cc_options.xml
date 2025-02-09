@@ -979,7 +979,7 @@
 		<OptionFlavourText>{=tor_cc_option_3_we_warden_3_text_str}Athel Loren needs protection, even from within. As a Warden, you swear to protect the woods from any threat.</OptionFlavourText>
 	</CharacterCreationOption> 
 	
-			<!-- Eonir stage 1 -->
+	<!-- Eonir stage 1 -->
 	<CharacterCreationOption Id="option_1_eo_toriour" Culture="eonir" StageNumber="1" EquipmentSetId="tor_cc_eo_toriour_1">
 		<SkillsToIncrease>
 			<string>Steward</string>
@@ -1169,9 +1169,75 @@
 		<OptionFlavourText>{=tor_cc_option_3_eo_eonir_expatriate_text_str}You think the cause of the Eonir is lost. Instead, you call the provinces of the humans your home. As a mercenary or trader, you are making a living for yourself.</OptionFlavourText>
 	</CharacterCreationOption> 
 	
+	<!-- Dwarves stage 1 -->
+	<!-- Dwarves stage 2 -->
 	
+	<!-- Dwarves stage 3 -->
 	
+	<CharacterCreationOption Id="option_3_dw_shield_breaker" Culture="sturgia" StageNumber="3" EquipmentSetId="tor_cc_eo_envoy_3">
+		<SkillsToIncrease>
+			<string>OneHanded</string>
+			<string>Gunpowder</string>
+			<string>Leadership</string>
+			<string>Athletics</string>
+		</SkillsToIncrease>
+		<AttributeToIncrease>Endurance</AttributeToIncrease>
+		<PositiveEffectText>{=tor_cc_option_3_dw_shield_breaker_effect_str}"Ironbreaker" Career</PositiveEffectText>
+		<OptionText>{=tor_cc_option_3_dw_shield_breaker_label_str}Shield breaker</OptionText>
+		<OptionFlavourText>{=tor_cc_option_3_dw_shield_breaker_text_str}You were part of a shield breaker unit for quite some time and kept the local mining venture protected. One day you saw a unit of Ironbreakers heading deeper into the mountains. Astouned by their courage, you from now on wanted to protect not just your clan, but also the entire dwarf kin from the evil from down below.</OptionFlavourText>
+	</CharacterCreationOption>
 	
+	<CharacterCreationOption Id="option_3_dw_rune_smith" Culture="sturgia" StageNumber="3" EquipmentSetId="tor_cc_eo_ghost_strider_3">
+		<SkillsToIncrease>
+			<string>Bow</string>
+			<string>Scouting</string>
+			<string>Roguery</string>
+			<string>Tactics</string>
+		</SkillsToIncrease>
+		<AttributeToIncrease>Control</AttributeToIncrease>
+		<OptionText>{=tor_cc_option_3_dw_rune_smith_label_str}Rune Smith</OptionText>
+		<PositiveEffectText>{=tor_cc_option_3_dw_rune_smith_effect_str}Rune smith Career (WIP)</PositiveEffectText>
+		<OptionFlavourText>{=tor_cc_option_3_dw_rune_smith_text_str}WIP</OptionFlavourText>
+	</CharacterCreationOption>
+
+	<CharacterCreationOption Id="option_3_dw_slayer" Culture="sturgia" StageNumber="3" EquipmentSetId="tor_cc_eo_kithband_warrior_3">
+		<SkillsToIncrease>
+			<string>OneHanded</string>
+			<string>TwoHanded</string>
+			<string>Faith</string>
+			<string>Athletics</string>
+		</SkillsToIncrease>
+		<AttributeToIncrease>Vigor</AttributeToIncrease>
+		<OptionText>{=tor_cc_option_3_eo_kithband_warrior_label_str}Slayer</OptionText>
+		<PositiveEffectText>{=tor_cc_option_3_eo_kithband_warrior_effect_str}"Slayer" Career (WIP)</PositiveEffectText>
+		<OptionFlavourText>{=tor_cc_option_3_eo_kithband_warrior_text_str}It is not clear why or for whom you took the Slayer oath, but you seek your salvation finding a worthy battle</OptionFlavourText>
+	</CharacterCreationOption> 
+
+	<CharacterCreationOption Id="option_3_dw_engineer" Culture="sturgia" StageNumber="3" EquipmentSetId="tor_cc_eo_greylord_apprentice_3">
+		<SkillsToIncrease>
+			<string>Engineering</string>
+			<string>Gunpowder</string>
+			<string>Trade</string>
+			<string>Engineering</string>
+		</SkillsToIncrease>
+		<AttributeToIncrease>Intelligence</AttributeToIncrease>
+		<OptionText>{=tor_cc_option_3_dw_engineer_apprentice_label_str}Dwarf Engiineer Apprentice</OptionText>
+		<PositiveEffectText>{=tor_cc_option_3_eo_greylord_apprentice_effect_str}WIP</PositiveEffectText>
+		<OptionFlavourText>{=tor_cc_option_3_eo_greylord_apprentice_text_str}WIP</OptionFlavourText>
+	</CharacterCreationOption> 
+
+	<CharacterCreationOption Id="option_3_dw_dwarf_expatriate" Culture="eonir" StageNumber="3" EquipmentSetId="tor_cc_eo_eonir_expatriate_3">
+		<SkillsToIncrease>
+			<string>Trade</string>
+			<string>Bow</string>
+			<string>Charm</string>
+			<string>OneHanded</string>
+		</SkillsToIncrease>
+		<AttributeToIncrease>Endurance</AttributeToIncrease>
+		<PositiveEffectText>{=tor_cc_option_3_eo_eonir_expatriate_effect_str}"Mercenary" Career</PositiveEffectText>
+		<OptionText>{=tor_cc_option_3_eo_eonir_expatriate_label_str}Dwarf Expatriate</OptionText>
+		<OptionFlavourText>{=tor_cc_option_3_eo_eonir_expatriate_text_str}You think the cause of the Dwarves is lost. Instead, you call the provinces of the humans your home. As a mercenary or trader, you are making a living for yourself.</OptionFlavourText>
+	</CharacterCreationOption> 
 	
 </ArrayOfCharacterCreationOption>
 
