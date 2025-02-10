@@ -1,11 +1,15 @@
-﻿using Helpers;
+using Helpers;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.Core;
 using TaleWorlds.Engine;
 using TaleWorlds.Library;
+using TaleWorlds.LinQuick;
 using TaleWorlds.MountAndBlade;
+using TaleWorlds.MountAndBlade.View.Screens;
+using TaleWorlds.ObjectSystem;
 using TOR_Core.CharacterDevelopment;
 using TOR_Core.Extensions;
 using TOR_Core.Utilities;
@@ -14,11 +18,13 @@ namespace TOR_Core.BattleMechanics.Firearms
 {
     public class FirearmsMissionLogic : MissionLogic
     {
-        private int[] _grenadeSoundIndex = new int[5];
-        private int[] _soundIndex = new int[5];
-        private Random _random;
-        
-        
+        private readonly int[] _grenadeSoundIndex = new int[5];
+        private readonly int[] _soundIndex = new int[5];
+        private readonly Random _random;
+        private readonly Dictionary<int, ContinousFiringData> _continousFiringAgents = [];
+        private readonly float _continousFiringInterval = 300f;
+        private readonly float _continousFiringBurstLength = 4f;
+
         private const int _explosionDamage = 125;
         private const float _explosionRadius = 6;
         private const float __explosionDamageVariance = 0.25f;
@@ -30,7 +36,6 @@ namespace TOR_Core.BattleMechanics.Firearms
                 _grenadeSoundIndex[i] = SoundEvent.GetEventIdFromString("grenadelauncher_muzzle_" + (i + 1));
             }
 
-
             for (int i = 0; i < _soundIndex.Length; i++)
             {
                 _soundIndex[i] = SoundEvent.GetEventIdFromString("musket_fire_sound_" + (i + 1));
@@ -39,31 +44,66 @@ namespace TOR_Core.BattleMechanics.Firearms
             _random = new Random();
         }
 
+        public override void OnMissionTick(float dt)
+        {
+            foreach (int index in _continousFiringAgents.Keys)
+            {
+                var firingData = _continousFiringAgents[index];
+                if (firingData.RemainingTime <= 0.5f)
+                {
+                    if (firingData.IsParticleEnabled) firingData.IsParticleEnabled = false;
+                    continue;
+                }
+                var agent = Mission.FindAgentWithIndex(index);
+                if (!agent.IsActive()) continue;
+
+                firingData.RemainingTime -= dt;
+                firingData.RemainingTime = Math.Max(0, firingData.RemainingTime);
+                if (MissionTime.Now.ToMilliseconds - _continousFiringInterval > firingData.LastFiredTime)
+                {
+                    firingData.LastFiredTime = MissionTime.Now.ToMilliseconds;
+                    BurstFireShot(agent, 0.1f);
+                }
+            }
+        }
+
         public override void OnAgentShootMissile(Agent shooterAgent, EquipmentIndex weaponIndex, Vec3 position, Vec3 velocity, Mat3 orientation, bool hasRigidBody, int forcedMissileIndex)
         {
             var weaponData = shooterAgent.WieldedWeapon.CurrentUsageItem;
             if (weaponData.WeaponClass != WeaponClass.Musket && weaponData.WeaponClass != WeaponClass.Pistol) return;
 
             var frame = new MatrixFrame(orientation, position);
+            var offset = (shooterAgent.WieldedWeapon.CurrentUsageItem.WeaponLength + 30) / 100;
+            frame.Advance(offset);
+
+            if (shooterAgent.WieldedWeapon.Item.StringId == "tor_dwarf_drakegun")
+            {
+                RemoveLastProjectile(shooterAgent);
+                _continousFiringAgents[shooterAgent.Index] = new ContinousFiringData 
+                { 
+                    OwnerAgent = shooterAgent,
+                    RemainingTime = _continousFiringBurstLength, 
+                    LastFiredTime = MissionTime.Now.ToMilliseconds, 
+                    IsParticleEnabled = true 
+                };
+                BurstFireShot(shooterAgent, 0.1f);
+                return;
+            }
 
             if (shooterAgent.WieldedWeapon.AmmoWeapon.Item.StringId.Contains("scatter"))
             {
                 RemoveLastProjectile(shooterAgent);
                 float accuracy = 1 / (weaponData.Accuracy * 1.2f); //this is currently arbitrary
                 short amount = 6; // hardcoded for now
-                var character = shooterAgent.Character as CharacterObject;
-                if(character != null && character.GetPerkValue(TORPerks.GunPowder.PackItIn))
+                if (shooterAgent.Character is CharacterObject character && character.GetPerkValue(TORPerks.GunPowder.PackItIn))
                 {
-                    ExplainedNumber num = new ExplainedNumber(amount);
+                    ExplainedNumber num = new(amount);
                     PerkHelper.AddPerkBonusForCharacter(TORPerks.GunPowder.PackItIn, character, true, ref num);
                     amount = (short)num.ResultNumber;
                 }
                 ScatterShot(shooterAgent, accuracy, shooterAgent.WieldedWeapon.AmmoWeapon, position, orientation,
                     weaponData.MissileSpeed, amount);
             }
-
-            var offset = (shooterAgent.WieldedWeapon.CurrentUsageItem.WeaponLength + 30) / 100;
-            frame.Advance(offset);
 
             // play sound of shot and create shot effects
             if (!shooterAgent.WieldedWeapon.AmmoWeapon.Item.StringId.Contains("grenade"))
@@ -84,17 +124,17 @@ namespace TOR_Core.BattleMechanics.Firearms
             switch (soundTypetype)
             {
                 case MuzzleFireSoundType.Musket:
-                    if (this._soundIndex.Length > 0)
+                    if (_soundIndex.Length > 0)
                     {
-                        selected = this._random.Next(0, this._soundIndex.Length - 1);
-                        Mission.MakeSound(this._soundIndex[selected], position, false, true, -1, -1);
+                        selected = _random.Next(0, _soundIndex.Length - 1);
+                        Mission.MakeSound(_soundIndex[selected], position, false, true, -1, -1);
                     }
 
                     break;
                 case MuzzleFireSoundType.Grenadelauncher:
-                    if (this._grenadeSoundIndex.Length > 0)
+                    if (_grenadeSoundIndex.Length > 0)
                     {
-                        selected = this._random.Next(0, this._grenadeSoundIndex.Length - 1);
+                        selected = _random.Next(0, _grenadeSoundIndex.Length - 1);
                         Mission.MakeSound(_grenadeSoundIndex[selected], position, false, true, -1, -1);
                     }
 
@@ -112,16 +152,34 @@ namespace TOR_Core.BattleMechanics.Firearms
         }
 
         public void ScatterShot(Agent shooterAgent, float accuracy, MissionWeapon projectileType, Vec3 shotPosition,
-            Mat3 shotOrientation, float missleSpeed, short scatterShotAmount)
+            Mat3 shotOrientation, float missileSpeed, short scatterShotAmount)
         {
             for (int i = 0; i < scatterShotAmount; i++)
             {
                 var deviation = TORCommon.GetRandomOrientation(shotOrientation, accuracy);
                 Mission.AddCustomMissile(shooterAgent, projectileType, shotPosition, deviation.f, deviation,
-                    missleSpeed, missleSpeed, false, null);
+                    missileSpeed, missileSpeed, false, null);
             }
         }
-        
+
+        public void BurstFireShot(Agent shooterAgent, float accuracy)
+        {
+            var itemBoneFrame = shooterAgent.AgentVisuals.GetBoneEntitialFrame(Game.Current.DefaultMonster.MainHandItemBoneIndex, false);
+            var agentFrame = shooterAgent.AgentVisuals.GetGlobalFrame();
+            itemBoneFrame = agentFrame.TransformToParent(itemBoneFrame);
+            var offset = (shooterAgent.WieldedWeapon.CurrentUsageItem.WeaponLength + 40) / 100;
+            float rotateSide = 85f;
+            float rotateUp = 1f;
+            itemBoneFrame.rotation.RotateAboutSide(rotateSide.ToRadians());
+            itemBoneFrame.rotation.RotateAboutUp(rotateUp.ToRadians());
+            var frame = itemBoneFrame.Advance(offset);
+
+            var ammoItem = MBObjectManager.Instance.GetObject<ItemObject>("tor_neutral_weapon_ammo_musket_ball");
+            var ammo = new MissionWeapon(ammoItem, null, null, 1);
+
+            Mission.AddCustomMissile(shooterAgent, ammo, frame.origin, frame.rotation.f, frame.rotation,
+                15, 15, false, null);
+        }
 
         public override void OnMissileCollisionReaction(Mission.MissileCollisionReaction collisionReaction,
             Agent attackerAgent, Agent attachedAgent,
@@ -131,8 +189,8 @@ namespace TOR_Core.BattleMechanics.Firearms
 
             if (collisionReaction != Mission.MissileCollisionReaction.BecomeInvisible) return;
             var missileObj = Mission.Missiles.FirstOrDefault(missile => missile.ShooterAgent == attackerAgent);
-            
-            if(missileObj==null)return;
+
+            if (missileObj == null) return;
             
             var pos = missileObj.Entity.GlobalPosition;
             
@@ -161,18 +219,12 @@ namespace TOR_Core.BattleMechanics.Firearms
         
         private void RunExplosionSoundEffects(Vec3 position, string soundID, string farAwaySoundID=null)
         {
-            if (farAwaySoundID == null)
-            {
-                farAwaySoundID = soundID;
-            }
+            farAwaySoundID ??= soundID;
             
             var distanceFromPlayer = position.Distance(Mission.Current.GetCameraFrame().origin);
             int soundIndex = distanceFromPlayer < 30 ? SoundEvent.GetEventIdFromString(soundID) : SoundEvent.GetEventIdFromString(farAwaySoundID);
             var sound = SoundEvent.CreateEvent(soundIndex, Mission.Current.Scene);
-            if (sound != null)
-            {
-                sound.PlayInPosition(position);
-            }
+            sound?.PlayInPosition(position);
         }
 
         public override void OnScoreHit(Agent affectedAgent, Agent affectorAgent, WeaponComponentData attackerWeapon, bool isBlocked, bool isSiegeEngineHit, in Blow blow,
@@ -211,14 +263,44 @@ namespace TOR_Core.BattleMechanics.Firearms
             }
             */
         }
-
     }
-
 
     public enum MuzzleFireSoundType
     {
         Musket,
         Pistol,
         Grenadelauncher
+    }
+
+    public class ContinousFiringData
+    {
+        public float RemainingTime;
+        public double LastFiredTime;
+        public ParticleSystem FireStreamPS;
+        public Agent OwnerAgent;
+        private bool _isParticleEnabled;
+        public bool IsParticleEnabled
+        {
+            get
+            {
+                return _isParticleEnabled;
+            }
+            set
+            {
+                if(_isParticleEnabled != value)
+                {
+                    _isParticleEnabled = value;
+                    if(_isParticleEnabled && OwnerAgent != null)
+                    {
+                        if (FireStreamPS == null) FireStreamPS = TORParticleSystem.ApplyParticleToAgentBone(OwnerAgent, "drakegun_fire", Game.Current.DefaultMonster.MainHandItemBoneIndex, out _, 0, new Vec3(90, 0, 0));
+                        FireStreamPS.SetEnable(true);
+                    }
+                    else
+                    {
+                        FireStreamPS?.SetEnable(false);
+                    }
+                }
+            }
+        }
     }
 }
