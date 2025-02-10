@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <strings>
   <!-- CC Options -->
-  <string id="str_tor_cc_growth.battania" text= "You spent most of your life venerating one of the Asrai deities..."/>
-  <string id="str_tor_cc_profession.battania" text= "Choose your path..."/>
+  <string id="str_tor_cc_growth.battania" text= "{=str_tor_cc_growth_battania}You spent most of your life venerating one of the Asrai deities..."/>
+  <string id="str_tor_cc_profession.battania" text= "{=str_tor_cc_profession_battania}Choose your path..."/>
   
-  <string id="str_tor_cc_origin.sturgia" text= "You clan origin"/>
+  <string id="str_tor_cc_origin.sturgia" text= "{=str_tor_cc_origin_sturgia}You clan origin"/>
   <!--Rogue Engineer Quest-->
   
 
