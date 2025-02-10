@@ -239,7 +239,7 @@ namespace TOR_Core.Extensions
 
         public static bool IsIronbreakerUnit(this BasicCharacterObject characterObject)
         {
-            return characterObject.IsSoldier && characterObject.Culture.StringId == TORConstants.Cultures.DAWI && characterObject.StringId.Contains("ironbreaker");
+            return characterObject.IsSoldier && characterObject.Culture.StringId == TORConstants.Cultures.DAWI && characterObject.StringId.Contains("iron");
         }
 
         public static bool IsVampire(this BasicCharacterObject characterObject)

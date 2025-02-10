@@ -6,6 +6,7 @@ using TaleWorlds.CampaignSystem.Party;
 using TaleWorlds.Core;
 using TaleWorlds.Library;
 using TaleWorlds.MountAndBlade;
+using TaleWorlds.ObjectSystem;
 using TaleWorlds.TwoDimension;
 using TOR_Core.AbilitySystem;
 using TOR_Core.Battle.CrosshairMissionBehavior;
@@ -103,7 +104,7 @@ namespace TOR_Core.Models
                         if (!missionWeapon.IsEmpty)
                         {
                             WeaponComponentData currentUsageItem = missionWeapon.CurrentUsageItem;
-                            if (currentUsageItem != null && currentUsageItem.IsAmmo && currentUsageItem.RelevantSkill != null)
+                            if (currentUsageItem != null && (currentUsageItem.IsAmmo || currentUsageItem.AmmoClass == WeaponClass.Stone) && currentUsageItem.RelevantSkill != null)
                             {
                                 ExplainedNumber ammoCount = new ExplainedNumber(missionWeapon.Amount);
 
@@ -126,6 +127,17 @@ namespace TOR_Core.Models
                                     }
                                 }
                                 
+                                if ( missionWeapon.HasAnyUsageWithWeaponClass(WeaponClass.Stone) &&
+                                     currentUsageItem.ItemUsage.Contains("dwarf_hand_grenade"))
+                                {
+                                
+                                    if(Hero.MainHero.HasCareer(TORCareers.Ironbreaker) && Hero.MainHero.HasCareerChoice("NestCleansingPassive3"))
+                                    {
+                                        ammoCount.Add(2);
+                                    }
+                                }
+                                
+                                
                                 if (currentUsageItem.RelevantSkill == TORSkills.GunPowder && currentUsageItem.WeaponClass == WeaponClass.Cartridge)
                                 {
                                     PerkHelper.AddPerkBonusForParty(TORPerks.GunPowder.AmmoWagons, mobileParty, true, ref ammoCount);
@@ -137,6 +149,8 @@ namespace TOR_Core.Models
                                     equipment.SetAmountOfSlot(equipmentIndex, (short)result, true);
                                 }
                             }
+                            
+                            
 
 
                             if (currentUsageItem.IsShield)
@@ -155,12 +169,24 @@ namespace TOR_Core.Models
                         }
                     }
 
-                    if (agent.Character.IsIronbreakerUnit())
+                    if (agent.BelongsToMainParty() && agent.Character.IsIronbreakerUnit() && !agent.Character.IsRanged )
                     {
                         if (Hero.MainHero.HasCareer(TORCareers.Ironbreaker) && Hero.MainHero.HasCareerChoice("NestCleansingPassive4"))
                         {
-                            TORCommon.Say("Explosive Charge!");
-                            //TODO add explosives to the catalog.
+                            MissionEquipment troopEquipment = agent.Equipment;
+                            for (int i = 0; i < 5; i++)
+                            {
+                                EquipmentIndex equipmentIndex = (EquipmentIndex)i;
+                                MissionWeapon missionWeapon = equipment[equipmentIndex];
+
+                                if (missionWeapon.IsEmpty)
+                                {
+                                    var item = MBObjectManager.Instance.GetObject<ItemObject>("tor_dwarf_weapon_grenade_dwarf_hand_grenade");
+                                    MissionWeapon weapon = new MissionWeapon(item, null, Hero.MainHero.ClanBanner);
+                                    agent.EquipWeaponWithNewEntity((EquipmentIndex)i, ref weapon);
+                                    break;
+                                }
+                            }
                         }
                     }
                 }

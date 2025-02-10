@@ -287,6 +287,11 @@ namespace TOR_Core.CampaignMechanics.CharacterCreation
                 Hero.MainHero.HeroDeveloper.SetInitialSkillLevel(TORSkills.SpellCraft, Math.Max(skill, 25));
                 Hero.MainHero.HeroDeveloper.AddPerk(TORPerks.SpellCraft.EntrySpells);
             }
+
+            if (id == "option_3_dw_shield_breaker")
+            {
+                Hero.MainHero.AddCareer(TORCareers.Ironbreaker);
+            }
             
             if (IsWitchHunterCharacterCreationID(id))
             {

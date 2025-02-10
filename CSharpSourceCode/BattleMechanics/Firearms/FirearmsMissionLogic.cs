@@ -175,6 +175,24 @@ namespace TOR_Core.BattleMechanics.Firearms
             }
         }
 
+        public override void OnScoreHit(Agent affectedAgent, Agent affectorAgent, WeaponComponentData attackerWeapon, bool isBlocked, bool isSiegeEngineHit, in Blow blow,
+            in AttackCollisionData collisionData, float damagedHp, float hitDistance, float shotDifficulty)
+        {
+            base.OnScoreHit(affectedAgent, affectorAgent, attackerWeapon, isBlocked, isSiegeEngineHit, in blow, in collisionData, damagedHp, hitDistance, shotDifficulty);
+
+            if (attackerWeapon.WeaponClass == WeaponClass.Stone)
+            {
+                if (attackerWeapon.ItemUsage == "dwarf_hand_grenade")
+                {
+                    if (affectorAgent.IsHero)
+                    {
+                        affectorAgent.GetHero().AddSkillXp(TORSkills.GunPowder,damagedHp);
+                    }
+                    
+                }
+            }
+        }
+
 
         private void ApplySplashDamage(Agent affector, Vec3 position, float explosionRadius, int explosionDamage, float damageVariance)
         {

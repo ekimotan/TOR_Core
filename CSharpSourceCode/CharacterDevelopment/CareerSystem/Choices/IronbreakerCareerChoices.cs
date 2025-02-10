@@ -279,9 +279,8 @@ public class IronbreakerCareerChoices(CareerObject id) : TORCareerChoicesBase(id
     {
         _nestCleansingPassive1.Initialize(CareerID, "{=_tunnel_watch_passive1_str}Increases Hitpoints by 25.", "NestCleansing", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(25, PassiveEffectType.Health));
         _nestCleansingPassive2.Initialize(CareerID, "{=_tunnel_watch_passive2_str}Increases Fire resistance by 25%.", "NestCleansing", false, ChoiceType.Passive, null,new CareerChoiceObject.PassiveEffect(PassiveEffectType.Resistance, new DamageProportionTuple(DamageType.Fire,25),AttackTypeMask.All));
-        _nestCleansingPassive3.Initialize(CareerID, "{=_tunnel_watch_passive3_str}CUSTOM", "NestCleansing", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(-25, PassiveEffectType.CustomResourceUpgradeCostModifier, true, characterObject => characterObject.HasAttribute("Knightly")));
-        _nestCleansingPassive4.Initialize(CareerID, "{=_tunnel_watch_passive4_str}CUSTOM", "NestCleansing", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(-25, PassiveEffectType.CustomResourceUpgradeCostModifier, true,
-                characterObject => characterObject.HasAttribute("Knightly")));
+        _nestCleansingPassive3.Initialize(CareerID, "{=_tunnel_watch_passive3_str}Get 2 additional charges for explosive charges", "NestCleansing", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect());
+        _nestCleansingPassive4.Initialize(CareerID, "{=_tunnel_watch_passive4_str}Iron breaker troops gain 1 explosive charge", "NestCleansing", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect());
         
     _tunnelWatchPassive1.Initialize(CareerID, "{=tunnel_watch_passive1_str}Increases Hitpoints by 25.", "TunnelWatch", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(25, PassiveEffectType.Health));
     _tunnelWatchPassive2.Initialize(CareerID, "{=tunnel_watch_passive2_str}Party movement speed is increased by 1.", "TunnelWatch", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(1, PassiveEffectType.PartyMovementSpeed));
