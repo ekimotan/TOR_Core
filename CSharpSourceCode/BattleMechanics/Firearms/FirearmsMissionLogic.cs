@@ -232,7 +232,7 @@ namespace TOR_Core.BattleMechanics.Firearms
         {
             base.OnScoreHit(affectedAgent, affectorAgent, attackerWeapon, isBlocked, isSiegeEngineHit, in blow, in collisionData, damagedHp, hitDistance, shotDifficulty);
 
-            if (attackerWeapon.WeaponClass == WeaponClass.Stone)
+            if (attackerWeapon !=null && attackerWeapon.WeaponClass == WeaponClass.Stone)
             {
                 if (attackerWeapon.ItemUsage == "dwarf_hand_grenade")
                 {
