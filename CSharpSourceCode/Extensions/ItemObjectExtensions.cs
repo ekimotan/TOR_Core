@@ -141,7 +141,19 @@ namespace TOR_Core.Extensions
                 return true;
             }
 
-            return itemObject.ToString().Contains("grenade") || itemObject.ToString().Contains("scatter");
+            return itemObject.StringId.Contains("grenade") || itemObject.StringId.Contains("scatter");
+        }
+
+
+   
+        
+        public static bool IsFlameThrowerItem(this ItemObject itemObject)
+        {
+            if(!IsAmmunitionItem(itemObject)) return false;
+            
+            
+            
+            return itemObject.StringId.Contains("cannister") || itemObject.StringId.Contains("drakegun");
         }
 
         public static bool IsAmmunitionItem(this ItemObject itemObject)

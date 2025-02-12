@@ -22,7 +22,7 @@ namespace TOR_Core.CharacterDevelopment.CareerSystem.CareerButton;
 
 public class IronbreakerCareerButtonBehavior(CareerObject careerObject) : CareerButtonBehaviorBase(careerObject)
 {
-    private const string IronbreakerId = "tor_m_knight_of_misfortune";
+    private const string IronbreakerId = "tor_dw_ironbreaker";
     private const int ExchangeCost = 15;
     private const int GoldCost = 1000;
 

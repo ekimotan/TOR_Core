@@ -64,12 +64,17 @@ namespace TOR_Core.Items
 				{
 					if(!equipmentItem.IsAmmunitionItem())
 						continue; //we are only interested for now in ranged and ammo items
+					
 
 					if(movedItem.IsSpecialAmmunitionItem()&&equipmentItem.IsSpecialAmmunitionItem())
 						continue;
 
 					if (!movedItem.IsSpecialAmmunitionItem()&& !equipmentItem.IsSpecialAmmunitionItem())
 						continue;
+					
+					if((movedItem.IsFlameThrowerItem() && equipmentItem.IsFlameThrowerItem()) ||
+					   (!movedItem.IsFlameThrowerItem() && !equipmentItem.IsFlameThrowerItem()))
+					   continue;
 
 					//no you don't... items were not compatible return to sender
 					var command = TransferCommand.Transfer(1,

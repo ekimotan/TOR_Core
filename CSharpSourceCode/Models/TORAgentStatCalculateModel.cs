@@ -23,6 +23,7 @@ namespace TOR_Core.Models
 {
     public class TORAgentStatCalculateModel : SandboxAgentStatCalculateModel
     {
+        private float heavyDwarfSpeedModificatior = 0.75f;
         private float vampireDaySpeedModificator = 1.1f;
         private float vampireNightSpeedModificator = 1.2f;
         private CustomCrosshairMissionBehavior _crosshairBehavior;
@@ -126,17 +127,49 @@ namespace TOR_Core.Models
                                         }
                                     }
                                 }
-                                
-                                if ( missionWeapon.HasAnyUsageWithWeaponClass(WeaponClass.Stone) &&
-                                     currentUsageItem.ItemUsage.Contains("dwarf_hand_grenade"))
+
+                                if (Hero.MainHero.HasCareer(TORCareers.Ironbreaker))
                                 {
-                                
-                                    if(Hero.MainHero.HasCareer(TORCareers.Ironbreaker) && Hero.MainHero.HasCareerChoice("NestCleansingPassive3"))
+                                    if ( missionWeapon.HasAnyUsageWithWeaponClass(WeaponClass.Stone) &&
+                                         currentUsageItem.ItemUsage.Contains("dwarf_hand_grenade")
+                                       )
                                     {
-                                        ammoCount.Add(2);
+                                        if( agent.Character.IsHero && agent.GetHero() == Hero.MainHero &&  Hero.MainHero.HasCareerChoice("NestCleansingPassive3"))
+                                        {
+                                            ammoCount.Add(2);
+                                        }
+                                        if(agent.Character.IsIronbreakerUnit() && !agent.Character.IsHero &&  Hero.MainHero.HasCareerChoice("NestCleansingPassive4"))
+                                        {
+                                            ammoCount.Add(1);
+                                        }
+
+                                        
+                                    }
+                                    
+                                    if (Hero.MainHero.HasCareerChoice("IronDrakesPassive4") && agent.GetOriginMobileParty() == MobileParty.MainParty && agent.Character.IsIronbreakerUnit())
+                                    {
+                                        foreach (var elem in MobileParty.MainParty.MemberRoster.GetTroopRoster())
+                                        {
+                                            if (elem.Character.StringId == "tor_dw_ironbeard")
+                                            {
+                                                ammoCount.AddFactor(0.1f);
+                                            }
+                                        }
+                                    }
+
+                                    if (agent.Character.IsHero && agent.GetHero() == Hero.MainHero )
+                                    {
+
+                                        if (missionWeapon.Item.IsFlameThrowerItem())
+                                        {
+                                            if(Hero.MainHero.HasCareerChoice("IronDrakesPassive3"))
+                                            {
+                                                ammoCount.Add(12);
+                                            }
+                                        }
+                                        
                                     }
                                 }
-                                
                                 
                                 if (currentUsageItem.RelevantSkill == TORSkills.GunPowder && currentUsageItem.WeaponClass == WeaponClass.Cartridge)
                                 {
@@ -149,9 +182,6 @@ namespace TOR_Core.Models
                                     equipment.SetAmountOfSlot(equipmentIndex, (short)result, true);
                                 }
                             }
-                            
-                            
-
 
                             if (currentUsageItem.IsShield)
                             {
@@ -171,7 +201,20 @@ namespace TOR_Core.Models
 
                     if (agent.BelongsToMainParty() && agent.Character.IsIronbreakerUnit() && !agent.Character.IsRanged )
                     {
-                        if (Hero.MainHero.HasCareer(TORCareers.Ironbreaker) && Hero.MainHero.HasCareerChoice("NestCleansingPassive4"))
+                        if (!Hero.MainHero.HasCareer(TORCareers.Ironbreaker)) return;
+                        
+                        if (Hero.MainHero.HasCareerChoice("NestCleansingPassive4"))
+                        {
+                            MissionEquipment troopEquipment = agent.Equipment;
+                            for (int i = 0; i < 5; i++)
+                            {
+                                EquipmentIndex equipmentIndex = (EquipmentIndex)i;
+                                MissionWeapon missionWeapon = equipment[equipmentIndex];
+                                
+                            }
+                        }
+                        
+                        if (Hero.MainHero.HasCareerChoice("NestCleansingPassive4"))
                         {
                             MissionEquipment troopEquipment = agent.Equipment;
                             for (int i = 0; i < 5; i++)
@@ -322,6 +365,17 @@ namespace TOR_Core.Models
                         agent.SetAgentFlags(agent.GetAgentFlags() & ~AgentFlag.CanDefend);
                         agent.Defensiveness = 0.001f;
                     }
+
+                    if (character.IsIronbreakerUnit())
+                    {
+                        agentDrivenProperties.WeaponInaccuracy += 0.095f;
+                        
+                        
+                        var modificator = heavyDwarfSpeedModificatior;
+                        agentDrivenProperties.TopSpeedReachDuration *= modificator;
+                        agentDrivenProperties.MaxSpeedMultiplier *= modificator;
+                    }
+                    
                 }
             }
 

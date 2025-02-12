@@ -1664,7 +1664,7 @@
       <face_key_template value="BodyProperty.fighter_empire" />
     </face>
     <upgrade_targets>
-      <upgrade_target id="NPCCharacter.tor_dw_veteran_ironbreeaker" />
+      <upgrade_target id="NPCCharacter.tor_dw_ironbeard" />
       <upgrade_target id="NPCCharacter.tor_dw_irondrake" />
       <upgrade_target id="NPCCharacter.tor_dw_irondrake_trollhammer" />
     </upgrade_targets>
@@ -1673,17 +1673,17 @@
       <EquipmentSet id="tor_dw_ironbreaker_template" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_dw_veteran_ironbreeaker" default_group="infantry" level="46" name="{=str_tor_dw_veteran_ironbreeaker}Dawi Veteran Ironbreaker" occupation="Soldier" culture="Culture.sturgia" skill_template="SkillSet.tor_skills_level46" race="dwarf">
+  <NPCCharacter id="tor_dw_ironbeard" default_group="infantry" level="46" name="{=str_tor_dw_ironbeard}Dawi Ironbeard" occupation="Soldier" culture="Culture.sturgia" skill_template="SkillSet.tor_skills_level46" race="dwarf">
     <face>
       <face_key_template value="BodyProperty.fighter_empire" />
     </face>
     <upgrade_targets />
     <Equipments>
-      <EquipmentSet id="tor_dw_veteran_ironbreeaker_template" />
-      <EquipmentSet id="tor_dw_veteran_ironbreeaker_template" civilian="true" />
+      <EquipmentSet id="tor_dw_ironbeard_template" />
+      <EquipmentSet id="tor_dw_ironbeard_template" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_dw_irondrake" default_group="infantry" level="46" name="{=str_tor_dw_irondrake}Irondrake" occupation="Soldier" culture="Culture.sturgia" skill_template="SkillSet.tor_skills_level46" race="dwarf">
+  <NPCCharacter id="tor_dw_irondrake" default_group="infantry" level="46" name="{=str_tor_dw_irondrake}Dawi Irondrake" occupation="Soldier" culture="Culture.sturgia" skill_template="SkillSet.tor_skills_level46" race="dwarf">
     <face>
       <face_key_template value="BodyProperty.fighter_empire" />
     </face>
@@ -1693,7 +1693,7 @@
       <EquipmentSet id="tor_dw_irondrake_template" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_dw_irondrake_trollhammer" default_group="infantry" level="46" name="{=str_tor_dw_irondrake_trollhammer}Irondrake Ironhammer" occupation="Soldier" culture="Culture.sturgia" skill_template="SkillSet.tor_skills_level46" race="dwarf">
+  <NPCCharacter id="tor_dw_irondrake_trollhammer" default_group="infantry" level="46" name="{=str_tor_dw_irondrake_trollhammer}Dawi Irondrake (Trollhammer)" occupation="Soldier" culture="Culture.sturgia" skill_template="SkillSet.tor_skills_level46" race="dwarf">
     <face>
       <face_key_template value="BodyProperty.fighter_empire" />
     </face>

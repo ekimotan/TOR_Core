@@ -22,8 +22,8 @@ namespace TOR_Core.BattleMechanics.Firearms
         private readonly int[] _soundIndex = new int[5];
         private readonly Random _random;
         private readonly Dictionary<int, ContinousFiringData> _continousFiringAgents = [];
-        private readonly float _continousFiringInterval = 300f;
-        private readonly float _continousFiringBurstLength = 4f;
+        private readonly float _continousFiringInterval = 100f;
+        private readonly float _continousFiringBurstLength = 1.5f;
 
         private const int _explosionDamage = 125;
         private const float _explosionRadius = 6;
@@ -62,7 +62,7 @@ namespace TOR_Core.BattleMechanics.Firearms
                 if (MissionTime.Now.ToMilliseconds - _continousFiringInterval > firingData.LastFiredTime)
                 {
                     firingData.LastFiredTime = MissionTime.Now.ToMilliseconds;
-                    BurstFireShot(agent, 0.1f);
+                    BurstFireShot(agent, 0.2f);
                 }
             }
         }
@@ -177,8 +177,12 @@ namespace TOR_Core.BattleMechanics.Firearms
             var ammoItem = MBObjectManager.Instance.GetObject<ItemObject>("tor_neutral_weapon_ammo_musket_ball");
             var ammo = new MissionWeapon(ammoItem, null, null, 1);
 
+            var baseSpeed = 15;
+
+            var bonusSpeed = 25;
+            
             Mission.AddCustomMissile(shooterAgent, ammo, frame.origin, frame.rotation.f, frame.rotation,
-                15, 15, false, null);
+                baseSpeed, bonusSpeed, true,null);
         }
 
         public override void OnMissileCollisionReaction(Mission.MissileCollisionReaction collisionReaction,
@@ -234,7 +238,7 @@ namespace TOR_Core.BattleMechanics.Firearms
 
             if (attackerWeapon !=null && attackerWeapon.WeaponClass == WeaponClass.Stone)
             {
-                if (attackerWeapon.ItemUsage == "dwarf_hand_grenade")
+                if (attackerWeapon.ItemUsage == "tor_dw_weapon_grenade_hand_grenade")
                 {
                     if (affectorAgent.IsHero)
                     {
