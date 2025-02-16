@@ -1446,6 +1446,150 @@
       <EquipmentSet id="tor_chaos_wanderer_template" civilian="true" />
     </Equipments>
   </NPCCharacter>
+  <NPCCharacter id="tor_chaos_lord_0" default_group="cavalry" name="{=str_tor_chaos_lord_0}{DOESNTMATTER]" occupation="Lord" culture="Culture.chaos_culture" voice="curt" age="30" race="chaos_ud_cultist" is_template="true" is_hero="false">
+    <face>
+      <face_key_template value="BodyProperty.undivided_cultist" />
+    </face>
+    <Traits>
+      <Trait id="BalancedFightingSkills" value="8" />
+      <Trait id="Commander" value="5" />
+      <Trait id="Calculating" value="5" />
+      <Trait id="Mercy" value="-1" />
+      <Trait id="Valor" value="-1" />
+    </Traits>
+    <Equipments>
+      <EquipmentSet id="tor_chaos_undivided_knight_template" />
+      <EquipmentSet id="tor_chaos_undivided_knight_template" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="tor_chaos_lord_1" default_group="cavalry" name="{=str_tor_chaos_lord_1}{DOESNTMATTER]" occupation="Lord" culture="Culture.chaos_culture" voice="curt" age="30" race="chaos_ud_cultist" is_template="true" is_hero="false">
+    <face>
+      <face_key_template value="BodyProperty.undivided_cultist" />
+    </face>
+    <Traits>
+      <Trait id="BalancedFightingSkills" value="8" />
+      <Trait id="Commander" value="5" />
+      <Trait id="Calculating" value="5" />
+      <Trait id="Mercy" value="-1" />
+      <Trait id="Valor" value="-1" />
+    </Traits>
+    <Equipments>
+      <EquipmentSet id="tor_chaos_undivided_knight_template" />
+      <EquipmentSet id="tor_chaos_undivided_knight_template" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="tor_chaos_lord_2" default_group="cavalry" name="{=str_tor_chaos_lord_2}{DOESNTMATTER]" occupation="Lord" culture="Culture.chaos_culture" voice="curt" age="30" race="chaos_ud_cultist" is_template="true" is_hero="false">
+    <face>
+      <face_key_template value="BodyProperty.undivided_cultist" />
+    </face>
+    <Traits>
+      <Trait id="BalancedFightingSkills" value="8" />
+      <Trait id="Commander" value="5" />
+      <Trait id="Calculating" value="5" />
+      <Trait id="Mercy" value="-1" />
+      <Trait id="Valor" value="-1" />
+    </Traits>
+    <Equipments>
+      <EquipmentSet id="tor_chaos_undivided_knight_template" />
+      <EquipmentSet id="tor_chaos_undivided_knight_template" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="tor_druchii_lord_0" default_group="cavalry" name="{=str_tor_druchii_lord_0}{DOESNTMATTER]" occupation="Lord" culture="Culture.druchii" voice="curt" age="30" race="elf" is_template="true" is_hero="false">
+    <face>
+      <face_key_template value="BodyProperty.male_wood_elf" />
+    </face>
+    <Traits>
+      <Trait id="BalancedFightingSkills" value="8" />
+      <Trait id="Commander" value="5" />
+      <Trait id="Calculating" value="5" />
+      <Trait id="Mercy" value="-1" />
+      <Trait id="Valor" value="-1" />
+    </Traits>
+    <Equipments>
+      <EquipmentSet id="tor_generic_druchii_lord_template" />
+      <EquipmentSet id="tor_generic_druchii_lord_template" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="tor_druchii_lord_1" default_group="cavalry" name="{=str_tor_druchii_lord_1}{DOESNTMATTER]" occupation="Lord" culture="Culture.druchii" voice="curt" age="30" race="elf" is_template="true" is_hero="false">
+    <face>
+      <face_key_template value="BodyProperty.male_wood_elf" />
+    </face>
+    <Traits>
+      <Trait id="BalancedFightingSkills" value="8" />
+      <Trait id="Commander" value="5" />
+      <Trait id="Calculating" value="5" />
+      <Trait id="Mercy" value="-1" />
+      <Trait id="Valor" value="-1" />
+    </Traits>
+    <Equipments>
+      <EquipmentSet id="tor_generic_druchii_lord_template" />
+      <EquipmentSet id="tor_generic_druchii_lord_template" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="tor_druchii_lord_2" default_group="cavalry" name="{=str_tor_druchii_lord_2}{DOESNTMATTER]" occupation="Lord" culture="Culture.druchii" voice="curt" age="30" race="elf" is_template="true" is_hero="false">
+    <face>
+      <face_key_template value="BodyProperty.male_wood_elf" />
+    </face>
+    <Traits>
+      <Trait id="BalancedFightingSkills" value="8" />
+      <Trait id="Commander" value="5" />
+      <Trait id="Calculating" value="5" />
+      <Trait id="Mercy" value="-1" />
+      <Trait id="Valor" value="-1" />
+    </Traits>
+    <Equipments>
+      <EquipmentSet id="tor_generic_druchii_lord_template" />
+      <EquipmentSet id="tor_generic_druchii_lord_template" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="tor_beastman_lord_0" default_group="infantry" name="{=str_tor_beastman_lord_0}{DOESNTMATTER]" occupation="Lord" culture="Culture.chaos_culture" voice="curt" age="30" race="ungor" is_template="true" is_hero="false">
+    <face>
+      <face_key_template value="BodyProperty.ungor" />
+    </face>
+    <Traits>
+      <Trait id="BalancedFightingSkills" value="8" />
+      <Trait id="Commander" value="5" />
+      <Trait id="Calculating" value="5" />
+      <Trait id="Mercy" value="-1" />
+      <Trait id="Valor" value="-1" />
+    </Traits>
+    <Equipments>
+      <EquipmentSet id="tor_beast_ungor_chief_template" />
+      <EquipmentSet id="tor_beast_ungor_chief_template" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="tor_beastman_lord_1" default_group="infantry" name="{=str_tor_beastman_lord_1}{DOESNTMATTER]" occupation="Lord" culture="Culture.chaos_culture" voice="curt" age="30" race="ungor" is_template="true" is_hero="false">
+    <face>
+      <face_key_template value="BodyProperty.ungor" />
+    </face>
+    <Traits>
+      <Trait id="BalancedFightingSkills" value="8" />
+      <Trait id="Commander" value="5" />
+      <Trait id="Calculating" value="5" />
+      <Trait id="Mercy" value="-1" />
+      <Trait id="Valor" value="-1" />
+    </Traits>
+    <Equipments>
+      <EquipmentSet id="tor_beast_ungor_chief_template" />
+      <EquipmentSet id="tor_beast_ungor_chief_template" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="tor_beastman_lord_2" default_group="infantry" name="{=str_tor_beastman_lord_2}{DOESNTMATTER]" occupation="Lord" culture="Culture.chaos_culture" voice="curt" age="30" race="ungor" is_template="true" is_hero="false">
+    <face>
+      <face_key_template value="BodyProperty.ungor" />
+    </face>
+    <Traits>
+      <Trait id="BalancedFightingSkills" value="8" />
+      <Trait id="Commander" value="5" />
+      <Trait id="Calculating" value="5" />
+      <Trait id="Mercy" value="-1" />
+      <Trait id="Valor" value="-1" />
+    </Traits>
+    <Equipments>
+      <EquipmentSet id="tor_beast_ungor_chief_template" />
+      <EquipmentSet id="tor_beast_ungor_chief_template" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
   <NPCCharacter id="tor_engineerquesthero" default_group="infantry" name="{=str_tor_engineerquesthero}{=!}Goswin" occupation="Lord" culture="Culture.empire" voice="ironic" age="30" is_template="true" is_hero="false">
     <face>
       <face_key_template value="BodyProperty.fighter_empire" />
