@@ -4220,24 +4220,24 @@
   </EquipmentRoster>
   <EquipmentRoster id="tor_vc_harbinger_champion_plate_two_handed_template" culture="Culture.khuzait">
     <EquipmentSet>
-      <Equipment slot="Item0" id="Item.tor_vc_weapon_thaxe_graveguard_001" />
-      <Equipment slot="Item1" id="Item.tor_vc_weapon_shield_grave_guard_001" />
-      <Equipment slot="Item2" id="Item.tor_vc_weapon_sword_grave_guard_001" />
-      <Equipment slot="Head" id="Item.tor_vc_head_helm_hell_knight_001" />
-      <Equipment slot="Body" id="Item.tor_vc_body_breastplate_hell_knight_001" />
-      <Equipment slot="Cape" id="Item.tor_vc_shoulder_pauldron_hell_knight_001" />
-      <Equipment slot="Gloves" id="Item.tor_vc_arm_gauntlet_hell_knight_001" />
-      <Equipment slot="Leg" id="Item.tor_vc_leg_boots_vc_hell_knight_001" />
+      <Equipment slot="Item0" id="Item.tor_vc_weapon_thaxe_vampire_002" />
+      <Equipment slot="Item1" id="Item.tor_vc_weapon_sword_vampire_008" />
+      <Equipment slot="Item2" id="Item.tor_vc_weapon_shield_vampire_007" />
+      <Equipment slot="Head" id="Item.tor_vc_head_helm_hell_knight_002" />
+      <Equipment slot="Body" id="Item.tor_vc_body_breastplate_dh_templar_001" />
+      <Equipment slot="Cape" id="Item.tor_vc_shoulder_pauldron_wight_king_001" />
+      <Equipment slot="Gloves" id="Item.tor_vc_arm_bracers_wight_king_001" />
+      <Equipment slot="Leg" id="Item.tor_vc_leg_boots_vc_wight_king_001" />
     </EquipmentSet>
     <EquipmentSet civilian="true">
-      <Equipment slot="Item0" id="Item.tor_vc_weapon_thaxe_graveguard_001" />
-      <Equipment slot="Item1" id="Item.tor_vc_weapon_shield_grave_guard_001" />
-      <Equipment slot="Item2" id="Item.tor_vc_weapon_sword_grave_guard_001" />
-      <Equipment slot="Head" id="Item.tor_vc_head_helm_hell_knight_001" />
-      <Equipment slot="Body" id="Item.tor_vc_body_breastplate_hell_knight_001" />
-      <Equipment slot="Cape" id="Item.tor_vc_shoulder_pauldron_hell_knight_001" />
-      <Equipment slot="Gloves" id="Item.tor_vc_arm_gauntlet_hell_knight_001" />
-      <Equipment slot="Leg" id="Item.tor_vc_leg_boots_vc_hell_knight_001" />
+      <Equipment slot="Item0" id="Item.tor_vc_weapon_thaxe_vampire_002" />
+      <Equipment slot="Item1" id="Item.tor_vc_weapon_sword_vampire_008" />
+      <Equipment slot="Item2" id="Item.tor_vc_weapon_shield_vampire_007" />
+      <Equipment slot="Head" id="Item.tor_vc_head_helm_hell_knight_002" />
+      <Equipment slot="Body" id="Item.tor_vc_body_breastplate_dh_templar_001" />
+      <Equipment slot="Cape" id="Item.tor_vc_shoulder_pauldron_wight_king_001" />
+      <Equipment slot="Gloves" id="Item.tor_vc_arm_bracers_wight_king_001" />
+      <Equipment slot="Leg" id="Item.tor_vc_leg_boots_vc_wight_king_001" />
     </EquipmentSet>
   </EquipmentRoster>
   <EquipmentRoster id="tor_chaos_norscan_tribesman_template" culture="Culture.chaos_culture">
@@ -19732,24 +19732,30 @@
     <EquipmentSet>
       <Equipment slot="Item0" id="Item.tor_dwarf_weapon_1h_axe_001" />
       <Equipment slot="Item1" id="Item.tor_dwarf_weapon_shield_003" />
-      <Equipment slot="Head" id="Item.tor_dw_head_helm_warrior_001" />
-      <Equipment slot="Body" id="Item.tor_dw_body_armour_warrior_001" />
-      <Equipment slot="Gloves" id="Item.tor_dw_arm_bracers_warrior_001" />
-      <Equipment slot="Leg" id="Item.tor_dw_leg_boots_warrior_001" />
+      <Equipment slot="Item2" id="Item.tor_dw_weapon_grenade_hand_grenade" />
+      <Equipment slot="Head" id="Item.tor_dw_head_helm_ironbreaker_001" />
+      <Equipment slot="Body" id="Item.tor_dw_body_armour_ironbreaker_001" />
+      <Equipment slot="Cape" id="Item.tor_dw_shoulder_shoulderpads_ironbreaker_001" />
+      <Equipment slot="Gloves" id="Item.tor_dw_arm_bracers_ironbreaker_001" />
+      <Equipment slot="Leg" id="Item.tor_dw_leg_boots_ironbreaker_001" />
     </EquipmentSet>
     <EquipmentSet civilian="true">
       <Equipment slot="Item0" id="Item.tor_dwarf_weapon_1h_axe_001" />
       <Equipment slot="Item1" id="Item.tor_dwarf_weapon_shield_003" />
-      <Equipment slot="Head" id="Item.tor_dw_head_helm_warrior_001" />
-      <Equipment slot="Body" id="Item.tor_dw_body_armour_warrior_001" />
-      <Equipment slot="Gloves" id="Item.tor_dw_arm_bracers_warrior_001" />
-      <Equipment slot="Leg" id="Item.tor_dw_leg_boots_warrior_001" />
+      <Equipment slot="Item2" id="Item.tor_dw_weapon_grenade_hand_grenade" />
+      <Equipment slot="Head" id="Item.tor_dw_head_helm_ironbreaker_001" />
+      <Equipment slot="Body" id="Item.tor_dw_body_armour_ironbreaker_001" />
+      <Equipment slot="Cape" id="Item.tor_dw_shoulder_shoulderpads_ironbreaker_001" />
+      <Equipment slot="Gloves" id="Item.tor_dw_arm_bracers_ironbreaker_001" />
+      <Equipment slot="Leg" id="Item.tor_dw_leg_boots_ironbreaker_001" />
     </EquipmentSet>
   </EquipmentRoster>
-  <EquipmentRoster id="tor_dw_veteran_ironbreeaker_template" culture="Culture.sturgia">
+  <EquipmentRoster id="tor_dw_ironbeard_template" culture="Culture.sturgia">
     <EquipmentSet>
       <Equipment slot="Item0" id="Item.tor_dwarf_weapon_1h_axe_001" />
       <Equipment slot="Item1" id="Item.tor_dwarf_weapon_shield_003" />
+      <Equipment slot="Item2" id="Item.tor_dw_weapon_grenade_hand_grenade" />
+      <Equipment slot="Item3" id="tor_dw_weapon_grenade_hand_grenade" />
       <Equipment slot="Head" id="Item.tor_dw_head_helm_warrior_001" />
       <Equipment slot="Body" id="Item.tor_dw_body_armour_warrior_001" />
       <Equipment slot="Gloves" id="Item.tor_dw_arm_bracers_warrior_001" />
@@ -19758,6 +19764,8 @@
     <EquipmentSet civilian="true">
       <Equipment slot="Item0" id="Item.tor_dwarf_weapon_1h_axe_001" />
       <Equipment slot="Item1" id="Item.tor_dwarf_weapon_shield_003" />
+      <Equipment slot="Item2" id="Item.tor_dw_weapon_grenade_hand_grenade" />
+      <Equipment slot="Item3" id="tor_dw_weapon_grenade_hand_grenade" />
       <Equipment slot="Head" id="Item.tor_dw_head_helm_warrior_001" />
       <Equipment slot="Body" id="Item.tor_dw_body_armour_warrior_001" />
       <Equipment slot="Gloves" id="Item.tor_dw_arm_bracers_warrior_001" />
@@ -19766,20 +19774,22 @@
   </EquipmentRoster>
   <EquipmentRoster id="tor_dw_irondrake_template" culture="Culture.sturgia">
     <EquipmentSet>
-      <Equipment slot="Item0" id="Item.tor_dwarf_weapon_1h_axe_001" />
-      <Equipment slot="Item1" id="Item.tor_dwarf_weapon_shield_003" />
-      <Equipment slot="Head" id="Item.tor_dw_head_helm_warrior_001" />
-      <Equipment slot="Body" id="Item.tor_dw_body_armour_warrior_001" />
-      <Equipment slot="Gloves" id="Item.tor_dw_arm_bracers_warrior_001" />
-      <Equipment slot="Leg" id="Item.tor_dw_leg_boots_warrior_001" />
+      <Equipment slot="Item0" id="Item.tor_dwarf_drakegun" />
+      <Equipment slot="Item1" id="Item.tor_dw_drakegun_cannister" />
+      <Equipment slot="Head" id="Item.tor_dw_head_helm_ironbreaker_001" />
+      <Equipment slot="Body" id="Item.tor_dw_body_armour_ironbreaker_001" />
+      <Equipment slot="Cape" id="Item.tor_dw_shoulder_shoulderpads_ironbreaker_001" />
+      <Equipment slot="Gloves" id="Item.tor_dw_arm_bracers_ironbreaker_001" />
+      <Equipment slot="Leg" id="Item.tor_dw_leg_boots_ironbreaker_001" />
     </EquipmentSet>
     <EquipmentSet civilian="true">
-      <Equipment slot="Item0" id="Item.tor_dwarf_weapon_1h_axe_001" />
-      <Equipment slot="Item1" id="Item.tor_dwarf_weapon_shield_003" />
-      <Equipment slot="Head" id="Item.tor_dw_head_helm_warrior_001" />
-      <Equipment slot="Body" id="Item.tor_dw_body_armour_warrior_001" />
-      <Equipment slot="Gloves" id="Item.tor_dw_arm_bracers_warrior_001" />
-      <Equipment slot="Leg" id="Item.tor_dw_leg_boots_warrior_001" />
+      <Equipment slot="Item0" id="Item.tor_dwarf_drakegun" />
+      <Equipment slot="Item1" id="Item.tor_dw_drakegun_cannister" />
+      <Equipment slot="Head" id="Item.tor_dw_head_helm_ironbreaker_001" />
+      <Equipment slot="Body" id="Item.tor_dw_body_armour_ironbreaker_001" />
+      <Equipment slot="Cape" id="Item.tor_dw_shoulder_shoulderpads_ironbreaker_001" />
+      <Equipment slot="Gloves" id="Item.tor_dw_arm_bracers_ironbreaker_001" />
+      <Equipment slot="Leg" id="Item.tor_dw_leg_boots_ironbreaker_001" />
     </EquipmentSet>
   </EquipmentRoster>
   <EquipmentRoster id="tor_dw_irondrake_trollhammer_template" culture="Culture.sturgia">

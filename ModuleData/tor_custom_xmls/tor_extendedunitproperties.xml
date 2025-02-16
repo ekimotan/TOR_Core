@@ -1348,7 +1348,7 @@
       <DamageProportionTuple DamageType="Physical" Percent="1.00" />
     </DamageProportions>
   </CharacterExtendedInfo>
-  <CharacterExtendedInfo id="tor_dw_veteran_ironbreeaker">
+  <CharacterExtendedInfo id="tor_dw_ironbeard">
     <Abilities />
     <Attributes />
     <Resistances />
@@ -2711,7 +2711,9 @@
       <string>Undead</string>
       <string>Unbreakable</string>
     </Attributes>
-    <Resistances />
+    <Resistances>
+      <ResistanceTuple ResistedDamageType="Holy" ReductionPercent="-0.50" />
+    </Resistances>
     <DamageAmplifiers />
     <DamageProportions>
       <DamageProportionTuple DamageType="Physical" Percent="1.00" />
@@ -2723,7 +2725,9 @@
       <string>Undead</string>
       <string>Unbreakable</string>
     </Attributes>
-    <Resistances />
+    <Resistances>
+      <ResistanceTuple ResistedDamageType="Holy" ReductionPercent="-0.50" />
+    </Resistances>
     <DamageAmplifiers />
     <DamageProportions>
       <DamageProportionTuple DamageType="Physical" Percent="1.00" />
@@ -2736,7 +2740,9 @@
       <string>Undead</string>
       <string>Unbreakable</string>
     </Attributes>
-    <Resistances />
+    <Resistances>
+      <ResistanceTuple ResistedDamageType="Holy" ReductionPercent="-0.50" />
+    </Resistances>
     <DamageAmplifiers />
     <DamageProportions>
       <DamageProportionTuple DamageType="Physical" Percent="1.00" />
@@ -4031,7 +4037,9 @@
     <Attributes>
       <string>Undead</string>
     </Attributes>
-    <Resistances />
+    <Resistances>
+      <ResistanceTuple ResistedDamageType="Holy" ReductionPercent="-0.50" />
+    </Resistances>
     <DamageAmplifiers />
     <DamageProportions>
       <DamageProportionTuple DamageType="Physical" Percent="1.00" />
@@ -4043,7 +4051,9 @@
     <Attributes>
       <string>Undead</string>
     </Attributes>
-    <Resistances />
+    <Resistances>
+      <ResistanceTuple ResistedDamageType="Holy" ReductionPercent="-0.50" />
+    </Resistances>
     <DamageAmplifiers />
     <DamageProportions>
       <DamageProportionTuple DamageType="Physical" Percent="1.00" />

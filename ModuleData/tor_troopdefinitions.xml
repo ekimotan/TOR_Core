@@ -1533,7 +1533,7 @@
       <EquipmentSet id="tor_dw_dwarf_warrior_template" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_dw_militia" default_group="infantry" level="6" name="{=str_tor_dw_militia}Dawi Militia" occupation="Soldier" culture="Culture.sturgia" skill_template="SkillSet.tor_skills_level6" race="dwarf">
+  <NPCCharacter id="tor_dw_militia" default_group="infantry" level="11" name="{=str_tor_dw_militia}Dawi Militia" occupation="Soldier" culture="Culture.sturgia" skill_template="SkillSet.tor_skills_level11" race="dwarf">
     <face>
       <face_key_template value="BodyProperty.fighter_empire" />
     </face>
@@ -1546,7 +1546,7 @@
       <EquipmentSet id="tor_dw_militia_template" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_dw_miner" default_group="infantry" level="6" name="{=str_tor_dw_miner}Dawi Miner" occupation="Soldier" culture="Culture.sturgia" skill_template="SkillSet.tor_skills_level6" race="dwarf">
+  <NPCCharacter id="tor_dw_miner" default_group="infantry" level="16" name="{=str_tor_dw_miner}Dawi Miner" occupation="Soldier" culture="Culture.sturgia" skill_template="SkillSet.tor_skills_level16" race="dwarf">
     <face>
       <face_key_template value="BodyProperty.fighter_empire" />
     </face>
@@ -1558,7 +1558,7 @@
       <EquipmentSet id="tor_dw_miner_template" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_dw_prospector" default_group="infantry" level="6" name="{=str_tor_dw_prospector}Dawi Prospector" occupation="Soldier" culture="Culture.sturgia" skill_template="SkillSet.tor_skills_level6" race="dwarf">
+  <NPCCharacter id="tor_dw_prospector" default_group="infantry" level="21" name="{=str_tor_dw_prospector}Dawi Prospector" occupation="Soldier" culture="Culture.sturgia" skill_template="SkillSet.tor_skills_level21" race="dwarf">
     <face>
       <face_key_template value="BodyProperty.fighter_empire" />
     </face>
@@ -1568,7 +1568,7 @@
       <EquipmentSet id="tor_dw_prospector_template" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_dw_warrior" default_group="infantry" level="6" name="{=str_tor_dw_warrior}Dawi Warrior" occupation="Soldier" culture="Culture.sturgia" skill_template="SkillSet.tor_skills_level6" race="dwarf">
+  <NPCCharacter id="tor_dw_warrior" default_group="infantry" level="21" name="{=str_tor_dw_warrior}Dawi Warrior" occupation="Soldier" culture="Culture.sturgia" skill_template="SkillSet.tor_skills_level21" race="dwarf">
     <face>
       <face_key_template value="BodyProperty.fighter_empire" />
     </face>
@@ -1580,7 +1580,7 @@
       <EquipmentSet id="tor_dw_warrior_template" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_dw_longbeard" default_group="infantry" level="6" name="{=str_tor_dw_longbeard}Dawi Longbeard" occupation="Soldier" culture="Culture.sturgia" skill_template="SkillSet.tor_skills_level6" race="dwarf">
+  <NPCCharacter id="tor_dw_longbeard" default_group="infantry" level="31" name="{=str_tor_dw_longbeard}Dawi Longbeard" occupation="Soldier" culture="Culture.sturgia" skill_template="SkillSet.tor_skills_level31" race="dwarf">
     <face>
       <face_key_template value="BodyProperty.fighter_empire" />
     </face>
@@ -1590,7 +1590,7 @@
       <EquipmentSet id="tor_dw_longbeard_template" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_dw_scout" default_group="ranged" level="6" name="{=str_tor_dw_scout}Dawi Scout" occupation="Soldier" culture="Culture.sturgia" skill_template="SkillSet.tor_skills_level6" race="dwarf">
+  <NPCCharacter id="tor_dw_scout" default_group="ranged" level="16" name="{=str_tor_dw_scout}Dawi Scout" occupation="Soldier" culture="Culture.sturgia" skill_template="SkillSet.tor_skills_level16" race="dwarf">
     <face>
       <face_key_template value="BodyProperty.fighter_empire" />
     </face>
@@ -1602,7 +1602,7 @@
       <EquipmentSet id="tor_dw_scout_template" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_dw_quarreller" default_group="ranged" level="6" name="{=str_tor_dw_quarreller}Dawi Quarreller" occupation="Soldier" culture="Culture.sturgia" skill_template="SkillSet.tor_skills_level6" race="dwarf">
+  <NPCCharacter id="tor_dw_quarreller" default_group="ranged" level="21" name="{=str_tor_dw_quarreller}Dawi Quarreller" occupation="Soldier" culture="Culture.sturgia" skill_template="SkillSet.tor_skills_level21" race="dwarf">
     <face>
       <face_key_template value="BodyProperty.fighter_empire" />
     </face>
@@ -1614,7 +1614,7 @@
       <EquipmentSet id="tor_dw_quarreller_template" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_dw_veteran_quarreller" default_group="ranged" level="6" name="{=str_tor_dw_veteran_quarreller}Dawi Veteran Quarreller" occupation="Soldier" culture="Culture.sturgia" skill_template="SkillSet.tor_skills_level6" race="dwarf">
+  <NPCCharacter id="tor_dw_veteran_quarreller" default_group="ranged" level="26" name="{=str_tor_dw_veteran_quarreller}Dawi Veteran Quarreller" occupation="Soldier" culture="Culture.sturgia" skill_template="SkillSet.tor_skills_level26" race="dwarf">
     <face>
       <face_key_template value="BodyProperty.fighter_empire" />
     </face>
@@ -1624,7 +1624,7 @@
       <EquipmentSet id="tor_dw_veteran_quarreller_template" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_dw_thunderer" default_group="ranged" level="6" name="{=str_tor_dw_thunderer}Dawi Thunderer" occupation="Soldier" culture="Culture.sturgia" skill_template="SkillSet.tor_skills_level6" race="dwarf">
+  <NPCCharacter id="tor_dw_thunderer" default_group="ranged" level="21" name="{=str_tor_dw_thunderer}Dawi Thunderer" occupation="Soldier" culture="Culture.sturgia" skill_template="SkillSet.tor_skills_level21" race="dwarf">
     <face>
       <face_key_template value="BodyProperty.fighter_empire" />
     </face>
@@ -1636,7 +1636,7 @@
       <EquipmentSet id="tor_dw_thunderer_template" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_dw_sharpshooter" default_group="ranged" level="6" name="{=str_tor_dw_sharpshooter}Dawi Sharpshooter" occupation="Soldier" culture="Culture.sturgia" skill_template="SkillSet.tor_skills_level6" race="dwarf">
+  <NPCCharacter id="tor_dw_sharpshooter" default_group="ranged" level="26" name="{=str_tor_dw_sharpshooter}Dawi Sharpshooter" occupation="Soldier" culture="Culture.sturgia" skill_template="SkillSet.tor_skills_level26" race="dwarf">
     <face>
       <face_key_template value="BodyProperty.fighter_empire" />
     </face>
@@ -1646,7 +1646,7 @@
       <EquipmentSet id="tor_dw_sharpshooter_template" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_dw_oldguard" default_group="infantry" level="6" name="{=str_tor_dw_oldguard}Dawi Old Guard" occupation="Soldier" culture="Culture.sturgia" skill_template="SkillSet.tor_skills_level6" is_basic_troop="true" race="dwarf">
+  <NPCCharacter id="tor_dw_oldguard" default_group="infantry" level="26" name="{=str_tor_dw_oldguard}Dawi Old Guard" occupation="Soldier" culture="Culture.sturgia" skill_template="SkillSet.tor_skills_level26" is_basic_troop="true" race="dwarf">
     <face>
       <face_key_template value="BodyProperty.fighter_empire" />
     </face>
@@ -1659,12 +1659,12 @@
       <EquipmentSet id="tor_dw_oldguard_template" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_dw_ironbreaker" default_group="infantry" level="6" name="{=str_tor_dw_ironbreaker}Dawi Ironbreaker" occupation="Soldier" culture="Culture.sturgia" skill_template="SkillSet.tor_skills_level6" race="dwarf">
+  <NPCCharacter id="tor_dw_ironbreaker" default_group="infantry" level="41" name="{=str_tor_dw_ironbreaker}Dawi Ironbreaker" occupation="Soldier" culture="Culture.sturgia" skill_template="SkillSet.tor_skills_level41" race="dwarf">
     <face>
       <face_key_template value="BodyProperty.fighter_empire" />
     </face>
     <upgrade_targets>
-      <upgrade_target id="NPCCharacter.tor_dw_veteran_ironbreeaker" />
+      <upgrade_target id="NPCCharacter.tor_dw_ironbeard" />
       <upgrade_target id="NPCCharacter.tor_dw_irondrake" />
       <upgrade_target id="NPCCharacter.tor_dw_irondrake_trollhammer" />
     </upgrade_targets>
@@ -1673,17 +1673,17 @@
       <EquipmentSet id="tor_dw_ironbreaker_template" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_dw_veteran_ironbreeaker" default_group="infantry" level="6" name="{=str_tor_dw_veteran_ironbreeaker}Dawi Veteran Ironbreaker" occupation="Soldier" culture="Culture.sturgia" skill_template="SkillSet.tor_skills_level6" race="dwarf">
+  <NPCCharacter id="tor_dw_ironbeard" default_group="infantry" level="46" name="{=str_tor_dw_ironbeard}Dawi Ironbeard" occupation="Soldier" culture="Culture.sturgia" skill_template="SkillSet.tor_skills_level46" race="dwarf">
     <face>
       <face_key_template value="BodyProperty.fighter_empire" />
     </face>
     <upgrade_targets />
     <Equipments>
-      <EquipmentSet id="tor_dw_veteran_ironbreeaker_template" />
-      <EquipmentSet id="tor_dw_veteran_ironbreeaker_template" civilian="true" />
+      <EquipmentSet id="tor_dw_ironbeard_template" />
+      <EquipmentSet id="tor_dw_ironbeard_template" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_dw_irondrake" default_group="infantry" level="6" name="{=str_tor_dw_irondrake}Irondrake" occupation="Soldier" culture="Culture.sturgia" skill_template="SkillSet.tor_skills_level6" race="dwarf">
+  <NPCCharacter id="tor_dw_irondrake" default_group="infantry" level="46" name="{=str_tor_dw_irondrake}Dawi Irondrake" occupation="Soldier" culture="Culture.sturgia" skill_template="SkillSet.tor_skills_level46" race="dwarf">
     <face>
       <face_key_template value="BodyProperty.fighter_empire" />
     </face>
@@ -1693,7 +1693,7 @@
       <EquipmentSet id="tor_dw_irondrake_template" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_dw_irondrake_trollhammer" default_group="infantry" level="6" name="{=str_tor_dw_irondrake_trollhammer}Irondrake Ironhammer" occupation="Soldier" culture="Culture.sturgia" skill_template="SkillSet.tor_skills_level6" race="dwarf">
+  <NPCCharacter id="tor_dw_irondrake_trollhammer" default_group="infantry" level="46" name="{=str_tor_dw_irondrake_trollhammer}Dawi Irondrake (Trollhammer)" occupation="Soldier" culture="Culture.sturgia" skill_template="SkillSet.tor_skills_level46" race="dwarf">
     <face>
       <face_key_template value="BodyProperty.fighter_empire" />
     </face>
@@ -1703,7 +1703,7 @@
       <EquipmentSet id="tor_dw_irondrake_trollhammer_template" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_dw_hammerer" default_group="infantry" level="6" name="{=str_tor_dw_hammerer}Dawi Hammerer" occupation="Soldier" culture="Culture.sturgia" skill_template="SkillSet.tor_skills_level6" race="dwarf">
+  <NPCCharacter id="tor_dw_hammerer" default_group="infantry" level="41" name="{=str_tor_dw_hammerer}Dawi Hammerer" occupation="Soldier" culture="Culture.sturgia" skill_template="SkillSet.tor_skills_level41" race="dwarf">
     <face>
       <face_key_template value="BodyProperty.fighter_empire" />
     </face>
@@ -1715,7 +1715,7 @@
       <EquipmentSet id="tor_dw_hammerer_template" civilian="true" />
     </Equipments>
   </NPCCharacter>
-  <NPCCharacter id="tor_dw_gatekeeper" default_group="infantry" level="6" name="{=str_tor_dw_gatekeeper}Dawi Gate Keeper" occupation="Soldier" culture="Culture.sturgia" skill_template="SkillSet.tor_skills_level6" race="dwarf">
+  <NPCCharacter id="tor_dw_gatekeeper" default_group="infantry" level="46" name="{=str_tor_dw_gatekeeper}Dawi Gate Keeper" occupation="Soldier" culture="Culture.sturgia" skill_template="SkillSet.tor_skills_level46" race="dwarf">
     <face>
       <face_key_template value="BodyProperty.fighter_empire" />
     </face>
@@ -4418,7 +4418,7 @@
   </NPCCharacter>
   <NPCCharacter id="tor_vc_harbinger_champion" default_group="infantry" level="31" name="{=str_tor_vc_harbinger_champion}Necromancer Champion" occupation="Soldier" culture="Culture.khuzait" skill_template="SkillSet.tor_skills_level31" is_basic_troop="true" race="skeleton">
     <face>
-      <face_key_template value="BodyProperty.skeleton" />
+      <face_key_template value="BodyProperty.harbinger" />
     </face>
     <upgrade_targets>
       <upgrade_target id="NPCCharacter.tor_vc_harbinger_champion_two_handed" />
@@ -4431,7 +4431,7 @@
   </NPCCharacter>
   <NPCCharacter id="tor_vc_harbinger_champion_two_handed" default_group="infantry" level="36" name="{=str_tor_vc_harbinger_champion_two_handed}Necromancer Champion Two-Handed" occupation="Soldier" culture="Culture.khuzait" skill_template="SkillSet.tor_skills_level36" race="skeleton">
     <face>
-      <face_key_template value="BodyProperty.skeleton" />
+      <face_key_template value="BodyProperty.harbinger" />
     </face>
     <upgrade_targets />
     <Equipments>
@@ -4441,7 +4441,7 @@
   </NPCCharacter>
   <NPCCharacter id="tor_vc_harbinger_champion_plate" default_group="cavalry" level="41" name="{=str_tor_vc_harbinger_champion_plate}Necromancer Champion Plate" occupation="Soldier" culture="Culture.khuzait" skill_template="SkillSet.tor_skills_level41" race="skeleton">
     <face>
-      <face_key_template value="BodyProperty.skeleton" />
+      <face_key_template value="BodyProperty.harbinger" />
     </face>
     <upgrade_targets>
       <upgrade_target id="NPCCharacter.tor_vc_harbinger_champion_plate_two_handed" />
@@ -4453,7 +4453,7 @@
   </NPCCharacter>
   <NPCCharacter id="tor_vc_harbinger_champion_plate_two_handed" default_group="cavalry" level="46" name="{=str_tor_vc_harbinger_champion_plate_two_handed}Necromancer Champion Two-Handed-Plate" occupation="Soldier" culture="Culture.khuzait" skill_template="SkillSet.tor_skills_level46" race="skeleton">
     <face>
-      <face_key_template value="BodyProperty.skeleton" />
+      <face_key_template value="BodyProperty.harbinger" />
     </face>
     <upgrade_targets />
     <Equipments>
