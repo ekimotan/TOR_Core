@@ -119,7 +119,7 @@ namespace TOR_Core.CharacterDevelopment.CareerSystem.Choices
 
         protected override void InitializeKeyStones()
         {
-            _bloodKnightRoot.Initialize(CareerID, "The Blood Knight is channeling focus and rage towards the enemies. Damage increased by 45% and physical resistance by 10% for the next 6 seconds. Both bonuses increase with the skill of the equipped weapon by 0.05% per point. Requires 5 kills to recharge, +1 kill per a final perk picked up to max 10.", null, true,
+            _bloodKnightRoot.Initialize(CareerID, "{=blood_knight_root_str}The Blood Knight is channeling focus and rage towards the enemies. Damage increased by 45% and physical resistance by 10% for the next 6 seconds. Both bonuses increase with the skill of the equipped weapon by 0.05% per point. Requires 5 kills to recharge, +1 kill per a final perk picked up to max 10.", null, true,
                 ChoiceType.Keystone, new List<CareerChoiceObject.MutationObject>()
                 {
                     new CareerChoiceObject.MutationObject()
@@ -148,9 +148,9 @@ namespace TOR_Core.CharacterDevelopment.CareerSystem.Choices
                     }
                 });
             
-            _nightRiderKeystone.Initialize(CareerID, "Companion Kills will count for career charge.","NightRider",false,ChoiceType.Keystone,new List<CareerChoiceObject.MutationObject>(),new CareerChoiceObject.PassiveEffect (0, PassiveEffectType.Special));
+            _nightRiderKeystone.Initialize(CareerID, "{=night_rider_keystone_str}Companion Kills will count for career charge.","NightRider",false,ChoiceType.Keystone,new List<CareerChoiceObject.MutationObject>(),new CareerChoiceObject.PassiveEffect (0, PassiveEffectType.Special));
             
-            _bladeMasterKeystone.Initialize(CareerID, "All melee weapon skills, wielded or not, count towards the career ability effects.", "BladeMaster", false,
+            _bladeMasterKeystone.Initialize(CareerID, "{=blade_master_keystone_str}All melee weapon skills, wielded or not, count towards the career ability effects.", "BladeMaster", false,
                 ChoiceType.Keystone, new List<CareerChoiceObject.MutationObject>()
                 {
                     new CareerChoiceObject.MutationObject()
@@ -211,7 +211,7 @@ namespace TOR_Core.CharacterDevelopment.CareerSystem.Choices
                     },
                     
                 });
-            _peerlessWarriorKeystone.Initialize(CareerID, "Career Ability scales with Athletics. Speed increased by 20% when the ability is active.", "PeerlessWarrior", false,
+            _peerlessWarriorKeystone.Initialize(CareerID, "{=peerless_warrior_keystone_str}Career Ability scales with Athletics. Speed increased by 20% when the ability is active.", "PeerlessWarrior", false,
                 ChoiceType.Keystone, new List<CareerChoiceObject.MutationObject>()
                 {
                     new CareerChoiceObject.MutationObject()
@@ -247,7 +247,7 @@ namespace TOR_Core.CharacterDevelopment.CareerSystem.Choices
                         MutationType = OperationType.Replace
                     }
                 });
-            _doomRiderKeystone.Initialize(CareerID, "The Career Ability scales with Tactics. Nearby troops receive the Red Fury buff.", "DoomRider", false,
+            _doomRiderKeystone.Initialize(CareerID, "{=doom_rider_keystone_str}The Career Ability scales with Tactics. Nearby troops receive the Red Fury buff.", "DoomRider", false,
                 ChoiceType.Keystone, new List<CareerChoiceObject.MutationObject>()
                 {
                     new CareerChoiceObject.MutationObject()
@@ -291,7 +291,7 @@ namespace TOR_Core.CharacterDevelopment.CareerSystem.Choices
                         MutationType = OperationType.Replace
                     }
                 });
-            _controlledHungerKeyStone.Initialize(CareerID, "The duration of Red Fury is doubled.", "ControlledHunger", false,
+            _controlledHungerKeyStone.Initialize(CareerID, "{=controlled_hunger_keystone_str}The duration of Red Fury is doubled.", "ControlledHunger", false,
                 ChoiceType.Keystone, new List<CareerChoiceObject.MutationObject>()
                 {
                     new CareerChoiceObject.MutationObject()
@@ -303,7 +303,7 @@ namespace TOR_Core.CharacterDevelopment.CareerSystem.Choices
                         MutationType = OperationType.Add
                     }
                 });
-            _avatarOfDeathKeystone.Initialize(CareerID, "Red Fury's resistance is now Ward save. The ability grants a scaling attack speed boost.", "AvatarOfDeath", false,
+            _avatarOfDeathKeystone.Initialize(CareerID, "{=controlled_hunger_keystone_str}Red Fury's resistance is now Ward save. The ability grants a scaling attack speed boost.", "AvatarOfDeath", false,
                 ChoiceType.Keystone, new List<CareerChoiceObject.MutationObject>()
                 {
                     new CareerChoiceObject.MutationObject()
@@ -323,7 +323,7 @@ namespace TOR_Core.CharacterDevelopment.CareerSystem.Choices
                         MutationType = OperationType.Replace
                     }
                 });
-            _dreadKnightKeystone.Initialize(CareerID, "Red Fury scales with Riding and consecutive kills during ability increase duration by 2 sec each.", "DreadKnight", false,
+            _dreadKnightKeystone.Initialize(CareerID, "{=dread_knight_keystone_str}Red Fury scales with Riding and consecutive kills during ability increase duration by 2 sec each.", "DreadKnight", false,
                 ChoiceType.Keystone, new List<CareerChoiceObject.MutationObject>()
                 {
                     new CareerChoiceObject.MutationObject()
