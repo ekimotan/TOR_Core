@@ -62,7 +62,7 @@ namespace TOR_Core.BattleMechanics.Firearms
                 if (MissionTime.Now.ToMilliseconds - _continousFiringInterval > firingData.LastFiredTime)
                 {
                     firingData.LastFiredTime = MissionTime.Now.ToMilliseconds;
-                    BurstFireShot(agent, 0.2f);
+                    BurstFireShot(agent, 0.2f, firingData.FireAmmoId);
                 }
             }
         }
@@ -82,11 +82,13 @@ namespace TOR_Core.BattleMechanics.Firearms
                 _continousFiringAgents[shooterAgent.Index] = new ContinousFiringData 
                 { 
                     OwnerAgent = shooterAgent,
+                    FireAmmoId = shooterAgent.WieldedWeapon.AmmoWeapon.Item.StringId,
                     RemainingTime = _continousFiringBurstLength, 
                     LastFiredTime = MissionTime.Now.ToMilliseconds, 
-                    IsParticleEnabled = true 
+                    IsParticleEnabled = true,
+                    
                 };
-                BurstFireShot(shooterAgent, 0.1f);
+                BurstFireShot(shooterAgent, 0.1f, shooterAgent.WieldedWeapon.AmmoWeapon.Item.StringId);
                 return;
             }
 
@@ -162,7 +164,7 @@ namespace TOR_Core.BattleMechanics.Firearms
             }
         }
 
-        public void BurstFireShot(Agent shooterAgent, float accuracy)
+        public void BurstFireShot(Agent shooterAgent, float accuracy, string ammoID)
         {
             var itemBoneFrame = shooterAgent.AgentVisuals.GetBoneEntitialFrame(Game.Current.DefaultMonster.MainHandItemBoneIndex, false);
             var agentFrame = shooterAgent.AgentVisuals.GetGlobalFrame();
@@ -173,8 +175,7 @@ namespace TOR_Core.BattleMechanics.Firearms
             itemBoneFrame.rotation.RotateAboutSide(rotateSide.ToRadians());
             itemBoneFrame.rotation.RotateAboutUp(rotateUp.ToRadians());
             var frame = itemBoneFrame.Advance(offset);
-
-            var ammoItem = MBObjectManager.Instance.GetObject<ItemObject>("tor_neutral_weapon_ammo_musket_ball");
+            var ammoItem = MBObjectManager.Instance.GetObject<ItemObject>(ammoID);
             var ammo = new MissionWeapon(ammoItem, null, null, 1);
 
             var baseSpeed = 15;
@@ -282,7 +283,9 @@ namespace TOR_Core.BattleMechanics.Firearms
         public double LastFiredTime;
         public ParticleSystem FireStreamPS;
         public Agent OwnerAgent;
+        public string FireAmmoId;
         private bool _isParticleEnabled;
+        
         public bool IsParticleEnabled
         {
             get

@@ -310,12 +310,15 @@ namespace TOR_Core.Models
                              }
                          }
                          //range damage Propotions
-                         var weaponProperty = weapon.GetTorSpecificData().DamageProportions;
+
+                         var ammoTuple  = ammoItem.GetTorSpecificData().DamageProportions;
+                         
+                         var weaponProperty = ammoTuple;
                          if (weaponProperty != null)
                          {
                              foreach (var tuple in weaponProperty)
                              {
-                                 damageProportions[(int)tuple.DamageType] = tuple.Percent;
+                                 damageProportions[(int)tuple.DamageType] = 1f;
                              }
                          }
                      }
