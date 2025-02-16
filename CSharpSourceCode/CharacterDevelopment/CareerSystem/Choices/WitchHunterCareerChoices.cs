@@ -14,7 +14,7 @@ using TOR_Core.Extensions.ExtendedInfoSystem;
 
 namespace TOR_Core.CharacterDevelopment.CareerSystem.Choices
 {
-    public class WitchHunterCareerChoices : TORCareerChoicesBase
+    public class WitchHunterCareerChoices(CareerObject id) : TORCareerChoicesBase(id)
     {
         private CareerChoiceObject _witchHunterRoot;
 
@@ -59,7 +59,6 @@ namespace TOR_Core.CharacterDevelopment.CareerSystem.Choices
         private CareerChoiceObject _endsJustifiesMeansPassive2;
         private CareerChoiceObject _endsJustifiesMeansPassive3;
         private CareerChoiceObject _endsJustifiesMeansPassive4;
-        public WitchHunterCareerChoices(CareerObject id) : base(id) {}
 
 
         protected override void RegisterAll()
@@ -110,7 +109,7 @@ namespace TOR_Core.CharacterDevelopment.CareerSystem.Choices
 
         protected override void InitializeKeyStones()
         {
-            _witchHunterRoot.Initialize(CareerID, "A single enemy is marked for 8 seconds and the first hit inflicted against the target increases the physical damage by 20%. After every hit there is a 50% chance the marker stays on the target. For every point in Gunpowder or crossbow, the chances increases by 0.1% additional targets are marked.", null, true,
+            _witchHunterRoot.Initialize(CareerID, "{=witchhunter_root_str}A single enemy is marked for 8 seconds and the first hit inflicted against the target increases the physical damage by 20%. After every hit there is a 50% chance the marker stays on the target. For every point in Gunpowder or crossbow, the chances increases by 0.1% additional targets are marked.", null, true,
                 ChoiceType.Keystone, new List<CareerChoiceObject.MutationObject>()
                 {
                     new CareerChoiceObject.MutationObject()
@@ -123,7 +122,7 @@ namespace TOR_Core.CharacterDevelopment.CareerSystem.Choices
                     }
                 });
             
-            _toolsOfJudgementKeystone.Initialize(CareerID, "The Marker stays 6 seconds longer on the target. Ability scales with the higehest One- or Two-Handed-skill.", "ToolsOfJudgement", false,
+            _toolsOfJudgementKeystone.Initialize(CareerID, "{=tools_of_judgement_keystone_str}The Marker stays 6 seconds longer on the target. Ability scales with the higehest One- or Two-Handed-skill.", "ToolsOfJudgement", false,
                 ChoiceType.Keystone, new List<CareerChoiceObject.MutationObject>()
                 {
                     new CareerChoiceObject.MutationObject()
@@ -144,7 +143,7 @@ namespace TOR_Core.CharacterDevelopment.CareerSystem.Choices
                     }
                 });
             
-            _huntTheWickedKeystone.Initialize(CareerID, "20% additional physical damage for marked enemies. Melee damage can charge ability", "HuntTheWicked", false,
+            _huntTheWickedKeystone.Initialize(CareerID, "{=hunt_the_wicked_keystone_str}20% additional physical damage for marked enemies. Melee damage can charge ability", "HuntTheWicked", false,
                 ChoiceType.Keystone, new List<CareerChoiceObject.MutationObject>()
                 {
                     new CareerChoiceObject.MutationObject()
@@ -157,7 +156,7 @@ namespace TOR_Core.CharacterDevelopment.CareerSystem.Choices
                     }
                 });
             
-            _silverHammerKeystone.Initialize(CareerID, "Increases holy damage by 20% to the marked target. Ability scales with Faith.", "SilverHammer", false,
+            _silverHammerKeystone.Initialize(CareerID, "{=silver_hammer_keystone_str}Increases holy damage by 20% to the marked target. Ability scales with Faith.", "SilverHammer", false,
                 ChoiceType.Keystone, new List<CareerChoiceObject.MutationObject>()
                 {
                     new CareerChoiceObject.MutationObject()
@@ -178,7 +177,7 @@ namespace TOR_Core.CharacterDevelopment.CareerSystem.Choices
                     }
                 });
             
-            _noRestAgainstEvilKeystone.Initialize(CareerID, "Shield penetration for the duration of the ability. Enemy stays marked", "NoRestAgainstEvil", false,
+            _noRestAgainstEvilKeystone.Initialize(CareerID, "{=no_rest_against_evil_keystone_str}Shield penetration for the duration of the ability. Enemy stays marked", "NoRestAgainstEvil", false,
                 ChoiceType.Keystone, new List<CareerChoiceObject.MutationObject>()
                 {
                     new CareerChoiceObject.MutationObject()
@@ -192,7 +191,7 @@ namespace TOR_Core.CharacterDevelopment.CareerSystem.Choices
                 });
 
             
-            _swiftProcedureKeystone.Initialize(CareerID, "Marked enemies movement & swing speed is decreased. Ability scales with athletics", "SwiftProcedure", false,
+            _swiftProcedureKeystone.Initialize(CareerID, "{=swift_procedure_keystone_str}Marked enemies movement & swing speed is decreased. Ability scales with athletics", "SwiftProcedure", false,
                 ChoiceType.Keystone, new List<CareerChoiceObject.MutationObject>()
                 {
                     new CareerChoiceObject.MutationObject()
@@ -213,13 +212,13 @@ namespace TOR_Core.CharacterDevelopment.CareerSystem.Choices
                     }
                 });
             
-            _guiltyByAssociationKeystone.Initialize(CareerID, "Companions and Retinues can trigger mark effects. Companions can charge ability", "GuiltyByAssociation", false,
+            _guiltyByAssociationKeystone.Initialize(CareerID, "{=guilty_by_association_keystone_str}Companions and Retinues can trigger mark effects. Companions can charge ability", "GuiltyByAssociation", false,
                 ChoiceType.Keystone, new List<CareerChoiceObject.MutationObject>()
                 {
                     
                 }); 
             
-            _endsJustifiesMeansKeystone.Initialize(CareerID, "Marked enemies suffering from overkill damage propagate mark. Scales with Rougery", "EndsJustifiesMeans", false,
+            _endsJustifiesMeansKeystone.Initialize(CareerID, "{=end_justifies_means_keystone_str}Marked enemies suffering from overkill damage propagate mark. Scales with Rougery", "EndsJustifiesMeans", false,
                 ChoiceType.Keystone, new List<CareerChoiceObject.MutationObject>()
                 {
                     new CareerChoiceObject.MutationObject()

@@ -229,26 +229,26 @@ namespace TOR_Core.CharacterDevelopment.CareerSystem.Choices
             _teachingsOfTheWinterFatherPassive4.Initialize(CareerID, "{=teachings_of_the_winter_father_passive4_str}Increases range damage resistance of melee troops by 20%.", "TeachingsOfTheWinterfather", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(PassiveEffectType.TroopResistance, new DamageProportionTuple(DamageType.Physical, 20), AttackTypeMask.Ranged, 
                 (attacker, victim, mask) => victim.BelongsToMainParty()&& !(victim.IsMainAgent || victim.IsHero)&& mask == AttackTypeMask.Melee ));
             
-            _frostsBitePassive1.Initialize(CareerID, "Extra frost damage (10%).", "FrostsBite", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(PassiveEffectType.Damage, new DamageProportionTuple(DamageType.Frost, 10), AttackTypeMask.Melee));
-            _frostsBitePassive2.Initialize(CareerID, "Add 10% frost damage to melee troops.", "FrostsBite", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(PassiveEffectType.TroopDamage, new DamageProportionTuple(DamageType.Frost, 10), AttackTypeMask.Melee));
-            _frostsBitePassive3.Initialize(CareerID, "Party is not slowed by snow.", "FrostsBite", false, ChoiceType.Passive, null); //TORPartySpeedCalculatingModel 46
-            _frostsBitePassive4.Initialize(CareerID, "Increase hex durations by 20%.", "FrostsBite", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(20f, PassiveEffectType.DebuffDuration,true)); 
+            _frostsBitePassive1.Initialize(CareerID, "{=frosts_bite_passive1_str}Extra frost damage (10%).", "FrostsBite", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(PassiveEffectType.Damage, new DamageProportionTuple(DamageType.Frost, 10), AttackTypeMask.Melee));
+            _frostsBitePassive2.Initialize(CareerID, "{=frosts_bite_passive2_str}Add 10% frost damage to melee troops.", "FrostsBite", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(PassiveEffectType.TroopDamage, new DamageProportionTuple(DamageType.Frost, 10), AttackTypeMask.Melee));
+            _frostsBitePassive3.Initialize(CareerID, "{=frosts_bite_passive3_str}Party is not slowed by snow.", "FrostsBite", false, ChoiceType.Passive, null); //TORPartySpeedCalculatingModel 46
+            _frostsBitePassive4.Initialize(CareerID, "{=frosts_bite_passive4_str}Increase hex durations by 20%.", "FrostsBite", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(20f, PassiveEffectType.DebuffDuration,true)); 
             
-            _runesOfTheWhiteWolfPassive1.Initialize(CareerID,"Wearing wolf heads or pelts increases wardsave by 10%","RunesOfTheWhiteWolf",false,ChoiceType.Passive, null , new CareerChoiceObject.PassiveEffect(10,PassiveEffectType.Special,true)); //TODO
-            _runesOfTheWhiteWolfPassive2.Initialize(CareerID, "Increases Hitpoints by 50.", "RunesOfTheWhiteWolf", false, ChoiceType.Passive, null,new CareerChoiceObject.PassiveEffect(50, PassiveEffectType.Health));
-            _runesOfTheWhiteWolfPassive3.Initialize(CareerID, "Increase prayer durations by 20%.", "RunesOfTheWhiteWolf", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(20f, PassiveEffectType.BuffDuration,true));
-            _runesOfTheWhiteWolfPassive4.Initialize(CareerID, "Ulrican troops gain 20% Ward save.", "RunesOfTheWhiteWolf", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(PassiveEffectType.TroopResistance, new DamageProportionTuple(DamageType.All, 20), AttackTypeMask.All, 
+            _runesOfTheWhiteWolfPassive1.Initialize(CareerID,"{=runes_of_the_white_wolf_passive1_str}Wearing wolf heads or pelts increases wardsave by 10%","RunesOfTheWhiteWolf",false,ChoiceType.Passive, null , new CareerChoiceObject.PassiveEffect(10,PassiveEffectType.Special,true)); //TODO
+            _runesOfTheWhiteWolfPassive2.Initialize(CareerID, "{=runes_of_the_white_wolf_passive2_str}Increases Hitpoints by 50.", "RunesOfTheWhiteWolf", false, ChoiceType.Passive, null,new CareerChoiceObject.PassiveEffect(50, PassiveEffectType.Health));
+            _runesOfTheWhiteWolfPassive3.Initialize(CareerID, "{=runes_of_the_white_wolf_passive3_str}Increase prayer durations by 20%.", "RunesOfTheWhiteWolf", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(20f, PassiveEffectType.BuffDuration,true));
+            _runesOfTheWhiteWolfPassive4.Initialize(CareerID, "{=runes_of_the_white_wolf_passive4_str}Ulrican troops gain 20% Ward save.", "RunesOfTheWhiteWolf", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(PassiveEffectType.TroopResistance, new DamageProportionTuple(DamageType.All, 20), AttackTypeMask.All, 
                 (attacker, victim, mask) => victim.IsPlayerTroop && victim.Character.UnitBelongsToCult("ulric") ));
             
-            _furyOfWarPassive1.Initialize(CareerID, "Every  equipped melee weapon increases melee damage by 5%.", "FuryOfWar", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(5,PassiveEffectType.Special,true));
-            _furyOfWarPassive2.Initialize(CareerID, "Weapon swing speed increased by 10%.", "FuryOfWar", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(10f, PassiveEffectType.SwingSpeed,true)); 
-            _furyOfWarPassive3.Initialize(CareerID,"Battles with even or unfavorable odds refresh your Ulric blessing.","FuryOfWar",false,ChoiceType.Passive);
-            _furyOfWarPassive4.Initialize(CareerID,"Hits below 15 damage do not stagger the player.","FuryOfWar",false,ChoiceType.Passive); 
+            _furyOfWarPassive1.Initialize(CareerID, "{=fury_of_war_passive1_str}Every  equipped melee weapon increases melee damage by 5%.", "FuryOfWar", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(5,PassiveEffectType.Special,true));
+            _furyOfWarPassive2.Initialize(CareerID, "{=fury_of_war_passive2_str}Weapon swing speed increased by 10%.", "FuryOfWar", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(10f, PassiveEffectType.SwingSpeed,true)); 
+            _furyOfWarPassive3.Initialize(CareerID,"{=fury_of_war_passive3_str}Battles with even or unfavorable odds refresh your Ulric blessing.","FuryOfWar",false,ChoiceType.Passive);
+            _furyOfWarPassive4.Initialize(CareerID,"{=fury_of_war_passive4_str}Hits below 15 damage do not stagger the player.","FuryOfWar",false,ChoiceType.Passive); 
             
-            _flameOfUlricPassive1.Initialize(CareerID, "Increases range of prayers by 50%.", "FlameOfUlric", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(50f, PassiveEffectType.SpellRadius,true));
-            _flameOfUlricPassive2.Initialize(CareerID, "Extra 20% armor penetration of melee attacks.", "FlameOfUlric", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(-20, PassiveEffectType.ArmorPenetration, AttackTypeMask.Melee));
-            _flameOfUlricPassive3.Initialize(CareerID,"Battles with even or unfavorable odds provide double Prestige.","FlameOfUlric",false,ChoiceType.Passive);
-            _flameOfUlricPassive4.Initialize(CareerID,"For every kill through abilities gain 0.25 health points","FlameOfUlric",false,ChoiceType.Passive); 
+            _flameOfUlricPassive1.Initialize(CareerID, "{=flame_of_ulric_passive1_str}Increases range of prayers by 50%.", "FlameOfUlric", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(50f, PassiveEffectType.SpellRadius,true));
+            _flameOfUlricPassive2.Initialize(CareerID, "{=flame_of_ulric_passive2_str}Extra 20% armor penetration of melee attacks.", "FlameOfUlric", false, ChoiceType.Passive, null, new CareerChoiceObject.PassiveEffect(-20, PassiveEffectType.ArmorPenetration, AttackTypeMask.Melee));
+            _flameOfUlricPassive3.Initialize(CareerID,"{=flame_of_ulric_passive3_str}Battles with even or unfavorable odds provide double Prestige.","FlameOfUlric",false,ChoiceType.Passive);
+            _flameOfUlricPassive4.Initialize(CareerID,"{=flame_of_ulric_passive4_str}or every kill through abilities gain 0.25 health points","FlameOfUlric",false,ChoiceType.Passive); 
             
         }
         
