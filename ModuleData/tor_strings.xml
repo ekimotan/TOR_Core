@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <strings>
   <!-- CC Options -->
-  <string id="str_tor_cc_growth.battania" text= "You spent most of your life venerating one of the Asrai deities..."/>
-  <string id="str_tor_cc_profession.battania" text= "Choose your path..."/>
+  <string id="str_tor_cc_growth.battania" text= "{=str_tor_cc_growth_battania}You spent most of your life venerating one of the Asrai deities..."/>
+  <string id="str_tor_cc_profession.battania" text= "{=str_tor_cc_profession_battania}Choose your path..."/>
   
-  <string id="str_tor_cc_origin.sturgia" text= "You clan origin"/>
+  <string id="str_tor_cc_origin.sturgia" text= "{=str_tor_cc_origin_sturgia}Your Clan is famous for its…"/>
+  <string id="str_tor_cc_growth.sturgia" text= "{=str_tor_cc_origin_sturgia}The proud Dawi cultivate every grudge aimed at their kin…"/>
+  <string id="str_tor_cc_profession.sturgia" text= "{=str_tor_cc_origin_sturgia}Your current profession…"/>
   <!--Rogue Engineer Quest-->
   
 
@@ -113,6 +115,7 @@
   <string id="str_culture_description.mousillon" text="{=culture_description_mousillon_str}Mousillon, the accursed state nestled within the heart of Bretonnia, casts a dark and ominous shadow over the land. Once a proud dukedom, it now stands as a grim testament to the corruption that lingers in the shadows. Ruled by the Serpent of Mousillon, the realm of swamps and thickets contrasts against the vibrant setting of noble Bretonnia. Yet, even more tragic and unsettling are its mutated peasantry, ruled not by noble knights but the twisted undead, whose black knights evoke a chilling blend of traditional Bretonnian martial prowess and unholy power." />
   <string id="str_culture_description.battania" text="{=culture_description_battania_str}The Asrai are the elvish inhabitants of Athel Loren; they are a suspicious, isolationist and savage kin who live their lives surrounded by the nature of Athel Loren. Their magical forest home is as dangerous as it is beautiful, and it's unforgiving nature has sharpened the skills of its people to a razer's edge. The Asrai live under the teachings of Isha and Kurnous as hunters and warriors defending the Weave and natural world, but darker voices ever seek to tempt them to slaughter and mayhem." />
   <string id="str_culture_description.eonir" text="{=culture_description_eonir_str}Between Nordland and the Wasteland lies the forest of Laurelorn and it's inhabitants, the proud Eonir. They refused to flee the Old World with the rest of their kin and instead stood against and defeated the dwarfish advance on their forest. The Eonir live in a caste society split between the city and forest kin, and maintain their security through careful diplomacy; both with their neighbours and factions as far abroad as the Asur and the Druchii. Their governance works through layers of councils to promote a level of democracy. When the time for battle comes Eonir call on everything from the darkest magic to the purest spirits of the forest to ensure the safety of their home." />
+  <string id="str_culture_description.sturgia" text="{=culture_description_sturgia_str}The Dwarfs, or the Dawi in their tongue, are one of the oldest and proudest races of the world. The Everlasting Realm of the Dwarfs was at its peak when human nations were nothing more than bands of warring barbarian tribes. Hardy, stout hearts combined with, at times, excessive pride result in a harsh and durable folk – one that is utterly incapable of forgiveness. And so the Dawi record each and every single wrong suffered at the hands of other races, with hopes of avenging said grudges in the future. Alas, this merciless and stubborn attitude led the Dwarfs into a number of conflicts that eventually pushed their civilization into decline. Out of 22 major Dwarfen Holds, or Karaks, only 12 remain under Dawi control – with the remaining ones fallen into the hands of their Ancestral Foes: Skaven and Greenskins." />
   <string id="str_culture_description.chaos_culture" text="{=culture_description_chaos_str}No one truly knows the origin of Chaos in the mortal world. Even the long-lived scholars of the High Elves can only speculate as to where the forces of Chaos first originated. War, famine, natural disaster and the destroyer known as time have eroded away nearly all indications of the roots of Chaos." />
 
 

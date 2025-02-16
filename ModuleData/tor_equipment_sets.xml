@@ -4220,24 +4220,24 @@
   </EquipmentRoster>
   <EquipmentRoster id="tor_vc_harbinger_champion_plate_two_handed_template" culture="Culture.khuzait">
     <EquipmentSet>
-      <Equipment slot="Item0" id="Item.tor_vc_weapon_thaxe_graveguard_001" />
-      <Equipment slot="Item1" id="Item.tor_vc_weapon_shield_grave_guard_001" />
-      <Equipment slot="Item2" id="Item.tor_vc_weapon_sword_grave_guard_001" />
-      <Equipment slot="Head" id="Item.tor_vc_head_helm_hell_knight_001" />
-      <Equipment slot="Body" id="Item.tor_vc_body_breastplate_hell_knight_001" />
-      <Equipment slot="Cape" id="Item.tor_vc_shoulder_pauldron_hell_knight_001" />
-      <Equipment slot="Gloves" id="Item.tor_vc_arm_gauntlet_hell_knight_001" />
-      <Equipment slot="Leg" id="Item.tor_vc_leg_boots_vc_hell_knight_001" />
+      <Equipment slot="Item0" id="Item.tor_vc_weapon_thaxe_vampire_002" />
+      <Equipment slot="Item1" id="Item.tor_vc_weapon_sword_vampire_008" />
+      <Equipment slot="Item2" id="Item.tor_vc_weapon_shield_vampire_007" />
+      <Equipment slot="Head" id="Item.tor_vc_head_helm_hell_knight_002" />
+      <Equipment slot="Body" id="Item.tor_vc_body_breastplate_dh_templar_001" />
+      <Equipment slot="Cape" id="Item.tor_vc_shoulder_pauldron_wight_king_001" />
+      <Equipment slot="Gloves" id="Item.tor_vc_arm_bracers_wight_king_001" />
+      <Equipment slot="Leg" id="Item.tor_vc_leg_boots_vc_wight_king_001" />
     </EquipmentSet>
     <EquipmentSet civilian="true">
-      <Equipment slot="Item0" id="Item.tor_vc_weapon_thaxe_graveguard_001" />
-      <Equipment slot="Item1" id="Item.tor_vc_weapon_shield_grave_guard_001" />
-      <Equipment slot="Item2" id="Item.tor_vc_weapon_sword_grave_guard_001" />
-      <Equipment slot="Head" id="Item.tor_vc_head_helm_hell_knight_001" />
-      <Equipment slot="Body" id="Item.tor_vc_body_breastplate_hell_knight_001" />
-      <Equipment slot="Cape" id="Item.tor_vc_shoulder_pauldron_hell_knight_001" />
-      <Equipment slot="Gloves" id="Item.tor_vc_arm_gauntlet_hell_knight_001" />
-      <Equipment slot="Leg" id="Item.tor_vc_leg_boots_vc_hell_knight_001" />
+      <Equipment slot="Item0" id="Item.tor_vc_weapon_thaxe_vampire_002" />
+      <Equipment slot="Item1" id="Item.tor_vc_weapon_sword_vampire_008" />
+      <Equipment slot="Item2" id="Item.tor_vc_weapon_shield_vampire_007" />
+      <Equipment slot="Head" id="Item.tor_vc_head_helm_hell_knight_002" />
+      <Equipment slot="Body" id="Item.tor_vc_body_breastplate_dh_templar_001" />
+      <Equipment slot="Cape" id="Item.tor_vc_shoulder_pauldron_wight_king_001" />
+      <Equipment slot="Gloves" id="Item.tor_vc_arm_bracers_wight_king_001" />
+      <Equipment slot="Leg" id="Item.tor_vc_leg_boots_vc_wight_king_001" />
     </EquipmentSet>
   </EquipmentRoster>
   <EquipmentRoster id="tor_chaos_norscan_tribesman_template" culture="Culture.chaos_culture">

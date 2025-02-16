@@ -4418,7 +4418,7 @@
   </NPCCharacter>
   <NPCCharacter id="tor_vc_harbinger_champion" default_group="infantry" level="31" name="{=str_tor_vc_harbinger_champion}Necromancer Champion" occupation="Soldier" culture="Culture.khuzait" skill_template="SkillSet.tor_skills_level31" is_basic_troop="true" race="skeleton">
     <face>
-      <face_key_template value="BodyProperty.skeleton" />
+      <face_key_template value="BodyProperty.harbinger" />
     </face>
     <upgrade_targets>
       <upgrade_target id="NPCCharacter.tor_vc_harbinger_champion_two_handed" />
@@ -4431,7 +4431,7 @@
   </NPCCharacter>
   <NPCCharacter id="tor_vc_harbinger_champion_two_handed" default_group="infantry" level="36" name="{=str_tor_vc_harbinger_champion_two_handed}Necromancer Champion Two-Handed" occupation="Soldier" culture="Culture.khuzait" skill_template="SkillSet.tor_skills_level36" race="skeleton">
     <face>
-      <face_key_template value="BodyProperty.skeleton" />
+      <face_key_template value="BodyProperty.harbinger" />
     </face>
     <upgrade_targets />
     <Equipments>
@@ -4441,7 +4441,7 @@
   </NPCCharacter>
   <NPCCharacter id="tor_vc_harbinger_champion_plate" default_group="cavalry" level="41" name="{=str_tor_vc_harbinger_champion_plate}Necromancer Champion Plate" occupation="Soldier" culture="Culture.khuzait" skill_template="SkillSet.tor_skills_level41" race="skeleton">
     <face>
-      <face_key_template value="BodyProperty.skeleton" />
+      <face_key_template value="BodyProperty.harbinger" />
     </face>
     <upgrade_targets>
       <upgrade_target id="NPCCharacter.tor_vc_harbinger_champion_plate_two_handed" />
@@ -4453,7 +4453,7 @@
   </NPCCharacter>
   <NPCCharacter id="tor_vc_harbinger_champion_plate_two_handed" default_group="cavalry" level="46" name="{=str_tor_vc_harbinger_champion_plate_two_handed}Necromancer Champion Two-Handed-Plate" occupation="Soldier" culture="Culture.khuzait" skill_template="SkillSet.tor_skills_level46" race="skeleton">
     <face>
-      <face_key_template value="BodyProperty.skeleton" />
+      <face_key_template value="BodyProperty.harbinger" />
     </face>
     <upgrade_targets />
     <Equipments>
