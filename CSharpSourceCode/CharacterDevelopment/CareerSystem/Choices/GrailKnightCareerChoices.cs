@@ -111,7 +111,7 @@ namespace TOR_Core.CharacterDevelopment.CareerSystem.Choices
 
         protected override void InitializeKeyStones()
         {
-            _grailKnightRoot.Initialize(CareerID, "The knight prepares a devastating charge, mounted or on foot, for the next 6 seconds, increasing the speed by 20%. When mounted, the knight receives perk buffs as well as a 20% chance of his lance not bouncing off after a couched lance attack. The couched lance attack chance increases by 0.1% for every point in Riding. When on foot, the knight only receives perk buffs.", null,
+            _grailKnightRoot.Initialize(CareerID, "{=grail_knight_root_str}The knight prepares a devastating charge, mounted or on foot, for the next 6 seconds, increasing the speed by 20%. When mounted, the knight receives perk buffs as well as a 20% chance of his lance not bouncing off after a couched lance attack. The couched lance attack chance increases by 0.1% for every point in Riding. When on foot, the knight only receives perk buffs.", null,
                 true, ChoiceType.Keystone, new List<CareerChoiceObject.MutationObject>()
                 {
                     new CareerChoiceObject.MutationObject()
@@ -140,7 +140,7 @@ namespace TOR_Core.CharacterDevelopment.CareerSystem.Choices
                     }
                 });
 
-            _errantryWarKeystone.Initialize(CareerID, "10% extra physical damage during Knightly Charge. The ability scales with the One Handed skill.", "ErrantryWar", false,
+            _errantryWarKeystone.Initialize(CareerID, "{=errantry_war_keystone_str}10% extra physical damage during Knightly Charge. The ability scales with the One Handed skill.", "ErrantryWar", false,
                 ChoiceType.Keystone, new List<CareerChoiceObject.MutationObject>()
                 {
                     new CareerChoiceObject.MutationObject()
@@ -168,7 +168,7 @@ namespace TOR_Core.CharacterDevelopment.CareerSystem.Choices
                         MutationType = OperationType.Add
                     }
                 });
-            _enhancedHorseCombatKeystone.Initialize(CareerID, "Ability scales now  with the Polearm skill and starts recharged.", "EnhancedHorseCombat", false,
+            _enhancedHorseCombatKeystone.Initialize(CareerID, "{=enhanced_horse_combat_keystone_str}Ability scales now  with the Polearm skill and starts recharged.", "EnhancedHorseCombat", false,
                 ChoiceType.Keystone, new List<CareerChoiceObject.MutationObject>()
                 {
                     new CareerChoiceObject.MutationObject()
@@ -189,7 +189,7 @@ namespace TOR_Core.CharacterDevelopment.CareerSystem.Choices
                     }
                 }, new CareerChoiceObject.PassiveEffect(1, PassiveEffectType.Special));
 
-            _questingVowKeyStone.Initialize(CareerID, "Knightly Charge grants 20% physical resistance. Mount will not rear during the ability.", "QuestingVow", false,
+            _questingVowKeyStone.Initialize(CareerID, "{=questing_vow_keystone_str}Knightly Charge grants 20% physical resistance. Mount will not rear during the ability.", "QuestingVow", false,
                 ChoiceType.Keystone, new List<CareerChoiceObject.MutationObject>()
                 {
                     new CareerChoiceObject.MutationObject()
@@ -210,7 +210,7 @@ namespace TOR_Core.CharacterDevelopment.CareerSystem.Choices
                     }
                 });
 
-            _monsterSlayerKeystone.Initialize(CareerID, "Ability duration scales with Polearm and Riding. The lance attack scales with Two Handed.", "MonsterSlayer", false,
+            _monsterSlayerKeystone.Initialize(CareerID, "{=monster_slayer_keystone_str}Ability duration scales with Polearm and Riding. The lance attack scales with Two Handed.", "MonsterSlayer", false,
                 ChoiceType.Keystone, new List<CareerChoiceObject.MutationObject>()
                 {
                     new CareerChoiceObject.MutationObject()
@@ -238,7 +238,7 @@ namespace TOR_Core.CharacterDevelopment.CareerSystem.Choices
                         MutationType = OperationType.Add
                     }
                 });
-            _masterHorsemanKeystone.Initialize(CareerID, "Reduces cooldown of Knightly Charge by 30s. During the ability, all healing affects the horse.", "MasterHorseman", false,
+            _masterHorsemanKeystone.Initialize(CareerID, "{=master_horseman_keystone_str}Reduces cooldown of Knightly Charge by 30s. During the ability, all healing affects the horse.", "MasterHorseman", false,
                 ChoiceType.Keystone, new List<CareerChoiceObject.MutationObject>()
                 {
                     new CareerChoiceObject.MutationObject()
@@ -258,7 +258,7 @@ namespace TOR_Core.CharacterDevelopment.CareerSystem.Choices
                         MutationType = OperationType.Replace
                     }
                 });
-            _grailVowKeystone.Initialize(CareerID, "Ability scales with Faith. When active, get +20% holy damage and regen.", "GrailVow", false,
+            _grailVowKeystone.Initialize(CareerID, "{=grail_vow_keystone_str}Ability scales with Faith. When active, get +20% holy damage and regen.", "GrailVow", false,
                 ChoiceType.Keystone, new List<CareerChoiceObject.MutationObject>()
                 {
                     new CareerChoiceObject.MutationObject()
@@ -294,7 +294,7 @@ namespace TOR_Core.CharacterDevelopment.CareerSystem.Choices
                         MutationType = OperationType.Add
                     }
                 });
-            _holyCrusaderKeystone.Initialize(CareerID, "Ability scales with Leadership and propagates from all Companions to units in a 5m radius ", "HolyCrusader", false,
+            _holyCrusaderKeystone.Initialize(CareerID, "{=holy_crusade_keystone_str}Ability scales with Leadership and propagates from all Companions to units in a 5m radius ", "HolyCrusader", false,
                 ChoiceType.Keystone, new List<CareerChoiceObject.MutationObject>()
                 {
                     new CareerChoiceObject.MutationObject()

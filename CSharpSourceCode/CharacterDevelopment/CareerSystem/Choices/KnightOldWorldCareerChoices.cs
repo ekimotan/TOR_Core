@@ -113,7 +113,7 @@ public class KnightOldWorldCareerChoices(CareerObject id) : TORCareerChoicesBase
 
     protected override void InitializeKeyStones()
     {
-        _knightOldWorldRoot.Initialize(CareerID, "Adds a load for your next melee hit, adding 20% extra damage. For every point in one handed combat, your damage increases by 1% during the effect. The effect stays for a maximum of 15 seconds. For every keystone you get another use, enhancing your strike. Ability is charged by dealing melee damage. Attacks below 15 damage neither cost charges or apply effects", null, true,
+        _knightOldWorldRoot.Initialize(CareerID, "{=knight_old_world_root_str}Adds a load for your next melee hit, adding 20% extra damage. For every point in one handed combat, your damage increases by 1% during the effect. The effect stays for a maximum of 15 seconds. For every keystone you get another use, enhancing your strike. Ability is charged by dealing melee damage. Attacks below 15 damage neither cost charges or apply effects", null, true,
             ChoiceType.Keystone, new List<CareerChoiceObject.MutationObject>()
             {
                 new CareerChoiceObject.MutationObject()
@@ -126,13 +126,13 @@ public class KnightOldWorldCareerChoices(CareerObject id) : TORCareerChoicesBase
                 }
             });
         
-        _secularOrdersKeystone.Initialize(CareerID, "Knightly strike has 2 additional loads. starts charged", "SecularOrders", false,
+        _secularOrdersKeystone.Initialize(CareerID, "{=secular_orders_keystone_str}Knightly strike has 2 additional loads. starts charged", "SecularOrders", false,
             ChoiceType.Keystone, new List<CareerChoiceObject.MutationObject>()
             {
               
             },new CareerChoiceObject.PassiveEffect()); 
         
-        _pathOfConquestKeystone.Initialize(CareerID, "Adds cleaving attacks for ability. Ability scales with Two handed weapon skill", "PathOfConquest", false,
+        _pathOfConquestKeystone.Initialize(CareerID, "{=path_of_conquest_keystone_str}Adds cleaving attacks for ability. Ability scales with Two handed weapon skill", "PathOfConquest", false,
             ChoiceType.Keystone, new List<CareerChoiceObject.MutationObject>()
             {
                 new CareerChoiceObject.MutationObject()
@@ -162,7 +162,7 @@ public class KnightOldWorldCareerChoices(CareerObject id) : TORCareerChoicesBase
                 }
             }); 
         
-        _squiresKeystone.Initialize(CareerID, "Ability scales with riding. Companions charge ability.", "Squires", false,
+        _squiresKeystone.Initialize(CareerID, "{=squires_keystone_str}Ability scales with riding. Companions charge ability.", "Squires", false,
             ChoiceType.Keystone, new List<CareerChoiceObject.MutationObject>()
             {
                 new CareerChoiceObject.MutationObject()
@@ -175,7 +175,7 @@ public class KnightOldWorldCareerChoices(CareerObject id) : TORCareerChoicesBase
                 }
             }); 
         
-        _templarOrdersKeystone.Initialize(CareerID, "2 additional charges. Ability scales with Faith. Reduce base cooldown by 15 seconds", "TemplarOrders", false,
+        _templarOrdersKeystone.Initialize(CareerID, "{=templar_orders_keystone_str}2 additional charges. Ability scales with Faith. Reduce base cooldown by 15 seconds", "TemplarOrders", false,
             ChoiceType.Keystone, new List<CareerChoiceObject.MutationObject>()
             {
                 new CareerChoiceObject.MutationObject()
@@ -196,7 +196,7 @@ public class KnightOldWorldCareerChoices(CareerObject id) : TORCareerChoicesBase
                 }
             }); 
         
-        _pathOfVigilanceKeystone.Initialize(CareerID, "Couched Lance attacks are not removing loads. Ability scales with polearm", "PathOfViligance", false,
+        _pathOfVigilanceKeystone.Initialize(CareerID, "{=path_of_vigilance_keystone_str}Couched Lance attacks are not removing loads. Ability scales with polearm", "PathOfViligance", false,
             ChoiceType.Keystone, new List<CareerChoiceObject.MutationObject>()
             {
                 new CareerChoiceObject.MutationObject()
@@ -209,12 +209,12 @@ public class KnightOldWorldCareerChoices(CareerObject id) : TORCareerChoicesBase
                 }
             }); 
         
-        _wrathAgainstChaosKeystone.Initialize(CareerID, "Every discharge hit adds a 25% Wardsave for 5 seconds. Ability charging is 20% more efficient", "WrathAgainstChaos", false,
+        _wrathAgainstChaosKeystone.Initialize(CareerID, "{=wrath_against_chaos_keystone_str}Every discharge hit adds a 25% Wardsave for 5 seconds. Ability charging is 20% more efficient", "WrathAgainstChaos", false,
             ChoiceType.Keystone, new List<CareerChoiceObject.MutationObject>()
             {
             },new CareerChoiceObject.PassiveEffect()); 
         
-        _pathOfGloryKeystone.Initialize(CareerID, "Adds a Deity based weapon effect or 20% extra physical damage.", "PathOfGlory", false,
+        _pathOfGloryKeystone.Initialize(CareerID, "{=path_of_glory_keystone_str}Adds a Deity based weapon effect or 20% extra physical damage.", "PathOfGlory", false,
             ChoiceType.Keystone, new List<CareerChoiceObject.MutationObject>()
             {
               
