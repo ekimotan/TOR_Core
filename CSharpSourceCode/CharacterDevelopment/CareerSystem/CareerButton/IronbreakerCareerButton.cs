@@ -63,7 +63,7 @@ public class IronbreakerCareerButtonBehavior(CareerObject careerObject) : Career
         {
             return false;
         }
-        return true;    //Todo recheck after troop tree is working
+        
         if (characterObject.Culture.StringId != TORConstants.Cultures.DAWI)
             return false;
         
@@ -96,10 +96,5 @@ public class IronbreakerCareerButtonBehavior(CareerObject careerObject) : Career
         }
 
         return true;
-        
-
-
-        return false;
-
     }
 }
