@@ -143,15 +143,10 @@ namespace TOR_Core.Extensions
 
             return itemObject.StringId.Contains("grenade") || itemObject.StringId.Contains("scatter");
         }
-
-
-   
         
         public static bool IsFlameThrowerItem(this ItemObject itemObject)
         {
             if(!IsAmmunitionItem(itemObject)) return false;
-            
-            
             
             return itemObject.StringId.Contains("cannister") || itemObject.StringId.Contains("drakegun");
         }
