@@ -7380,6 +7380,42 @@
     <Abilities />
     <Attributes />
   </CharacterExtendedInfo>
+  <CharacterExtendedInfo id="tor_chaos_lord_0">
+    <Abilities />
+    <Attributes />
+  </CharacterExtendedInfo>
+  <CharacterExtendedInfo id="tor_chaos_lord_1">
+    <Abilities />
+    <Attributes />
+  </CharacterExtendedInfo>
+  <CharacterExtendedInfo id="tor_chaos_lord_2">
+    <Abilities />
+    <Attributes />
+  </CharacterExtendedInfo>
+  <CharacterExtendedInfo id="tor_druchii_lord_0">
+    <Abilities />
+    <Attributes />
+  </CharacterExtendedInfo>
+  <CharacterExtendedInfo id="tor_druchii_lord_1">
+    <Abilities />
+    <Attributes />
+  </CharacterExtendedInfo>
+  <CharacterExtendedInfo id="tor_druchii_lord_2">
+    <Abilities />
+    <Attributes />
+  </CharacterExtendedInfo>
+  <CharacterExtendedInfo id="tor_beastman_lord_0">
+    <Abilities />
+    <Attributes />
+  </CharacterExtendedInfo>
+  <CharacterExtendedInfo id="tor_beastman_lord_1">
+    <Abilities />
+    <Attributes />
+  </CharacterExtendedInfo>
+  <CharacterExtendedInfo id="tor_beastman_lord_2">
+    <Abilities />
+    <Attributes />
+  </CharacterExtendedInfo>
   <CharacterExtendedInfo id="tor_engineerquesthero">
     <Abilities />
     <Attributes />
