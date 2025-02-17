@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.Actions;
@@ -18,6 +17,7 @@ namespace TOR_Core.CampaignMechanics.Diplomacy
         private Dictionary<string, CampaignTime> _lastDecisionTime = [];
         private float _influenceReserveToKeep = 300f;
         private float _outnumberRatioForEmergencyPeace = 5f;
+
 
         public override void RegisterEvents()
         {
@@ -85,7 +85,7 @@ namespace TOR_Core.CampaignMechanics.Diplomacy
 
         private bool ConsiderEmergencyPeace(Kingdom kingdom)
         {
-            if (kingdom.GetSumEnemyKingdomPower() > kingdom.TotalStrength * _outnumberRatioForEmergencyPeace) return true;
+            if (kingdom.GetSumEnemyKingdomPower() > kingdom.GetAllianceTotalStrength() * _outnumberRatioForEmergencyPeace) return true;
             return false;
         }
 
@@ -129,12 +129,30 @@ namespace TOR_Core.CampaignMechanics.Diplomacy
 
         private void OnPeaceMade(IFaction side1Faction, IFaction side2Faction, MakePeaceAction.MakePeaceDetail detail)
         {
-            HandleDiplomaticChangeBetweenFactions(side1Faction, side2Faction);
+            if (!(side1Faction.IsAllyTriggered() || side2Faction.IsAllyTriggered()))
+            {
+                HandleDiplomaticChangeBetweenFactions(side1Faction, side2Faction);
+
+                UpdateWarPeaceForAlliance(side1Faction);
+                side1Faction.SetAllyTriggered(false);
+
+                UpdateWarPeaceForAlliance(side2Faction);
+                side2Faction.SetAllyTriggered(false);
+            }
         }
 
         private void OnWarDeclared(IFaction side1Faction, IFaction side2Faction, DeclareWarAction.DeclareWarDetail detail)
         {
-            HandleDiplomaticChangeBetweenFactions(side1Faction, side2Faction);
+            if (!(side1Faction.IsAllyTriggered() || side2Faction.IsAllyTriggered()))
+            {
+                HandleDiplomaticChangeBetweenFactions(side1Faction, side2Faction);
+
+                UpdateWarPeaceForAlliance(side1Faction);
+                side1Faction.SetAllyTriggered(false);
+
+                UpdateWarPeaceForAlliance(side2Faction);
+                side2Faction.SetAllyTriggered(false);
+            }
         }
 
         private void HandleDiplomaticChangeBetweenFactions(IFaction side1Faction, IFaction side2Faction)
@@ -185,6 +203,30 @@ namespace TOR_Core.CampaignMechanics.Diplomacy
         public override void SyncData(IDataStore dataStore)
         {
             dataStore.SyncData("_kingdomDecisionsList", ref _kingdomDecisionsList);
+        }
+
+        public static void UpdateWarPeaceForAlliance(IFaction kingdom)
+        {
+            var allKingdoms = Kingdom.All.Where(k => !k.IsEliminated);
+            var allAllies = kingdom.GetAlliedFactions().ToList();
+
+            foreach (var ally in allAllies)
+            {
+                foreach (var otherKingdom in allKingdoms.Where(k => k != kingdom && k != ally))
+                    if (kingdom.GetStanceWith(otherKingdom).IsAtWar != ally.GetStanceWith(otherKingdom).IsAtWar)
+                        if (kingdom.IsAtWarWith(otherKingdom))
+                        {
+                            ally.SetAllyTriggered(true);
+                            DeclareWarAction.ApplyByKingdomDecision(ally, otherKingdom);
+                            //FactionManager.DeclareWar(ally, otherKingdom);
+                        }
+                        else
+                        {
+                            ally.SetAllyTriggered(true);
+                            MakePeaceAction.ApplyByKingdomDecision(ally, otherKingdom);
+                            //FactionManager.SetNeutral(ally, otherKingdom);
+                        }
+            }
         }
     }
 }

@@ -153,7 +153,7 @@ namespace TOR_Core.Models
             {
                 
                 var kingdomListByDistance = kingdomCandidates.SelectQ(x => new Tuple<Kingdom, float>(x, distanceModel.GetDistance(consideringKingdom.FactionMidSettlement, x.FactionMidSettlement))).ToListQ();
-                var kingdomListByStrength = kingdomCandidates.SelectQ(x => new Tuple<Kingdom, float>(x, x.TotalStrength)).ToListQ();
+                var kingdomListByStrength = kingdomCandidates.SelectQ(x => new Tuple<Kingdom, float>(x, x.GetAllianceTotalStrength())).ToListQ();
                 var hostileReligionKingdoms = kingdomCandidates.SelectQ(x => 
                     new Tuple<Kingdom, float>(x, ReligionObjectHelper.CalculateSimilarityScore(x.Leader.GetDominantReligion(), consideringKingdom.Leader.GetDominantReligion()))).ToListQ();
 
@@ -168,7 +168,7 @@ namespace TOR_Core.Models
 
                 foreach (var tuple in kingdomListByStrength)
                 {
-                    candidateScores[tuple.Item1] += (consideringKingdom.TotalStrength / tuple.Item1.TotalStrength) * TORConfig.DeclareWarScoreFactionStrengthMultiplier;
+                    candidateScores[tuple.Item1] += (consideringKingdom.GetAllianceTotalStrength() / tuple.Item1.GetAllianceTotalStrength()) * TORConfig.DeclareWarScoreFactionStrengthMultiplier;
                 }
 
                 foreach (var tuple in hostileReligionKingdoms)
@@ -198,13 +198,13 @@ namespace TOR_Core.Models
 
             if (kingdomCandidates.Count > 0)
             {
-                var kingdomListByStrength = kingdomCandidates.SelectQ(x => new Tuple<Kingdom, float>(x, x.TotalStrength)).ToListQ();
+                var kingdomListByStrength = kingdomCandidates.SelectQ(x => new Tuple<Kingdom, float>(x, x.GetAllianceTotalStrength())).ToListQ();
 
                 Dictionary<Kingdom, float> candidateScores = [];
 
                 foreach (var tuple in kingdomListByStrength)
                 {
-                    candidateScores[tuple.Item1] = tuple.Item1.TotalStrength / consideringKingdom.TotalStrength;
+                    candidateScores[tuple.Item1] = tuple.Item1.GetAllianceTotalStrength() / consideringKingdom.GetAllianceTotalStrength();
                 }
 
                 var maxvalue = candidateScores.Values.Max();

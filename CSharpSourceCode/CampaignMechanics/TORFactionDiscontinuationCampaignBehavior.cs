@@ -6,6 +6,7 @@ using TaleWorlds.CampaignSystem.Settlements;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.Core;
 using TaleWorlds.LinQuick;
+using TOR_Core.Extensions;
 
 namespace TOR_Core.CampaignMechanics
 {
@@ -66,7 +67,7 @@ namespace TOR_Core.CampaignMechanics
                     var candidateKingdoms = Kingdom.All.WhereQ(x => !x.IsEliminated && x.Culture == clan.Culture);
                     if (candidateKingdoms != null && candidateKingdoms.Count() > 0)
                     {
-                        var targetKingdom = candidateKingdoms.MinBy(x => x.TotalStrength);
+                        var targetKingdom = candidateKingdoms.MinBy(x => x.GetAllianceTotalStrength());
                         if (targetKingdom != null)
                         {
                             ChangeKingdomAction.ApplyByJoinToKingdom(clan, targetKingdom);
