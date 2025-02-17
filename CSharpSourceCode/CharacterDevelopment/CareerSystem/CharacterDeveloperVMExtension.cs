@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.GameState;
+using TaleWorlds.CampaignSystem.Party;
 using TaleWorlds.CampaignSystem.ViewModelCollection.CharacterDeveloper;
 using TaleWorlds.Core;
 using TaleWorlds.Library;
@@ -29,6 +30,12 @@ namespace TOR_Core.CharacterDevelopment.CareerSystem
 
         private void ExecuteNavigateToCareers()
         {
+            var characterDeveloperVm = (CharacterDeveloperVM) this._vm;
+            if (characterDeveloperVm != null)
+            {
+                characterDeveloperVm.ExecuteDone();     // saves the changes on the Character. A lot player were confused that their changes were not saved.
+            }
+            
             var state = Game.Current.GameStateManager.CreateState<CareerScreenGameState>();
             Game.Current.GameStateManager.PushState(state);
         }
