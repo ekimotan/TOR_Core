@@ -375,7 +375,7 @@
                              BurstParticleEffectPrefab="final_transmutation_ground"
                              SoundEffectId="none"
                              SoundEffectLength="0"
-                             DamageType="Physical"
+                             DamageType="Fire"
                              ImbuedStatusEffectDuration="35"
                              DamageAmount="0"
                              Radius="12"
