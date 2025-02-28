@@ -24,6 +24,8 @@ using TaleWorlds.MountAndBlade.View;
 using TaleWorlds.Localization;
 using TaleWorlds.MountAndBlade.View.MissionViews;
 using TaleWorlds.Library;
+using Helpers;
+using static TaleWorlds.Engine.GameEntity;
 
 namespace TOR_Core.AbilitySystem
 {
@@ -55,6 +57,8 @@ namespace TOR_Core.AbilitySystem
         private bool _disableCombatActionsAfterCast;
         private float _elapsedTimeSinceLastActivation;
         private bool _wieldOffHandStaff;
+        private IInputContext _inputContext => Mission.InputManager; //Easy way to access gamekeys
+
         public delegate void OnHideOutBossFightInit();
         public event OnHideOutBossFightInit OnInitHideOutBossFight;
 
@@ -66,13 +70,14 @@ namespace TOR_Core.AbilitySystem
         {
             base.OnBehaviorInitialize();
             Mission.OnItemPickUp += OnItemPickup;
+
         }
 
         public void InitHideOutBossFight()
         {
             OnInitHideOutBossFight?.Invoke();
         }
-        
+
         public override void EarlyStart()
         {
             base.EarlyStart();
@@ -82,12 +87,13 @@ namespace TOR_Core.AbilitySystem
             _quickCastMenuKey = HotKeyManager.GetCategory(nameof(TORGameKeyContext)).GetGameKey("QuickCastSelectionMenu");
             _quickCast = HotKeyManager.GetCategory(nameof(TORGameKeyContext)).GetGameKey("QuickCast");
             _specialMoveKey = HotKeyManager.GetCategory(nameof(TORGameKeyContext)).GetGameKey("CareerAbilityCast");
+            _keyContext.GetGameKey(25).ControllerKey.ChangeKey(InputKey.Invalid); // Unbinding view Character Controller key from controller. 
         }
 
         public override void OnPreMissionTick(float dt)
         {
             _elapsedTimeSinceLastActivation += dt;
-            if(_disableCombatActionsAfterCast && _elapsedTimeSinceLastActivation > (_lastActivationDeltaTime + _disableCombatActionsDuration))
+            if (_disableCombatActionsAfterCast && _elapsedTimeSinceLastActivation > (_lastActivationDeltaTime + _disableCombatActionsDuration))
             {
                 _disableCombatActionsAfterCast = false;
             }
@@ -125,7 +131,7 @@ namespace TOR_Core.AbilitySystem
             SlowDownTime(true);
             SwitchOffhandStanceForStaffs();
 
-            if (_abilityComponent.CurrentAbility.Template.AbilityType == AbilityType.Spell || 
+            if (_abilityComponent.CurrentAbility.Template.AbilityType == AbilityType.Spell ||
                 _abilityComponent.CurrentAbility.Template.AbilityType == AbilityType.Prayer)
             {
                 _shouldSheathWeapon = true;
@@ -146,18 +152,18 @@ namespace TOR_Core.AbilitySystem
         {
             if (!Agent.Main.WieldedOffhandWeapon.IsEmpty)
             {
-                if(Agent.Main.WieldedOffhandWeapon.Item.IsMagicalStaff())
+                if (Agent.Main.WieldedOffhandWeapon.Item.IsMagicalStaff())
                 {
                     _wieldOffHandStaff = true;
                     _idleAnimation = ActionIndexCache.Create("act_ready_continue_throwing_axe_with_handshield");
                     return;
                 }
-                
+
             }
             _idleAnimation = ActionIndexCache.Create("act_spellcasting_idle");
             _wieldOffHandStaff = false;
             return;
-            
+
         }
 
         private void EnableQuickSelectionMenuMode()
@@ -173,12 +179,12 @@ namespace TOR_Core.AbilitySystem
         private void SlowDownTime(bool enable)
         {
             bool isSlowTimeActive = Mission.Current.GetRequestedTimeSpeed(_timeRequestID, out _);
-            if(isSlowTimeActive && !enable)
+            if (isSlowTimeActive && !enable)
             {
                 Mission.Current.RemoveTimeSpeedRequest(_timeRequestID);
                 return;
             }
-            else if(!isSlowTimeActive && enable)
+            else if (!isSlowTimeActive && enable)
             {
                 Mission.TimeSpeedRequest timeRequest = new(0.3f, _timeRequestID);
                 _timeRequestID = timeRequest.RequestID;
@@ -208,7 +214,7 @@ namespace TOR_Core.AbilitySystem
             traitcomp?.EnableAllParticles(true);
 
             EnableCastStanceParticles(false);
-            if(errorMessage != null)
+            if (errorMessage != null)
             {
                 _abilityView.DisplayErrorMessage(errorMessage.ToString());
             }
@@ -282,7 +288,7 @@ namespace TOR_Core.AbilitySystem
             if (Input.IsKeyDown(InputKey.Tab))
                 return;
 
-            if(_currentState == AbilityModeState.QuickMenuSelection || _currentState == AbilityModeState.Targeting)
+            if (_currentState == AbilityModeState.QuickMenuSelection || _currentState == AbilityModeState.Targeting)
             {
                 if (Input.IsKeyPressed(InputKey.RightMouseButton))
                 {
@@ -306,7 +312,7 @@ namespace TOR_Core.AbilitySystem
                         else if (Input.IsKeyPressed(_specialMoveKey.KeyboardKey.InputKey) || Input.IsKeyPressed(_specialMoveKey.ControllerKey.InputKey))
                         {
                             TextObject disabledReason = new("Error Casting Career Ability");
-                            if ( _abilityComponent.CareerAbility != null && !_abilityComponent.CareerAbility.IsDisabled(Agent.Main, out disabledReason) && IsSniperScopeDisabled())
+                            if (_abilityComponent.CareerAbility != null && !_abilityComponent.CareerAbility.IsDisabled(Agent.Main, out disabledReason) && IsSniperScopeDisabled())
                             {
                                 _abilityComponent.SelectAbility(_abilityComponent.CareerAbility);
                                 if (_abilityComponent.CurrentAbility.RequiresTargeting)
@@ -381,7 +387,7 @@ namespace TOR_Core.AbilitySystem
                     break;
                 case AbilityModeState.Targeting:
                     {
-                        if (Input.IsKeyPressed(InputKey.LeftMouseButton))
+                        if (_inputContext.IsGameKeyPressed(9)) //Check's if attack gamekey is pressed (default left mouse for kb&m and Right Trigger for controller) 
                         {
                             bool flag = _abilityComponent.CurrentAbility.Crosshair == null ||
                                         !_abilityComponent.CurrentAbility.Crosshair.IsVisible ||
@@ -401,7 +407,7 @@ namespace TOR_Core.AbilitySystem
                                 }
                             }
                         }
-                        else if (Input.IsKeyPressed(_quickCastMenuKey.KeyboardKey.InputKey) || Input.IsKeyPressed(_quickCastMenuKey.ControllerKey.InputKey))
+                        else if (Input.IsKeyPressed(_quickCastMenuKey.KeyboardKey.InputKey) || Input.IsKeyPressed(_quickCastMenuKey.ControllerKey.InputKey)) //Could be checked with _inputContext.IsGameKeyPressed(109) for both the controller and keyboard but need testing since these gamekeys are introduced by the mod
                         {
                             EnableQuickSelectionMenuMode();
                         }
@@ -437,14 +443,14 @@ namespace TOR_Core.AbilitySystem
                 {
                     Agent.Main.TryToSheathWeaponInHand(Agent.HandIndex.MainHand, Agent.WeaponWieldActionType.WithAnimation);
                 }
-                
+
                 if (Agent.Main.GetWieldedItemIndex(Agent.HandIndex.OffHand) != EquipmentIndex.None)
                 {
                     if (!Agent.Main.WieldedOffhandWeapon.Item.IsMagicalStaff())
                     {
                         Agent.Main.TryToSheathWeaponInHand(Agent.HandIndex.OffHand, Agent.WeaponWieldActionType.WithAnimation);
                     }
-                   
+
                 }
                 _shouldSheathWeapon = false;
             }
@@ -500,7 +506,7 @@ namespace TOR_Core.AbilitySystem
                 _artillerySlots[team] = 0;
                 foreach (var agent in team.TeamAgents)
                 {
-                    if (agent.CanPlaceArtillery() || agent.IsHero &&  agent.HasAttribute("EngineerCompanion") )
+                    if (agent.CanPlaceArtillery() || agent.IsHero && agent.HasAttribute("EngineerCompanion"))
                     {
                         _artillerySlots[team] += agent.GetPlaceableArtilleryCount();
                     }
@@ -574,10 +580,10 @@ namespace TOR_Core.AbilitySystem
 
         public override void OnAgentHit(Agent affectedAgent, Agent affectorAgent, in MissionWeapon affectorWeapon, in Blow blow, in AttackCollisionData attackCollisionData)
         {
-            if(CareerHelper.IsValidCareerMissionInteractionBetweenAgents(affectorAgent, affectedAgent))
+            if (CareerHelper.IsValidCareerMissionInteractionBetweenAgents(affectorAgent, affectedAgent))
             {
                 var attackMask = DamagePatch.DetermineMask(blow);
-                CareerHelper.ApplyCareerAbilityCharge(blow.InflictedDamage,ChargeType.DamageDone, attackMask,affectorAgent,affectedAgent, attackCollisionData);
+                CareerHelper.ApplyCareerAbilityCharge(blow.InflictedDamage, ChargeType.DamageDone, attackMask, affectorAgent, affectedAgent, attackCollisionData);
             }
         }
 
@@ -710,7 +716,7 @@ namespace TOR_Core.AbilitySystem
 
         private void AddPerkEffectsToStartingWindsOfMagic()
         {
-            if(!IsCastingMission()) return;
+            if (!IsCastingMission()) return;
             var hero = Agent.Main?.GetHero();
             if (hero != null)
             {
