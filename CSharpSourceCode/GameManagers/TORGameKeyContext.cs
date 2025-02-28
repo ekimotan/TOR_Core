@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using TaleWorlds.Core;
 using TaleWorlds.DotNet;
 using TaleWorlds.InputSystem;
