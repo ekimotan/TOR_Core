@@ -55,6 +55,8 @@ namespace TOR_Core.AbilitySystem
         private bool _disableCombatActionsAfterCast;
         private float _elapsedTimeSinceLastActivation;
         private bool _wieldOffHandStaff;
+        private IInputContext _inputContext => Mission.InputManager; //Easy way to access gamekeys
+        
         public delegate void OnHideOutBossFightInit();
         public event OnHideOutBossFightInit OnInitHideOutBossFight;
 
@@ -66,6 +68,7 @@ namespace TOR_Core.AbilitySystem
         {
             base.OnBehaviorInitialize();
             Mission.OnItemPickUp += OnItemPickup;
+            
         }
 
         public void InitHideOutBossFight()
@@ -82,6 +85,7 @@ namespace TOR_Core.AbilitySystem
             _quickCastMenuKey = HotKeyManager.GetCategory(nameof(TORGameKeyContext)).GetGameKey("QuickCastSelectionMenu");
             _quickCast = HotKeyManager.GetCategory(nameof(TORGameKeyContext)).GetGameKey("QuickCast");
             _specialMoveKey = HotKeyManager.GetCategory(nameof(TORGameKeyContext)).GetGameKey("CareerAbilityCast");
+            _keyContext.GetGameKey(25).ControllerKey.ChangeKey(InputKey.Invalid); // Unbinding view Character Controller key from controller. 
         }
 
         public override void OnPreMissionTick(float dt)
@@ -381,7 +385,7 @@ namespace TOR_Core.AbilitySystem
                     break;
                 case AbilityModeState.Targeting:
                     {
-                        if (Input.IsKeyPressed(InputKey.LeftMouseButton))
+                        if (_inputContext.IsGameKeyPressed(9)) //Check's if attack gamekey is pressed (default left mouse for kb&m and Right Trigger for controller) 
                         {
                             bool flag = _abilityComponent.CurrentAbility.Crosshair == null ||
                                         !_abilityComponent.CurrentAbility.Crosshair.IsVisible ||
@@ -401,7 +405,7 @@ namespace TOR_Core.AbilitySystem
                                 }
                             }
                         }
-                        else if (Input.IsKeyPressed(_quickCastMenuKey.KeyboardKey.InputKey) || Input.IsKeyPressed(_quickCastMenuKey.ControllerKey.InputKey))
+                        else if (Input.IsKeyPressed(_quickCastMenuKey.KeyboardKey.InputKey) || Input.IsKeyPressed(_quickCastMenuKey.ControllerKey.InputKey)) //Could be checked with _inputContext.IsGameKeyPressed(109) for both the controller and keyboard but need testing since these gamekeys are introduced by the mod
                         {
                             EnableQuickSelectionMenuMode();
                         }
